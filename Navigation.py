@@ -87,6 +87,8 @@ class Navigation:
 				self.standbytimer = eTimer()
 				self.standbytimer.callback.append(self.gotostandby)
 				self.standbytimer.start(15000, True)
+		if config.usage.startup_to_standby.value:
+			Notifications.AddNotification(Screens.Standby.Standby)	
 
 	def wasTimerWakeup(self):
 		return self.__wasTimerWakeup
