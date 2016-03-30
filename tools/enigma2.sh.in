@@ -27,6 +27,20 @@ if [ ! -d /etc/enigma2 ] ; then
 	mkdir -p /etc/enigma2
 fi
 
+# workaround for old libssl
+if [ -h /usr/lib/libssl.so.0.9.8 ]; then
+	echo "Found symlink /usr/lib/libssl.so.0.9.8"
+else
+	ln -s /usr/lib/libssl.so.1.0.0 /usr/lib/libssl.so.0.9.8
+fi
+
+# workaround for old libcrypto
+if [ -h /usr/lib/libcrypto.so.1.0.0 ]; then
+	echo "Found symlink /usr/lib/libcrypto.so.1.0.0"
+else
+	ln -s /usr/lib/libcrypto.so.1.0.0 /usr/lib/libcrypto.so.0.9.8
+fi
+
 # workaround for corrupt ssl files
 if [ ! "$(grep config.misc.firstrun /etc/enigma2/settings)" == "config.misc.firstrun=false" ]; then
 	rm -rf /etc/enigma2/cert.pem &
