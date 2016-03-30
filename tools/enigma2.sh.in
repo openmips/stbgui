@@ -35,8 +35,8 @@ else
 fi
 
 # workaround for old libcrypto
-if [ -h /usr/lib/libcrypto.so.1.0.0 ]; then
-	echo "Found symlink /usr/lib/libcrypto.so.1.0.0"
+if [ -h /usr/lib/libcrypto.so.0.9.8 ]; then
+	echo "Found symlink /usr/lib/libcrypto.so.0.9.8"
 else
 	ln -s /usr/lib/libcrypto.so.1.0.0 /usr/lib/libcrypto.so.0.9.8
 fi
