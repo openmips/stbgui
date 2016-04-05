@@ -66,7 +66,7 @@ class Disks():
 
 	# in this case device is full device with slice number... for example sda1
 	def getTypeName(self, device):
-		cmd = "/usr/sbin/sfdisk -c /dev/%s %s" % (device[:3], device[3:])
+		cmd = "/usr/sbin/sfdisk --part-type /dev/%s %s" % (device[:3], device[3:])
 		fdisk = os.popen(cmd, "r")
 		res = fdisk.read().strip()
 		fdisk.close()
@@ -75,7 +75,7 @@ class Disks():
 		return res
 
 	def getType(self, device):
-		cmd = "/usr/sbin/sfdisk -c /dev/%s %s" % (device[:3], device[3:])
+		cmd = "/usr/sbin/sfdisk --part-type /dev/%s %s" % (device[:3], device[3:])
 		fdisk = os.popen(cmd, "r")
 		res = fdisk.read().strip()
 		fdisk.close()
@@ -167,47 +167,25 @@ class Disks():
 				print "[DeviceManager] umount failed!"
 				return -1
 
-		if fstype == 0 or fstype == 1:
-			ptype = "83"
-		elif fstype == 2:
-			ptype = "7"
-		elif fstype == 3:
-			ptype = "b"
+		if fstype == 0:
+			ptype = "ext4"
+		elif fstype == 1:
+			ptype = "ext3"
 		print "[DeviceManager] size = ", size
 		psize = (size / (1024*1024))
 		print "[DeviceManager] (size / (1024*1024)) = ", psize
 		if type == 0:
-			psize = (size / (1024*1024))
-			if psize > 128000:
-					# Start at sector 8 to better support 4k aligned disks
-					print "[DeviceManager] Detected >128GB disk, using 4k alignment"
-					flow = "8,,%s\n;0,0\n;0,0\n;0,0\ny\n" % ptype
-					print "[DeviceManager] one partition flow = ", flow
-			else:
-				flow = "0,,%s\n;\n;\n;\ny\n" % ptype
-				print "[DeviceManager] one partition flow = ", flow
+				cmd = '/usr/sbin/parted --align optimal /dev/%s --script mklabel msdos mkpart primary %s 0%% 100%%' % (device, ptype)
 		elif type == 1:
-			psize = (size / (1024*1024)) / 2
-			flow = "0,%d,%s\n,,%s\n;\n;\ny\n" % (psize, ptype, ptype)
-			print "[DeviceManager] two partition (2 x 50%) flow = ", flow
+				cmd = '/usr/sbin/parted --align optimal /dev/%s --script mklabel msdos mkpart primary %s 0%% 50%% mkpart primary %s 50%% 100%%' % (device, ptype, ptype)
 		elif type == 2:
-			psize = ((size / (1024*1024)) / 4) * 3
-			flow = "0,%d,%s\n,,%s\n;\n;\ny\n" % (psize, ptype, ptype)
-			print "[DeviceManager] two partition (75% 25%) flow = ", flow
+				cmd = '/usr/sbin/parted --align optimal /dev/%s --script mklabel msdos mkpart primary %s 0%% 75%% mkpart primary %s 75%% 100%%' % (device, ptype, ptype)
 		elif type == 3:
-			psize = (size / (1024*1024)) / 3
-			flow = "0,%d,%s\n,%d,%s\n,,%s\n;\ny\n" % (psize, ptype, psize, ptype, ptype)
-			print "[DeviceManager] three partition (3 x 33%) flow = ", flow
+				cmd = '/usr/sbin/parted --align optimal /dev/%s --script mklabel msdos mkpart primary %s 0%% 33%% mkpart primary %s 33%% 66%% mkpart primary %s 66%% 100%%' % (device, ptype, ptype, ptype)
 		elif type == 4:
-			psize = (size / (1024*1024)) / 4
-			flow = "0,%d,%s\n,%d,%s\n,%d,%s\n,,%s\ny\n" % (psize, ptype, psize, ptype, psize, ptype, ptype)
-			print "[DeviceManager] four partition (4 x 25%) flow = ", flow
-
-		cmd = "%s -f -uM /dev/%s" % ("/usr/sbin/sfdisk", device)
+				cmd = '/usr/sbin/parted --align optimal /dev/%s --script mklabel msdos mkpart primary %s 0%% 25%% mkpart primary %s 25%% 50%% mkpart primary %s 50%% 75%% mkpart primary %s 75%% 100%%' % (device, ptype, ptype, ptype, ptype)
 		print "[DeviceManager] used cmd = ", cmd
 		sfdisk = os.popen(cmd, "w")
-		print "[DeviceManager] used flow = ", flow
-		sfdisk.write(flow)
 		if sfdisk.close():
 			return -2
 
@@ -274,12 +252,6 @@ class Disks():
 
 		if fstype == 0:
 			cmd = "/sbin/mkfs.ext4 "
-			#psize = (size / (1024))
-			#if psize > 20000:
-			#	version = open("/proc/version","r").read().split(' ', 4)[2].split('.',2)[:2]
-			#	if (version[0] > 3) and (version[1] >= 2):
-			#		# Linux version 3.2 supports bigalloc and -C option, use 256k blocks
-			#		cmd += "-O bigalloc -C 262144 "
 			cmd += "-m0 -O dir_index /dev/" + dev
 			print "[DeviceManager] EXT4 command to format ", cmd
 		elif fstype == 1:
@@ -296,13 +268,6 @@ class Disks():
 				cmd += "-T largefile -N %s " % str(psize * 32)
 			cmd += "-m0 -O dir_index /dev/" + dev
 			print "[DeviceManager] EXT3 command to format ", cmd
-		elif fstype == 2:
-			cmd = "/sbin/mkfs.ntfs -f /dev/" + dev
-			cmd += " -L Redmond"
-			print "[DeviceManager] NTFS command to format ", cmd
-		elif fstype == 3:
-			cmd = "/usr/sbin/mkfs.vfat -F32 /dev/" + dev
-			print "[DeviceManager] VFAT command to format ", cmd
 		else:
 			if len(oldmp) > 0:
 				self.mount(dev, oldmp)

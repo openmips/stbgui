@@ -117,7 +117,7 @@ class HddPartitions(Screen):
 		disks = Disks()
 		ret = disks.chkfs(self.disk[5][self.index][0][:3], self.index+1, self.fstype)
 		if ret == 0:
-			self.session.open(MessageBox, _("Check disk terminated with success"), MessageBox.TYPE_INFO)
+			self.session.open(MessageBox, _("Check disk finished with success"), MessageBox.TYPE_INFO)
 		elif ret == -1:
 			self.session.open(MessageBox, _("Cannot umount current drive.\nA record in progress, timeshift or some external tools (like samba, swapfile and nfsd) may cause this problem.\nPlease stop this actions/applications and try again"), MessageBox.TYPE_ERROR)
 		else:
@@ -127,7 +127,7 @@ class HddPartitions(Screen):
 		disks = Disks()
 		ret = disks.mkfs(self.disk[5][self.index][0][:3], self.index+1, self.fstype)
 		if ret == 0:
-			self.session.open(MessageBox, _("Format terminated with success"), MessageBox.TYPE_INFO)
+			self.session.open(MessageBox, _("Format finished with success"), MessageBox.TYPE_INFO)
 		elif ret == -2:
 			self.session.open(MessageBox, _("Cannot format current drive.\nA record in progress, timeshift or some external tools (like samba, swapfile and nfsd) may cause this problem.\nPlease stop this actions/applications and try again"), MessageBox.TYPE_ERROR)
 		else:
@@ -146,14 +146,6 @@ class HddPartitions(Screen):
 				if result < 1:
 					self.fstype = 1
 					self.session.open(ExtraActionBox, _("Formatting disk %s") % self.disk[5][self.index][0], _("Formatting disk"), self.mkfs)
-		elif self.disk[5][self.index][3] == "7":
-			if result < 1:
-				self.fstype = 2
-				self.session.open(ExtraActionBox, _("Formatting disk %s") % self.disk[5][self.index][0], _("Formatting disk"), self.mkfs)
-		elif self.disk[5][self.index][3] == "b":
-			if result < 1:
-				self.fstype = 3
-				self.session.open(ExtraActionBox, _("Formatting disk %s") % self.disk[5][self.index][0], _("Formatting disk"), self.mkfs)
 
 	def green(self):
 		if len(self.disk[5]) > 0:
@@ -183,16 +175,6 @@ class HddPartitions(Screen):
 												[ [ "Ext3", "partitionmanager.png" ],
 												[ _("Cancel"), "cancel.png" ],
 												], 1, 1)
-			elif self.disk[5][self.index][3] == "7":
-				self.session.openWithCallback(self.domkfs, ExtraMessageBox, _("Format as"), _("Partitioner"),
-											[ [ "NTFS", "partitionmanager.png" ],
-											[ _("Cancel"), "cancel.png" ],
-											], 1, 1)
-			elif self.disk[5][self.index][3] == "b":
-				self.session.openWithCallback(self.domkfs, ExtraMessageBox, _("Format as"), _("Partitioner"),
-											[ [ "Fat32", "partitionmanager.png" ],
-											[ _("Cancel"), "cancel.png" ],
-											], 1, 1)
 
 	def refreshMP(self, uirefresh = True):
 		self.partitions = []
