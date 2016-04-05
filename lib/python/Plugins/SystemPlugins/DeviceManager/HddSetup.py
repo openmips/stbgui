@@ -40,6 +40,7 @@ class HddSetup(Screen):
 		<ePixmap pixmap="skin_default/buttons/blue.png" position="420,0" size="140,40" alphatest="on" />
 		<widget name="key_red" position="0,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#9f1313" transparent="1" />
 		<widget name="key_green" position="140,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#1f771f" transparent="1" />
+		<widget name="key_yellow" position="280,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#a08500" transparent="1" />
 		<widget name="key_blue" position="420,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#18188b" transparent="1" />
 		<widget source="menu" render="Listbox" position="20,45" size="520,380" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
@@ -69,11 +70,12 @@ class HddSetup(Screen):
 		self["menu"] = List(self.disks)
 		self["key_red"] = Button(_("Mounts"))
 		self["key_green"] = Button(_("Info"))
-		# self["key_yellow"] = Button(_("Initialize"))
+		self["key_yellow"] = Button(_("Initialize"))
 		self["key_blue"] = Button(_("Exit"))
 		self["actions"] = ActionMap(["OkCancelActions", "ColorActions"],
 		{
 			"blue": self.quit,
+			"yellow": self.yellow,
 			"green": self.green,
 			"red": self.red,
 			"cancel": self.quit,
