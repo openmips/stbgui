@@ -252,20 +252,20 @@ class Disks():
 
 		if fstype == 0:
 			cmd = "/sbin/mkfs.ext4 "
-			cmd += "-m0 -O dir_index /dev/" + dev
+			cmd += "-F -m0 -O dir_index /dev/" + dev
 			print "[DeviceManager] EXT4 command to format ", cmd
 		elif fstype == 1:
 			cmd = "/sbin/mkfs.ext3 "
 			psize = (size / (1024))
 			if psize > 250000:
 				# No more than 256k i-nodes (prevent problems with fsck memory requirements)
-				cmd += "-T largefile -O sparse_super -N 262144 "
+				cmd += "-F -T largefile -O sparse_super -N 262144 "
 			elif psize > 16384:
 				# between 16GB and 250GB: 1 i-node per megabyte
-				cmd += "-T largefile -O sparse_super "
+				cmd += "-F -T largefile -O sparse_super "
 			elif psize > 2048:
 				# Over 2GB: 32 i-nodes per megabyte
-				cmd += "-T largefile -N %s " % str(psize * 32)
+				cmd += "-F -T largefile -N %s " % str(psize * 32)
 			cmd += "-m0 -O dir_index /dev/" + dev
 			print "[DeviceManager] EXT3 command to format ", cmd
 		else:
