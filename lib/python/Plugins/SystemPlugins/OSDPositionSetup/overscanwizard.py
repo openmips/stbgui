@@ -118,18 +118,18 @@ class OverscanWizard(Screen, ConfigListScreen):
 				"Unfortunately, your model of receiver is not capable to adjust the dimensions of the user interface. "
 				"If not everything is visible, you should change the installed skin to one that supports the overscan area of your TV.\n\n"
 				"When you select a different skin, the user interface of your receiver will restart.\n\n"
-				"Note: you can always start the Overscan Wizard later,  via\n\nmenu->installation->system->Overscan Wizard"))
+				"Note: you can always start the Overscan Wizard later,  via\n\nmenu->settings->system->userinterface->position & size"))
 			self.yes_no.value = False
 			self.list.append(getConfigListEntry(_("Do you want to select a different skin?"), self.yes_no))
 		elif self.step == 5:
 			self.Timer.stop()
 			self["title"].setText(_("Overscan Wizard"))
 			self["introduction"].setText(_("The overscan wizard has been completed.\n\n"
-				"Note: you can always start the Overscan Wizard later,  via\n\nmenu->installation->system->Overscan Wizard"))
+				"Note: you can always start the Overscan Wizard later,  via\n\nmenu->settings->system->userinterface->position & size"))
 			self.yes_no.value = True
 			self.list.append(getConfigListEntry(_("Do you want to quit the overscan wizard?"), self.yes_no))
 		elif self.step == 6:
-			config.skin.primary_skin.value = "PLi-HD/skin.xml"
+			config.skin.primary_skin.value = "GigabluePax/skin.xml"
 			config.save()
 			self["introduction"].setText(_("The user interface of the receiver will now restart to select the selected skin"))
 			quitMainloop(3)
