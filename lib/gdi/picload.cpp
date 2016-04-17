@@ -3,7 +3,6 @@
 #include <fcntl.h>
 
 #include <lib/base/cfile.h>
-#include <lib/base/crc32.h>
 #include <lib/gdi/picload.h>
 #include <lib/gdi/picexif.h>
 
@@ -13,6 +12,8 @@ extern "C" {
 #include <jpeglib.h>
 #include <gif_lib.h>
 }
+
+extern const uint32_t crc32_table[256];
 
 DEFINE_REF(ePicLoad);
 
@@ -796,15 +797,20 @@ void ePicLoad::decodeThumb()
 	{
 		if(FILE *f=fopen(m_filepara->file, "rb"))
 		{
-			unsigned long crc32_hash = 0;
-			char crcstr[9];
-			*crcstr = 0;
+			int c;
+			int count = 1024*100;
+			unsigned long crc32 = 0;
+			char crcstr[9];*crcstr=0;
 
-			crc32_hash = crc32::calculate_file_crc_hash(f, 1024 * 100); // get checksum data out of max 100kB
+			while ((c=getc(f))!=EOF)
+			{
+				crc32 = crc32_table[((crc32) ^ (c)) & 0xFF] ^ ((crc32) >> 8);
+				if(--count < 0) break;
+			}
 
 			fclose(f);
-			crc32_hash = ~crc32_hash;
-			sprintf(crcstr, "%08lX", crc32_hash);
+			crc32 = ~crc32;
+			sprintf(crcstr, "%08lX", crc32);
 
 			cachedir = m_filepara->file;
 			unsigned int pos = cachedir.find_last_of("/");
@@ -825,14 +831,10 @@ void ePicLoad::decodeThumb()
 
 	switch(m_filepara->id)
 	{
-		case F_PNG:	png_load(m_filepara, m_conf.background, true);
-			break;
-		case F_JPEG:	m_filepara->pic_buffer = jpeg_load(m_filepara->file, &m_filepara->ox, &m_filepara->oy, m_filepara->max_x, m_filepara->max_y);
-			break;
-		case F_BMP:	m_filepara->pic_buffer = bmp_load(m_filepara->file, &m_filepara->ox, &m_filepara->oy);
-			break;
-		case F_GIF:	gif_load(m_filepara, true);
-			break;
+		case F_PNG:	png_load(m_filepara, m_conf.background); break;
+		case F_JPEG:	m_filepara->pic_buffer = jpeg_load(m_filepara->file, &m_filepara->ox, &m_filepara->oy, m_filepara->max_x, m_filepara->max_y);	break;
+		case F_BMP:	m_filepara->pic_buffer = bmp_load(m_filepara->file, &m_filepara->ox, &m_filepara->oy);	break;
+		case F_GIF:	gif_load(m_filepara); break;
 	}
 
 	if(exif_thumbnail)
