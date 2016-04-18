@@ -68,6 +68,7 @@ config.misc.graph_mepg.event_alignment = ConfigSelection(default = possibleAlign
 config.misc.graph_mepg.show_timelines = ConfigSelection(default = "all", choices = [("nothing", _("no")), ("all", _("all")), ("now", _("actual time only"))])
 config.misc.graph_mepg.servicename_alignment = ConfigSelection(default = possibleAlignmentChoices[0][0], choices = possibleAlignmentChoices)
 config.misc.graph_mepg.extension_menu = ConfigYesNo(default = False)
+config.misc.graph_mepg.show_record_clocks = ConfigYesNo(default = True)
 
 listscreen = config.misc.graph_mepg.default_mode.value
 
@@ -134,6 +135,7 @@ class EPGList(HTMLComponent, GUIComponent):
 
 		self.foreColor = 0xffffff
 		self.foreColorSelected = 0xffc000
+		self.foreColorSelectedRec = 0xff4040
 		self.borderColor = 0x464445
 		self.backColor = 0x595959
 		self.backColorSelected = 0x808080
@@ -167,6 +169,8 @@ class EPGList(HTMLComponent, GUIComponent):
 			self.foreColor = parseColor(value).argb()
 		def EntryForegroundColorSelected(value):
 			self.foreColorSelected = parseColor(value).argb()
+		def EntryForegroundColorSelectedRec(value):
+			self.foreColorSelectedRec = parseColor(value).argb()
 		def EntryBackgroundColor(value):
 			self.backColor = parseColor(value).argb()
 		def EntryBackgroundColorSelected(value):
@@ -515,6 +519,8 @@ class EPGList(HTMLComponent, GUIComponent):
 					backColor = self.backColor
 
 				if selected and self.select_rect.x == xpos + left and self.selEvPix:
+					if rec is not None and rec[1][-1] in (2, 12, 17, 27):
+						foreColorSelected = self.foreColorSelectedRec
 					bgpng = self.selEvPix
 					backColorSel = None
 				elif rec is not None and rec[1][-1] in (2, 12, 17, 27):
@@ -557,7 +563,7 @@ class EPGList(HTMLComponent, GUIComponent):
 						color = foreColor,
 						color_sel = foreColorSelected))
 				# recording icons
-				if rec is not None:
+				if config.misc.graph_mepg.show_record_clocks.value and rec is not None:
 					for i in range(len(rec[1])):
 						if ewidth < (i + 1) * (self.recIconSize + self.iconXPadding):
 							break
