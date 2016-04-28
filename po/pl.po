@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-15 14:56+0100\n"
+"POT-Creation-Date: 2016-04-28 16:35+0200\n"
 "PO-Revision-Date: 2015-01-29 17:40+0200\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -63,6 +63,11 @@ msgid ""
 msgstr ""
 "\n"
 "Wykonaj kopię ustawień."
+
+msgid ""
+"\n"
+"Conflict detection disabled!"
+msgstr ""
 
 msgid ""
 "\n"
@@ -239,6 +244,10 @@ msgstr ""
 
 #, python-format
 msgid "%.0f MB"
+msgstr ""
+
+#, python-format
+msgid "%.2f GB"
 msgstr ""
 
 #, python-format
@@ -1219,6 +1228,9 @@ msgstr "Artysta"
 msgid "Arts/Culture"
 msgstr "Kultura/Sztuka"
 
+msgid "As defined by the skin"
+msgstr ""
+
 #
 msgid "Ask user"
 msgstr "Zapytaj użytkownika"
@@ -1711,6 +1723,11 @@ msgid ""
 msgstr ""
 
 #
+#, fuzzy
+msgid "Capabilities "
+msgstr "Pojemność:"
+
+#
 msgid "Capacity: "
 msgstr "Pojemność:"
 
@@ -1831,7 +1848,7 @@ msgstr "Rozdział:"
 msgid "Check"
 msgstr "Sprawdź"
 
-msgid "Check disk terminated with success"
+msgid "Check disk finished with success"
 msgstr ""
 
 msgid "Check the internet connection"
@@ -1862,9 +1879,9 @@ msgstr "Sprawdzanie systemu plików..."
 msgid "Checking the internet connection"
 msgstr "Sprawdzanie połączenia internetowego"
 
-#, python-format
+#, fuzzy, python-format
 msgid ""
-"Checking tuner %d\n"
+"Checking tuner %s\n"
 "DiSEqC port %s for %s"
 msgstr ""
 "Sprawdzanie tunera %d\n"
@@ -1940,6 +1957,9 @@ msgstr "Wyczyść log"
 #
 msgid "Clear playlist"
 msgstr "Wyczyść playlistę"
+
+msgid "ClientIP"
+msgstr ""
 
 #
 #, fuzzy
@@ -2054,6 +2074,10 @@ msgstr "Skonfiguruj czas wyświetlania paska info"
 
 msgid "Configure for how many minutes finished events should remain visible in the EPG. Useful when you need information about an event which has just finished, or has been delayed."
 msgstr "Skonfiguruj przez ile minut zakończone audycje pozostaną widoczne w EPG. Przydatne, gdy potrzebujesz informacji o programie, który właśnie się zakończył lub opóźnił się ."
+
+#, fuzzy
+msgid "Configure how many channels are shown in the selection list."
+msgstr "Skonfiguruj czy i jak wyświetlać w liście ikony informujące o tym, że kanał jest kodowany."
 
 msgid "Configure how recording filenames are constructed."
 msgstr "Skonfiguruj jak mają wyglądać nazwy plików nagrań."
@@ -2661,6 +2685,11 @@ msgstr "Przeglądarka DVD"
 
 #
 #, fuzzy
+msgid "DVD Menu"
+msgstr "Menu"
+
+#
+#, fuzzy
 msgid "DVD Titlelist"
 msgstr "Tytuły DVD"
 
@@ -2929,6 +2958,9 @@ msgstr "DiSEqC - ustawienia testera"
 msgid "Diction"
 msgstr "Opis"
 
+msgid "Did you see all eight arrow heads?"
+msgstr ""
+
 #
 msgid "Digital contour removal"
 msgstr "Cyfrowe usunięcie konturu"
@@ -3106,6 +3138,9 @@ msgstr ""
 "Czy chcesz pobrać\n"
 "plugin \"%s\" ?"
 
+msgid "Do you see all the eight arrowheads?"
+msgstr ""
+
 msgid "Do you want this?"
 msgstr "Czy tego chcesz?"
 
@@ -3136,6 +3171,10 @@ msgid "Do you want to do another manual service scan?"
 msgstr "Czy chcesz wykonać kolejne ręczne skanowanie?"
 
 #
+msgid "Do you want to install a channel list?"
+msgstr "Chcesz zainstalować listę kanałów?"
+
+#
 msgid "Do you want to install the package:\n"
 msgstr "Chcesz zainstalować pakiet:\n"
 
@@ -3151,6 +3190,11 @@ msgstr "Czy chcesz obejrzeć DVD przed jego nagraniem?"
 #, fuzzy
 msgid "Do you want to produce this collection?"
 msgstr "Czy chcesz nagrać tą kolekcję na DVD?"
+
+#
+#, fuzzy
+msgid "Do you want to quit the overscan wizard?"
+msgstr "Jesteś pewien, że chcesz wyjść?"
 
 #, fuzzy
 msgid "Do you want to reboot your Receiver?"
@@ -3170,6 +3214,11 @@ msgstr "Czy chcesz przywrócić własne ustawienia?"
 #
 msgid "Do you want to resume this playback?"
 msgstr "Czy chcesz wznowić odtwarzanie?"
+
+#
+#, fuzzy
+msgid "Do you want to select a different skin?"
+msgstr "Czy chcesz wykonać skanowanie kanałów?"
 
 #, fuzzy
 msgid "Do you want to update your Receiver?"
@@ -3994,7 +4043,7 @@ msgstr "Format"
 msgid "Format as"
 msgstr "Format"
 
-msgid "Format terminated with success"
+msgid "Format finished with success"
 msgstr ""
 
 msgid "Format/Partition your Devices and manage Mountpoints"
@@ -4799,6 +4848,13 @@ msgid "Is this video mode ok?"
 msgstr "Czy ten tryb video jest ok?"
 
 msgid "It follows:"
+msgstr ""
+
+msgid ""
+"It seems you did not see all the eight arrow heads. This means your TV is has overscan enabled, and is not configured properly.\n"
+"\n"
+"Please refer to your TVs manual to find how you can disable overscan on your TV. Look for terms like 'Just fit', 'Full width', etc. If you can't find it, ask other users at http://forums.openpli.org.\n"
+"\n"
 msgstr ""
 
 #
@@ -5786,6 +5842,9 @@ msgstr "Brak wybranych kanałów/nadawców"
 msgid "No standby"
 msgstr "Bez stanu czuwania"
 
+msgid "No streaming Channel from this STB at this moment"
+msgstr ""
+
 msgid "No suitable sat tuner found!"
 msgstr "Nie znaleziono odpowiedniej głowicy sat!"
 
@@ -5968,6 +6027,11 @@ msgstr "Teraz użyj ustawień kontrastu aby ustawić jak nawiększą jasność t
 msgid "Number of channel number digits"
 msgstr "Użyj oficjalnej numeracji kanałów"
 
+#
+#, fuzzy
+msgid "Number of channels shown in channel selection list"
+msgstr "Numery kanałow w liście"
+
 msgid "Number of repeating text on display."
 msgstr ""
 
@@ -6099,6 +6163,14 @@ msgstr "Inne"
 #, fuzzy
 msgid "Overall progress:"
 msgstr "Postęp (mały)"
+
+msgid "Overscan Wizard"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Overscan wizard"
+msgstr "Wizard konfiguracji sieci"
 
 #
 #, fuzzy
@@ -8597,7 +8669,8 @@ msgstr ""
 msgid "Show packages to be upgraded"
 msgstr "Pakiety do zaktualizowania"
 
-msgid "Show picons in channel list"
+#, fuzzy
+msgid "Show picons in channel selection list"
 msgstr "Pikony w liście kanałów"
 
 #
@@ -8608,6 +8681,10 @@ msgstr "Pokaż ruchy pozycjonera"
 #, fuzzy
 msgid "Show positioner position"
 msgstr "Pokaż ruchy pozycjonera"
+
+#, fuzzy
+msgid "Show record clock icons"
+msgstr "Ikony kodowania kanału"
 
 #
 msgid "Show record indicator"
@@ -8686,6 +8763,11 @@ msgstr ""
 msgid "Show warning when timeshift is stopped"
 msgstr "Ostrzeżenie przy zatrzymywaniu timeshiftu"
 
+#
+#, fuzzy
+msgid "Show/hide window"
+msgstr "Pokaż info"
+
 msgid "Shows live tv or informations on LCD."
 msgstr ""
 
@@ -8730,11 +8812,6 @@ msgstr "Siła sygnału:"
 #
 msgid "Signal: "
 msgstr "Sygnał:"
-
-#
-#, fuzzy
-msgid "Silently zap between bouquets"
-msgstr "Wybierz bukiet"
 
 #
 msgid "Similar"
@@ -9690,6 +9767,29 @@ msgstr ""
 "Wizard sieci nie jest zainstalowany!\n"
 "Zainstaluj go najpierw."
 
+msgid ""
+"The overscan wizard has been completed.\n"
+"\n"
+"Note: you can always start the Overscan Wizard later,  via\n"
+"\n"
+"menu->settings->system->userinterface->position & size"
+msgstr ""
+
+msgid ""
+"The overscan wizard helps you to setup your TV in the correct way.\n"
+"\n"
+"For the majority of TV's, the factory default is to have overscan enabled. This means you are always watching a \"zoomed in\" picture instead of real HD, and parts of the user inferface (skin) may be invisible.\n"
+"\n"
+"The yellow area means a 5% border area of a full HD picture will be invisible.\n"
+"The green area means a 10% border area of a full HD picture will be invisible.\n"
+"\n"
+"In other words, if the yellow box meets all for sides of your screen, then you have at least 5% overscan on all sides.\n"
+"\n"
+"If you see the tips of all eight arrowheads, then your TV has overscan disabled.\n"
+"\n"
+"Test Pattern by TigerDave - www.tigerdave.com/ht_menu.htm"
+msgstr ""
+
 #
 #, python-format
 msgid "The path %s already exists."
@@ -9734,6 +9834,9 @@ msgstr "Plik Timera (timers.xml) jest uszkodzony i nie może być załadowany."
 msgid ""
 "The unicable connection setting is wrong.\n"
 " Maybe recursive connection of tuners."
+msgstr ""
+
+msgid "The user interface of the receiver will now restart to select the selected skin"
 msgstr ""
 
 #, fuzzy, python-format
@@ -10055,10 +10158,6 @@ msgid "Timer edit"
 msgstr "Edycja timera"
 
 #
-msgid "Timer editor"
-msgstr "Edytor timera"
-
-#
 msgid "Timer entry"
 msgstr "Szczegóły timera"
 
@@ -10183,6 +10282,9 @@ msgstr ""
 msgid "Top and bottom"
 msgstr ""
 
+msgid "Total Clients streaming: "
+msgstr ""
+
 #, python-format
 msgid "Total clients streaming: %d (%s)"
 msgstr ""
@@ -10190,6 +10292,11 @@ msgstr ""
 #
 msgid "Track"
 msgstr "Ścieżka"
+
+#
+#, fuzzy
+msgid "Transcode"
+msgstr "Tłumaczenie:"
 
 #
 #, fuzzy
@@ -10307,6 +10414,9 @@ msgstr "Status tunera %s"
 #
 msgid "Tuner type"
 msgstr "Typ tunera"
+
+msgid "Tuning algorithm"
+msgstr ""
 
 #
 msgid "Turkish"
@@ -10939,9 +11049,6 @@ msgstr "Oglądaj filmy..."
 msgid "Watch recordings..."
 msgstr "Oglądaj nagrania..."
 
-msgid "Weather GigaBlue Pax"
-msgstr ""
-
 msgid "Weather ID"
 msgstr ""
 
@@ -11390,9 +11497,6 @@ msgstr "Tak, powróć do listy filmów"
 msgid "Yesterday"
 msgstr "Wczoraj"
 
-msgid "Your PIN code is 0000. This is the default PIN code and it disable parental control!\n"
-msgstr ""
-
 #, fuzzy, python-format
 msgid ""
 "You already have a bootlogo installed,\n"
@@ -11445,6 +11549,27 @@ msgstr "Możesz usunąć ten plugin"
 #
 msgid "You cannot delete this!"
 msgstr "Tego nie można usunąć!"
+
+msgid ""
+"You did not see all eight arrow heads. This means your TV has overscan enabled and presents you with a zoomed-in picture, causing you to loose part of a full HD screen. In addition this you may also miss parts of the user interface, for example volume bars and more.\n"
+"\n"
+"Unfortunately, your model of receiver is not capable to adjust the dimensions of the user interface. If not everything is visible, you should change the installed skin to one that supports the overscan area of your TV.\n"
+"\n"
+"When you select a different skin, the user interface of your receiver will restart.\n"
+"\n"
+"Note: you can always start the Overscan Wizard later,  via\n"
+"\n"
+"menu->settings->system->userinterface->position & size"
+msgstr ""
+
+msgid ""
+"You did not see all eight arrow heads. This means your TV has overscan enabled and presents you with a zoomed-in picture, causing you to loose part of a full HD screen. In addition this you may also miss parts of the user interface, for example volume bars and more.\n"
+"\n"
+"You can now try to resize and change the position of the user interface until you see the eight arrow heads.\n"
+"\n"
+"When done press OK.\n"
+"\n"
+msgstr ""
 
 msgid "You didn't select a channel to record from."
 msgstr "Nie wybrałeś kanału z którego nagrywać"
@@ -11522,6 +11647,9 @@ msgid ""
 "You need to plug-in your USB-flash drive with your image to restore.\n"
 "Power on your GigaBlue and you can flash your backup image.\n"
 "After flashing you can restore your settings."
+msgstr ""
+
+msgid "Your PIN code is 0000. This is the default PIN code and it disable parental control!\n"
 msgstr ""
 
 msgid "Your Receiver isn't connected to the internet properly. Please check it and try again."
@@ -11646,6 +11774,9 @@ msgstr "Powrócić na kanał sprzed ustawiania pozycjonera?"
 #
 msgid "Zap back to service before tuner setup?"
 msgstr "Powrócić na kanał sprzed konfiguracji tunera?"
+
+msgid "Zap bouquets blindly on zap buttons"
+msgstr ""
 
 #, fuzzy
 msgid "Zap down"
@@ -11915,6 +12046,9 @@ msgstr "Blacklist"
 #
 msgid "blue"
 msgstr "Niebieski"
+
+msgid "bottom"
+msgstr ""
 
 msgid "broadcasting/press"
 msgstr "Relacja"
@@ -12659,6 +12793,11 @@ msgstr "Nagraj"
 msgid "red"
 msgstr "Czerwony"
 
+#
+#, fuzzy
+msgid "reliable"
+msgstr "Włącz"
+
 msgid "religion"
 msgstr "Religia"
 
@@ -13011,6 +13150,10 @@ msgstr "Góra"
 msgid "tourism/travel"
 msgstr "Podróże/Turystyka"
 
+#, fuzzy
+msgid "traditional (fast)"
+msgstr "Folk/Muzyka tradycyjna"
+
 #
 msgid "true"
 msgstr "tak"
@@ -13219,10 +13362,6 @@ msgstr "Przełączony"
 #~ msgid "Do you want to enable the parental control feature on your %s %s?"
 #~ msgstr "Czy chcesz pobrać image do %s ?"
 
-#
-#~ msgid "Do you want to install a channel list?"
-#~ msgstr "Chcesz zainstalować listę kanałów?"
-
 #~ msgid "Do you want to update your receiver to %s?"
 #~ msgstr "Chcesz zaktualizować oprogramowanie odbiornika do %s?"
 
@@ -13402,6 +13541,11 @@ msgstr "Przełączony"
 #~ msgstr "Przejdź w tryb TV..."
 
 #
+#, fuzzy
+#~ msgid "Silently zap between bouquets"
+#~ msgstr "Wybierz bukiet"
+
+#
 #~ msgid "Single transponder"
 #~ msgstr "Jeden transponder"
 
@@ -13463,6 +13607,10 @@ msgstr "Przełączony"
 
 #~ msgid "The wizard found a configuration backup. Do you want to restore your old settings from %s?"
 #~ msgstr "Kreator znalazł backup plików konfiguracyjnych, Przywrócić stare ustawienia z %s?"
+
+#
+#~ msgid "Timer editor"
+#~ msgstr "Edytor timera"
 
 #
 #~ msgid "USB stick wizard"

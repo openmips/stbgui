@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-15 14:56+0100\n"
+"POT-Creation-Date: 2016-04-28 16:35+0200\n"
 "PO-Revision-Date: 2015-01-29 17:40+0200\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -53,6 +53,11 @@ msgstr "Jūs galite įdiegti šią papildomą programą."
 msgid ""
 "\n"
 "Backup your running Receiver image to HDD or USB."
+msgstr ""
+
+msgid ""
+"\n"
+"Conflict detection disabled!"
 msgstr ""
 
 msgid ""
@@ -207,6 +212,10 @@ msgstr ""
 
 #, python-format
 msgid "%.0f MB"
+msgstr ""
+
+#, python-format
+msgid "%.2f GB"
 msgstr ""
 
 #, python-format
@@ -1046,6 +1055,9 @@ msgstr "Atlikėjas"
 msgid "Arts/Culture"
 msgstr ""
 
+msgid "As defined by the skin"
+msgstr ""
+
 msgid "Ask user"
 msgstr "Klausti vartotojo"
 
@@ -1472,6 +1484,10 @@ msgid ""
 "Please stop this actions/applications and try again"
 msgstr ""
 
+#, fuzzy
+msgid "Capabilities "
+msgstr "Talpa: "
+
 msgid "Capacity: "
 msgstr "Talpa: "
 
@@ -1576,7 +1592,7 @@ msgstr "Skyrius:"
 msgid "Check"
 msgstr "Tikrinti"
 
-msgid "Check disk terminated with success"
+msgid "Check disk finished with success"
 msgstr ""
 
 msgid "Check the internet connection"
@@ -1606,7 +1622,7 @@ msgstr ""
 
 #, python-format
 msgid ""
-"Checking tuner %d\n"
+"Checking tuner %s\n"
 "DiSEqC port %s for %s"
 msgstr ""
 
@@ -1670,6 +1686,9 @@ msgstr "Išvalyti log"
 #, fuzzy
 msgid "Clear playlist"
 msgstr "išvalyti grojaraštį"
+
+msgid "ClientIP"
+msgstr ""
 
 #, fuzzy
 msgid "Clock"
@@ -1768,6 +1787,10 @@ msgstr ""
 
 msgid "Configure for how many minutes finished events should remain visible in the EPG. Useful when you need information about an event which has just finished, or has been delayed."
 msgstr ""
+
+#, fuzzy
+msgid "Configure how many channels are shown in the selection list."
+msgstr "Rodyti atvejo eigą kanalo pasirinkime"
 
 msgid "Configure how recording filenames are constructed."
 msgstr ""
@@ -2328,6 +2351,10 @@ msgid "DVD File Browser"
 msgstr "DVD failų naršyklė"
 
 #, fuzzy
+msgid "DVD Menu"
+msgstr "Meniu"
+
+#, fuzzy
 msgid "DVD Titlelist"
 msgstr "DVD pavadinimo sąrašas"
 
@@ -2564,6 +2591,9 @@ msgstr "DiSEqC-Tester nustatymai"
 msgid "Diction"
 msgstr "Aprašymas"
 
+msgid "Did you see all eight arrow heads?"
+msgstr ""
+
 msgid "Digital contour removal"
 msgstr "Skaitmeninis kontūro pašalinimas"
 
@@ -2712,6 +2742,9 @@ msgstr ""
 "Jūs iš tikrųjų norite parsisiųsti\n"
 "papildomą programą \"%s \"?"
 
+msgid "Do you see all the eight arrowheads?"
+msgstr ""
+
 msgid "Do you want this?"
 msgstr ""
 
@@ -2737,6 +2770,10 @@ msgstr "Jūs norite skanuoti palydovą?"
 msgid "Do you want to do another manual service scan?"
 msgstr "Jūs norite atlikti rankinį kanalų skanavimą?"
 
+#, fuzzy
+msgid "Do you want to install a channel list?"
+msgstr ""
+
 msgid "Do you want to install the package:\n"
 msgstr "Jūs norite įdiegti paketą:\n"
 
@@ -2749,6 +2786,10 @@ msgstr "Jūs norite peržiūrėti šį DVD prieš įrašymą?"
 #, fuzzy
 msgid "Do you want to produce this collection?"
 msgstr "Jūs norite įrašyti šią kolekciją į DVD?"
+
+#, fuzzy
+msgid "Do you want to quit the overscan wizard?"
+msgstr "Jūs esate įsitikinęs, kad norite išjungti šį vedlį?"
 
 #, fuzzy
 msgid "Do you want to reboot your Receiver?"
@@ -2765,6 +2806,10 @@ msgstr "Jūs norite atkurti nustatymus?"
 
 msgid "Do you want to resume this playback?"
 msgstr "Jūs norite tęsti šį atkūrimą?"
+
+#, fuzzy
+msgid "Do you want to select a different skin?"
+msgstr "Jūs norite skanuoti palydovą?"
 
 #, fuzzy
 msgid "Do you want to update your Receiver?"
@@ -3477,7 +3522,7 @@ msgstr "Formatas"
 msgid "Format as"
 msgstr "Formatas"
 
-msgid "Format terminated with success"
+msgid "Format finished with success"
 msgstr ""
 
 msgid "Format/Partition your Devices and manage Mountpoints"
@@ -4190,6 +4235,13 @@ msgid "Is this video mode ok?"
 msgstr "Šis vaizdo būdas geras?"
 
 msgid "It follows:"
+msgstr ""
+
+msgid ""
+"It seems you did not see all the eight arrow heads. This means your TV is has overscan enabled, and is not configured properly.\n"
+"\n"
+"Please refer to your TVs manual to find how you can disable overscan on your TV. Look for terms like 'Just fit', 'Full width', etc. If you can't find it, ask other users at http://forums.openpli.org.\n"
+"\n"
 msgstr ""
 
 msgid "Italian"
@@ -5048,6 +5100,9 @@ msgstr "jokie Kanalai/Tiekėjai neišsirinkti"
 msgid "No standby"
 msgstr "nebudėti"
 
+msgid "No streaming Channel from this STB at this moment"
+msgstr ""
+
 msgid "No suitable sat tuner found!"
 msgstr ""
 
@@ -5209,6 +5264,10 @@ msgstr "Dabar, atlikite kontrasto nustatymą, kad padidinti fono šviesumą tiek
 msgid "Number of channel number digits"
 msgstr ""
 
+#, fuzzy
+msgid "Number of channels shown in channel selection list"
+msgstr "Rodyti atvejo eigą kanalo pasirinkime"
+
 msgid "Number of repeating text on display."
 msgstr ""
 
@@ -5321,6 +5380,13 @@ msgstr ""
 #, fuzzy
 msgid "Overall progress:"
 msgstr "Vykdymas"
+
+msgid "Overscan Wizard"
+msgstr ""
+
+#, fuzzy
+msgid "Overscan wizard"
+msgstr "Tinklo vedlys"
 
 #, fuzzy
 msgid "Overwrite Bootlogo Files ?"
@@ -7429,8 +7495,9 @@ msgstr ""
 msgid "Show packages to be upgraded"
 msgstr "Paketo sąrašo atnaujinimas"
 
-msgid "Show picons in channel list"
-msgstr ""
+#, fuzzy
+msgid "Show picons in channel selection list"
+msgstr "Rodyti atvejo eigą kanalo pasirinkime"
 
 msgid "Show positioner movement"
 msgstr "Rodyti pozicionieriaus judėjimą"
@@ -7438,6 +7505,10 @@ msgstr "Rodyti pozicionieriaus judėjimą"
 #, fuzzy
 msgid "Show positioner position"
 msgstr "Rodyti pozicionieriaus judėjimą"
+
+#, fuzzy
+msgid "Show record clock icons"
+msgstr "Pradėti įrašymą?"
 
 msgid "Show record indicator"
 msgstr ""
@@ -7507,6 +7578,10 @@ msgstr ""
 msgid "Show warning when timeshift is stopped"
 msgstr ""
 
+#, fuzzy
+msgid "Show/hide window"
+msgstr "Rodyti informaciją"
+
 msgid "Shows live tv or informations on LCD."
 msgstr ""
 
@@ -7546,10 +7621,6 @@ msgstr "Signalo stiprumas:"
 
 msgid "Signal: "
 msgstr "Signalas:"
-
-#, fuzzy
-msgid "Silently zap between bouquets"
-msgstr "Išsirinkite filmą"
 
 msgid "Similar"
 msgstr "Kartojama"
@@ -8386,6 +8457,29 @@ msgstr ""
 "Tinklo vedlio programa neįdiegta!\n"
 "Prašome įdiegti tai."
 
+msgid ""
+"The overscan wizard has been completed.\n"
+"\n"
+"Note: you can always start the Overscan Wizard later,  via\n"
+"\n"
+"menu->settings->system->userinterface->position & size"
+msgstr ""
+
+msgid ""
+"The overscan wizard helps you to setup your TV in the correct way.\n"
+"\n"
+"For the majority of TV's, the factory default is to have overscan enabled. This means you are always watching a \"zoomed in\" picture instead of real HD, and parts of the user inferface (skin) may be invisible.\n"
+"\n"
+"The yellow area means a 5% border area of a full HD picture will be invisible.\n"
+"The green area means a 10% border area of a full HD picture will be invisible.\n"
+"\n"
+"In other words, if the yellow box meets all for sides of your screen, then you have at least 5% overscan on all sides.\n"
+"\n"
+"If you see the tips of all eight arrowheads, then your TV has overscan disabled.\n"
+"\n"
+"Test Pattern by TigerDave - www.tigerdave.com/ht_menu.htm"
+msgstr ""
+
 #, python-format
 msgid "The path %s already exists."
 msgstr "Kelias %s jau egzistuoja."
@@ -8423,6 +8517,9 @@ msgstr "Laikmačio failas (timers.xml) yra sugadintas ir nebuvo užkrautas."
 msgid ""
 "The unicable connection setting is wrong.\n"
 " Maybe recursive connection of tuners."
+msgstr ""
+
+msgid "The user interface of the receiver will now restart to select the selected skin"
 msgstr ""
 
 #, fuzzy, python-format
@@ -8715,10 +8812,6 @@ msgstr ""
 msgid "Timer edit"
 msgstr "Redaguoti laikmatį"
 
-#, fuzzy
-msgid "Timer editor"
-msgstr "Laikmačio redaktorius"
-
 msgid "Timer entry"
 msgstr "Laikmačio užduotis"
 
@@ -8827,12 +8920,19 @@ msgstr "Tono signalas A/B"
 msgid "Top and bottom"
 msgstr ""
 
+msgid "Total Clients streaming: "
+msgstr ""
+
 #, python-format
 msgid "Total clients streaming: %d (%s)"
 msgstr ""
 
 msgid "Track"
 msgstr "Takelis"
+
+#, fuzzy
+msgid "Transcode"
+msgstr "Transponderis"
 
 #, fuzzy
 msgid "Transcoding: "
@@ -8928,6 +9028,9 @@ msgstr "Imtuvo būsena  "
 
 msgid "Tuner type"
 msgstr "Imtuvo tipas"
+
+msgid "Tuning algorithm"
+msgstr ""
 
 msgid "Turkish"
 msgstr "Turkų"
@@ -9476,9 +9579,6 @@ msgstr "Leisti įrašytus filmus..."
 msgid "Watch recordings..."
 msgstr "įrašoma..."
 
-msgid "Weather GigaBlue Pax"
-msgstr ""
-
 msgid "Weather ID"
 msgstr ""
 
@@ -9879,9 +9979,6 @@ msgstr "Taip, grįžti į filmų sąrašą"
 msgid "Yesterday"
 msgstr ""
 
-msgid "Your PIN code is 0000. This is the default PIN code and it disable parental control!\n"
-msgstr ""
-
 #, python-format
 msgid ""
 "You already have a bootlogo installed,\n"
@@ -9922,6 +10019,27 @@ msgstr "Jūs galite pašalinti šią papildomą programą."
 
 msgid "You cannot delete this!"
 msgstr "Jūs negalite to ištrinti!"
+
+msgid ""
+"You did not see all eight arrow heads. This means your TV has overscan enabled and presents you with a zoomed-in picture, causing you to loose part of a full HD screen. In addition this you may also miss parts of the user interface, for example volume bars and more.\n"
+"\n"
+"Unfortunately, your model of receiver is not capable to adjust the dimensions of the user interface. If not everything is visible, you should change the installed skin to one that supports the overscan area of your TV.\n"
+"\n"
+"When you select a different skin, the user interface of your receiver will restart.\n"
+"\n"
+"Note: you can always start the Overscan Wizard later,  via\n"
+"\n"
+"menu->settings->system->userinterface->position & size"
+msgstr ""
+
+msgid ""
+"You did not see all eight arrow heads. This means your TV has overscan enabled and presents you with a zoomed-in picture, causing you to loose part of a full HD screen. In addition this you may also miss parts of the user interface, for example volume bars and more.\n"
+"\n"
+"You can now try to resize and change the position of the user interface until you see the eight arrow heads.\n"
+"\n"
+"When done press OK.\n"
+"\n"
+msgstr ""
 
 msgid "You didn't select a channel to record from."
 msgstr "Jūs nepasirinkote kanalo, kad įrašyti."
@@ -9994,6 +10112,9 @@ msgid ""
 "You need to plug-in your USB-flash drive with your image to restore.\n"
 "Power on your GigaBlue and you can flash your backup image.\n"
 "After flashing you can restore your settings."
+msgstr ""
+
+msgid "Your PIN code is 0000. This is the default PIN code and it disable parental control!\n"
 msgstr ""
 
 msgid "Your Receiver isn't connected to the internet properly. Please check it and try again."
@@ -10100,6 +10221,9 @@ msgstr "Perjungti atgal į kanalą po pozicionieriaus nustatymo?"
 
 msgid "Zap back to service before tuner setup?"
 msgstr "Perjungti atgal į kanalą po imtuvo nustatymo?"
+
+msgid "Zap bouquets blindly on zap buttons"
+msgstr ""
 
 msgid "Zap down"
 msgstr ""
@@ -10328,6 +10452,9 @@ msgstr "juodas sąrašas"
 
 msgid "blue"
 msgstr "mėlynas"
+
+msgid "bottom"
+msgstr ""
 
 msgid "broadcasting/press"
 msgstr ""
@@ -10962,6 +11089,10 @@ msgstr "įrašas"
 msgid "red"
 msgstr "raudonas"
 
+#, fuzzy
+msgid "reliable"
+msgstr "įjungti"
+
 msgid "religion"
 msgstr ""
 
@@ -11260,6 +11391,9 @@ msgstr ""
 msgid "tourism/travel"
 msgstr ""
 
+msgid "traditional (fast)"
+msgstr ""
+
 msgid "true"
 msgstr ""
 
@@ -11458,10 +11592,6 @@ msgstr "įjungta"
 #~ msgid "Do you want to enable the parental control feature on your %s %s?"
 #~ msgstr "Jūs norite parsisiųsti atvaizdą į %s ?"
 
-#, fuzzy
-#~ msgid "Do you want to install a channel list?"
-#~ msgstr "Jūs norite įdiegti paketą:\n"
-
 #~ msgid "Download"
 #~ msgstr "Parsisiuntimas"
 
@@ -11615,6 +11745,10 @@ msgstr "įjungta"
 #~ msgid "Show the tv player..."
 #~ msgstr "Rodyti TV grotuvą ..."
 
+#, fuzzy
+#~ msgid "Silently zap between bouquets"
+#~ msgstr "Išsirinkite filmą"
+
 #~ msgid "Single transponder"
 #~ msgstr "Vienintelis transponderis"
 
@@ -11662,6 +11796,10 @@ msgstr "įjungta"
 
 #~ msgid "The wizard found a configuration backup. Do you want to restore your old settings from %s?"
 #~ msgstr "Vedlys surado konfigūracijos atsarginę kopiją. Jūs norite atkurti savo senus nustatymus iš %s?"
+
+#, fuzzy
+#~ msgid "Timer editor"
+#~ msgstr "Laikmačio redaktorius"
 
 #~ msgid "USB stick wizard"
 #~ msgstr "USB rakto vedlys"

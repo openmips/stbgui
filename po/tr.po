@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-15 14:56+0100\n"
+"POT-Creation-Date: 2016-04-28 16:35+0200\n"
 "PO-Revision-Date: 2016-03-14 20:22+0100\n"
 "Last-Translator: Apachi70\n"
 "Language-Team: Apachi70\n"
@@ -62,6 +62,12 @@ msgid ""
 msgstr ""
 "\n"
 "Alıcıdaki çalışan imajı  HDD veya USB aygıtlarına yedekle."
+
+#, fuzzy
+msgid ""
+"\n"
+"Conflict detection disabled!"
+msgstr "Çatışma çözüldü!"
 
 msgid ""
 "\n"
@@ -230,6 +236,10 @@ msgstr "%.0f GB"
 #, python-format
 msgid "%.0f MB"
 msgstr "%.0f MB"
+
+#, fuzzy, python-format
+msgid "%.2f GB"
+msgstr "%.0f GB"
 
 #, python-format
 msgid "%02d:%02d"
@@ -1020,6 +1030,9 @@ msgstr "Sanatçı"
 msgid "Arts/Culture"
 msgstr "GzlSntlr/Kültür"
 
+msgid "As defined by the skin"
+msgstr ""
+
 msgid "Ask user"
 msgstr "Sor"
 
@@ -1426,6 +1439,10 @@ msgstr ""
 "ilerleme, Timeshift veya (samba, takas ve nfsd gibi) bazı dış araçları bir rekor bu soruna neden olabilir.\n"
 "Bu eylemler / uygulamaları durdurmak ve tekrar deneyin"
 
+#, fuzzy
+msgid "Capabilities "
+msgstr "Kapasite: "
+
 msgid "Capacity: "
 msgstr "Kapasite: "
 
@@ -1523,7 +1540,8 @@ msgstr "Bölüm:"
 msgid "Check"
 msgstr "Kontrol et"
 
-msgid "Check disk terminated with success"
+#, fuzzy
+msgid "Check disk finished with success"
 msgstr "Disk kontrolü başarı ile sona erdi"
 
 msgid "Check the internet connection"
@@ -1548,9 +1566,9 @@ msgstr "Dosya sistemi kontrol ediliyor..."
 msgid "Checking the internet connection"
 msgstr "Internet bağlantısı kontrol ediliyor..."
 
-#, python-format
+#, fuzzy, python-format
 msgid ""
-"Checking tuner %d\n"
+"Checking tuner %s\n"
 "DiSEqC port %s for %s"
 msgstr ""
 "Tuner kontrolü%d\n"
@@ -1613,6 +1631,9 @@ msgstr "Kayıt günlüğünü sil"
 
 msgid "Clear playlist"
 msgstr "Çalma listesini temizle"
+
+msgid "ClientIP"
+msgstr ""
 
 msgid "Clock"
 msgstr "Saat"
@@ -1704,6 +1725,10 @@ msgstr "Bilgi çubuğu görünme süresini ayarla."
 
 msgid "Configure for how many minutes finished events should remain visible in the EPG. Useful when you need information about an event which has just finished, or has been delayed."
 msgstr "Biten olaylar EPG de kaç dakika görünmeli.  Kullanışlı, biten veya ertelenmiş bir olay hakkında bilgi gerektiğinde."
+
+#, fuzzy
+msgid "Configure how many channels are shown in the selection list."
+msgstr "Kanal seçim listesinde şifreleme simgelerinin nasıl gösterileceğini yapılandır."
 
 msgid "Configure how recording filenames are constructed."
 msgstr "Kayıt dosyaları nasıl isimlendirilmeli"
@@ -2230,6 +2255,10 @@ msgstr "DVD Burn"
 msgid "DVD File Browser"
 msgstr "DVD Dosya Gezgini"
 
+#, fuzzy
+msgid "DVD Menu"
+msgstr "Menü"
+
 msgid "DVD Titlelist"
 msgstr "DVD Başlık Listesi"
 
@@ -2449,6 +2478,9 @@ msgstr "DiSEqC-test ayarları"
 msgid "Diction"
 msgstr "Diksiyon"
 
+msgid "Did you see all eight arrow heads?"
+msgstr ""
+
 msgid "Digital contour removal"
 msgstr "Sayısal çerçeve kaldırma"
 
@@ -2587,6 +2619,9 @@ msgstr "%s isimli yer imini silmek istiyor musunuz?"
 msgid "Do you really want to unhold the plugin \"%s\"?"
 msgstr "gerçekten unhold için eklenti \"% s\" istiyor musunuz?"
 
+msgid "Do you see all the eight arrowheads?"
+msgstr ""
+
 msgid "Do you want this?"
 msgstr "Bunu istiyor musun?"
 
@@ -2613,6 +2648,10 @@ msgstr "Kanal araması yapmak ister misiniz?"
 msgid "Do you want to do another manual service scan?"
 msgstr "Başka kanal araması yapacak mısınız?"
 
+#, fuzzy
+msgid "Do you want to install a channel list?"
+msgstr ""
+
 msgid "Do you want to install the package:\n"
 msgstr "Seçilen paketi yüklemek istiyor musunuz?:\n"
 
@@ -2624,6 +2663,10 @@ msgstr "DVD'yi yazmadan önce önizleme yapmak istiyor musunuz?"
 
 msgid "Do you want to produce this collection?"
 msgstr "Bu koleksiyonu oluşturmak istiyor musunuz?"
+
+#, fuzzy
+msgid "Do you want to quit the overscan wizard?"
+msgstr "Sihirbazdan çıkmak istiyor musunuz?"
 
 msgid "Do you want to reboot your Receiver?"
 msgstr "Alıcıyı yeniden başlatmak istiyor musunuz?"
@@ -2639,6 +2682,10 @@ msgstr "Ayarlarınızı geri yüklemek istiyor musunuz?"
 
 msgid "Do you want to resume this playback?"
 msgstr "Oynatmaya kaldığınız yerden devam etmek istiyor musunuz?"
+
+#, fuzzy
+msgid "Do you want to select a different skin?"
+msgstr "Kanal araması yapmak ister misiniz?"
 
 msgid "Do you want to update your Receiver?"
 msgstr "Alıcıyı güncellemek istiyor musunuz?"
@@ -3310,7 +3357,8 @@ msgstr "Biçimlendir"
 msgid "Format as"
 msgstr "Olarak biçimlendir"
 
-msgid "Format terminated with success"
+#, fuzzy
+msgid "Format finished with success"
 msgstr "Biçimlendirme başarı ile sonlandırıldı"
 
 msgid "Format/Partition your Devices and manage Mountpoints"
@@ -3972,6 +4020,13 @@ msgstr "Bu video modu iyi mi?"
 
 msgid "It follows:"
 msgstr "Takip eder:"
+
+msgid ""
+"It seems you did not see all the eight arrow heads. This means your TV is has overscan enabled, and is not configured properly.\n"
+"\n"
+"Please refer to your TVs manual to find how you can disable overscan on your TV. Look for terms like 'Just fit', 'Full width', etc. If you can't find it, ask other users at http://forums.openpli.org.\n"
+"\n"
+msgstr ""
 
 msgid "Italian"
 msgstr "İtalyanca"
@@ -4777,6 +4832,9 @@ msgstr "Servis/sağlayıcı seçilmedi"
 msgid "No standby"
 msgstr "Beklemede değil"
 
+msgid "No streaming Channel from this STB at this moment"
+msgstr ""
+
 msgid "No suitable sat tuner found!"
 msgstr "Hiç bir Uygun sat tuner bulunamadi!"
 
@@ -4937,6 +4995,10 @@ msgstr "Simdi, kontrast ayarlarını kullanarak arka zemin üzerinde, ekrandaki 
 msgid "Number of channel number digits"
 msgstr "kanal numarası hane sayısı"
 
+#, fuzzy
+msgid "Number of channels shown in channel selection list"
+msgstr "Kanal seçim ekranında kanal numaralarını göster"
+
 msgid "Number of repeating text on display."
 msgstr "Ekranda metin tekrarlayarak sayısı."
 
@@ -5038,6 +5100,13 @@ msgstr "Diğer"
 
 msgid "Overall progress:"
 msgstr "Genel ilerleme:"
+
+msgid "Overscan Wizard"
+msgstr ""
+
+#, fuzzy
+msgid "Overscan wizard"
+msgstr "Ağ kurulum sihirbazı"
 
 msgid "Overwrite Bootlogo Files ?"
 msgstr "Bootlogo dosyaları üzerine yaz?"
@@ -6948,7 +7017,8 @@ msgstr "Sadece bulundu görüntü ve MTD bölümleri göster.\n"
 msgid "Show packages to be upgraded"
 msgstr "Göster paketleri yükseltilecek"
 
-msgid "Show picons in channel list"
+#, fuzzy
+msgid "Show picons in channel selection list"
 msgstr "Kanal listesinde simgeleri göster"
 
 msgid "Show positioner movement"
@@ -6956,6 +7026,10 @@ msgstr "Pozisyoner hareketini göster"
 
 msgid "Show positioner position"
 msgstr "Pozisyoner konumunu göster"
+
+#, fuzzy
+msgid "Show record clock icons"
+msgstr "Şifre simgelerini göster"
 
 msgid "Show record indicator"
 msgstr "Ikinci bilgi çubuğunu göster"
@@ -7014,6 +7088,10 @@ msgstr "Uyarı göster önce 'çatışma Yoksa set"
 msgid "Show warning when timeshift is stopped"
 msgstr "Zaman kaydırma durduğunda uyarı göster"
 
+#, fuzzy
+msgid "Show/hide window"
+msgstr "Bilgi göster"
+
 msgid "Shows live tv or informations on LCD."
 msgstr "LCD ekranda bilgileri veya yayını göster"
 
@@ -7049,9 +7127,6 @@ msgstr "Sinyal gücü:"
 
 msgid "Signal: "
 msgstr "Sinyal:"
-
-msgid "Silently zap between bouquets"
-msgstr "Sessizce buketler arasında geçiş yapmasına"
 
 msgid "Similar"
 msgstr "Benzer"
@@ -7821,6 +7896,29 @@ msgstr ""
 "Ağ sihirbazı eklentisi yüklü değil!\n"
 "Lütfen yükleyin."
 
+msgid ""
+"The overscan wizard has been completed.\n"
+"\n"
+"Note: you can always start the Overscan Wizard later,  via\n"
+"\n"
+"menu->settings->system->userinterface->position & size"
+msgstr ""
+
+msgid ""
+"The overscan wizard helps you to setup your TV in the correct way.\n"
+"\n"
+"For the majority of TV's, the factory default is to have overscan enabled. This means you are always watching a \"zoomed in\" picture instead of real HD, and parts of the user inferface (skin) may be invisible.\n"
+"\n"
+"The yellow area means a 5% border area of a full HD picture will be invisible.\n"
+"The green area means a 10% border area of a full HD picture will be invisible.\n"
+"\n"
+"In other words, if the yellow box meets all for sides of your screen, then you have at least 5% overscan on all sides.\n"
+"\n"
+"If you see the tips of all eight arrowheads, then your TV has overscan disabled.\n"
+"\n"
+"Test Pattern by TigerDave - www.tigerdave.com/ht_menu.htm"
+msgstr ""
+
 #, python-format
 msgid "The path %s already exists."
 msgstr "%s yolu zaten var."
@@ -7860,6 +7958,9 @@ msgid ""
 msgstr ""
 "Unicable bağlantı ayarı yanlıştır.\n"
 " tuner Belki özyinelemeli bağlantısı."
+
+msgid "The user interface of the receiver will now restart to select the selected skin"
+msgstr ""
 
 #, python-format
 msgid "The user interface of your %s %s is restarting"
@@ -8150,9 +8251,6 @@ msgstr "zamanlayıcı Genel bakış"
 msgid "Timer edit"
 msgstr "Zamanlayıcı ayarı"
 
-msgid "Timer editor"
-msgstr "Zamanlayıcı düzenle"
-
 msgid "Timer entry"
 msgstr "Zamanlayıcı girişi"
 
@@ -8256,12 +8354,20 @@ msgstr "Toneburst A/B"
 msgid "Top and bottom"
 msgstr "Üst ve alt"
 
+#, fuzzy
+msgid "Total Clients streaming: "
+msgstr "Toplam istemcileri:% d (% s)"
+
 #, python-format
 msgid "Total clients streaming: %d (%s)"
 msgstr "Toplam istemcileri:% d (% s)"
 
 msgid "Track"
 msgstr "İz"
+
+#, fuzzy
+msgid "Transcode"
+msgstr "Transponder"
 
 msgid "Transcoding: "
 msgstr "Transcoding: "
@@ -8347,6 +8453,9 @@ msgstr "Tuner durumu %s"
 
 msgid "Tuner type"
 msgstr "Tuner tipi"
+
+msgid "Tuning algorithm"
+msgstr ""
 
 msgid "Turkish"
 msgstr "Türkçe"
@@ -8864,9 +8973,6 @@ msgstr "Film izleyin ..."
 msgid "Watch recordings..."
 msgstr "Kayıtları izleyin ..."
 
-msgid "Weather GigaBlue Pax"
-msgstr "GigaBlue Pax Hava Durumu"
-
 msgid "Weather ID"
 msgstr "Hava Durumu Kimliği"
 
@@ -9274,9 +9380,6 @@ msgstr "Evet, film listesine dön"
 msgid "Yesterday"
 msgstr "Dün"
 
-msgid "Your PIN code is 0000. This is the default PIN code and it disable parental control!\n"
-msgstr "PIN kodu Bu, varsayılan PIN kodu olduğunu ve ebeveyn kontrolü devre dışı 0000'dır!\n"
-
 #, python-format
 msgid ""
 "You already have a bootlogo installed,\n"
@@ -9323,6 +9426,27 @@ msgstr "Bu eklentiyi kaldırabilirsiniz."
 
 msgid "You cannot delete this!"
 msgstr "Bunu silemezsiniz!"
+
+msgid ""
+"You did not see all eight arrow heads. This means your TV has overscan enabled and presents you with a zoomed-in picture, causing you to loose part of a full HD screen. In addition this you may also miss parts of the user interface, for example volume bars and more.\n"
+"\n"
+"Unfortunately, your model of receiver is not capable to adjust the dimensions of the user interface. If not everything is visible, you should change the installed skin to one that supports the overscan area of your TV.\n"
+"\n"
+"When you select a different skin, the user interface of your receiver will restart.\n"
+"\n"
+"Note: you can always start the Overscan Wizard later,  via\n"
+"\n"
+"menu->settings->system->userinterface->position & size"
+msgstr ""
+
+msgid ""
+"You did not see all eight arrow heads. This means your TV has overscan enabled and presents you with a zoomed-in picture, causing you to loose part of a full HD screen. In addition this you may also miss parts of the user interface, for example volume bars and more.\n"
+"\n"
+"You can now try to resize and change the position of the user interface until you see the eight arrow heads.\n"
+"\n"
+"When done press OK.\n"
+"\n"
+msgstr ""
 
 msgid "You didn't select a channel to record from."
 msgstr "Kayıt için bir kanal seçmediniz."
@@ -9403,6 +9527,9 @@ msgstr ""
 "Sen plug-in için USB-flash sürücü geri yüklemek için görüntü ile gerek.\n"
 "senin GigaBlue Güç ve yedek resminizi yanıp sönebilir.\n"
 "Eğer ayarlarınızı geri yükleyebilirsiniz yanıp söndükten sonra."
+
+msgid "Your PIN code is 0000. This is the default PIN code and it disable parental control!\n"
+msgstr "PIN kodu Bu, varsayılan PIN kodu olduğunu ve ebeveyn kontrolü devre dışı 0000'dır!\n"
 
 msgid "Your Receiver isn't connected to the internet properly. Please check it and try again."
 msgstr "Alıcı internete uygun şekilde bağlı değil.Lütfen kontrol edin ve tekrar deneyin."
@@ -9526,6 +9653,9 @@ msgstr "Pozisyoner kurulumundan çıkıldığında seyrettiğiniz kanala dönmek
 
 msgid "Zap back to service before tuner setup?"
 msgstr "Tuner ayarlarından çıkıldığında seyrettiğiniz kanala dönmek istiyor musunuz?"
+
+msgid "Zap bouquets blindly on zap buttons"
+msgstr ""
 
 msgid "Zap down"
 msgstr "aşağı zap"
@@ -9746,6 +9876,10 @@ msgstr "kara liste"
 
 msgid "blue"
 msgstr "mavi"
+
+#, fuzzy
+msgid "bottom"
+msgstr "Üst ve alt"
 
 msgid "broadcasting/press"
 msgstr "yayıncılık/basın"
@@ -10367,6 +10501,10 @@ msgstr "inetd kurtar"
 msgid "red"
 msgstr "kırmızı"
 
+#, fuzzy
+msgid "reliable"
+msgstr "etkinleştir"
+
 msgid "religion"
 msgstr "dini"
 
@@ -10656,6 +10794,10 @@ msgstr "üst"
 
 msgid "tourism/travel"
 msgstr "Turizm/Seyahat"
+
+#, fuzzy
+msgid "traditional (fast)"
+msgstr "halk müziği / geleneksel müzik"
 
 msgid "true"
 msgstr "doğru"
@@ -10990,12 +11132,18 @@ msgstr "kanal değiştirildi"
 #~ msgid "Side by Side"
 #~ msgstr "Yan Yana"
 
+#~ msgid "Silently zap between bouquets"
+#~ msgstr "Sessizce buketler arasında geçiş yapmasına"
+
 #, fuzzy
 #~ msgid "System Message"
 #~ msgstr "Mesaj"
 
 #~ msgid "Text Box"
 #~ msgstr "Metin Kutusu"
+
+#~ msgid "Timer editor"
+#~ msgstr "Zamanlayıcı düzenle"
 
 #~ msgid "Top and Bottom"
 #~ msgstr "Üst ve Alt"
@@ -11005,6 +11153,9 @@ msgstr "kanal değiştirildi"
 
 #~ msgid "Virtual KeyBoard"
 #~ msgstr "Sanal Klavye"
+
+#~ msgid "Weather GigaBlue Pax"
+#~ msgstr "GigaBlue Pax Hava Durumu"
 
 #~ msgid "Welcome…"
 #~ msgstr "Hoşgeldiniz…"
