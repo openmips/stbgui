@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-15 14:56+0100\n"
+"POT-Creation-Date: 2016-04-28 16:35+0200\n"
 "PO-Revision-Date: 2015-01-29 17:40+0200\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -63,6 +63,11 @@ msgid ""
 msgstr ""
 "\n"
 "Backup de ontvangerinstellingen."
+
+msgid ""
+"\n"
+"Conflict detection disabled!"
+msgstr ""
 
 msgid ""
 "\n"
@@ -230,6 +235,10 @@ msgstr ""
 
 #, python-format
 msgid "%.0f MB"
+msgstr ""
+
+#, python-format
+msgid "%.2f GB"
 msgstr ""
 
 #, fuzzy, python-format
@@ -1057,6 +1066,9 @@ msgstr "Artiest"
 msgid "Arts/Culture"
 msgstr "kunst / cultuur"
 
+msgid "As defined by the skin"
+msgstr ""
+
 msgid "Ask user"
 msgstr "Vraag gebruiker"
 
@@ -1476,6 +1488,10 @@ msgid ""
 "Please stop this actions/applications and try again"
 msgstr ""
 
+#, fuzzy
+msgid "Capabilities "
+msgstr "Capaciteit: "
+
 msgid "Capacity: "
 msgstr "Capaciteit: "
 
@@ -1576,7 +1592,7 @@ msgstr "Hoofdstuk:"
 msgid "Check"
 msgstr "Controleer"
 
-msgid "Check disk terminated with success"
+msgid "Check disk finished with success"
 msgstr ""
 
 msgid "Check the internet connection"
@@ -1603,9 +1619,9 @@ msgstr "Controleert bestandssysteem..."
 msgid "Checking the internet connection"
 msgstr "Controleert de internetverbinding"
 
-#, python-format
+#, fuzzy, python-format
 msgid ""
-"Checking tuner %d\n"
+"Checking tuner %s\n"
 "DiSEqC port %s for %s"
 msgstr ""
 "Controleert tuner %d\n"
@@ -1674,6 +1690,9 @@ msgstr "Log wissen"
 
 msgid "Clear playlist"
 msgstr "Afspeellijst leeg maken"
+
+msgid "ClientIP"
+msgstr ""
 
 #, fuzzy
 msgid "Clock"
@@ -1780,6 +1799,13 @@ msgstr ""
 "Configureer hoe lang afgelopen programma's zichtbaar moet blijven in de EPG. Dit is vooral handig indien u informatie wenst over een programma wat net afgelopen is, of vertraagd is.\n"
 "\n"
 "U kunt kiezen tussen 0-120 min in stappen van 15 min."
+
+#, fuzzy
+msgid "Configure how many channels are shown in the selection list."
+msgstr ""
+"Indien geactiveerd kunt u aangeven of en waar het \"gecodeerd\" icoon weergegeven wordt in de zenderlijst.\n"
+"\n"
+"U kunt kiezen uit links of rechts van de kanaalnaam, of geen weergave."
 
 msgid "Configure how recording filenames are constructed."
 msgstr ""
@@ -2474,6 +2500,10 @@ msgid "DVD File Browser"
 msgstr "DVD bestandszoeker"
 
 #, fuzzy
+msgid "DVD Menu"
+msgstr "Menu"
+
+#, fuzzy
 msgid "DVD Titlelist"
 msgstr "DVD titellijst"
 
@@ -2703,6 +2733,9 @@ msgstr "DiSEqC tester instellingen"
 msgid "Diction"
 msgstr "Beschrijving"
 
+msgid "Did you see all eight arrow heads?"
+msgstr ""
+
 msgid "Digital contour removal"
 msgstr "Digitale contour verwijderen"
 
@@ -2849,6 +2882,9 @@ msgstr ""
 "Wilt u echt de plugin \n"
 "\"%s\" downloaden?"
 
+msgid "Do you see all the eight arrowheads?"
+msgstr ""
+
 msgid "Do you want this?"
 msgstr "Wilt u dit doen?"
 
@@ -2874,6 +2910,9 @@ msgstr "Wilt u nu zenders gaan zoeken?"
 msgid "Do you want to do another manual service scan?"
 msgstr "Wilt u opnieuw handmatig zoeken?"
 
+msgid "Do you want to install a channel list?"
+msgstr "Wilt u een zenderlijst installeren?"
+
 msgid "Do you want to install the package:\n"
 msgstr "Wilt u dit pakket installeren:\n"
 
@@ -2886,6 +2925,10 @@ msgstr "Wilt u de DVD bekijken alvorens deze te branden?"
 #, fuzzy
 msgid "Do you want to produce this collection?"
 msgstr "Wilt u deze selectie op een DVD branden?"
+
+#, fuzzy
+msgid "Do you want to quit the overscan wizard?"
+msgstr "Wilt u deze wizard afsluiten?"
 
 #, fuzzy
 msgid "Do you want to reboot your Receiver?"
@@ -2902,6 +2945,10 @@ msgstr "Wilt u uw instellingen nu terugzetten?"
 
 msgid "Do you want to resume this playback?"
 msgstr "Wilt u het afspelen vervolgen?"
+
+#, fuzzy
+msgid "Do you want to select a different skin?"
+msgstr "Wilt u nu zenders gaan zoeken?"
 
 #, fuzzy
 msgid "Do you want to update your Receiver?"
@@ -3613,7 +3660,7 @@ msgstr "Formaat"
 msgid "Format as"
 msgstr "Formaat"
 
-msgid "Format terminated with success"
+msgid "Format finished with success"
 msgstr ""
 
 msgid "Format/Partition your Devices and manage Mountpoints"
@@ -4309,6 +4356,13 @@ msgid "Is this video mode ok?"
 msgstr "Is deze videomode correct?"
 
 msgid "It follows:"
+msgstr ""
+
+msgid ""
+"It seems you did not see all the eight arrow heads. This means your TV is has overscan enabled, and is not configured properly.\n"
+"\n"
+"Please refer to your TVs manual to find how you can disable overscan on your TV. Look for terms like 'Just fit', 'Full width', etc. If you can't find it, ask other users at http://forums.openpli.org.\n"
+"\n"
 msgstr ""
 
 msgid "Italian"
@@ -5138,6 +5192,9 @@ msgstr "Geen zender / provider gekozen"
 msgid "No standby"
 msgstr "Geen standby"
 
+msgid "No streaming Channel from this STB at this moment"
+msgstr ""
+
 msgid "No suitable sat tuner found!"
 msgstr "Geen passende satelliettuner gevonden!"
 
@@ -5299,6 +5356,10 @@ msgstr ""
 msgid "Number of channel number digits"
 msgstr "Gebruik officiële kanaalvolgorde"
 
+#, fuzzy
+msgid "Number of channels shown in channel selection list"
+msgstr "Toon kanaalnummers in zender selectie"
+
 msgid "Number of repeating text on display."
 msgstr ""
 
@@ -5410,6 +5471,13 @@ msgstr "Anders"
 #, fuzzy
 msgid "Overall progress:"
 msgstr "Kleine stapjes voorwaarts"
+
+msgid "Overscan Wizard"
+msgstr ""
+
+#, fuzzy
+msgid "Overscan wizard"
+msgstr "Netwerkwizard"
 
 #, fuzzy
 msgid "Overwrite Bootlogo Files ?"
@@ -7458,7 +7526,8 @@ msgstr ""
 msgid "Show packages to be upgraded"
 msgstr "Pakketlijst vernieuwen"
 
-msgid "Show picons in channel list"
+#, fuzzy
+msgid "Show picons in channel selection list"
 msgstr "Toon de picons in de zenderlijst"
 
 msgid "Show positioner movement"
@@ -7467,6 +7536,10 @@ msgstr "Rotorbewegingen zichtbaar"
 #, fuzzy
 msgid "Show positioner position"
 msgstr "Rotorbewegingen zichtbaar"
+
+#, fuzzy
+msgid "Show record clock icons"
+msgstr "Toon icoon indien gecodeerd"
 
 msgid "Show record indicator"
 msgstr "Toon opname indicatie"
@@ -7534,6 +7607,10 @@ msgstr ""
 msgid "Show warning when timeshift is stopped"
 msgstr "Toon een waarschuwing indien de timeshift is gestopt"
 
+#, fuzzy
+msgid "Show/hide window"
+msgstr "Toon de informatie"
+
 msgid "Shows live tv or informations on LCD."
 msgstr ""
 
@@ -7571,10 +7648,6 @@ msgstr "Signaalsterkte:"
 
 msgid "Signal: "
 msgstr "Signaal:"
-
-#, fuzzy
-msgid "Silently zap between bouquets"
-msgstr "Kies een bouquet"
 
 msgid "Similar"
 msgstr "Gelijksoortig"
@@ -8384,6 +8457,29 @@ msgstr ""
 "De netwerkwizard-plugin is niet geïnstalleerd!\n"
 "Installeer deze aub."
 
+msgid ""
+"The overscan wizard has been completed.\n"
+"\n"
+"Note: you can always start the Overscan Wizard later,  via\n"
+"\n"
+"menu->settings->system->userinterface->position & size"
+msgstr ""
+
+msgid ""
+"The overscan wizard helps you to setup your TV in the correct way.\n"
+"\n"
+"For the majority of TV's, the factory default is to have overscan enabled. This means you are always watching a \"zoomed in\" picture instead of real HD, and parts of the user inferface (skin) may be invisible.\n"
+"\n"
+"The yellow area means a 5% border area of a full HD picture will be invisible.\n"
+"The green area means a 10% border area of a full HD picture will be invisible.\n"
+"\n"
+"In other words, if the yellow box meets all for sides of your screen, then you have at least 5% overscan on all sides.\n"
+"\n"
+"If you see the tips of all eight arrowheads, then your TV has overscan disabled.\n"
+"\n"
+"Test Pattern by TigerDave - www.tigerdave.com/ht_menu.htm"
+msgstr ""
+
 #, python-format
 msgid "The path %s already exists."
 msgstr "Het pad %s bestaat al."
@@ -8421,6 +8517,9 @@ msgstr "Het timer bestand (timer.xml) is beschadigd en kan niet worden geladen."
 msgid ""
 "The unicable connection setting is wrong.\n"
 " Maybe recursive connection of tuners."
+msgstr ""
+
+msgid "The user interface of the receiver will now restart to select the selected skin"
 msgstr ""
 
 #, fuzzy, python-format
@@ -8710,9 +8809,6 @@ msgstr "Timeroverzicht"
 msgid "Timer edit"
 msgstr "Timer bewerken"
 
-msgid "Timer editor"
-msgstr "Timereditor"
-
 msgid "Timer entry"
 msgstr "Timerinvoer"
 
@@ -8819,12 +8915,19 @@ msgstr "Toneburst A/B"
 msgid "Top and bottom"
 msgstr "Boven en onderzijde"
 
+msgid "Total Clients streaming: "
+msgstr ""
+
 #, python-format
 msgid "Total clients streaming: %d (%s)"
 msgstr ""
 
 msgid "Track"
 msgstr "Spoor"
+
+#, fuzzy
+msgid "Transcode"
+msgstr "Transponder"
 
 #, fuzzy
 msgid "Transcoding: "
@@ -8917,6 +9020,9 @@ msgstr "Tunerstatus %s"
 
 msgid "Tuner type"
 msgstr "Tunertype"
+
+msgid "Tuning algorithm"
+msgstr ""
 
 msgid "Turkish"
 msgstr "Turks"
@@ -9449,9 +9555,6 @@ msgstr "Films bekijken....."
 msgid "Watch recordings..."
 msgstr "Opnames bekijken..."
 
-msgid "Weather GigaBlue Pax"
-msgstr ""
-
 msgid "Weather ID"
 msgstr ""
 
@@ -9892,9 +9995,6 @@ msgstr "Ja, terug naar de opname lijst"
 msgid "Yesterday"
 msgstr "Gisteren"
 
-msgid "Your PIN code is 0000. This is the default PIN code and it disable parental control!\n"
-msgstr ""
-
 #, fuzzy, python-format
 msgid ""
 "You already have a bootlogo installed,\n"
@@ -9942,6 +10042,27 @@ msgstr "Deze plugin kunt u verwijderen."
 
 msgid "You cannot delete this!"
 msgstr "U kunt dit niet wissen!"
+
+msgid ""
+"You did not see all eight arrow heads. This means your TV has overscan enabled and presents you with a zoomed-in picture, causing you to loose part of a full HD screen. In addition this you may also miss parts of the user interface, for example volume bars and more.\n"
+"\n"
+"Unfortunately, your model of receiver is not capable to adjust the dimensions of the user interface. If not everything is visible, you should change the installed skin to one that supports the overscan area of your TV.\n"
+"\n"
+"When you select a different skin, the user interface of your receiver will restart.\n"
+"\n"
+"Note: you can always start the Overscan Wizard later,  via\n"
+"\n"
+"menu->settings->system->userinterface->position & size"
+msgstr ""
+
+msgid ""
+"You did not see all eight arrow heads. This means your TV has overscan enabled and presents you with a zoomed-in picture, causing you to loose part of a full HD screen. In addition this you may also miss parts of the user interface, for example volume bars and more.\n"
+"\n"
+"You can now try to resize and change the position of the user interface until you see the eight arrow heads.\n"
+"\n"
+"When done press OK.\n"
+"\n"
+msgstr ""
 
 msgid "You didn't select a channel to record from."
 msgstr "U heeft geen kanaal geselecteerd om van op te nemen."
@@ -10016,6 +10137,9 @@ msgid ""
 "You need to plug-in your USB-flash drive with your image to restore.\n"
 "Power on your GigaBlue and you can flash your backup image.\n"
 "After flashing you can restore your settings."
+msgstr ""
+
+msgid "Your PIN code is 0000. This is the default PIN code and it disable parental control!\n"
 msgstr ""
 
 msgid "Your Receiver isn't connected to the internet properly. Please check it and try again."
@@ -10130,6 +10254,9 @@ msgstr "Wilt u terugkeren naar de vorige zender?"
 
 msgid "Zap back to service before tuner setup?"
 msgstr "Wilt u terug naar het vorige kanaal"
+
+msgid "Zap bouquets blindly on zap buttons"
+msgstr ""
 
 #, fuzzy
 msgid "Zap down"
@@ -10359,6 +10486,10 @@ msgstr "zwarte lijst"
 
 msgid "blue"
 msgstr "blauw"
+
+#, fuzzy
+msgid "bottom"
+msgstr "Boven en onderzijde"
 
 msgid "broadcasting/press"
 msgstr "feeds / pers"
@@ -10990,6 +11121,10 @@ msgstr "opname"
 msgid "red"
 msgstr "rood"
 
+#, fuzzy
+msgid "reliable"
+msgstr "activeren"
+
 msgid "religion"
 msgstr "religie"
 
@@ -11288,6 +11423,10 @@ msgstr "top"
 msgid "tourism/travel"
 msgstr "toerisme / reizen"
 
+#, fuzzy
+msgid "traditional (fast)"
+msgstr "Folk / Traditionele muziek"
+
 msgid "true"
 msgstr "juist"
 
@@ -11533,9 +11672,6 @@ msgstr "zapte"
 #~ msgid "Do you want to enable the parental control feature on your %s %s?"
 #~ msgstr "Wilt u de image naar %s downloaden?"
 
-#~ msgid "Do you want to install a channel list?"
-#~ msgstr "Wilt u een zenderlijst installeren?"
-
 #~ msgid "Do you want to update your receiver to %s?"
 #~ msgstr "Wilt u uw ontvanger updaten naar %s?"
 
@@ -11756,6 +11892,10 @@ msgstr "zapte"
 #~ msgid "Side by Side"
 #~ msgstr "Naast elkaar"
 
+#, fuzzy
+#~ msgid "Silently zap between bouquets"
+#~ msgstr "Kies een bouquet"
+
 #~ msgid "Single transponder"
 #~ msgstr "Eén transponder"
 
@@ -11835,6 +11975,9 @@ msgstr "zapte"
 #~ "Deze plugin creëert een USB stick die gebruikt kan worden om de firmware te updaten zonder noodzaak van een netwerkverbinding. Bekabeld of via wifi. Allereerst moet de stick bootable gemaakt worden.\n"
 #~ "Bij de volgende stap kan je een NFI image downloaden van de updateserver. Sla deze vervolgens op de stick op.\n"
 #~ "Indien je al een voorbereide en bootable USBstick gereed hebt, steek deze nu in de receiver. Anders plaats een USB stick met een minimale ruimte van 64MB! "
+
+#~ msgid "Timer editor"
+#~ msgstr "Timereditor"
 
 #~ msgid ""
 #~ "To update your receiver firmware, please follow these steps:\n"

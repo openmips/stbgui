@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-15 14:56+0100\n"
+"POT-Creation-Date: 2016-04-28 16:35+0200\n"
 "PO-Revision-Date: 2015-01-29 17:40+0200\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -64,6 +64,11 @@ msgid ""
 msgstr ""
 "\n"
 "Бэкап налаштувань вашого ресиверу."
+
+msgid ""
+"\n"
+"Conflict detection disabled!"
+msgstr ""
 
 msgid ""
 "\n"
@@ -231,6 +236,10 @@ msgstr ""
 
 #, python-format
 msgid "%.0f MB"
+msgstr ""
+
+#, python-format
+msgid "%.2f GB"
 msgstr ""
 
 #, fuzzy, python-format
@@ -1067,6 +1076,9 @@ msgstr "Артист"
 msgid "Arts/Culture"
 msgstr "Мистецтво / Культура"
 
+msgid "As defined by the skin"
+msgstr ""
+
 msgid "Ask user"
 msgstr "Запитати користувача"
 
@@ -1483,6 +1495,10 @@ msgid ""
 "Please stop this actions/applications and try again"
 msgstr ""
 
+#, fuzzy
+msgid "Capabilities "
+msgstr "Ємність: "
+
 msgid "Capacity: "
 msgstr "Ємність: "
 
@@ -1583,7 +1599,7 @@ msgstr "Розділ:"
 msgid "Check"
 msgstr "Перевірка"
 
-msgid "Check disk terminated with success"
+msgid "Check disk finished with success"
 msgstr ""
 
 msgid "Check the internet connection"
@@ -1610,9 +1626,9 @@ msgstr "Перевірка Файлової системи..."
 msgid "Checking the internet connection"
 msgstr "Перевірка інтернет з'єднання"
 
-#, python-format
+#, fuzzy, python-format
 msgid ""
-"Checking tuner %d\n"
+"Checking tuner %s\n"
 "DiSEqC port %s for %s"
 msgstr ""
 "Перевірка тюнера %d\n"
@@ -1681,6 +1697,9 @@ msgstr "Очистити лог"
 
 msgid "Clear playlist"
 msgstr "Очистити список відтворення"
+
+msgid "ClientIP"
+msgstr ""
 
 #, fuzzy
 msgid "Clock"
@@ -1775,6 +1794,10 @@ msgstr "Вкажіть, як довго інфобар залишатиметь�
 
 msgid "Configure for how many minutes finished events should remain visible in the EPG. Useful when you need information about an event which has just finished, or has been delayed."
 msgstr "Дозволяє показати дані EPG про минулі події. Зручно коли хочетезнати щось про передачу, яка ось-ось закінчиться або тільки щозакінчилася (у хвилинах)."
+
+#, fuzzy
+msgid "Configure how many channels are shown in the selection list."
+msgstr "Налаштування відображення піконів в списку каналів "
 
 msgid "Configure how recording filenames are constructed."
 msgstr "Налаштування способу складання імен записуваних файлів."
@@ -2321,6 +2344,10 @@ msgid "DVD File Browser"
 msgstr "Повернутися в провідник"
 
 #, fuzzy
+msgid "DVD Menu"
+msgstr "Меню"
+
+#, fuzzy
 msgid "DVD Titlelist"
 msgstr "білий список"
 
@@ -2550,6 +2577,9 @@ msgstr "Тест налаштувань DiSEqC"
 msgid "Diction"
 msgstr "Опис"
 
+msgid "Did you see all eight arrow heads?"
+msgstr ""
+
 msgid "Digital contour removal"
 msgstr "Цифрове видалення контуру"
 
@@ -2695,6 +2725,9 @@ msgstr ""
 "Ви дійсно бажаєте завантажити\n"
 "плагін \"%s\"?"
 
+msgid "Do you see all the eight arrowheads?"
+msgstr ""
+
 msgid "Do you want this?"
 msgstr ""
 
@@ -2720,6 +2753,9 @@ msgstr "Ви хочете почати сканування?"
 msgid "Do you want to do another manual service scan?"
 msgstr "Ви хочете зробити ще одне ручне сканування?"
 
+msgid "Do you want to install a channel list?"
+msgstr "Ви дійсно хочете встановити список каналів?"
+
 msgid "Do you want to install the package:\n"
 msgstr "Ви хочете встановити пакет:\n"
 
@@ -2732,6 +2768,10 @@ msgstr "Ви хочете переглянути DVD перед пропален
 #, fuzzy
 msgid "Do you want to produce this collection?"
 msgstr "Ви хочете пропалити цю колекцію на DVD носій?"
+
+#, fuzzy
+msgid "Do you want to quit the overscan wizard?"
+msgstr "Ви впевнені, що хочете вийти з цього майстра?"
 
 #, fuzzy
 msgid "Do you want to reboot your Receiver?"
@@ -2748,6 +2788,10 @@ msgstr "Ви хочете відновити ваші установки?"
 
 msgid "Do you want to resume this playback?"
 msgstr "Ви хочете продовжити відтворення?"
+
+#, fuzzy
+msgid "Do you want to select a different skin?"
+msgstr "Ви хочете почати сканування?"
 
 #, fuzzy
 msgid "Do you want to update your Receiver?"
@@ -3453,7 +3497,7 @@ msgstr "Формат"
 msgid "Format as"
 msgstr "Формат"
 
-msgid "Format terminated with success"
+msgid "Format finished with success"
 msgstr ""
 
 msgid "Format/Partition your Devices and manage Mountpoints"
@@ -4146,6 +4190,13 @@ msgid "Is this video mode ok?"
 msgstr "Встановити даний відеорежим?"
 
 msgid "It follows:"
+msgstr ""
+
+msgid ""
+"It seems you did not see all the eight arrow heads. This means your TV is has overscan enabled, and is not configured properly.\n"
+"\n"
+"Please refer to your TVs manual to find how you can disable overscan on your TV. Look for terms like 'Just fit', 'Full width', etc. If you can't find it, ask other users at http://forums.openpli.org.\n"
+"\n"
 msgstr ""
 
 msgid "Italian"
@@ -4973,6 +5024,9 @@ msgstr "Не вибрані канали/провайдери"
 msgid "No standby"
 msgstr "Не переходить в Режим очікування"
 
+msgid "No streaming Channel from this STB at this moment"
+msgstr ""
+
 msgid "No suitable sat tuner found!"
 msgstr ""
 
@@ -5131,6 +5185,10 @@ msgstr "Тепер використовуйте налаштування кон�
 msgid "Number of channel number digits"
 msgstr "Офіційна нумерація каналів"
 
+#, fuzzy
+msgid "Number of channels shown in channel selection list"
+msgstr "Показати номер каналу в селекторі каналів"
+
 msgid "Number of repeating text on display."
 msgstr ""
 
@@ -5243,6 +5301,13 @@ msgstr "Інша"
 #, fuzzy
 msgid "Overall progress:"
 msgstr "Маленький прогресс"
+
+msgid "Overscan Wizard"
+msgstr ""
+
+#, fuzzy
+msgid "Overscan wizard"
+msgstr "Майстер налаштування мережі"
 
 #, fuzzy
 msgid "Overwrite Bootlogo Files ?"
@@ -7297,7 +7362,8 @@ msgstr ""
 msgid "Show packages to be upgraded"
 msgstr "Список пакетів оновлення"
 
-msgid "Show picons in channel list"
+#, fuzzy
+msgid "Show picons in channel selection list"
 msgstr "Показати Пікони в списку каналів"
 
 msgid "Show positioner movement"
@@ -7306,6 +7372,10 @@ msgstr "Показати рух позіционеру"
 #, fuzzy
 msgid "Show positioner position"
 msgstr "Показати рух позіционеру"
+
+#, fuzzy
+msgid "Show record clock icons"
+msgstr "Показати другий інфобар"
 
 #, fuzzy
 msgid "Show record indicator"
@@ -7374,6 +7444,10 @@ msgstr ""
 msgid "Show warning when timeshift is stopped"
 msgstr "Показати попередження при зупинці timeshift"
 
+#, fuzzy
+msgid "Show/hide window"
+msgstr "Показати інфо"
+
 msgid "Shows live tv or informations on LCD."
 msgstr ""
 
@@ -7411,10 +7485,6 @@ msgstr "Сила сигналу:"
 
 msgid "Signal: "
 msgstr "Сигнал: "
-
-#, fuzzy
-msgid "Silently zap between bouquets"
-msgstr "Вибрати фаворит (букет)"
 
 msgid "Similar"
 msgstr "Аналогічний"
@@ -8222,6 +8292,29 @@ msgstr ""
 "Плагін Witeless LAN не встановлений!\n"
 "Будь ласка, встановіть його."
 
+msgid ""
+"The overscan wizard has been completed.\n"
+"\n"
+"Note: you can always start the Overscan Wizard later,  via\n"
+"\n"
+"menu->settings->system->userinterface->position & size"
+msgstr ""
+
+msgid ""
+"The overscan wizard helps you to setup your TV in the correct way.\n"
+"\n"
+"For the majority of TV's, the factory default is to have overscan enabled. This means you are always watching a \"zoomed in\" picture instead of real HD, and parts of the user inferface (skin) may be invisible.\n"
+"\n"
+"The yellow area means a 5% border area of a full HD picture will be invisible.\n"
+"The green area means a 10% border area of a full HD picture will be invisible.\n"
+"\n"
+"In other words, if the yellow box meets all for sides of your screen, then you have at least 5% overscan on all sides.\n"
+"\n"
+"If you see the tips of all eight arrowheads, then your TV has overscan disabled.\n"
+"\n"
+"Test Pattern by TigerDave - www.tigerdave.com/ht_menu.htm"
+msgstr ""
+
 #, python-format
 msgid "The path %s already exists."
 msgstr "Цей шлях %s вже існує."
@@ -8258,6 +8351,9 @@ msgstr "Файл таймерів (timers.xml) пошкоджений і не м
 msgid ""
 "The unicable connection setting is wrong.\n"
 " Maybe recursive connection of tuners."
+msgstr ""
+
+msgid "The user interface of the receiver will now restart to select the selected skin"
 msgstr ""
 
 #, fuzzy, python-format
@@ -8551,9 +8647,6 @@ msgstr ""
 msgid "Timer edit"
 msgstr "Редагування таймера"
 
-msgid "Timer editor"
-msgstr "Редактор таймерів"
-
 msgid "Timer entry"
 msgstr "Введення таймера"
 
@@ -8660,12 +8753,20 @@ msgstr "тоновий сигнал A/B"
 msgid "Top and bottom"
 msgstr "Верх і низ"
 
+#, fuzzy
+msgid "Total Clients streaming: "
+msgstr "Без HD стримінгу"
+
 #, python-format
 msgid "Total clients streaming: %d (%s)"
 msgstr ""
 
 msgid "Track"
 msgstr "Доріжка"
+
+#, fuzzy
+msgid "Transcode"
+msgstr "Транспондер"
 
 #, fuzzy
 msgid "Transcoding: "
@@ -8758,6 +8859,9 @@ msgstr "Статус тюнера %s"
 
 msgid "Tuner type"
 msgstr "Тюнер"
+
+msgid "Tuning algorithm"
+msgstr ""
 
 msgid "Turkish"
 msgstr "Турецький"
@@ -9300,9 +9404,6 @@ msgstr "Відтворити записане відео..."
 msgid "Watch recordings..."
 msgstr "запис..."
 
-msgid "Weather GigaBlue Pax"
-msgstr ""
-
 msgid "Weather ID"
 msgstr ""
 
@@ -9718,9 +9819,6 @@ msgstr "Так,повернутися до списку записів"
 msgid "Yesterday"
 msgstr "Вчора"
 
-msgid "Your PIN code is 0000. This is the default PIN code and it disable parental control!\n"
-msgstr ""
-
 #, fuzzy, python-format
 msgid ""
 "You already have a bootlogo installed,\n"
@@ -9768,6 +9866,27 @@ msgstr "Ви можете видалити це плагін."
 
 msgid "You cannot delete this!"
 msgstr "Ви не можете видалити це!"
+
+msgid ""
+"You did not see all eight arrow heads. This means your TV has overscan enabled and presents you with a zoomed-in picture, causing you to loose part of a full HD screen. In addition this you may also miss parts of the user interface, for example volume bars and more.\n"
+"\n"
+"Unfortunately, your model of receiver is not capable to adjust the dimensions of the user interface. If not everything is visible, you should change the installed skin to one that supports the overscan area of your TV.\n"
+"\n"
+"When you select a different skin, the user interface of your receiver will restart.\n"
+"\n"
+"Note: you can always start the Overscan Wizard later,  via\n"
+"\n"
+"menu->settings->system->userinterface->position & size"
+msgstr ""
+
+msgid ""
+"You did not see all eight arrow heads. This means your TV has overscan enabled and presents you with a zoomed-in picture, causing you to loose part of a full HD screen. In addition this you may also miss parts of the user interface, for example volume bars and more.\n"
+"\n"
+"You can now try to resize and change the position of the user interface until you see the eight arrow heads.\n"
+"\n"
+"When done press OK.\n"
+"\n"
+msgstr ""
 
 msgid "You didn't select a channel to record from."
 msgstr "Ви не обрали канал запису."
@@ -9842,6 +9961,9 @@ msgid ""
 "You need to plug-in your USB-flash drive with your image to restore.\n"
 "Power on your GigaBlue and you can flash your backup image.\n"
 "After flashing you can restore your settings."
+msgstr ""
+
+msgid "Your PIN code is 0000. This is the default PIN code and it disable parental control!\n"
 msgstr ""
 
 msgid "Your Receiver isn't connected to the internet properly. Please check it and try again."
@@ -9957,6 +10079,9 @@ msgstr "Повернуться на попередній сервіс ?"
 
 msgid "Zap back to service before tuner setup?"
 msgstr "Вернутся обратно к настройкам тюнер?"
+
+msgid "Zap bouquets blindly on zap buttons"
+msgstr ""
 
 #, fuzzy
 msgid "Zap down"
@@ -10189,6 +10314,10 @@ msgstr "чорний список"
 
 msgid "blue"
 msgstr "синій"
+
+#, fuzzy
+msgid "bottom"
+msgstr "Верх і низ"
 
 msgid "broadcasting/press"
 msgstr "мовлення/преса"
@@ -10821,6 +10950,10 @@ msgstr "запис"
 msgid "red"
 msgstr "Червоний"
 
+#, fuzzy
+msgid "reliable"
+msgstr "увімкнути"
+
 msgid "religion"
 msgstr "релігія"
 
@@ -11120,6 +11253,10 @@ msgstr "вверх"
 
 msgid "tourism/travel"
 msgstr "туризм/подорожі"
+
+#, fuzzy
+msgid "traditional (fast)"
+msgstr "народна/традиційна музика"
 
 msgid "true"
 msgstr "Так"
@@ -11883,9 +12020,6 @@ msgstr "переключено"
 #~ msgid "Do you want to enable the parental control feature on your %s %s?"
 #~ msgstr "Ви дійсно бажаєте завантажити імідж %s ?"
 
-#~ msgid "Do you want to install a channel list?"
-#~ msgstr "Ви дійсно хочете встановити список каналів?"
-
 #~ msgid "Do you want to restart the GUI now?"
 #~ msgstr "Ви хочете перезавантажити GUI зараз?"
 
@@ -12575,9 +12709,6 @@ msgstr "переключено"
 #~ msgid "Next: %s"
 #~ msgstr "Далі: %s"
 
-#~ msgid "No HD streaming"
-#~ msgstr "Без HD стримінгу"
-
 #~ msgid "No connect to kinopoisk.ru..."
 #~ msgstr "Немає з'єднання з kinopoisk.ru..."
 
@@ -13147,6 +13278,10 @@ msgstr "переключено"
 #~ msgid "Side by Side"
 #~ msgstr "Ліво і право"
 
+#, fuzzy
+#~ msgid "Silently zap between bouquets"
+#~ msgstr "Вибрати фаворит (букет)"
+
 #~ msgid "Simple Cardserver"
 #~ msgstr "Управління кардсервером"
 
@@ -13476,6 +13611,9 @@ msgstr "переключено"
 
 #~ msgid "Timer Editor"
 #~ msgstr "Редагування Таймеру "
+
+#~ msgid "Timer editor"
+#~ msgstr "Редактор таймерів"
 
 # message12-1
 #~ msgid "To restore the image:"

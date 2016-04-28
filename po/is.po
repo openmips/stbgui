@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-15 14:56+0100\n"
+"POT-Creation-Date: 2016-04-28 16:35+0200\n"
 "PO-Revision-Date: 2015-01-29 17:40+0200\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -57,6 +57,11 @@ msgstr "Þú getur sett inn þetta íforrit."
 msgid ""
 "\n"
 "Backup your running Receiver image to HDD or USB."
+msgstr ""
+
+msgid ""
+"\n"
+"Conflict detection disabled!"
 msgstr ""
 
 msgid ""
@@ -220,6 +225,10 @@ msgstr ""
 
 #, python-format
 msgid "%.0f MB"
+msgstr ""
+
+#, python-format
+msgid "%.2f GB"
 msgstr ""
 
 #, python-format
@@ -1145,6 +1154,9 @@ msgstr "Listamaður"
 msgid "Arts/Culture"
 msgstr ""
 
+msgid "As defined by the skin"
+msgstr ""
+
 msgid "Ask user"
 msgstr "Spyrja notanda"
 
@@ -1583,6 +1595,10 @@ msgid ""
 "Please stop this actions/applications and try again"
 msgstr ""
 
+#, fuzzy
+msgid "Capabilities "
+msgstr "Stærð:"
+
 msgid "Capacity: "
 msgstr "Stærð:"
 
@@ -1690,7 +1706,7 @@ msgstr "Kafli:"
 msgid "Check"
 msgstr "Athuga"
 
-msgid "Check disk terminated with success"
+msgid "Check disk finished with success"
 msgstr ""
 
 msgid "Check the internet connection"
@@ -1720,7 +1736,7 @@ msgstr ""
 
 #, python-format
 msgid ""
-"Checking tuner %d\n"
+"Checking tuner %s\n"
 "DiSEqC port %s for %s"
 msgstr ""
 
@@ -1786,6 +1802,9 @@ msgstr "Tæma lista"
 #, fuzzy
 msgid "Clear playlist"
 msgstr "hreinsa spilunarlista"
+
+msgid "ClientIP"
+msgstr ""
 
 #
 #, fuzzy
@@ -1886,6 +1905,10 @@ msgstr ""
 
 msgid "Configure for how many minutes finished events should remain visible in the EPG. Useful when you need information about an event which has just finished, or has been delayed."
 msgstr ""
+
+#, fuzzy
+msgid "Configure how many channels are shown in the selection list."
+msgstr "Sýna framvindu atriðis við rásaval"
 
 msgid "Configure how recording filenames are constructed."
 msgstr ""
@@ -2456,6 +2479,11 @@ msgstr "DVD skráar stjóri"
 
 #
 #, fuzzy
+msgid "DVD Menu"
+msgstr "Valmynd"
+
+#
+#, fuzzy
 msgid "DVD Titlelist"
 msgstr "DVD titlaskrá"
 
@@ -2724,6 +2752,9 @@ msgstr "DiSEqC prufu stillingar"
 msgid "Diction"
 msgstr "Lýsing"
 
+msgid "Did you see all eight arrow heads?"
+msgstr ""
+
 #
 msgid "Digital contour removal"
 msgstr "Fjarlægja stafrænt contour"
@@ -2893,6 +2924,9 @@ msgstr ""
 "Viltu örugglega hala niður\n"
 "íforritinu \"%s\"?"
 
+msgid "Do you see all the eight arrowheads?"
+msgstr ""
+
 msgid "Do you want this?"
 msgstr ""
 
@@ -2922,6 +2956,11 @@ msgid "Do you want to do another manual service scan?"
 msgstr "Viltu leita aftur handvirkt?"
 
 #
+#, fuzzy
+msgid "Do you want to install a channel list?"
+msgstr "Viltu setja inn pakkann:\n"
+
+#
 msgid "Do you want to install the package:\n"
 msgstr "Viltu setja inn pakkann:\n"
 
@@ -2937,6 +2976,10 @@ msgstr "Viltu forskoða þennan DVD disk fyrir brennslu?"
 #, fuzzy
 msgid "Do you want to produce this collection?"
 msgstr "Viltu brenna þessa skráar safn á DVD disk?"
+
+#, fuzzy
+msgid "Do you want to quit the overscan wizard?"
+msgstr "Ertu viss um að þú viljir hætta í ráðgjafanum?"
 
 #, fuzzy
 msgid "Do you want to reboot your Receiver?"
@@ -2956,6 +2999,11 @@ msgstr "Viltu setja inn stillingarnar þínar aftur?"
 #
 msgid "Do you want to resume this playback?"
 msgstr "Viltu halda áfram að spila þetta?"
+
+#
+#, fuzzy
+msgid "Do you want to select a different skin?"
+msgstr "Viltu leita að rásum?"
 
 #, fuzzy
 msgid "Do you want to update your Receiver?"
@@ -3746,7 +3794,7 @@ msgstr "Forma"
 msgid "Format as"
 msgstr "Forma"
 
-msgid "Format terminated with success"
+msgid "Format finished with success"
 msgstr ""
 
 msgid "Format/Partition your Devices and manage Mountpoints"
@@ -4549,6 +4597,13 @@ msgid "Is this video mode ok?"
 msgstr "Er þessi stilling í lagi?"
 
 msgid "It follows:"
+msgstr ""
+
+msgid ""
+"It seems you did not see all the eight arrow heads. This means your TV is has overscan enabled, and is not configured properly.\n"
+"\n"
+"Please refer to your TVs manual to find how you can disable overscan on your TV. Look for terms like 'Just fit', 'Full width', etc. If you can't find it, ask other users at http://forums.openpli.org.\n"
+"\n"
 msgstr ""
 
 #
@@ -5545,6 +5600,9 @@ msgstr "engar rásir/sendar valdir"
 msgid "No standby"
 msgstr "ekki biðstaða"
 
+msgid "No streaming Channel from this STB at this moment"
+msgstr ""
+
 msgid "No suitable sat tuner found!"
 msgstr ""
 
@@ -5727,6 +5785,10 @@ msgstr "Notaðu núna skerpu (contrast) stillingar til að auka birtu bakgrunns 
 msgid "Number of channel number digits"
 msgstr ""
 
+#, fuzzy
+msgid "Number of channels shown in channel selection list"
+msgstr "Sýna framvindu atriðis við rásaval"
+
 msgid "Number of repeating text on display."
 msgstr ""
 
@@ -5854,6 +5916,13 @@ msgstr ""
 #, fuzzy
 msgid "Overall progress:"
 msgstr "Í vinnslu"
+
+msgid "Overscan Wizard"
+msgstr ""
+
+#, fuzzy
+msgid "Overscan wizard"
+msgstr "Netkerfis ráðgjafi"
 
 #, fuzzy
 msgid "Overwrite Bootlogo Files ?"
@@ -8294,8 +8363,9 @@ msgstr ""
 msgid "Show packages to be upgraded"
 msgstr "Listi uppfærðra pakka"
 
-msgid "Show picons in channel list"
-msgstr ""
+#, fuzzy
+msgid "Show picons in channel selection list"
+msgstr "Sýna framvindu atriðis við rásaval"
 
 #
 msgid "Show positioner movement"
@@ -8305,6 +8375,11 @@ msgstr "Sýna færslu mótors"
 #, fuzzy
 msgid "Show positioner position"
 msgstr "Sýna færslu mótors"
+
+#
+#, fuzzy
+msgid "Show record clock icons"
+msgstr "Byrja upptöku?"
 
 msgid "Show record indicator"
 msgstr ""
@@ -8378,6 +8453,11 @@ msgstr ""
 msgid "Show warning when timeshift is stopped"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Show/hide window"
+msgstr "Sýna upplýsingar"
+
 msgid "Shows live tv or informations on LCD."
 msgstr ""
 
@@ -8423,11 +8503,6 @@ msgstr "Styrkur merkis:"
 #
 msgid "Signal: "
 msgstr "Merki:"
-
-#
-#, fuzzy
-msgid "Silently zap between bouquets"
-msgstr "Veldu mynd"
 
 #
 msgid "Similar"
@@ -9392,6 +9467,29 @@ msgstr ""
 "Netkerfis ráðgjafinn er ekki innsettur!\n"
 "Vinsamlega settu hann inn."
 
+msgid ""
+"The overscan wizard has been completed.\n"
+"\n"
+"Note: you can always start the Overscan Wizard later,  via\n"
+"\n"
+"menu->settings->system->userinterface->position & size"
+msgstr ""
+
+msgid ""
+"The overscan wizard helps you to setup your TV in the correct way.\n"
+"\n"
+"For the majority of TV's, the factory default is to have overscan enabled. This means you are always watching a \"zoomed in\" picture instead of real HD, and parts of the user inferface (skin) may be invisible.\n"
+"\n"
+"The yellow area means a 5% border area of a full HD picture will be invisible.\n"
+"The green area means a 10% border area of a full HD picture will be invisible.\n"
+"\n"
+"In other words, if the yellow box meets all for sides of your screen, then you have at least 5% overscan on all sides.\n"
+"\n"
+"If you see the tips of all eight arrowheads, then your TV has overscan disabled.\n"
+"\n"
+"Test Pattern by TigerDave - www.tigerdave.com/ht_menu.htm"
+msgstr ""
+
 #
 #, python-format
 msgid "The path %s already exists."
@@ -9435,6 +9533,9 @@ msgstr "Atriða skrá (timer.xml) er skemmd og var ekki hægt að lesa hana."
 msgid ""
 "The unicable connection setting is wrong.\n"
 " Maybe recursive connection of tuners."
+msgstr ""
+
+msgid "The user interface of the receiver will now restart to select the selected skin"
 msgstr ""
 
 #
@@ -9751,11 +9852,6 @@ msgid "Timer edit"
 msgstr "Breyta Tímastillingu"
 
 #
-#, fuzzy
-msgid "Timer editor"
-msgstr "Breyta Tímastillingum"
-
-#
 msgid "Timer entry"
 msgstr "Innsláttur tímastilltra atriða"
 
@@ -9881,6 +9977,9 @@ msgstr "Tón stýring A/B"
 msgid "Top and bottom"
 msgstr ""
 
+msgid "Total Clients streaming: "
+msgstr ""
+
 #, python-format
 msgid "Total clients streaming: %d (%s)"
 msgstr ""
@@ -9888,6 +9987,11 @@ msgstr ""
 #
 msgid "Track"
 msgstr "Spor"
+
+#
+#, fuzzy
+msgid "Transcode"
+msgstr "Sendir"
 
 #
 #, fuzzy
@@ -10006,6 +10110,9 @@ msgstr "Móttakari"
 
 msgid "Tuner type"
 msgstr "Gerð móttakara"
+
+msgid "Tuning algorithm"
+msgstr ""
 
 #
 msgid "Turkish"
@@ -10634,9 +10741,6 @@ msgstr "Spila uppteknar bíómyndir..."
 msgid "Watch recordings..."
 msgstr "tek upp...."
 
-msgid "Weather GigaBlue Pax"
-msgstr ""
-
 msgid "Weather ID"
 msgstr ""
 
@@ -11064,9 +11168,6 @@ msgstr "Já, fara til baka á mynda lista"
 msgid "Yesterday"
 msgstr ""
 
-msgid "Your PIN code is 0000. This is the default PIN code and it disable parental control!\n"
-msgstr ""
-
 #, python-format
 msgid ""
 "You already have a bootlogo installed,\n"
@@ -11110,6 +11211,27 @@ msgstr "Þú getur tekið út þetta íforrit."
 #
 msgid "You cannot delete this!"
 msgstr "Þú getur ekki eytt þessu!"
+
+msgid ""
+"You did not see all eight arrow heads. This means your TV has overscan enabled and presents you with a zoomed-in picture, causing you to loose part of a full HD screen. In addition this you may also miss parts of the user interface, for example volume bars and more.\n"
+"\n"
+"Unfortunately, your model of receiver is not capable to adjust the dimensions of the user interface. If not everything is visible, you should change the installed skin to one that supports the overscan area of your TV.\n"
+"\n"
+"When you select a different skin, the user interface of your receiver will restart.\n"
+"\n"
+"Note: you can always start the Overscan Wizard later,  via\n"
+"\n"
+"menu->settings->system->userinterface->position & size"
+msgstr ""
+
+msgid ""
+"You did not see all eight arrow heads. This means your TV has overscan enabled and presents you with a zoomed-in picture, causing you to loose part of a full HD screen. In addition this you may also miss parts of the user interface, for example volume bars and more.\n"
+"\n"
+"You can now try to resize and change the position of the user interface until you see the eight arrow heads.\n"
+"\n"
+"When done press OK.\n"
+"\n"
+msgstr ""
 
 msgid "You didn't select a channel to record from."
 msgstr "Þú valdir ekki rás til að taka upp af."
@@ -11185,6 +11307,9 @@ msgid ""
 "You need to plug-in your USB-flash drive with your image to restore.\n"
 "Power on your GigaBlue and you can flash your backup image.\n"
 "After flashing you can restore your settings."
+msgstr ""
+
+msgid "Your PIN code is 0000. This is the default PIN code and it disable parental control!\n"
 msgstr ""
 
 msgid "Your Receiver isn't connected to the internet properly. Please check it and try again."
@@ -11297,6 +11422,9 @@ msgstr "Fara aftur á rás fyrir stillingu á mótorstýringu?"
 
 msgid "Zap back to service before tuner setup?"
 msgstr "Fara aftur á rás fyrir stillingu móttakara?"
+
+msgid "Zap bouquets blindly on zap buttons"
+msgstr ""
 
 msgid "Zap down"
 msgstr ""
@@ -11555,6 +11683,9 @@ msgstr "svarti listi"
 #
 msgid "blue"
 msgstr "blár"
+
+msgid "bottom"
+msgstr ""
 
 msgid "broadcasting/press"
 msgstr ""
@@ -12294,6 +12425,11 @@ msgstr "taka upp"
 msgid "red"
 msgstr "rauður"
 
+#
+#, fuzzy
+msgid "reliable"
+msgstr "virkt"
+
 msgid "religion"
 msgstr ""
 
@@ -12643,6 +12779,9 @@ msgstr ""
 msgid "tourism/travel"
 msgstr ""
 
+msgid "traditional (fast)"
+msgstr ""
+
 msgid "true"
 msgstr ""
 
@@ -12864,11 +13003,6 @@ msgstr "stokkið"
 #~ msgstr "Viltu hlaða niður stýrikerfinu á %s ?"
 
 #
-#, fuzzy
-#~ msgid "Do you want to install a channel list?"
-#~ msgstr "Viltu setja inn pakkann:\n"
-
-#
 #~ msgid "Download"
 #~ msgstr "Hlaða niður"
 
@@ -13037,6 +13171,11 @@ msgstr "stokkið"
 #~ msgstr "Sýna sjónvarpsspilara..."
 
 #
+#, fuzzy
+#~ msgid "Silently zap between bouquets"
+#~ msgstr "Veldu mynd"
+
+#
 #~ msgid "Single transponder"
 #~ msgstr "Einn sendir"
 
@@ -13083,6 +13222,11 @@ msgstr "stokkið"
 
 #~ msgid "The wizard found a configuration backup. Do you want to restore your old settings from %s?"
 #~ msgstr "Ráðgjafinn fann afrit af stillingum. Viltu setja inn stillingar síðan %s?"
+
+#
+#, fuzzy
+#~ msgid "Timer editor"
+#~ msgstr "Breyta Tímastillingum"
 
 #
 #~ msgid "USB stick wizard"

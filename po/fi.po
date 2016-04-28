@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-15 14:56+0100\n"
+"POT-Creation-Date: 2016-04-28 16:35+0200\n"
 "PO-Revision-Date: 2015-01-29 17:40+0200\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -65,6 +65,11 @@ msgid ""
 msgstr ""
 "\n"
 "Varmuuskopioi vastaanottimesi asetukset."
+
+msgid ""
+"\n"
+"Conflict detection disabled!"
+msgstr ""
 
 #
 msgid ""
@@ -240,6 +245,10 @@ msgstr ""
 
 #, python-format
 msgid "%.0f MB"
+msgstr ""
+
+#, python-format
+msgid "%.2f GB"
 msgstr ""
 
 #, fuzzy, python-format
@@ -1174,6 +1183,9 @@ msgstr "Esittäjä"
 msgid "Arts/Culture"
 msgstr "Taide/Kulttuuri"
 
+msgid "As defined by the skin"
+msgstr ""
+
 #
 msgid "Ask user"
 msgstr "Kysy käyttäjältä"
@@ -1649,6 +1661,11 @@ msgid ""
 msgstr ""
 
 #
+#, fuzzy
+msgid "Capabilities "
+msgstr "Kapasiteetti:"
+
+#
 msgid "Capacity: "
 msgstr "Kapasiteetti:"
 
@@ -1766,7 +1783,7 @@ msgstr "Kappale:"
 msgid "Check"
 msgstr "Tarkista"
 
-msgid "Check disk terminated with success"
+msgid "Check disk finished with success"
 msgstr ""
 
 msgid "Check the internet connection"
@@ -1797,9 +1814,9 @@ msgstr "Tarkistetaan tiedostojärjestelmää..."
 msgid "Checking the internet connection"
 msgstr "Tarkistan internet yhteyttä"
 
-#, python-format
+#, fuzzy, python-format
 msgid ""
-"Checking tuner %d\n"
+"Checking tuner %s\n"
 "DiSEqC port %s for %s"
 msgstr ""
 "Tarkistetaan viritin %d\n"
@@ -1879,6 +1896,9 @@ msgstr "Tyhjennä loki"
 #
 msgid "Clear playlist"
 msgstr "Tyhjennä soittolista"
+
+msgid "ClientIP"
+msgstr ""
 
 #
 #, fuzzy
@@ -1994,6 +2014,10 @@ msgstr "Määrittää kuinka kauan tietopalkki on näkyvissä käynnistyksen jä
 
 msgid "Configure for how many minutes finished events should remain visible in the EPG. Useful when you need information about an event which has just finished, or has been delayed."
 msgstr "Määrittää kuinka monta minuuttia päättyneiden ohjelmien ohjelmatietoja pidetään näkyvillä ohjelmaoppaassa. Käytännöllinen kun haluat tietoja ohjelmasta joka on juuri päättynyt tai ohjelma on viivästynyt."
+
+#, fuzzy
+msgid "Configure how many channels are shown in the selection list."
+msgstr "Määrittele näytetäänkö kanavalogot kanavalistassa. "
 
 msgid "Configure how recording filenames are constructed."
 msgstr "Määrittää kuinka tallennuksen tiedostonimet luodaan."
@@ -2588,6 +2612,11 @@ msgstr "DVD-tiedostoselain"
 
 #
 #, fuzzy
+msgid "DVD Menu"
+msgstr "Valikko"
+
+#
+#, fuzzy
 msgid "DVD Titlelist"
 msgstr "DVD-otsikkoluettelo"
 
@@ -2845,6 +2874,9 @@ msgstr "DiSEqC-testin asetukset"
 msgid "Diction"
 msgstr "Toiminto:"
 
+msgid "Did you see all eight arrow heads?"
+msgstr ""
+
 #
 msgid "Digital contour removal"
 msgstr "Ääriviivakorostumien poisto"
@@ -3021,6 +3053,9 @@ msgstr ""
 "Haluatko ladata\n"
 "lisäosan \"%s\"?"
 
+msgid "Do you see all the eight arrowheads?"
+msgstr ""
+
 msgid "Do you want this?"
 msgstr "Haluatko tehdä niin?"
 
@@ -3050,6 +3085,10 @@ msgid "Do you want to do another manual service scan?"
 msgstr "Haluatko tehdä uuden manuaalihaun?"
 
 #
+msgid "Do you want to install a channel list?"
+msgstr "Haluatko asentaa kanavalistan?"
+
+#
 msgid "Do you want to install the package:\n"
 msgstr "Haluatko asentaa IPKG-paketin:\n"
 
@@ -3065,6 +3104,10 @@ msgstr "Haluatko esikatsella tämän DVD:n ennen polttoa?"
 #, fuzzy
 msgid "Do you want to produce this collection?"
 msgstr "Haluatko polttaa tämän kokoelman DVD:lle?"
+
+#, fuzzy
+msgid "Do you want to quit the overscan wizard?"
+msgstr "Haluatko lopettaa avustustoiminnon?"
 
 #, fuzzy
 msgid "Do you want to reboot your Receiver?"
@@ -3084,6 +3127,11 @@ msgstr "Haluatko palauttaa asetukset?"
 #
 msgid "Do you want to resume this playback?"
 msgstr "Jatketaanko kohdasta, johon katselu viimeksi jäi?"
+
+#
+#, fuzzy
+msgid "Do you want to select a different skin?"
+msgstr "Haluatko tehdä kanavahaun?"
 
 #, fuzzy
 msgid "Do you want to update your Receiver?"
@@ -3873,7 +3921,7 @@ msgstr "Alusta"
 msgid "Format as"
 msgstr "Alusta"
 
-msgid "Format terminated with success"
+msgid "Format finished with success"
 msgstr ""
 
 msgid "Format/Partition your Devices and manage Mountpoints"
@@ -4655,6 +4703,13 @@ msgid "Is this video mode ok?"
 msgstr "Onko tämä video-tila ok?"
 
 msgid "It follows:"
+msgstr ""
+
+msgid ""
+"It seems you did not see all the eight arrow heads. This means your TV is has overscan enabled, and is not configured properly.\n"
+"\n"
+"Please refer to your TVs manual to find how you can disable overscan on your TV. Look for terms like 'Just fit', 'Full width', etc. If you can't find it, ask other users at http://forums.openpli.org.\n"
+"\n"
 msgstr ""
 
 #
@@ -5629,6 +5684,9 @@ msgstr "Palveluja/palveluntarjoajia ei valittu"
 msgid "No standby"
 msgstr "Ei valmiustilaa"
 
+msgid "No streaming Channel from this STB at this moment"
+msgstr ""
+
 msgid "No suitable sat tuner found!"
 msgstr "Käyttöön sopivaa viritintä ei löytynyt!"
 
@@ -5814,6 +5872,10 @@ msgstr ""
 msgid "Number of channel number digits"
 msgstr "Käytä virallista kanavanumerointia"
 
+#, fuzzy
+msgid "Number of channels shown in channel selection list"
+msgstr "Näytä kanavanvalinnassa kanavanumerot"
+
 msgid "Number of repeating text on display."
 msgstr ""
 
@@ -5942,6 +6004,16 @@ msgstr "Muu"
 #, fuzzy
 msgid "Overall progress:"
 msgstr "Käynnissä"
+
+#
+#, fuzzy
+msgid "Overscan Wizard"
+msgstr "Puhdistusavustaja"
+
+#
+#, fuzzy
+msgid "Overscan wizard"
+msgstr "Ohjattu verkon asennus"
 
 #, fuzzy
 msgid "Overwrite Bootlogo Files ?"
@@ -8350,8 +8422,9 @@ msgstr ""
 msgid "Show packages to be upgraded"
 msgstr "Ohjelmapakettiluettelon päivitys"
 
-msgid "Show picons in channel list"
-msgstr ""
+#, fuzzy
+msgid "Show picons in channel selection list"
+msgstr "Näytä ohjelman pituus kanavien valintalistassa"
 
 #
 msgid "Show positioner movement"
@@ -8361,6 +8434,10 @@ msgstr "Näytä kuvake kääntömoottorin liikkuessa"
 #, fuzzy
 msgid "Show positioner position"
 msgstr "Näytä kuvake kääntömoottorin liikkuessa"
+
+#, fuzzy
+msgid "Show record clock icons"
+msgstr "Näytä toinen tietopalkki"
 
 #, fuzzy
 msgid "Show record indicator"
@@ -8438,6 +8515,11 @@ msgstr ""
 msgid "Show warning when timeshift is stopped"
 msgstr "Näytä varoitus kun ajansiirto lopetetaan"
 
+#
+#, fuzzy
+msgid "Show/hide window"
+msgstr "Näytä tiedot"
+
 msgid "Shows live tv or informations on LCD."
 msgstr ""
 
@@ -8482,11 +8564,6 @@ msgstr "Signaalinvoimakkuus:"
 #
 msgid "Signal: "
 msgstr "Signaali:"
-
-#
-#, fuzzy
-msgid "Silently zap between bouquets"
-msgstr "Tallennetut ohjelmat"
 
 #
 msgid "Similar"
@@ -9413,6 +9490,29 @@ msgstr ""
 "Verkkoavustajaa ei ole asennettu!\n"
 "Asenna se."
 
+msgid ""
+"The overscan wizard has been completed.\n"
+"\n"
+"Note: you can always start the Overscan Wizard later,  via\n"
+"\n"
+"menu->settings->system->userinterface->position & size"
+msgstr ""
+
+msgid ""
+"The overscan wizard helps you to setup your TV in the correct way.\n"
+"\n"
+"For the majority of TV's, the factory default is to have overscan enabled. This means you are always watching a \"zoomed in\" picture instead of real HD, and parts of the user inferface (skin) may be invisible.\n"
+"\n"
+"The yellow area means a 5% border area of a full HD picture will be invisible.\n"
+"The green area means a 10% border area of a full HD picture will be invisible.\n"
+"\n"
+"In other words, if the yellow box meets all for sides of your screen, then you have at least 5% overscan on all sides.\n"
+"\n"
+"If you see the tips of all eight arrowheads, then your TV has overscan disabled.\n"
+"\n"
+"Test Pattern by TigerDave - www.tigerdave.com/ht_menu.htm"
+msgstr ""
+
 #
 #, python-format
 msgid "The path %s already exists."
@@ -9455,6 +9555,9 @@ msgstr "Ajastusluettelo (timers.xml) on korruptoitunut eikä sitä voida ladata"
 msgid ""
 "The unicable connection setting is wrong.\n"
 " Maybe recursive connection of tuners."
+msgstr ""
+
+msgid "The user interface of the receiver will now restart to select the selected skin"
 msgstr ""
 
 #, fuzzy, python-format
@@ -9772,10 +9875,6 @@ msgid "Timer edit"
 msgstr "Ajastuksen muokkaus"
 
 #
-msgid "Timer editor"
-msgstr "Ajastusten muokkaus"
-
-#
 #  Ajastusikkunan otsikkopalkin teksti
 msgid "Timer entry"
 msgstr "Ajastettava ohjelma"
@@ -9900,6 +9999,9 @@ msgstr "Äänipurske A/B"
 msgid "Top and bottom"
 msgstr "Ylä ja ala"
 
+msgid "Total Clients streaming: "
+msgstr ""
+
 #, python-format
 msgid "Total clients streaming: %d (%s)"
 msgstr ""
@@ -9907,6 +10009,11 @@ msgstr ""
 #
 msgid "Track"
 msgstr "Raita"
+
+#
+#, fuzzy
+msgid "Transcode"
+msgstr "Lähetin"
 
 #
 #, fuzzy
@@ -10022,6 +10129,9 @@ msgstr "Virittimen tila %s"
 
 msgid "Tuner type"
 msgstr "Virittimen tyyppi"
+
+msgid "Tuning algorithm"
+msgstr ""
 
 #
 msgid "Turkish"
@@ -10646,9 +10756,6 @@ msgstr "Toista tallenteet..."
 msgid "Watch recordings..."
 msgstr "Tallennetaan..."
 
-msgid "Weather GigaBlue Pax"
-msgstr ""
-
 msgid "Weather ID"
 msgstr ""
 
@@ -11093,9 +11200,6 @@ msgstr "Kyllä, palataan tallenneluetteloon"
 msgid "Yesterday"
 msgstr "Eilen"
 
-msgid "Your PIN code is 0000. This is the default PIN code and it disable parental control!\n"
-msgstr ""
-
 #, fuzzy, python-format
 msgid ""
 "You already have a bootlogo installed,\n"
@@ -11148,6 +11252,27 @@ msgstr "Voit poistaa tämän lisäosan."
 #
 msgid "You cannot delete this!"
 msgstr "Et voi poistaa tätä!"
+
+msgid ""
+"You did not see all eight arrow heads. This means your TV has overscan enabled and presents you with a zoomed-in picture, causing you to loose part of a full HD screen. In addition this you may also miss parts of the user interface, for example volume bars and more.\n"
+"\n"
+"Unfortunately, your model of receiver is not capable to adjust the dimensions of the user interface. If not everything is visible, you should change the installed skin to one that supports the overscan area of your TV.\n"
+"\n"
+"When you select a different skin, the user interface of your receiver will restart.\n"
+"\n"
+"Note: you can always start the Overscan Wizard later,  via\n"
+"\n"
+"menu->settings->system->userinterface->position & size"
+msgstr ""
+
+msgid ""
+"You did not see all eight arrow heads. This means your TV has overscan enabled and presents you with a zoomed-in picture, causing you to loose part of a full HD screen. In addition this you may also miss parts of the user interface, for example volume bars and more.\n"
+"\n"
+"You can now try to resize and change the position of the user interface until you see the eight arrow heads.\n"
+"\n"
+"When done press OK.\n"
+"\n"
+msgstr ""
 
 msgid "You didn't select a channel to record from."
 msgstr "Et valinnut tallennuskanavaa."
@@ -11225,6 +11350,9 @@ msgid ""
 "You need to plug-in your USB-flash drive with your image to restore.\n"
 "Power on your GigaBlue and you can flash your backup image.\n"
 "After flashing you can restore your settings."
+msgstr ""
+
+msgid "Your PIN code is 0000. This is the default PIN code and it disable parental control!\n"
 msgstr ""
 
 msgid "Your Receiver isn't connected to the internet properly. Please check it and try again."
@@ -11347,6 +11475,9 @@ msgid "Zap back to service before tuner setup?"
 msgstr ""
 "Vaihdetaanko takaisin kanavalle, jota katsottiin\n"
 "ennen viritinasetuksien muutosta?"
+
+msgid "Zap bouquets blindly on zap buttons"
+msgstr ""
 
 #, fuzzy
 msgid "Zap down"
@@ -11614,6 +11745,10 @@ msgstr "kielletyt"
 #
 msgid "blue"
 msgstr "sininen"
+
+#, fuzzy
+msgid "bottom"
+msgstr "Ylä ja ala"
 
 msgid "broadcasting/press"
 msgstr "lähetys/lehdistö"
@@ -12354,6 +12489,11 @@ msgstr "tallennus"
 msgid "red"
 msgstr "Punainen"
 
+#
+#, fuzzy
+msgid "reliable"
+msgstr "Päällä"
+
 msgid "religion"
 msgstr "uskonto"
 
@@ -12707,6 +12847,10 @@ msgstr "ylä"
 msgid "tourism/travel"
 msgstr "turismi/matkailu"
 
+#, fuzzy
+msgid "traditional (fast)"
+msgstr "kansan/perinteinen musiikki"
+
 msgid "true"
 msgstr "tosi"
 
@@ -12975,10 +13119,6 @@ msgstr "Vaihdettu"
 #~ msgstr "Valitse teema"
 
 #
-#~ msgid "Cleanup Wizard"
-#~ msgstr "Puhdistusavustaja"
-
-#
 #~ msgid "Cleanup Wizard settings"
 #~ msgstr "Puhdistusavustajan asetukset"
 
@@ -13119,10 +13259,6 @@ msgstr "Vaihdettu"
 #, fuzzy
 #~ msgid "Do you want to enable the parental control feature on your %s %s?"
 #~ msgstr "Haluatko ladata ohjelmistopäivityksen %s :lle ?"
-
-#
-#~ msgid "Do you want to install a channel list?"
-#~ msgstr "Haluatko asentaa kanavalistan?"
 
 #
 #~ msgid "Do you want to submit your email address and name so that we can contact you if needed?"
@@ -13571,6 +13707,11 @@ msgstr "Vaihdettu"
 #~ msgstr "Rinnakkain"
 
 #
+#, fuzzy
+#~ msgid "Silently zap between bouquets"
+#~ msgstr "Tallennetut ohjelmat"
+
+#
 #~ msgid "Single transponder"
 #~ msgstr "Yksi lähetin"
 
@@ -13645,6 +13786,10 @@ msgstr "Vaihdettu"
 #~ "Ensiksi, USB tikku tulee alustaa niin että siitä tulee boottaava.\n"
 #~ "Seuraavaksi, NFI ohjelmatiedosto voidaan ladata päivityspalvelimelta ja tallentaa USB tikulle.\n"
 #~ "Jos olet jo valmistellut boottaavan USB tikun, liitä se vastaanottimeesi nyt. Muussa tapauksessa liitä USB tikku jonka koko on vähintään 64 MB!"
+
+#
+#~ msgid "Timer editor"
+#~ msgstr "Ajastusten muokkaus"
 
 #~ msgid ""
 #~ "To update your receiver firmware, please follow these steps:\n"

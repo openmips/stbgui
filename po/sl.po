@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-15 14:56+0100\n"
+"POT-Creation-Date: 2016-04-28 16:35+0200\n"
 "PO-Revision-Date: 2015-01-29 17:40+0200\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -65,6 +65,11 @@ msgid ""
 msgstr ""
 "\n"
 "Varnostno kopiranje nastavitev sprejemnika."
+
+msgid ""
+"\n"
+"Conflict detection disabled!"
+msgstr ""
 
 #
 msgid ""
@@ -240,6 +245,10 @@ msgstr ""
 
 #, python-format
 msgid "%.0f MB"
+msgstr ""
+
+#, python-format
+msgid "%.2f GB"
 msgstr ""
 
 #, fuzzy, python-format
@@ -1233,6 +1242,9 @@ msgstr "Izvajalec"
 msgid "Arts/Culture"
 msgstr ""
 
+msgid "As defined by the skin"
+msgstr ""
+
 #
 msgid "Ask user"
 msgstr "Vprašajte uporabnika"
@@ -1725,6 +1737,11 @@ msgid ""
 msgstr ""
 
 #
+#, fuzzy
+msgid "Capabilities "
+msgstr "Kapaciteta:"
+
+#
 msgid "Capacity: "
 msgstr "Kapaciteta:"
 
@@ -1844,7 +1861,7 @@ msgstr "Poglavje:"
 msgid "Check"
 msgstr "Preveri"
 
-msgid "Check disk terminated with success"
+msgid "Check disk finished with success"
 msgstr ""
 
 msgid "Check the internet connection"
@@ -1875,9 +1892,9 @@ msgstr "Poteka preverjanje datotečnega sistema..."
 msgid "Checking the internet connection"
 msgstr "Poteka preverjanje internetne povezave ..."
 
-#, python-format
+#, fuzzy, python-format
 msgid ""
-"Checking tuner %d\n"
+"Checking tuner %s\n"
 "DiSEqC port %s for %s"
 msgstr ""
 "Poteka preverjanje kanalnika %d\n"
@@ -1953,6 +1970,9 @@ msgstr "Izbris dnevnika"
 #
 msgid "Clear playlist"
 msgstr "Počisti seznam predvajanja"
+
+msgid "ClientIP"
+msgstr ""
 
 #
 #, fuzzy
@@ -2067,6 +2087,10 @@ msgstr "Nastavitev trajanja vidnosti informacije vrstice, ki se sicer pojavi po 
 
 msgid "Configure for how many minutes finished events should remain visible in the EPG. Useful when you need information about an event which has just finished, or has been delayed."
 msgstr "Nastavitev trajanja vidnosti končanih dogodkov v EPG sistemu. To je uporabno takrat, ko zamudite neko oddajo ali film, a bi za nazaj vseeno želeli izvedeti določene informacije o tem dogodku (npr. angleško ime filma)."
+
+#, fuzzy
+msgid "Configure how many channels are shown in the selection list."
+msgstr "Določitev morebitnega prikaza in na kakšen način naj se prikazujejo kripto ikone v seznamu kanalov."
 
 msgid "Configure how recording filenames are constructed."
 msgstr "Nastavitev omogoča, da določite, kako je sestavljeno ime posnetkov."
@@ -2667,6 +2691,11 @@ msgstr "Raziskovalec"
 
 #
 #, fuzzy
+msgid "DVD Menu"
+msgstr "Meni"
+
+#
+#, fuzzy
 msgid "DVD Titlelist"
 msgstr "DVD seznam naslovov"
 
@@ -2933,6 +2962,9 @@ msgstr "DiSEqC - tester nastavitve"
 msgid "Diction"
 msgstr "Opis"
 
+msgid "Did you see all eight arrow heads?"
+msgstr ""
+
 #
 msgid "Digital contour removal"
 msgstr ""
@@ -3108,6 +3140,9 @@ msgstr ""
 "Res želite namestiti\n"
 "vtičnik \"%s\"?"
 
+msgid "Do you see all the eight arrowheads?"
+msgstr ""
+
 #
 msgid "Do you want this?"
 msgstr "Ali res želite to?"
@@ -3139,6 +3174,10 @@ msgid "Do you want to do another manual service scan?"
 msgstr "Želite ponovno ročno iskati kanale?"
 
 #
+msgid "Do you want to install a channel list?"
+msgstr "Želite namestiti seznam kanalov?"
+
+#
 msgid "Do you want to install the package:\n"
 msgstr "Želite namestiti ta paket?:\n"
 
@@ -3154,6 +3193,11 @@ msgstr "Ali želite predogled zbirke pred zapisom na DVD?"
 #, fuzzy
 msgid "Do you want to produce this collection?"
 msgstr "Ali želite zapisati izbrano zbirko na DVD medij?"
+
+#
+#, fuzzy
+msgid "Do you want to quit the overscan wizard?"
+msgstr "Ste prepričani, da želite zapreti čarovnik?"
 
 #, fuzzy
 msgid "Do you want to reboot your Receiver?"
@@ -3173,6 +3217,11 @@ msgstr "Želite povrniti vaše nastavitve?"
 #
 msgid "Do you want to resume this playback?"
 msgstr "Želite nadaljevati s predvajanjem?"
+
+#
+#, fuzzy
+msgid "Do you want to select a different skin?"
+msgstr "Želite iskati kanale?"
 
 #, fuzzy
 msgid "Do you want to update your Receiver?"
@@ -4008,7 +4057,7 @@ msgstr "Formatiraj"
 msgid "Format as"
 msgstr "Formatiraj"
 
-msgid "Format terminated with success"
+msgid "Format finished with success"
 msgstr ""
 
 msgid "Format/Partition your Devices and manage Mountpoints"
@@ -4811,6 +4860,13 @@ msgid "Is this video mode ok?"
 msgstr "Je izbrana ločljivost ustrezna?"
 
 msgid "It follows:"
+msgstr ""
+
+msgid ""
+"It seems you did not see all the eight arrow heads. This means your TV is has overscan enabled, and is not configured properly.\n"
+"\n"
+"Please refer to your TVs manual to find how you can disable overscan on your TV. Look for terms like 'Just fit', 'Full width', etc. If you can't find it, ask other users at http://forums.openpli.org.\n"
+"\n"
 msgstr ""
 
 #
@@ -5794,6 +5850,9 @@ msgstr "Ni izbranih kanalov ali ponudnikov"
 msgid "No standby"
 msgstr "Ni stanja pripravljenosti"
 
+msgid "No streaming Channel from this STB at this moment"
+msgstr ""
+
 msgid "No suitable sat tuner found!"
 msgstr "Ni možno najti DVB-S/S2 kanalnika!"
 
@@ -5974,6 +6033,11 @@ msgstr "Sedaj spremenite nastavitve kontrasta za zvišanje svetlosti ozadja koli
 msgid "Number of channel number digits"
 msgstr "Uporaba uradnega številčenja kanalov"
 
+#
+#, fuzzy
+msgid "Number of channels shown in channel selection list"
+msgstr "Številčenje posameznih kanalov - v seznamu kanalov"
+
 msgid "Number of repeating text on display."
 msgstr ""
 
@@ -6105,6 +6169,14 @@ msgstr "Ostalo"
 #, fuzzy
 msgid "Overall progress:"
 msgstr "Se izvaja"
+
+msgid "Overscan Wizard"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Overscan wizard"
+msgstr "Čarovnik za mrežo"
 
 #, fuzzy
 msgid "Overwrite Bootlogo Files ?"
@@ -8581,7 +8653,8 @@ msgid "Show packages to be upgraded"
 msgstr "Iskanje posodobitev ..."
 
 #
-msgid "Show picons in channel list"
+#, fuzzy
+msgid "Show picons in channel selection list"
 msgstr "Prikaz piconsov v seznamu kanalov"
 
 #
@@ -8592,6 +8665,11 @@ msgstr "Prikaz premikanja rotorja"
 #, fuzzy
 msgid "Show positioner position"
 msgstr "Prikaz premikanja rotorja"
+
+#
+#, fuzzy
+msgid "Show record clock icons"
+msgstr "Prikaz kripto ikon v seznamu kanalov"
 
 #
 #, fuzzy
@@ -8676,6 +8754,11 @@ msgstr ""
 msgid "Show warning when timeshift is stopped"
 msgstr "Prikaz opozorila ob ustavitvi časovnega zamika"
 
+#
+#, fuzzy
+msgid "Show/hide window"
+msgstr "Prikaz informacij"
+
 msgid "Shows live tv or informations on LCD."
 msgstr ""
 
@@ -8720,11 +8803,6 @@ msgstr "Moč signala:"
 #
 msgid "Signal: "
 msgstr "Signal:"
-
-#
-#, fuzzy
-msgid "Silently zap between bouquets"
-msgstr "Izberite paket kanalov"
 
 #
 msgid "Similar"
@@ -9671,6 +9749,29 @@ msgid ""
 "Please install it."
 msgstr "NetworkWizard vtičnik ni nameščen. Prosim, da ga namestite!"
 
+msgid ""
+"The overscan wizard has been completed.\n"
+"\n"
+"Note: you can always start the Overscan Wizard later,  via\n"
+"\n"
+"menu->settings->system->userinterface->position & size"
+msgstr ""
+
+msgid ""
+"The overscan wizard helps you to setup your TV in the correct way.\n"
+"\n"
+"For the majority of TV's, the factory default is to have overscan enabled. This means you are always watching a \"zoomed in\" picture instead of real HD, and parts of the user inferface (skin) may be invisible.\n"
+"\n"
+"The yellow area means a 5% border area of a full HD picture will be invisible.\n"
+"The green area means a 10% border area of a full HD picture will be invisible.\n"
+"\n"
+"In other words, if the yellow box meets all for sides of your screen, then you have at least 5% overscan on all sides.\n"
+"\n"
+"If you see the tips of all eight arrowheads, then your TV has overscan disabled.\n"
+"\n"
+"Test Pattern by TigerDave - www.tigerdave.com/ht_menu.htm"
+msgstr ""
+
 #
 #, python-format
 msgid "The path %s already exists."
@@ -9713,6 +9814,9 @@ msgstr "Datoteka s časovniki (timers.xml) je okvarjena in je ni možno namestit
 msgid ""
 "The unicable connection setting is wrong.\n"
 " Maybe recursive connection of tuners."
+msgstr ""
+
+msgid "The user interface of the receiver will now restart to select the selected skin"
 msgstr ""
 
 #, fuzzy, python-format
@@ -10034,10 +10138,6 @@ msgid "Timer edit"
 msgstr "Urejanje časovnika"
 
 #
-msgid "Timer editor"
-msgstr "Urejevalnik časovnikov"
-
-#
 msgid "Timer entry"
 msgstr "Vnos časovnika"
 
@@ -10165,6 +10265,9 @@ msgstr "Toneburst A/B"
 msgid "Top and bottom"
 msgstr "Zgoraj in spodaj"
 
+msgid "Total Clients streaming: "
+msgstr ""
+
 #, python-format
 msgid "Total clients streaming: %d (%s)"
 msgstr ""
@@ -10172,6 +10275,11 @@ msgstr ""
 #
 msgid "Track"
 msgstr "Zapis"
+
+#
+#, fuzzy
+msgid "Transcode"
+msgstr "Transponder"
 
 #
 #, fuzzy
@@ -10290,6 +10398,9 @@ msgstr "Stanje kanalnika %s"
 #
 msgid "Tuner type"
 msgstr "Vrsta kanalnika"
+
+msgid "Tuning algorithm"
+msgstr ""
 
 #
 msgid "Turkish"
@@ -10918,9 +11029,6 @@ msgstr "Predvajanje posnetkov"
 msgid "Watch recordings..."
 msgstr "Predvajanje posnetkov"
 
-msgid "Weather GigaBlue Pax"
-msgstr ""
-
 msgid "Weather ID"
 msgstr ""
 
@@ -11367,9 +11475,6 @@ msgstr "Nazaj na seznam datotek"
 msgid "Yesterday"
 msgstr "Včeraj"
 
-msgid "Your PIN code is 0000. This is the default PIN code and it disable parental control!\n"
-msgstr ""
-
 #, fuzzy, python-format
 msgid ""
 "You already have a bootlogo installed,\n"
@@ -11421,6 +11526,27 @@ msgstr "Izbrani vtičnik lahko izbrišete."
 #
 msgid "You cannot delete this!"
 msgstr "Izbris želenega ni možen!"
+
+msgid ""
+"You did not see all eight arrow heads. This means your TV has overscan enabled and presents you with a zoomed-in picture, causing you to loose part of a full HD screen. In addition this you may also miss parts of the user interface, for example volume bars and more.\n"
+"\n"
+"Unfortunately, your model of receiver is not capable to adjust the dimensions of the user interface. If not everything is visible, you should change the installed skin to one that supports the overscan area of your TV.\n"
+"\n"
+"When you select a different skin, the user interface of your receiver will restart.\n"
+"\n"
+"Note: you can always start the Overscan Wizard later,  via\n"
+"\n"
+"menu->settings->system->userinterface->position & size"
+msgstr ""
+
+msgid ""
+"You did not see all eight arrow heads. This means your TV has overscan enabled and presents you with a zoomed-in picture, causing you to loose part of a full HD screen. In addition this you may also miss parts of the user interface, for example volume bars and more.\n"
+"\n"
+"You can now try to resize and change the position of the user interface until you see the eight arrow heads.\n"
+"\n"
+"When done press OK.\n"
+"\n"
+msgstr ""
 
 msgid "You didn't select a channel to record from."
 msgstr "Niste izbrali ustreznega kanala za snemanje."
@@ -11498,6 +11624,9 @@ msgid ""
 "You need to plug-in your USB-flash drive with your image to restore.\n"
 "Power on your GigaBlue and you can flash your backup image.\n"
 "After flashing you can restore your settings."
+msgstr ""
+
+msgid "Your PIN code is 0000. This is the default PIN code and it disable parental control!\n"
 msgstr ""
 
 msgid "Your Receiver isn't connected to the internet properly. Please check it and try again."
@@ -11623,6 +11752,9 @@ msgstr "Prestavim na kanal, ki ste ga gledali pred tem?"
 #
 msgid "Zap back to service before tuner setup?"
 msgstr "Prestavim na kanal, ki ste ga gledali pred spreminjanjem nastavitev?"
+
+msgid "Zap bouquets blindly on zap buttons"
+msgstr ""
 
 #
 #, fuzzy
@@ -11893,6 +12025,10 @@ msgstr "črni seznam"
 #
 msgid "blue"
 msgstr "Modra"
+
+#, fuzzy
+msgid "bottom"
+msgstr "Zgoraj in spodaj"
 
 msgid "broadcasting/press"
 msgstr ""
@@ -12633,6 +12769,11 @@ msgstr "snemanje"
 msgid "red"
 msgstr "Rdeča"
 
+#
+#, fuzzy
+msgid "reliable"
+msgstr "omogoči"
+
 msgid "religion"
 msgstr ""
 
@@ -12990,6 +13131,9 @@ msgstr "na vrh"
 msgid "tourism/travel"
 msgstr ""
 
+msgid "traditional (fast)"
+msgstr ""
+
 msgid "true"
 msgstr "pravilno"
 
@@ -13212,10 +13356,6 @@ msgstr "preklopljeno"
 #~ msgstr "Želite presneti sliko k %s?"
 
 #
-#~ msgid "Do you want to install a channel list?"
-#~ msgstr "Želite namestiti seznam kanalov?"
-
-#
 #~ msgid "Do you want to update your receiver to %s?"
 #~ msgstr "Želite nadgraditi vaš sprejemnik na verzijo %s?"
 
@@ -13427,6 +13567,11 @@ msgstr "preklopljeno"
 #~ msgstr "Prikaz TV predvajalnika"
 
 #
+#, fuzzy
+#~ msgid "Silently zap between bouquets"
+#~ msgstr "Izberite paket kanalov"
+
+#
 #~ msgid "Single transponder"
 #~ msgstr "Posamezni transponder"
 
@@ -13492,6 +13637,10 @@ msgstr "preklopljeno"
 
 #~ msgid "The wizard found a configuration backup. Do you want to restore your old settings from %s?"
 #~ msgstr "Čarovnik je našel shranjene nastavitve. Želite obnoviti te nastavitve iz %s?"
+
+#
+#~ msgid "Timer editor"
+#~ msgstr "Urejevalnik časovnikov"
 
 #~ msgid ""
 #~ "To update your receiver firmware, please follow these steps:\n"
