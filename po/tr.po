@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-28 16:35+0200\n"
-"PO-Revision-Date: 2016-03-14 20:22+0100\n"
+"PO-Revision-Date: 2016-04-28 19:07+0200\n"
 "Last-Translator: Apachi70\n"
 "Language-Team: Apachi70\n"
 "Language: tr\n"
@@ -63,11 +63,12 @@ msgstr ""
 "\n"
 "Alıcıdaki çalışan imajı  HDD veya USB aygıtlarına yedekle."
 
-#, fuzzy
 msgid ""
 "\n"
 "Conflict detection disabled!"
-msgstr "Çatışma çözüldü!"
+msgstr ""
+"\n"
+"Çatışma algılama devre dışı!"
 
 msgid ""
 "\n"
@@ -237,9 +238,9 @@ msgstr "%.0f GB"
 msgid "%.0f MB"
 msgstr "%.0f MB"
 
-#, fuzzy, python-format
+#, python-format
 msgid "%.2f GB"
-msgstr "%.0f GB"
+msgstr "%.2f GB"
 
 #, python-format
 msgid "%02d:%02d"
@@ -1031,7 +1032,7 @@ msgid "Arts/Culture"
 msgstr "GzlSntlr/Kültür"
 
 msgid "As defined by the skin"
-msgstr ""
+msgstr "Arayüz tarafından tanımlandığı gibi"
 
 msgid "Ask user"
 msgstr "Sor"
@@ -1439,9 +1440,8 @@ msgstr ""
 "ilerleme, Timeshift veya (samba, takas ve nfsd gibi) bazı dış araçları bir rekor bu soruna neden olabilir.\n"
 "Bu eylemler / uygulamaları durdurmak ve tekrar deneyin"
 
-#, fuzzy
 msgid "Capabilities "
-msgstr "Kapasite: "
+msgstr "Özellikler"
 
 msgid "Capacity: "
 msgstr "Kapasite: "
@@ -1540,9 +1540,8 @@ msgstr "Bölüm:"
 msgid "Check"
 msgstr "Kontrol et"
 
-#, fuzzy
 msgid "Check disk finished with success"
-msgstr "Disk kontrolü başarı ile sona erdi"
+msgstr "Disk kontrolü başarı ile sona erdi "
 
 msgid "Check the internet connection"
 msgstr "Internet bağlantısını kontrol et"
@@ -1566,12 +1565,12 @@ msgstr "Dosya sistemi kontrol ediliyor..."
 msgid "Checking the internet connection"
 msgstr "Internet bağlantısı kontrol ediliyor..."
 
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "Checking tuner %s\n"
 "DiSEqC port %s for %s"
 msgstr ""
-"Tuner kontrolü%d\n"
+"Tuner kontrolü%s\n"
 "DiSEqC port %s için %s"
 
 msgid "Children/Youth"
@@ -1633,7 +1632,7 @@ msgid "Clear playlist"
 msgstr "Çalma listesini temizle"
 
 msgid "ClientIP"
-msgstr ""
+msgstr "istemci IP"
 
 msgid "Clock"
 msgstr "Saat"
@@ -2255,9 +2254,8 @@ msgstr "DVD Burn"
 msgid "DVD File Browser"
 msgstr "DVD Dosya Gezgini"
 
-#, fuzzy
 msgid "DVD Menu"
-msgstr "Menü"
+msgstr "DVD menü"
 
 msgid "DVD Titlelist"
 msgstr "DVD Başlık Listesi"
@@ -2479,7 +2477,7 @@ msgid "Diction"
 msgstr "Diksiyon"
 
 msgid "Did you see all eight arrow heads?"
-msgstr ""
+msgstr "sekiz ok uçlarıni gördünüz mü?"
 
 msgid "Digital contour removal"
 msgstr "Sayısal çerçeve kaldırma"
@@ -2620,7 +2618,7 @@ msgid "Do you really want to unhold the plugin \"%s\"?"
 msgstr "gerçekten unhold için eklenti \"% s\" istiyor musunuz?"
 
 msgid "Do you see all the eight arrowheads?"
-msgstr ""
+msgstr "sekiz ok uçları görüyor musunuz?"
 
 msgid "Do you want this?"
 msgstr "Bunu istiyor musun?"
@@ -2648,9 +2646,8 @@ msgstr "Kanal araması yapmak ister misiniz?"
 msgid "Do you want to do another manual service scan?"
 msgstr "Başka kanal araması yapacak mısınız?"
 
-#, fuzzy
 msgid "Do you want to install a channel list?"
-msgstr ""
+msgstr "Bir kanal listesi yüklemek istiyor musunuz?"
 
 msgid "Do you want to install the package:\n"
 msgstr "Seçilen paketi yüklemek istiyor musunuz?:\n"
@@ -2664,9 +2661,8 @@ msgstr "DVD'yi yazmadan önce önizleme yapmak istiyor musunuz?"
 msgid "Do you want to produce this collection?"
 msgstr "Bu koleksiyonu oluşturmak istiyor musunuz?"
 
-#, fuzzy
 msgid "Do you want to quit the overscan wizard?"
-msgstr "Sihirbazdan çıkmak istiyor musunuz?"
+msgstr "overscan sihirbazı çıkmak istiyor musunuz?"
 
 msgid "Do you want to reboot your Receiver?"
 msgstr "Alıcıyı yeniden başlatmak istiyor musunuz?"
@@ -2683,9 +2679,8 @@ msgstr "Ayarlarınızı geri yüklemek istiyor musunuz?"
 msgid "Do you want to resume this playback?"
 msgstr "Oynatmaya kaldığınız yerden devam etmek istiyor musunuz?"
 
-#, fuzzy
 msgid "Do you want to select a different skin?"
-msgstr "Kanal araması yapmak ister misiniz?"
+msgstr "Farklı bir arayüzü seçmek istiyor musunuz?"
 
 msgid "Do you want to update your Receiver?"
 msgstr "Alıcıyı güncellemek istiyor musunuz?"
@@ -3357,9 +3352,8 @@ msgstr "Biçimlendir"
 msgid "Format as"
 msgstr "Olarak biçimlendir"
 
-#, fuzzy
 msgid "Format finished with success"
-msgstr "Biçimlendirme başarı ile sonlandırıldı"
+msgstr "Format başarı ile tamamladı"
 
 msgid "Format/Partition your Devices and manage Mountpoints"
 msgstr "Biçim / senin Cihazları Partition ve bağlama noktaları yönetmek"
@@ -4027,6 +4021,9 @@ msgid ""
 "Please refer to your TVs manual to find how you can disable overscan on your TV. Look for terms like 'Just fit', 'Full width', etc. If you can't find it, ask other users at http://forums.openpli.org.\n"
 "\n"
 msgstr ""
+"Sekiz ok başları görmedim görünüyor. Bu TV etkin OVERSCAN etti demektir ve düzgün yapılandırılmamış.\n"
+"\n"
+"TV'nizde overscan devre dışı bırakabilir nasıl bulmak için TV'nizin kullanım kılavuzuna başvurun. Bunu bulamazsanız, vb, 'Tam genişlik' 'Sadece uygun' http://forums.openpli.org diğer kullanıcılara sormak gibi terimler arayın.\n"
 
 msgid "Italian"
 msgstr "İtalyanca"
@@ -4410,7 +4407,7 @@ msgid ""
 "Tuner %s option \"connected to\" are disabled now"
 msgstr ""
 "Yanlış unicable bağlantı %sTuner%s seçeneği\n"
-"şimdi devre dışı bırakılır"
+"Tuner  %s şimdi devre dışı bırakılır"
 
 msgid "Missing "
 msgstr "Kayıp "
@@ -4833,7 +4830,7 @@ msgid "No standby"
 msgstr "Beklemede değil"
 
 msgid "No streaming Channel from this STB at this moment"
-msgstr ""
+msgstr "Şu anda hiçbi Kanal akışi sunulmuyor STB de"
 
 msgid "No suitable sat tuner found!"
 msgstr "Hiç bir Uygun sat tuner bulunamadi!"
@@ -4995,9 +4992,8 @@ msgstr "Simdi, kontrast ayarlarını kullanarak arka zemin üzerinde, ekrandaki 
 msgid "Number of channel number digits"
 msgstr "kanal numarası hane sayısı"
 
-#, fuzzy
 msgid "Number of channels shown in channel selection list"
-msgstr "Kanal seçim ekranında kanal numaralarını göster"
+msgstr "Kanal seçim ekranında kanal numaralarını göster "
 
 msgid "Number of repeating text on display."
 msgstr "Ekranda metin tekrarlayarak sayısı."
@@ -5102,11 +5098,10 @@ msgid "Overall progress:"
 msgstr "Genel ilerleme:"
 
 msgid "Overscan Wizard"
-msgstr ""
+msgstr "Fazla tarama Sihirbazı"
 
-#, fuzzy
 msgid "Overscan wizard"
-msgstr "Ağ kurulum sihirbazı"
+msgstr "Fazla tarama Sihirbazı"
 
 msgid "Overwrite Bootlogo Files ?"
 msgstr "Bootlogo dosyaları üzerine yaz?"
@@ -7017,9 +7012,8 @@ msgstr "Sadece bulundu görüntü ve MTD bölümleri göster.\n"
 msgid "Show packages to be upgraded"
 msgstr "Göster paketleri yükseltilecek"
 
-#, fuzzy
 msgid "Show picons in channel selection list"
-msgstr "Kanal listesinde simgeleri göster"
+msgstr "Kanal seçim listesinde Picons göster "
 
 msgid "Show positioner movement"
 msgstr "Pozisyoner hareketini göster"
@@ -7027,9 +7021,8 @@ msgstr "Pozisyoner hareketini göster"
 msgid "Show positioner position"
 msgstr "Pozisyoner konumunu göster"
 
-#, fuzzy
 msgid "Show record clock icons"
-msgstr "Şifre simgelerini göster"
+msgstr "Kayıt saat simgelerini göster"
 
 msgid "Show record indicator"
 msgstr "Ikinci bilgi çubuğunu göster"
@@ -7088,9 +7081,8 @@ msgstr "Uyarı göster önce 'çatışma Yoksa set"
 msgid "Show warning when timeshift is stopped"
 msgstr "Zaman kaydırma durduğunda uyarı göster"
 
-#, fuzzy
 msgid "Show/hide window"
-msgstr "Bilgi göster"
+msgstr "Göster / gizle penceresini"
 
 msgid "Shows live tv or informations on LCD."
 msgstr "LCD ekranda bilgileri veya yayını göster"
@@ -7903,6 +7895,11 @@ msgid ""
 "\n"
 "menu->settings->system->userinterface->position & size"
 msgstr ""
+"Overscan sihirbaz tamamlandı.\n"
+"\n"
+"Not: Her zaman Overscan Sihirbazı'nı sonra başlata bilirsiniz\n"
+"\n"
+"menu-> ayarları-> sistematik> kullanıcı arayüzü-> pozisyon ve boyut"
 
 msgid ""
 "The overscan wizard helps you to setup your TV in the correct way.\n"
@@ -7918,6 +7915,18 @@ msgid ""
 "\n"
 "Test Pattern by TigerDave - www.tigerdave.com/ht_menu.htm"
 msgstr ""
+"Overscan sihirbaz kurulum doğru şekilde TV'nizi size yardımcı olur.\n"
+"\n"
+"TV çoğunluğu için, fabrika overscan sağladı.Bu, her zaman bir resim yerine gerçek HD ve kullanıcı inferface (arayüzü) parçaları \"yakınlaştırılmış\" görünmez olabilir izliyor demektir.\n"
+"\n"
+"Sarı alan Full HD resim% 5 sınır bölgesi görünmez olacağı anlamına gelir.\n"
+"yeşil alan Full HD resim% 10 sınır bölgesi görünmez olacağı anlamına gelir.\n"
+"\n"
+"Sarı kutusu ekranın kenarlarına tüm karşılar Başka bir deyişle, o zaman her taraftan en az% 5 overscan var.\n"
+"\n"
+"sekiz ok uçları ipuçlarına bakın, sonra TV devre dışı Overscan etti.\n"
+"\n"
+"TigerDave tarafından Test Deseni - www.tigerdave.com/ht_menu.htm"
 
 #, python-format
 msgid "The path %s already exists."
@@ -7960,7 +7969,7 @@ msgstr ""
 " tuner Belki özyinelemeli bağlantısı."
 
 msgid "The user interface of the receiver will now restart to select the selected skin"
-msgstr ""
+msgstr "Alıcının kullanıcı arayüzü, seçilen arayüzü seçmek için yeniden başlatılmasi gerek"
 
 #, python-format
 msgid "The user interface of your %s %s is restarting"
@@ -8354,9 +8363,8 @@ msgstr "Toneburst A/B"
 msgid "Top and bottom"
 msgstr "Üst ve alt"
 
-#, fuzzy
 msgid "Total Clients streaming: "
-msgstr "Toplam istemcileri:% d (% s)"
+msgstr "Toplam Clients streaming"
 
 #, python-format
 msgid "Total clients streaming: %d (%s)"
@@ -8365,9 +8373,8 @@ msgstr "Toplam istemcileri:% d (% s)"
 msgid "Track"
 msgstr "İz"
 
-#, fuzzy
 msgid "Transcode"
-msgstr "Transponder"
+msgstr "transcode"
 
 msgid "Transcoding: "
 msgstr "Transcoding: "
@@ -8455,7 +8462,7 @@ msgid "Tuner type"
 msgstr "Tuner tipi"
 
 msgid "Tuning algorithm"
-msgstr ""
+msgstr "Tuning algoritması"
 
 msgid "Turkish"
 msgstr "Türkçe"
@@ -9438,6 +9445,15 @@ msgid ""
 "\n"
 "menu->settings->system->userinterface->position & size"
 msgstr ""
+"Tüm sekiz ok başları görmedim. Bu TV etkin OVERSCAN anlamına gelir ve bir Full HD ekranın bir bölümünü gevşek neden bir yakınlaştırılmış resim size sunar. Buna ek olarak, bu da örnek hacmi barlar ve daha fazlası için, kullanıcı arabirimi bölümlerini kaçırabilir.\n"
+"\n"
+"Ne yazık ki, alıcının modeliniz kullanıcı arayüzü boyutlarını ayarlamak için yeteneğine sahip değildir. her şey görünür değilse, TV'nizin overscan alan destekleyen bir kurulu arayüzü değiştirmek gerekir.\n"
+"\n"
+"Farklı arayüzü seçtiğinizde, alıcınızın kullanıcı arayüzü yeniden başlayacaktır.\n"
+"\n"
+"Not: Her zaman sonra Overscan Sihirbazı'nı başlatmak için\n"
+"\n"
+"menu-> ayarları-> sistematik> userinterface-> pozisyon ve boyut"
 
 msgid ""
 "You did not see all eight arrow heads. This means your TV has overscan enabled and presents you with a zoomed-in picture, causing you to loose part of a full HD screen. In addition this you may also miss parts of the user interface, for example volume bars and more.\n"
@@ -9447,6 +9463,11 @@ msgid ""
 "When done press OK.\n"
 "\n"
 msgstr ""
+"Tüm sekiz ok başları görmedim. Bu TV etkin OVERSCAN anlamına gelir ve bir Full HD ekranın bir bölümünü gevşek neden bir yakınlaştırılmış resim size sunar. Buna ek olarak, bu da örnek hacmi barlar ve daha fazlası için, kullanıcı arabirimi bölümlerini kaçırabilir.\n"
+"\n"
+"sekiz ok başları görene kadar şimdi yeniden boyutlandırmak ve kullanıcı arayüzü konumunu değiştirmek için deneyebilirsiniz.\n"
+"\n"
+"OK düğmesine basınız.\n"
 
 msgid "You didn't select a channel to record from."
 msgstr "Kayıt için bir kanal seçmediniz."
@@ -9655,7 +9676,7 @@ msgid "Zap back to service before tuner setup?"
 msgstr "Tuner ayarlarından çıkıldığında seyrettiğiniz kanala dönmek istiyor musunuz?"
 
 msgid "Zap bouquets blindly on zap buttons"
-msgstr ""
+msgstr "görmeden Zap buketleri. zap butonuna"
 
 msgid "Zap down"
 msgstr "aşağı zap"
@@ -9877,9 +9898,8 @@ msgstr "kara liste"
 msgid "blue"
 msgstr "mavi"
 
-#, fuzzy
 msgid "bottom"
-msgstr "Üst ve alt"
+msgstr "alt"
 
 msgid "broadcasting/press"
 msgstr "yayıncılık/basın"
@@ -10501,9 +10521,8 @@ msgstr "inetd kurtar"
 msgid "red"
 msgstr "kırmızı"
 
-#, fuzzy
 msgid "reliable"
-msgstr "etkinleştir"
+msgstr "güvenilir"
 
 msgid "religion"
 msgstr "dini"
@@ -10795,9 +10814,8 @@ msgstr "üst"
 msgid "tourism/travel"
 msgstr "Turizm/Seyahat"
 
-#, fuzzy
 msgid "traditional (fast)"
-msgstr "halk müziği / geleneksel müzik"
+msgstr "Geleneksel (hızlı)"
 
 msgid "true"
 msgstr "doğru"
