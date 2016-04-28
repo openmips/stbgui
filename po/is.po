@@ -2958,7 +2958,7 @@ msgstr "Viltu leita aftur handvirkt?"
 #
 #, fuzzy
 msgid "Do you want to install a channel list?"
-msgstr "Viltu setja inn pakkann:\n"
+msgstr ""
 
 #
 msgid "Do you want to install the package:\n"

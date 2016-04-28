@@ -2757,7 +2757,7 @@ msgstr "ท่านต้องการที่จะทำการค้น
 
 #, fuzzy
 msgid "Do you want to install a channel list?"
-msgstr "ท่านต้องการที่จะติดตั้งส่วนประกอบนี้:\n"
+msgstr ""
 
 msgid "Do you want to install the package:\n"
 msgstr "ท่านต้องการที่จะติดตั้งส่วนประกอบนี้:\n"

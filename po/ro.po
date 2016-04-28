@@ -2751,7 +2751,7 @@ msgstr "Doriti efectuarea unei alte operatiuni de scanare manuala?"
 
 #, fuzzy
 msgid "Do you want to install a channel list?"
-msgstr "Doriti sa instalati pachetul:\n"
+msgstr ""
 
 msgid "Do you want to install the package:\n"
 msgstr "Doriti sa instalati pachetul:\n"

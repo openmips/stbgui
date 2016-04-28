@@ -2789,7 +2789,7 @@ msgstr "Chcete urobiť ďalšie ručné vyhľadávanie staníc?"
 
 #, fuzzy
 msgid "Do you want to install a channel list?"
-msgstr "Chcete nainštalovať balíček:\n"
+msgstr ""
 
 msgid "Do you want to install the package:\n"
 msgstr "Chcete nainštalovať balíček:\n"

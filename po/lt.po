@@ -2772,7 +2772,7 @@ msgstr "Jūs norite atlikti rankinį kanalų skanavimą?"
 
 #, fuzzy
 msgid "Do you want to install a channel list?"
-msgstr "Jūs norite įdiegti paketą:\n"
+msgstr ""
 
 msgid "Do you want to install the package:\n"
 msgstr "Jūs norite įdiegti paketą:\n"

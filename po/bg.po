@@ -2694,7 +2694,7 @@ msgstr "Искате ли да извърша друго ръчно сканир
 
 #, fuzzy
 msgid "Do you want to install a channel list?"
-msgstr "Да инсталирам ли пакета:\n"
+msgstr ""
 
 msgid "Do you want to install the package:\n"
 msgstr "Да инсталирам ли пакета:\n"

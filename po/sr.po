@@ -3180,7 +3180,7 @@ msgstr "Želite li sada započeti drugu ručnu pretragu kanala?"
 #
 #, fuzzy
 msgid "Do you want to install a channel list?"
-msgstr "Da li želite da instalirate paket:\n"
+msgstr ""
 
 #
 msgid "Do you want to install the package:\n"

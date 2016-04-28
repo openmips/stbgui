@@ -3145,7 +3145,7 @@ msgstr "¿Quiere hacer otra búsqueda manual?"
 #
 #
 msgid "Do you want to install a channel list?"
-msgstr "Quiere instalar el paquete:\n"
+msgstr ""
 
 #
 msgid "Do you want to install the package:\n"

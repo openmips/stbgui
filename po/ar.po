@@ -2939,7 +2939,7 @@ msgstr "هل تريد عمل بحث يدوى جديد ؟"
 
 #, fuzzy
 msgid "Do you want to install a channel list?"
-msgstr "هل تريد فعلا تثبيت الرزمه:\n"
+msgstr ""
 
 msgid "Do you want to install the package:\n"
 msgstr "هل تريد فعلا تثبيت الرزمه:\n"

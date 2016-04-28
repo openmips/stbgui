@@ -2898,7 +2898,7 @@ msgstr "? האם ברצונך לבצע שוב סריקת שירותים ידני
 
 #, fuzzy
 msgid "Do you want to install a channel list?"
-msgstr ":האם ברצונך להתקין את החבילה\n"
+msgstr ""
 
 msgid "Do you want to install the package:\n"
 msgstr ":האם ברצונך להתקין את החבילה\n"
