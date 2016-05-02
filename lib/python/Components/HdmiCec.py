@@ -33,6 +33,10 @@ choicelist = []
 for i in (10, 50, 100, 150, 250, 500, 750, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000, 5500, 6000):
 	choicelist.append(("%d" % i, "%d ms" % i))
 config.hdmicec.minimum_send_interval = ConfigSelection(default = "0", choices = [("0", _("Disabled"))] + choicelist)
+choicelist = []
+for i in range(5, 65, 5):
+	choicelist.append(("%d" % i, "%d sec" % i))
+config.hdmicec.repeat_wakeup_timer = ConfigSelection(default = "0", choices = [("0", _("Disabled"))] + choicelist)
 
 class HdmiCec:
 	instance = None
@@ -44,6 +48,8 @@ class HdmiCec:
 
 			self.wait = eTimer()
 			self.wait.timeout.get().append(self.sendCmd)
+			self.repeat = eTimer()
+			self.repeat.timeout.get().append(self.wakeupMessages)
 			self.queue = []
 
 			eHdmiCEC.getInstance().messageReceived.get().append(self.messageReceived)
@@ -58,7 +64,7 @@ class HdmiCec:
 			config.hdmicec.enabled.addNotifier(self.configVolumeForwarding)
 			if config.hdmicec.handle_deepstandby_events.value:
 				if not getFPWasTimerWakeup():
-					self.wakeupMessages()
+					self.onLeaveStandby()
 
 	def getPhysicalAddress(self):
 		physicaladdress = eHdmiCEC.getInstance().getPhysicalAddress()
@@ -181,10 +187,13 @@ class HdmiCec:
 
 	def onLeaveStandby(self):
 		self.wakeupMessages()
+		if config.hdmicec.repeat_wakeup_timer.value:
+			self.repeat.startLongTimer(int(config.hdmicec.repeat_wakeup_timer.value))
 
 	def onEnterStandby(self, configElement):
 		from Screens.Standby import inStandby
 		inStandby.onClose.append(self.onLeaveStandby)
+		self.repeat.stop()
 		self.standbyMessages()
 
 	def onEnterDeepStandby(self, configElement):
