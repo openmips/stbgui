@@ -252,7 +252,7 @@ class NimSetup(Screen, ConfigListScreen, ServiceStopScreen):
 			self.advancedType, self.advancedSCR, self.advancedDiction, self.advancedManufacturer, self.advancedUnicable, self.advancedConnected, self.advancedUnicableTuningAlgo,\
 			self.toneburst, self.committedDiseqcCommand, self.uncommittedDiseqcCommand, self.singleSatEntry, \
 			self.commandOrder, self.showAdditionalMotorOptions, self.cableScanType, self.multiType)
-		if self["config"].getCurrent() == self.multiType:
+		if self["config"].getCurrent() == self.multiType and self.multiType:
 			update_slots = [self.slotid]
 			from Components.NimManager import InitNimManager
 			InitNimManager(nimmanager, update_slots)
@@ -260,7 +260,7 @@ class NimSetup(Screen, ConfigListScreen, ServiceStopScreen):
 			self.nimConfig = self.nim.config
 
 		for x in checkList:
-			if self["config"].getCurrent() == x:
+			if self["config"].getCurrent() == x and x:
 				self.createSetup()
 				break
 
@@ -546,10 +546,10 @@ class NimSetup(Screen, ConfigListScreen, ServiceStopScreen):
 		return checkRecursiveConnect(self.slotid)
 
 	def keyOk(self):
-		if self["config"].getCurrent() == self.advancedSelectSatsEntry:
+		if self["config"].getCurrent() == self.advancedSelectSatsEntry and self.advancedSelectSatsEntry:
 			conf = self.nimConfig.advanced.sat[int(self.nimConfig.advanced.sats.value)].userSatellitesList
 			self.session.openWithCallback(boundFunction(self.updateConfUserSatellitesList, conf), SelectSatsEntryScreen, userSatlist=conf.value)
-		elif self["config"].getCurrent() == self.selectSatsEntry:
+		elif self["config"].getCurrent() == self.selectSatsEntry and self.selectSatsEntry:
 			conf = self.nimConfig.userSatellitesList
 			self.session.openWithCallback(boundFunction(self.updateConfUserSatellitesList, conf), SelectSatsEntryScreen, userSatlist=conf.value)
 		else:
