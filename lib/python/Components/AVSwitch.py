@@ -157,31 +157,6 @@ def InitAVSwitch():
 	
 	SystemInfo["ScartSwitch"] = detected
 
-	if os.path.exists("/proc/stb/hdmi/bypass_edid_checking"):
-		f = open("/proc/stb/hdmi/bypass_edid_checking", "r")
-		can_edidchecking = f.read().strip().split(" ")
-		f.close()
-	else:
-		can_edidchecking = False
-
-	SystemInfo["Canedidchecking"] = can_edidchecking
-
-	if can_edidchecking:
-		def setEDIDBypass(configElement):
-			try:
-				f = open("/proc/stb/hdmi/bypass_edid_checking", "w")
-				f.write(configElement.value)
-				f.close()
-			except:
-				pass
-		config.av.bypass_edid_checking = ConfigSelection(choices={
-				"00000000": _("off"),
-				"00000001": _("on")},
-				default = "00000000")
-		config.av.bypass_edid_checking.addNotifier(setEDIDBypass)
-	else:
-		config.av.bypass_edid_checking = ConfigNothing()
-
 	if os.path.exists("/proc/stb/audio/3d_surround_choices"):
 		f = open("/proc/stb/audio/3d_surround_choices", "r")
 		can_3dsurround = f.read().strip().split(" ")
