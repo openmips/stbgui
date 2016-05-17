@@ -1034,11 +1034,8 @@ def main(session, **kwargs):
 	InfoBar.instance.checkTimeshiftRunning(boundFunction(mainCheckTimeshiftCallback, session))
 
 def menu(menuid, **kwargs):
-	try:
-		if menuid == "mainmenu" and config.mediaplayer.onMainMenu.getValue():
-			return [(_("Media player"), main, "media_player", 45)]
-	except:
-		pass
+	if menuid == "mainmenu" and config.mediaplayer.onMainMenu.value:
+		return [(_("Media player"), main, "media_player", 45)]
 	return []
 
 def filescan_open(list, session, **kwargs):
