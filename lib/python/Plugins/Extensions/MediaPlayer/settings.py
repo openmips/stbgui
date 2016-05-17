@@ -7,17 +7,14 @@ from Components.config import config, getConfigListEntry, ConfigSubsection, conf
 from Components.ConfigList import ConfigListScreen
 from Components.ActionMap import ActionMap
 
-def Load_defaults():
-	config.mediaplayer = ConfigSubsection()
-	config.mediaplayer.repeat = ConfigYesNo(default=False)
-	config.mediaplayer.savePlaylistOnExit = ConfigYesNo(default=True)
-	config.mediaplayer.saveDirOnExit = ConfigYesNo(default=False)
-	config.mediaplayer.defaultDir = ConfigDirectory()
-	config.mediaplayer.sortPlaylists = ConfigYesNo(default=False)
-	config.mediaplayer.alwaysHideInfoBar = ConfigYesNo(default=True)
-	config.mediaplayer.onMainMenu = ConfigYesNo(default=False)
-
-Load_defaults()
+config.mediaplayer = ConfigSubsection()
+config.mediaplayer.repeat = ConfigYesNo(default=False)
+config.mediaplayer.savePlaylistOnExit = ConfigYesNo(default=True)
+config.mediaplayer.saveDirOnExit = ConfigYesNo(default=False)
+config.mediaplayer.defaultDir = ConfigDirectory()
+config.mediaplayer.sortPlaylists = ConfigYesNo(default=False)
+config.mediaplayer.alwaysHideInfoBar = ConfigYesNo(default=True)
+config.mediaplayer.onMainMenu = ConfigYesNo(default=False)
 
 class DirectoryBrowser(Screen, HelpableScreen):
 
