@@ -38,9 +38,6 @@ def OSDPosSetup(menuid, **kwargs):
 		return []
 
 def Plugins(**kwargs):
-	from os import path
-	if path.exists("/proc/stb/fb/dst_left"):
-		from Plugins.Plugin import PluginDescriptor
-		return [PluginDescriptor(name = _("OSD position setup"), description = _("Compensate for overscan"), where = PluginDescriptor.WHERE_MENU, needsRestart = False, fnc=OSDPosSetup),
-					PluginDescriptor(name = "Overscan Wizard", description = "", where = PluginDescriptor.WHERE_SESSIONSTART, fnc = startup)]
-	return []
+	from Plugins.Plugin import PluginDescriptor
+	return [PluginDescriptor(name = "Overscan Wizard", description = _("Wizard to arrange the overscan"), where = PluginDescriptor.WHERE_SESSIONSTART, fnc = startup),
+		PluginDescriptor(name = "Overscan Wizard", description = _("Wizard to arrange the overscan"), where = PluginDescriptor.WHERE_MENU, fnc = OSDPosSetup)]
