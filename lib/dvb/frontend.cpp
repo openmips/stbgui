@@ -1008,8 +1008,19 @@ void eDVBFrontend::calculateSignalQuality(int snr, int &signalquality, int &sign
 		|| strstr(m_description, "GIGA DVB-C/T2 NIM (SI4768)")
 		)
 	{
-		ret = (int)(snr / 75);
-		ter_max = 1700;
+		int type = -1;
+		oparm.getSystem(type);
+		switch (type)
+		{
+			case feCable:
+				ret = (int)(snr / 75);
+				cab_max = 4200;
+				break;
+			case feTerrestrial:
+				ret = (int)(snr / 75);
+				ter_max = 1700;
+				break;
+		}
 	}
 	else if (!strcmp(m_description, "Vuplus DVB-S NIM(7376 FBC)")) // VU+ Solo4k
 	{
