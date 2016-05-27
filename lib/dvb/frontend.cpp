@@ -1013,7 +1013,7 @@ void eDVBFrontend::calculateSignalQuality(int snr, int &signalquality, int &sign
 		switch (type)
 		{
 			case feCable:
-				ret = (int)(snr / 19);
+				ret = (int)(snr / 15);
 				cab_max = 4200;
 				break;
 			case feTerrestrial:
