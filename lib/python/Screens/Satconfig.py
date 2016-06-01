@@ -748,7 +748,7 @@ class NimSelection(Screen):
 		nimname = nim[1]
 		nim = nim and nim[3]
 		if config.usage.setup_level.index >= 2 and nim is not None:
-			nimcapabilities = ",".join(eDVBResourceManager.getInstance().getFrontendCapabilities(nim.slot).splitlines())
+			nimcapabilities = eDVBResourceManager.getInstance().getFrontendCapabilities(nim.slot)
 			text = _("Capabilities ") + str(nimname) + " \n" + str(nimcapabilities)
 			self.session.open(MessageBox, text, MessageBox.TYPE_INFO, simple=True)
 
