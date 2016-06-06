@@ -50,7 +50,7 @@ struct eDVBFrontendParametersSatellite
 	};
 
 	bool no_rotor_command_on_tune;
-	unsigned int frequency, symbol_rate;
+	int frequency, symbol_rate;
 	int polarisation, fec, inversion, orbital_position, system, modulation, rolloff, pilot;
 };
 SWIG_ALLOW_OUTPUT_SIMPLE(eDVBFrontendParametersSatellite);
