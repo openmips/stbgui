@@ -3,7 +3,7 @@ import struct, socket, fcntl, sys, os, time
 from sys import modules
 from Tools.HardwareInfo import HardwareInfo
 
-from boxbranding import getBoxType
+from boxbranding import getBoxType, getMachineBuild
 
 def getVersionString():
 	return getImageVersionString()
@@ -45,17 +45,22 @@ def getKernelVersionString():
 		return _("unknown")
 
 def getChipSetString():
-	try:
-		f = open('/proc/stb/info/chipset', 'r')
-		chipset = f.read()
-		f.close()
-		return str(chipset.lower().replace('\n','').replace('bcm','BCM').replace('brcm','BRCM').replace('sti',''))
-	except IOError:
-		return "unavailable"
+	if getMachineBuild() in ('gb73625'):
+		return "BCM73625"
+	else:
+		try:
+			f = open('/proc/stb/info/chipset', 'r')
+			chipset = f.read()
+			f.close()
+			return str(chipset.lower().replace('\n','').replace('bcm','BCM').replace('brcm','BRCM').replace('sti',''))
+		except IOError:
+			return "unavailable"
 
 def getCPUString():
-	if getBoxType() in ('xc7362'):
+	if getMachineBuild() in ('xc7362'):
 		return "Broadcom"
+	#elif getMachineBuild() in ('gb73625'):
+	#	return "BCM73625"
 	else:
 		try:
 			system="unknown"
