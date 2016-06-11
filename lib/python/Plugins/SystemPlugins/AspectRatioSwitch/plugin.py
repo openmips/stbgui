@@ -174,9 +174,7 @@ class AspectRatioSwitch:
 		#print 'AspectRatioSwitch: Changed aspect ratio from %d - %s to %d - %s' % (aspectnum, ASPECT[aspectnum], newaspectnum, ASPECT[newaspectnum])
 
 def autostart(reason, **kwargs):
-
 	global aspect_ratio_switch
-	
 	if reason == 0: # startup
 		#print "AspectRatioSwitch: startup"
 		if config.plugins.AspectRatioSwitch.enabled.value and aspect_ratio_switch is None:
@@ -193,7 +191,7 @@ def main(session, **kwargs):
 def startAspectRatioSwitch(menuid):
 	if menuid != "video_menu":
 		return []
-	return [( _("AspectRatio switch"), main, "aspectratio_switch", 15)]
+	return [( _("AspectRatio switch"), main, "aspectratio_switch", 99)]
 
 def Plugins(**kwargs):
 	return [
