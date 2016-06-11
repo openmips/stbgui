@@ -33,19 +33,19 @@ ASPECTMSG = {
 PACKAGE_PATH = os.path.dirname(str((globals())["__file__"]))
 KEYMAPPINGS = {'aspect': os.path.join(PACKAGE_PATH, 'keymap-aspect.xml')}
 
-config.plugins.GBAspectRatioSwitch = ConfigSubsection()
-config.plugins.GBAspectRatioSwitch.enabled = ConfigEnableDisable(default = True)
-config.plugins.GBAspectRatioSwitch.keymap = ConfigSelection({'aspect': _('ASPECT key')})
-config.plugins.GBAspectRatioSwitch.showmsg = ConfigEnableDisable(default = True)
-config.plugins.GBAspectRatioSwitch.modes = ConfigSubDict()
+config.plugins.AspectRatioSwitch = ConfigSubsection()
+config.plugins.AspectRatioSwitch.enabled = ConfigEnableDisable(default = True)
+config.plugins.AspectRatioSwitch.keymap = ConfigSelection({'aspect': _('ASPECT key')})
+config.plugins.AspectRatioSwitch.showmsg = ConfigEnableDisable(default = True)
+config.plugins.AspectRatioSwitch.modes = ConfigSubDict()
 for aspect in ASPECT:
-	config.plugins.GBAspectRatioSwitch.modes[aspect] = ConfigYesNo(default = True)
+	config.plugins.AspectRatioSwitch.modes[aspect] = ConfigYesNo(default = True)
 
 aspect_ratio_switch = None
 
-class GBAspectRatioSwitchSetup(ConfigListScreen, Screen):
+class AspectRatioSwitchSetup(ConfigListScreen, Screen):
 	skin = """
-		<screen position="100,100" size="550,400" title="GBAspectRatioSwitch Setup">
+		<screen position="100,100" size="550,400" title="AspectRatioSwitch Setup">
 			<widget name="config" position="0,0" size="550,300" scrollbarMode="showOnDemand" />
 			<widget name="label" position="50,300" size="450,60" font="Regular;18" halign="center" />
 			<widget name="buttonred" position="10,360" size="100,40" backgroundColor="red" valign="center" halign="center" zPosition="2" foregroundColor="white" font="Regular;18"/>
@@ -56,11 +56,11 @@ class GBAspectRatioSwitchSetup(ConfigListScreen, Screen):
 		Screen.__init__(self, session)
 		
 		self.list = []
-		self.list.append(getConfigListEntry(_("Quick switching via remote control"), config.plugins.GBAspectRatioSwitch.enabled))
-		self.list.append(getConfigListEntry(_("Key mapping"), config.plugins.GBAspectRatioSwitch.keymap))
-		self.list.append(getConfigListEntry(_("Show current mode"), config.plugins.GBAspectRatioSwitch.showmsg))
+		self.list.append(getConfigListEntry(_("Quick switching via remote control"), config.plugins.AspectRatioSwitch.enabled))
+		self.list.append(getConfigListEntry(_("Key mapping"), config.plugins.AspectRatioSwitch.keymap))
+		self.list.append(getConfigListEntry(_("Show current mode"), config.plugins.AspectRatioSwitch.showmsg))
 		for aspect in ASPECT:
-			self.list.append(getConfigListEntry(_("Include %s") % ASPECTMSG[aspect], config.plugins.GBAspectRatioSwitch.modes[aspect]))
+			self.list.append(getConfigListEntry(_("Include %s") % ASPECTMSG[aspect], config.plugins.AspectRatioSwitch.modes[aspect]))
 		ConfigListScreen.__init__(self, self.list)
 
 		self["label"] = Label(_("ENABLE DISABLE PLUGIN IF U WANT IT"))
@@ -79,21 +79,21 @@ class GBAspectRatioSwitchSetup(ConfigListScreen, Screen):
 	def save(self):
 		global aspect_ratio_switch
 		
-		if len([modeconf for modeconf in config.plugins.GBAspectRatioSwitch.modes.values() if modeconf.value]) < 2:
+		if len([modeconf for modeconf in config.plugins.AspectRatioSwitch.modes.values() if modeconf.value]) < 2:
 			self.session.open(MessageBox, _("You have to include at least %d aspect ratio modes!") % 2, MessageBox.TYPE_ERROR)
 			return
 
-		if config.plugins.GBAspectRatioSwitch.enabled.isChanged():
-			if config.plugins.GBAspectRatioSwitch.enabled.value:
-				aspect_ratio_switch = GBAspectRatioSwitch()
+		if config.plugins.AspectRatioSwitch.enabled.isChanged():
+			if config.plugins.AspectRatioSwitch.enabled.value:
+				aspect_ratio_switch = AspectRatioSwitch()
 				aspect_ratio_switch.enable()
 			elif aspect_ratio_switch is not None:
 				aspect_ratio_switch.disable()
 		elif aspect_ratio_switch is not None:
 			#TODO: if aspects changed (no isChanged() on ConfigSubDict?)
 			aspect_ratio_switch.reload_enabledaspects()
-			if config.plugins.GBAspectRatioSwitch.keymap.isChanged():
-				aspect_ratio_switch.change_keymap(config.plugins.GBAspectRatioSwitch.keymap.value)
+			if config.plugins.AspectRatioSwitch.keymap.isChanged():
+				aspect_ratio_switch.change_keymap(config.plugins.AspectRatioSwitch.keymap.value)
 
 		for x in self["config"].list:
 			x[1].save()
@@ -105,7 +105,7 @@ class GBAspectRatioSwitchSetup(ConfigListScreen, Screen):
 			x[1].cancel()
 		self.close()
 
-class GBAspectRatioSwitch:
+class AspectRatioSwitch:
 
 	def __init__(self):
 		self.reload_enabledaspects()
@@ -117,9 +117,9 @@ class GBAspectRatioSwitch:
 		try:
 			keymapparser.readKeymap(KEYMAPPINGS[keymap])
 		except IOError, (errno, strerror):
-			config.plugins.GBAspectRatioSwitch.enabled.setValue(False)
+			config.plugins.AspectRatioSwitch.enabled.setValue(False)
 			self.disable()
-			Notifications.AddPopup(text=_("Changing keymap failed (%s).") % strerror, type=MessageBox.TYPE_ERROR, timeout=10, id='GBAspectRatioSwitch')
+			Notifications.AddPopup(text=_("Changing keymap failed (%s).") % strerror, type=MessageBox.TYPE_ERROR, timeout=10, id='AspectRatioSwitch')
 			return
 		global globalActionMap
 		globalActionMap.actions['switchAspectUp'] = self.switchAspectRatioUp
@@ -138,12 +138,12 @@ class GBAspectRatioSwitch:
 	def reload_enabledaspects(self):
 		self.enabledaspects = []
 		for aspectnum, aspect in enumerate(ASPECT):
-			if config.plugins.GBAspectRatioSwitch.modes[aspect].value:
+			if config.plugins.AspectRatioSwitch.modes[aspect].value:
 				self.enabledaspects.append(aspectnum)
 		#print 'AspectRatioSwitch: Aspect modes in cycle:',self.enabledaspects
 
 	def enable(self):
-		self.change_keymap(config.plugins.GBAspectRatioSwitch.keymap.value)
+		self.change_keymap(config.plugins.AspectRatioSwitch.keymap.value)
 		self.reload_enabledaspects()
 	
 	def disable(self):
@@ -169,8 +169,8 @@ class GBAspectRatioSwitch:
 		newaspectnum = self.enabledaspects[(localaspectnum + direction) % len(self.enabledaspects)]
 		iAVSwitch.setAspectRatio(newaspectnum)
 		config.av.aspectratio.setValue(ASPECT[newaspectnum])
-		if config.plugins.GBAspectRatioSwitch.showmsg.value:
-			Notifications.AddPopup(text=ASPECTMSG[ASPECT[newaspectnum]], type=MessageBox.TYPE_INFO, timeout=2, id='GBAspectRatioSwitch')
+		if config.plugins.AspectRatioSwitch.showmsg.value:
+			Notifications.AddPopup(text=ASPECTMSG[ASPECT[newaspectnum]], type=MessageBox.TYPE_INFO, timeout=2, id='AspectRatioSwitch')
 		#print 'AspectRatioSwitch: Changed aspect ratio from %d - %s to %d - %s' % (aspectnum, ASPECT[aspectnum], newaspectnum, ASPECT[newaspectnum])
 
 def autostart(reason, **kwargs):
@@ -179,8 +179,8 @@ def autostart(reason, **kwargs):
 	
 	if reason == 0: # startup
 		#print "AspectRatioSwitch: startup"
-		if config.plugins.GBAspectRatioSwitch.enabled.value and aspect_ratio_switch is None:
-			aspect_ratio_switch = GBAspectRatioSwitch()
+		if config.plugins.AspectRatioSwitch.enabled.value and aspect_ratio_switch is None:
+			aspect_ratio_switch = AspectRatioSwitch()
 			aspect_ratio_switch.enable()
 	elif reason == 1:
 		#print "AspectRatioSwitch: shutdown"
@@ -188,16 +188,21 @@ def autostart(reason, **kwargs):
 			aspect_ratio_switch.disable()
 
 def main(session, **kwargs):
-	session.open(GBAspectRatioSwitchSetup)
+	session.open(AspectRatioSwitchSetup)
+
+def startAspectRatioSwitch(menuid):
+	if menuid != "video_menu":
+		return []
+	return [( _("AspectRatio switch"), main, "aspectratio_switch", 15)]
 
 def Plugins(**kwargs):
- 	return [
+	return [
 		PluginDescriptor(
-			name="GBAspectRatioSwitch",
+			name="AspectRatioSwitch",
 			description=_("Quick switching of aspect ratio setting"),
-			where = PluginDescriptor.WHERE_PLUGINMENU,
-			#icon='plugin.png',
-			fnc=main),
+			where = PluginDescriptor.WHERE_MENU,
+			needsRestart = False,
+			fnc=startAspectRatioSwitch),
 		PluginDescriptor(
 			where = [PluginDescriptor.WHERE_SESSIONSTART,PluginDescriptor.WHERE_AUTOSTART],
 			fnc = autostart)]
