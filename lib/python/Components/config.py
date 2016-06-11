@@ -488,7 +488,7 @@ class ConfigOnOff(ConfigBoolean):
 	def __init__(self, default = False):
 		ConfigBoolean.__init__(self, default = default, descriptions = on_off_descriptions)
 
-enable_disable_descriptions = {False: _("disable"), True: _("enable")}
+enable_disable_descriptions = {False: _("disabled"), True: _("enabled")}
 class ConfigEnableDisable(ConfigBoolean):
 	def __init__(self, default = False):
 		ConfigBoolean.__init__(self, default = default, descriptions = enable_disable_descriptions)
