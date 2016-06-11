@@ -45,7 +45,7 @@ aspect_ratio_switch = None
 
 class GBAspectRatioSwitchSetup(ConfigListScreen, Screen):
 	skin = """
-		<screen position="100,100" size="550,400" title="GBAspectRatioSwitch Setup">
+		<screen position="100,100" size="550,400" title="AspectRatioSwitch Setup">
 			<widget name="config" position="0,0" size="550,300" scrollbarMode="showOnDemand" />
 			<widget name="label" position="50,300" size="450,60" font="Regular;18" halign="center" />
 			<widget name="buttonred" position="10,360" size="100,40" backgroundColor="red" valign="center" halign="center" zPosition="2" foregroundColor="white" font="Regular;18"/>
@@ -140,7 +140,7 @@ class GBAspectRatioSwitch:
 		for aspectnum, aspect in enumerate(ASPECT):
 			if config.plugins.GBAspectRatioSwitch.modes[aspect].value:
 				self.enabledaspects.append(aspectnum)
-		#print 'AspectRatioSwitch: Aspect modes in cycle:',self.enabledaspects
+		#print 'GBAspectRatioSwitch: Aspect modes in cycle:',self.enabledaspects
 
 	def enable(self):
 		self.change_keymap(config.plugins.GBAspectRatioSwitch.keymap.value)
@@ -171,33 +171,36 @@ class GBAspectRatioSwitch:
 		config.av.aspectratio.setValue(ASPECT[newaspectnum])
 		if config.plugins.GBAspectRatioSwitch.showmsg.value:
 			Notifications.AddPopup(text=ASPECTMSG[ASPECT[newaspectnum]], type=MessageBox.TYPE_INFO, timeout=2, id='GBAspectRatioSwitch')
-		#print 'AspectRatioSwitch: Changed aspect ratio from %d - %s to %d - %s' % (aspectnum, ASPECT[aspectnum], newaspectnum, ASPECT[newaspectnum])
+		#print 'GBAspectRatioSwitch: Changed aspect ratio from %d - %s to %d - %s' % (aspectnum, ASPECT[aspectnum], newaspectnum, ASPECT[newaspectnum])
 
 def autostart(reason, **kwargs):
-
 	global aspect_ratio_switch
-	
 	if reason == 0: # startup
-		#print "AspectRatioSwitch: startup"
+		#print "GBAspectRatioSwitch: startup"
 		if config.plugins.GBAspectRatioSwitch.enabled.value and aspect_ratio_switch is None:
 			aspect_ratio_switch = GBAspectRatioSwitch()
 			aspect_ratio_switch.enable()
 	elif reason == 1:
-		#print "AspectRatioSwitch: shutdown"
+		#print "GBAspectRatioSwitch: shutdown"
 		if aspect_ratio_switch is not None:
 			aspect_ratio_switch.disable()
 
 def main(session, **kwargs):
 	session.open(GBAspectRatioSwitchSetup)
 
+def startGBAspectRatioSwitch(menuid):
+	if menuid != "video_menu":
+		return []
+	return [( _("AspectRatio switch"), main, "aspectratio_switch", 99)]
+
 def Plugins(**kwargs):
- 	return [
+	return [
 		PluginDescriptor(
 			name="GBAspectRatioSwitch",
 			description=_("Quick switching of aspect ratio setting"),
-			where = PluginDescriptor.WHERE_PLUGINMENU,
-			#icon='plugin.png',
-			fnc=main),
+			where = PluginDescriptor.WHERE_MENU,
+			needsRestart = False,
+			fnc=startGBAspectRatioSwitch),
 		PluginDescriptor(
 			where = [PluginDescriptor.WHERE_SESSIONSTART,PluginDescriptor.WHERE_AUTOSTART],
 			fnc = autostart)]
