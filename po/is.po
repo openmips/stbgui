@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-28 16:35+0200\n"
+"POT-Creation-Date: 2016-06-18 22:35+0200\n"
 "PO-Revision-Date: 2015-01-29 17:40+0200\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -756,13 +756,6 @@ msgid "Accesspoint:"
 msgstr "Aðgangspunktur:"
 
 #
-msgid "Action on long powerbutton press"
-msgstr "Hvað skal gera ef ýtt er lengi á power takka"
-
-msgid "Action on short powerbutton press"
-msgstr "Hvað skal gera ef ýtt er stutt á straumrofa"
-
-#
 #, fuzzy
 msgid "Activate"
 msgstr "Virkja Mynd í Mynd"
@@ -1168,6 +1161,10 @@ msgstr "Stærðarhlutfall"
 msgid "Aspect ratio"
 msgstr "Stærðarhlutfall"
 
+#, fuzzy
+msgid "AspectRatio switch"
+msgstr "Stærðarhlutfall"
+
 #
 #, fuzzy
 msgid "Assigned CAIds:"
@@ -1464,7 +1461,7 @@ msgstr ""
 msgid "By openMips Image Team"
 msgstr ""
 
-msgid "Bypass HDMI EDID Check"
+msgid "Bypass HDMI EDID checking"
 msgstr ""
 
 msgid "Bytes received:"
@@ -1842,6 +1839,10 @@ msgid "Collection settings"
 msgstr "Stillingar safns"
 
 #, fuzzy
+msgid "Color"
+msgstr "Lita kerfi"
+
+#, fuzzy
 msgid "Color format"
 msgstr "Lita kerfi"
 
@@ -1864,10 +1865,6 @@ msgstr "Samskipti"
 #, fuzzy
 msgid "Compact flash"
 msgstr "Compact Flash"
-
-#, fuzzy
-msgid "Compensate for overscan"
-msgstr "Eyða fyrir leit"
 
 msgid "Complete"
 msgstr "Allt"
@@ -1941,6 +1938,9 @@ msgid "Configure if epg.dat should be saved at all."
 msgstr "Byrjunar hraði hraðspólunar áfram"
 
 msgid "Configure if service picons will be shown in the channel selection list."
+msgstr ""
+
+msgid "Configure if the HDMI EDID checking should be bypassed as this might solve issue with some TVs."
 msgstr ""
 
 msgid "Configure if the subtitle should switch between normal, italic, bold and bolditalic"
@@ -2033,12 +2033,6 @@ msgstr ""
 #, fuzzy
 msgid "Configure the fourth subtitle language."
 msgstr "skipta á næsta undirtexta"
-
-msgid "Configure the function of a long press on the power button."
-msgstr ""
-
-msgid "Configure the function of a short press on the power button."
-msgstr ""
 
 msgid "Configure the function of the '0' button do when PIP is active."
 msgstr ""
@@ -2956,7 +2950,6 @@ msgid "Do you want to do another manual service scan?"
 msgstr "Viltu leita aftur handvirkt?"
 
 #
-#, fuzzy
 msgid "Do you want to install a channel list?"
 msgstr ""
 
@@ -3236,6 +3229,11 @@ msgstr "Virkja foreldra stýringu"
 
 msgid "Enable auto fast scan"
 msgstr ""
+
+#
+#, fuzzy, python-format
+msgid "Enable auto fast scan for %s"
+msgstr "Virkja foreldra stýringu"
 
 #
 #, fuzzy
@@ -3785,6 +3783,14 @@ msgstr "Forritun tókt ekki"
 msgid "Following tasks will be done after you press OK!"
 msgstr "Eftirfarandi aðgerðir verða framkvæmdar eftir að þú ýtir á OK!"
 
+msgid "Force LNB Power"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Force ToneBurst"
+msgstr "Tónstýring"
+
 #
 msgid "Format"
 msgstr "Forma"
@@ -4309,11 +4315,6 @@ msgid "Ignore conflict"
 msgstr ""
 
 #
-#, fuzzy
-msgid "Immediate shutdown"
-msgstr "slökkva strax"
-
-#
 msgid "In order to record a timer, the TV was switched to the recording service!\n"
 msgstr "Til að taka upp á tíma stillingu þá var sjónvarpið stillt á upptökurás!\n"
 
@@ -4481,6 +4482,10 @@ msgstr ""
 #, fuzzy
 msgid "Install plugins"
 msgstr "Set inn"
+
+#, fuzzy
+msgid "Install softcam support"
+msgstr "Set inn hugbúnað..."
 
 #
 #, fuzzy
@@ -5817,11 +5822,6 @@ msgstr ""
 
 #
 #, fuzzy
-msgid "OSD position setup"
-msgstr "Uppsetning mótors"
-
-#
-#, fuzzy
 msgid "OSD settings"
 msgstr "Stilling valmynda"
 
@@ -6446,6 +6446,10 @@ msgstr ""
 msgid "Please wait (downloading channel list)"
 msgstr "Vinsamlega bíðið.. les inn lista..."
 
+#, fuzzy
+msgid "Please wait (downloading softcam support)"
+msgstr "Vinsamlega bíðið.. les inn lista..."
+
 #
 #, fuzzy
 msgid "Please wait (updating packages)"
@@ -6594,6 +6598,11 @@ msgstr "Uppsetning mótors"
 #
 msgid "Power threshold in mA"
 msgstr "Aflmörk í mA"
+
+#
+#, fuzzy
+msgid "PowerMenu"
+msgstr "Valmynd"
 
 #
 msgid "Predefined transponder"
@@ -7212,6 +7221,9 @@ msgid "Rename name and description for new events"
 msgstr ""
 
 msgid "Repeat"
+msgstr ""
+
+msgid "Repeat leave standby messages"
 msgstr ""
 
 #
@@ -8406,11 +8418,6 @@ msgstr ""
 #, fuzzy
 msgid "Show servicelist or movies"
 msgstr "Hlaða inn lengd myndar í myndalista"
-
-#
-#, fuzzy
-msgid "Show shutdown menu"
-msgstr "sýna slökkva valmynd"
 
 msgid "Show single service EPG"
 msgstr ""
@@ -9669,9 +9676,6 @@ msgstr ""
 msgid "This option allows you to boost the green tones in the picture."
 msgstr ""
 
-msgid "This option allows you to bypass HDMI EDID check"
-msgstr ""
-
 msgid "This option allows you to view the old and new settings side by side."
 msgstr ""
 
@@ -10828,6 +10832,12 @@ msgstr "Að hverju viltu leita?"
 msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are upgraded"
 msgstr ""
 
+msgid "When enabled the LNB power will not be switched off in standby"
+msgstr ""
+
+msgid "When enabled the LNB toneburst will be forced"
+msgstr ""
+
 msgid "When enabled the PiP can be closed by the exit button."
 msgstr ""
 
@@ -11075,6 +11085,17 @@ msgid ""
 msgstr ""
 
 msgid "Without popup"
+msgstr ""
+
+msgid "Wizard to arrange the overscan"
+msgstr ""
+
+msgid ""
+"Would you like to be able to install softcams?\n"
+"\n"
+"Attention - Country specific illegal!\n"
+"\n"
+"Check legality for your specific country in advance!"
 msgstr ""
 
 #, python-format
@@ -11791,10 +11812,6 @@ msgid "detective/thriller"
 msgstr ""
 
 #
-msgid "disable"
-msgstr "óvirkt"
-
-#
 #, fuzzy
 msgid "disable intro screen"
 msgstr "Gera Mynd í Mynd óvirka"
@@ -11850,10 +11867,6 @@ msgstr ""
 #
 msgid "empty"
 msgstr "tómt"
-
-#
-msgid "enable"
-msgstr "virkt"
 
 #
 msgid "enable bouquet edit"
@@ -12205,6 +12218,11 @@ msgstr "fara upp í næsta atriði"
 
 msgid "movie/drama (general)"
 msgstr ""
+
+#
+#, fuzzy
+msgid "multi"
+msgstr "fjölkerfa"
 
 #
 msgid "multinorm"
@@ -12926,6 +12944,13 @@ msgstr "stokkið"
 #~ msgstr "AB"
 
 #
+#~ msgid "Action on long powerbutton press"
+#~ msgstr "Hvað skal gera ef ýtt er lengi á power takka"
+
+#~ msgid "Action on short powerbutton press"
+#~ msgstr "Hvað skal gera ef ýtt er stutt á straumrofa"
+
+#
 #~ msgid "Add Bookmark"
 #~ msgstr "Bæta við bókamerki"
 
@@ -12972,6 +12997,10 @@ msgstr "stokkið"
 #, fuzzy
 #~ msgid "Common Interface assignment"
 #~ msgstr "Stillingar afruglara tengis"
+
+#, fuzzy
+#~ msgid "Compensate for overscan"
+#~ msgstr "Eyða fyrir leit"
 
 #~ msgid "Conflicting timer"
 #~ msgstr "Tímastilling skarast"
@@ -13053,6 +13082,11 @@ msgstr "stokkið"
 #~ msgid "Green boost"
 #~ msgstr "Auka grænan"
 
+#
+#, fuzzy
+#~ msgid "Immediate shutdown"
+#~ msgstr "slökkva strax"
+
 #, fuzzy
 #~ msgid "List EPG functions..."
 #~ msgstr "listi EPG skoðunar..."
@@ -13103,6 +13137,11 @@ msgstr "stokkið"
 #~ "Enginn virkur kóði fyrir uppsetningu fannst!\n"
 #~ "Viltu búa til nýjan kóða núna?\n"
 #~ "Ef þú svarar \"Nei\" þá er engin læsing virk!"
+
+#
+#, fuzzy
+#~ msgid "OSD position setup"
+#~ msgstr "Uppsetning mótors"
 
 #
 #~ msgid "Parental control type"
@@ -13161,6 +13200,11 @@ msgstr "stokkið"
 #
 #~ msgid "Show services beginning with"
 #~ msgstr "Sýna rásir sem byrja á"
+
+#
+#, fuzzy
+#~ msgid "Show shutdown menu"
+#~ msgstr "sýna slökkva valmynd"
 
 #
 #, fuzzy
@@ -13285,6 +13329,14 @@ msgstr "stokkið"
 
 #~ msgid "currently installed image: %s"
 #~ msgstr "núverandi stýrikerfi: %s"
+
+#
+#~ msgid "disable"
+#~ msgstr "óvirkt"
+
+#
+#~ msgid "enable"
+#~ msgstr "virkt"
 
 #
 #~ msgid "fine-tune your display"

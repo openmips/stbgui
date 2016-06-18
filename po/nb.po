@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-28 16:35+0200\n"
+"POT-Creation-Date: 2016-06-18 22:35+0200\n"
 "PO-Revision-Date: 2015-08-25 18:31+0100\n"
 "Last-Translator: andy1 <dmmm8000pvr@gmail.com>\n"
 "Language-Team: none\n"
@@ -772,14 +772,6 @@ msgstr "Om..."
 msgid "Accesspoint:"
 msgstr "Tilgangspunkt:"
 
-#
-msgid "Action on long powerbutton press"
-msgstr "Handling ved langt trykk på strømknappen"
-
-#
-msgid "Action on short powerbutton press"
-msgstr "Handling ved kort trykk på strømknappen"
-
 #, fuzzy
 msgid "Activate"
 msgstr "(ikke aktivert)"
@@ -1178,6 +1170,11 @@ msgstr "Bildeforhold"
 msgid "Aspect ratio"
 msgstr "Bildeforhold"
 
+#
+#, fuzzy
+msgid "AspectRatio switch"
+msgstr "Bildeforhold"
+
 msgid "Assigned CAIds:"
 msgstr "Tildelte CAId:"
 
@@ -1496,7 +1493,7 @@ msgstr "Som standard vil SNR (signalstyrke) vises i dB (desibel) hvis tuneren st
 msgid "By openMips Image Team"
 msgstr ""
 
-msgid "Bypass HDMI EDID Check"
+msgid "Bypass HDMI EDID checking"
 msgstr ""
 
 msgid "Bytes received:"
@@ -1903,6 +1900,11 @@ msgid "Collection settings"
 msgstr "Innstilling samling"
 
 #
+#, fuzzy
+msgid "Color"
+msgstr "Farge format"
+
+#
 msgid "Color format"
 msgstr "Farge format"
 
@@ -1930,9 +1932,6 @@ msgstr "Kommunikasjon"
 #
 msgid "Compact flash"
 msgstr "Kompakt flash minne"
-
-msgid "Compensate for overscan"
-msgstr "Kompenser for overskann"
 
 #
 msgid "Complete"
@@ -2009,6 +2008,9 @@ msgstr "Still inn kjølevifte valg"
 
 msgid "Configure if service picons will be shown in the channel selection list."
 msgstr "Still inn om det skal vises kanal logo (picons) i kanallisten. "
+
+msgid "Configure if the HDMI EDID checking should be bypassed as this might solve issue with some TVs."
+msgstr ""
 
 msgid "Configure if the subtitle should switch between normal, italic, bold and bolditalic"
 msgstr "Still inn om undertekstfarge skal veksle mellom normal, kursiv, fet og fetkursiv skrifttype"
@@ -2095,12 +2097,6 @@ msgstr "Still inn fjerdevalg på lyd språk."
 
 msgid "Configure the fourth subtitle language."
 msgstr "Still inn fjerdevalg på undertekst språk."
-
-msgid "Configure the function of a long press on the power button."
-msgstr "Still inn funksjonen et langt trykk på strømknappen."
-
-msgid "Configure the function of a short press on the power button."
-msgstr "Still inn funksjonen et kort trykk på strømknappen."
 
 msgid "Configure the function of the '0' button do when PIP is active."
 msgstr "Still inn funksjonen for '0' knappen når PiP (bilde i bilde) er aktiv."
@@ -3286,6 +3282,10 @@ msgstr "Aktiver automatisk kabel TV skanning"
 msgid "Enable auto fast scan"
 msgstr "Aktiver automatisk hurtigsøk"
 
+#, fuzzy, python-format
+msgid "Enable auto fast scan for %s"
+msgstr "Aktiver automatisk hurtigsøk"
+
 #
 msgid "Enable bouquet selection in multi-EPG"
 msgstr "Aktiver kanallistevalg fra full-EPG"
@@ -3826,6 +3826,13 @@ msgstr "Flashing feilet"
 msgid "Following tasks will be done after you press OK!"
 msgstr "Følgende oppgaver vil bli utført etter at du trykker OK!"
 
+msgid "Force LNB Power"
+msgstr ""
+
+#, fuzzy
+msgid "Force ToneBurst"
+msgstr "Tonekontroll"
+
 #
 msgid "Format"
 msgstr "Format"
@@ -4321,9 +4328,6 @@ msgstr ""
 msgid "Ignore conflict"
 msgstr ""
 
-msgid "Immediate shutdown"
-msgstr "Slå helt av"
-
 #
 msgid "In order to record a timer, the TV was switched to the recording service!\n"
 msgstr "Et tidtakeropptak startet og TV kanalen skiftet over til opptaket!\n"
@@ -4493,6 +4497,11 @@ msgstr "Installer kanal logo på"
 #, fuzzy
 msgid "Install plugins"
 msgstr "Installer kanal logo på"
+
+#
+#, fuzzy
+msgid "Install softcam support"
+msgstr "Installerer programvare..."
 
 msgid "Installation has completed."
 msgstr "Installasjonen er ferdig"
@@ -5754,10 +5763,6 @@ msgid "OSD name request"
 msgstr "OSD navn forespørsel"
 
 #
-msgid "OSD position setup"
-msgstr "OSD posisjons oppsett"
-
-#
 msgid "OSD settings"
 msgstr "OSD instillinger"
 
@@ -6355,6 +6360,11 @@ msgid "Please wait (downloading channel list)"
 msgstr "Vennligst vent (laster ned kanalliste)"
 
 #
+#, fuzzy
+msgid "Please wait (downloading softcam support)"
+msgstr "Vennligst vent (laster ned kanalliste)"
+
+#
 msgid "Please wait (updating packages)"
 msgstr "Vennligst vent (oppdaterer pakker)"
 
@@ -6503,6 +6513,10 @@ msgstr "Motoroppsett"
 
 msgid "Power threshold in mA"
 msgstr "Strømverdi i mA"
+
+#, fuzzy
+msgid "PowerMenu"
+msgstr "Meny"
 
 #
 msgid "Predefined transponder"
@@ -7067,6 +7081,10 @@ msgstr "Gi nytt navn og beskrivelse for nye kanaler"
 #
 msgid "Repeat"
 msgstr "Gjenta"
+
+#, fuzzy
+msgid "Repeat leave standby messages"
+msgstr "Betrakt 'helt slått av' samme som 'avslått'"
 
 #
 msgid "Repeat type"
@@ -8156,9 +8174,6 @@ msgstr "Vis indikator for tunertype"
 #
 msgid "Show servicelist or movies"
 msgstr "Vis kanalliste eller opptak"
-
-msgid "Show shutdown menu"
-msgstr "Vis av/på meny"
 
 msgid "Show single service EPG"
 msgstr "Vis enkel EPG"
@@ -9335,9 +9350,6 @@ msgstr ""
 msgid "This option allows you to boost the green tones in the picture."
 msgstr ""
 
-msgid "This option allows you to bypass HDMI EDID check"
-msgstr ""
-
 msgid "This option allows you to view the old and new settings side by side."
 msgstr ""
 
@@ -10453,6 +10465,14 @@ msgstr "Hva vil du skanne?"
 msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are upgraded"
 msgstr "Når aktivert vil enigma2 laste kanallister som ikke er tilknyttet mottakeren. Dette kan være kanallister som er tilgjengelig, men ikke tilknyttet radio eller tv kanallistene for mottakeren. Dette tillater at du f.eks. kan holde på egne favoritt kanallister under oppgradering av instillinger"
 
+#, fuzzy
+msgid "When enabled the LNB power will not be switched off in standby"
+msgstr "Når aktivert, vises VCR scart innstillingen på hovedmenyen."
+
+#, fuzzy
+msgid "When enabled the LNB toneburst will be forced"
+msgstr "Når aktivert, vises ikke nummer markører."
+
 msgid "When enabled the PiP can be closed by the exit button."
 msgstr "Når aktivert, kan PiP (bilde i bilde) avsluttes med exit knapp."
 
@@ -10701,6 +10721,17 @@ msgstr ""
 
 msgid "Without popup"
 msgstr "Uten popup varsel"
+
+msgid "Wizard to arrange the overscan"
+msgstr ""
+
+msgid ""
+"Would you like to be able to install softcams?\n"
+"\n"
+"Attention - Country specific illegal!\n"
+"\n"
+"Check legality for your specific country in advance!"
+msgstr ""
 
 #, python-format
 msgid "Would you save the entered PIN %s persistent?"
@@ -11420,10 +11451,6 @@ msgstr "avkod og ta opp ecm"
 msgid "detective/thriller"
 msgstr "detektime/spenning"
 
-#
-msgid "disable"
-msgstr "deaktiver"
-
 #, fuzzy
 msgid "disable intro screen"
 msgstr "Stopp bilde i bilde funksjon"
@@ -11478,10 +11505,6 @@ msgstr "utdanning/vitenskap/faktaprogram (generelt)"
 #
 msgid "empty"
 msgstr "tom"
-
-#
-msgid "enable"
-msgstr "aktiver"
 
 #
 msgid "enable bouquet edit"
@@ -11827,6 +11850,11 @@ msgstr "gå til til forrige oppføring"
 
 msgid "movie/drama (general)"
 msgstr "film/drama (generelt)"
+
+#
+#, fuzzy
+msgid "multi"
+msgstr "multinorm"
 
 #
 msgid "multinorm"
@@ -12513,6 +12541,14 @@ msgstr "gått til"
 #~ msgid "AC3 downmix"
 #~ msgstr "AC3 nedskalering"
 
+#
+#~ msgid "Action on long powerbutton press"
+#~ msgstr "Handling ved langt trykk på strømknappen"
+
+#
+#~ msgid "Action on short powerbutton press"
+#~ msgstr "Handling ved kort trykk på strømknappen"
+
 #, fuzzy
 #~ msgid "All services provider"
 #~ msgstr "Tildelte kanaler/distributører:"
@@ -12526,6 +12562,15 @@ msgstr "gått til"
 
 #~ msgid "Common Interface assignment"
 #~ msgstr "Tildeling av felles grensesnitt"
+
+#~ msgid "Compensate for overscan"
+#~ msgstr "Kompenser for overskann"
+
+#~ msgid "Configure the function of a long press on the power button."
+#~ msgstr "Still inn funksjonen et langt trykk på strømknappen."
+
+#~ msgid "Configure the function of a short press on the power button."
+#~ msgstr "Still inn funksjonen et kort trykk på strømknappen."
 
 #
 #~ msgid "Conflicting timer"
@@ -12593,6 +12638,9 @@ msgstr "gått til"
 #~ msgid "Green boost"
 #~ msgstr "Green boost"
 
+#~ msgid "Immediate shutdown"
+#~ msgstr "Slå helt av"
+
 #~ msgid "Loop through to"
 #~ msgstr "Gjennomgang til"
 
@@ -12614,6 +12662,10 @@ msgstr "gått til"
 #
 #~ msgid "No new plugins found"
 #~ msgstr "Ingen nye programtillegg ble funnet"
+
+#
+#~ msgid "OSD position setup"
+#~ msgstr "OSD posisjons oppsett"
 
 #~ msgid "Output"
 #~ msgstr "Utgang"
@@ -12652,6 +12704,9 @@ msgstr "gått til"
 
 #~ msgid "Shall the USB stick wizard proceed and program the image file %s into flash memory?"
 #~ msgstr "Skal veiviseren for USB minnepinne fortsette å installere operativsystem filen%s til flash-minnet?"
+
+#~ msgid "Show shutdown menu"
+#~ msgstr "Vis av/på meny"
 
 #
 #~ msgid "Show the tv player..."
@@ -12804,6 +12859,14 @@ msgstr "gått til"
 
 #~ msgid "currently installed image: %s"
 #~ msgstr "nåværende installert programvare: %s"
+
+#
+#~ msgid "disable"
+#~ msgstr "deaktiver"
+
+#
+#~ msgid "enable"
+#~ msgstr "aktiver"
 
 #
 #, fuzzy

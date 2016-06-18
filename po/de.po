@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-28 16:35+0200\n"
-"PO-Revision-Date: 2016-04-28 16:53+0200\n"
+"POT-Creation-Date: 2016-06-18 22:35+0200\n"
+"PO-Revision-Date: 2016-06-18 22:51+0200\n"
 "Last-Translator: -=niki=- <niki_msn@hotmail.de>\n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -712,12 +712,6 @@ msgstr "Über..."
 msgid "Accesspoint:"
 msgstr "Zugangspunkt:"
 
-msgid "Action on long powerbutton press"
-msgstr "Aktion nach langem Druck auf Power"
-
-msgid "Action on short powerbutton press"
-msgstr "Aktion beim kurzen Druck auf Power"
-
 msgid "Activate"
 msgstr "Aktivieren"
 
@@ -1050,6 +1044,9 @@ msgstr "Seitenverhältnis"
 msgid "Aspect ratio"
 msgstr "Seitenverhältnis"
 
+msgid "AspectRatio switch"
+msgstr "Seitenverhältnis umschalten"
+
 msgid "Assigned CAIds:"
 msgstr "Zugewiesene CAIDs:"
 
@@ -1312,7 +1309,7 @@ msgstr "Standardmässig wird SNR in Dezibel angezeigt (falls vom Tuner unterstü
 msgid "By openMips Image Team"
 msgstr "vom openMips Image Team"
 
-msgid "Bypass HDMI EDID Check"
+msgid "Bypass HDMI EDID checking"
 msgstr "HDMI EDID Check umgehen"
 
 msgid "Bytes received:"
@@ -1639,7 +1636,7 @@ msgid "Clear playlist"
 msgstr "Wiedergabeliste leeren"
 
 msgid "ClientIP"
-msgstr ""
+msgstr "ClientIP"
 
 msgid "Clock"
 msgstr "Uhr"
@@ -1674,6 +1671,9 @@ msgstr "Zusammenstellungsname"
 msgid "Collection settings"
 msgstr "Zusammenstellungs-Einstellungen"
 
+msgid "Color"
+msgstr "Farbe"
+
 msgid "Color format"
 msgstr "Farbformat"
 
@@ -1694,9 +1694,6 @@ msgstr "Kommunikation"
 
 msgid "Compact flash"
 msgstr "Compact Flash"
-
-msgid "Compensate for overscan"
-msgstr "Kompensierung für Overscan"
 
 msgid "Complete"
 msgstr "Komplett"
@@ -1764,6 +1761,9 @@ msgstr "Konfigurieren Sie ob die epg.dat gespeichert werden soll."
 
 msgid "Configure if service picons will be shown in the channel selection list."
 msgstr "Falls aktiviert, werden Picons in der Kanalauswahlliste angezeigt."
+
+msgid "Configure if the HDMI EDID checking should be bypassed as this might solve issue with some TVs."
+msgstr ""
 
 msgid "Configure if the subtitle should switch between normal, italic, bold and bolditalic"
 msgstr "Konfiguriere, ob Untertitel zwischen normal, kursiv, fett und fettkursiv wechseln sollen"
@@ -1848,12 +1848,6 @@ msgstr "Wahl der vierten Audiospur-Sprache."
 
 msgid "Configure the fourth subtitle language."
 msgstr "Wahl der vierten Untertitel Sprache."
-
-msgid "Configure the function of a long press on the power button."
-msgstr "Funktion bei längerem Drücken der Einschalt-Taste."
-
-msgid "Configure the function of a short press on the power button."
-msgstr "Funktion dei kurzem Drücken der Einschalt-Taste."
 
 msgid "Configure the function of the '0' button do when PIP is active."
 msgstr "Funktion der '0' Taste während Bild im Bild aktiv ist."
@@ -2260,9 +2254,8 @@ msgstr "DVD Burn"
 msgid "DVD File Browser"
 msgstr "DVD Datei Browser"
 
-#, fuzzy
 msgid "DVD Menu"
-msgstr "Menu"
+msgstr "DVD Menü"
 
 msgid "DVD Titlelist"
 msgstr "DVD Titelliste"
@@ -2891,6 +2884,10 @@ msgstr "Autom. schnellen Kabel Suchlauf aktivieren"
 msgid "Enable auto fast scan"
 msgstr "Automatischen schnellen Suchlauf aktivieren"
 
+#, python-format
+msgid "Enable auto fast scan for %s"
+msgstr "Automatischen schnellen Suchlauf für %s aktivieren"
+
 msgid "Enable bouquet selection in multi-EPG"
 msgstr "Aktiviere Bouquet Auswahl im Multi-EPG"
 
@@ -3354,6 +3351,12 @@ msgstr "Flashing: "
 msgid "Following tasks will be done after you press OK!"
 msgstr "Folgendes wird ausgeführt, nachdem Sie OK gedrückt haben!"
 
+msgid "Force LNB Power"
+msgstr "LNB Power erzwingen"
+
+msgid "Force ToneBurst"
+msgstr "Toneburst erzwingen"
+
 msgid "Format"
 msgstr "Formatieren"
 
@@ -3797,9 +3800,6 @@ msgstr ""
 msgid "Ignore conflict"
 msgstr "Konflikt ignorieren"
 
-msgid "Immediate shutdown"
-msgstr "Direkt runterfahren"
-
 msgid "In order to record a timer, the TV was switched to the recording service!\n"
 msgstr "Um die Timeraufnahme durchführen zu können, wurde auf den aufzunehmenden Sender umgeschaltet!\n"
 
@@ -3938,6 +3938,9 @@ msgstr "Picons installieren auf"
 
 msgid "Install plugins"
 msgstr "Erweiterungen installieren"
+
+msgid "Install softcam support"
+msgstr "Installiere Softcam Unterstützung..."
 
 msgid "Installation has completed."
 msgstr "Installation abgeschlossen"
@@ -5028,9 +5031,6 @@ msgstr "Einstellungen OSD 3D"
 msgid "OSD name request"
 msgstr "Benutzeroberflächen Anfrage"
 
-msgid "OSD position setup"
-msgstr "Einstellungen OSD Position"
-
 msgid "OSD settings"
 msgstr "OSD-Einstellungen"
 
@@ -5113,7 +5113,7 @@ msgid "Overscan Wizard"
 msgstr ""
 
 msgid "Overscan wizard"
-msgstr ""
+msgstr "Overscan Assistent"
 
 msgid "Overwrite Bootlogo Files ?"
 msgstr "Bootlogo Dateien überschreiben?"
@@ -5515,6 +5515,9 @@ msgstr "Bitte warten"
 msgid "Please wait (downloading channel list)"
 msgstr "Bitte warten (Kanalliste wird geladen)..."
 
+msgid "Please wait (downloading softcam support)"
+msgstr "Bitte warten (Softcam Unterstützung wird geladen)..."
+
 msgid "Please wait (updating packages)"
 msgstr "Bitte warten (Paketupdates)..."
 
@@ -5637,6 +5640,9 @@ msgstr "Einstellungen Rotor Log"
 
 msgid "Power threshold in mA"
 msgstr "Strom Schwellwert in mA"
+
+msgid "PowerMenu"
+msgstr "PowerMenü"
 
 msgid "Predefined transponder"
 msgstr "Transponder vordefiniert"
@@ -6118,6 +6124,9 @@ msgstr "Ändere für neue Timer den Namen und die Beschreibung"
 
 msgid "Repeat"
 msgstr "Wiederholen"
+
+msgid "Repeat leave standby messages"
+msgstr "Nachrichten verlasse Standby wiederholen"
 
 msgid "Repeat type"
 msgstr "Wiederholungstyp"
@@ -7060,9 +7069,6 @@ msgstr "Zeige Service-Typ Icons"
 
 msgid "Show servicelist or movies"
 msgstr "Zeige Kanalliste oder Filme"
-
-msgid "Show shutdown menu"
-msgstr "Ausschaltmenü anzeigen"
 
 msgid "Show single service EPG"
 msgstr "Zeige Einzel-Kanal-EPG"
@@ -8100,9 +8106,6 @@ msgstr "Diese Option erlaubt es den Blauanteil des Bildes zu verstärken."
 msgid "This option allows you to boost the green tones in the picture."
 msgstr "Diese Option erlaubt es den Grünanteil des Bildes zu verstärken."
 
-msgid "This option allows you to bypass HDMI EDID check"
-msgstr "Diese Option erlaubt es, die HDMI-EDID-Überprüfung zu überspringen."
-
 msgid "This option allows you to view the old and new settings side by side."
 msgstr "Diese Option erlaubt es das Bild mit den alten und neuen Werten nebeneinander anzeigen zu lassen."
 
@@ -8365,9 +8368,8 @@ msgstr "Toneburst A/B"
 msgid "Top and bottom"
 msgstr "Oben und Unten"
 
-#, fuzzy
 msgid "Total Clients streaming: "
-msgstr "Anzahl der Streamclienten: %d (%s)"
+msgstr "Anzahl der Streamclienten:"
 
 #, python-format
 msgid "Total clients streaming: %d (%s)"
@@ -8376,9 +8378,8 @@ msgstr "Anzahl der Streamclienten: %d (%s)"
 msgid "Track"
 msgstr "Spur"
 
-#, fuzzy
 msgid "Transcode"
-msgstr "Transponder"
+msgstr "Transkodieren"
 
 msgid "Transcoding: "
 msgstr "Transkodierung:"
@@ -8466,7 +8467,7 @@ msgid "Tuner type"
 msgstr "Typ Empfang"
 
 msgid "Tuning algorithm"
-msgstr ""
+msgstr "Tuning Algorythmus"
 
 msgid "Turkish"
 msgstr "Türkisch"
@@ -9075,6 +9076,12 @@ msgstr "Was wollen Sie suchen?"
 msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are upgraded"
 msgstr "Wenn aktiviert, werden auch nichtverlinkte Bouquets geladen. D.h. Userbouquets die vorhanden sind aber nicht in der bouquets.tv oder bouquets.radio hinterlegt wurden, werden geladen. Damit kann eine Eigene Bouquetliste behalten werden, während sich die Senderlisten aktualisieren."
 
+msgid "When enabled the LNB power will not be switched off in standby"
+msgstr "Falls aktiviert, wird die Stromversorgung des LNB im Standby nicht ausgeschaltet."
+
+msgid "When enabled the LNB toneburst will be forced"
+msgstr "Falls aktiviert, wird Toneburst erzwungen."
+
 msgid "When enabled the PiP can be closed by the exit button."
 msgstr "Falls aktiviert, kann PiP mit der Exit-Taste geschlossen werden."
 
@@ -9318,6 +9325,22 @@ msgstr ""
 
 msgid "Without popup"
 msgstr "ohne Popup"
+
+msgid "Wizard to arrange the overscan"
+msgstr ""
+
+msgid ""
+"Would you like to be able to install softcams?\n"
+"\n"
+"Attention - Country specific illegal!\n"
+"\n"
+"Check legality for your specific country in advance!"
+msgstr ""
+"Möchten Sie später Softcams installieren können?\n"
+"\n"
+"Achtung - länderabhängig illegal!\n"
+"\n"
+"Rechtslage vorher für Ihr Land prüfen!"
 
 #, python-format
 msgid "Would you save the entered PIN %s persistent?"
@@ -9893,9 +9916,8 @@ msgstr "Negativliste"
 msgid "blue"
 msgstr "Blau"
 
-#, fuzzy
 msgid "bottom"
-msgstr "Oben und Unten"
+msgstr "unten"
 
 msgid "broadcasting/press"
 msgstr "Rundsendung/Presse"
@@ -9905,7 +9927,7 @@ msgid "burn audio track (%s)"
 msgstr "Brenne Audiospur (%s)"
 
 msgid "by date"
-msgstr "Aufnahmen nach Datum sortieren"
+msgstr "nach Datum"
 
 msgid "cartoon/puppets"
 msgstr "Zeichentrickfilm/Marionetten"
@@ -9986,9 +10008,6 @@ msgstr "Entschlüsseln und Aufnahme ECM"
 msgid "detective/thriller"
 msgstr "Krimi/Thriller"
 
-msgid "disable"
-msgstr "Deaktivieren"
-
 msgid "disable intro screen"
 msgstr "deaktiviere Intro Anzeige"
 
@@ -10036,9 +10055,6 @@ msgstr "Bildung/Wissenschaft/Sachbezogene Themen (Allgemein)"
 
 msgid "empty"
 msgstr "Leer"
-
-msgid "enable"
-msgstr "aktivieren"
 
 msgid "enable bouquet edit"
 msgstr "Bouquet Bearbeitung anschalten"
@@ -10334,6 +10350,9 @@ msgstr "Zum vorherigen Eintrag gehen"
 msgid "movie/drama (general)"
 msgstr "Film/Drama (Allgemein)"
 
+msgid "multi"
+msgstr "multi"
+
 msgid "multinorm"
 msgstr "Multinorm"
 
@@ -10516,9 +10535,8 @@ msgstr "inetd wiederherstellen"
 msgid "red"
 msgstr "Rot"
 
-#, fuzzy
 msgid "reliable"
-msgstr "aktivieren"
+msgstr "verlässlich"
 
 msgid "religion"
 msgstr "Glaube"
@@ -10810,9 +10828,8 @@ msgstr "Oben"
 msgid "tourism/travel"
 msgstr "Tourismus/Reisen"
 
-#, fuzzy
 msgid "traditional (fast)"
-msgstr "Volks/Traditionelle Musik"
+msgstr "traditionell (schnell)"
 
 msgid "true"
 msgstr "Ja"
@@ -10937,11 +10954,26 @@ msgstr "umgeschaltet"
 #~ msgid "96 MB"
 #~ msgstr "96 MB"
 
+#~ msgid "Action on long powerbutton press"
+#~ msgstr "Aktion nach langem Druck auf Power"
+
+#~ msgid "Action on short powerbutton press"
+#~ msgstr "Aktion beim kurzen Druck auf Power"
+
 #~ msgid "Add more details to the crash log"
 #~ msgstr "Erzeuge detailierteren Fehlerbericht"
 
 #~ msgid "All services provider"
 #~ msgstr "Alle Kanäle des Providers:"
+
+#~ msgid "Compensate for overscan"
+#~ msgstr "Kompensierung für Overscan"
+
+#~ msgid "Configure the function of a long press on the power button."
+#~ msgstr "Funktion bei längerem Drücken der Einschalt-Taste."
+
+#~ msgid "Configure the function of a short press on the power button."
+#~ msgstr "Funktion dei kurzem Drücken der Einschalt-Taste."
 
 #~ msgid "Conflicting timer"
 #~ msgstr "In Konflikt stehender Timer"
@@ -10966,8 +10998,14 @@ msgstr "umgeschaltet"
 #~ msgid "FP upgrade required"
 #~ msgstr "Update Quell-URL bearbeiten."
 
+#~ msgid "Immediate shutdown"
+#~ msgstr "Direkt runterfahren"
+
 #~ msgid "New version:"
 #~ msgstr "Neue Version:"
+
+#~ msgid "OSD position setup"
+#~ msgstr "Einstellungen OSD Position"
 
 #~ msgid "Polarisation:"
 #~ msgstr "Polarisation:"
@@ -10975,11 +11013,17 @@ msgstr "umgeschaltet"
 #~ msgid "Satellites"
 #~ msgstr "Satelliten"
 
+#~ msgid "Show shutdown menu"
+#~ msgstr "Ausschaltmenü anzeigen"
+
 #~ msgid "Silently zap between bouquets"
 #~ msgstr "Still zwischen Bouquets umschalten"
 
 #~ msgid "System Message"
 #~ msgstr "System Nachricht"
+
+#~ msgid "This option allows you to bypass HDMI EDID check"
+#~ msgstr "Diese Option erlaubt es, die HDMI-EDID-Überprüfung zu überspringen."
 
 #~ msgid "Timer editor"
 #~ msgstr "Timer-Editor"
@@ -10996,6 +11040,12 @@ msgstr "umgeschaltet"
 #~ msgstr ""
 #~ "Ihre Frontprozessor-Firmware muss aktualisiert werden.\n"
 #~ "Drücken Sie OK, um das Upgrade zu starten."
+
+#~ msgid "disable"
+#~ msgstr "Deaktivieren"
+
+#~ msgid "enable"
+#~ msgstr "aktivieren"
 
 #~ msgid "open device manager"
 #~ msgstr "Datenträger Verwaltung öffnen"

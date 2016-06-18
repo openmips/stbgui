@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-28 16:35+0200\n"
+"POT-Creation-Date: 2016-06-18 22:35+0200\n"
 "PO-Revision-Date: 2015-01-29 17:40+0200\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -708,12 +708,6 @@ msgstr "Относно..."
 msgid "Accesspoint:"
 msgstr ""
 
-msgid "Action on long powerbutton press"
-msgstr "Продължително натискане на бутон POWER"
-
-msgid "Action on short powerbutton press"
-msgstr ""
-
 msgid "Activate"
 msgstr ""
 
@@ -1061,6 +1055,10 @@ msgstr "Режим Картина"
 msgid "Aspect ratio"
 msgstr "Режим Картина"
 
+#, fuzzy
+msgid "AspectRatio switch"
+msgstr "Режим Картина"
+
 msgid "Assigned CAIds:"
 msgstr ""
 
@@ -1338,7 +1336,7 @@ msgstr ""
 msgid "By openMips Image Team"
 msgstr ""
 
-msgid "Bypass HDMI EDID Check"
+msgid "Bypass HDMI EDID checking"
 msgstr ""
 
 msgid "Bytes received:"
@@ -1698,6 +1696,9 @@ msgstr "Име на Колекцията"
 msgid "Collection settings"
 msgstr "Настройки на Колекция"
 
+msgid "Color"
+msgstr ""
+
 msgid "Color format"
 msgstr ""
 
@@ -1718,10 +1719,6 @@ msgstr "Комуникация"
 
 msgid "Compact flash"
 msgstr ""
-
-#, fuzzy
-msgid "Compensate for overscan"
-msgstr "Изчистване преди сканиране"
 
 msgid "Complete"
 msgstr "Завършен"
@@ -1788,6 +1785,9 @@ msgid "Configure if epg.dat should be saved at all."
 msgstr ""
 
 msgid "Configure if service picons will be shown in the channel selection list."
+msgstr ""
+
+msgid "Configure if the HDMI EDID checking should be bypassed as this might solve issue with some TVs."
 msgstr ""
 
 msgid "Configure if the subtitle should switch between normal, italic, bold and bolditalic"
@@ -1872,12 +1872,6 @@ msgid "Configure the fourth audio language."
 msgstr ""
 
 msgid "Configure the fourth subtitle language."
-msgstr ""
-
-msgid "Configure the function of a long press on the power button."
-msgstr ""
-
-msgid "Configure the function of a short press on the power button."
 msgstr ""
 
 msgid "Configure the function of the '0' button do when PIP is active."
@@ -2692,7 +2686,6 @@ msgstr "Искате ли да сканирам за канали?"
 msgid "Do you want to do another manual service scan?"
 msgstr "Искате ли да извърша друго ръчно сканиране?"
 
-#, fuzzy
 msgid "Do you want to install a channel list?"
 msgstr ""
 
@@ -2939,6 +2932,10 @@ msgstr "Включи родителски контрол"
 
 msgid "Enable auto fast scan"
 msgstr ""
+
+#, fuzzy, python-format
+msgid "Enable auto fast scan for %s"
+msgstr "Включи родителски контрол"
 
 msgid "Enable bouquet selection in multi-EPG"
 msgstr ""
@@ -3413,6 +3410,12 @@ msgstr "Грешка при флашване"
 msgid "Following tasks will be done after you press OK!"
 msgstr ""
 
+msgid "Force LNB Power"
+msgstr ""
+
+msgid "Force ToneBurst"
+msgstr ""
+
 msgid "Format"
 msgstr "Форматиране"
 
@@ -3861,9 +3864,6 @@ msgstr ""
 msgid "Ignore conflict"
 msgstr ""
 
-msgid "Immediate shutdown"
-msgstr ""
-
 msgid "In order to record a timer, the TV was switched to the recording service!\n"
 msgstr ""
 
@@ -4006,6 +4006,10 @@ msgstr "Инсталирай picons"
 #, fuzzy
 msgid "Install plugins"
 msgstr "Инсталирай picons"
+
+#, fuzzy
+msgid "Install softcam support"
+msgstr "Инсталирай плъгин от HDD,USB или .tmp"
 
 msgid "Installation has completed."
 msgstr "Инсталирането завърши."
@@ -5103,10 +5107,6 @@ msgstr "Настройки"
 msgid "OSD name request"
 msgstr ""
 
-#, fuzzy
-msgid "OSD position setup"
-msgstr "Настройка позиционер"
-
 msgid "OSD settings"
 msgstr "OSD Настройки"
 
@@ -5616,6 +5616,10 @@ msgstr ""
 msgid "Please wait (downloading channel list)"
 msgstr ""
 
+#, fuzzy
+msgid "Please wait (downloading softcam support)"
+msgstr "моля изчакайте, зареждам снимка..."
+
 msgid "Please wait (updating packages)"
 msgstr ""
 
@@ -5740,6 +5744,10 @@ msgstr "Настройка позиционер"
 
 msgid "Power threshold in mA"
 msgstr "Праг на захранването в mA"
+
+#, fuzzy
+msgid "PowerMenu"
+msgstr "Меню"
 
 msgid "Predefined transponder"
 msgstr "Определен транспондер"
@@ -6250,6 +6258,9 @@ msgstr ""
 
 msgid "Repeat"
 msgstr "Повтори"
+
+msgid "Repeat leave standby messages"
+msgstr ""
 
 msgid "Repeat type"
 msgstr ""
@@ -7232,9 +7243,6 @@ msgstr ""
 #, fuzzy
 msgid "Show servicelist or movies"
 msgstr "Показвай въртенето на антената"
-
-msgid "Show shutdown menu"
-msgstr ""
 
 msgid "Show single service EPG"
 msgstr ""
@@ -8282,9 +8290,6 @@ msgstr ""
 msgid "This option allows you to boost the green tones in the picture."
 msgstr ""
 
-msgid "This option allows you to bypass HDMI EDID check"
-msgstr ""
-
 msgid "This option allows you to view the old and new settings side by side."
 msgstr ""
 
@@ -9228,6 +9233,12 @@ msgstr "Какво искате да търся?"
 msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are upgraded"
 msgstr ""
 
+msgid "When enabled the LNB power will not be switched off in standby"
+msgstr ""
+
+msgid "When enabled the LNB toneburst will be forced"
+msgstr ""
+
 msgid "When enabled the PiP can be closed by the exit button."
 msgstr ""
 
@@ -9467,6 +9478,17 @@ msgid ""
 msgstr ""
 
 msgid "Without popup"
+msgstr ""
+
+msgid "Wizard to arrange the overscan"
+msgstr ""
+
+msgid ""
+"Would you like to be able to install softcams?\n"
+"\n"
+"Attention - Country specific illegal!\n"
+"\n"
+"Check legality for your specific country in advance!"
 msgstr ""
 
 #, python-format
@@ -10107,9 +10129,6 @@ msgstr ""
 msgid "detective/thriller"
 msgstr ""
 
-msgid "disable"
-msgstr "спри"
-
 #, fuzzy
 msgid "disable intro screen"
 msgstr "Спри Картина в Картината"
@@ -10158,9 +10177,6 @@ msgstr ""
 
 msgid "empty"
 msgstr "празен"
-
-msgid "enable"
-msgstr "разреши"
 
 msgid "enable bouquet edit"
 msgstr "редактиране на букети"
@@ -10460,6 +10476,10 @@ msgstr "премести нагоре към предишен запис"
 
 msgid "movie/drama (general)"
 msgstr ""
+
+#, fuzzy
+msgid "multi"
+msgstr "Мултистандарт"
 
 msgid "multinorm"
 msgstr "Мултистандарт"
@@ -11074,6 +11094,9 @@ msgstr "превключен"
 #~ msgid "AB"
 #~ msgstr "AB"
 
+#~ msgid "Action on long powerbutton press"
+#~ msgstr "Продължително натискане на бутон POWER"
+
 #~ msgid "Adjust HDMI CEC settings"
 #~ msgstr "HDMI CEC настройки"
 
@@ -11099,6 +11122,10 @@ msgstr "превключен"
 
 #~ msgid "Change service PINs"
 #~ msgstr "Смяна ПИН на услуги"
+
+#, fuzzy
+#~ msgid "Compensate for overscan"
+#~ msgstr "Изчистване преди сканиране"
 
 #~ msgid "Conflicting timer"
 #~ msgstr "Несъвместим таймер"
@@ -11171,6 +11198,10 @@ msgstr "превключен"
 #~ "Не е открит валиде ПИН за настройки!\n"
 #~ "Искате ли да смените ПИН сега?\n"
 #~ "Ако изберете 'Не' няма да има защита на настройките!"
+
+#, fuzzy
+#~ msgid "OSD position setup"
+#~ msgstr "Настройка позиционер"
 
 #~ msgid "Parental control type"
 #~ msgstr "Вид Родителски контрол"
@@ -11257,6 +11288,12 @@ msgstr "превключен"
 
 #~ msgid "delete..."
 #~ msgstr "изтрий ..."
+
+#~ msgid "disable"
+#~ msgstr "спри"
+
+#~ msgid "enable"
+#~ msgstr "разреши"
 
 #~ msgid "fine-tune your display"
 #~ msgstr "Фина настройка на дисплея"

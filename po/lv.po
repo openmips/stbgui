@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-28 16:35+0200\n"
+"POT-Creation-Date: 2016-06-18 22:35+0200\n"
 "PO-Revision-Date: 2015-01-29 17:40+0200\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -733,12 +733,6 @@ msgstr "Par..."
 msgid "Accesspoint:"
 msgstr "Piekļuves punkts:"
 
-msgid "Action on long powerbutton press"
-msgstr "Ilgstoši nospiežot izslēgšanas taustiņu"
-
-msgid "Action on short powerbutton press"
-msgstr "Īsi nospiežot izslēgšanas taustiņu"
-
 #, fuzzy
 msgid "Activate"
 msgstr "Aktivizēt PiP"
@@ -1092,6 +1086,10 @@ msgstr "Malu attiecība"
 msgid "Aspect ratio"
 msgstr "Malu attiecība"
 
+#, fuzzy
+msgid "AspectRatio switch"
+msgstr "Malu attiecība"
+
 msgid "Assigned CAIds:"
 msgstr "Piešķirtie CAId:"
 
@@ -1370,7 +1368,7 @@ msgstr "Pēc noklusējuma SNR tiek attēlots dB (ja atļauj uztvērējs). Šis i
 msgid "By openMips Image Team"
 msgstr ""
 
-msgid "Bypass HDMI EDID Check"
+msgid "Bypass HDMI EDID checking"
 msgstr ""
 
 msgid "Bytes received:"
@@ -1737,6 +1735,10 @@ msgstr "Kolekcijas nosaukums"
 msgid "Collection settings"
 msgstr "Kolekcijas iestatījumi"
 
+#, fuzzy
+msgid "Color"
+msgstr "Krāsu formāts"
+
 msgid "Color format"
 msgstr "Krāsu formāts"
 
@@ -1758,10 +1760,6 @@ msgstr "Komunikācija"
 
 msgid "Compact flash"
 msgstr "Zibatmiņa"
-
-#, fuzzy
-msgid "Compensate for overscan"
-msgstr "Notīrīt pirms meklēšanas"
 
 msgid "Complete"
 msgstr "Gatavs"
@@ -1833,6 +1831,9 @@ msgstr "Uzstāda kura video izeja tiks lietota."
 
 msgid "Configure if service picons will be shown in the channel selection list."
 msgstr "Uzstāda vai kanālu pikonas tiks rādītas kanālu sarakstā."
+
+msgid "Configure if the HDMI EDID checking should be bypassed as this might solve issue with some TVs."
+msgstr ""
 
 msgid "Configure if the subtitle should switch between normal, italic, bold and bolditalic"
 msgstr ""
@@ -1917,12 +1918,6 @@ msgstr "Uzstāda nākamo audio valodu."
 
 msgid "Configure the fourth subtitle language."
 msgstr "Uzstāda nākamo subtitru valodu."
-
-msgid "Configure the function of a long press on the power button."
-msgstr "Uzstāda barošanas pogas ilgstošas nospiešanas funkciju."
-
-msgid "Configure the function of a short press on the power button."
-msgstr "Uzstāda barošanas pogas īslaicīgas nospiešanas funkciju."
 
 msgid "Configure the function of the '0' button do when PIP is active."
 msgstr "Uzstāda kādu funkciju veic taustiņš '0' ja PiP ir aktīvs."
@@ -3002,6 +2997,10 @@ msgstr "Aktivizēt vecāku kontroli"
 msgid "Enable auto fast scan"
 msgstr ""
 
+#, fuzzy, python-format
+msgid "Enable auto fast scan for %s"
+msgstr "Aktivizēt vecāku kontroli"
+
 msgid "Enable bouquet selection in multi-EPG"
 msgstr "Aktivizēt buķešu izvēli multi-EPG"
 
@@ -3484,6 +3483,13 @@ msgstr "Pāršūšana neizdevās"
 msgid "Following tasks will be done after you press OK!"
 msgstr "Šādi uzdevumi tiks veikti pēc tam, kad nospiedīsiet OK!"
 
+msgid "Force LNB Power"
+msgstr ""
+
+#, fuzzy
+msgid "Force ToneBurst"
+msgstr "Toņsignāls"
+
 msgid "Format"
 msgstr "Formatēt"
 
@@ -3942,9 +3948,6 @@ msgstr ""
 msgid "Ignore conflict"
 msgstr ""
 
-msgid "Immediate shutdown"
-msgstr "Tūlītēja izslēgšana"
-
 msgid "In order to record a timer, the TV was switched to the recording service!\n"
 msgstr "Lai uzsāktu ierakstu pēc taimera, TV tika pārslēgts uz ierakstāmo kanālu!\n"
 
@@ -4090,6 +4093,10 @@ msgstr "Uzstādīt pikonas"
 #, fuzzy
 msgid "Install plugins"
 msgstr "Uzstādīt pikonas"
+
+#, fuzzy
+msgid "Install softcam support"
+msgstr "Uzstāda programmatūru..."
 
 msgid "Installation has completed."
 msgstr "Uzstādīšana pabeigta."
@@ -5204,10 +5211,6 @@ msgstr "Iestatījumi"
 msgid "OSD name request"
 msgstr "OSD nosaukuma pieprasījums"
 
-#, fuzzy
-msgid "OSD position setup"
-msgstr "Pozicioniera iestatījumi"
-
 msgid "OSD settings"
 msgstr "OSD iestatījumi"
 
@@ -5735,6 +5738,10 @@ msgstr "Lūdzu uzgaidiet"
 msgid "Please wait (downloading channel list)"
 msgstr "Lūdzu uzgaidiet (ielādē kanālu sarakstu)"
 
+#, fuzzy
+msgid "Please wait (downloading softcam support)"
+msgstr "Lūdzu uzgaidiet (ielādē kanālu sarakstu)"
+
 msgid "Please wait (updating packages)"
 msgstr "Lūdzu uzgaidiet (atjauno pakotnes)"
 
@@ -5860,6 +5867,10 @@ msgstr "Pozicioniera iestatījumi"
 
 msgid "Power threshold in mA"
 msgstr "Barošanas robežvērtība mA"
+
+#, fuzzy
+msgid "PowerMenu"
+msgstr "Izvēlne"
 
 msgid "Predefined transponder"
 msgstr "Definēts transponderis"
@@ -6381,6 +6392,10 @@ msgstr ""
 
 msgid "Repeat"
 msgstr "Atkārtot"
+
+#, fuzzy
+msgid "Repeat leave standby messages"
+msgstr "Pieņemt dziļo gaidīšanu kā gaidīšanu"
 
 msgid "Repeat type"
 msgstr "Atkārtošanas veids"
@@ -7378,9 +7393,6 @@ msgstr "Rādīt kanālu tipu ikonas"
 #, fuzzy
 msgid "Show servicelist or movies"
 msgstr "Rādīt kanālu tipu ikonas"
-
-msgid "Show shutdown menu"
-msgstr "Rādīt izslēgšanas izvēlni"
 
 msgid "Show single service EPG"
 msgstr "Rādīt atsevišķa kanāla EPG"
@@ -8458,9 +8470,6 @@ msgstr ""
 msgid "This option allows you to boost the green tones in the picture."
 msgstr ""
 
-msgid "This option allows you to bypass HDMI EDID check"
-msgstr ""
-
 msgid "This option allows you to view the old and new settings side by side."
 msgstr ""
 
@@ -9458,6 +9467,14 @@ msgstr "Ko Jūs vēlaties meklēt?"
 msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are upgraded"
 msgstr ""
 
+#, fuzzy
+msgid "When enabled the LNB power will not be switched off in standby"
+msgstr "Ja iespējots, VCR scart tiks rādīts galvenajā izvēlnē"
+
+#, fuzzy
+msgid "When enabled the LNB toneburst will be forced"
+msgstr "Ja iespējots, numuri tiks paslēpti."
+
 msgid "When enabled the PiP can be closed by the exit button."
 msgstr "Ja iespējots attēls attēlā, var aizvērt ar exit taustiņu."
 
@@ -9703,6 +9720,17 @@ msgstr ""
 
 msgid "Without popup"
 msgstr "Bez uznirstošā loga"
+
+msgid "Wizard to arrange the overscan"
+msgstr ""
+
+msgid ""
+"Would you like to be able to install softcams?\n"
+"\n"
+"Attention - Country specific illegal!\n"
+"\n"
+"Check legality for your specific country in advance!"
+msgstr ""
 
 #, python-format
 msgid "Would you save the entered PIN %s persistent?"
@@ -10367,9 +10395,6 @@ msgstr "dekodēt un ierakstīt ecm"
 msgid "detective/thriller"
 msgstr "detektīvs/trilleris"
 
-msgid "disable"
-msgstr "izslēgt"
-
 #, fuzzy
 msgid "disable intro screen"
 msgstr "Izslēgt Atēls Atēlā"
@@ -10418,9 +10443,6 @@ msgstr "izglītība/zinātne/faktiskās tēmas (vispārīgi)"
 
 msgid "empty"
 msgstr "tukšs"
-
-msgid "enable"
-msgstr "aktivizēt"
 
 msgid "enable bouquet edit"
 msgstr "aktivizēt buķešu rediģēšanu"
@@ -10721,6 +10743,10 @@ msgstr "pārvietot augšup uz iepriekšējo ierakstu"
 
 msgid "movie/drama (general)"
 msgstr "filmas/drāma (vispārīgi)"
+
+#, fuzzy
+msgid "multi"
+msgstr "multinorma"
 
 msgid "multinorm"
 msgstr "multinorma"
@@ -11345,6 +11371,12 @@ msgstr "pārslēgts"
 #~ msgid "AB"
 #~ msgstr "AB"
 
+#~ msgid "Action on long powerbutton press"
+#~ msgstr "Ilgstoši nospiežot izslēgšanas taustiņu"
+
+#~ msgid "Action on short powerbutton press"
+#~ msgstr "Īsi nospiežot izslēgšanas taustiņu"
+
 #~ msgid "Add Bookmark"
 #~ msgstr "Pievienot grāmatzīmi"
 
@@ -11398,6 +11430,10 @@ msgstr "pārslēgts"
 #~ msgid "Common Interface assignment"
 #~ msgstr "Common interfeisa piešķiršana"
 
+#, fuzzy
+#~ msgid "Compensate for overscan"
+#~ msgstr "Notīrīt pirms meklēšanas"
+
 #~ msgid "Configure the behavior of the 'pause' key when movie playback is already paused."
 #~ msgstr "Uzstāda pauzes taustiņa darbību, kad filmas atskaņošana ir nopauzēta."
 
@@ -11406,6 +11442,12 @@ msgstr "pārslēgts"
 
 #~ msgid "Configure the duration in minutes and action, which could be shut down or standby, for the sleeptimer. Select this entry and click OK or green to start/stop the sleeptimer"
 #~ msgstr "Uzstāda laiku minūtēs un darbību miega taimerim- vai būs izslēgšana vai gaidstāve. Izvēlieties šo ierakstu un nospiediet OK vai zaļo lai palaistu/apstādinātu miega taimeri"
+
+#~ msgid "Configure the function of a long press on the power button."
+#~ msgstr "Uzstāda barošanas pogas ilgstošas nospiešanas funkciju."
+
+#~ msgid "Configure the function of a short press on the power button."
+#~ msgstr "Uzstāda barošanas pogas īslaicīgas nospiešanas funkciju."
 
 #~ msgid "Conflicting timer"
 #~ msgstr "Konfliktējošs taimeris"
@@ -11504,6 +11546,9 @@ msgstr "pārslēgts"
 #~ msgid "Green boost"
 #~ msgstr "Zaļā piesātinājums"
 
+#~ msgid "Immediate shutdown"
+#~ msgstr "Tūlītēja izslēgšana"
+
 #~ msgid "List EPG functions..."
 #~ msgstr "EPG funkciju saraksts..."
 
@@ -11565,6 +11610,10 @@ msgstr "pārslēgts"
 #~ "Derīgi PIN iestatījumi netika atrasti!\n"
 #~ "Vai vēlaties tulīt mainīt PIN iestatījumus?\n"
 #~ "Ja teiksiet 'NĒ', aizsardzības iestatījumi paliks neaktīvi!"
+
+#, fuzzy
+#~ msgid "OSD position setup"
+#~ msgstr "Pozicioniera iestatījumi"
 
 #~ msgid "Open service list and select next channel"
 #~ msgstr "Atvērt kanālu sarakstu un izvēlēties nākamo kanālu"
@@ -11638,6 +11687,9 @@ msgstr "pārslēgts"
 
 #~ msgid "Show services beginning with"
 #~ msgstr "Rādīt kanālus, kas sākas ar"
+
+#~ msgid "Show shutdown menu"
+#~ msgstr "Rādīt izslēgšanas izvēlni"
 
 #~ msgid "Show status icons in Movielist"
 #~ msgstr "Rādīt statusa ikonu filmu sarakstā"
@@ -11813,6 +11865,12 @@ msgstr "pārslēgts"
 
 #~ msgid "delete..."
 #~ msgstr "dzēš..."
+
+#~ msgid "disable"
+#~ msgstr "izslēgt"
+
+#~ msgid "enable"
+#~ msgstr "aktivizēt"
 
 #~ msgid "fine-tune your display"
 #~ msgstr "displeja precīzā pieregulēšana"

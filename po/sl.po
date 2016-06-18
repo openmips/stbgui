@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-28 16:35+0200\n"
+"POT-Creation-Date: 2016-06-18 22:35+0200\n"
 "PO-Revision-Date: 2015-01-29 17:40+0200\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -823,14 +823,6 @@ msgstr "O programu"
 msgid "Accesspoint:"
 msgstr "Dostopna točka:"
 
-#
-msgid "Action on long powerbutton press"
-msgstr "Dogodek pri dolgem držanju tipke za vklop"
-
-#
-msgid "Action on short powerbutton press"
-msgstr "Dogodek pri kratkem držanju tipke za vklop"
-
 msgid "Activate"
 msgstr ""
 
@@ -1259,6 +1251,11 @@ msgid "Aspect ratio"
 msgstr "Razmerje slike"
 
 #
+#, fuzzy
+msgid "AspectRatio switch"
+msgstr "Razmerje slike"
+
+#
 msgid "Assigned CAIds:"
 msgstr "Dodeljeni CAIdi:"
 
@@ -1596,7 +1593,7 @@ msgstr "V osnovi je SNR vrednost prikazana v dB (če je to podprto). Ta nastavit
 msgid "By openMips Image Team"
 msgstr ""
 
-msgid "Bypass HDMI EDID Check"
+msgid "Bypass HDMI EDID checking"
 msgstr ""
 
 msgid "Bytes received:"
@@ -2017,6 +2014,11 @@ msgid "Collection settings"
 msgstr "Nastavitve zbirke"
 
 #
+#, fuzzy
+msgid "Color"
+msgstr "Barvni format"
+
+#
 msgid "Color format"
 msgstr "Barvni format"
 
@@ -2044,11 +2046,6 @@ msgstr "Komunikacija"
 #
 msgid "Compact flash"
 msgstr "Compact Flash"
-
-#
-#, fuzzy
-msgid "Compensate for overscan"
-msgstr "Pred iskanjem naj se izvede izbris obstoječih kanalov"
 
 #
 msgid "Complete"
@@ -2125,6 +2122,9 @@ msgstr "Nastavitev omogoča izbiro želenega video izhoda. Sedaj je večinoma v 
 
 msgid "Configure if service picons will be shown in the channel selection list."
 msgstr "Določitev prikaza majhnih slik kanalov (t.i. piconsi) v seznamu kanalov."
+
+msgid "Configure if the HDMI EDID checking should be bypassed as this might solve issue with some TVs."
+msgstr ""
 
 msgid "Configure if the subtitle should switch between normal, italic, bold and bolditalic"
 msgstr ""
@@ -2215,12 +2215,6 @@ msgstr "Določitev četrte zvočne sledi."
 #
 msgid "Configure the fourth subtitle language."
 msgstr "Nastavitev četrtega jezika podnapisov."
-
-msgid "Configure the function of a long press on the power button."
-msgstr "Določitev funkcije dolgega pritiska tipke za vklop sprejemnika na daljinskem upravljalniku."
-
-msgid "Configure the function of a short press on the power button."
-msgstr "Določitev funkcije kratkega pritiska tipke za vklop sprejemnika na daljinskem upravljalniku."
 
 msgid "Configure the function of the '0' button do when PIP is active."
 msgstr "Določitev funkcije tipke \"0\", ko je aktivna funkcija \"Slika v sliki\"."
@@ -3479,6 +3473,10 @@ msgstr "Omogoči samodejno hitro iskanje"
 msgid "Enable auto fast scan"
 msgstr "Omogoči samodejno hitro iskanje"
 
+#, fuzzy, python-format
+msgid "Enable auto fast scan for %s"
+msgstr "Omogoči samodejno hitro iskanje"
+
 msgid "Enable bouquet selection in multi-EPG"
 msgstr "Vklop izbire seznama paketov kanalov v Multi-EPG načinu."
 
@@ -4048,6 +4046,14 @@ msgstr "Nadgradnja ni uspela"
 msgid "Following tasks will be done after you press OK!"
 msgstr "Sledeče naloge bodo opravljene, ko pritisnete OK!"
 
+msgid "Force LNB Power"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Force ToneBurst"
+msgstr "Toneburst"
+
 #
 msgid "Format"
 msgstr "Formatiraj"
@@ -4572,10 +4578,6 @@ msgid "Ignore conflict"
 msgstr ""
 
 #
-msgid "Immediate shutdown"
-msgstr "Takojšen izklop"
-
-#
 msgid "In order to record a timer, the TV was switched to the recording service!\n"
 msgstr "Da bi se lahko izvedlo snemanje določeno s časovnikom, je bil TV prestavljen v način snemanja!\n"
 
@@ -4750,6 +4752,11 @@ msgstr "Namestitev piconsev na"
 #, fuzzy
 msgid "Install plugins"
 msgstr "Namestitev piconsev na"
+
+#
+#, fuzzy
+msgid "Install softcam support"
+msgstr "Poteka nameščanje programske opreme..."
 
 msgid "Installation has completed."
 msgstr "Namestitev je zaključena."
@@ -6065,11 +6072,6 @@ msgid "OSD name request"
 msgstr "Zahtevek za OSD ime"
 
 #
-#, fuzzy
-msgid "OSD position setup"
-msgstr "Nastavitve rotorja"
-
-#
 msgid "OSD settings"
 msgstr "Nastavitve OSD"
 
@@ -6695,6 +6697,11 @@ msgid "Please wait (downloading channel list)"
 msgstr "Prosim počakajte, poteka snemanje seznama kanalov ..."
 
 #
+#, fuzzy
+msgid "Please wait (downloading softcam support)"
+msgstr "Prosim počakajte, poteka snemanje seznama kanalov ..."
+
+#
 msgid "Please wait (updating packages)"
 msgstr "Prosim počakajte, poteka nalaganje paketov  ..."
 
@@ -6848,6 +6855,11 @@ msgstr "Nastavitve rotorja"
 #
 msgid "Power threshold in mA"
 msgstr "Prag moči v mA"
+
+#
+#, fuzzy
+msgid "PowerMenu"
+msgstr "Meni"
 
 #
 msgid "Predefined transponder"
@@ -7489,6 +7501,10 @@ msgstr ""
 #
 msgid "Repeat"
 msgstr "Ponovitev"
+
+#, fuzzy
+msgid "Repeat leave standby messages"
+msgstr "Obravnavaj globoko spanje kot stanje pripravljenosti"
 
 #
 msgid "Repeat type"
@@ -8701,10 +8717,6 @@ msgstr "Prikaz vrste kanalov v seznamu kanalov"
 #, fuzzy
 msgid "Show servicelist or movies"
 msgstr "Prikaz vrste kanalov v seznamu kanalov"
-
-#
-msgid "Show shutdown menu"
-msgstr "Prikaz menija za izklop"
 
 msgid "Show single service EPG"
 msgstr "Prikaz \"single service\" EPGja"
@@ -9955,9 +9967,6 @@ msgstr ""
 msgid "This option allows you to boost the green tones in the picture."
 msgstr ""
 
-msgid "This option allows you to bypass HDMI EDID check"
-msgstr ""
-
 msgid "This option allows you to view the old and new settings side by side."
 msgstr ""
 
@@ -11128,6 +11137,14 @@ msgstr "Kaj želite iskati?"
 msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are upgraded"
 msgstr ""
 
+#, fuzzy
+msgid "When enabled the LNB power will not be switched off in standby"
+msgstr "Če je nastavitev vključena, potem se v glavnem meniju pojavi možnost izbire menija \"VCR SCART\"."
+
+#, fuzzy
+msgid "When enabled the LNB toneburst will be forced"
+msgstr "Če je nastavitev vključena, potem se kanali v seznamu kanalov ne številčijo."
+
 msgid "When enabled the PiP can be closed by the exit button."
 msgstr "Če je nastavitev vključena, potem se funkcija \"Slika v sliki\" izklopi s pritiskom na tipko \"izhod\"."
 
@@ -11378,6 +11395,17 @@ msgstr ""
 
 msgid "Without popup"
 msgstr "Brez obvestila"
+
+msgid "Wizard to arrange the overscan"
+msgstr ""
+
+msgid ""
+"Would you like to be able to install softcams?\n"
+"\n"
+"Attention - Country specific illegal!\n"
+"\n"
+"Check legality for your specific country in advance!"
+msgstr ""
 
 #, python-format
 msgid "Would you save the entered PIN %s persistent?"
@@ -12135,10 +12163,6 @@ msgid "detective/thriller"
 msgstr ""
 
 #
-msgid "disable"
-msgstr "onemogoči"
-
-#
 #, fuzzy
 msgid "disable intro screen"
 msgstr "Izklop Slike v Sliki"
@@ -12194,10 +12218,6 @@ msgstr ""
 #
 msgid "empty"
 msgstr "prazno"
-
-#
-msgid "enable"
-msgstr "omogoči"
 
 #
 msgid "enable bouquet edit"
@@ -12548,6 +12568,11 @@ msgstr "premik gor, prejšnji vnos"
 
 msgid "movie/drama (general)"
 msgstr ""
+
+#
+#, fuzzy
+msgid "multi"
+msgstr "multinorm"
 
 #
 msgid "multinorm"
@@ -13279,6 +13304,14 @@ msgid "zapped"
 msgstr "preklopljeno"
 
 #
+#~ msgid "Action on long powerbutton press"
+#~ msgstr "Dogodek pri dolgem držanju tipke za vklop"
+
+#
+#~ msgid "Action on short powerbutton press"
+#~ msgstr "Dogodek pri kratkem držanju tipke za vklop"
+
+#
 #~ msgid "Add Bookmark"
 #~ msgstr "Nov zaznamek"
 
@@ -13312,6 +13345,17 @@ msgstr "preklopljeno"
 #
 #~ msgid "Common Interface assignment"
 #~ msgstr "Stanje CI vmesnika"
+
+#
+#, fuzzy
+#~ msgid "Compensate for overscan"
+#~ msgstr "Pred iskanjem naj se izvede izbris obstoječih kanalov"
+
+#~ msgid "Configure the function of a long press on the power button."
+#~ msgstr "Določitev funkcije dolgega pritiska tipke za vklop sprejemnika na daljinskem upravljalniku."
+
+#~ msgid "Configure the function of a short press on the power button."
+#~ msgstr "Določitev funkcije kratkega pritiska tipke za vklop sprejemnika na daljinskem upravljalniku."
 
 #
 #~ msgid "Conflicting timer"
@@ -13416,6 +13460,10 @@ msgstr "preklopljeno"
 #~ msgstr "Prenesi zadnjo stabilno sliko"
 
 #
+#~ msgid "Immediate shutdown"
+#~ msgstr "Takojšen izklop"
+
+#
 #~ msgid "List EPG functions..."
 #~ msgstr "Seznam EPG načinov"
 
@@ -13485,6 +13533,11 @@ msgstr "preklopljeno"
 #~ "Želite spremeniti PIN?\n"
 #~ "Če izberete 'Ne', bodo nastavitve ostale nezaščitene!"
 
+#
+#, fuzzy
+#~ msgid "OSD position setup"
+#~ msgstr "Nastavitve rotorja"
+
 #~ msgid "Output"
 #~ msgstr "Učinek"
 
@@ -13553,6 +13606,10 @@ msgstr "preklopljeno"
 #
 #~ msgid "Show services beginning with"
 #~ msgstr "Prikaz kanalov, ki se začnejo z"
+
+#
+#~ msgid "Show shutdown menu"
+#~ msgstr "Prikaz menija za izklop"
 
 #
 #~ msgid "Show status icons in Movielist"
@@ -13713,6 +13770,14 @@ msgstr "preklopljeno"
 #
 #~ msgid "delete..."
 #~ msgstr "Izbris"
+
+#
+#~ msgid "disable"
+#~ msgstr "onemogoči"
+
+#
+#~ msgid "enable"
+#~ msgstr "omogoči"
 
 #
 #~ msgid "fine-tune your display"

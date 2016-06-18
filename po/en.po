@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-28 16:35+0200\n"
+"POT-Creation-Date: 2016-06-18 22:35+0200\n"
 "PO-Revision-Date: 2015-01-29 18:01+0100\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -645,12 +645,6 @@ msgstr ""
 msgid "Accesspoint:"
 msgstr ""
 
-msgid "Action on long powerbutton press"
-msgstr ""
-
-msgid "Action on short powerbutton press"
-msgstr ""
-
 msgid "Activate"
 msgstr ""
 
@@ -970,6 +964,9 @@ msgstr ""
 msgid "Aspect ratio"
 msgstr ""
 
+msgid "AspectRatio switch"
+msgstr ""
+
 msgid "Assigned CAIds:"
 msgstr ""
 
@@ -1230,7 +1227,7 @@ msgstr ""
 msgid "By openMips Image Team"
 msgstr ""
 
-msgid "Bypass HDMI EDID Check"
+msgid "Bypass HDMI EDID checking"
 msgstr ""
 
 msgid "Bytes received:"
@@ -1580,6 +1577,9 @@ msgstr ""
 msgid "Collection settings"
 msgstr ""
 
+msgid "Color"
+msgstr ""
+
 msgid "Color format"
 msgstr ""
 
@@ -1599,9 +1599,6 @@ msgid "Communication"
 msgstr ""
 
 msgid "Compact flash"
-msgstr ""
-
-msgid "Compensate for overscan"
 msgstr ""
 
 msgid "Complete"
@@ -1669,6 +1666,9 @@ msgid "Configure if epg.dat should be saved at all."
 msgstr ""
 
 msgid "Configure if service picons will be shown in the channel selection list."
+msgstr ""
+
+msgid "Configure if the HDMI EDID checking should be bypassed as this might solve issue with some TVs."
 msgstr ""
 
 msgid "Configure if the subtitle should switch between normal, italic, bold and bolditalic"
@@ -1753,12 +1753,6 @@ msgid "Configure the fourth audio language."
 msgstr ""
 
 msgid "Configure the fourth subtitle language."
-msgstr ""
-
-msgid "Configure the function of a long press on the power button."
-msgstr ""
-
-msgid "Configure the function of a short press on the power button."
 msgstr ""
 
 msgid "Configure the function of the '0' button do when PIP is active."
@@ -2780,6 +2774,10 @@ msgstr ""
 msgid "Enable auto fast scan"
 msgstr ""
 
+#, python-format
+msgid "Enable auto fast scan for %s"
+msgstr ""
+
 msgid "Enable bouquet selection in multi-EPG"
 msgstr ""
 
@@ -3233,6 +3231,12 @@ msgstr ""
 msgid "Following tasks will be done after you press OK!"
 msgstr ""
 
+msgid "Force LNB Power"
+msgstr ""
+
+msgid "Force ToneBurst"
+msgstr ""
+
 msgid "Format"
 msgstr ""
 
@@ -3660,9 +3664,6 @@ msgstr ""
 msgid "Ignore conflict"
 msgstr ""
 
-msgid "Immediate shutdown"
-msgstr ""
-
 msgid "In order to record a timer, the TV was switched to the recording service!\n"
 msgstr ""
 
@@ -3800,6 +3801,9 @@ msgid "Install picons on"
 msgstr ""
 
 msgid "Install plugins"
+msgstr ""
+
+msgid "Install softcam support"
 msgstr ""
 
 msgid "Installation has completed."
@@ -4856,10 +4860,6 @@ msgstr "Positioner setup"
 msgid "OSD name request"
 msgstr ""
 
-#, fuzzy
-msgid "OSD position setup"
-msgstr "Positioner setup"
-
 msgid "OSD settings"
 msgstr ""
 
@@ -5331,6 +5331,9 @@ msgstr ""
 msgid "Please wait (downloading channel list)"
 msgstr ""
 
+msgid "Please wait (downloading softcam support)"
+msgstr ""
+
 msgid "Please wait (updating packages)"
 msgstr ""
 
@@ -5449,6 +5452,9 @@ msgid "Positioner setup log"
 msgstr ""
 
 msgid "Power threshold in mA"
+msgstr ""
+
+msgid "PowerMenu"
 msgstr ""
 
 msgid "Predefined transponder"
@@ -5930,6 +5936,9 @@ msgid "Rename name and description for new events"
 msgstr ""
 
 msgid "Repeat"
+msgstr ""
+
+msgid "Repeat leave standby messages"
 msgstr ""
 
 msgid "Repeat type"
@@ -6859,9 +6868,6 @@ msgid "Show service type icons"
 msgstr ""
 
 msgid "Show servicelist or movies"
-msgstr ""
-
-msgid "Show shutdown menu"
 msgstr ""
 
 msgid "Show single service EPG"
@@ -7862,9 +7868,6 @@ msgstr ""
 msgid "This option allows you to boost the green tones in the picture."
 msgstr ""
 
-msgid "This option allows you to bypass HDMI EDID check"
-msgstr ""
-
 msgid "This option allows you to view the old and new settings side by side."
 msgstr ""
 
@@ -8776,6 +8779,12 @@ msgstr ""
 msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are upgraded"
 msgstr ""
 
+msgid "When enabled the LNB power will not be switched off in standby"
+msgstr ""
+
+msgid "When enabled the LNB toneburst will be forced"
+msgstr ""
+
 msgid "When enabled the PiP can be closed by the exit button."
 msgstr ""
 
@@ -9010,6 +9019,17 @@ msgid ""
 msgstr ""
 
 msgid "Without popup"
+msgstr ""
+
+msgid "Wizard to arrange the overscan"
+msgstr ""
+
+msgid ""
+"Would you like to be able to install softcams?\n"
+"\n"
+"Attention - Country specific illegal!\n"
+"\n"
+"Check legality for your specific country in advance!"
 msgstr ""
 
 #, python-format
@@ -9630,9 +9650,6 @@ msgstr ""
 msgid "detective/thriller"
 msgstr ""
 
-msgid "disable"
-msgstr ""
-
 msgid "disable intro screen"
 msgstr ""
 
@@ -9679,9 +9696,6 @@ msgid "education/science/factual topics (general)"
 msgstr ""
 
 msgid "empty"
-msgstr ""
-
-msgid "enable"
 msgstr ""
 
 msgid "enable bouquet edit"
@@ -9976,6 +9990,9 @@ msgid "move up to previous entry"
 msgstr ""
 
 msgid "movie/drama (general)"
+msgstr ""
+
+msgid "multi"
 msgstr ""
 
 msgid "multinorm"
@@ -10564,3 +10581,7 @@ msgstr ""
 
 msgid "zapped"
 msgstr ""
+
+#, fuzzy
+#~ msgid "OSD position setup"
+#~ msgstr "Positioner setup"

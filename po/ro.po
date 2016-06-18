@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-28 16:35+0200\n"
+"POT-Creation-Date: 2016-06-18 22:35+0200\n"
 "PO-Revision-Date: 2010-03-09 21:03+0100\n"
 "Last-Translator: \n"
 "Language-Team: HDTV ROMANIA(superonic,costel_mbc,neutrin,otheitis,cipy_1982,neutrin,runcanion)\n"
@@ -680,12 +680,6 @@ msgstr "Despre..."
 msgid "Accesspoint:"
 msgstr ""
 
-msgid "Action on long powerbutton press"
-msgstr "Actiune cind apasam prelungit butonul power"
-
-msgid "Action on short powerbutton press"
-msgstr ""
-
 #, fuzzy
 msgid "Activate"
 msgstr "Activeaza PIP"
@@ -1064,6 +1058,10 @@ msgstr "Aspect Ratio"
 msgid "Aspect ratio"
 msgstr "Aspect Ratio"
 
+#, fuzzy
+msgid "AspectRatio switch"
+msgstr "Aspect Ratio"
+
 msgid "Assigned CAIds:"
 msgstr ""
 
@@ -1346,7 +1344,7 @@ msgstr ""
 msgid "By openMips Image Team"
 msgstr ""
 
-msgid "Bypass HDMI EDID Check"
+msgid "Bypass HDMI EDID checking"
 msgstr ""
 
 msgid "Bytes received:"
@@ -1716,6 +1714,10 @@ msgid "Collection settings"
 msgstr "Setari colectie"
 
 #, fuzzy
+msgid "Color"
+msgstr "Format color"
+
+#, fuzzy
 msgid "Color format"
 msgstr "Format color"
 
@@ -1738,10 +1740,6 @@ msgstr "Comunicare"
 #, fuzzy
 msgid "Compact flash"
 msgstr "Compact Flash"
-
-#, fuzzy
-msgid "Compensate for overscan"
-msgstr "Goleste lista inainte de scanare"
 
 msgid "Complete"
 msgstr "Incheiat"
@@ -1811,6 +1809,9 @@ msgid "Configure if epg.dat should be saved at all."
 msgstr ""
 
 msgid "Configure if service picons will be shown in the channel selection list."
+msgstr ""
+
+msgid "Configure if the HDMI EDID checking should be bypassed as this might solve issue with some TVs."
 msgstr ""
 
 msgid "Configure if the subtitle should switch between normal, italic, bold and bolditalic"
@@ -1900,12 +1901,6 @@ msgstr ""
 #, fuzzy
 msgid "Configure the fourth subtitle language."
 msgstr "mergi la urmatoarea limba pentru subtitrari"
-
-msgid "Configure the function of a long press on the power button."
-msgstr ""
-
-msgid "Configure the function of a short press on the power button."
-msgstr ""
 
 msgid "Configure the function of the '0' button do when PIP is active."
 msgstr ""
@@ -2749,7 +2744,6 @@ msgstr "Doriti efectuarea unei scanari a serviciilor?"
 msgid "Do you want to do another manual service scan?"
 msgstr "Doriti efectuarea unei alte operatiuni de scanare manuala?"
 
-#, fuzzy
 msgid "Do you want to install a channel list?"
 msgstr ""
 
@@ -3000,6 +2994,10 @@ msgstr "Activeaza controlul parental"
 
 msgid "Enable auto fast scan"
 msgstr ""
+
+#, fuzzy, python-format
+msgid "Enable auto fast scan for %s"
+msgstr "Activeaza controlul parental"
 
 #, fuzzy
 msgid "Enable bouquet selection in multi-EPG"
@@ -3491,6 +3489,13 @@ msgstr "Operatia de flash a esuat"
 msgid "Following tasks will be done after you press OK!"
 msgstr ""
 
+msgid "Force LNB Power"
+msgstr ""
+
+#, fuzzy
+msgid "Force ToneBurst"
+msgstr "Toneburst"
+
 msgid "Format"
 msgstr "Formatare"
 
@@ -3949,10 +3954,6 @@ msgstr ""
 msgid "Ignore conflict"
 msgstr ""
 
-#, fuzzy
-msgid "Immediate shutdown"
-msgstr "shutdown imediat"
-
 msgid "In order to record a timer, the TV was switched to the recording service!\n"
 msgstr "Pentru a putea porni inregistrarea programata,s-a comutat pe canalul respectiv!\n"
 
@@ -4101,6 +4102,10 @@ msgstr ""
 #, fuzzy
 msgid "Install plugins"
 msgstr "Instaleaza"
+
+#, fuzzy
+msgid "Install softcam support"
+msgstr "Instaleaza software"
 
 #, fuzzy
 msgid "Installation has completed."
@@ -5245,10 +5250,6 @@ msgid "OSD name request"
 msgstr ""
 
 #, fuzzy
-msgid "OSD position setup"
-msgstr "Configurare Pozitioner"
-
-#, fuzzy
 msgid "OSD settings"
 msgstr "Setari OSD"
 
@@ -5780,6 +5781,10 @@ msgid "Please wait (downloading channel list)"
 msgstr "Va rugam asteptati... Se incarca lista..."
 
 #, fuzzy
+msgid "Please wait (downloading softcam support)"
+msgstr "Va rugam asteptati... Se incarca lista..."
+
+#, fuzzy
 msgid "Please wait (updating packages)"
 msgstr "te rog asteapta, se incarca imagine"
 
@@ -5905,6 +5910,10 @@ msgstr "Configurare Pozitioner"
 
 msgid "Power threshold in mA"
 msgstr "Prag de putere in mA"
+
+#, fuzzy
+msgid "PowerMenu"
+msgstr "Meniu"
 
 msgid "Predefined transponder"
 msgstr "Transponder predefinit"
@@ -6427,6 +6436,9 @@ msgid "Rename name and description for new events"
 msgstr ""
 
 msgid "Repeat"
+msgstr ""
+
+msgid "Repeat leave standby messages"
 msgstr ""
 
 #, fuzzy
@@ -7458,10 +7470,6 @@ msgstr ""
 #, fuzzy
 msgid "Show servicelist or movies"
 msgstr "Incarca durata filmelor in lista cu filme"
-
-#, fuzzy
-msgid "Show shutdown menu"
-msgstr "arata meniul de shutdown"
 
 msgid "Show single service EPG"
 msgstr ""
@@ -8556,9 +8564,6 @@ msgstr ""
 msgid "This option allows you to boost the green tones in the picture."
 msgstr ""
 
-msgid "This option allows you to bypass HDMI EDID check"
-msgstr ""
-
 msgid "This option allows you to view the old and new settings side by side."
 msgstr ""
 
@@ -9566,6 +9571,12 @@ msgstr "Ce vrei sa scanezi"
 msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are upgraded"
 msgstr ""
 
+msgid "When enabled the LNB power will not be switched off in standby"
+msgstr ""
+
+msgid "When enabled the LNB toneburst will be forced"
+msgstr ""
+
 msgid "When enabled the PiP can be closed by the exit button."
 msgstr ""
 
@@ -9808,6 +9819,17 @@ msgid ""
 msgstr ""
 
 msgid "Without popup"
+msgstr ""
+
+msgid "Wizard to arrange the overscan"
+msgstr ""
+
+msgid ""
+"Would you like to be able to install softcams?\n"
+"\n"
+"Attention - Country specific illegal!\n"
+"\n"
+"Check legality for your specific country in advance!"
 msgstr ""
 
 #, python-format
@@ -10440,9 +10462,6 @@ msgstr ""
 msgid "detective/thriller"
 msgstr ""
 
-msgid "disable"
-msgstr "dezactiveaza"
-
 #, fuzzy
 msgid "disable intro screen"
 msgstr "Dezactiveaza PiP (Imagine in Imagine)"
@@ -10491,9 +10510,6 @@ msgstr ""
 
 msgid "empty"
 msgstr "gol"
-
-msgid "enable"
-msgstr "activeaza"
 
 msgid "enable bouquet edit"
 msgstr "activeaza editare bouquet"
@@ -10796,6 +10812,10 @@ msgstr "muta sus la anterioara intrare"
 
 msgid "movie/drama (general)"
 msgstr ""
+
+#, fuzzy
+msgid "multi"
+msgstr "multinorma"
 
 msgid "multinorm"
 msgstr "multinorma"
@@ -11407,6 +11427,9 @@ msgstr ""
 msgid "zapped"
 msgstr "zapped"
 
+#~ msgid "Action on long powerbutton press"
+#~ msgstr "Actiune cind apasam prelungit butonul power"
+
 #~ msgid "Add Bookmark"
 #~ msgstr "Adauga Bookmark"
 
@@ -11436,6 +11459,10 @@ msgstr "zapped"
 #, fuzzy
 #~ msgid "Common Interface assignment"
 #~ msgstr "Atribuirea pentru Common Interface"
+
+#, fuzzy
+#~ msgid "Compensate for overscan"
+#~ msgstr "Goleste lista inainte de scanare"
 
 #~ msgid "Conflicting timer"
 #~ msgstr "Programare aflata in conflict"
@@ -11475,6 +11502,10 @@ msgstr "zapped"
 #~ msgstr "Voltaj marit"
 
 #, fuzzy
+#~ msgid "Immediate shutdown"
+#~ msgstr "shutdown imediat"
+
+#, fuzzy
 #~ msgid "Mode 1"
 #~ msgstr "Mod"
 
@@ -11509,6 +11540,10 @@ msgstr "zapped"
 #~ "Doriti sa schimbati PIN-ul de configurare acum?\n"
 #~ "Cand spuneti 'Nu' aici serviciul de protectie ramane dezactivat!"
 
+#, fuzzy
+#~ msgid "OSD position setup"
+#~ msgstr "Configurare Pozitioner"
+
 #~ msgid "Parental control type"
 #~ msgstr "Tip control parental"
 
@@ -11531,6 +11566,10 @@ msgstr "zapped"
 
 #~ msgid "Show services beginning with"
 #~ msgstr "Arata serviciile incepand cu"
+
+#, fuzzy
+#~ msgid "Show shutdown menu"
+#~ msgstr "arata meniul de shutdown"
 
 #, fuzzy
 #~ msgid "Show tag menu"
@@ -11607,6 +11646,12 @@ msgstr "zapped"
 
 #~ msgid "continue"
 #~ msgstr "continua"
+
+#~ msgid "disable"
+#~ msgstr "dezactiveaza"
+
+#~ msgid "enable"
+#~ msgstr "activeaza"
 
 #~ msgid "fine-tune your display"
 #~ msgstr "reglati fin display-ul"

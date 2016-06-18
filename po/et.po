@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-28 16:35+0200\n"
+"POT-Creation-Date: 2016-06-18 22:35+0200\n"
 "PO-Revision-Date: 2015-01-29 17:40+0200\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -722,12 +722,6 @@ msgstr "Süsteemiinfo"
 msgid "Accesspoint:"
 msgstr "WiFi Ruuter:"
 
-msgid "Action on long powerbutton press"
-msgstr "Toitenupu pikk vajutus"
-
-msgid "Action on short powerbutton press"
-msgstr "Toitenupu lühike vajutus"
-
 #, fuzzy
 msgid "Activate"
 msgstr "Ava pilt-pildis"
@@ -1079,6 +1073,10 @@ msgstr "Pildisuhe"
 msgid "Aspect ratio"
 msgstr "Pildisuhe"
 
+#, fuzzy
+msgid "AspectRatio switch"
+msgstr "Pildisuhe"
+
 msgid "Assigned CAIds:"
 msgstr "Määratud CAId-d:"
 
@@ -1357,7 +1355,7 @@ msgstr "Vaikimisi näidatakse SNR väärtust dB-s (kui tuuner seda toetab). Siin
 msgid "By openMips Image Team"
 msgstr ""
 
-msgid "Bypass HDMI EDID Check"
+msgid "Bypass HDMI EDID checking"
 msgstr ""
 
 msgid "Bytes received:"
@@ -1722,6 +1720,10 @@ msgstr "Valiku nimi"
 msgid "Collection settings"
 msgstr "Valiku seaded"
 
+#, fuzzy
+msgid "Color"
+msgstr "Värvi vorming"
+
 msgid "Color format"
 msgstr "Värvi vorming"
 
@@ -1743,10 +1745,6 @@ msgstr "Suhtlus"
 
 msgid "Compact flash"
 msgstr "Compact flash"
-
-#, fuzzy
-msgid "Compensate for overscan"
-msgstr "Kustuta kanalid"
 
 msgid "Complete"
 msgstr "Valmis"
@@ -1817,6 +1815,9 @@ msgid "Configure if epg.dat should be saved at all."
 msgstr "See valik määrab, millist ühenduspesa video väljund kasutab."
 
 msgid "Configure if service picons will be shown in the channel selection list."
+msgstr ""
+
+msgid "Configure if the HDMI EDID checking should be bypassed as this might solve issue with some TVs."
 msgstr ""
 
 msgid "Configure if the subtitle should switch between normal, italic, bold and bolditalic"
@@ -1902,12 +1903,6 @@ msgstr "Määra heli keele neljas eelistus."
 
 msgid "Configure the fourth subtitle language."
 msgstr "Määra subtiitrite keele neljas eelistus."
-
-msgid "Configure the function of a long press on the power button."
-msgstr "Määra, mida toitenupu pikk vajutus teeb."
-
-msgid "Configure the function of a short press on the power button."
-msgstr "Määra, mida toitenupu lühike vajutus teeb."
 
 msgid "Configure the function of the '0' button do when PIP is active."
 msgstr "Määra, mida '0' nupp PIP- režiimis teeb."
@@ -2984,6 +2979,10 @@ msgstr "Luba lapselukk"
 msgid "Enable auto fast scan"
 msgstr ""
 
+#, fuzzy, python-format
+msgid "Enable auto fast scan for %s"
+msgstr "Luba lapselukk"
+
 msgid "Enable bouquet selection in multi-EPG"
 msgstr "Luba multiEPG-s lemmiknimekirjade valik"
 
@@ -3464,6 +3463,13 @@ msgstr "Flashimine nurjus"
 msgid "Following tasks will be done after you press OK!"
 msgstr "Järgmised toimingud tehakse pärast OK vajutamist!"
 
+msgid "Force LNB Power"
+msgstr ""
+
+#, fuzzy
+msgid "Force ToneBurst"
+msgstr "Toonvalimine"
+
 msgid "Format"
 msgstr "Vorming"
 
@@ -3919,9 +3925,6 @@ msgstr ""
 msgid "Ignore conflict"
 msgstr ""
 
-msgid "Immediate shutdown"
-msgstr "Kohene väljalülitus"
-
 msgid "In order to record a timer, the TV was switched to the recording service!\n"
 msgstr "Sunnitud kanalivahetus. Taimeri salvestus just käivitus ja vajas seda tuunerit!\n"
 
@@ -4066,6 +4069,10 @@ msgstr "Paigalda kanalilogod"
 #, fuzzy
 msgid "Install plugins"
 msgstr "Paigalda kanalilogod"
+
+#, fuzzy
+msgid "Install softcam support"
+msgstr "Tarkvara paigaldamine..."
 
 msgid "Installation has completed."
 msgstr "Paigaldamine lõppenud."
@@ -5176,10 +5183,6 @@ msgstr "Seadistamine"
 msgid "OSD name request"
 msgstr "OSD nime päring"
 
-#, fuzzy
-msgid "OSD position setup"
-msgstr "Positsioneeri seadistus"
-
 msgid "OSD settings"
 msgstr "Ekraanigraafika seaded"
 
@@ -5707,6 +5710,10 @@ msgstr ""
 msgid "Please wait (downloading channel list)"
 msgstr "Oota (kanalinimekirja hankimine)"
 
+#, fuzzy
+msgid "Please wait (downloading softcam support)"
+msgstr "Oota (kanalinimekirja hankimine)"
+
 msgid "Please wait (updating packages)"
 msgstr "Oota (uuendatakse pakette)"
 
@@ -5832,6 +5839,10 @@ msgstr "Positsioneeri seadistus"
 
 msgid "Power threshold in mA"
 msgstr "Tuvastusvool mA"
+
+#, fuzzy
+msgid "PowerMenu"
+msgstr "Menüü"
 
 msgid "Predefined transponder"
 msgstr "Eelmääratud transponder"
@@ -6353,6 +6364,10 @@ msgstr ""
 
 msgid "Repeat"
 msgstr ""
+
+#, fuzzy
+msgid "Repeat leave standby messages"
+msgstr "Käsitle sügavooterežiimi tavalise ooterežiimina"
 
 msgid "Repeat type"
 msgstr "Kordamise liik"
@@ -7347,9 +7362,6 @@ msgstr "Näita teenuse tüübi ikoone"
 #, fuzzy
 msgid "Show servicelist or movies"
 msgstr "Näita teenuse tüübi ikoone"
-
-msgid "Show shutdown menu"
-msgstr "Kuva seiskamismenüü"
 
 msgid "Show single service EPG"
 msgstr ""
@@ -8423,9 +8435,6 @@ msgstr ""
 msgid "This option allows you to boost the green tones in the picture."
 msgstr ""
 
-msgid "This option allows you to bypass HDMI EDID check"
-msgstr ""
-
 msgid "This option allows you to view the old and new settings side by side."
 msgstr ""
 
@@ -9420,6 +9429,13 @@ msgstr "Mida soovid otsida?"
 msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are upgraded"
 msgstr ""
 
+#, fuzzy
+msgid "When enabled the LNB power will not be switched off in standby"
+msgstr "Määrates 'jah', kuvatakse uue saate algamisel inforiba."
+
+msgid "When enabled the LNB toneburst will be forced"
+msgstr ""
+
 msgid "When enabled the PiP can be closed by the exit button."
 msgstr ""
 
@@ -9664,6 +9680,17 @@ msgstr ""
 
 msgid "Without popup"
 msgstr "Ilma popup aknata"
+
+msgid "Wizard to arrange the overscan"
+msgstr ""
+
+msgid ""
+"Would you like to be able to install softcams?\n"
+"\n"
+"Attention - Country specific illegal!\n"
+"\n"
+"Check legality for your specific country in advance!"
+msgstr ""
 
 #, python-format
 msgid "Would you save the entered PIN %s persistent?"
@@ -10326,9 +10353,6 @@ msgstr "dekodeeri ja salvesta ecm"
 msgid "detective/thriller"
 msgstr "detektiiv/triller"
 
-msgid "disable"
-msgstr "keela"
-
 #, fuzzy
 msgid "disable intro screen"
 msgstr "Sulge pilt-pildis"
@@ -10377,9 +10401,6 @@ msgstr "haridus/teadus"
 
 msgid "empty"
 msgstr "tühi"
-
-msgid "enable"
-msgstr "luba"
 
 msgid "enable bouquet edit"
 msgstr "luba nimekirjade muutmine"
@@ -10682,6 +10703,10 @@ msgstr "liigu eelmisele reale"
 
 msgid "movie/drama (general)"
 msgstr ""
+
+#, fuzzy
+msgid "multi"
+msgstr "multinorm"
 
 msgid "multinorm"
 msgstr "multinorm"
@@ -11304,6 +11329,12 @@ msgstr "vahetatud"
 #~ msgid "AB"
 #~ msgstr "AB"
 
+#~ msgid "Action on long powerbutton press"
+#~ msgstr "Toitenupu pikk vajutus"
+
+#~ msgid "Action on short powerbutton press"
+#~ msgstr "Toitenupu lühike vajutus"
+
 #~ msgid "Add Bookmark"
 #~ msgstr "Lisa lemmik"
 
@@ -11354,8 +11385,18 @@ msgstr "vahetatud"
 #~ msgid "Common Interface assignment"
 #~ msgstr "CI määrangud"
 
+#, fuzzy
+#~ msgid "Compensate for overscan"
+#~ msgstr "Kustuta kanalid"
+
 #~ msgid "Configure the behavior of the 'pause' key when movie playback is already paused."
 #~ msgstr "Määra 'paus' nupu toime, kui filmi esitus on juba peatatud."
+
+#~ msgid "Configure the function of a long press on the power button."
+#~ msgstr "Määra, mida toitenupu pikk vajutus teeb."
+
+#~ msgid "Configure the function of a short press on the power button."
+#~ msgstr "Määra, mida toitenupu lühike vajutus teeb."
 
 #~ msgid "Conflicting timer"
 #~ msgstr "Vastuolud taimeris"
@@ -11445,6 +11486,9 @@ msgstr "vahetatud"
 #~ msgid "Green boost"
 #~ msgstr "Roheline boost"
 
+#~ msgid "Immediate shutdown"
+#~ msgstr "Kohene väljalülitus"
+
 #~ msgid "List EPG functions..."
 #~ msgstr "EPG vaadete nimekiri..."
 
@@ -11491,6 +11535,10 @@ msgstr "vahetatud"
 #~ "Lapseluku koodi ei leitud!\n"
 #~ "Kas soovid määrata koodi?\n"
 #~ "Kui vastad 'Ei', kanalit ei kaitsta koodiga!"
+
+#, fuzzy
+#~ msgid "OSD position setup"
+#~ msgstr "Positsioneeri seadistus"
 
 #~ msgid "Open service list and select next channel"
 #~ msgstr "Ava kanalinimekiri ja vali järgmine kanal"
@@ -11558,6 +11606,9 @@ msgstr "vahetatud"
 
 #~ msgid "Show services beginning with"
 #~ msgstr "Näita kanalid mis algavad"
+
+#~ msgid "Show shutdown menu"
+#~ msgstr "Kuva seiskamismenüü"
 
 #~ msgid "Show tag menu"
 #~ msgstr "Kuva märksõnade menüü"
@@ -11718,6 +11769,12 @@ msgstr "vahetatud"
 
 #~ msgid "currently installed image: %s"
 #~ msgstr "praegu paigaldatud tarkvara: %s"
+
+#~ msgid "disable"
+#~ msgstr "keela"
+
+#~ msgid "enable"
+#~ msgstr "luba"
 
 #~ msgid "fine-tune your display"
 #~ msgstr "peenhäälesta ekraani"

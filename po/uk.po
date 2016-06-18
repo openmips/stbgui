@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-28 16:35+0200\n"
+"POT-Creation-Date: 2016-06-18 22:35+0200\n"
 "PO-Revision-Date: 2015-01-29 17:40+0200\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -733,12 +733,6 @@ msgstr "Информація..."
 msgid "Accesspoint:"
 msgstr "Точка доступа:"
 
-msgid "Action on long powerbutton press"
-msgstr "Тривале натискання кнопки живлення"
-
-msgid "Action on short powerbutton press"
-msgstr "Коротке натискання кнопки живлення"
-
 #, fuzzy
 msgid "Activate"
 msgstr "Активувати PIP"
@@ -1089,6 +1083,10 @@ msgstr "Співвідношення сторін"
 msgid "Aspect ratio"
 msgstr "Співвідношення сторін"
 
+#, fuzzy
+msgid "AspectRatio switch"
+msgstr "AspectRatioSwitch Налаштування"
+
 msgid "Assigned CAIds:"
 msgstr "Призначено CAID:"
 
@@ -1367,7 +1365,7 @@ msgstr "За замовчуванням, SNR показується в дБ (я�
 msgid "By openMips Image Team"
 msgstr ""
 
-msgid "Bypass HDMI EDID Check"
+msgid "Bypass HDMI EDID checking"
 msgstr ""
 
 msgid "Bytes received:"
@@ -1735,6 +1733,10 @@ msgstr "Назва колекції"
 msgid "Collection settings"
 msgstr "Налаштування колекції"
 
+#, fuzzy
+msgid "Color"
+msgstr "Формат кольору"
+
 msgid "Color format"
 msgstr "Формат кольору"
 
@@ -1756,10 +1758,6 @@ msgstr "Зв'язок"
 
 msgid "Compact flash"
 msgstr "Компакт-флэш"
-
-#, fuzzy
-msgid "Compensate for overscan"
-msgstr "Очистка перед скануванням"
 
 msgid "Complete"
 msgstr "Повний"
@@ -1835,6 +1833,9 @@ msgstr "Вкажіть, який роз'єм відеовиходу буде в�
 
 msgid "Configure if service picons will be shown in the channel selection list."
 msgstr "Налаштування відображення піконів в списку каналів "
+
+msgid "Configure if the HDMI EDID checking should be bypassed as this might solve issue with some TVs."
+msgstr ""
 
 msgid "Configure if the subtitle should switch between normal, italic, bold and bolditalic"
 msgstr ""
@@ -1919,12 +1920,6 @@ msgstr "Налаштування четвертої мови Аудіо."
 
 msgid "Configure the fourth subtitle language."
 msgstr "Налаштування четвертої мови субтитрів."
-
-msgid "Configure the function of a long press on the power button."
-msgstr "Встановлення функції довгого натискання кнопки живлення."
-
-msgid "Configure the function of a short press on the power button."
-msgstr "Встановлення функції короткого натискання кнопки живлення."
 
 msgid "Configure the function of the '0' button do when PIP is active."
 msgstr "Налаштуйте функцію кнопки '0 'коли вікно PIP активно."
@@ -3006,6 +3001,10 @@ msgstr "Включити батьківський контроль"
 msgid "Enable auto fast scan"
 msgstr ""
 
+#, fuzzy, python-format
+msgid "Enable auto fast scan for %s"
+msgstr "Включити батьківський контроль"
+
 msgid "Enable bouquet selection in multi-EPG"
 msgstr "Увімкнути вибір букетів при запуску мульти-ЕПГ"
 
@@ -3490,6 +3489,13 @@ msgstr "Осн. память:"
 msgid "Following tasks will be done after you press OK!"
 msgstr "Виконання почнеться після того, як ви натиснете ОК!"
 
+msgid "Force LNB Power"
+msgstr ""
+
+#, fuzzy
+msgid "Force ToneBurst"
+msgstr "Тоновий сигнал"
+
 msgid "Format"
 msgstr "Формат"
 
@@ -3950,9 +3956,6 @@ msgstr ""
 msgid "Ignore conflict"
 msgstr ""
 
-msgid "Immediate shutdown"
-msgstr "глибокий Режим очікування"
-
 msgid "In order to record a timer, the TV was switched to the recording service!\n"
 msgstr ""
 "Для старту запису за таймером,\n"
@@ -4100,6 +4103,10 @@ msgstr "Інсталяція Піконів в"
 #, fuzzy
 msgid "Install plugins"
 msgstr "Інсталяція Піконів в"
+
+#, fuzzy
+msgid "Install softcam support"
+msgstr "Інсталяція Емулятора"
 
 msgid "Installation has completed."
 msgstr "Інсталяцію завершено."
@@ -5212,10 +5219,6 @@ msgstr "Налаштування"
 msgid "OSD name request"
 msgstr "OSD ім'я запиту"
 
-#, fuzzy
-msgid "OSD position setup"
-msgstr "Налаштування позіционеру"
-
 msgid "OSD settings"
 msgstr "OSD установки"
 
@@ -5748,6 +5751,10 @@ msgstr "Очікуйте..."
 msgid "Please wait (downloading channel list)"
 msgstr "Зачекайте (Завантажується список каналів)"
 
+#, fuzzy
+msgid "Please wait (downloading softcam support)"
+msgstr "Зачекайте (завантажуємо емулятор)"
+
 msgid "Please wait (updating packages)"
 msgstr "Зачекайте (оновлюємо пакети)"
 
@@ -5874,6 +5881,10 @@ msgstr "Налаштування позіционеру"
 
 msgid "Power threshold in mA"
 msgstr "Поріг струму в mA"
+
+#, fuzzy
+msgid "PowerMenu"
+msgstr "Меню"
 
 msgid "Predefined transponder"
 msgstr "Зумовлений транспондер"
@@ -6398,6 +6409,10 @@ msgstr ""
 
 msgid "Repeat"
 msgstr "Повторення"
+
+#, fuzzy
+msgid "Repeat leave standby messages"
+msgstr "Вважати вимкнення як Режим Очікування"
 
 msgid "Repeat type"
 msgstr "Тип повторення"
@@ -7401,9 +7416,6 @@ msgstr "Показати іконки типу сервісу"
 #, fuzzy
 msgid "Show servicelist or movies"
 msgstr "Показати іконки типу сервісу"
-
-msgid "Show shutdown menu"
-msgstr "показати меню вимкнення"
 
 msgid "Show single service EPG"
 msgstr ""
@@ -8481,9 +8493,6 @@ msgstr ""
 msgid "This option allows you to boost the green tones in the picture."
 msgstr ""
 
-msgid "This option allows you to bypass HDMI EDID check"
-msgstr ""
-
 msgid "This option allows you to view the old and new settings side by side."
 msgstr ""
 
@@ -9493,6 +9502,14 @@ msgstr "Що Ви хочете знайти?"
 msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are upgraded"
 msgstr ""
 
+#, fuzzy
+msgid "When enabled the LNB power will not be switched off in standby"
+msgstr "При включенні цієї опції 'Відеомагнітофон' буде показаний в головному меню."
+
+#, fuzzy
+msgid "When enabled the LNB toneburst will be forced"
+msgstr "Якщо увімкнено, то номери маркерів не відображатимуться в списку каналів."
+
 msgid "When enabled the PiP can be closed by the exit button."
 msgstr "Якщо увімкнено, то можна закрити екран PiP за допомогою кнопки вихід."
 
@@ -9740,6 +9757,17 @@ msgstr ""
 
 msgid "Without popup"
 msgstr "Без повідомлення"
+
+msgid "Wizard to arrange the overscan"
+msgstr ""
+
+msgid ""
+"Would you like to be able to install softcams?\n"
+"\n"
+"Attention - Country specific illegal!\n"
+"\n"
+"Check legality for your specific country in advance!"
+msgstr ""
 
 #, python-format
 msgid "Would you save the entered PIN %s persistent?"
@@ -10407,9 +10435,6 @@ msgstr "декодування і запис ECM (відкл. декодуван
 msgid "detective/thriller"
 msgstr "детектив/трилер"
 
-msgid "disable"
-msgstr "вимкнути"
-
 #, fuzzy
 msgid "disable intro screen"
 msgstr "Відключити картинку в картинці"
@@ -10458,9 +10483,6 @@ msgstr "освіта/наука/факти(загальне)"
 
 msgid "empty"
 msgstr "порожній"
-
-msgid "enable"
-msgstr "увімкнути"
 
 msgid "enable bouquet edit"
 msgstr "увімкнути редагування фаворита"
@@ -10761,6 +10783,10 @@ msgstr "перемістити вгору до попереднього запи
 
 msgid "movie/drama (general)"
 msgstr "фільми/драма (загальне)"
+
+#, fuzzy
+msgid "multi"
+msgstr "мультинорм"
 
 msgid "multinorm"
 msgstr "мультинорм"
@@ -11536,6 +11562,12 @@ msgstr "переключено"
 #~ msgid "Action for inactivity:"
 #~ msgstr "Дія при бездіяльності "
 
+#~ msgid "Action on long powerbutton press"
+#~ msgstr "Тривале натискання кнопки живлення"
+
+#~ msgid "Action on short powerbutton press"
+#~ msgstr "Коротке натискання кнопки живлення"
+
 #~ msgid "Activate Poster Preview"
 #~ msgstr "Активувати прев'ю постерів"
 
@@ -11640,9 +11672,6 @@ msgstr "переключено"
 
 #~ msgid "Argentina"
 #~ msgstr "Аргентина"
-
-#~ msgid "AspectRatioSwitch Setup"
-#~ msgstr "AspectRatioSwitch Налаштування"
 
 #~ msgid "Aug."
 #~ msgstr "Авг."
@@ -11870,6 +11899,10 @@ msgstr "переключено"
 #~ msgid "Common configuration"
 #~ msgstr "Загальні конфігурації"
 
+#, fuzzy
+#~ msgid "Compensate for overscan"
+#~ msgstr "Очистка перед скануванням"
+
 #~ msgid "Components for TMBD"
 #~ msgstr "TMBD Компоненти для плагіну"
 
@@ -11896,6 +11929,12 @@ msgstr "переключено"
 
 #~ msgid "Configure the duration in minutes and action, which could be shut down or standby, for the sleeptimer. Select this entry and click OK or green to start/stop the sleeptimer"
 #~ msgstr "Налаштування тривалості в хвилинах і дії (вимкнення або режимочікування) для таймера сну. Виберіть цей рядочок та натисніть ОК або зеленукнопку для запуску / зупинки таймера сну."
+
+#~ msgid "Configure the function of a long press on the power button."
+#~ msgstr "Встановлення функції довгого натискання кнопки живлення."
+
+#~ msgid "Configure the function of a short press on the power button."
+#~ msgstr "Встановлення функції короткого натискання кнопки живлення."
 
 #~ msgid "Conflicting timer"
 #~ msgstr "Конфлікт таймерів"
@@ -12362,6 +12401,9 @@ msgstr "переключено"
 #~ msgid "Image:"
 #~ msgstr "Імідж:"
 
+#~ msgid "Immediate shutdown"
+#~ msgstr "глибокий Режим очікування"
+
 #~ msgid "India"
 #~ msgstr "Индія"
 
@@ -12388,9 +12430,6 @@ msgstr "переключено"
 
 #~ msgid "Install packets"
 #~ msgstr "Інсталяція пакетів"
-
-#~ msgid "Install softcam"
-#~ msgstr "Інсталяція Емулятора"
 
 #~ msgid "Install tar.gz, bh.tgz, nab.tgz"
 #~ msgstr "Інсталяція tar.gz, bh.tgz, nab.tgz"
@@ -12778,6 +12817,10 @@ msgstr "переключено"
 #~ msgid "NtpTime Updater"
 #~ msgstr "Синхронізація часу"
 
+#, fuzzy
+#~ msgid "OSD position setup"
+#~ msgstr "Налаштування позіционеру"
+
 #~ msgid "Oct."
 #~ msgstr "Жовтень"
 
@@ -12885,9 +12928,6 @@ msgstr "переключено"
 
 #~ msgid "Please select the matching entry:"
 #~ msgstr "Будь ласка, виберіть зі списку:"
-
-#~ msgid "Please wait (downloading softcam)"
-#~ msgstr "Зачекайте (завантажуємо емулятор)"
 
 #~ msgid "Please wait, downloading epg.dat"
 #~ msgstr "Очікуйте, завантажується epg.dat"
@@ -13258,6 +13298,9 @@ msgstr "переключено"
 
 #~ msgid "Show services beginning with"
 #~ msgstr "Показувати сервіси що починаються з"
+
+#~ msgid "Show shutdown menu"
+#~ msgstr "показати меню вимкнення"
 
 #~ msgid "Show status icons in Movielist"
 #~ msgstr "Показати іконку статусу в списку відео"
@@ -13956,6 +13999,9 @@ msgstr "переключено"
 #~ msgid "currently installed image: %s"
 #~ msgstr "поточний встановлений імідж: %s"
 
+#~ msgid "disable"
+#~ msgstr "вимкнути"
+
 #~ msgid "dowmload extensions from feed"
 #~ msgstr "Завантаження розширень з сервера іміджу"
 
@@ -13973,6 +14019,9 @@ msgstr "переключено"
 
 #~ msgid "ecm.info viewer"
 #~ msgstr "Переглядач ecm.info"
+
+#~ msgid "enable"
+#~ msgstr "увімкнути"
 
 #~ msgid "epg.dat reloaded"
 #~ msgstr "epg.dat перазавантажений"

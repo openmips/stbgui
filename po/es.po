@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-28 16:35+0200\n"
+"POT-Creation-Date: 2016-06-18 22:35+0200\n"
 "PO-Revision-Date: 2015-02-09 16:12+0100\n"
 "Last-Translator: jrodzar <jrodzar@gmail.com>\n"
 "Language-Team: none\n"
@@ -789,13 +789,6 @@ msgid "Accesspoint:"
 msgstr "Punto de Acceso:"
 
 #
-msgid "Action on long powerbutton press"
-msgstr "Acción dejando pulsado el encendido"
-
-msgid "Action on short powerbutton press"
-msgstr "Acción al pulsar poco rato el botón de power"
-
-#
 msgid "Activate"
 msgstr "Activar"
 
@@ -1232,6 +1225,12 @@ msgstr "Relación de aspecto"
 
 #
 #
+#, fuzzy
+msgid "AspectRatio switch"
+msgstr "Relación de aspecto"
+
+#
+#
 msgid "Assigned CAIds:"
 msgstr "CAIds asignados:"
 
@@ -1557,7 +1556,8 @@ msgstr "Por defecto, SNR en dB (cuando sintoniz. soporte). Esta configuración o
 msgid "By openMips Image Team"
 msgstr ""
 
-msgid "Bypass HDMI EDID Check"
+#, fuzzy
+msgid "Bypass HDMI EDID checking"
 msgstr "Ignorar comprobación HDMI EDID"
 
 msgid "Bytes received:"
@@ -1978,6 +1978,11 @@ msgid "Collection settings"
 msgstr "Configuración de la colección"
 
 #
+#, fuzzy
+msgid "Color"
+msgstr "Espacio de color"
+
+#
 #
 msgid "Color format"
 msgstr "Formato de Color"
@@ -2006,11 +2011,6 @@ msgstr "Comunicación"
 #
 msgid "Compact flash"
 msgstr "Compact Flash"
-
-#
-#, fuzzy
-msgid "Compensate for overscan"
-msgstr "Limpiar antes de buscar"
 
 #
 msgid "Complete"
@@ -2088,6 +2088,9 @@ msgstr "Configurar donde se almacenarán epg.dat."
 
 msgid "Configure if service picons will be shown in the channel selection list."
 msgstr "Configurar picons de servicio en la lista de selección de canales."
+
+msgid "Configure if the HDMI EDID checking should be bypassed as this might solve issue with some TVs."
+msgstr ""
 
 msgid "Configure if the subtitle should switch between normal, italic, bold and bolditalic"
 msgstr "Configurar si debe cambiar el subtítulo entre normal, cursiva, negrita y bolditalic"
@@ -2179,12 +2182,6 @@ msgstr "Configurar el idioma de audio cuarto."
 #
 msgid "Configure the fourth subtitle language."
 msgstr "Configurar el cuarto idioma de subs."
-
-msgid "Configure the function of a long press on the power button."
-msgstr "Configurar la función de una pulsación larga en el botón de encendido."
-
-msgid "Configure the function of a short press on the power button."
-msgstr "Configurar la función de una pulsación corta en el botón de encendido."
 
 msgid "Configure the function of the '0' button do when PIP is active."
 msgstr "Configurar la función de la tecla '0' do cuando PIP está activo."
@@ -3433,6 +3430,10 @@ msgstr "Activar búsqueda auto cable"
 msgid "Enable auto fast scan"
 msgstr "Activar búsqueda auto rápida"
 
+#, fuzzy, python-format
+msgid "Enable auto fast scan for %s"
+msgstr "Activar búsqueda auto rápida"
+
 #
 #
 msgid "Enable bouquet selection in multi-EPG"
@@ -3994,6 +3995,14 @@ msgstr "Flasheando:"
 msgid "Following tasks will be done after you press OK!"
 msgstr "¡Las siguientes tareas se harán después de pulsar OK!"
 
+msgid "Force LNB Power"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Force ToneBurst"
+msgstr "Toneburst"
+
 #
 msgid "Format"
 msgstr "Formato"
@@ -4513,11 +4522,6 @@ msgid "Ignore conflict"
 msgstr ""
 
 #
-#
-msgid "Immediate shutdown"
-msgstr "apagado inmediato"
-
-#
 msgid "In order to record a timer, the TV was switched to the recording service!\n"
 msgstr "Para poder grabar, la TV fue cambiada al canal de la grabación\n"
 
@@ -4684,6 +4688,12 @@ msgstr "Instalar picons on"
 #
 msgid "Install plugins"
 msgstr "Instalar Plugins"
+
+#
+#
+#, fuzzy
+msgid "Install softcam support"
+msgstr "Instalando Software..."
 
 #
 msgid "Installation has completed."
@@ -6019,11 +6029,6 @@ msgid "OSD name request"
 msgstr "Solicitud de nombre OSD"
 
 #
-#, fuzzy
-msgid "OSD position setup"
-msgstr "Configuración del motor"
-
-#
 #
 msgid "OSD settings"
 msgstr "Configurar OSD"
@@ -6634,6 +6639,11 @@ msgid "Please wait (downloading channel list)"
 msgstr "Por favor, espere (descargando lista de canales)"
 
 #
+#, fuzzy
+msgid "Please wait (downloading softcam support)"
+msgstr "Por favor, espere (descargando lista de canales)"
+
+#
 msgid "Please wait (updating packages)"
 msgstr "Por favor espere (actualizando paquetes)"
 
@@ -6791,6 +6801,11 @@ msgstr "Configuración del motor"
 #
 msgid "Power threshold in mA"
 msgstr "Umbral de corriente en mA"
+
+#
+#, fuzzy
+msgid "PowerMenu"
+msgstr "Menú"
 
 #
 msgid "Predefined transponder"
@@ -7413,6 +7428,10 @@ msgstr "Renombrar el nombre y la descripción de nuevos eventos"
 
 msgid "Repeat"
 msgstr "Repetir"
+
+#, fuzzy
+msgid "Repeat leave standby messages"
+msgstr "Considerar reposo profundo como reposo"
 
 #
 #
@@ -8567,10 +8586,6 @@ msgstr "Mostrar iconos de tipo de servicio"
 #
 msgid "Show servicelist or movies"
 msgstr "Mostrar servicelist o películas"
-
-#
-msgid "Show shutdown menu"
-msgstr "Mostrar menú de apagado"
 
 msgid "Show single service EPG"
 msgstr "Mostrar EPG mono-canal"
@@ -9810,9 +9825,6 @@ msgstr "Esta opción le permite aumentar los tonos azules en la imagen."
 msgid "This option allows you to boost the green tones in the picture."
 msgstr "Esta opción le permite aumentar los tonos de verdes en la imagen."
 
-msgid "This option allows you to bypass HDMI EDID check"
-msgstr "Esta opción le permite anular el chequeo HDMI EDID"
-
 msgid "This option allows you to view the old and new settings side by side."
 msgstr "Esta opción permite ver los viejos y nuevos ajustes al lado."
 
@@ -10980,6 +10992,14 @@ msgstr "¿Qué quiere buscar?"
 msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are upgraded"
 msgstr "Cuando habilitado enigma2 cargará userbouquets disociados. Esto significa userbouquets están disponibles, pero no incluidos en los archivos bouquets.tv o bouquets.radio, todavía será cargado. Esto permite por ejemplo mantener tu propio bouquet de usuario mientras configuración instalada se actualiza"
 
+#, fuzzy
+msgid "When enabled the LNB power will not be switched off in standby"
+msgstr "Cuando está activada, la opción de VCR scart aparecerá en el menú principal"
+
+#, fuzzy
+msgid "When enabled the LNB toneburst will be forced"
+msgstr "Cuando está activado, los marcadores Números será hiden."
+
 msgid "When enabled the PiP can be closed by the exit button."
 msgstr "Cuando está activado el PiP se puede cerrar el botón exit."
 
@@ -11235,6 +11255,17 @@ msgstr ""
 
 msgid "Without popup"
 msgstr "Sin ventana emergente"
+
+msgid "Wizard to arrange the overscan"
+msgstr ""
+
+msgid ""
+"Would you like to be able to install softcams?\n"
+"\n"
+"Attention - Country specific illegal!\n"
+"\n"
+"Check legality for your specific country in advance!"
+msgstr ""
 
 #, python-format
 msgid "Would you save the entered PIN %s persistent?"
@@ -11995,10 +12026,6 @@ msgid "detective/thriller"
 msgstr "detective / suspense"
 
 #
-msgid "disable"
-msgstr "desactivar"
-
-#
 #, fuzzy
 msgid "disable intro screen"
 msgstr "Desactivar PiP"
@@ -12054,10 +12081,6 @@ msgstr "educación / ciencia / temas fácticos (general)"
 #
 msgid "empty"
 msgstr "vacío"
-
-#
-msgid "enable"
-msgstr "activar"
 
 #
 msgid "enable bouquet edit"
@@ -12411,6 +12434,11 @@ msgstr "mover arriba la entrada anterior"
 
 msgid "movie/drama (general)"
 msgstr "cine / teatro (general)"
+
+#
+#, fuzzy
+msgid "multi"
+msgstr "multinorm"
 
 #
 msgid "multinorm"
@@ -13139,6 +13167,13 @@ msgstr "zapeado"
 #~ msgstr "AB"
 
 #
+#~ msgid "Action on long powerbutton press"
+#~ msgstr "Acción dejando pulsado el encendido"
+
+#~ msgid "Action on short powerbutton press"
+#~ msgstr "Acción al pulsar poco rato el botón de power"
+
+#
 #~ msgid "Add Bookmark"
 #~ msgstr "Añadir Marcador"
 
@@ -13199,6 +13234,17 @@ msgstr "zapeado"
 #
 #~ msgid "Common Interface assignment"
 #~ msgstr "Asignación de Interface Común"
+
+#
+#, fuzzy
+#~ msgid "Compensate for overscan"
+#~ msgstr "Limpiar antes de buscar"
+
+#~ msgid "Configure the function of a long press on the power button."
+#~ msgstr "Configurar la función de una pulsación larga en el botón de encendido."
+
+#~ msgid "Configure the function of a short press on the power button."
+#~ msgstr "Configurar la función de una pulsación corta en el botón de encendido."
 
 #
 #~ msgid "Conflicting timer"
@@ -13297,6 +13343,11 @@ msgstr "zapeado"
 #~ msgstr "Impulso verde"
 
 #
+#
+#~ msgid "Immediate shutdown"
+#~ msgstr "apagado inmediato"
+
+#
 #~ msgid "List EPG functions..."
 #~ msgstr "lista de vistas EPG..."
 
@@ -13347,6 +13398,11 @@ msgstr "zapeado"
 #~ "No hay PIN válido de configuración\n"
 #~ "¿Le gustaría cambiar el PIN de configuración ahora?\n"
 #~ "¡Si dice 'No' aquí, la protección de configuración seguirá desabilitada!"
+
+#
+#, fuzzy
+#~ msgid "OSD position setup"
+#~ msgstr "Configuración del motor"
 
 #
 #~ msgid "Parental control type"
@@ -13410,6 +13466,10 @@ msgstr "zapeado"
 #
 #~ msgid "Show services beginning with"
 #~ msgstr "Mostrar canales que empiecen por"
+
+#
+#~ msgid "Show shutdown menu"
+#~ msgstr "Mostrar menú de apagado"
 
 #
 #
@@ -13478,6 +13538,9 @@ msgstr "zapeado"
 
 #~ msgid "The wizard found a configuration backup. Do you want to restore your old settings from %s?"
 #~ msgstr "El asistente encontró una configuración guardada. ¿Quiere restaurar su configuración antigua desde %s?"
+
+#~ msgid "This option allows you to bypass HDMI EDID check"
+#~ msgstr "Esta opción le permite anular el chequeo HDMI EDID"
 
 #
 #
@@ -13552,6 +13615,14 @@ msgstr "zapeado"
 
 #~ msgid "currently installed image: %s"
 #~ msgstr "imagen actualmente instalada: %s"
+
+#
+#~ msgid "disable"
+#~ msgstr "desactivar"
+
+#
+#~ msgid "enable"
+#~ msgstr "activar"
 
 #
 #~ msgid "fine-tune your display"
