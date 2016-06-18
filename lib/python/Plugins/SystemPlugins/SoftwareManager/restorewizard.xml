@@ -1,7 +1,7 @@
 <wizard>
 	<step id="restorequestion">
 		<condition>
-from Plugins.SystemPlugins.SoftwareManager.ImageWizard import checkConfigBackup
+from Plugins.SystemPlugins.SoftwareManager.RestoreWizard import checkConfigBackup
 self.backuppath = checkConfigBackup()
 self.condition = (self.backuppath is not None and config.misc.firstrun.value)
 		</condition>
@@ -48,7 +48,7 @@ self.afterAsyncCode()
 
 	<step id="backupresult" nextstep="upgrade">
 		<condition>
-from Plugins.SystemPlugins.SoftwareManager.ImageWizard import checkBackupFile
+from Plugins.SystemPlugins.SoftwareManager.RestoreWizard import checkBackupFile
 self.backuppath = checkBackupFile()
 self.condition = (self.backuppath is True)
 		</condition>
@@ -57,7 +57,7 @@ self.condition = (self.backuppath is True)
 
 	<step id="backupresult" nextstep="backupwhere">
 		<condition>
-from Plugins.SystemPlugins.SoftwareManager.ImageWizard import checkBackupFile
+from Plugins.SystemPlugins.SoftwareManager.RestoreWizard import checkBackupFile
 self.backuppath = checkBackupFile()
 self.condition = (self.backuppath is False)
 		</condition>

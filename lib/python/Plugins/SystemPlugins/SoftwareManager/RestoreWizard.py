@@ -84,9 +84,9 @@ if checkConfigBackup() is None:
 else:
 	backupAvailable = 1
 
-class ImageWizard(WizardLanguage, Rc):
+class RestoreWizard(WizardLanguage, Rc):
 	skin = """
-		<screen name="ImageWizard" position="0,0" size="720,576" title="Welcome..." flags="wfNoBorder" >
+		<screen name="RestoreWizard" position="0,0" size="720,576" title="Welcome..." flags="wfNoBorder" >
 			<widget name="text" position="153,40" size="340,330" font="Regular;22" />
 			<widget source="list" render="Listbox" position="43,340" size="490,180" scrollbarMode="showOnDemand" >
 				<convert type="StringList" />
@@ -102,7 +102,7 @@ class ImageWizard(WizardLanguage, Rc):
 			<widget name="arrowup2" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
 		</screen>"""
 	def __init__(self, session):
-		self.xmlfile = resolveFilename(SCOPE_PLUGINS, "SystemPlugins/SoftwareManager/imagewizard.xml")
+		self.xmlfile = resolveFilename(SCOPE_PLUGINS, "SystemPlugins/SoftwareManager/restorewizard.xml")
 		WizardLanguage.__init__(self, session, showSteps = False, showStepSlider = False)
 		Rc.__init__(self)
 		self.session = session
@@ -138,4 +138,4 @@ class ImageWizard(WizardLanguage, Rc):
 
 
 if config.misc.firstrun.value:
-	wizardManager.registerWizard(ImageWizard, backupAvailable, priority = 10)
+	wizardManager.registerWizard(RestoreWizard, backupAvailable, priority = 0)
