@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-06-18 22:35+0200\n"
-"PO-Revision-Date: 2016-04-28 16:53+0200\n"
+"PO-Revision-Date: 2016-06-18 22:51+0200\n"
 "Last-Translator: -=niki=- <niki_msn@hotmail.de>\n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -1044,9 +1044,8 @@ msgstr "Seitenverhältnis"
 msgid "Aspect ratio"
 msgstr "Seitenverhältnis"
 
-#, fuzzy
 msgid "AspectRatio switch"
-msgstr "Seitenverhältnis"
+msgstr "Seitenverhältnis umschalten"
 
 msgid "Assigned CAIds:"
 msgstr "Zugewiesene CAIDs:"
@@ -1310,7 +1309,6 @@ msgstr "Standardmässig wird SNR in Dezibel angezeigt (falls vom Tuner unterstü
 msgid "By openMips Image Team"
 msgstr "vom openMips Image Team"
 
-#, fuzzy
 msgid "Bypass HDMI EDID checking"
 msgstr "HDMI EDID Check umgehen"
 
@@ -1638,7 +1636,7 @@ msgid "Clear playlist"
 msgstr "Wiedergabeliste leeren"
 
 msgid "ClientIP"
-msgstr ""
+msgstr "ClientIP"
 
 msgid "Clock"
 msgstr "Uhr"
@@ -1673,9 +1671,8 @@ msgstr "Zusammenstellungsname"
 msgid "Collection settings"
 msgstr "Zusammenstellungs-Einstellungen"
 
-#, fuzzy
 msgid "Color"
-msgstr "Farbraum"
+msgstr "Farbe"
 
 msgid "Color format"
 msgstr "Farbformat"
@@ -2257,9 +2254,8 @@ msgstr "DVD Burn"
 msgid "DVD File Browser"
 msgstr "DVD Datei Browser"
 
-#, fuzzy
 msgid "DVD Menu"
-msgstr "Menu"
+msgstr "DVD Menü"
 
 msgid "DVD Titlelist"
 msgstr "DVD Titelliste"
@@ -2888,9 +2884,9 @@ msgstr "Autom. schnellen Kabel Suchlauf aktivieren"
 msgid "Enable auto fast scan"
 msgstr "Automatischen schnellen Suchlauf aktivieren"
 
-#, fuzzy, python-format
+#, python-format
 msgid "Enable auto fast scan for %s"
-msgstr "Automatischen schnellen Suchlauf aktivieren"
+msgstr "Automatischen schnellen Suchlauf für %s aktivieren"
 
 msgid "Enable bouquet selection in multi-EPG"
 msgstr "Aktiviere Bouquet Auswahl im Multi-EPG"
@@ -3356,11 +3352,10 @@ msgid "Following tasks will be done after you press OK!"
 msgstr "Folgendes wird ausgeführt, nachdem Sie OK gedrückt haben!"
 
 msgid "Force LNB Power"
-msgstr ""
+msgstr "LNB Power erzwingen"
 
-#, fuzzy
 msgid "Force ToneBurst"
-msgstr "Toneburst"
+msgstr "Toneburst erzwingen"
 
 msgid "Format"
 msgstr "Formatieren"
@@ -3944,9 +3939,8 @@ msgstr "Picons installieren auf"
 msgid "Install plugins"
 msgstr "Erweiterungen installieren"
 
-#, fuzzy
 msgid "Install softcam support"
-msgstr "Installiere Software..."
+msgstr "Installiere Softcam Unterstützung..."
 
 msgid "Installation has completed."
 msgstr "Installation abgeschlossen"
@@ -5119,7 +5113,7 @@ msgid "Overscan Wizard"
 msgstr ""
 
 msgid "Overscan wizard"
-msgstr ""
+msgstr "Overscan Assistent"
 
 msgid "Overwrite Bootlogo Files ?"
 msgstr "Bootlogo Dateien überschreiben?"
@@ -5521,9 +5515,8 @@ msgstr "Bitte warten"
 msgid "Please wait (downloading channel list)"
 msgstr "Bitte warten (Kanalliste wird geladen)..."
 
-#, fuzzy
 msgid "Please wait (downloading softcam support)"
-msgstr "Bitte warten (Kanalliste wird geladen)..."
+msgstr "Bitte warten (Softcam Unterstützung wird geladen)..."
 
 msgid "Please wait (updating packages)"
 msgstr "Bitte warten (Paketupdates)..."
@@ -5648,9 +5641,8 @@ msgstr "Einstellungen Rotor Log"
 msgid "Power threshold in mA"
 msgstr "Strom Schwellwert in mA"
 
-#, fuzzy
 msgid "PowerMenu"
-msgstr "Menu"
+msgstr "PowerMenü"
 
 msgid "Predefined transponder"
 msgstr "Transponder vordefiniert"
@@ -6133,9 +6125,8 @@ msgstr "Ändere für neue Timer den Namen und die Beschreibung"
 msgid "Repeat"
 msgstr "Wiederholen"
 
-#, fuzzy
 msgid "Repeat leave standby messages"
-msgstr "Deep-Standby wie Standby behandeln"
+msgstr "Nachrichten verlasse Standby wiederholen"
 
 msgid "Repeat type"
 msgstr "Wiederholungstyp"
@@ -8377,9 +8368,8 @@ msgstr "Toneburst A/B"
 msgid "Top and bottom"
 msgstr "Oben und Unten"
 
-#, fuzzy
 msgid "Total Clients streaming: "
-msgstr "Anzahl der Streamclienten: %d (%s)"
+msgstr "Anzahl der Streamclienten:"
 
 #, python-format
 msgid "Total clients streaming: %d (%s)"
@@ -8388,9 +8378,8 @@ msgstr "Anzahl der Streamclienten: %d (%s)"
 msgid "Track"
 msgstr "Spur"
 
-#, fuzzy
 msgid "Transcode"
-msgstr "Transponder"
+msgstr "Transkodieren"
 
 msgid "Transcoding: "
 msgstr "Transkodierung:"
@@ -8478,7 +8467,7 @@ msgid "Tuner type"
 msgstr "Typ Empfang"
 
 msgid "Tuning algorithm"
-msgstr ""
+msgstr "Tuning Algorythmus"
 
 msgid "Turkish"
 msgstr "Türkisch"
@@ -9087,13 +9076,11 @@ msgstr "Was wollen Sie suchen?"
 msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are upgraded"
 msgstr "Wenn aktiviert, werden auch nichtverlinkte Bouquets geladen. D.h. Userbouquets die vorhanden sind aber nicht in der bouquets.tv oder bouquets.radio hinterlegt wurden, werden geladen. Damit kann eine Eigene Bouquetliste behalten werden, während sich die Senderlisten aktualisieren."
 
-#, fuzzy
 msgid "When enabled the LNB power will not be switched off in standby"
-msgstr "Falls aktiviert, wird die Option VCR-SCART im Hauptmenü angezeigt."
+msgstr "Falls aktiviert, wird die Stromversorgung des LNB im Standby nicht ausgeschaltet."
 
-#, fuzzy
 msgid "When enabled the LNB toneburst will be forced"
-msgstr "Falls aktiviert, werden Nummer-Marker nicht angezeigt."
+msgstr "Falls aktiviert, wird Toneburst erzwungen."
 
 msgid "When enabled the PiP can be closed by the exit button."
 msgstr "Falls aktiviert, kann PiP mit der Exit-Taste geschlossen werden."
@@ -9349,6 +9336,11 @@ msgid ""
 "\n"
 "Check legality for your specific country in advance!"
 msgstr ""
+"Möchten Sie später Softcams installieren können?\n"
+"\n"
+"Achtung - länderabhängig illegal!\n"
+"\n"
+"Rechtslage vorher für Ihr Land prüfen!"
 
 #, python-format
 msgid "Would you save the entered PIN %s persistent?"
@@ -9924,9 +9916,8 @@ msgstr "Negativliste"
 msgid "blue"
 msgstr "Blau"
 
-#, fuzzy
 msgid "bottom"
-msgstr "Oben und Unten"
+msgstr "unten"
 
 msgid "broadcasting/press"
 msgstr "Rundsendung/Presse"
@@ -9936,7 +9927,7 @@ msgid "burn audio track (%s)"
 msgstr "Brenne Audiospur (%s)"
 
 msgid "by date"
-msgstr "Aufnahmen nach Datum sortieren"
+msgstr "nach Datum"
 
 msgid "cartoon/puppets"
 msgstr "Zeichentrickfilm/Marionetten"
@@ -10359,9 +10350,8 @@ msgstr "Zum vorherigen Eintrag gehen"
 msgid "movie/drama (general)"
 msgstr "Film/Drama (Allgemein)"
 
-#, fuzzy
 msgid "multi"
-msgstr "Multinorm"
+msgstr "multi"
 
 msgid "multinorm"
 msgstr "Multinorm"
@@ -10545,9 +10535,8 @@ msgstr "inetd wiederherstellen"
 msgid "red"
 msgstr "Rot"
 
-#, fuzzy
 msgid "reliable"
-msgstr "aktivieren"
+msgstr "verlässlich"
 
 msgid "religion"
 msgstr "Glaube"
@@ -10839,9 +10828,8 @@ msgstr "Oben"
 msgid "tourism/travel"
 msgstr "Tourismus/Reisen"
 
-#, fuzzy
 msgid "traditional (fast)"
-msgstr "Volks/Traditionelle Musik"
+msgstr "traditionell (schnell)"
 
 msgid "true"
 msgstr "Ja"
