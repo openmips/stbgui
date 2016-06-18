@@ -38,7 +38,10 @@ class StartWizard(WizardLanguage, Rc):
 		config.misc.firstrun.save()
 		configfile.save()
 
-wizardManager.registerWizard(LanguageWizard, config.misc.languageselected.value, priority = 5)
+
 if OverscanWizard:
 	wizardManager.registerWizard(OverscanWizard, config.misc.do_overscanwizard.value, priority = 10)
-wizardManager.registerWizard(StartWizard, config.misc.firstrun.value, priority = 20)
+
+wizardManager.registerWizard(LanguageWizard, config.misc.languageselected.value, priority = 15)
+
+wizardManager.registerWizard(StartWizard, config.misc.firstrun.value, priority = 25)
