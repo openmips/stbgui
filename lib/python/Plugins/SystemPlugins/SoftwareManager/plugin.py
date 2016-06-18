@@ -38,7 +38,7 @@ from twisted.web import client
 from twisted.internet import reactor
 from ImageBackup import ImageBackup
 from Flash_online import FlashOnline
-from ImageWizard import ImageWizard
+from RestoreWizard import RestoreWizard
 from PluginBackup import PluginBackup
 from PluginRestore import PluginRestore
 from BackupRestore import BackupSelection, RestoreMenu, BackupScreen, RestoreScreen, getBackupPath, getOldBackupPath, getBackupFilename
@@ -275,7 +275,7 @@ class UpdatePluginMenu(Screen):
 				if (currentEntry == "software-update"):
 					self.session.open(UpdatePlugin, self.skin_path)
 				elif (currentEntry == "software-restore"):
-					self.session.open(ImageWizard)
+					self.session.open(RestoreWizard)
 				elif (currentEntry == "install-extensions"):
 					self.session.open(PluginManager, self.skin_path)
 				elif (currentEntry == "flash-online"):
