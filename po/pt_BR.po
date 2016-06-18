@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-28 16:35+0200\n"
+"POT-Creation-Date: 2016-06-18 22:35+0200\n"
 "PO-Revision-Date: 2013-10-20 19:13-0300\n"
 "Last-Translator: Diogo <pingflood@gmail.com>\n"
 "Language-Team: Traduzido por Frank Viana <franksrviana@gmail.com>\n"
@@ -721,12 +721,6 @@ msgstr "Sobre"
 msgid "Accesspoint:"
 msgstr "Ponto de acesso:"
 
-msgid "Action on long powerbutton press"
-msgstr "Ação ao manter pressionado o botão Power"
-
-msgid "Action on short powerbutton press"
-msgstr "Ação ao pressionar o botão Power"
-
 #, fuzzy
 msgid "Activate"
 msgstr "Ativar PiP"
@@ -1073,6 +1067,10 @@ msgstr "Proporção"
 msgid "Aspect ratio"
 msgstr "Proporção"
 
+#, fuzzy
+msgid "AspectRatio switch"
+msgstr "Proporção"
+
 msgid "Assigned CAIds:"
 msgstr "CAIDS atribuídos:"
 
@@ -1348,7 +1346,7 @@ msgstr "Por padrão, o SNR será exibido em dB (quando suportado pelo tuner). Es
 msgid "By openMips Image Team"
 msgstr ""
 
-msgid "Bypass HDMI EDID Check"
+msgid "Bypass HDMI EDID checking"
 msgstr ""
 
 msgid "Bytes received:"
@@ -1713,6 +1711,10 @@ msgstr "Nome da coleção"
 msgid "Collection settings"
 msgstr "Configurar coleção"
 
+#, fuzzy
+msgid "Color"
+msgstr "Formato da cor"
+
 msgid "Color format"
 msgstr "Formato da cor"
 
@@ -1734,10 +1736,6 @@ msgstr "Comunicação"
 
 msgid "Compact flash"
 msgstr "Compact Flash"
-
-#, fuzzy
-msgid "Compensate for overscan"
-msgstr "Remover antes de buscar"
 
 msgid "Complete"
 msgstr "Completo"
@@ -1808,6 +1806,9 @@ msgid "Configure if epg.dat should be saved at all."
 msgstr "Configurar qual conector de saída de vídeo será usado."
 
 msgid "Configure if service picons will be shown in the channel selection list."
+msgstr ""
+
+msgid "Configure if the HDMI EDID checking should be bypassed as this might solve issue with some TVs."
 msgstr ""
 
 msgid "Configure if the subtitle should switch between normal, italic, bold and bolditalic"
@@ -1893,12 +1894,6 @@ msgstr "Configurar o quarto idioma de áudio."
 
 msgid "Configure the fourth subtitle language."
 msgstr "Configurar o quarto idioma da legenda."
-
-msgid "Configure the function of a long press on the power button."
-msgstr "Configurar a função ao manter pressionado o botão Power."
-
-msgid "Configure the function of a short press on the power button."
-msgstr "Configurar a função ao pressionar brevemente o botão Power."
 
 msgid "Configure the function of the '0' button do when PIP is active."
 msgstr "Configurar a função do botão 0 quando o PiP está ativo."
@@ -2977,6 +2972,10 @@ msgstr "Ativar controle de acesso"
 msgid "Enable auto fast scan"
 msgstr ""
 
+#, fuzzy, python-format
+msgid "Enable auto fast scan for %s"
+msgstr "Ativar controle de acesso"
+
 msgid "Enable bouquet selection in multi-EPG"
 msgstr "Ativar seleção de grupo de favoritos no Multi EPG"
 
@@ -3458,6 +3457,13 @@ msgstr "A gravação falhou"
 msgid "Following tasks will be done after you press OK!"
 msgstr "As tarefas irão terminar após pressionar OK!"
 
+msgid "Force LNB Power"
+msgstr ""
+
+#, fuzzy
+msgid "Force ToneBurst"
+msgstr "Requesito de fonte"
+
 msgid "Format"
 msgstr "Formato"
 
@@ -3915,9 +3921,6 @@ msgstr ""
 msgid "Ignore conflict"
 msgstr ""
 
-msgid "Immediate shutdown"
-msgstr "Desligar imediatamente"
-
 msgid "In order to record a timer, the TV was switched to the recording service!\n"
 msgstr "Para iniciar uma gravação agendada, o canal foi alterado!\n"
 
@@ -4063,6 +4066,10 @@ msgstr "Instalar picons em"
 #, fuzzy
 msgid "Install plugins"
 msgstr "Instalar picons em"
+
+#, fuzzy
+msgid "Install softcam support"
+msgstr "Instalando o software..."
 
 msgid "Installation has completed."
 msgstr "Instalação concluída."
@@ -5175,10 +5182,6 @@ msgstr "Configurar"
 msgid "OSD name request"
 msgstr ""
 
-#, fuzzy
-msgid "OSD position setup"
-msgstr "Posicionador DiSEqC"
-
 msgid "OSD settings"
 msgstr "Configurar OSD"
 
@@ -5710,6 +5713,10 @@ msgstr ""
 msgid "Please wait (downloading channel list)"
 msgstr "Obtendo lista de canais. Aguarde..."
 
+#, fuzzy
+msgid "Please wait (downloading softcam support)"
+msgstr "Obtendo lista de canais. Aguarde..."
+
 msgid "Please wait (updating packages)"
 msgstr "Atualizando pacotes. Aguarde..."
 
@@ -5835,6 +5842,10 @@ msgstr "Posicionador DiSEqC"
 
 msgid "Power threshold in mA"
 msgstr ""
+
+#, fuzzy
+msgid "PowerMenu"
+msgstr "Menu"
 
 msgid "Predefined transponder"
 msgstr "Transponder predefinido"
@@ -6355,6 +6366,10 @@ msgstr ""
 
 msgid "Repeat"
 msgstr "Repetir"
+
+#, fuzzy
+msgid "Repeat leave standby messages"
+msgstr "Considerar Desligar como StandBy"
 
 msgid "Repeat type"
 msgstr "Repetição"
@@ -7353,9 +7368,6 @@ msgstr "Exibir ícones do tipo de serviço"
 #, fuzzy
 msgid "Show servicelist or movies"
 msgstr "Exibir ícones do tipo de serviço"
-
-msgid "Show shutdown menu"
-msgstr "Exibir menu Desligar"
 
 msgid "Show single service EPG"
 msgstr "Exibir EPG simples"
@@ -8434,9 +8446,6 @@ msgstr ""
 msgid "This option allows you to boost the green tones in the picture."
 msgstr ""
 
-msgid "This option allows you to bypass HDMI EDID check"
-msgstr ""
-
 msgid "This option allows you to view the old and new settings side by side."
 msgstr ""
 
@@ -9433,6 +9442,14 @@ msgstr "O que deseja buscar?"
 msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are upgraded"
 msgstr ""
 
+#, fuzzy
+msgid "When enabled the LNB power will not be switched off in standby"
+msgstr "Quando ativado, a opção VCR Scart será exibida no menu principal"
+
+#, fuzzy
+msgid "When enabled the LNB toneburst will be forced"
+msgstr "Quando ativado, marcadores numéricos não serão exibidos."
+
 msgid "When enabled the PiP can be closed by the exit button."
 msgstr "Quando ativado, o PiP pode ser fechado com o botão Sair."
 
@@ -9677,6 +9694,17 @@ msgstr ""
 
 msgid "Without popup"
 msgstr "Sem popup"
+
+msgid "Wizard to arrange the overscan"
+msgstr ""
+
+msgid ""
+"Would you like to be able to install softcams?\n"
+"\n"
+"Attention - Country specific illegal!\n"
+"\n"
+"Check legality for your specific country in advance!"
+msgstr ""
 
 #, python-format
 msgid "Would you save the entered PIN %s persistent?"
@@ -10341,9 +10369,6 @@ msgstr "Decodificar e gravar ECM"
 msgid "detective/thriller"
 msgstr "Detetive/Thriller"
 
-msgid "disable"
-msgstr "Desativar"
-
 #, fuzzy
 msgid "disable intro screen"
 msgstr "Desativar PiP"
@@ -10392,9 +10417,6 @@ msgstr "Educação/Ciência/Temas factuais (geral)"
 
 msgid "empty"
 msgstr "Vazio"
-
-msgid "enable"
-msgstr "Ativar"
 
 msgid "enable bouquet edit"
 msgstr "Editar grupo de favoritos"
@@ -10696,6 +10718,10 @@ msgstr "Ir para a entrada anterior"
 
 msgid "movie/drama (general)"
 msgstr "Filme/Drama (geral)"
+
+#, fuzzy
+msgid "multi"
+msgstr "Multinorma"
 
 msgid "multinorm"
 msgstr "Multinorma"
@@ -11325,6 +11351,12 @@ msgstr "zapped"
 #~ msgid "A demo plugin for TPM usage."
 #~ msgstr "Demonstração de uso do plugin TPM."
 
+#~ msgid "Action on long powerbutton press"
+#~ msgstr "Ação ao manter pressionado o botão Power"
+
+#~ msgid "Action on short powerbutton press"
+#~ msgstr "Ação ao pressionar o botão Power"
+
 #~ msgid "Add Bookmark"
 #~ msgstr "Adicionar marcador"
 
@@ -11421,6 +11453,10 @@ msgstr "zapped"
 #~ msgid "CommonInterface"
 #~ msgstr "Interface comum"
 
+#, fuzzy
+#~ msgid "Compensate for overscan"
+#~ msgstr "Remover antes de buscar"
+
 #~ msgid "Configure the behavior of the 'pause' key when movie playback is already paused."
 #~ msgstr "Configurar o comportamento do botão Pause quando a reprodução já está pausada."
 
@@ -11429,6 +11465,12 @@ msgstr "zapped"
 
 #~ msgid "Configure the duration in minutes and action, which could be shut down or standby, for the sleeptimer. Select this entry and click OK or green to start/stop the sleeptimer"
 #~ msgstr "Configurar a duração em minutos e a ação, que pode ser desligar ou em espera, usando o temporizador. Selecione a opção desejada e pressione Verde ou OK para iniciar/parar o temporizador."
+
+#~ msgid "Configure the function of a long press on the power button."
+#~ msgstr "Configurar a função ao manter pressionado o botão Power."
+
+#~ msgid "Configure the function of a short press on the power button."
+#~ msgstr "Configurar a função ao pressionar brevemente o botão Power."
 
 #~ msgid "Confirm shutdown:"
 #~ msgstr "Confirmar antes de desligar:"
@@ -11610,6 +11652,9 @@ msgstr "zapped"
 #~ msgid "How to handle found crashlogs?"
 #~ msgstr "O que fazer com relatórios de erros encontrados?"
 
+#~ msgid "Immediate shutdown"
+#~ msgstr "Desligar imediatamente"
+
 #~ msgid "Include your email and name (optional) in the mail?"
 #~ msgstr "Incluir seu e-mail e nome (opcional) no e-mail?"
 
@@ -11731,6 +11776,10 @@ msgstr "zapped"
 
 #~ msgid "OK, remove some extensions"
 #~ msgstr "'OK', remova algumas extensões"
+
+#, fuzzy
+#~ msgid "OSD position setup"
+#~ msgstr "Posicionador DiSEqC"
 
 #~ msgid "OSD visibility"
 #~ msgstr "Visibilidade do OSD"
@@ -11915,6 +11964,9 @@ msgstr "zapped"
 
 #~ msgid "Show services beginning with"
 #~ msgstr "Exibir canais que comecem por"
+
+#~ msgid "Show shutdown menu"
+#~ msgstr "Exibir menu Desligar"
 
 #~ msgid "Show status icons in Movielist"
 #~ msgstr "Exibir ícones de estado na lista de vídeos"
@@ -12224,6 +12276,9 @@ msgstr "zapped"
 #~ msgid "delete..."
 #~ msgstr "Remover"
 
+#~ msgid "disable"
+#~ msgstr "Desativar"
+
 #~ msgid "dreambox advanced remote control (native)"
 #~ msgstr "Controle remoto avançado de DreamBox (nativo)"
 
@@ -12235,6 +12290,9 @@ msgstr "zapped"
 
 #~ msgid "dreambox remote control (native)"
 #~ msgstr "Controle de DreamBox (nativo)"
+
+#~ msgid "enable"
+#~ msgstr "Ativar"
 
 #~ msgid "fine-tune your display"
 #~ msgstr "Ajuste fino da imagem"

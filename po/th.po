@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-28 16:35+0200\n"
+"POT-Creation-Date: 2016-06-18 22:35+0200\n"
 "PO-Revision-Date: 2015-01-29 17:40+0200\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -683,12 +683,6 @@ msgstr "เกี่ยวกับ..."
 msgid "Accesspoint:"
 msgstr "Accesspoint:"
 
-msgid "Action on long powerbutton press"
-msgstr "เมื่อกดปุ่ม Power ค้างไว้ให้"
-
-msgid "Action on short powerbutton press"
-msgstr ""
-
 #, fuzzy
 msgid "Activate"
 msgstr "ภาพซ้อนภาพ"
@@ -1064,6 +1058,10 @@ msgid "Aspect ratio"
 msgstr "สัดส่วนภาพ"
 
 #, fuzzy
+msgid "AspectRatio switch"
+msgstr "สัดส่วนภาพ"
+
+#, fuzzy
 msgid "Assigned CAIds:"
 msgstr "ตั้งค่า CAIds:"
 
@@ -1347,7 +1345,7 @@ msgstr ""
 msgid "By openMips Image Team"
 msgstr ""
 
-msgid "Bypass HDMI EDID Check"
+msgid "Bypass HDMI EDID checking"
 msgstr ""
 
 msgid "Bytes received:"
@@ -1717,6 +1715,10 @@ msgid "Collection settings"
 msgstr "ตั้งค่าคอลเลคชั่น"
 
 #, fuzzy
+msgid "Color"
+msgstr "ระบบสี"
+
+#, fuzzy
 msgid "Color format"
 msgstr "ระบบสี"
 
@@ -1739,10 +1741,6 @@ msgstr "ติดต่อสื่อสาร"
 #, fuzzy
 msgid "Compact flash"
 msgstr "Compact Flash"
-
-#, fuzzy
-msgid "Compensate for overscan"
-msgstr "ลบข้อมูลเดิมก่อนค้นหา"
 
 msgid "Complete"
 msgstr "สำเร็จ"
@@ -1812,6 +1810,9 @@ msgid "Configure if epg.dat should be saved at all."
 msgstr ""
 
 msgid "Configure if service picons will be shown in the channel selection list."
+msgstr ""
+
+msgid "Configure if the HDMI EDID checking should be bypassed as this might solve issue with some TVs."
 msgstr ""
 
 msgid "Configure if the subtitle should switch between normal, italic, bold and bolditalic"
@@ -1902,12 +1903,6 @@ msgstr ""
 #, fuzzy
 msgid "Configure the fourth subtitle language."
 msgstr "เลือกซับไตเติ้ลต่อไป"
-
-msgid "Configure the function of a long press on the power button."
-msgstr ""
-
-msgid "Configure the function of a short press on the power button."
-msgstr ""
 
 msgid "Configure the function of the '0' button do when PIP is active."
 msgstr ""
@@ -2755,7 +2750,6 @@ msgstr "ท่านต้องการค้นหารายการหร
 msgid "Do you want to do another manual service scan?"
 msgstr "ท่านต้องการที่จะทำการค้นหารายการอื่นๆ ต่อหรือไม่?"
 
-#, fuzzy
 msgid "Do you want to install a channel list?"
 msgstr ""
 
@@ -3006,6 +3000,10 @@ msgstr "เปิดใช้ส่วนควบคุมอายุรับ
 
 msgid "Enable auto fast scan"
 msgstr ""
+
+#, fuzzy, python-format
+msgid "Enable auto fast scan for %s"
+msgstr "เปิดใช้ส่วนควบคุมอายุรับชม"
 
 #, fuzzy
 msgid "Enable bouquet selection in multi-EPG"
@@ -3497,6 +3495,13 @@ msgstr "การลงอิมเมจล้มเหลว"
 msgid "Following tasks will be done after you press OK!"
 msgstr ""
 
+msgid "Force LNB Power"
+msgstr ""
+
+#, fuzzy
+msgid "Force ToneBurst"
+msgstr "Toneburst"
+
 msgid "Format"
 msgstr "ฟอร์แมท"
 
@@ -3965,10 +3970,6 @@ msgstr ""
 msgid "Ignore conflict"
 msgstr ""
 
-#, fuzzy
-msgid "Immediate shutdown"
-msgstr "ปิดเครื่องทันที (Shutdown)"
-
 msgid "In order to record a timer, the TV was switched to the recording service!\n"
 msgstr "ต้องย้ายไปยังข่องรายการอื่นเพื่อที่จะบันทึกรายการตามที่ได้ตั้งไว้\n"
 
@@ -4118,6 +4119,10 @@ msgstr ""
 #, fuzzy
 msgid "Install plugins"
 msgstr "กำลังติดตั้ง"
+
+#, fuzzy
+msgid "Install softcam support"
+msgstr "กำลังติดตั้งซอพท์แวร์..."
 
 #, fuzzy
 msgid "Installation has completed."
@@ -5267,10 +5272,6 @@ msgid "OSD name request"
 msgstr ""
 
 #, fuzzy
-msgid "OSD position setup"
-msgstr "ตั้งค่าตัวขับจาน"
-
-#, fuzzy
 msgid "OSD settings"
 msgstr "ตั้งค่า OSD"
 
@@ -5812,6 +5813,10 @@ msgid "Please wait (downloading channel list)"
 msgstr "กำลังโหลด... รอสักครู่..."
 
 #, fuzzy
+msgid "Please wait (downloading softcam support)"
+msgstr "กำลังโหลด... รอสักครู่..."
+
+#, fuzzy
 msgid "Please wait (updating packages)"
 msgstr "กำลังโหลดภาพ กรุณารอสักครู่..."
 
@@ -5937,6 +5942,10 @@ msgstr "ตั้งค่าตัวขับจาน"
 
 msgid "Power threshold in mA"
 msgstr "กำลังไฟฟ้า (mA)"
+
+#, fuzzy
+msgid "PowerMenu"
+msgstr "เมนู"
 
 msgid "Predefined transponder"
 msgstr "ทรานสปอนเดอร์ที่ตั้งไว้แล้ว"
@@ -6460,6 +6469,9 @@ msgid "Rename name and description for new events"
 msgstr ""
 
 msgid "Repeat"
+msgstr ""
+
+msgid "Repeat leave standby messages"
 msgstr ""
 
 #, fuzzy
@@ -7493,10 +7505,6 @@ msgstr ""
 #, fuzzy
 msgid "Show servicelist or movies"
 msgstr "โหลดความยาวของภาพยนต์"
-
-#, fuzzy
-msgid "Show shutdown menu"
-msgstr "แสดงเมนูปิดเครื่อง"
 
 msgid "Show single service EPG"
 msgstr ""
@@ -8586,9 +8594,6 @@ msgstr ""
 msgid "This option allows you to boost the green tones in the picture."
 msgstr ""
 
-msgid "This option allows you to bypass HDMI EDID check"
-msgstr ""
-
 msgid "This option allows you to view the old and new settings side by side."
 msgstr ""
 
@@ -9598,6 +9603,12 @@ msgstr "ท่านต้องการค้นหาอะไร?"
 msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are upgraded"
 msgstr ""
 
+msgid "When enabled the LNB power will not be switched off in standby"
+msgstr ""
+
+msgid "When enabled the LNB toneburst will be forced"
+msgstr ""
+
 msgid "When enabled the PiP can be closed by the exit button."
 msgstr ""
 
@@ -9840,6 +9851,17 @@ msgid ""
 msgstr ""
 
 msgid "Without popup"
+msgstr ""
+
+msgid "Wizard to arrange the overscan"
+msgstr ""
+
+msgid ""
+"Would you like to be able to install softcams?\n"
+"\n"
+"Attention - Country specific illegal!\n"
+"\n"
+"Check legality for your specific country in advance!"
 msgstr ""
 
 #, python-format
@@ -10480,9 +10502,6 @@ msgstr ""
 msgid "detective/thriller"
 msgstr ""
 
-msgid "disable"
-msgstr "ไม่ใช้"
-
 #, fuzzy
 msgid "disable intro screen"
 msgstr "ไม่ใช้งานภาพซ้อนภาพ"
@@ -10531,9 +10550,6 @@ msgstr ""
 
 msgid "empty"
 msgstr "ว่าง"
-
-msgid "enable"
-msgstr "ใช้งาน"
 
 msgid "enable bouquet edit"
 msgstr "แก้ไขกลุ่มรายการ"
@@ -10836,6 +10852,10 @@ msgstr "ย้ายไปก่อนหน้านี้"
 
 msgid "movie/drama (general)"
 msgstr ""
+
+#, fuzzy
+msgid "multi"
+msgstr "multinorm"
 
 msgid "multinorm"
 msgstr "multinorm"
@@ -11454,6 +11474,9 @@ msgstr "เปลี่ยนช่องแล้ว"
 #~ msgid "AB"
 #~ msgstr "AB"
 
+#~ msgid "Action on long powerbutton press"
+#~ msgstr "เมื่อกดปุ่ม Power ค้างไว้ให้"
+
 #~ msgid "Add Bookmark"
 #~ msgstr "เพิ่มบุ๊คมาร์ค"
 
@@ -11486,6 +11509,10 @@ msgstr "เปลี่ยนช่องแล้ว"
 #, fuzzy
 #~ msgid "Common Interface assignment"
 #~ msgstr "กำหนดอินเตอร์เฟซพื้นฐาน"
+
+#, fuzzy
+#~ msgid "Compensate for overscan"
+#~ msgstr "ลบข้อมูลเดิมก่อนค้นหา"
 
 #~ msgid "Conflicting timer"
 #~ msgstr "ตารางเวลาซ้ำ"
@@ -11537,6 +11564,10 @@ msgstr "เปลี่ยนช่องแล้ว"
 #~ msgstr "Green boost"
 
 #, fuzzy
+#~ msgid "Immediate shutdown"
+#~ msgstr "ปิดเครื่องทันที (Shutdown)"
+
+#, fuzzy
 #~ msgid "Mode 1"
 #~ msgstr "โหมด"
 
@@ -11571,6 +11602,10 @@ msgstr "เปลี่ยนช่องแล้ว"
 #~ "ต้องการเปลี่ยนรหัสตอนนี้หรือไม่?\n"
 #~ "หากตอบ 'ไม่' หมายถึงยกเลิกการป้องกันด้วยรหัสผ่าน"
 
+#, fuzzy
+#~ msgid "OSD position setup"
+#~ msgstr "ตั้งค่าตัวขับจาน"
+
 #~ msgid "Parental control type"
 #~ msgstr "ชนิดการควบคุมอายุ"
 
@@ -11602,6 +11637,10 @@ msgstr "เปลี่ยนช่องแล้ว"
 
 #~ msgid "Show services beginning with"
 #~ msgstr "แสดงบริการที่เริ่มต้นด้วย"
+
+#, fuzzy
+#~ msgid "Show shutdown menu"
+#~ msgstr "แสดงเมนูปิดเครื่อง"
 
 #, fuzzy
 #~ msgid "Show tag menu"
@@ -11684,6 +11723,12 @@ msgstr "เปลี่ยนช่องแล้ว"
 
 #~ msgid "continue"
 #~ msgstr "ต่อไป"
+
+#~ msgid "disable"
+#~ msgstr "ไม่ใช้"
+
+#~ msgid "enable"
+#~ msgstr "ใช้งาน"
 
 #~ msgid "fine-tune your display"
 #~ msgstr "ปรับหน้าจอแบบละเอียด"

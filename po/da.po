@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-28 16:35+0200\n"
+"POT-Creation-Date: 2016-06-18 22:35+0200\n"
 "PO-Revision-Date: 2015-01-29 17:40+0200\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -757,13 +757,6 @@ msgstr "Om..."
 msgid "Accesspoint:"
 msgstr "Accesspoint:"
 
-#
-msgid "Action on long powerbutton press"
-msgstr "Handling ved langt powerknap tryk"
-
-msgid "Action on short powerbutton press"
-msgstr "Handling ved kortvarigt tryk på tændknappen"
-
 #, fuzzy
 msgid "Activate"
 msgstr "Aktiver BiB"
@@ -1206,6 +1199,11 @@ msgstr "Billed format"
 
 #
 #, fuzzy
+msgid "AspectRatio switch"
+msgstr "Billed format"
+
+#
+#, fuzzy
 msgid "Assigned CAIds:"
 msgstr "tilknyttede CAId'er:"
 
@@ -1543,7 +1541,7 @@ msgstr ""
 msgid "By openMips Image Team"
 msgstr ""
 
-msgid "Bypass HDMI EDID Check"
+msgid "Bypass HDMI EDID checking"
 msgstr ""
 
 msgid "Bytes received:"
@@ -1963,6 +1961,11 @@ msgstr "Kollektions indstillinger"
 
 #
 #, fuzzy
+msgid "Color"
+msgstr "Farve Format"
+
+#
+#, fuzzy
 msgid "Color format"
 msgstr "Farve Format"
 
@@ -1991,11 +1994,6 @@ msgstr "Kommunikation"
 #, fuzzy
 msgid "Compact flash"
 msgstr "Kompakt Flash"
-
-#
-#, fuzzy
-msgid "Compensate for overscan"
-msgstr "Slet før søgning"
 
 #
 msgid "Complete"
@@ -2076,6 +2074,9 @@ msgid "Configure if epg.dat should be saved at all."
 msgstr "Oprindelig fremspolingshastighed"
 
 msgid "Configure if service picons will be shown in the channel selection list."
+msgstr ""
+
+msgid "Configure if the HDMI EDID checking should be bypassed as this might solve issue with some TVs."
 msgstr ""
 
 msgid "Configure if the subtitle should switch between normal, italic, bold and bolditalic"
@@ -2172,12 +2173,6 @@ msgstr ""
 #, fuzzy
 msgid "Configure the fourth subtitle language."
 msgstr "skift til næste undertekst sprog"
-
-msgid "Configure the function of a long press on the power button."
-msgstr ""
-
-msgid "Configure the function of a short press on the power button."
-msgstr ""
 
 msgid "Configure the function of the '0' button do when PIP is active."
 msgstr ""
@@ -3152,7 +3147,6 @@ msgid "Do you want to do another manual service scan?"
 msgstr "Vil du lave en anden manuel søgning?"
 
 #
-#, fuzzy
 msgid "Do you want to install a channel list?"
 msgstr ""
 
@@ -3444,6 +3438,11 @@ msgstr "Aktivere forældre kontrol?"
 
 msgid "Enable auto fast scan"
 msgstr ""
+
+#
+#, fuzzy, python-format
+msgid "Enable auto fast scan for %s"
+msgstr "Aktivere forældre kontrol?"
 
 #, fuzzy
 msgid "Enable bouquet selection in multi-EPG"
@@ -4015,6 +4014,14 @@ msgstr "Flash mislykkedes"
 msgid "Following tasks will be done after you press OK!"
 msgstr "Følgende opgaver vil blive udført efter tryk på OK!"
 
+msgid "Force LNB Power"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Force ToneBurst"
+msgstr "Toneburst"
+
 #
 msgid "Format"
 msgstr "Formatere"
@@ -4538,11 +4545,6 @@ msgid "Ignore conflict"
 msgstr ""
 
 #
-#, fuzzy
-msgid "Immediate shutdown"
-msgstr "omgående afbrydelse"
-
-#
 msgid "In order to record a timer, the TV was switched to the recording service!\n"
 msgstr "For at optage via timer, er TV skiftet til optage kanal!\n"
 
@@ -4715,6 +4717,11 @@ msgstr "Installer picons på"
 #, fuzzy
 msgid "Install plugins"
 msgstr "Installer picons på"
+
+#
+#, fuzzy
+msgid "Install softcam support"
+msgstr "Installerer software..."
 
 #, fuzzy
 msgid "Installation has completed."
@@ -6073,11 +6080,6 @@ msgstr "OSD navn forespørgsel"
 
 #
 #, fuzzy
-msgid "OSD position setup"
-msgstr "Motor Opsætning"
-
-#
-#, fuzzy
 msgid "OSD settings"
 msgstr "OSD indstilling"
 
@@ -6720,6 +6722,11 @@ msgstr "Vent venligst... Henter liste..."
 
 #
 #, fuzzy
+msgid "Please wait (downloading softcam support)"
+msgstr "Vent venligst... Henter liste..."
+
+#
+#, fuzzy
 msgid "Please wait (updating packages)"
 msgstr "vent venligst, henter billede..."
 
@@ -6875,6 +6882,11 @@ msgstr "Motor Opsætning"
 #
 msgid "Power threshold in mA"
 msgstr "Strøm forbrug i mA"
+
+#
+#, fuzzy
+msgid "PowerMenu"
+msgstr "Menu"
 
 #
 msgid "Predefined transponder"
@@ -7510,6 +7522,10 @@ msgstr ""
 
 msgid "Repeat"
 msgstr ""
+
+#, fuzzy
+msgid "Repeat leave standby messages"
+msgstr "Opfat dyb standby som standby"
 
 #
 #, fuzzy
@@ -8722,11 +8738,6 @@ msgstr ""
 #, fuzzy
 msgid "Show servicelist or movies"
 msgstr "Vis status ikoner i filmliset"
-
-#
-#, fuzzy
-msgid "Show shutdown menu"
-msgstr "vis afbryder menu"
 
 msgid "Show single service EPG"
 msgstr ""
@@ -9994,9 +10005,6 @@ msgstr ""
 msgid "This option allows you to boost the green tones in the picture."
 msgstr ""
 
-msgid "This option allows you to bypass HDMI EDID check"
-msgstr ""
-
 msgid "This option allows you to view the old and new settings side by side."
 msgstr ""
 
@@ -11182,6 +11190,12 @@ msgstr "Hvad vil du søge?"
 msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are upgraded"
 msgstr ""
 
+msgid "When enabled the LNB power will not be switched off in standby"
+msgstr ""
+
+msgid "When enabled the LNB toneburst will be forced"
+msgstr ""
+
 msgid "When enabled the PiP can be closed by the exit button."
 msgstr ""
 
@@ -11432,6 +11446,17 @@ msgid ""
 msgstr ""
 
 msgid "Without popup"
+msgstr ""
+
+msgid "Wizard to arrange the overscan"
+msgstr ""
+
+msgid ""
+"Would you like to be able to install softcams?\n"
+"\n"
+"Attention - Country specific illegal!\n"
+"\n"
+"Check legality for your specific country in advance!"
 msgstr ""
 
 #, python-format
@@ -12166,10 +12191,6 @@ msgid "detective/thriller"
 msgstr ""
 
 #
-msgid "disable"
-msgstr "afbryd"
-
-#
 #, fuzzy
 msgid "disable intro screen"
 msgstr "Afbryd Billed i Billed"
@@ -12225,10 +12246,6 @@ msgstr ""
 #
 msgid "empty"
 msgstr "tom"
-
-#
-msgid "enable"
-msgstr "tilslut"
 
 #
 msgid "enable bouquet edit"
@@ -12581,6 +12598,11 @@ msgstr "flyt op til foregående indtastning"
 
 msgid "movie/drama (general)"
 msgstr ""
+
+#
+#, fuzzy
+msgid "multi"
+msgstr "multinorm"
 
 #
 msgid "multinorm"
@@ -13311,6 +13333,13 @@ msgstr "skiftet"
 #~ msgstr "AB"
 
 #
+#~ msgid "Action on long powerbutton press"
+#~ msgstr "Handling ved langt powerknap tryk"
+
+#~ msgid "Action on short powerbutton press"
+#~ msgstr "Handling ved kortvarigt tryk på tændknappen"
+
+#
 #~ msgid "Add Bookmark"
 #~ msgstr "Tilføj bogmærke"
 
@@ -13372,6 +13401,11 @@ msgstr "skiftet"
 #, fuzzy
 #~ msgid "Common Interface assignment"
 #~ msgstr "Common interface tildeling"
+
+#
+#, fuzzy
+#~ msgid "Compensate for overscan"
+#~ msgstr "Slet før søgning"
 
 #
 #~ msgid "Conflicting timer"
@@ -13473,6 +13507,11 @@ msgstr "skiftet"
 
 #
 #, fuzzy
+#~ msgid "Immediate shutdown"
+#~ msgstr "omgående afbrydelse"
+
+#
+#, fuzzy
 #~ msgid "List EPG functions..."
 #~ msgstr "liste over EPG..."
 
@@ -13528,6 +13567,11 @@ msgstr "skiftet"
 #~ "Ingen gyldig  PIN kode opsætning fundet!\n"
 #~ "Vil du gerne ændre PIN kode opsætning nu?\n"
 #~ "Siger du 'Nej' her vil opsætnings beskyttelsen ikke være tilsluttet!"
+
+#
+#, fuzzy
+#~ msgid "OSD position setup"
+#~ msgstr "Motor Opsætning"
 
 #
 #~ msgid "Parental control type"
@@ -13590,6 +13634,11 @@ msgstr "skiftet"
 #
 #~ msgid "Show services beginning with"
 #~ msgstr "Vis kanaler begyndende med"
+
+#
+#, fuzzy
+#~ msgid "Show shutdown menu"
+#~ msgstr "vis afbryder menu"
 
 #
 #, fuzzy
@@ -13732,6 +13781,14 @@ msgstr "skiftet"
 
 #~ msgid "currently installed image: %s"
 #~ msgstr "nuværende installerede image: %s"
+
+#
+#~ msgid "disable"
+#~ msgstr "afbryd"
+
+#
+#~ msgid "enable"
+#~ msgstr "tilslut"
 
 #
 #~ msgid "fine-tune your display"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-28 16:35+0200\n"
+"POT-Creation-Date: 2016-06-18 22:35+0200\n"
 "PO-Revision-Date: 2016-04-28 19:07+0200\n"
 "Last-Translator: Apachi70\n"
 "Language-Team: Apachi70\n"
@@ -704,12 +704,6 @@ msgstr "Hakkında..."
 msgid "Accesspoint:"
 msgstr "Erişim noktası:"
 
-msgid "Action on long powerbutton press"
-msgstr "Kapatma düğmesine uzun süre basılınca"
-
-msgid "Action on short powerbutton press"
-msgstr "Kapatma düğmesine kısa süre basılınca"
-
 msgid "Activate"
 msgstr "Etkinleştir"
 
@@ -1043,6 +1037,10 @@ msgstr "En-Boy Oranı"
 msgid "Aspect ratio"
 msgstr "En-Boy oranı"
 
+#, fuzzy
+msgid "AspectRatio switch"
+msgstr "En-Boy Oranı"
+
 msgid "Assigned CAIds:"
 msgstr "Atanan CalDS:"
 
@@ -1305,7 +1303,8 @@ msgstr "Varsayılan olarak; SNR, dB olarak (Tuner tarafından destekleniyorsa) g
 msgid "By openMips Image Team"
 msgstr "OpenMips Image Ekibi tarafından"
 
-msgid "Bypass HDMI EDID Check"
+#, fuzzy
+msgid "Bypass HDMI EDID checking"
 msgstr "HDMI EDID Kontrolunu atla"
 
 msgid "Bytes received:"
@@ -1667,6 +1666,10 @@ msgstr "Koleksiyon adı"
 msgid "Collection settings"
 msgstr "Koleksiyon ayarları"
 
+#, fuzzy
+msgid "Color"
+msgstr "Renk alanı"
+
 msgid "Color format"
 msgstr "Renk formatı"
 
@@ -1687,9 +1690,6 @@ msgstr "İletişim"
 
 msgid "Compact flash"
 msgstr "Kompakt flaş"
-
-msgid "Compensate for overscan"
-msgstr "overscan için telafi"
 
 msgid "Complete"
 msgstr "Tamamı"
@@ -1758,6 +1758,9 @@ msgstr "epg.data tüm kaydedilmiş olmalıdır."
 
 msgid "Configure if service picons will be shown in the channel selection list."
 msgstr "Kanal seçim listesinde kanal simgelerinin nasıl gösterileceğini yapılandır."
+
+msgid "Configure if the HDMI EDID checking should be bypassed as this might solve issue with some TVs."
+msgstr ""
 
 msgid "Configure if the subtitle should switch between normal, italic, bold and bolditalic"
 msgstr "altyazı normal italik, kalın ve italik kalın arasında geçiş gerekip gerekmediğini yapılandırma"
@@ -1842,12 +1845,6 @@ msgstr "Dördüncü ses dilini yapılandır."
 
 msgid "Configure the fourth subtitle language."
 msgstr "Dördüncü altyazı dilini yapılandır."
-
-msgid "Configure the function of a long press on the power button."
-msgstr "Güç düğmesine uzun süre basma işlevini yapılandır."
-
-msgid "Configure the function of a short press on the power button."
-msgstr "Güç düğmesine kısa süre basma işlevini yapılandır."
 
 msgid "Configure the function of the '0' button do when PIP is active."
 msgstr "PIP aktif olduğunda '0 'düğmesinin işlevini yapılandır."
@@ -2883,6 +2880,10 @@ msgstr "Otomatik kablo tarama etkinleştir"
 msgid "Enable auto fast scan"
 msgstr "Otomatik hızlı tarama etkinleştir"
 
+#, fuzzy, python-format
+msgid "Enable auto fast scan for %s"
+msgstr "Otomatik hızlı tarama etkinleştir"
+
 msgid "Enable bouquet selection in multi-EPG"
 msgstr "Çoklu-EPG içinde buket seçimini etkinleştir"
 
@@ -3346,6 +3347,13 @@ msgstr "Flaşen yapiyor"
 msgid "Following tasks will be done after you press OK!"
 msgstr "Belirtilen görevler OK'a basmanizin ardindan isleme alinacak!"
 
+msgid "Force LNB Power"
+msgstr ""
+
+#, fuzzy
+msgid "Force ToneBurst"
+msgstr "Toneburst"
+
 msgid "Format"
 msgstr "Biçimlendir"
 
@@ -3785,9 +3793,6 @@ msgstr ""
 msgid "Ignore conflict"
 msgstr "çatışma görmez"
 
-msgid "Immediate shutdown"
-msgstr "Hemen Kapat"
-
 msgid "In order to record a timer, the TV was switched to the recording service!\n"
 msgstr "Zamanlanmış kayıt görevi başlatıldı, TV fonksiyonundan kayıt fonksiyonuna geçildi!\n"
 
@@ -3926,6 +3931,10 @@ msgstr "üzerinde Picons yükleyin"
 
 msgid "Install plugins"
 msgstr "Eklentileri kur"
+
+#, fuzzy
+msgid "Install softcam support"
+msgstr "Yazılım yükleniyor.."
 
 msgid "Installation has completed."
 msgstr "Kurulum tamamlandi."
@@ -5016,9 +5025,6 @@ msgstr "OSD 3D kurulumu"
 msgid "OSD name request"
 msgstr "OSD adı isteği"
 
-msgid "OSD position setup"
-msgstr "OSD pozisyonu kurulumu"
-
 msgid "OSD settings"
 msgstr "OSD ayarları"
 
@@ -5503,6 +5509,10 @@ msgstr "Lütfen bekleyin"
 msgid "Please wait (downloading channel list)"
 msgstr "Lütfen bekleyin (kanal listesi indiriliyor)"
 
+#, fuzzy
+msgid "Please wait (downloading softcam support)"
+msgstr "Lütfen bekleyin (kanal listesi indiriliyor)"
+
 msgid "Please wait (updating packages)"
 msgstr "Lütfen bekleyin (paketler güncelleniyor)"
 
@@ -5625,6 +5635,10 @@ msgstr "Pozisyoner Kur log"
 
 msgid "Power threshold in mA"
 msgstr "Güç eşiği (mA)"
+
+#, fuzzy
+msgid "PowerMenu"
+msgstr "Menü"
 
 msgid "Predefined transponder"
 msgstr "Önceden tanımlanmış transponder"
@@ -6106,6 +6120,10 @@ msgstr "Yeni etkinlikler için adını ve açıklamasını yeniden adlandırma"
 
 msgid "Repeat"
 msgstr "Tekrarla"
+
+#, fuzzy
+msgid "Repeat leave standby messages"
+msgstr "Derin bekleme modu, bekleme modu olsun"
 
 msgid "Repeat type"
 msgstr "Çesidi yineleyin"
@@ -7044,9 +7062,6 @@ msgstr "Servis türü simgelerini göster"
 
 msgid "Show servicelist or movies"
 msgstr "Filmleri veya kanal listesini göster"
-
-msgid "Show shutdown menu"
-msgstr "Kapatma menüsünü göster"
 
 msgid "Show single service EPG"
 msgstr "Tekli kanal EPG göster"
@@ -8098,9 +8113,6 @@ msgstr "Bu seçenek, resimde mavi tonları artırmak için izin verir."
 msgid "This option allows you to boost the green tones in the picture."
 msgstr "Bu seçenek resimde yeşil tonları artırmak için izin verir."
 
-msgid "This option allows you to bypass HDMI EDID check"
-msgstr "Bu seçenek, HDMI EDID denetimini atlamak için izin verir"
-
 msgid "This option allows you to view the old and new settings side by side."
 msgstr "Bu seçenek, yan eski ve yeni ayarlar yan görüntülemenize olanak sağlar."
 
@@ -9066,6 +9078,14 @@ msgstr "Neleri aramak istiyorsunuz?"
 msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are upgraded"
 msgstr "Ne zaman etkin enigma2 bağlantısız userbouquets yükleyecektir. Bu, mevcut değil, fakat bouquets.tv ya bouquets.radio dosyaları dahil değildir userbouquets zaten yüklü olacağı anlamına gelir. Yüklü ayarlar yükseltilmiş ise bu kendi kullanıcı buket tutmak için örneğin olanak sağlar"
 
+#, fuzzy
+msgid "When enabled the LNB power will not be switched off in standby"
+msgstr "etkinleştirildiğinde, VCR skart seçeneği ana menüde gösterilir"
+
+#, fuzzy
+msgid "When enabled the LNB toneburst will be forced"
+msgstr "Etkin olduğunda, sayı belirteçleri gizlenir."
+
 msgid "When enabled the PiP can be closed by the exit button."
 msgstr "Etkin olduğunda PIP çıkış düğmesi ile kapatılabilir."
 
@@ -9310,6 +9330,17 @@ msgstr ""
 
 msgid "Without popup"
 msgstr "Popup olmadan"
+
+msgid "Wizard to arrange the overscan"
+msgstr ""
+
+msgid ""
+"Would you like to be able to install softcams?\n"
+"\n"
+"Attention - Country specific illegal!\n"
+"\n"
+"Check legality for your specific country in advance!"
+msgstr ""
 
 #, python-format
 msgid "Would you save the entered PIN %s persistent?"
@@ -9990,9 +10021,6 @@ msgstr "çöz ve ecm kaydet"
 msgid "detective/thriller"
 msgstr "dedektif / gerilim"
 
-msgid "disable"
-msgstr "pasif"
-
 msgid "disable intro screen"
 msgstr "intro ekranı devre dışı"
 
@@ -10040,9 +10068,6 @@ msgstr "eğitim / bilim / gerçeklere dayanan konular (genel)"
 
 msgid "empty"
 msgstr "boş"
-
-msgid "enable"
-msgstr "etkinleştir"
 
 msgid "enable bouquet edit"
 msgstr "buket düzenlemeyi etkinleştir"
@@ -10337,6 +10362,10 @@ msgstr "bir üste taşı"
 
 msgid "movie/drama (general)"
 msgstr "movie/drama (general)"
+
+#, fuzzy
+msgid "multi"
+msgstr "PAL/NTSC"
 
 msgid "multinorm"
 msgstr "PAL/NTSC"
@@ -10948,6 +10977,12 @@ msgstr "kanal değiştirildi"
 #~ msgid "<Default Skin>"
 #~ msgstr "<Öntanımlı Arayüz>"
 
+#~ msgid "Action on long powerbutton press"
+#~ msgstr "Kapatma düğmesine uzun süre basılınca"
+
+#~ msgid "Action on short powerbutton press"
+#~ msgstr "Kapatma düğmesine kısa süre basılınca"
+
 #, fuzzy
 #~ msgid "All services provider"
 #~ msgstr "Atanan servisler/sağlayıcılar:"
@@ -10996,6 +11031,15 @@ msgstr "kanal değiştirildi"
 
 #~ msgid "Clock always"
 #~ msgstr "Daima saat"
+
+#~ msgid "Compensate for overscan"
+#~ msgstr "overscan için telafi"
+
+#~ msgid "Configure the function of a long press on the power button."
+#~ msgstr "Güç düğmesine uzun süre basma işlevini yapılandır."
+
+#~ msgid "Configure the function of a short press on the power button."
+#~ msgstr "Güç düğmesine kısa süre basma işlevini yapılandır."
 
 #~ msgid "Conflicting timer"
 #~ msgstr "Zamanlama çakışması"
@@ -11050,6 +11094,9 @@ msgstr "kanal değiştirildi"
 #~ msgid "HDMI-CEC Configuration"
 #~ msgstr "HDMI-CEC Yapılandırma"
 
+#~ msgid "Immediate shutdown"
+#~ msgstr "Hemen Kapat"
+
 #~ msgid "Input date/time"
 #~ msgstr "Tarih/Saat girişi"
 
@@ -11097,6 +11144,9 @@ msgstr "kanal değiştirildi"
 
 #~ msgid "Number and Name"
 #~ msgstr "Numara ve İsim"
+
+#~ msgid "OSD position setup"
+#~ msgstr "OSD pozisyonu kurulumu"
 
 #~ msgid "Only Number"
 #~ msgstr "Sadece Numara"
@@ -11147,6 +11197,9 @@ msgstr "kanal değiştirildi"
 #~ msgid "Show services beginning with"
 #~ msgstr "Ile başlayan kanalları göster."
 
+#~ msgid "Show shutdown menu"
+#~ msgstr "Kapatma menüsünü göster"
+
 #~ msgid "Side by Side"
 #~ msgstr "Yan Yana"
 
@@ -11159,6 +11212,9 @@ msgstr "kanal değiştirildi"
 
 #~ msgid "Text Box"
 #~ msgstr "Metin Kutusu"
+
+#~ msgid "This option allows you to bypass HDMI EDID check"
+#~ msgstr "Bu seçenek, HDMI EDID denetimini atlamak için izin verir"
 
 #~ msgid "Timer editor"
 #~ msgstr "Zamanlayıcı düzenle"
@@ -11202,6 +11258,12 @@ msgstr "kanal değiştirildi"
 
 #~ msgid "complex"
 #~ msgstr "karmaşık (kompleks)"
+
+#~ msgid "disable"
+#~ msgstr "pasif"
+
+#~ msgid "enable"
+#~ msgstr "etkinleştir"
 
 #~ msgid "open Arora Browser"
 #~ msgstr "Arora Browser aç"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-28 16:35+0200\n"
+"POT-Creation-Date: 2016-06-18 22:35+0200\n"
 "PO-Revision-Date: 2015-01-29 17:40+0200\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -813,14 +813,6 @@ msgstr "Info o..."
 msgid "Accesspoint:"
 msgstr "Přístupový bod:"
 
-#
-msgid "Action on long powerbutton press"
-msgstr "Dlouhý stisk tlačítka pro vypnutí"
-
-#
-msgid "Action on short powerbutton press"
-msgstr "Krátký stisk tlačítka pro vypnutí"
-
 #, fuzzy
 msgid "Activate"
 msgstr "(neaktivován)"
@@ -1243,6 +1235,11 @@ msgid "Aspect ratio"
 msgstr "Poměr stran"
 
 #
+#, fuzzy
+msgid "AspectRatio switch"
+msgstr "Poměr stran"
+
+#
 msgid "Assigned CAIds:"
 msgstr "Přiřazené CAIds:"
 
@@ -1577,7 +1574,7 @@ msgstr "Standardně ( jestliže to podporuje tuner) je SNR zobrazován v dB. Tot
 msgid "By openMips Image Team"
 msgstr ""
 
-msgid "Bypass HDMI EDID Check"
+msgid "Bypass HDMI EDID checking"
 msgstr ""
 
 msgid "Bytes received:"
@@ -1988,6 +1985,11 @@ msgid "Collection settings"
 msgstr "Nastavení kompilace"
 
 #
+#, fuzzy
+msgid "Color"
+msgstr "Formát barev"
+
+#
 msgid "Color format"
 msgstr "Formát barev"
 
@@ -2015,11 +2017,6 @@ msgstr "Komunikace"
 #
 msgid "Compact flash"
 msgstr "Compact flash"
-
-#
-#, fuzzy
-msgid "Compensate for overscan"
-msgstr "Smazat před skenováním"
 
 #
 msgid "Complete"
@@ -2100,6 +2097,9 @@ msgstr "Nastavuje, který konektor video výstupu bude použit. "
 #
 msgid "Configure if service picons will be shown in the channel selection list."
 msgstr "Nastavuje, zda budou picony zobrazeny v seznamu kanálů."
+
+msgid "Configure if the HDMI EDID checking should be bypassed as this might solve issue with some TVs."
+msgstr ""
 
 msgid "Configure if the subtitle should switch between normal, italic, bold and bolditalic"
 msgstr ""
@@ -2193,12 +2193,6 @@ msgstr "Nastavuje čtvrtý jazyk zvuku."
 #
 msgid "Configure the fourth subtitle language."
 msgstr "Nastavuje čtvrtý jazyk titulků."
-
-msgid "Configure the function of a long press on the power button."
-msgstr "Nastavuje funkci pro dlouhý stisk tlačítka pro vypnutí."
-
-msgid "Configure the function of a short press on the power button."
-msgstr "Nastavuje funkci pro krátký stisk tlačítka pro vypnutí."
 
 msgid "Configure the function of the '0' button do when PIP is active."
 msgstr "Nastavuje funkci tlačítka '0' při aktivním PIP."
@@ -3455,6 +3449,10 @@ msgstr "Povolit automatické prohledání kabelu"
 msgid "Enable auto fast scan"
 msgstr "Povolit automatický Fast scan"
 
+#, fuzzy, python-format
+msgid "Enable auto fast scan for %s"
+msgstr "Povolit automatický Fast scan"
+
 msgid "Enable bouquet selection in multi-EPG"
 msgstr "Povolit výběr přehledu při spuštění multi-EPG"
 
@@ -4015,6 +4013,14 @@ msgstr "Nahrání selhalo"
 msgid "Following tasks will be done after you press OK!"
 msgstr "Následující úlohy budou provedeny po stisknutí OK!"
 
+msgid "Force LNB Power"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Force ToneBurst"
+msgstr "Toneburst"
+
 #
 msgid "Format"
 msgstr "Formát"
@@ -4530,10 +4536,6 @@ msgid "Ignore conflict"
 msgstr ""
 
 #
-msgid "Immediate shutdown"
-msgstr "Ihned vypnout"
-
-#
 msgid "In order to record a timer, the TV was switched to the recording service!\n"
 msgstr "Aby mohla být zaznamenána událost z časovače, bylo přepnuto na nahrávaný program!\n"
 
@@ -4712,6 +4714,11 @@ msgstr "Instalovat picons do"
 #, fuzzy
 msgid "Install plugins"
 msgstr "Instalovat picons do"
+
+#
+#, fuzzy
+msgid "Install softcam support"
+msgstr "Instalace software..."
 
 msgid "Installation has completed."
 msgstr "Instalace byla dokončena."
@@ -6026,11 +6033,6 @@ msgid "OSD name request"
 msgstr "požadavek OSD názvu"
 
 #
-#, fuzzy
-msgid "OSD position setup"
-msgstr "Nastavení pozicioneru"
-
-#
 msgid "OSD settings"
 msgstr "Nastavení OSD"
 
@@ -6653,6 +6655,11 @@ msgid "Please wait (downloading channel list)"
 msgstr "Prosím, čekejte (nahrává se seznam programů)"
 
 #
+#, fuzzy
+msgid "Please wait (downloading softcam support)"
+msgstr "Prosím, čekejte (nahrává se seznam programů)"
+
+#
 msgid "Please wait (updating packages)"
 msgstr "Prosím, čekejte (aktualizují se balíčky)"
 
@@ -6806,6 +6813,11 @@ msgstr "Nastavení pozicioneru"
 #
 msgid "Power threshold in mA"
 msgstr "Prahový proud v mA"
+
+#
+#, fuzzy
+msgid "PowerMenu"
+msgstr "Menu"
 
 #
 msgid "Predefined transponder"
@@ -7428,6 +7440,10 @@ msgstr "Přejmenovat název a popis pro nové události"
 
 msgid "Repeat"
 msgstr "Opakovat"
+
+#, fuzzy
+msgid "Repeat leave standby messages"
+msgstr "Považovat hluboký spánek za standby"
 
 #
 msgid "Repeat type"
@@ -8597,10 +8613,6 @@ msgstr "Zobrazovat ikony typu kanálu "
 
 msgid "Show servicelist or movies"
 msgstr "Seznam programů nebo nahraných souborů"
-
-#
-msgid "Show shutdown menu"
-msgstr "Zobrazit shutdown menu"
 
 msgid "Show single service EPG"
 msgstr "Zobrazovat EPG jednoho kanálu"
@@ -9817,9 +9829,6 @@ msgstr ""
 msgid "This option allows you to boost the green tones in the picture."
 msgstr ""
 
-msgid "This option allows you to bypass HDMI EDID check"
-msgstr ""
-
 msgid "This option allows you to view the old and new settings side by side."
 msgstr ""
 
@@ -10977,6 +10986,14 @@ msgstr "Co chcete prohledat?"
 msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are upgraded"
 msgstr ""
 
+#, fuzzy
+msgid "When enabled the LNB power will not be switched off in standby"
+msgstr "Jestliže je povoleno, možnosti VCR scart budou zobrazeny v hlavním menu."
+
+#, fuzzy
+msgid "When enabled the LNB toneburst will be forced"
+msgstr "Při povolení budou skryty číselné značky."
+
 msgid "When enabled the PiP can be closed by the exit button."
 msgstr "Jestliže je povoleno, pak PIP může být ukončen tlačítkem Exit"
 
@@ -11235,6 +11252,17 @@ msgstr ""
 
 msgid "Without popup"
 msgstr "bez dialogu"
+
+msgid "Wizard to arrange the overscan"
+msgstr ""
+
+msgid ""
+"Would you like to be able to install softcams?\n"
+"\n"
+"Attention - Country specific illegal!\n"
+"\n"
+"Check legality for your specific country in advance!"
+msgstr ""
 
 #, python-format
 msgid "Would you save the entered PIN %s persistent?"
@@ -11986,10 +12014,6 @@ msgid "detective/thriller"
 msgstr "detektivka/thriller"
 
 #
-msgid "disable"
-msgstr "zakázat"
-
-#
 #, fuzzy
 msgid "disable intro screen"
 msgstr "Vypnout obraz v obraze"
@@ -12046,10 +12070,6 @@ msgstr "vzdělávání/věda/věcná témata (obecně)"
 #
 msgid "empty"
 msgstr "prázdné"
-
-#
-msgid "enable"
-msgstr "povolit"
 
 #
 msgid "enable bouquet edit"
@@ -12405,6 +12425,11 @@ msgstr "přesunout na předcházející záznam"
 
 msgid "movie/drama (general)"
 msgstr "film/drama (obecně)"
+
+#
+#, fuzzy
+msgid "multi"
+msgstr "multinorma"
 
 #
 msgid "multinorm"
@@ -13130,6 +13155,14 @@ msgstr "přepnout a nahrát"
 msgid "zapped"
 msgstr "přepnutý"
 
+#
+#~ msgid "Action on long powerbutton press"
+#~ msgstr "Dlouhý stisk tlačítka pro vypnutí"
+
+#
+#~ msgid "Action on short powerbutton press"
+#~ msgstr "Krátký stisk tlačítka pro vypnutí"
+
 #~ msgid "Add Bookmark"
 #~ msgstr "Přidat záložku"
 
@@ -13166,6 +13199,17 @@ msgstr "přepnutý"
 #
 #~ msgid "Common Interface assignment"
 #~ msgstr "Common Interface přiřazení"
+
+#
+#, fuzzy
+#~ msgid "Compensate for overscan"
+#~ msgstr "Smazat před skenováním"
+
+#~ msgid "Configure the function of a long press on the power button."
+#~ msgstr "Nastavuje funkci pro dlouhý stisk tlačítka pro vypnutí."
+
+#~ msgid "Configure the function of a short press on the power button."
+#~ msgstr "Nastavuje funkci pro krátký stisk tlačítka pro vypnutí."
 
 #~ msgid "Configure which tuner type will be preferred, when the same service is available on different types of tuners."
 #~ msgstr "Nastavuje, který tuner bude mít prioritu, jestliže je stejný program dostupný na odlišných typech tunerů."
@@ -13302,6 +13346,10 @@ msgstr "přepnutý"
 #~ msgstr "Pomáhá nastavit vaší anténu"
 
 #
+#~ msgid "Immediate shutdown"
+#~ msgstr "Ihned vypnout"
+
+#
 #~ msgid "List EPG functions..."
 #~ msgstr "Seznam funkcí EPG..."
 
@@ -13375,6 +13423,11 @@ msgstr "přepnutý"
 #~ "Nebyl nalezen platný PIN nastavení!\n"
 #~ "Chcete nyní změnit PIN?\n"
 #~ "Pokud 'Ne' tak ochrana nastavení zůstane vypnuta!"
+
+#
+#, fuzzy
+#~ msgid "OSD position setup"
+#~ msgstr "Nastavení pozicioneru"
 
 #
 #~ msgid "Output"
@@ -13455,6 +13508,10 @@ msgstr "přepnutý"
 #
 #~ msgid "Show services beginning with"
 #~ msgstr "Zobrazit programy začínající na"
+
+#
+#~ msgid "Show shutdown menu"
+#~ msgstr "Zobrazit shutdown menu"
 
 #~ msgid "Show status icons in Movielist"
 #~ msgstr "Zobrazovat ikony stavu v seznamu filmů"
@@ -13657,6 +13714,14 @@ msgstr "přepnutý"
 
 #~ msgid "delete..."
 #~ msgstr "smazat..."
+
+#
+#~ msgid "disable"
+#~ msgstr "zakázat"
+
+#
+#~ msgid "enable"
+#~ msgstr "povolit"
 
 #
 #~ msgid "fine-tune your display"

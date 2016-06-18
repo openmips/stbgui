@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-28 16:35+0200\n"
+"POT-Creation-Date: 2016-06-18 22:35+0200\n"
 "PO-Revision-Date: 2015-01-29 17:40+0200\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -721,12 +721,6 @@ msgstr "Informatie over uw ontvanger"
 msgid "Accesspoint:"
 msgstr "Accesspoint:"
 
-msgid "Action on long powerbutton press"
-msgstr "Actie bij lang indrukken van de aan / uit toets"
-
-msgid "Action on short powerbutton press"
-msgstr "Actie na het kort indrukken van de aan / uit toets"
-
 #, fuzzy
 msgid "Activate"
 msgstr "Activeer PiP"
@@ -1079,6 +1073,10 @@ msgstr "Beeldverhouding"
 msgid "Aspect ratio"
 msgstr "Beeldverhouding"
 
+#, fuzzy
+msgid "AspectRatio switch"
+msgstr "Beeldverhouding"
+
 msgid "Assigned CAIds:"
 msgstr "Toegewezen CAIds:"
 
@@ -1357,7 +1355,7 @@ msgstr "Indien geactiveerd, dan wijzigt de waarde van de  weergave van het signa
 msgid "By openMips Image Team"
 msgstr ""
 
-msgid "Bypass HDMI EDID Check"
+msgid "Bypass HDMI EDID checking"
 msgstr ""
 
 msgid "Bytes received:"
@@ -1728,6 +1726,10 @@ msgstr "DVD naam"
 msgid "Collection settings"
 msgstr "Verzamelinstellingen"
 
+#, fuzzy
+msgid "Color"
+msgstr "Kleurformaat"
+
 msgid "Color format"
 msgstr "Kleurformaat"
 
@@ -1749,10 +1751,6 @@ msgstr "Mededeling"
 
 msgid "Compact flash"
 msgstr "Compact flash"
-
-#, fuzzy
-msgid "Compensate for overscan"
-msgstr "Voor zoeken alle zenders wissen?"
 
 msgid "Complete"
 msgstr "Compleet"
@@ -1861,6 +1859,9 @@ msgstr ""
 
 msgid "Configure if service picons will be shown in the channel selection list."
 msgstr "Indien geactiveerd, dan worden de picons weergegeven in de zenderlijst."
+
+msgid "Configure if the HDMI EDID checking should be bypassed as this might solve issue with some TVs."
+msgstr ""
 
 msgid "Configure if the subtitle should switch between normal, italic, bold and bolditalic"
 msgstr ""
@@ -1975,18 +1976,6 @@ msgstr "Stel de vierde audio taal in."
 
 msgid "Configure the fourth subtitle language."
 msgstr "Bepaal de vierde ondertitel taalselectie"
-
-msgid "Configure the function of a long press on the power button."
-msgstr ""
-"Met deze optie stelt u de functie in van het lang indrukken van de aan / uit-toet.\n"
-"\n"
-"U kunt kiezen uit, het afsluitmenu weergeven, direct uitschakelen of ga naar standby."
-
-msgid "Configure the function of a short press on the power button."
-msgstr ""
-"Met deze optie stelt u de functie in van het kort indrukken van de aan / uit-toets.\n"
-"\n"
-"U kunt kiezen uit, ga naar standby, het afsluitmenu weergeven of direct uitschakelen."
 
 msgid "Configure the function of the '0' button do when PIP is active."
 msgstr ""
@@ -3167,6 +3156,10 @@ msgstr "Activeer auto fastscan"
 msgid "Enable auto fast scan"
 msgstr "Activeer auto fastscan"
 
+#, fuzzy, python-format
+msgid "Enable auto fast scan for %s"
+msgstr "Activeer auto fastscan"
+
 msgid "Enable bouquet selection in multi-EPG"
 msgstr "Indien geactiveerd, dan wordt het bouquet selectiemenu weergegeven in de multi-EPG."
 
@@ -3653,6 +3646,13 @@ msgstr "Flashen mislukt"
 msgid "Following tasks will be done after you press OK!"
 msgstr "Nadat u op OK drukt worden de volgende taken uitgevoerd!"
 
+msgid "Force LNB Power"
+msgstr ""
+
+#, fuzzy
+msgid "Force ToneBurst"
+msgstr "Toneburst"
+
 msgid "Format"
 msgstr "Formaat"
 
@@ -4118,9 +4118,6 @@ msgstr ""
 msgid "Ignore conflict"
 msgstr ""
 
-msgid "Immediate shutdown"
-msgstr "Direct uitschakelen"
-
 msgid "In order to record a timer, the TV was switched to the recording service!\n"
 msgstr "Vanwege een geplande opname is naar het juiste kanaal geschakeld!\n"
 
@@ -4266,6 +4263,10 @@ msgstr "Installeer picons op"
 #, fuzzy
 msgid "Install plugins"
 msgstr "Installeer picons op"
+
+#, fuzzy
+msgid "Install softcam support"
+msgstr "De software wordt geïnstalleerd..."
 
 msgid "Installation has completed."
 msgstr "Installatie is gereed"
@@ -5383,10 +5384,6 @@ msgstr "Instellingen"
 msgid "OSD name request"
 msgstr "OSD naam aanvragen"
 
-#, fuzzy
-msgid "OSD position setup"
-msgstr "Rotorinstellingen"
-
 msgid "OSD settings"
 msgstr "OSD instellingen"
 
@@ -5915,6 +5912,10 @@ msgstr "Even geduld aub"
 msgid "Please wait (downloading channel list)"
 msgstr "Even geduld... (de zenderlijst wordt gedownload)"
 
+#, fuzzy
+msgid "Please wait (downloading softcam support)"
+msgstr "Even geduld... (de zenderlijst wordt gedownload)"
+
 msgid "Please wait (updating packages)"
 msgstr "Een ogenblik geduld (de pakketten worden geactualiseerd)"
 
@@ -6040,6 +6041,10 @@ msgstr "Rotorinstellingen"
 
 msgid "Power threshold in mA"
 msgstr "Drempel stroomverbruik in mA"
+
+#, fuzzy
+msgid "PowerMenu"
+msgstr "Menu"
 
 msgid "Predefined transponder"
 msgstr "Vooraf ingestelde transponder"
@@ -6563,6 +6568,10 @@ msgstr ""
 
 msgid "Repeat"
 msgstr "Herhaal"
+
+#, fuzzy
+msgid "Repeat leave standby messages"
+msgstr "Beschouw de diepe standby als normale standby"
 
 msgid "Repeat type"
 msgstr "Herhaal type"
@@ -7564,9 +7573,6 @@ msgstr "Toon iconen van het type service "
 #, fuzzy
 msgid "Show servicelist or movies"
 msgstr "Toon iconen van het type service "
-
-msgid "Show shutdown menu"
-msgstr "Afsluitmenu weergeven"
 
 msgid "Show single service EPG"
 msgstr "Toon de EPG van een enkel kanaal"
@@ -8645,9 +8651,6 @@ msgstr ""
 msgid "This option allows you to boost the green tones in the picture."
 msgstr ""
 
-msgid "This option allows you to bypass HDMI EDID check"
-msgstr ""
-
 msgid "This option allows you to view the old and new settings side by side."
 msgstr ""
 
@@ -9644,6 +9647,17 @@ msgstr "Wat wilt u zoeken?"
 msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are upgraded"
 msgstr ""
 
+#, fuzzy
+msgid "When enabled the LNB power will not be switched off in standby"
+msgstr "Indien geactiveerd, dan zullen de VCR scartopties weergegeven worden in het hoofdmenu."
+
+#, fuzzy
+msgid "When enabled the LNB toneburst will be forced"
+msgstr ""
+"Indien geactiveerd, zullen de kanaalnummers van lege zenders niet in de zenderlijst worden getoond.\n"
+"\n"
+"Deze optie is alleen van toepassing op een zenderlijst of bouquet, gemaakt met de FastScan en/of KabelScan optie."
+
 msgid "When enabled the PiP can be closed by the exit button."
 msgstr ""
 "Met deze optie stelt u in op welke wijze de PiP beëindigd kan worden met de exit knop.\n"
@@ -9916,6 +9930,17 @@ msgstr ""
 
 msgid "Without popup"
 msgstr "Zonder popup"
+
+msgid "Wizard to arrange the overscan"
+msgstr ""
+
+msgid ""
+"Would you like to be able to install softcams?\n"
+"\n"
+"Attention - Country specific illegal!\n"
+"\n"
+"Check legality for your specific country in advance!"
+msgstr ""
 
 #, python-format
 msgid "Would you save the entered PIN %s persistent?"
@@ -10579,9 +10604,6 @@ msgstr "ecm decoderen en opnemen"
 msgid "detective/thriller"
 msgstr "detective / thriller"
 
-msgid "disable"
-msgstr "deactiveren"
-
 #, fuzzy
 msgid "disable intro screen"
 msgstr "Picture In Picture uitschakelen"
@@ -10630,9 +10652,6 @@ msgstr "educatief / wetenschap / feiten (algemeen)"
 
 msgid "empty"
 msgstr "leeg"
-
-msgid "enable"
-msgstr "activeren"
 
 msgid "enable bouquet edit"
 msgstr "Bouquet bewerken activeren"
@@ -10934,6 +10953,10 @@ msgstr "verplaats omhoog naar vorige ingave"
 
 msgid "movie/drama (general)"
 msgstr "film / drama (algemeen)"
+
+#, fuzzy
+msgid "multi"
+msgstr "multinorm"
 
 msgid "multinorm"
 msgstr "multinorm"
@@ -11555,6 +11578,12 @@ msgstr "zapte"
 #~ msgid "AB"
 #~ msgstr "AB"
 
+#~ msgid "Action on long powerbutton press"
+#~ msgstr "Actie bij lang indrukken van de aan / uit toets"
+
+#~ msgid "Action on short powerbutton press"
+#~ msgstr "Actie na het kort indrukken van de aan / uit toets"
+
 #~ msgid "Add Bookmark"
 #~ msgstr "markeerpunt toevoegen"
 
@@ -11611,6 +11640,10 @@ msgstr "zapte"
 #~ msgid "Common Interface assignment"
 #~ msgstr "Common Interface taken"
 
+#, fuzzy
+#~ msgid "Compensate for overscan"
+#~ msgstr "Voor zoeken alle zenders wissen?"
+
 #~ msgid "Configure if service picons will be shown in the servicelist."
 #~ msgstr "Configureer of de picons weergegeven worden in de zenderlijst."
 
@@ -11628,6 +11661,18 @@ msgstr "zapte"
 
 #~ msgid "Configure the duration in minutes and action, which could be shut down or standby, for the sleeptimer. Select this entry and click OK or green to start/stop the sleeptimer"
 #~ msgstr "Met deze optie stelt u de tijdsduur in minuten of lopende acties in voor de sleeptimer, waarna de STB wordt afgesloten of naar standby gaat. Kies de gewenste waarde en druk op OK of de groene toets om de sleeptimer te starten/stoppen. "
+
+#~ msgid "Configure the function of a long press on the power button."
+#~ msgstr ""
+#~ "Met deze optie stelt u de functie in van het lang indrukken van de aan / uit-toet.\n"
+#~ "\n"
+#~ "U kunt kiezen uit, het afsluitmenu weergeven, direct uitschakelen of ga naar standby."
+
+#~ msgid "Configure the function of a short press on the power button."
+#~ msgstr ""
+#~ "Met deze optie stelt u de functie in van het kort indrukken van de aan / uit-toets.\n"
+#~ "\n"
+#~ "U kunt kiezen uit, ga naar standby, het afsluitmenu weergeven of direct uitschakelen."
 
 #~ msgid "Conflicting timer"
 #~ msgstr "Timer conflict!"
@@ -11729,6 +11774,9 @@ msgstr "zapte"
 #~ msgid "Green boost"
 #~ msgstr "Groene impuls"
 
+#~ msgid "Immediate shutdown"
+#~ msgstr "Direct uitschakelen"
+
 #~ msgid "List EPG functions..."
 #~ msgstr "Overzicht van EPG functies..."
 
@@ -11799,6 +11847,10 @@ msgstr "zapte"
 #~ "Ongeldige menupincode!\n"
 #~ "Wilt u de menu pincode nu wijzigen?\n"
 #~ "Indien u 'nee' kiest, blijft het menu onbeveiligd!"
+
+#, fuzzy
+#~ msgid "OSD position setup"
+#~ msgstr "Rotorinstellingen"
 
 #~ msgid "Output"
 #~ msgstr "Uitgang"
@@ -11872,6 +11924,9 @@ msgstr "zapte"
 
 #~ msgid "Show services beginning with"
 #~ msgstr "Laat zenders zien die beginnen met"
+
+#~ msgid "Show shutdown menu"
+#~ msgstr "Afsluitmenu weergeven"
 
 #~ msgid "Show status icons in Movielist"
 #~ msgstr "Toon de statusiconen in de opnamelijst"
@@ -12067,6 +12122,12 @@ msgstr "zapte"
 
 #~ msgid "delete..."
 #~ msgstr "verwijder..."
+
+#~ msgid "disable"
+#~ msgstr "deactiveren"
+
+#~ msgid "enable"
+#~ msgstr "activeren"
 
 #~ msgid "fine-tune your display"
 #~ msgstr "Uw scherm secuur afstellen"

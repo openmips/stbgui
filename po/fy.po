@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-28 16:35+0200\n"
+"POT-Creation-Date: 2016-06-18 22:35+0200\n"
 "PO-Revision-Date: 2015-01-29 17:40+0200\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -749,14 +749,6 @@ msgid "Accesspoint:"
 msgstr ""
 
 #
-msgid "Action on long powerbutton press"
-msgstr "Aksje by lang yndrukken oanknop"
-
-#
-msgid "Action on short powerbutton press"
-msgstr ""
-
-#
 #, fuzzy
 msgid "Activate"
 msgstr "PIP ynskeakelje"
@@ -1185,6 +1177,11 @@ msgstr "Aspect ratio"
 msgid "Aspect ratio"
 msgstr "Aspect ratio"
 
+#
+#, fuzzy
+msgid "AspectRatio switch"
+msgstr "Aspect ratio"
+
 msgid "Assigned CAIds:"
 msgstr ""
 
@@ -1520,7 +1517,7 @@ msgstr ""
 msgid "By openMips Image Team"
 msgstr ""
 
-msgid "Bypass HDMI EDID Check"
+msgid "Bypass HDMI EDID checking"
 msgstr ""
 
 msgid "Bytes received:"
@@ -1939,6 +1936,11 @@ msgstr "Kolleksje ynstellingen"
 
 #
 #, fuzzy
+msgid "Color"
+msgstr "Kleur formaat"
+
+#
+#, fuzzy
 msgid "Color format"
 msgstr "Kleur formaat"
 
@@ -1967,11 +1969,6 @@ msgstr ""
 #, fuzzy
 msgid "Compact flash"
 msgstr "Compact flash"
-
-#
-#, fuzzy
-msgid "Compensate for overscan"
-msgstr "Wiskje foar sykjen ?"
 
 #
 msgid "Complete"
@@ -2047,6 +2044,9 @@ msgid "Configure if epg.dat should be saved at all."
 msgstr ""
 
 msgid "Configure if service picons will be shown in the channel selection list."
+msgstr ""
+
+msgid "Configure if the HDMI EDID checking should be bypassed as this might solve issue with some TVs."
 msgstr ""
 
 msgid "Configure if the subtitle should switch between normal, italic, bold and bolditalic"
@@ -2142,12 +2142,6 @@ msgstr ""
 #, fuzzy
 msgid "Configure the fourth subtitle language."
 msgstr "skeakelje nei de folgende undertiteling taal"
-
-msgid "Configure the function of a long press on the power button."
-msgstr ""
-
-msgid "Configure the function of a short press on the power button."
-msgstr ""
 
 msgid "Configure the function of the '0' button do when PIP is active."
 msgstr ""
@@ -3385,6 +3379,11 @@ msgid "Enable auto fast scan"
 msgstr ""
 
 #
+#, fuzzy, python-format
+msgid "Enable auto fast scan for %s"
+msgstr "Alderlik tasjoch ynskeakelje"
+
+#
 #, fuzzy
 msgid "Enable bouquet selection in multi-EPG"
 msgstr "bewurkjen boeket oan"
@@ -3948,6 +3947,14 @@ msgstr "Flashen misljearre"
 msgid "Following tasks will be done after you press OK!"
 msgstr ""
 
+msgid "Force LNB Power"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Force ToneBurst"
+msgstr "Toan piek"
+
 #
 msgid "Format"
 msgstr "Formaat"
@@ -4470,11 +4477,6 @@ msgid "Ignore conflict"
 msgstr ""
 
 #
-#, fuzzy
-msgid "Immediate shutdown"
-msgstr "direkt útskeakelje"
-
-#
 msgid "In order to record a timer, the TV was switched to the recording service!\n"
 msgstr "Op in barren op te nimmen, wurd de TV nei opnimmen skeakele!\n"
 
@@ -4647,6 +4649,11 @@ msgstr ""
 #, fuzzy
 msgid "Install plugins"
 msgstr "Oan it ynstallearjen"
+
+#
+#, fuzzy
+msgid "Install softcam support"
+msgstr "Software oan it ynstallearjen..."
 
 msgid "Installation has completed."
 msgstr ""
@@ -5969,11 +5976,6 @@ msgstr ""
 
 #
 #, fuzzy
-msgid "OSD position setup"
-msgstr "Rotor ynstellingen"
-
-#
-#, fuzzy
 msgid "OSD settings"
 msgstr "OSD-ynstellingen"
 
@@ -6605,6 +6607,11 @@ msgstr "Lyst wurd laden..."
 
 #
 #, fuzzy
+msgid "Please wait (downloading softcam support)"
+msgstr "Lyst wurd laden..."
+
+#
+#, fuzzy
 msgid "Please wait (updating packages)"
 msgstr "plaatsje wurd laden..."
 
@@ -6759,6 +6766,11 @@ msgstr "Rotor ynstellingen"
 #
 msgid "Power threshold in mA"
 msgstr "Stroom nivo yn mA"
+
+#
+#, fuzzy
+msgid "PowerMenu"
+msgstr "Menu"
 
 #
 msgid "Predefined transponder"
@@ -7382,6 +7394,9 @@ msgid "Rename name and description for new events"
 msgstr ""
 
 msgid "Repeat"
+msgstr ""
+
+msgid "Repeat leave standby messages"
 msgstr ""
 
 #
@@ -8589,11 +8604,6 @@ msgstr ""
 #, fuzzy
 msgid "Show servicelist or movies"
 msgstr "Laad lengte fan films yn filmlyst"
-
-#
-#, fuzzy
-msgid "Show shutdown menu"
-msgstr "útskeakel menu sjen litte"
 
 msgid "Show single service EPG"
 msgstr ""
@@ -9833,9 +9843,6 @@ msgstr ""
 msgid "This option allows you to boost the green tones in the picture."
 msgstr ""
 
-msgid "This option allows you to bypass HDMI EDID check"
-msgstr ""
-
 msgid "This option allows you to view the old and new settings side by side."
 msgstr ""
 
@@ -11000,6 +11007,12 @@ msgstr "Wat wolle jo ôfsykje ?"
 msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are upgraded"
 msgstr ""
 
+msgid "When enabled the LNB power will not be switched off in standby"
+msgstr ""
+
+msgid "When enabled the LNB toneburst will be forced"
+msgstr ""
+
 msgid "When enabled the PiP can be closed by the exit button."
 msgstr ""
 
@@ -11244,6 +11257,17 @@ msgid ""
 msgstr ""
 
 msgid "Without popup"
+msgstr ""
+
+msgid "Wizard to arrange the overscan"
+msgstr ""
+
+msgid ""
+"Would you like to be able to install softcams?\n"
+"\n"
+"Attention - Country specific illegal!\n"
+"\n"
+"Check legality for your specific country in advance!"
 msgstr ""
 
 #, python-format
@@ -11956,10 +11980,6 @@ msgid "detective/thriller"
 msgstr ""
 
 #
-msgid "disable"
-msgstr "utskeakelje"
-
-#
 #, fuzzy
 msgid "disable intro screen"
 msgstr "PIP utskeakelje"
@@ -12015,10 +12035,6 @@ msgstr ""
 #
 msgid "empty"
 msgstr "leeg"
-
-#
-msgid "enable"
-msgstr "ynskeakelje"
 
 #
 msgid "enable bouquet edit"
@@ -12371,6 +12387,11 @@ msgstr "Nei it foarige menu item "
 
 msgid "movie/drama (general)"
 msgstr ""
+
+#
+#, fuzzy
+msgid "multi"
+msgstr "multinorm"
 
 #
 msgid "multinorm"
@@ -13095,6 +13116,10 @@ msgstr "knipt"
 #~ msgstr "AB"
 
 #
+#~ msgid "Action on long powerbutton press"
+#~ msgstr "Aksje by lang yndrukken oanknop"
+
+#
 #~ msgid "Add Bookmark"
 #~ msgstr "In blêdwizer tafoegje"
 
@@ -13127,6 +13152,11 @@ msgstr "knipt"
 #
 #~ msgid "Committed DiSEqC command"
 #~ msgstr "Oanwizen DiSEqC kommando"
+
+#
+#, fuzzy
+#~ msgid "Compensate for overscan"
+#~ msgstr "Wiskje foar sykjen ?"
 
 #
 #~ msgid "Conflicting timer"
@@ -13177,6 +13207,11 @@ msgstr "knipt"
 
 #
 #, fuzzy
+#~ msgid "Immediate shutdown"
+#~ msgstr "direkt útskeakelje"
+
+#
+#, fuzzy
 #~ msgid "Mode 1"
 #~ msgstr "Moadus"
 
@@ -13218,6 +13253,11 @@ msgstr "knipt"
 #~ "By 'nee' wurd de ynstellingen befeiliging útskeakele !"
 
 #
+#, fuzzy
+#~ msgid "OSD position setup"
+#~ msgstr "Rotor ynstellingen"
+
+#
 #~ msgid "Parental control type"
 #~ msgstr "Alderlik tasjoch type"
 
@@ -13242,6 +13282,11 @@ msgstr "knipt"
 #
 #~ msgid "Show services beginning with"
 #~ msgstr "Kanalen sjen litte beginnent mei"
+
+#
+#, fuzzy
+#~ msgid "Show shutdown menu"
+#~ msgstr "útskeakel menu sjen litte"
 
 #
 #, fuzzy
@@ -13336,6 +13381,14 @@ msgstr "knipt"
 #
 #~ msgid "continue"
 #~ msgstr "gjea fierder"
+
+#
+#~ msgid "disable"
+#~ msgstr "utskeakelje"
+
+#
+#~ msgid "enable"
+#~ msgstr "ynskeakelje"
 
 #
 #~ msgid "fine-tune your display"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-28 16:35+0200\n"
+"POT-Creation-Date: 2016-06-18 22:35+0200\n"
 "PO-Revision-Date: 2015-01-29 17:40+0200\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -722,12 +722,6 @@ msgstr "Névjegy..."
 msgid "Accesspoint:"
 msgstr "Hozzáférési pont:"
 
-msgid "Action on long powerbutton press"
-msgstr "Be/Ki gomb hosszan lenyomva"
-
-msgid "Action on short powerbutton press"
-msgstr "Be/Ki gomb röviden lenyomva"
-
 #, fuzzy
 msgid "Activate"
 msgstr "Kép-a-Képben bekapcsolása"
@@ -1079,6 +1073,10 @@ msgstr "Kép méretarány"
 msgid "Aspect ratio"
 msgstr "Kép méretarány"
 
+#, fuzzy
+msgid "AspectRatio switch"
+msgstr "Kép méretarány"
+
 msgid "Assigned CAIds:"
 msgstr "hozzárendelt CAId-ek:"
 
@@ -1357,7 +1355,7 @@ msgstr "Alapértelmezetten, a Jel/Zaj viszony (SNR) decibelben jeleník meg (ha 
 msgid "By openMips Image Team"
 msgstr ""
 
-msgid "Bypass HDMI EDID Check"
+msgid "Bypass HDMI EDID checking"
 msgstr ""
 
 msgid "Bytes received:"
@@ -1724,6 +1722,10 @@ msgstr "Gyűjtemény neve"
 msgid "Collection settings"
 msgstr "Gyűjtemény beállítások"
 
+#, fuzzy
+msgid "Color"
+msgstr "Színformátum"
+
 msgid "Color format"
 msgstr "Színformátum"
 
@@ -1745,10 +1747,6 @@ msgstr "Kommunikáció"
 
 msgid "Compact flash"
 msgstr "Compact Flash"
-
-#, fuzzy
-msgid "Compensate for overscan"
-msgstr "Keresés elött törlés"
 
 msgid "Complete"
 msgstr "Kész"
@@ -1820,6 +1818,9 @@ msgstr "Melyik videó kimeneti csatlakozó van bekötve."
 
 msgid "Configure if service picons will be shown in the channel selection list."
 msgstr "A csatornák pikonjainak megjelenítése a csatornalistában."
+
+msgid "Configure if the HDMI EDID checking should be bypassed as this might solve issue with some TVs."
+msgstr ""
 
 msgid "Configure if the subtitle should switch between normal, italic, bold and bolditalic"
 msgstr ""
@@ -1904,12 +1905,6 @@ msgstr "Többnyelvű csatornáknál ezt a hangsávot választja automatikusan, n
 
 msgid "Configure the fourth subtitle language."
 msgstr "Többnyelvű csatornáknál ezt a feliratot választja automatikusan, negyedik prioritással."
-
-msgid "Configure the function of a long press on the power button."
-msgstr "A Be/Ki kapcsoló gomb működése hosszan tartott lenyomásnál."
-
-msgid "Configure the function of a short press on the power button."
-msgstr "A Be/Ki kapcsoló gomb működése rövid (normális) lenyomásnál."
 
 msgid "Configure the function of the '0' button do when PIP is active."
 msgstr "A '0' gomb működése aktív Kép-a-Képben funkció mellett."
@@ -2987,6 +2982,10 @@ msgstr "Gyermekzár engedélyezése"
 msgid "Enable auto fast scan"
 msgstr ""
 
+#, fuzzy, python-format
+msgid "Enable auto fast scan for %s"
+msgstr "Gyermekzár engedélyezése"
+
 msgid "Enable bouquet selection in multi-EPG"
 msgstr "Bouquet-választás lehetősége a Multi-EPG-ben"
 
@@ -3469,6 +3468,13 @@ msgstr "Flashelés sikertelen"
 msgid "Following tasks will be done after you press OK!"
 msgstr "Végrehajtás az OK gomb lenyomása után történik"
 
+msgid "Force LNB Power"
+msgstr ""
+
+#, fuzzy
+msgid "Force ToneBurst"
+msgstr "Toneburst"
+
 msgid "Format"
 msgstr "Formázás"
 
@@ -3927,9 +3933,6 @@ msgstr ""
 msgid "Ignore conflict"
 msgstr ""
 
-msgid "Immediate shutdown"
-msgstr "azonnali kikapcsolás"
-
 msgid "In order to record a timer, the TV was switched to the recording service!\n"
 msgstr "Az időzítés esedékessége miatt átkapcsoltam a beprogramozott csatornára!\n"
 
@@ -4075,6 +4078,10 @@ msgstr "Pikonok telepítése ide:"
 #, fuzzy
 msgid "Install plugins"
 msgstr "Pikonok telepítése ide:"
+
+#, fuzzy
+msgid "Install softcam support"
+msgstr "Szoftver telepítése..."
 
 msgid "Installation has completed."
 msgstr "Számítás kész"
@@ -5186,10 +5193,6 @@ msgstr "Beállítások"
 msgid "OSD name request"
 msgstr "OSD név kérés"
 
-#, fuzzy
-msgid "OSD position setup"
-msgstr "Forgatómotor beállítás"
-
 msgid "OSD settings"
 msgstr "OSD beállítások"
 
@@ -5718,6 +5721,10 @@ msgstr ""
 msgid "Please wait (downloading channel list)"
 msgstr "Kérem, várjon... Lista betöltése..."
 
+#, fuzzy
+msgid "Please wait (downloading softcam support)"
+msgstr "Kérem, várjon... Lista betöltése..."
+
 msgid "Please wait (updating packages)"
 msgstr "kérem vérjon, kép betöltése..."
 
@@ -5843,6 +5850,10 @@ msgstr "Forgatómotor beállítás"
 
 msgid "Power threshold in mA"
 msgstr "Áram határérték (mA)"
+
+#, fuzzy
+msgid "PowerMenu"
+msgstr "Menü"
 
 msgid "Predefined transponder"
 msgstr "ismert transzponderen"
@@ -6364,6 +6375,10 @@ msgstr ""
 
 msgid "Repeat"
 msgstr "Ismétlés"
+
+#, fuzzy
+msgid "Repeat leave standby messages"
+msgstr "A mély-készenlét legyen az alapértelmezett készenlét"
 
 msgid "Repeat type"
 msgstr "Ismétlés típusa"
@@ -7359,9 +7374,6 @@ msgstr "Csatorna típusának megjelenítése"
 #, fuzzy
 msgid "Show servicelist or movies"
 msgstr "Csatorna típusának megjelenítése"
-
-msgid "Show shutdown menu"
-msgstr "kikapcsolási menü"
 
 msgid "Show single service EPG"
 msgstr "Egy csatorna EPG-jének megjelenítése"
@@ -8443,9 +8455,6 @@ msgstr ""
 msgid "This option allows you to boost the green tones in the picture."
 msgstr ""
 
-msgid "This option allows you to bypass HDMI EDID check"
-msgstr ""
-
 msgid "This option allows you to view the old and new settings side by side."
 msgstr ""
 
@@ -9441,6 +9450,14 @@ msgstr "Mit szeretne lekeresni?"
 msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are upgraded"
 msgstr ""
 
+#, fuzzy
+msgid "When enabled the LNB power will not be switched off in standby"
+msgstr "Egy 'VCR Scart' menü megjelenítése a főmenüben."
+
+#, fuzzy
+msgid "When enabled the LNB toneburst will be forced"
+msgstr "A csatornalistában esetleg lévő, sorszámozott elválasztó elemek elrejtése."
+
 msgid "When enabled the PiP can be closed by the exit button."
 msgstr "Kép-a-Képben bezárása a távírányító 'Exit' gomb megnyomásakor."
 
@@ -9686,6 +9703,17 @@ msgstr ""
 
 msgid "Without popup"
 msgstr "Figyelmeztetés nélkül"
+
+msgid "Wizard to arrange the overscan"
+msgstr ""
+
+msgid ""
+"Would you like to be able to install softcams?\n"
+"\n"
+"Attention - Country specific illegal!\n"
+"\n"
+"Check legality for your specific country in advance!"
+msgstr ""
 
 #, python-format
 msgid "Would you save the entered PIN %s persistent?"
@@ -10350,9 +10378,6 @@ msgstr "ECM felvétel és dekódolás"
 msgid "detective/thriller"
 msgstr "dekektív/thriller"
 
-msgid "disable"
-msgstr "letiltás"
-
 #, fuzzy
 msgid "disable intro screen"
 msgstr "Kép-a-Képben kikapcsolása"
@@ -10401,9 +10426,6 @@ msgstr "oktatás/tudomány/tényszerü általános"
 
 msgid "empty"
 msgstr "üres"
-
-msgid "enable"
-msgstr "engedélyezés"
 
 msgid "enable bouquet edit"
 msgstr "bouquet módosítás engedélyezése"
@@ -10704,6 +10726,10 @@ msgstr "ugrás az előző tételhez"
 
 msgid "movie/drama (general)"
 msgstr "mozi/színház (általános)"
+
+#, fuzzy
+msgid "multi"
+msgstr "többnormás"
 
 msgid "multinorm"
 msgstr "többnormás"
@@ -11327,6 +11353,12 @@ msgstr "ugrott"
 #~ msgid "AB"
 #~ msgstr "AB"
 
+#~ msgid "Action on long powerbutton press"
+#~ msgstr "Be/Ki gomb hosszan lenyomva"
+
+#~ msgid "Action on short powerbutton press"
+#~ msgstr "Be/Ki gomb röviden lenyomva"
+
 #~ msgid "Add Bookmark"
 #~ msgstr "Bookmark hozzáadása"
 
@@ -11380,6 +11412,10 @@ msgstr "ugrott"
 #~ msgid "Common Interface assignment"
 #~ msgstr "CI hozzárendelés"
 
+#, fuzzy
+#~ msgid "Compensate for overscan"
+#~ msgstr "Keresés elött törlés"
+
 #~ msgid "Configure if service picons will be shown in the servicelist."
 #~ msgstr "A csatornák pikonjainak megjelenítésének módja és lehetősége a csatornalistában."
 
@@ -11391,6 +11427,12 @@ msgstr "ugrott"
 
 #~ msgid "Configure the duration in minutes and action, which could be shut down or standby, for the sleeptimer. Select this entry and click OK or green to start/stop the sleeptimer"
 #~ msgstr "Ennyi perc után mi történjen: kikapcsolás, készenlét (elalvás időzítés). Válassza ezt a menüpontot, majd az OK vagy a zöld gomb lenyomásával aktiválja a beállítást az elalváshoz."
+
+#~ msgid "Configure the function of a long press on the power button."
+#~ msgstr "A Be/Ki kapcsoló gomb működése hosszan tartott lenyomásnál."
+
+#~ msgid "Configure the function of a short press on the power button."
+#~ msgstr "A Be/Ki kapcsoló gomb működése rövid (normális) lenyomásnál."
 
 #~ msgid "Conflicting timer"
 #~ msgstr "Időzítés ütközés"
@@ -11489,6 +11531,9 @@ msgstr "ugrott"
 #~ msgid "Hide numbered markers"
 #~ msgstr "Sorszámozott elválasztók elrejtése"
 
+#~ msgid "Immediate shutdown"
+#~ msgstr "azonnali kikapcsolás"
+
 #~ msgid "List EPG functions..."
 #~ msgstr "EPG-nézetek listája..."
 
@@ -11550,6 +11595,10 @@ msgstr "ugrott"
 #~ "Nem találtam érvényes menüvédelmi PIN kódot!\n"
 #~ "Meg szeretné most változtatni a menüvédelmi PIN kódot?\n"
 #~ "Ha 'Nem'-el válaszol, akkor a menüvédelem kikapcsolva marad!"
+
+#, fuzzy
+#~ msgid "OSD position setup"
+#~ msgstr "Forgatómotor beállítás"
 
 #~ msgid "Open service list and select next channel"
 #~ msgstr "Csatornalista megnnyítása és a következő csatorna választása"
@@ -11623,6 +11672,9 @@ msgstr "ugrott"
 
 #~ msgid "Show services beginning with"
 #~ msgstr "Csatornák, melyek első betűje"
+
+#~ msgid "Show shutdown menu"
+#~ msgstr "kikapcsolási menü"
 
 #~ msgid "Show status icons in Movielist"
 #~ msgstr "Státusz ikonok megjelenítése a listában"
@@ -11786,6 +11838,12 @@ msgstr "ugrott"
 
 #~ msgid "delete..."
 #~ msgstr "törlés..."
+
+#~ msgid "disable"
+#~ msgstr "letiltás"
+
+#~ msgid "enable"
+#~ msgstr "engedélyezés"
 
 #~ msgid "fine-tune your display"
 #~ msgstr "megjelenítő finom beállítása"

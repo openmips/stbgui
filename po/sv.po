@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-28 16:35+0200\n"
+"POT-Creation-Date: 2016-06-18 22:35+0200\n"
 "PO-Revision-Date: 2015-01-29 17:40+0200\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -789,13 +789,6 @@ msgstr "Om..."
 msgid "Accesspoint:"
 msgstr "Accespunkt:"
 
-#
-msgid "Action on long powerbutton press"
-msgstr "Beteende vid långt tryck på powerknappen"
-
-msgid "Action on short powerbutton press"
-msgstr "Beteende vid kort tryck på powerknappen"
-
 #, fuzzy
 msgid "Activate"
 msgstr "Aktivera BiB"
@@ -1210,6 +1203,11 @@ msgstr "Bildformat"
 msgid "Aspect ratio"
 msgstr "Bildformat"
 
+#
+#, fuzzy
+msgid "AspectRatio switch"
+msgstr "Bildformat"
+
 msgid "Assigned CAIds:"
 msgstr "Tilldelade CAIds:"
 
@@ -1537,7 +1535,7 @@ msgstr "Som standard, kommer SNR att visas i dB (om det stöds av tunern). Denna
 msgid "By openMips Image Team"
 msgstr ""
 
-msgid "Bypass HDMI EDID Check"
+msgid "Bypass HDMI EDID checking"
 msgstr ""
 
 msgid "Bytes received:"
@@ -1952,6 +1950,11 @@ msgid "Collection settings"
 msgstr "Samlingsinställning"
 
 #
+#, fuzzy
+msgid "Color"
+msgstr "Färgformat"
+
+#
 msgid "Color format"
 msgstr "Färgformat"
 
@@ -1979,11 +1982,6 @@ msgstr "Kommunikation"
 #
 msgid "Compact flash"
 msgstr "Compact Flash"
-
-#
-#, fuzzy
-msgid "Compensate for overscan"
-msgstr "Rensa före sökning"
 
 #
 msgid "Complete"
@@ -2057,6 +2055,9 @@ msgid "Configure if epg.dat should be saved at all."
 msgstr "Konfigurera vilken videoutgång som ska användas."
 
 msgid "Configure if service picons will be shown in the channel selection list."
+msgstr ""
+
+msgid "Configure if the HDMI EDID checking should be bypassed as this might solve issue with some TVs."
 msgstr ""
 
 msgid "Configure if the subtitle should switch between normal, italic, bold and bolditalic"
@@ -2148,12 +2149,6 @@ msgstr "Konfigurera det fjärde ljudspråket."
 #
 msgid "Configure the fourth subtitle language."
 msgstr "Konfigurera det fjärde undertextspråket."
-
-msgid "Configure the function of a long press on the power button."
-msgstr "Konfigurera beteendet vid ett långt tryck på powerknappen."
-
-msgid "Configure the function of a short press on the power button."
-msgstr "Konfigurera beteendet vid ett kort tryck på powerknappen."
 
 msgid "Configure the function of the '0' button do when PIP is active."
 msgstr "Konfigurera beteendet på '0' knappen när BiB är aktiv."
@@ -3378,6 +3373,11 @@ msgstr "Aktivera föräldrakontroll"
 msgid "Enable auto fast scan"
 msgstr ""
 
+#
+#, fuzzy, python-format
+msgid "Enable auto fast scan for %s"
+msgstr "Aktivera föräldrakontroll"
+
 msgid "Enable bouquet selection in multi-EPG"
 msgstr "Aktivera multi-EPG favoritlisteval."
 
@@ -3926,6 +3926,14 @@ msgstr "Flashning misslyckades"
 msgid "Following tasks will be done after you press OK!"
 msgstr "Följande saker kommer utföras efter du tryckt på OK!"
 
+msgid "Force LNB Power"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Force ToneBurst"
+msgstr "Toneburst"
+
 #
 msgid "Format"
 msgstr "Format"
@@ -4433,10 +4441,6 @@ msgid "Ignore conflict"
 msgstr ""
 
 #
-msgid "Immediate shutdown"
-msgstr "Omedelbar avstängning"
-
-#
 msgid "In order to record a timer, the TV was switched to the recording service!\n"
 msgstr "För att göra en timerinspelning, växlade TV:n till inspelande kanal!\n"
 
@@ -4603,6 +4607,11 @@ msgstr "Installera picons på"
 #, fuzzy
 msgid "Install plugins"
 msgstr "Installera picons på"
+
+#
+#, fuzzy
+msgid "Install softcam support"
+msgstr "Installerar mjukvara..."
 
 msgid "Installation has completed."
 msgstr "Installationen är klar."
@@ -5891,11 +5900,6 @@ msgid "OSD name request"
 msgstr "OSD namnförfrågan"
 
 #
-#, fuzzy
-msgid "OSD position setup"
-msgstr "Motorinstallation"
-
-#
 msgid "OSD settings"
 msgstr "OSD inställning"
 
@@ -6505,6 +6509,11 @@ msgid "Please wait (downloading channel list)"
 msgstr "Vänligen vänta (Laddar ner kanallista)"
 
 #
+#, fuzzy
+msgid "Please wait (downloading softcam support)"
+msgstr "Vänligen vänta (Laddar ner kanallista)"
+
+#
 msgid "Please wait (updating packages)"
 msgstr "Vänligen vänta (uppdaterar paket)"
 
@@ -6659,6 +6668,11 @@ msgstr "Motorinstallation"
 #
 msgid "Power threshold in mA"
 msgstr "Ström gränsvärde i mA"
+
+#
+#, fuzzy
+msgid "PowerMenu"
+msgstr "Meny"
 
 #
 msgid "Predefined transponder"
@@ -7272,6 +7286,10 @@ msgstr ""
 
 msgid "Repeat"
 msgstr "Repetera"
+
+#, fuzzy
+msgid "Repeat leave standby messages"
+msgstr "Deep standby anses vara samma som standby"
 
 #
 msgid "Repeat type"
@@ -8430,10 +8448,6 @@ msgstr "Visa typ av serviceikon"
 #, fuzzy
 msgid "Show servicelist or movies"
 msgstr "Visa typ av serviceikon"
-
-#
-msgid "Show shutdown menu"
-msgstr "Visa avstängningsmeny"
 
 msgid "Show single service EPG"
 msgstr "Visa singel kanal-EPG"
@@ -9651,9 +9665,6 @@ msgstr ""
 msgid "This option allows you to boost the green tones in the picture."
 msgstr ""
 
-msgid "This option allows you to bypass HDMI EDID check"
-msgstr ""
-
 msgid "This option allows you to view the old and new settings side by side."
 msgstr ""
 
@@ -10807,6 +10818,14 @@ msgstr "Vad vill du söka efter?"
 msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are upgraded"
 msgstr ""
 
+#, fuzzy
+msgid "When enabled the LNB power will not be switched off in standby"
+msgstr "Vid aktiverad, kommer VCR SCART alternativet visas i huvudmenyn"
+
+#, fuzzy
+msgid "When enabled the LNB toneburst will be forced"
+msgstr "Vid aktiverad, kommer nummermarkörer att döljas."
+
 msgid "When enabled the PiP can be closed by the exit button."
 msgstr "Vid aktiverad, kan BIB stängas med exitknappen."
 
@@ -11058,6 +11077,17 @@ msgstr ""
 
 msgid "Without popup"
 msgstr "Utan popup"
+
+msgid "Wizard to arrange the overscan"
+msgstr ""
+
+msgid ""
+"Would you like to be able to install softcams?\n"
+"\n"
+"Attention - Country specific illegal!\n"
+"\n"
+"Check legality for your specific country in advance!"
+msgstr ""
 
 #, python-format
 msgid "Would you save the entered PIN %s persistent?"
@@ -11805,10 +11835,6 @@ msgid "detective/thriller"
 msgstr "detektiv/thriller"
 
 #
-msgid "disable"
-msgstr "avaktivera"
-
-#
 #, fuzzy
 msgid "disable intro screen"
 msgstr "Avaktivera Bild i Bild"
@@ -11864,10 +11890,6 @@ msgstr "utbildning/forskning/faktaämnen (allmänt)"
 #
 msgid "empty"
 msgstr "tom"
-
-#
-msgid "enable"
-msgstr "aktivera"
 
 #
 msgid "enable bouquet edit"
@@ -12218,6 +12240,11 @@ msgstr "flytta upp till föregående post"
 
 msgid "movie/drama (general)"
 msgstr "film/drama (allmänt)"
+
+#
+#, fuzzy
+msgid "multi"
+msgstr "multinorm"
 
 #
 msgid "multinorm"
@@ -12949,6 +12976,13 @@ msgstr "zapped"
 #~ msgid "AB"
 #~ msgstr "AB"
 
+#
+#~ msgid "Action on long powerbutton press"
+#~ msgstr "Beteende vid långt tryck på powerknappen"
+
+#~ msgid "Action on short powerbutton press"
+#~ msgstr "Beteende vid kort tryck på powerknappen"
+
 #~ msgid "Add Bookmark"
 #~ msgstr "Lägg till bokmärke"
 
@@ -13010,6 +13044,11 @@ msgstr "zapped"
 #~ msgid "Common Interface assignment"
 #~ msgstr "Common Interface"
 
+#
+#, fuzzy
+#~ msgid "Compensate for overscan"
+#~ msgstr "Rensa före sökning"
+
 #~ msgid "Configure the behavior of the 'pause' key when movie playback is already paused."
 #~ msgstr "Konfigurera beteendet på 'paus' knappen när filmuppspelning redan är pausad."
 
@@ -13018,6 +13057,12 @@ msgstr "zapped"
 
 #~ msgid "Configure the duration in minutes and action, which could be shut down or standby, for the sleeptimer. Select this entry and click OK or green to start/stop the sleeptimer"
 #~ msgstr "Konfigurera varaktighet i minuter samt åtgärd som kan vara avstängning eller viloläge för insomningstimer. Välj och klicka på OK eller grön knapp för att starta / stoppa insomningstimer"
+
+#~ msgid "Configure the function of a long press on the power button."
+#~ msgstr "Konfigurera beteendet vid ett långt tryck på powerknappen."
+
+#~ msgid "Configure the function of a short press on the power button."
+#~ msgstr "Konfigurera beteendet vid ett kort tryck på powerknappen."
 
 #
 #~ msgid "Conflicting timer"
@@ -13130,6 +13175,10 @@ msgstr "zapped"
 #~ msgstr "Grön förstärkning"
 
 #
+#~ msgid "Immediate shutdown"
+#~ msgstr "Omedelbar avstängning"
+
+#
 #~ msgid "List EPG functions..."
 #~ msgstr "Lista över EPG funktioner..."
 
@@ -13199,6 +13248,11 @@ msgstr "zapped"
 #~ "Ingen giltig installations PIN hittad!\n"
 #~ "Vill du ändra installations PIN nu?\n"
 #~ "Om du anger 'Nej' här kommer installationsskyddet vara avaktiverat!"
+
+#
+#, fuzzy
+#~ msgid "OSD position setup"
+#~ msgstr "Motorinstallation"
 
 #~ msgid "Open service list and select next channel"
 #~ msgstr "Öppna kanallistan och välj nästa kanal"
@@ -13283,6 +13337,10 @@ msgstr "zapped"
 #
 #~ msgid "Show services beginning with"
 #~ msgstr "Visa kanal som börjar med"
+
+#
+#~ msgid "Show shutdown menu"
+#~ msgstr "Visa avstängningsmeny"
 
 #~ msgid "Show status icons in Movielist"
 #~ msgstr "Visa statusikoner i filmlistan"
@@ -13483,6 +13541,14 @@ msgstr "zapped"
 
 #~ msgid "delete..."
 #~ msgstr "ta bort..."
+
+#
+#~ msgid "disable"
+#~ msgstr "avaktivera"
+
+#
+#~ msgid "enable"
+#~ msgstr "aktivera"
 
 #
 #~ msgid "fine-tune your display"

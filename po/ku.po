@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-28 16:35+0200\n"
+"POT-Creation-Date: 2016-06-18 22:35+0200\n"
 "PO-Revision-Date: 2015-01-29 17:40+0200\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -724,12 +724,6 @@ msgstr "Heqé wi..."
 msgid "Accesspoint:"
 msgstr "Bigehize (Access Point):"
 
-msgid "Action on long powerbutton press"
-msgstr "Diréj pay Qumanda Girtin bike."
-
-msgid "Action on short powerbutton press"
-msgstr "Hédi Pay Qumanda Girtin bike"
-
 #, fuzzy
 msgid "Activate"
 msgstr "Aktif bike"
@@ -1081,6 +1075,10 @@ msgstr "Aspect ratio"
 msgid "Aspect ratio"
 msgstr "Aspect ratio"
 
+#, fuzzy
+msgid "AspectRatio switch"
+msgstr "Aspect ratio"
+
 msgid "Assigned CAIds:"
 msgstr "Assigned CAIds:"
 
@@ -1359,7 +1357,7 @@ msgstr "By default, SNR will be shown in dB (when supported by the tuner). This 
 msgid "By openMips Image Team"
 msgstr ""
 
-msgid "Bypass HDMI EDID Check"
+msgid "Bypass HDMI EDID checking"
 msgstr ""
 
 msgid "Bytes received:"
@@ -1726,6 +1724,10 @@ msgstr "Nav Koleksiyon"
 msgid "Collection settings"
 msgstr "Eyara Kolleksiyon"
 
+#, fuzzy
+msgid "Color"
+msgstr "Formata Renga"
+
 msgid "Color format"
 msgstr "Formata Renga"
 
@@ -1747,10 +1749,6 @@ msgstr "Hevra Girédayi"
 
 msgid "Compact flash"
 msgstr "Compact flash"
-
-#, fuzzy
-msgid "Compensate for overscan"
-msgstr "Paqişi paş légerin"
 
 msgid "Complete"
 msgstr "Temami"
@@ -1821,6 +1819,9 @@ msgid "Configure if epg.dat should be saved at all."
 msgstr "Configures which video output connector will be used."
 
 msgid "Configure if service picons will be shown in the channel selection list."
+msgstr ""
+
+msgid "Configure if the HDMI EDID checking should be bypassed as this might solve issue with some TVs."
 msgstr ""
 
 msgid "Configure if the subtitle should switch between normal, italic, bold and bolditalic"
@@ -1906,12 +1907,6 @@ msgstr "Configure the fourth audio language."
 
 msgid "Configure the fourth subtitle language."
 msgstr "Configure the fourth subtitle language."
-
-msgid "Configure the function of a long press on the power button."
-msgstr "Configure the function of a long press on the power button."
-
-msgid "Configure the function of a short press on the power button."
-msgstr "Configure the function of a short press on the power button."
 
 msgid "Configure the function of the '0' button do when PIP is active."
 msgstr "Configure the function of the '0' button do when PIP is active."
@@ -2990,6 +2985,10 @@ msgstr "Enable parental control"
 msgid "Enable auto fast scan"
 msgstr ""
 
+#, fuzzy, python-format
+msgid "Enable auto fast scan for %s"
+msgstr "Enable parental control"
+
 msgid "Enable bouquet selection in multi-EPG"
 msgstr "Enable bouquet selection in multi-EPG"
 
@@ -3469,6 +3468,13 @@ msgstr "Flashing failed"
 msgid "Following tasks will be done after you press OK!"
 msgstr "Following tasks will be done after you press OK!"
 
+msgid "Force LNB Power"
+msgstr ""
+
+#, fuzzy
+msgid "Force ToneBurst"
+msgstr "Toneburst"
+
 msgid "Format"
 msgstr "Format"
 
@@ -3927,9 +3933,6 @@ msgstr ""
 msgid "Ignore conflict"
 msgstr ""
 
-msgid "Immediate shutdown"
-msgstr "Immediate shutdown"
-
 msgid "In order to record a timer, the TV was switched to the recording service!\n"
 msgstr "In order to record a timer, the TV was switched to the recording service!\n"
 
@@ -4075,6 +4078,10 @@ msgstr "Install picons on"
 #, fuzzy
 msgid "Install plugins"
 msgstr "Install picons on"
+
+#, fuzzy
+msgid "Install softcam support"
+msgstr "Installing software..."
 
 msgid "Installation has completed."
 msgstr "Installation has completed."
@@ -5187,10 +5194,6 @@ msgstr "Çékirin"
 msgid "OSD name request"
 msgstr "OSD name request"
 
-#, fuzzy
-msgid "OSD position setup"
-msgstr "Pozisyoner Çéki"
-
 msgid "OSD settings"
 msgstr "OSD settings"
 
@@ -5720,6 +5723,10 @@ msgstr ""
 msgid "Please wait (downloading channel list)"
 msgstr "Please wait (downloading channel list)"
 
+#, fuzzy
+msgid "Please wait (downloading softcam support)"
+msgstr "Please wait (downloading channel list)"
+
 msgid "Please wait (updating packages)"
 msgstr "Please wait (updating packages)"
 
@@ -5845,6 +5852,10 @@ msgstr "Pozisyoner Çéki"
 
 msgid "Power threshold in mA"
 msgstr "Power threshold in mA"
+
+#, fuzzy
+msgid "PowerMenu"
+msgstr "Menu"
 
 msgid "Predefined transponder"
 msgstr "Predefined transponder"
@@ -6366,6 +6377,10 @@ msgstr ""
 
 msgid "Repeat"
 msgstr ""
+
+#, fuzzy
+msgid "Repeat leave standby messages"
+msgstr "Regard deep standby as standby"
 
 msgid "Repeat type"
 msgstr "Repeat type"
@@ -7360,9 +7375,6 @@ msgstr ""
 #, fuzzy
 msgid "Show servicelist or movies"
 msgstr "Show movie lengths in movielist"
-
-msgid "Show shutdown menu"
-msgstr "Show shutdown menu"
 
 msgid "Show single service EPG"
 msgstr ""
@@ -8437,9 +8449,6 @@ msgstr ""
 msgid "This option allows you to boost the green tones in the picture."
 msgstr ""
 
-msgid "This option allows you to bypass HDMI EDID check"
-msgstr ""
-
 msgid "This option allows you to view the old and new settings side by side."
 msgstr ""
 
@@ -9436,6 +9445,13 @@ msgstr "What do you want to scan?"
 msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are upgraded"
 msgstr ""
 
+#, fuzzy
+msgid "When enabled the LNB power will not be switched off in standby"
+msgstr "When enabled, the infobar will be displayed when a new event starts."
+
+msgid "When enabled the LNB toneburst will be forced"
+msgstr ""
+
 msgid "When enabled the PiP can be closed by the exit button."
 msgstr ""
 
@@ -9679,6 +9695,17 @@ msgid ""
 msgstr ""
 
 msgid "Without popup"
+msgstr ""
+
+msgid "Wizard to arrange the overscan"
+msgstr ""
+
+msgid ""
+"Would you like to be able to install softcams?\n"
+"\n"
+"Attention - Country specific illegal!\n"
+"\n"
+"Check legality for your specific country in advance!"
 msgstr ""
 
 #, python-format
@@ -10344,9 +10371,6 @@ msgstr "descramble and record ecm"
 msgid "detective/thriller"
 msgstr "detective/thriller"
 
-msgid "disable"
-msgstr "disable"
-
 #, fuzzy
 msgid "disable intro screen"
 msgstr "Disable Picture in Picture"
@@ -10395,9 +10419,6 @@ msgstr "education/science/factual topics (general)"
 
 msgid "empty"
 msgstr "empty"
-
-msgid "enable"
-msgstr "enable"
 
 msgid "enable bouquet edit"
 msgstr "enable bouquet edit"
@@ -10699,6 +10720,10 @@ msgstr "move up to previous entry"
 
 msgid "movie/drama (general)"
 msgstr "movie/drama (general)"
+
+#, fuzzy
+msgid "multi"
+msgstr "multinorm"
 
 msgid "multinorm"
 msgstr "multinorm"
@@ -11322,6 +11347,12 @@ msgstr "zapped"
 #~ msgid "AB"
 #~ msgstr "AB"
 
+#~ msgid "Action on long powerbutton press"
+#~ msgstr "Diréj pay Qumanda Girtin bike."
+
+#~ msgid "Action on short powerbutton press"
+#~ msgstr "Hédi Pay Qumanda Girtin bike"
+
 #~ msgid "Add more details to the crash log"
 #~ msgstr "Add more details to the crash log"
 
@@ -11369,8 +11400,18 @@ msgstr "zapped"
 #~ msgid "Common Interface assignment"
 #~ msgstr "Common Interface assignment"
 
+#, fuzzy
+#~ msgid "Compensate for overscan"
+#~ msgstr "Paqişi paş légerin"
+
 #~ msgid "Configure the behavior of the 'pause' key when movie playback is already paused."
 #~ msgstr "Configure the behavior of the 'pause' key when movie playback is already paused."
+
+#~ msgid "Configure the function of a long press on the power button."
+#~ msgstr "Configure the function of a long press on the power button."
+
+#~ msgid "Configure the function of a short press on the power button."
+#~ msgstr "Configure the function of a short press on the power button."
 
 #~ msgid "Confirm shutdown:"
 #~ msgstr "Confirm shutdown:"
@@ -11478,6 +11519,9 @@ msgstr "zapped"
 #~ msgid "Green boost"
 #~ msgstr "Green boost"
 
+#~ msgid "Immediate shutdown"
+#~ msgstr "Immediate shutdown"
+
 #~ msgid "List EPG functions..."
 #~ msgstr "List EPG functions..."
 
@@ -11530,6 +11574,10 @@ msgstr "zapped"
 
 #~ msgid "No, but restart from beginning"
 #~ msgstr "No, but restart from beginning"
+
+#, fuzzy
+#~ msgid "OSD position setup"
+#~ msgstr "Pozisyoner Çéki"
 
 #~ msgid "Open service list and select next channel"
 #~ msgstr "Open service list and select next channel"
@@ -11597,6 +11645,9 @@ msgstr "zapped"
 
 #~ msgid "Show services beginning with"
 #~ msgstr "Show services beginning with"
+
+#~ msgid "Show shutdown menu"
+#~ msgstr "Show shutdown menu"
 
 #~ msgid "Show tag menu"
 #~ msgstr "Show tag menu"
@@ -11776,6 +11827,9 @@ msgstr "zapped"
 #~ msgid "currently installed image: %s"
 #~ msgstr "currently installed image: %s"
 
+#~ msgid "disable"
+#~ msgstr "disable"
+
 #~ msgid "dreambox advanced remote control (native)"
 #~ msgstr "dreambox advanced remote control (native)"
 
@@ -11787,6 +11841,9 @@ msgstr "zapped"
 
 #~ msgid "dreambox remote control (native)"
 #~ msgstr "dreambox remote control (native)"
+
+#~ msgid "enable"
+#~ msgstr "enable"
 
 #~ msgid "fine-tune your display"
 #~ msgstr "fine-tune your display"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-28 16:35+0200\n"
+"POT-Creation-Date: 2016-06-18 22:35+0200\n"
 "PO-Revision-Date: 2015-01-29 17:40+0200\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -691,12 +691,6 @@ msgstr "درباره"
 msgid "Accesspoint:"
 msgstr "نقطه دسترسی:"
 
-msgid "Action on long powerbutton press"
-msgstr "عمل کردن هنگام فشار دادن طولانی دکمه روشن/خاموش"
-
-msgid "Action on short powerbutton press"
-msgstr "عمل کردن هنگام فشار دادن کوتاه دکمه روشن/خاموش"
-
 #, fuzzy
 msgid "Activate"
 msgstr "فعال کردن تصویر در تصویر"
@@ -1071,6 +1065,10 @@ msgstr "نسبت تصویر"
 msgid "Aspect ratio"
 msgstr "نسبت تصویر"
 
+#, fuzzy
+msgid "AspectRatio switch"
+msgstr "نسبت تصویر"
+
 msgid "Assigned CAIds:"
 msgstr ""
 
@@ -1356,7 +1354,7 @@ msgstr ""
 msgid "By openMips Image Team"
 msgstr ""
 
-msgid "Bypass HDMI EDID Check"
+msgid "Bypass HDMI EDID checking"
 msgstr ""
 
 msgid "Bytes received:"
@@ -1726,6 +1724,10 @@ msgid "Collection settings"
 msgstr "تنظیمات مجموعه"
 
 #, fuzzy
+msgid "Color"
+msgstr "فرمت رنگ"
+
+#, fuzzy
 msgid "Color format"
 msgstr "فرمت رنگ"
 
@@ -1748,10 +1750,6 @@ msgstr "ارتباط"
 #, fuzzy
 msgid "Compact flash"
 msgstr "فلش فشرده"
-
-#, fuzzy
-msgid "Compensate for overscan"
-msgstr "پاک سازی قبل از اسکن"
 
 msgid "Complete"
 msgstr "کامل"
@@ -1826,6 +1824,9 @@ msgid "Configure if epg.dat should be saved at all."
 msgstr "آماده سازی سرعت پرش به جلوی سریع"
 
 msgid "Configure if service picons will be shown in the channel selection list."
+msgstr ""
+
+msgid "Configure if the HDMI EDID checking should be bypassed as this might solve issue with some TVs."
 msgstr ""
 
 msgid "Configure if the subtitle should switch between normal, italic, bold and bolditalic"
@@ -1915,12 +1916,6 @@ msgid "Configure the fourth audio language."
 msgstr ""
 
 msgid "Configure the fourth subtitle language."
-msgstr ""
-
-msgid "Configure the function of a long press on the power button."
-msgstr ""
-
-msgid "Configure the function of a short press on the power button."
 msgstr ""
 
 msgid "Configure the function of the '0' button do when PIP is active."
@@ -2782,7 +2777,6 @@ msgstr "آیا میخواهید اسکن کانال انجام شود ؟"
 msgid "Do you want to do another manual service scan?"
 msgstr "آیا میخواهید اسکن دستی کانال دیگری انجام شود ؟"
 
-#, fuzzy
 msgid "Do you want to install a channel list?"
 msgstr ""
 
@@ -3035,6 +3029,10 @@ msgstr "فعال کردن کنترل والدین"
 
 msgid "Enable auto fast scan"
 msgstr ""
+
+#, fuzzy, python-format
+msgid "Enable auto fast scan for %s"
+msgstr "فعال کردن کنترل والدین"
 
 #, fuzzy
 msgid "Enable bouquet selection in multi-EPG"
@@ -3528,6 +3526,13 @@ msgstr "فلش کردن ناموفق"
 msgid "Following tasks will be done after you press OK!"
 msgstr "وظایف زیر بعد از فشار دادن دکمه OK انجام خواهند شد"
 
+msgid "Force LNB Power"
+msgstr ""
+
+#, fuzzy
+msgid "Force ToneBurst"
+msgstr "درخواست منبع"
+
 msgid "Format"
 msgstr "فرمت"
 
@@ -3998,9 +4003,6 @@ msgstr ""
 msgid "Ignore conflict"
 msgstr ""
 
-msgid "Immediate shutdown"
-msgstr ""
-
 msgid "In order to record a timer, the TV was switched to the recording service!\n"
 msgstr ""
 
@@ -4155,6 +4157,10 @@ msgstr "نصب پیکون ها در"
 #, fuzzy
 msgid "Install plugins"
 msgstr "نصب پیکون ها در"
+
+#, fuzzy
+msgid "Install softcam support"
+msgstr "در حال نصب نرم افزار"
 
 #, fuzzy
 msgid "Installation has completed."
@@ -5321,10 +5327,6 @@ msgid "OSD name request"
 msgstr "درخواست نام OSD"
 
 #, fuzzy
-msgid "OSD position setup"
-msgstr "تنظیمات مکان یاب"
-
-#, fuzzy
 msgid "OSD settings"
 msgstr "OSD تنظیمات"
 
@@ -5863,6 +5865,10 @@ msgstr ""
 msgid "Please wait (downloading channel list)"
 msgstr "لطفا صبر کنید - در حال آماده سازی لیست"
 
+#, fuzzy
+msgid "Please wait (downloading softcam support)"
+msgstr "لطفا صبر کنید - در حال آماده سازی لیست"
+
 msgid "Please wait (updating packages)"
 msgstr ""
 
@@ -5994,6 +6000,10 @@ msgstr "تنظیمات مکان یاب"
 
 msgid "Power threshold in mA"
 msgstr "آستانه قدرت به میلی آمپر"
+
+#, fuzzy
+msgid "PowerMenu"
+msgstr "منو"
 
 msgid "Predefined transponder"
 msgstr "ترانسپوندر از قبل تعریف شده"
@@ -6534,6 +6544,9 @@ msgid "Rename name and description for new events"
 msgstr ""
 
 msgid "Repeat"
+msgstr ""
+
+msgid "Repeat leave standby messages"
 msgstr ""
 
 #, fuzzy
@@ -7582,10 +7595,6 @@ msgstr ""
 #, fuzzy
 msgid "Show servicelist or movies"
 msgstr "آماده سازی طول فیلم ها در لیست فیلم"
-
-#, fuzzy
-msgid "Show shutdown menu"
-msgstr "نمایش منوی انتخاب لیست"
 
 msgid "Show single service EPG"
 msgstr ""
@@ -8702,9 +8711,6 @@ msgstr ""
 msgid "This option allows you to boost the green tones in the picture."
 msgstr ""
 
-msgid "This option allows you to bypass HDMI EDID check"
-msgstr ""
-
 msgid "This option allows you to view the old and new settings side by side."
 msgstr ""
 
@@ -9649,6 +9655,12 @@ msgstr ""
 msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are upgraded"
 msgstr ""
 
+msgid "When enabled the LNB power will not be switched off in standby"
+msgstr ""
+
+msgid "When enabled the LNB toneburst will be forced"
+msgstr ""
+
 msgid "When enabled the PiP can be closed by the exit button."
 msgstr ""
 
@@ -9887,6 +9899,17 @@ msgid ""
 msgstr ""
 
 msgid "Without popup"
+msgstr ""
+
+msgid "Wizard to arrange the overscan"
+msgstr ""
+
+msgid ""
+"Would you like to be able to install softcams?\n"
+"\n"
+"Attention - Country specific illegal!\n"
+"\n"
+"Check legality for your specific country in advance!"
 msgstr ""
 
 #, python-format
@@ -10517,9 +10540,6 @@ msgstr ""
 msgid "detective/thriller"
 msgstr ""
 
-msgid "disable"
-msgstr ""
-
 #, fuzzy
 msgid "disable intro screen"
 msgstr "غیر فعال کردن تصویر در تصویر"
@@ -10567,9 +10587,6 @@ msgid "education/science/factual topics (general)"
 msgstr ""
 
 msgid "empty"
-msgstr ""
-
-msgid "enable"
 msgstr ""
 
 msgid "enable bouquet edit"
@@ -10869,6 +10886,10 @@ msgstr ""
 
 msgid "movie/drama (general)"
 msgstr ""
+
+#, fuzzy
+msgid "multi"
+msgstr "چندین ماهواره"
 
 msgid "multinorm"
 msgstr ""
@@ -11487,6 +11508,12 @@ msgstr ""
 #~ msgid "AB"
 #~ msgstr "AB"
 
+#~ msgid "Action on long powerbutton press"
+#~ msgstr "عمل کردن هنگام فشار دادن طولانی دکمه روشن/خاموش"
+
+#~ msgid "Action on short powerbutton press"
+#~ msgstr "عمل کردن هنگام فشار دادن کوتاه دکمه روشن/خاموش"
+
 #, fuzzy
 #~ msgid "Add more details to the crash log"
 #~ msgstr "ساخت گزارش خطای دقیق تر"
@@ -11536,6 +11563,10 @@ msgstr ""
 #, fuzzy
 #~ msgid "Common Interface assignment"
 #~ msgstr "تخصیص رابط مشترک"
+
+#, fuzzy
+#~ msgid "Compensate for overscan"
+#~ msgstr "پاک سازی قبل از اسکن"
 
 #~ msgid "Conflicting timer"
 #~ msgstr "زمان متناقض"
@@ -11641,6 +11672,10 @@ msgstr ""
 #~ msgid "No details for this image file"
 #~ msgstr "هیچ مشخصاتی برای این ایمیج وجود ندارد"
 
+#, fuzzy
+#~ msgid "OSD position setup"
+#~ msgstr "تنظیمات مکان یاب"
+
 #~ msgid "Output"
 #~ msgstr "خروجی"
 
@@ -11688,6 +11723,10 @@ msgstr ""
 
 #~ msgid "Show services beginning with"
 #~ msgstr "نمایش کانال های که شروع میشوند با"
+
+#, fuzzy
+#~ msgid "Show shutdown menu"
+#~ msgstr "نمایش منوی انتخاب لیست"
 
 #~ msgid "Show the tv player..."
 #~ msgstr "نمایش پخش کننده تلوزیون"

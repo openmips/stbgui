@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-28 16:35+0200\n"
+"POT-Creation-Date: 2016-06-18 22:35+0200\n"
 "PO-Revision-Date: 2015-01-29 17:40+0200\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -742,14 +742,6 @@ msgid "Accesspoint:"
 msgstr ""
 
 #
-msgid "Action on long powerbutton press"
-msgstr ""
-
-#
-msgid "Action on short powerbutton press"
-msgstr ""
-
-#
 #, fuzzy
 msgid "Activate"
 msgstr "Activar PiP"
@@ -1164,6 +1156,11 @@ msgstr "Relació d'aspecte"
 msgid "Aspect ratio"
 msgstr "Relació d'aspecte"
 
+#
+#, fuzzy
+msgid "AspectRatio switch"
+msgstr "Relació d'aspecte"
+
 msgid "Assigned CAIds:"
 msgstr ""
 
@@ -1487,7 +1484,7 @@ msgstr ""
 msgid "By openMips Image Team"
 msgstr ""
 
-msgid "Bypass HDMI EDID Check"
+msgid "Bypass HDMI EDID checking"
 msgstr ""
 
 msgid "Bytes received:"
@@ -1897,6 +1894,11 @@ msgstr ""
 
 #
 #, fuzzy
+msgid "Color"
+msgstr "Format de color"
+
+#
+#, fuzzy
 msgid "Color format"
 msgstr "Format de color"
 
@@ -1925,11 +1927,6 @@ msgstr ""
 #, fuzzy
 msgid "Compact flash"
 msgstr "Compact Flash"
-
-#
-#, fuzzy
-msgid "Compensate for overscan"
-msgstr "Netejar abans de buscar"
 
 #
 msgid "Complete"
@@ -2003,6 +2000,9 @@ msgid "Configure if epg.dat should be saved at all."
 msgstr ""
 
 msgid "Configure if service picons will be shown in the channel selection list."
+msgstr ""
+
+msgid "Configure if the HDMI EDID checking should be bypassed as this might solve issue with some TVs."
 msgstr ""
 
 msgid "Configure if the subtitle should switch between normal, italic, bold and bolditalic"
@@ -2091,12 +2091,6 @@ msgid "Configure the fourth audio language."
 msgstr ""
 
 msgid "Configure the fourth subtitle language."
-msgstr ""
-
-msgid "Configure the function of a long press on the power button."
-msgstr ""
-
-msgid "Configure the function of a short press on the power button."
 msgstr ""
 
 msgid "Configure the function of the '0' button do when PIP is active."
@@ -3307,6 +3301,11 @@ msgid "Enable auto fast scan"
 msgstr ""
 
 #
+#, fuzzy, python-format
+msgid "Enable auto fast scan for %s"
+msgstr "Activar control parental"
+
+#
 #, fuzzy
 msgid "Enable bouquet selection in multi-EPG"
 msgstr "activar l'edició de la llista"
@@ -3848,6 +3847,14 @@ msgstr ""
 msgid "Following tasks will be done after you press OK!"
 msgstr ""
 
+msgid "Force LNB Power"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Force ToneBurst"
+msgstr "Toneburst"
+
 #
 msgid "Format"
 msgstr ""
@@ -4361,11 +4368,6 @@ msgid "Ignore conflict"
 msgstr ""
 
 #
-#, fuzzy
-msgid "Immediate shutdown"
-msgstr "apagar"
-
-#
 msgid "In order to record a timer, the TV was switched to the recording service!\n"
 msgstr "Per a poder fer una gravació programada, s'ha canviat al canal adequat!\n"
 
@@ -4536,6 +4538,11 @@ msgstr ""
 #, fuzzy
 msgid "Install plugins"
 msgstr "Instal·lant"
+
+#
+#, fuzzy
+msgid "Install softcam support"
+msgstr "Instal·lant programari..."
 
 msgid "Installation has completed."
 msgstr ""
@@ -5830,11 +5837,6 @@ msgstr ""
 
 #
 #, fuzzy
-msgid "OSD position setup"
-msgstr "Configuració del motor"
-
-#
-#, fuzzy
 msgid "OSD settings"
 msgstr "Config OSD"
 
@@ -6454,6 +6456,11 @@ msgstr "Carregant la llista... espera..."
 
 #
 #, fuzzy
+msgid "Please wait (downloading softcam support)"
+msgstr "Carregant la llista... espera..."
+
+#
+#, fuzzy
 msgid "Please wait (updating packages)"
 msgstr "sisplau espera, carregant imatge..."
 
@@ -6606,6 +6613,11 @@ msgstr "Configuració del motor"
 #
 msgid "Power threshold in mA"
 msgstr "Llindar de corrent en mA"
+
+#
+#, fuzzy
+msgid "PowerMenu"
+msgstr "Menú"
 
 #
 msgid "Predefined transponder"
@@ -7208,6 +7220,9 @@ msgid "Rename name and description for new events"
 msgstr ""
 
 msgid "Repeat"
+msgstr ""
+
+msgid "Repeat leave standby messages"
 msgstr ""
 
 #
@@ -8391,11 +8406,6 @@ msgstr ""
 #
 #, fuzzy
 msgid "Show servicelist or movies"
-msgstr "Mostrar el moviment del motor"
-
-#
-#, fuzzy
-msgid "Show shutdown menu"
 msgstr "Mostrar el moviment del motor"
 
 msgid "Show single service EPG"
@@ -9589,9 +9599,6 @@ msgstr ""
 msgid "This option allows you to boost the green tones in the picture."
 msgstr ""
 
-msgid "This option allows you to bypass HDMI EDID check"
-msgstr ""
-
 msgid "This option allows you to view the old and new settings side by side."
 msgstr ""
 
@@ -10696,6 +10703,12 @@ msgstr "Què vols buscar?"
 msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are upgraded"
 msgstr ""
 
+msgid "When enabled the LNB power will not be switched off in standby"
+msgstr ""
+
+msgid "When enabled the LNB toneburst will be forced"
+msgstr ""
+
 msgid "When enabled the PiP can be closed by the exit button."
 msgstr ""
 
@@ -10936,6 +10949,17 @@ msgid ""
 msgstr ""
 
 msgid "Without popup"
+msgstr ""
+
+msgid "Wizard to arrange the overscan"
+msgstr ""
+
+msgid ""
+"Would you like to be able to install softcams?\n"
+"\n"
+"Attention - Country specific illegal!\n"
+"\n"
+"Check legality for your specific country in advance!"
 msgstr ""
 
 #, python-format
@@ -11642,10 +11666,6 @@ msgid "detective/thriller"
 msgstr ""
 
 #
-msgid "disable"
-msgstr "desactivar"
-
-#
 #, fuzzy
 msgid "disable intro screen"
 msgstr "Desactivar PiP"
@@ -11701,10 +11721,6 @@ msgstr ""
 #
 msgid "empty"
 msgstr "buit"
-
-#
-msgid "enable"
-msgstr "habilitar"
 
 #
 msgid "enable bouquet edit"
@@ -12047,6 +12063,11 @@ msgstr ""
 
 msgid "movie/drama (general)"
 msgstr ""
+
+#
+#, fuzzy
+msgid "multi"
+msgstr "multinorm"
 
 #
 #, fuzzy
@@ -12798,6 +12819,11 @@ msgstr "zappejat"
 #~ msgstr "Comanda DISEqC enviada"
 
 #
+#, fuzzy
+#~ msgid "Compensate for overscan"
+#~ msgstr "Netejar abans de buscar"
+
+#
 #~ msgid "Conflicting timer"
 #~ msgstr "Gravació en conflicte"
 
@@ -12839,6 +12865,11 @@ msgstr "zappejat"
 
 #
 #, fuzzy
+#~ msgid "Immediate shutdown"
+#~ msgstr "apagar"
+
+#
+#, fuzzy
 #~ msgid "Mode 1"
 #~ msgstr "Mode"
 
@@ -12872,6 +12903,11 @@ msgstr "zappejat"
 #~ "Si contestes 'No' es deshabilitarà la protecció de la configuració!"
 
 #
+#, fuzzy
+#~ msgid "OSD position setup"
+#~ msgstr "Configuració del motor"
+
+#
 #~ msgid "Parental control type"
 #~ msgstr "Tipus de control parental"
 
@@ -12892,6 +12928,11 @@ msgstr "zappejat"
 #
 #~ msgid "Show services beginning with"
 #~ msgstr "Mostra els canals que comencen per"
+
+#
+#, fuzzy
+#~ msgid "Show shutdown menu"
+#~ msgstr "Mostrar el moviment del motor"
 
 #
 #~ msgid "Show the tv player..."
@@ -12949,6 +12990,14 @@ msgstr "zappejat"
 #
 #~ msgid "continue"
 #~ msgstr "continuar"
+
+#
+#~ msgid "disable"
+#~ msgstr "desactivar"
+
+#
+#~ msgid "enable"
+#~ msgstr "habilitar"
 
 #
 #, fuzzy
