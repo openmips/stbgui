@@ -51,7 +51,7 @@ class OverscanWizard(Screen, ConfigListScreen):
 
 		self.Timer = eTimer()
 		if timeOut:
-			self.countdown = 10
+			self.countdown = 20
 			self.Timer.callback.append(self.TimerTimeout)
 			self.Timer.start(1000)
 
