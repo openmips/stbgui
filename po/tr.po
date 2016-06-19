@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-06-18 22:35+0200\n"
-"PO-Revision-Date: 2016-04-28 19:07+0200\n"
+"PO-Revision-Date: 2016-06-19 02:34+0200\n"
 "Last-Translator: Apachi70\n"
 "Language-Team: Apachi70\n"
 "Language: tr\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural= (1 != 1);\n"
-"X-Generator: Poedit 1.8.7\n"
+"X-Generator: Poedit 1.8.8\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
 msgid ""
@@ -1037,9 +1037,8 @@ msgstr "En-Boy Oranı"
 msgid "Aspect ratio"
 msgstr "En-Boy oranı"
 
-#, fuzzy
 msgid "AspectRatio switch"
-msgstr "En-Boy Oranı"
+msgstr "Boy Oranı anahtarı"
 
 msgid "Assigned CAIds:"
 msgstr "Atanan CalDS:"
@@ -1303,9 +1302,8 @@ msgstr "Varsayılan olarak; SNR, dB olarak (Tuner tarafından destekleniyorsa) g
 msgid "By openMips Image Team"
 msgstr "OpenMips Image Ekibi tarafından"
 
-#, fuzzy
 msgid "Bypass HDMI EDID checking"
-msgstr "HDMI EDID Kontrolunu atla"
+msgstr "Bypass HDMI EDID çek"
 
 msgid "Bytes received:"
 msgstr "Bayt alındı:"
@@ -1666,9 +1664,8 @@ msgstr "Koleksiyon adı"
 msgid "Collection settings"
 msgstr "Koleksiyon ayarları"
 
-#, fuzzy
 msgid "Color"
-msgstr "Renk alanı"
+msgstr "Renk "
 
 msgid "Color format"
 msgstr "Renk formatı"
@@ -1725,9 +1722,8 @@ msgstr "Bilgi çubuğu görünme süresini ayarla."
 msgid "Configure for how many minutes finished events should remain visible in the EPG. Useful when you need information about an event which has just finished, or has been delayed."
 msgstr "Biten olaylar EPG de kaç dakika görünmeli.  Kullanışlı, biten veya ertelenmiş bir olay hakkında bilgi gerektiğinde."
 
-#, fuzzy
 msgid "Configure how many channels are shown in the selection list."
-msgstr "Kanal seçim listesinde şifreleme simgelerinin nasıl gösterileceğini yapılandır."
+msgstr "Seçim listede gösterilen kaç kanal yapılandırın."
 
 msgid "Configure how recording filenames are constructed."
 msgstr "Kayıt dosyaları nasıl isimlendirilmeli"
@@ -1760,7 +1756,7 @@ msgid "Configure if service picons will be shown in the channel selection list."
 msgstr "Kanal seçim listesinde kanal simgelerinin nasıl gösterileceğini yapılandır."
 
 msgid "Configure if the HDMI EDID checking should be bypassed as this might solve issue with some TVs."
-msgstr ""
+msgstr "HDMI EDID denetimi bazı TV'ler ile sorunu çözebilir olabilir bu şekilde baypas gerekip gerekmediğini yapılandırın."
 
 msgid "Configure if the subtitle should switch between normal, italic, bold and bolditalic"
 msgstr "altyazı normal italik, kalın ve italik kalın arasında geçiş gerekip gerekmediğini yapılandırma"
@@ -2345,7 +2341,7 @@ msgid "Delay between switch and motor command"
 msgstr "anahtarı ve motor komuta arasındaki gecikme"
 
 msgid "Delay for external subtitles"
-msgstr "Harici altyazılar için gecikme"
+msgstr "Harici altyazılar için gecikme "
 
 msgid "Delay in miliseconds after finish scrolling text on display."
 msgstr "Ekranda bitirmek kaydırma metinden sonra milisaniye cinsinden gecikme."
@@ -2880,9 +2876,9 @@ msgstr "Otomatik kablo tarama etkinleştir"
 msgid "Enable auto fast scan"
 msgstr "Otomatik hızlı tarama etkinleştir"
 
-#, fuzzy, python-format
+#, python-format
 msgid "Enable auto fast scan for %s"
-msgstr "Otomatik hızlı tarama etkinleştir"
+msgstr "Otomatik hızlı tarama etkinleştir % s"
 
 msgid "Enable bouquet selection in multi-EPG"
 msgstr "Çoklu-EPG içinde buket seçimini etkinleştir"
@@ -3348,11 +3344,10 @@ msgid "Following tasks will be done after you press OK!"
 msgstr "Belirtilen görevler OK'a basmanizin ardindan isleme alinacak!"
 
 msgid "Force LNB Power"
-msgstr ""
+msgstr "LNB Kuvvet Gücü"
 
-#, fuzzy
 msgid "Force ToneBurst"
-msgstr "Toneburst"
+msgstr "ToneBurst kuvveti"
 
 msgid "Format"
 msgstr "Biçimlendir"
@@ -3932,9 +3927,8 @@ msgstr "üzerinde Picons yükleyin"
 msgid "Install plugins"
 msgstr "Eklentileri kur"
 
-#, fuzzy
 msgid "Install softcam support"
-msgstr "Yazılım yükleniyor.."
+msgstr "softcam desteği yükleyin"
 
 msgid "Installation has completed."
 msgstr "Kurulum tamamlandi."
@@ -5509,9 +5503,8 @@ msgstr "Lütfen bekleyin"
 msgid "Please wait (downloading channel list)"
 msgstr "Lütfen bekleyin (kanal listesi indiriliyor)"
 
-#, fuzzy
 msgid "Please wait (downloading softcam support)"
-msgstr "Lütfen bekleyin (kanal listesi indiriliyor)"
+msgstr "Lütfen bekleyiniz (softcam desteği indirme)"
 
 msgid "Please wait (updating packages)"
 msgstr "Lütfen bekleyin (paketler güncelleniyor)"
@@ -5636,9 +5629,8 @@ msgstr "Pozisyoner Kur log"
 msgid "Power threshold in mA"
 msgstr "Güç eşiği (mA)"
 
-#, fuzzy
 msgid "PowerMenu"
-msgstr "Menü"
+msgstr "PowerMenu"
 
 msgid "Predefined transponder"
 msgstr "Önceden tanımlanmış transponder"
@@ -6121,9 +6113,8 @@ msgstr "Yeni etkinlikler için adını ve açıklamasını yeniden adlandırma"
 msgid "Repeat"
 msgstr "Tekrarla"
 
-#, fuzzy
 msgid "Repeat leave standby messages"
-msgstr "Derin bekleme modu, bekleme modu olsun"
+msgstr "tekrarlayin standby mesaj birak"
 
 msgid "Repeat type"
 msgstr "Çesidi yineleyin"
@@ -9078,13 +9069,11 @@ msgstr "Neleri aramak istiyorsunuz?"
 msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are upgraded"
 msgstr "Ne zaman etkin enigma2 bağlantısız userbouquets yükleyecektir. Bu, mevcut değil, fakat bouquets.tv ya bouquets.radio dosyaları dahil değildir userbouquets zaten yüklü olacağı anlamına gelir. Yüklü ayarlar yükseltilmiş ise bu kendi kullanıcı buket tutmak için örneğin olanak sağlar"
 
-#, fuzzy
 msgid "When enabled the LNB power will not be switched off in standby"
-msgstr "etkinleştirildiğinde, VCR skart seçeneği ana menüde gösterilir"
+msgstr "LNB güç bekleme kapalı olmayacak etkin zaman"
 
-#, fuzzy
 msgid "When enabled the LNB toneburst will be forced"
-msgstr "Etkin olduğunda, sayı belirteçleri gizlenir."
+msgstr "zorunlu olacak Toneburst LNB etkin olduğunda"
 
 msgid "When enabled the PiP can be closed by the exit button."
 msgstr "Etkin olduğunda PIP çıkış düğmesi ile kapatılabilir."
@@ -9332,7 +9321,7 @@ msgid "Without popup"
 msgstr "Popup olmadan"
 
 msgid "Wizard to arrange the overscan"
-msgstr ""
+msgstr "overscan düzenlemek için sihirbazı"
 
 msgid ""
 "Would you like to be able to install softcams?\n"
@@ -9341,6 +9330,11 @@ msgid ""
 "\n"
 "Check legality for your specific country in advance!"
 msgstr ""
+"Softcams yüklemek ister misiniz?\n"
+"\n"
+"Dikkat - Yasadışı özel Ülke!\n"
+"\n"
+"önceden belirli bir ülke için yasallığı kontrol edin!"
 
 #, python-format
 msgid "Would you save the entered PIN %s persistent?"
@@ -10363,12 +10357,11 @@ msgstr "bir üste taşı"
 msgid "movie/drama (general)"
 msgstr "movie/drama (general)"
 
-#, fuzzy
 msgid "multi"
-msgstr "PAL/NTSC"
+msgstr "multi"
 
 msgid "multinorm"
-msgstr "PAL/NTSC"
+msgstr "Multinorm"
 
 msgid "music/ballet/dance (general)"
 msgstr "müzik/bale/dans (genel)"
