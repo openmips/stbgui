@@ -107,7 +107,7 @@ class InstallWizard(Screen, ConfigListScreen):
 			if config.misc.installwizard.hasnetwork.value:
 				self.session.open(InstallWizardIpkgUpdater, self.index, _('Please wait (updating packages)'), IpkgComponent.CMD_UPDATE)
 		elif self.index == self.STATE_CHOICE_CHANNELLIST and self.enabled.value:
-			self.session.open(InstallWizardIpkgUpdater, self.index, _('Please wait (downloading channel list)'), IpkgComponent.CMD_INSTALL, {'package': 'enigma2-plugin-settings-gigablue-' + self.channellist_type.value})
+			self.session.open(InstallWizardIpkgUpdater, self.index, _('Please wait (downloading channel list)'), IpkgComponent.CMD_REMOVE, {'package': 'enigma2-plugin-settings-gigablue-' + self.channellist_type.value})
 		elif self.index == self.STATE_CHOICE_SOFTCAM and self.enabled.value:
 			self.session.open(InstallWizardIpkgUpdater, self.index, _('Please wait (downloading softcam support)'), IpkgComponent.CMD_INSTALL, {'package': 'om-softcam-support'})
 		return
