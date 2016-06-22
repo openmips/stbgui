@@ -1,5 +1,5 @@
 import time
-from os import chmod, access, remove, X_OK
+from os import chmod, access, remove, X_OK,system, popen,listdir
 from Screens.Screen import Screen
 from Screens.MessageBox import MessageBox
 from Screens.Standby import TryQuitMainloop
@@ -32,12 +32,15 @@ class NetworkNfs(Screen):
 		self['key_green'] = Label(_("Start"))
 		self['key_red'] = Label(_("Remove Service"))
 		self['key_yellow'] = Label(_("Autostart"))
-		self['key_blue'] = Label()
+		self['lab4'] = Label(_("active NFS Shares:"))
+		self['key_blue'] = Label( (" ") )
+		self['lab3'] = Label( (" "))
 		self.Console = Console()
 		self.my_nfs_active = False
 		self.my_nfs_run = False
-		self['actions'] = ActionMap(['WizardActions', 'ColorActions'], {'ok': self.close, 'back': self.close, 'red': self.UninstallCheck, 'green': self.NfsStartStop, 'yellow': self.Nfsset})
+		self['actions'] = ActionMap(['WizardActions', 'ColorActions'], {'ok': self.close, 'back': self.close, 'red': self.UninstallCheck, 'green': self.NfsStartStop, 'yellow': self.Nfsset, 'blue':self.NfsExportOnOff})
 		self.service_name = basegroup + '-nfs'
+		self.NfsExportCheck()
 		self.onLayoutFinish.append(self.InstallCheck)
 
 	def InstallCheck(self):
@@ -112,6 +115,47 @@ class NetworkNfs(Screen):
 			self.Console.ePopen('/etc/init.d/nfsserver start', self.StartStopCallback)
 		elif self.my_nfs_run:
 			self.Console.ePopen('/etc/init.d/nfsserver stop', self.StartStopCallback)
+
+	def NfsExportCheck(self):
+		self.Console.ePopen('/usr/sbin/exportfs -ua')
+		time.sleep(1)
+		self.Console.ePopen('/usr/sbin/exportfs -ra')
+		time.sleep(1)
+		if fileExists('/etc/exports'):
+			exports = popen('/usr/sbin/exportfs').read()
+			if exports == "":
+				self['lab3'].setText (_("no valid entrys in /etc/exports found\nPress blue button to activate default Enigma2\nHDD and USB as NFS exports,\nif valid mounted hardware is available."))
+				self['key_blue'].setText(_("NFS Shares ON"))
+			else:
+				self['lab3'].setText(exports)
+				self['key_blue'].setText(_("NFS Shares OFF"))
+		else:
+			self['lab3'].setText(_("No '/etc/exports' Configuration File found.\nPress blue button to activate default Enigma2\nHDD and USB as NFS exports, if the hardware is available."))
+			self['key_blue'].setText(_("NFS Shares ON"))
+
+	def NfsExportOnOff(self):
+		if fileExists('/etc/exports') and popen('/usr/sbin/exportfs').read() != "":
+			self.message = self.session.open(MessageBox,_("please wait\nwhile deacticate NFS exports"), MessageBox.TYPE_INFO,5)
+			self.message.setTitle(_('Info'))
+			self.Console.ePopen('/usr/sbin/exportfs -ua')
+			self.Console.ePopen('rm /etc/exports && touch /etc/exports')
+			self['lab3'].setText(_("No '/etc/exports' Configuration File found.\nPress blue button to activate default Enigma2\nHDD and USB as NFS exports, if the hardware is available."))
+			self['key_blue'].setText(_("NFS Shares ON"))
+		else:
+			self.message = self.session.open(MessageBox,_("please wait\nwhile acticate NFS exports"), MessageBox.TYPE_INFO,5)
+			self.message.setTitle(_("Info"))
+			netz = popen('ip route show |grep "/" |cut -d " " -f 0').read().strip()
+			opt = "(sync,no_subtree_check,rw)"
+			i=0
+			z = os.listdir("/media")
+			h = open("/etc/exports","w")
+			while i < len(z):
+				if z[i] !="autofs" and z[i] !="net":
+					h.write( "/media/" + str(z[i]) + " " + netz + opt + "\n" )
+				i = i + 1
+			h.close()
+			self.Console.ePopen('/usr/sbin/exportfs -ra')
+		self.NfsExportCheck()
 
 	def StartStopCallback(self, result = None, retval = None, extra_args = None):
 		time.sleep(3)
@@ -318,16 +362,35 @@ class NetworkSambaLog(Screen):
 		self['infotext'] = ScrollLabel('')
 		self.Console = Console()
 		self['actions'] = ActionMap(['WizardActions', 'ColorActions'], {'ok': self.close, 'back': self.close, 'up': self['infotext'].pageUp, 'down': self['infotext'].pageDown})
-		strview = ''
-		self.Console.ePopen('tail /tmp/smb.log > /tmp/tmp.log')
-		time.sleep(1)
-		if fileExists('/tmp/tmp.log'):
-			f = open('/tmp/tmp.log', 'r')
+		smbdview = ''
+		nmbdview = ''
+		if fileExists('/var/volatile/log/log.smbd'):
+			self.Console.ePopen('tail -n20 /var/volatile/log/log.smbd > /tmp/tmp.smbd.log')
+			time.sleep(1)
+			f = open('/tmp/tmp.smbd.log', 'r')
 			for line in f.readlines():
-				strview += line
+				smbdview += line
 			f.close()
-			remove('/tmp/tmp.log')
-		self['infotext'].setText(strview)
+			if smbdview =="":
+				smbdview = _("no log entrys") + "\n\n\n\n\n"
+			remove('/tmp/tmp.smbd.log')
+		else:
+			smbdview =  _("no") + " log.smbd "  + _("found")
+		
+		if fileExists('/var/volatile/log/log.nmbd'):
+			self.Console.ePopen('tail -n20 /var/volatile/log/log.nmbd > /tmp/tmp.nmbd.log')
+			time.sleep(1)
+			f = open('/tmp/tmp.nmbd.log', 'r')
+			for line in f.readlines():
+				nmbdview += line
+			f.close()
+			if nmbdview =="":
+				nmbdview = _("no log entrys")
+			remove('/tmp/tmp.nmbd.log')
+		else:
+			nmbdview = _("no") +" log.nmbd " + _("found")
+		sambaview = "--/var/volatile/log/log.smbd:\n" + smbdview + "\n--/var/volatile/log/log.nmbd:\n" + nmbdview
+		self['infotext'].setText(sambaview)
 
 class NetworkServicesSummary(Screen):
 	def __init__(self, session, parent):
