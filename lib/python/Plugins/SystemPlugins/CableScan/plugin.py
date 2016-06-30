@@ -56,7 +56,7 @@ class CableScan:
 
 class CableScanStatus(Screen):
 	skin = """
-<screen name="Cablescan1" position="center,center" size="580,130" title="Cable Scan">
+<screen position="center,center" size="580,130" title="Cable Scan">
 	<widget name="frontend" pixmap="skin_default/icons/scan-c.png" position="10,10" size="64,64" transparent="1" alphatest="on" />
 	<widget name="scan_state" position="86,15" zPosition="2" size="481,60" font="Regular;18" valign="bottom" />
 	<widget name="scan_progress" position="10,95" size="560,15" pixmap="skin_default/progress_big.png" borderWidth="2" borderColor="#cccccc" />
@@ -119,7 +119,7 @@ config.plugins.CableScan.auto = ConfigYesNo(default = False)
 
 class CableScanScreen(ConfigListScreen, Screen):
 	skin = """
-<screen name="Cablescan1" position="center,center" size="580,320" title="Cable Scan">
+<screen position="center,center" size="580,320" title="Cable Scan">
 	<widget name="config" position="10,10" size="560,220" scrollbarMode="showOnDemand" />
 	<widget name="introduction" position="10,240" size="560,70" font="Regular;20" halign="center" />
 </screen>"""
