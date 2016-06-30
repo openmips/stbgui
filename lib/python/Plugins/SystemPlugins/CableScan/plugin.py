@@ -1,7 +1,6 @@
 from Screens.Screen import Screen
 from Screens.MessageBox import MessageBox
 from Plugins.Plugin import PluginDescriptor
-
 from Components.Label import Label
 from Components.ActionMap import ActionMap
 from Components.NimManager import nimmanager
@@ -11,7 +10,6 @@ from Components.ConfigList import ConfigListScreen
 from Components.ProgressBar import ProgressBar
 from Components.Pixmap import Pixmap
 from Components.ServiceList import refreshServiceList
-
 from enigma import eCableScan, eDVBFrontendParametersCable, eTimer
 
 class CableScan:
@@ -28,7 +26,7 @@ class CableScan:
 		self.done = False
 
 	def execBegin(self):
-		self.text.setText(_('Scanning...'))
+		self.text.setText(_('Scanning...') + " " + _("please wait"))
 		self.progressbar.setValue(0)
 		self.scan = eCableScan(self.scanNetwork, self.scanFrequency, self.scanSymbolRate, self.scanModulation, self.keepNumbers, self.hdList)
 		self.scan.scanCompleted.get().append(self.scanCompleted)
@@ -46,7 +44,7 @@ class CableScan:
 	def scanCompleted(self, result):
 		self.done = True
 		if result < 0:
-			self.text.setText(_('Scanning failed!'))
+			self.text.setText( _('Scanning failed!') + "\n" + _("Please press OK to continue.")  )
 		else:
 			self.text.setText(ngettext("Scanning completed, %d channel found", "Scanning completed, %d channels found", result) % result)
 
@@ -58,11 +56,11 @@ class CableScan:
 
 class CableScanStatus(Screen):
 	skin = """
-	<screen position="150,115" size="420,180" title="Cable Scan">
-		<widget name="frontend" pixmap="skin_default/icons/scan-c.png" position="5,5" size="64,64" transparent="1" alphatest="on" />
-		<widget name="scan_state" position="10,120" zPosition="2" size="400,30" font="Regular;18" />
-		<widget name="scan_progress" position="10,155" size="400,15" pixmap="skin_default/progress_big.png" borderWidth="2" borderColor="#cccccc" />
-	</screen>"""
+<screen name="Cablescan1" position="center,center" size="580,130" title="Cable Scan">
+	<widget name="frontend" pixmap="skin_default/icons/scan-c.png" position="10,10" size="64,64" transparent="1" alphatest="on" />
+	<widget name="scan_state" position="86,15" zPosition="2" size="481,60" font="Regular;18" valign="bottom" />
+	<widget name="scan_progress" position="10,95" size="560,15" pixmap="skin_default/progress_big.png" borderWidth="2" borderColor="#cccccc" />
+</screen>"""
 
 	def __init__(self, session, scanTuner, scanNetwork, scanFrequency, scanSymbolRate, scanModulation, keepNumbers, hdList):
 		Screen.__init__(self, session)
@@ -74,18 +72,15 @@ class CableScanStatus(Screen):
 		self.scanModulation = scanModulation
 		self.keepNumbers = keepNumbers
 		self.hdList = hdList
-
 		self["frontend"] = Pixmap()
 		self["scan_progress"] = ProgressBar()
 		self["scan_state"] = Label(_("scan state"))
-
 		self.prevservice = self.session.nav.getCurrentlyPlayingServiceReference()
 		self.session.nav.stopService()
-
 		self["actions"] = ActionMap(["OkCancelActions"],
 			{
-				"ok": self.ok,
-				"cancel": self.cancel
+			"ok": self.ok,
+			"cancel": self.cancel
 			})
 
 		self.onFirstExecBegin.append(self.doServiceScan)
@@ -107,10 +102,10 @@ class CableScanStatus(Screen):
 		self.close()
 
 config.plugins.CableScan = ConfigSubsection()
-config.plugins.CableScan.keepnumbering = ConfigYesNo(default = False)
-config.plugins.CableScan.hdlist = ConfigYesNo(default = False)
-config.plugins.CableScan.frequency = ConfigInteger(default = 323, limits = (1, 999))
-config.plugins.CableScan.symbolrate = ConfigInteger(default = 6875, limits = (1, 9999))
+config.plugins.CableScan.keepnumbering = ConfigYesNo(default = True)
+config.plugins.CableScan.hdlist = ConfigYesNo(default = True)
+config.plugins.CableScan.frequency = ConfigInteger(default = 130, limits = (42, 870))
+config.plugins.CableScan.symbolrate = ConfigInteger(default = 6900, limits = (1000,7200))
 config.plugins.CableScan.networkid = ConfigInteger(default = 0, limits = (0, 99999))
 config.plugins.CableScan.modulation = ConfigSelection(
 	choices =
@@ -119,21 +114,19 @@ config.plugins.CableScan.modulation = ConfigSelection(
 		(str(eDVBFrontendParametersCable.Modulation_QAM64), "QAM64"),
 		(str(eDVBFrontendParametersCable.Modulation_QAM128), "QAM128"),
 		(str(eDVBFrontendParametersCable.Modulation_QAM256), "QAM256")],
-	default = str(eDVBFrontendParametersCable.Modulation_QAM64))
-config.plugins.CableScan.auto = ConfigYesNo(default = True)
+	default = str(eDVBFrontendParametersCable.Modulation_QAM256))
+config.plugins.CableScan.auto = ConfigYesNo(default = False)
 
 class CableScanScreen(ConfigListScreen, Screen):
 	skin = """
-	<screen position="100,115" size="520,290" title="Cable Scan">
-		<widget name="config" position="10,10" size="500,250" scrollbarMode="showOnDemand" />
-		<widget name="introduction" position="10,265" size="500,25" font="Regular;20" halign="center" />
-	</screen>"""
+<screen name="Cablescan1" position="center,center" size="580,320" title="Cable Scan">
+	<widget name="config" position="10,10" size="560,220" scrollbarMode="showOnDemand" />
+	<widget name="introduction" position="10,240" size="560,70" font="Regular;20" halign="center" />
+</screen>"""
 
 	def __init__(self, session):
 		Screen.__init__(self, session)
-
 		self.setTitle(_("Cable Scan"))
-
 		self["actions"] = ActionMap(["SetupActions", "MenuActions"],
 		{
 			"ok": self.keyGo,
@@ -146,27 +139,21 @@ class CableScanScreen(ConfigListScreen, Screen):
 		nim_list = []
 		for x in nimlist:
 			nim_list.append((nimmanager.nim_slots[x].slot, nimmanager.nim_slots[x].friendly_full_description))
-
 		self.scan_nims = ConfigSelection(choices = nim_list)
-
 		self.list = []
 		self.list.append(getConfigListEntry(_("Tuner"), self.scan_nims))
-
 		self.list.append(getConfigListEntry(_('Frequency'), config.plugins.CableScan.frequency))
 		self.list.append(getConfigListEntry(_('Symbol rate'), config.plugins.CableScan.symbolrate))
 		self.list.append(getConfigListEntry(_('Modulation'), config.plugins.CableScan.modulation))
 		self.list.append(getConfigListEntry(_('Network ID'), config.plugins.CableScan.networkid))
 		self.list.append(getConfigListEntry(_("Use official channel numbering"), config.plugins.CableScan.keepnumbering))
 		self.list.append(getConfigListEntry(_("HD list"), config.plugins.CableScan.hdlist))
-		self.list.append(getConfigListEntry(_("Enable auto cable scan"), config.plugins.CableScan.auto))
-
+		self.list.append(getConfigListEntry(_("automatically scan every day"), config.plugins.CableScan.auto))
 		ConfigListScreen.__init__(self, self.list)
 		self["config"].list = self.list
 		self["config"].l.setList(self.list)
-
 		self.finished_cb = None
-
-		self["introduction"] = Label(_("Configure your network settings, and press OK to start the scan"))
+		self["introduction"] = Label(_("Configure your Cable settings and press OK to start the scan"))
 
 	def keySave(self):
 		config.plugins.CableScan.save()
@@ -188,15 +175,12 @@ class CableScanAutoScreen(CableScanScreen):
 		print "[AutoCableScan] start"
 		Screen.__init__(self, session)
 		self.skinName="Standby"
-
 		self["actions"] = ActionMap( [ "StandbyActions" ],
 		{
 			"power": self.Power,
 			"discrete_on": self.Power
 		}, -1)
-
 		self.onClose.append(self.__onClose)
-
 		self.scan = eCableScan(config.plugins.CableScan.networkid.value, config.plugins.CableScan.frequency.value * 1000, config.plugins.CableScan.symbolrate.value * 1000, int(config.plugins.CableScan.modulation.value), config.plugins.CableScan.keepnumbering.value, config.plugins.CableScan.hdlist.value)
 		self.scan.scanCompleted.get().append(self.scanCompleted)
 		self.scan.start(int(nimlist[0]))
