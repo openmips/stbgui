@@ -886,10 +886,10 @@ msgstr ""
 msgid "Allow subtitles for hearing impaired"
 msgstr ""
 
-msgid "Allows the %s %s to read the stored EPG data regularly."
+msgid "Load the EPG data regularly"
 msgstr ""
 
-msgid "Allows the %s %s to store the EPG data regularly."
+msgid "Save the EPG data regularly"
 msgstr ""
 
 msgid "Allows you to enable the debug log. They contain very detailed information of everything the system does."
@@ -8030,10 +8030,10 @@ msgstr ""
 msgid "The %d min remaining before the end of the event."
 msgstr ""
 
-msgid "The %s %s reads the stored EPG data every (hours)."
+msgid "The stored EPG data will be read every (hours)"
 msgstr ""
 
-msgid "The %s %s stores the EPG data every (hours)."
+msgid "The EPG data will be stored every (hours)"
 msgstr ""
 
 msgid "The DVD standard doesn't support H.264 (HDTV) video streams."
