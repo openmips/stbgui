@@ -110,10 +110,10 @@ class TimerEntry(Screen, ConfigListScreen):
 				repeated = None
 				weekday = int(strftime("%u", localtime(self.timer.begin))) - 1
 				day[weekday] = 1
-			self.timerentry_justplay = config.recording.timerentry_justplay
-			#self.timerentry_justplay = ConfigSelection(choices = [
-			#	("zap", _("zap")), ("record", _("record")), ("zap+record", _("zap and record"))],
-			#	default = {0: "record", 1: "zap", 2: "zap+record"}[justplay + 2*always_zap])
+
+			self.timerentry_justplay = ConfigSelection(choices = [
+				("zap", _("zap")), ("record", _("record")), ("zap+record", _("zap and record"))],
+				default = {0: "record", 1: "zap", 2: "zap+record"}[justplay + 2*always_zap])
 			if SystemInfo["DeepstandbySupport"]:
 				shutdownString = _("go to deep standby")
 				choicelist = [("always", _("always")), ("from_standby", _("only from standby")), ("from_deep_standby", _("only from deep standby")), ("never", _("never"))]
