@@ -304,6 +304,7 @@ class Menu(Screen, ProtectedScreen):
 		menu_path = menu_path and menu_path + " > " + a or a
 		self["menu_path"] = StaticText(menu_path)
 		self["menu_path_compressed"] = StaticText(self.menu_path_compressed and self.menu_path_compressed + " >" or "")
+		self["thistory"] = StaticText(self.menu_path_compressed and self.menu_path_compressed + " >" or "") # compatibility vti skins
 
 	def keyNumberGlobal(self, number):
 		# print "menu keyNumber:", number
