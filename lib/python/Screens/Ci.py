@@ -17,6 +17,8 @@ import os
 
 MAX_NUM_CI = 4
 
+forceNotShowCiMessages = False
+
 def setCIBitrate(configElement):
 	if configElement.value == "no":
 		eDVBCI_UI.getInstance().setClockRate(configElement.slotid, eDVBCI_UI.rateNormal)
@@ -55,10 +57,11 @@ class MMIDialog(Screen):
 		self["bottom"] = Label("")
 		self["entries"] = ConfigList([ ])
 
-		self["actions"] = NumberActionMap(["SetupActions"],
+		self["actions"] = NumberActionMap(["SetupActions", "MenuActions"],
 			{
 				"ok": self.okbuttonClick,
 				"cancel": self.keyCancel,
+				"menu": self.forceExit,
 				#for PIN
 				"left": self.keyLeft,
 				"right": self.keyRight,
@@ -144,6 +147,14 @@ class MMIDialog(Screen):
 	def closeMmi(self):
 		self.timer.stop()
 		self.close(self.slotid)
+
+	def forceExit(self):
+		self.timer.stop()
+		if self.tag == "WAIT":
+			self.handler.stopMMI(self.slotid)
+			global forceNotShowCiMessages
+			forceNotShowCiMessages = True
+			self.close(self.slotid)
 
 	def keyCancel(self):
 		self.timer.stop()
@@ -326,7 +337,7 @@ class CiMessageHandler:
 							elif ci_tag == 'CLOSE' and self.auto_close:
 								show_ui = False
 								self.auto_close = False
-					if show_ui:
+					if show_ui and not forceNotShowCiMessages:
 						self.dlgs[slot] = self.session.openWithCallback(self.dlgClosed, MMIDialog, slot, 3, screen_data = screen_data)
 
 	def dlgClosed(self, slot):
@@ -371,6 +382,11 @@ class CiSelection(Screen):
 		self["entries"] = menuList
 		self["entries"].onSelectionChanged.append(self.selectionChanged)
 		self["text"] = Label(_("Slot %d")%(1))
+		self.onLayoutFinish.append(self.layoutFinished)
+
+	def layoutFinished(self):
+		global forceNotShowCiMessages
+		forceNotShowCiMessages = False
 
 	def selectionChanged(self):
 		cur_idx = self["entries"].getCurrentIndex()
