@@ -108,9 +108,9 @@ class Setup(ConfigListScreen, Screen):
 			}, -2)
 
 		self.changedEntry()
-		self.onLayoutFinish.append(self.layoutFinished)
+		self.setTitle(_(self.setup_title))
 		from Screens.Menu import setmenu_path
-		setmenu_path(self, self.setup_title)
+		setmenu_path(self, _(self.setup_title))
 
 	def createSetup(self):
 		list = []
@@ -132,9 +132,6 @@ class Setup(ConfigListScreen, Screen):
 		if newIdx is None:
 			newIdx = 0
 		self["config"].setCurrentIndex(newIdx)
-
-	def layoutFinished(self):
-		self.setTitle(_(self.setup_title))
 
 	# for summary:
 	def changedEntry(self):

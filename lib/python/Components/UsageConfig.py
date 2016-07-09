@@ -94,6 +94,10 @@ def InitUsageConfig():
 		("a_z", _("alphabetical")),
 		("default", _("Default")),
 		("user", _("user defined")),])
+	config.usage.menu_path = ConfigSelection(default = "off", choices = [
+		("off", _("Disabled")),
+		("small", _("Small")),
+		("large", _("Large")),])
 	config.usage.sort_settings = ConfigYesNo(default = False)
 	config.usage.sort_pluginlist = ConfigYesNo(default = True)
 	config.usage.enable_tt_caching = ConfigYesNo(default = True)
