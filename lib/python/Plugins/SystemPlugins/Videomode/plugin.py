@@ -16,6 +16,8 @@ class VideoSetup(Screen, ConfigListScreen):
 		# for the skin: first try VideoSetup, then Setup, this allows individual skinning
 		self.skinName = ["VideoSetup", "Setup" ]
 		self.setup_title = _("Video settings")
+		from Screens.Menu import setmenu_path
+		setmenu_path(self, self.setup_title)
 		self.hw = hw
 		self.onChangedEntry = [ ]
 
@@ -167,6 +169,8 @@ class AudioSetup(Screen, ConfigListScreen):
 		# for the skin: first try VideoSetup, then Setup, this allows individual skinning
 		self.skinName = ["AudioSetup", "Setup" ]
 		self.setup_title = _("Audio settings")
+		from Screens.Menu import setmenu_path
+		setmenu_path(self, self.setup_title)
 		self.hw = hw
 		self.onChangedEntry = [ ]
 
