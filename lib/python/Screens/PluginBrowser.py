@@ -135,6 +135,8 @@ class PluginBrowser(Screen, ProtectedScreen):
 		self.onShown.append(self.updateList)
 		self.onChangedEntry = []
 		self["list"].onSelectionChanged.append(self.selectionChanged)
+		from Screens.Menu import setmenu_path
+		setmenu_path(self, _("Plugin browser"))
 		self.onLayoutFinish.append(self.saveListsize)
 		if config.pluginfilter.userfeed.getValue() != "http://":
 				if not os.path.exists("/etc/opkg/user-feed.conf"):
@@ -283,7 +285,9 @@ class PluginDownloadBrowser(Screen):
 		self.container.appClosed.append(self.runFinished)
 		self.container.dataAvail.append(self.dataAvail)
 		self.onLayoutFinish.append(self.startRun)
-		self.onShown.append(self.setWindowTitle)
+
+		from Screens.Menu import setmenu_path
+		setmenu_path(self, self.type == self.DOWNLOAD and _("Downloadable new plugins") or _("Remove plugins"))
 
 		self.list = []
 		self["list"] = PluginList(self.list)
@@ -297,12 +301,7 @@ class PluginDownloadBrowser(Screen):
 		self.install_settings_name = ''
 		self.remove_settings_name = ''
 
-		if self.type == self.DOWNLOAD:
-			self["text"] = Label(_("Downloading plugin information. Please wait..."))
-		if self.type == self.REMOVE:
-			self["text"] = Label(_("Getting plugin information. Please wait..."))
-		elif self.type == self.TOOGLE:
-			self["text"] = Label(_("Getting plugin information. Please wait..."))
+		self["text"] = Label(self.type == self.DOWNLOAD and _("Downloading plugin information. Please wait...") or _("Getting plugin information. Please wait..."))
 
 		self.run = 0
 		self.remainingdata = ""
@@ -491,6 +490,7 @@ class PluginDownloadBrowser(Screen):
 	def runSettingsInstall(self):
 		self.doInstall(self.installFinished, self.install_settings_name)
 
+<<<<<<< HEAD
 	def setWindowTitle(self):
 		if self.type == self.DOWNLOAD:
 			self.setTitle(_("Install plugins"))
@@ -500,6 +500,8 @@ class PluginDownloadBrowser(Screen):
 			self.setTitle(_("Hold plugins"))
 
 
+=======
+>>>>>>> 49a16c5... Modify Plugin Browser for menu_path stuff
 	def startIpkgListInstalled(self, pkgname = PLUGIN_PREFIX + '*'):
 		self.container.execute(self.ipkg + Ipkg.opkgExtraDestinations() + " list_installed")
 
