@@ -490,18 +490,6 @@ class PluginDownloadBrowser(Screen):
 	def runSettingsInstall(self):
 		self.doInstall(self.installFinished, self.install_settings_name)
 
-<<<<<<< HEAD
-	def setWindowTitle(self):
-		if self.type == self.DOWNLOAD:
-			self.setTitle(_("Install plugins"))
-		elif self.type == self.REMOVE:
-			self.setTitle(_("Remove plugins"))
-		elif self.type == self.TOOGLE:
-			self.setTitle(_("Hold plugins"))
-
-
-=======
->>>>>>> 49a16c5... Modify Plugin Browser for menu_path stuff
 	def startIpkgListInstalled(self, pkgname = PLUGIN_PREFIX + '*'):
 		self.container.execute(self.ipkg + Ipkg.opkgExtraDestinations() + " list_installed")
 
