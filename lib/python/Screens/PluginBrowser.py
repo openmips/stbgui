@@ -285,7 +285,9 @@ class PluginDownloadBrowser(Screen):
 		self.container.appClosed.append(self.runFinished)
 		self.container.dataAvail.append(self.dataAvail)
 		self.onLayoutFinish.append(self.startRun)
-		self.onShown.append(self.setWindowTitle)
+
+		from Screens.Menu import setmenu_path
+		setmenu_path(self, self.type == self.DOWNLOAD and _("Downloadable new plugins") or _("Remove plugins"))
 
 		self.list = []
 		self["list"] = PluginList(self.list)
@@ -299,12 +301,7 @@ class PluginDownloadBrowser(Screen):
 		self.install_settings_name = ''
 		self.remove_settings_name = ''
 
-		if self.type == self.DOWNLOAD:
-			self["text"] = Label(_("Downloading plugin information. Please wait..."))
-		if self.type == self.REMOVE:
-			self["text"] = Label(_("Getting plugin information. Please wait..."))
-		elif self.type == self.TOOGLE:
-			self["text"] = Label(_("Getting plugin information. Please wait..."))
+		self["text"] = Label(self.type == self.DOWNLOAD and _("Downloading plugin information. Please wait...") or _("Getting plugin information. Please wait..."))
 
 		self.run = 0
 		self.remainingdata = ""
@@ -492,16 +489,6 @@ class PluginDownloadBrowser(Screen):
 
 	def runSettingsInstall(self):
 		self.doInstall(self.installFinished, self.install_settings_name)
-
-	def setWindowTitle(self):
-		from Screens.Menu import setmenu_path
-		
-		if self.type == self.DOWNLOAD:
-			setmenu_path(self, _("Install plugins"))
-		elif self.type == self.REMOVE:
-			setmenu_path(self, _("Remove plugins"))
-		elif self.type == self.TOOGLE:
-			setmenu_path(self, _("Hold plugins"))
 
 	def startIpkgListInstalled(self, pkgname = PLUGIN_PREFIX + '*'):
 		self.container.execute(self.ipkg + Ipkg.opkgExtraDestinations() + " list_installed")
