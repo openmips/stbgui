@@ -109,8 +109,6 @@ class Setup(ConfigListScreen, Screen):
 
 		self.changedEntry()
 		self.setTitle(_(self.setup_title))
-		from Screens.Menu import setmenu_path
-		setmenu_path(self, _(self.setup_title))
 
 	def createSetup(self):
 		list = []
