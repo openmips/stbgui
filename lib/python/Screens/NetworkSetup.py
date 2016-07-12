@@ -714,6 +714,7 @@ class AdapterSetup(Screen, ConfigListScreen, HelpableScreen):
 		self.newConfig()
 
 	def keySave(self):
+		self.hideInputHelp()
 		if iNetwork.getAdapterAttribute(self.iface, 'dhcp') != self.dhcpConfigEntry.value or self["config"].isChanged() or (SystemInfo["WakeOnLAN"] and self.wolstartvalue != config.network.wol.value):
 			self.session.openWithCallback(self.keySaveConfirm, MessageBox, (_("Are you sure you want to activate this network configuration?\n\n") + self.oktext ) )
 		else:
