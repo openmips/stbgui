@@ -190,6 +190,10 @@ class AudioSetup(Screen, ConfigListScreen):
 		self["description"] = Label("")
 
 		self.createSetup()
+		self.onLayoutFinish.append(self.layoutFinished)
+
+	def layoutFinished(self):
+		self.setTitle(self.setup_title)
 
 	def startHotplug(self):
 		self.hw.on_hotplug.append(self.createSetup)
