@@ -10227,6 +10227,9 @@ msgstr "Höhe"
 msgid "help..."
 msgstr "Hilfe..."
 
+msgid "Hide"
+msgstr "Ausblenden"
+
 msgid "horizontal"
 msgstr "horizontal"
 
@@ -10674,6 +10677,9 @@ msgstr "Als Anschalt-Kanal setzen"
 
 msgid "settings"
 msgstr "Einstellungen"
+
+msgid "Show"
+msgstr "Anzeigen"
 
 msgid "show DVD main menu"
 msgstr "Zeige das DVD Hauptmenü"
