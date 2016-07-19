@@ -14,6 +14,7 @@ class SleepTimerEdit(ConfigListScreen, Screen):
 		Screen.__init__(self, session)
 		self.skinName = ["SleepTimerSetup", "Setup"]
 		self.setup_title = _("SleepTimer Configuration")
+		self.setTitle(self.setup_title)
 		self["key_red"] = StaticText(_("Cancel"))
 		self["key_green"] = StaticText(_("Save"))
 		self["description"] = Label("")
@@ -27,11 +28,6 @@ class SleepTimerEdit(ConfigListScreen, Screen):
 			"cancel": self.cancel,
 			"ok": self.ok,
 		}, -2)
-
-		self.onLayoutFinish.append(self.layoutFinished)
-
-	def layoutFinished(self):
-		self.setTitle(self.setup_title)
 
 	def createSetup(self):
 		self.list = []
