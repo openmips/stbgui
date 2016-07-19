@@ -14,7 +14,11 @@ struct CFile
 	{
 #ifdef DEBUG
 		if (!handle)
-			eDebug("[CFile] information %s [%m]",filename);
+			{
+				std::string ext=str(filename).substr(str(filename).find_last_of('.')+1);
+				if((ext != "meta") && (ext != "epl"))
+					eDebug("[CFile] error %s [%m]",filename.c_str());
+			}
 #endif
 	}
 	CFile(const std::string &filename, const char *mode)
@@ -22,7 +26,11 @@ struct CFile
 	{
 #ifdef DEBUG
 		if (!handle)
-			eDebug("error %s [%m]",filename.c_str());
+			{
+				std::string ext=filename.substr(filename.find_last_of('.')+1);
+				if((ext != "meta") && (ext != "epl"))
+					eDebug("[CFile] error %s [%m]",filename.c_str());
+			}
 #endif
 	}
 	~CFile()
