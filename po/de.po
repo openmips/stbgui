@@ -6797,6 +6797,9 @@ msgstr "PIN setzen"
 msgid "Set all hotkey to default?"
 msgstr "Alle Tastenbelegungen auf Voreinstellungen zurücksetzen?"
 
+msgid "Set blocktime by weekday"
+msgstr "Zeitbereich nach Wochentag unterscheiden"
+
 msgid "Set default"
 msgstr "Als Standard setzen"
 
