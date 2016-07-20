@@ -669,7 +669,8 @@ class ConfigSequence(ConfigElement):
 			return "text", value
 
 	def tostring(self, val):
-		return self.seperator.join([self.saveSingle(x) for x in val])
+		if val is not None:
+			return self.seperator.join([self.saveSingle(x) for x in val])
 
 	def saveSingle(self, v):
 		return str(v)

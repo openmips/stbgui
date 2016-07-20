@@ -86,7 +86,7 @@ class PluginBrowserSummary(Screen):
 class PluginBrowser(Screen, ProtectedScreen):
 	def __init__(self, session):
 		Screen.__init__(self, session)
-		Screen.setTitle(self, _("Plugin Browser"))
+		self.setTitle(_("Plugin Browser"))
 		ProtectedScreen.__init__(self)
 
 		self.firsttime = True
@@ -284,7 +284,6 @@ class PluginDownloadBrowser(Screen):
 		self.container.dataAvail.append(self.dataAvail)
 		self.onLayoutFinish.append(self.startRun)
 		self.onShown.append(self.setWindowTitle)
-
 		self.list = []
 		self["list"] = PluginList(self.list)
 		self.pluginlist = []
@@ -498,7 +497,6 @@ class PluginDownloadBrowser(Screen):
 			self.setTitle(_("Remove plugins"))
 		elif self.type == self.TOOGLE:
 			self.setTitle(_("Hold plugins"))
-
 
 	def startIpkgListInstalled(self, pkgname = PLUGIN_PREFIX + '*'):
 		self.container.execute(self.ipkg + Ipkg.opkgExtraDestinations() + " list_installed")

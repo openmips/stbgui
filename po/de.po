@@ -6797,6 +6797,9 @@ msgstr "PIN setzen"
 msgid "Set all hotkey to default?"
 msgstr "Alle Tastenbelegungen auf Voreinstellungen zurücksetzen?"
 
+msgid "Set blocktime by weekday"
+msgstr "Zeitbereich nach Wochentag unterscheiden"
+
 msgid "Set default"
 msgstr "Als Standard setzen"
 
@@ -10227,6 +10230,9 @@ msgstr "Höhe"
 msgid "help..."
 msgstr "Hilfe..."
 
+msgid "Hide"
+msgstr "Ausblenden"
+
 msgid "horizontal"
 msgstr "horizontal"
 
@@ -10674,6 +10680,9 @@ msgstr "Als Anschalt-Kanal setzen"
 
 msgid "settings"
 msgstr "Einstellungen"
+
+msgid "Show"
+msgstr "Anzeigen"
 
 msgid "show DVD main menu"
 msgstr "Zeige das DVD Hauptmenü"

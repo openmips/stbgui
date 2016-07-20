@@ -138,7 +138,8 @@ class CableScanScreen(ConfigListScreen, Screen):
 		nimlist = nimmanager.getNimListOfType("DVB-C")
 		nim_list = []
 		for x in nimlist:
-			nim_list.append((nimmanager.nim_slots[x].slot, nimmanager.nim_slots[x].friendly_full_description))
+			if config.Nims[nimmanager.nim_slots[x].slot].configMode.value != "nothing":
+				nim_list.append((nimmanager.nim_slots[x].slot, nimmanager.nim_slots[x].friendly_full_description))
 		self.scan_nims = ConfigSelection(choices = nim_list)
 		self.list = []
 		self.list.append(getConfigListEntry(_("Tuner"), self.scan_nims))

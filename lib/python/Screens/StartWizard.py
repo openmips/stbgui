@@ -13,7 +13,6 @@ from Components.Pixmap import Pixmap, MovingPixmap, MultiPixmap
 from Components.config import config, ConfigBoolean, configfile, ConfigSubsection
 from Components.SystemInfo import SystemInfo
 from LanguageSelection import LanguageWizard
-from enigma import getDesktop
 
 config.misc.firstrun = ConfigBoolean(default = True)
 config.misc.languageselected = ConfigBoolean(default = True)
@@ -42,7 +41,6 @@ class StartWizard(WizardLanguage, Rc):
 		config.misc.firstrun.value = 0
 		config.misc.firstrun.save()
 		configfile.save()
-
 
 if OverscanWizard:
 	wizardManager.registerWizard(OverscanWizard, config.misc.do_overscanwizard.value, priority = 10)
