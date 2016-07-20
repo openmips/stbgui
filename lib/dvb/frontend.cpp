@@ -488,7 +488,7 @@ eDVBFrontend::eDVBFrontend(const char *devicenodename, int fe, int &ok, bool sim
 
 	m_delsys.clear();
 	m_delsys_whitelist.clear();
-
+	m_data[FREQ_OFFSET] = 0;
 	m_idleInputpower[0]=m_idleInputpower[1]=0;
 
 	snprintf(filename, sizeof(filename), "/proc/stb/frontend/%d/fbc_id", m_slotid);
@@ -1264,7 +1264,7 @@ int eDVBFrontend::readFrontendData(int type)
 			{
 				return 0;
 			}
-			return p.u.data + m_data[FREQ_OFFSET];
+			return type == feSatellite ? p.u.data + m_data[FREQ_OFFSET] : p.u.data;
 		}
 	}
 	return 0;
