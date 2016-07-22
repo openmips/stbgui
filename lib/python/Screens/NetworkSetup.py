@@ -36,7 +36,6 @@ class NetworkAdapterSelection(Screen,HelpableScreen):
 		self.edittext = _("Press OK to edit the settings.")
 		self.defaulttext = _("Press yellow to set this interface as default interface.")
 		self.restartLanRef = None
-
 		self["key_red"] = StaticText(_("Close"))
 		self["key_green"] = StaticText(_("Select"))
 		self["key_yellow"] = StaticText("")
@@ -587,7 +586,7 @@ class AdapterSetup(Screen, ConfigListScreen, HelpableScreen):
 		else:
 			self["Gateway"].setText("")
 			self["Gatewaytext"].setText("")
-		self["Adapter"].setText(iNetwork.getFriendlyAdapterName(self.iface))
+		self["Adapter"].setText(iNetwork.getFriendlyAdapterDescription(self.iface))
 
 	def createConfig(self):
 		self.InterfaceEntry = None
@@ -715,14 +714,36 @@ class AdapterSetup(Screen, ConfigListScreen, HelpableScreen):
 
 	def keySave(self):
 		self.hideInputHelp()
-		if iNetwork.getAdapterAttribute(self.iface, 'dhcp') != self.dhcpConfigEntry.value or self["config"].isChanged() or (SystemInfo["WakeOnLAN"] and self.wolstartvalue != config.network.wol.value):
-			self.session.openWithCallback(self.keySaveConfirm, MessageBox, (_("Are you sure you want to activate this network configuration?\n\n") + self.oktext ) )
-		else:
-			if self.finished_cb:
-				self.finished_cb()
+		self.oldInterfaceState = iNetwork.getAdapterAttribute(self.iface, "up")
+		self.oldDHCPState = iNetwork.getAdapterAttribute(self.iface, 'dhcp')
+		if self["config"].isChanged() or self.oldInterfaceState != self.activateInterfaceEntry.value or self.oldDHCPState != self.dhcpConfigEntry.value or SystemInfo["WakeOnLAN"] and self.wolstartvalue != config.network.wol.value:
+			self.interface = str(iNetwork.getFriendlyAdapterDescription(self.iface))[0:30]
+			dhcpinfo = ""
+			if self.dhcpConfigEntry.value == False:
+				dhcpstat = _("off")
 			else:
-				self.close('cancel')
-		config.network.save()
+				dhcpstat = _("on")
+			if self.activateInterfaceEntry.value == False:
+				cardvalues = _("off")
+				dhcpinfo = ""
+			else:
+				cardvalues = _("on")
+				dhcpinfo = "DHCP: \t" +  dhcpstat
+			netinfo = _("Adapter") + ":\t" + self.interface + "\n" + _("Network") + ": \t" + cardvalues + "\n" + dhcpinfo
+			keySavego = self.session.openWithCallback(self.keySavego, MessageBox, ( _("Are you sure you want to activate this network configuration?\n\n")  + netinfo))
+			keySavego.setTitle(self.interface + ": " + cardvalues + " ?")
+		else:
+			self.session.open(MessageBox, _("discovered no change"), type = MessageBox.TYPE_INFO,timeout = 5 )
+			return
+
+	def keySavego(self, answer):
+			if answer is True:
+				config.network.save()
+				self.keySaveConfirm(ret = True)
+				if self.finished_cb:
+					self.finished_cb()
+			else:
+				return
 
 	def keySaveConfirm(self, ret = False):
 		if (ret == True):
@@ -1034,7 +1055,7 @@ class AdapterSetupConfiguration(Screen, HelpableScreen):
 		self.mainmenu = self.genMainMenu()
 		self["menulist"].l.setList(self.mainmenu)
 		self["IFtext"].setText(_("Network:"))
-		self["IF"].setText(iNetwork.getFriendlyAdapterName(self.iface))
+		self["IF"].setText(iNetwork.getFriendlyAdapterDescription(self.iface))
 		self["Statustext"].setText(_("Link:"))
 
 		if iNetwork.isWirelessInterface(self.iface):
@@ -1354,7 +1375,7 @@ class NetworkAdapterTest(Screen):
 		self["key_yellow"].setText(_("Stop test"))
 
 	def doStep2(self):
-		self["Adapter"].setText(iNetwork.getFriendlyAdapterName(self.iface))
+		self["Adapter"].setText(iNetwork.getFriendlyAdapterDescription(self.iface))
 		self["Adapter"].setForegroundColorNum(2)
 		self["Adaptertext"].setForegroundColorNum(1)
 		self["AdapterInfo_Text"].setForegroundColorNum(1)
