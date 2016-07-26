@@ -36,7 +36,7 @@ from Screens.RdsDisplay import RassInteractive
 from ServiceReference import ServiceReference
 from Tools.BoundFunction import boundFunction
 from Tools import Notifications
-from Tools.Alternatives import CompareWithAlternatives
+from Tools.Alternatives import CompareWithAlternatives, GetWithAlternative
 from Tools.Directories import fileExists
 from Plugins.Plugin import PluginDescriptor
 from Components.PluginComponent import plugins
@@ -153,7 +153,7 @@ class ChannelContextMenu(Screen):
 		from Components.ParentalControl import parentalControl
 		self.parentalControl = parentalControl
 		self.parentalControlEnabled = config.ParentalControl.servicepin[0].value and config.ParentalControl.servicepinactive.value
-		if not (current_sel_path or current_sel_flags & (eServiceReference.isDirectory|eServiceReference.isMarker)):
+		if not (current_sel_path or current_sel_flags & (eServiceReference.isDirectory|eServiceReference.isMarker)) or current_sel_flags & eServiceReference.isGroup:
 			append_when_current_valid(current, menu, (_("show transponder info"), self.showServiceInformations), level=2)
 		if csel.bouquet_mark_edit == OFF and not csel.entry_marked:
 			if not inBouquetRootList:
@@ -288,7 +288,8 @@ class ChannelContextMenu(Screen):
 		self["menu"] = ChoiceList(menu)
 
 	def set3DMode(self, value):
-		if config.plugins.OSD3DSetup.mode.value == "auto" and self.session.nav.currentlyPlayingServiceReference == self.csel.getCurrentSelection():
+		playingref = self.session.nav.getCurrentlyPlayingServiceReference()
+		if config.plugins.OSD3DSetup.mode.value == "auto" and (playingref and playingref == self.csel.getCurrentSelection()):
 			from Plugins.SystemPlugins.OSD3DSetup.plugin import applySettings
 			applySettings(value and "sidebyside" or config.plugins.OSD3DSetup.mode.value)
 
@@ -411,7 +412,15 @@ class ChannelContextMenu(Screen):
 		self.session.openWithCallback(self.close, MessageBox, _("The servicelist is reloaded."), MessageBox.TYPE_INFO, timeout = 5)
 
 	def showServiceInformations(self):
-		self.session.open( ServiceInfo, self.csel.getCurrentSelection() )
+		current = self.csel.getCurrentSelection()
+		if current.flags & eServiceReference.isGroup:
+			playingref = self.session.nav.getCurrentlyPlayingServiceOrGroup()
+			if playingref and playingref == current:
+				current = self.session.nav.getCurrentlyPlayingServiceReference()
+			else:
+				current = eServiceReference(GetWithAlternative(current.toString()))
+		self.session.open(ServiceInfo, current)
+		self.close()
 
 	def setStartupService(self):
 		self.session.openWithCallback(self.setStartupServiceCallback, MessageBox, _("Set startup service"), list = [(_("Only on startup"), "startup"), (_("Also on standby"), "standby")])
@@ -651,7 +660,6 @@ class ChannelSelectionEPG(InfoBarHotkey):
 		self["ChannelSelectEPGActions"] = hotkeyActionMap(["ChannelSelectEPGActions"], dict((x[1], self.hotkeyGlobal) for x in self.hotkeys))
 		self.eventViewEPG = self.start_bouquet = self.epg_bouquet = None
 		self.currentSavedPath = []
-		self.onExecBegin.append(self.clearLongkeyPressed)
 
 	def getKeyFunctions(self, key):
 		selection = eval("config.misc.hotkey." + key + ".value.split(',')")
