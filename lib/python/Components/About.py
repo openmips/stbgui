@@ -75,6 +75,8 @@ def getCPUString():
 						system = splitted[1].split(' ')[0]
 					elif splitted[0].startswith("Processor"):
 						system = splitted[1].split(' ')[0]
+					elif splitted[0].startswith("model name"):
+						system = splitted[1].split(' ')[0]
 			file.close()
 			return system
 		except IOError:
