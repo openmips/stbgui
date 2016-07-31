@@ -295,20 +295,20 @@ class TryQuitMainloop(MessageBox):
 		self.close(True)
 
 	def getRecordEvent(self, recservice, event):
-		if event == iRecordableService.evEnd and config.timeshift.isRecording.value:
-			return
-		else:
-			if event == iRecordableService.evEnd:
-				recordings = self.session.nav.getRecordings()
-				if not recordings: # no more recordings exist
-					rec_time = self.session.nav.RecordTimer.getNextRecordingTime()
-					if rec_time > 0 and (rec_time - time()) < 360:
-						self.initTimeout(360) # wait for next starting timer
-						self.startTimer()
-					else:
-						self.close(True) # immediate shutdown
-			elif event == iRecordableService.evStart:
-				self.stopTimer()
+		#if event == iRecordableService.evEnd and checkTimeshiftRunning:
+		#	return
+		#else:
+		if event == iRecordableService.evEnd:
+			recordings = self.session.nav.getRecordings()
+			if not recordings: # no more recordings exist
+				rec_time = self.session.nav.RecordTimer.getNextRecordingTime()
+				if rec_time > 0 and (rec_time - time()) < 360:
+					self.initTimeout(360) # wait for next starting timer
+					self.startTimer()
+				else:
+					self.close(True) # immediate shutdown
+		elif event == iRecordableService.evStart:
+			self.stopTimer()
 
 	def close(self, value):
 		if self.connected:
