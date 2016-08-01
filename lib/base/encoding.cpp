@@ -15,46 +15,29 @@ inline char toupper(char c)
 
 int mapEncoding(char *s_table)
 {
-	int encoding = -1;
-	int no_table_id_flag=0;
-	char *m_table = strdup(s_table);
-	char *p = m_table;
-	if (p == NULL)
-		return -1;
+	int encoding = 0;
 
-	//if encoding string be surrounded by '<' and '>', it indicates that the string has no encoding
-	//   id char in the first byte, and the encoding table value will be large than 0x80.
-	if (p[0] == '<' && p[strlen(p) - 1] == '>'){
-		no_table_id_flag = 0x80;
-		p[strlen(p) - 1 ] = '\0';
-		p++;
-	}
 	// table name will be in uppercase!
-	if (sscanf(p, "ISO8859-%d", &encoding) == 1)
-		;	//do nothing
-	else if (sscanf(p, "ISO%d", &encoding) == 1 and encoding == 6937)
-		encoding = 0;
-	else if (strcmp(p, "GB2312") == 0 || strcmp(p, "GBK") == 0
-		|| strcmp(p, "GB18030") == 0 || strcmp(p, "CP936") == 0)
-		encoding = GB18030_ENCODING;
-	else if (strcmp(p, "BIG5") == 0 || strcmp(p, "CP950") == 0)
-		encoding = BIG5_ENCODING;
-	else if (strcmp(p, "UTF8") == 0 || strcmp(p, "UTF-8") == 0)
-		encoding = UTF8_ENCODING;
-	else if (strcmp(p, "UNICODE") == 0)
-		encoding = UNICODE_ENCODING;
-	else if (strcmp(p, "UTF16BE") == 0)
-		encoding = UTF16BE_ENCODING;
-	else if (strcmp(p, "UTF16LE") == 0)
-		encoding = UTF16LE_ENCODING;
+	if (sscanf(s_table, "ISO8859-%d", &encoding) == 1)
+		return encoding;
+	if (sscanf(s_table, "ISO%d", &encoding) == 1 and encoding == 6937)
+		return 0;
+	if (strcmp(s_table, "GB2312") == 0 || strcmp(s_table, "GBK") == 0
+		|| strcmp(s_table, "GB18030") == 0 || strcmp(s_table, "CP936") == 0)
+		return GB18030_ENCODING;
+	if (strcmp(s_table, "BIG5") == 0 || strcmp(s_table, "CP950") == 0)
+		return BIG5_ENCODING;
+	if (strcmp(s_table, "UTF8") == 0 || strcmp(s_table, "UTF-8") == 0)
+		return UTF8_ENCODING;
+	if (strcmp(s_table, "UNICODE") == 0)
+		return UNICODE_ENCODING;
+	if (strcmp(s_table, "UTF16BE") == 0)
+		return UTF16BE_ENCODING;
+	if (strcmp(s_table, "UTF16LE") == 0)
+		return UTF16LE_ENCODING;
 	else
-		encoding = -1;
-
-	if (encoding >= 0)
-		encoding = no_table_id_flag | encoding;
-
-	free(m_table);
-	return encoding;
+		eDebug("[eDVBTextEncodingHandler] unsupported table in encoding.conf: %s. ", s_table);
+	return -1;
 }
 
 eDVBTextEncodingHandler::eDVBTextEncodingHandler()
@@ -87,7 +70,7 @@ eDVBTextEncodingHandler::eDVBTextEncodingHandler()
 				continue;       // skip 'empty' lines
 			line[j] = 0;
 
-			int tsid, onid, encoding=-1;
+			int tsid, onid, encoding;
 			if (sscanf(line, "0x%x 0x%x %s", &tsid, &onid, s_table) == 3
 				  || sscanf(line, "%d %d %s", &tsid, &onid, s_table) == 3 ) {
 				encoding = mapEncoding(s_table);
@@ -108,7 +91,7 @@ eDVBTextEncodingHandler::eDVBTextEncodingHandler()
 				else
 					m_CountryCodeDefaultMapping[countrycode] = encoding;
 			}
-			if (encoding < 0)
+			else
 				eDebug("[eDVBTextEncodingHandler] encoding.conf: couldn't parse %s", line);
 		}
 		free(line);

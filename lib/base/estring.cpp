@@ -440,11 +440,6 @@ std::string convertDVBUTF8(const unsigned char *data, int len, int table, int ts
 	int i = 0;
 	std::string ustr = "", utfid = "\x15";
 	std::string output = "";
-	bool no_tableid = false;
-	if (table >= 0  && table & 0x80){
-		no_tableid = true;
-		table &= 0x7f;
-	}
 
 	//eDebug("[convertDVBUTF8] table=0x%02X tsidonid=0x%08X data[0]=0x%02X len=%d data=%s", table, tsidonid, data[0], len, std::string((char*)data, len).c_str());
 
@@ -452,9 +447,8 @@ std::string convertDVBUTF8(const unsigned char *data, int len, int table, int ts
 		encodingHandler.getTransponderDefaultMapping(tsidonid, table);
 
 	// first byte in strings may override general encoding table.
-	if (!no_tableid)
-	   switch(data[0])
-	   {
+	switch(data[0])
+	{
 		case ISO8859_5 ... ISO8859_15:
 			// For Thai providers, encoding char is present but faulty.
 			if (table != 11)
@@ -524,7 +518,7 @@ std::string convertDVBUTF8(const unsigned char *data, int len, int table, int ts
 			eDebug("[convertDVBUTF8] reserved %d", data[0]);
 			++i;
 			break;
-	   }
+	}
 
 	bool useTwoCharMapping = !table || (tsidonid && encodingHandler.getTransponderUseTwoCharMapping(tsidonid));
 
@@ -554,7 +548,7 @@ std::string convertDVBUTF8(const unsigned char *data, int len, int table, int ts
 			break;
 		default:
 			char res[2048];
-			size_t t = 0;
+			int t = 0;
 			while (i < len && t < sizeof(res))
 			{
 				unsigned long code = 0;
