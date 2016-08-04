@@ -68,5 +68,5 @@ SystemInfo["HasFullHDSkinSupport"] = getBoxType() not in ('gb800solo', 'gb800se'
 SystemInfo["HasForceLNBOn"] = fileCheck("/proc/stb/frontend/fbc/force_lnbon")
 SystemInfo["HasForceToneburst"] = fileCheck("/proc/stb/frontend/fbc/force_toneburst")
 SystemInfo["HasBypassEdidChecking"] = fileCheck("/proc/stb/hdmi/bypass_edid_checking")
-SystemInfo["HaveColorspace"] = fileCheck("/proc/stb/video/hdmi_colorspace")
-SystemInfo["HaveColorspaceSimple"] = SystemInfo["HaveColorspace"] and getBoxType() in ('vusolo4k')
+SystemInfo["HasColorspace"] = fileCheck("/proc/stb/video/hdmi_colorspace")
+SystemInfo["HasColorspaceSimple"] = SystemInfo["HasColorspace"] and getBoxType() in ('vusolo4k')
