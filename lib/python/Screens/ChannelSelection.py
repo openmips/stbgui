@@ -182,9 +182,9 @@ class ChannelContextMenu(Screen):
 						else:
 							append_when_current_valid(current, menu, (_("Mark service as dedicated 3D service"), self.addDedicated3DFlag), level=0)
 					if eDVBDB.getInstance().getFlag(eServiceReference(current.toString())) & FLAG_HIDE_VBI:
-						append_when_current_valid(current, menu, (_("Remove hide VBI line for this service"), self.removeHideVBIFlag), level=0)
+						append_when_current_valid(current, menu, (_("Unmark service to unhide VBI line"), self.removeHideVBIFlag), level=0)
 					else:
-						append_when_current_valid(current, menu, (_("Hide VBI line for this service"), self.addHideVBIFlag), level=0)
+						append_when_current_valid(current, menu, (_("Mark service to hide VBI line"), self.addHideVBIFlag), level=0)
 					if haveBouquets:
 						bouquets = self.csel.getBouquetList()
 						if bouquets is None:
