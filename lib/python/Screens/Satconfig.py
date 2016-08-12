@@ -546,7 +546,8 @@ class NimSetup(Screen, ConfigListScreen, ServiceStopScreen):
 		return checkRecursiveConnect(self.slotid)
 
 	def keyOk(self):
-		self.stopService()
+		if self["config"].isChanged():
+			self.stopService()
 		if self["config"].getCurrent() == self.advancedSelectSatsEntry and self.advancedSelectSatsEntry:
 			conf = self.nimConfig.advanced.sat[int(self.nimConfig.advanced.sats.value)].userSatellitesList
 			self.session.openWithCallback(boundFunction(self.updateConfUserSatellitesList, conf), SelectSatsEntryScreen, userSatlist=conf.value)
@@ -562,6 +563,7 @@ class NimSetup(Screen, ConfigListScreen, ServiceStopScreen):
 			conf.save()
 
 	def keySave(self):
+<<<<<<< HEAD
 		self.stopService()
 		if not self.unicableconnection():
 			self.session.open(MessageBox, _("The unicable connection setting is wrong.\n Maybe recursive connection of tuners."),MessageBox.TYPE_ERROR,timeout=10)
@@ -569,6 +571,10 @@ class NimSetup(Screen, ConfigListScreen, ServiceStopScreen):
 		if not self.checkLoopthrough():
 			self.session.open(MessageBox, _("The loopthrough setting is wrong."),MessageBox.TYPE_ERROR,timeout=10)
 			return
+=======
+		if self["config"].isChanged():
+			self.stopService()
+>>>>>>> 3e54e29... Only stopservice in satconfig when something is changed
 		old_configured_sats = nimmanager.getConfiguredSats()
 		if not self.run():
 			return
