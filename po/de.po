@@ -5089,7 +5089,7 @@ msgid "Open service list"
 msgstr "Kanalliste öffnen"
 
 msgid "Open setup tuner "
-msgstr "Einstellungen für Tuner"
+msgstr "Einstellungen für Tuner "
 
 msgid "Open the movie list"
 msgstr "Zurück zur Videoliste"
@@ -6871,6 +6871,9 @@ msgstr "Konfigurationsmodus"
 
 msgid "Setup network time synchronization interval."
 msgstr "Hier können Sie den Synchronisierungs-Intervall des NTP-Servers einstellen."
+
+msgid "Setup tuner"
+msgstr "Einstellungen Empfang"
 
 msgid "Setup your positioner"
 msgstr "Einstellung des Rotors"

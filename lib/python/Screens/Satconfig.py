@@ -637,7 +637,7 @@ class NimSetup(Screen, ConfigListScreen, ServiceStopScreen):
 		self.nimConfig = self.nim.config
 		self.createConfigMode()
 		self.createSetup()
-		self.setTitle(_("Setup") + " " + self.nim.friendly_full_description)
+		self.setTitle(_("Setup tuner") + " " + self.nim.input_name)
 
 	def keyLeft(self):
 		if self.nim.isFBCLink():
