@@ -243,6 +243,7 @@ class NimSetup(Screen, ConfigListScreen, ServiceStopScreen):
 			self.have_advanced = False
 		self["config"].list = self.list
 		self["config"].l.setList(self.list)
+		self.setTextKeyYellow()
 
 	def newConfig(self):
 		self.setTextKeyBlue()
@@ -294,6 +295,7 @@ class NimSetup(Screen, ConfigListScreen, ServiceStopScreen):
 		return True
 
 	def autoDiseqcRun(self, ports):
+		self.stopService()
 		self.session.openWithCallback(self.autoDiseqcCallback, AutoDiseqc, self.slotid, ports, self.nimConfig.simpleDiSEqCSetVoltageTone, self.nimConfig.simpleDiSEqCOnlyOnSatChange)
 
 	def autoDiseqcCallback(self, result):
@@ -301,6 +303,7 @@ class NimSetup(Screen, ConfigListScreen, ServiceStopScreen):
 		if Wizard.instance is not None:
 			Wizard.instance.back()
 		else:
+			self.restartPrevService(close=False)
 			self.createSetup()
 
 	def fillListWithAdvancedSatEntrys(self, Sat):
@@ -621,7 +624,7 @@ class NimSetup(Screen, ConfigListScreen, ServiceStopScreen):
 
 		self["key_red"] = Label(_("Cancel"))
 		self["key_green"] = Label(_("Save"))
-		self["key_yellow"] = Label(_("Configuration mode"))
+		self["key_yellow"] = Label()
 		self["key_blue"] = Label()
 		self["actions"] = ActionMap(["SetupActions", "SatlistShortcutAction"],
 		{
@@ -651,10 +654,11 @@ class NimSetup(Screen, ConfigListScreen, ServiceStopScreen):
 		else:
 			self.newConfig()
 
+	def setTextKeyYellow(self):
+		self["key_yellow"].setText(self.nimConfig.configMode.value == "simple" and _("Auto Diseqc") or _("Configuration mode"))
+
 	def setTextKeyBlue(self):
-		self["key_blue"].setText("")
-		if self["config"].isChanged():
-			self["key_blue"].setText(_("Set default"))
+		self["key_blue"].setText(self["config"].isChanged() and _("Set default") or "")
 
 	def keyRight(self):
 		if self.nim.isFBCLink():
@@ -703,7 +707,9 @@ class NimSetup(Screen, ConfigListScreen, ServiceStopScreen):
 		self.restartPrevService()
 
 	def changeConfigurationMode(self):
-		if self.configMode:
+		if self.nimConfig.configMode.value == "simple":
+			self.autoDiseqcRun(self.nimConfig.diseqcMode.value == "diseqc_a_b_c_d" and 4 or self.nimConfig.diseqcMode.value == "diseqc_a_b" and 2 or 1)
+		elif self.configMode:
 			self.nimConfig.configMode.selectNext()
 			self["config"].invalidate(self.configMode)
 			self.setTextKeyBlue()
