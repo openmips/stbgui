@@ -212,7 +212,7 @@ class AudioSetup(Screen, ConfigListScreen):
 		if SystemInfo["CanDownmixAC3"]:
 			self.list.append(getConfigListEntry(_("AC3/DTS downmix"), config.av.downmix_ac3, _("Configure whether multi channel sound tracks should be downmixed to stereo.")))	
 		if SystemInfo["HasMultichannelPCM"]:
-			self.list.append(getConfigListEntry(_("PCM Multichannel"), config.av.pcm_multichannel, _("Choose whether multi channel sound tracks should be output as PCM.")))
+			self.list.append(getConfigListEntry(_("Multichannel as PCM"), config.av.pcm_multichannel, _("Choose whether multi channel sound tracks should be output as PCM.")))
 		if SystemInfo["CanDownmixAAC"]:
 			self.list.append(getConfigListEntry(_("AAC downmix"), config.av.downmix_aac, _("Choose whether multi channel sound tracks should be downmixed to stereo.")))
 		if level >= 1:
