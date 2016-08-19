@@ -197,15 +197,9 @@ def InitAVSwitch():
 	else:
 		config.av.autovolume = ConfigNothing()
 
-	try:
-		can_pcm_multichannel = os.access("/proc/stb/audio/multichannel_pcm", os.W_OK)
-	except:
-		can_pcm_multichannel = False
-
-	SystemInfo["supportPcmMultichannel"] = can_pcm_multichannel
-	if can_pcm_multichannel:
+	if SystemInfo["HasMultichannelPCM"]:
 		def setPCMMultichannel(configElement):
-			open("/proc/stb/audio/multichannel_pcm", "w").write(configElement.value and "enable" or "disable")
+			open(SystemInfo["HasMultichannelPCM"], "w").write(configElement.value and "enable" or "disable")
 		config.av.pcm_multichannel = ConfigYesNo(default = False)
 		config.av.pcm_multichannel.addNotifier(setPCMMultichannel)
 
