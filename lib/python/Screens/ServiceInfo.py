@@ -7,6 +7,7 @@ from ServiceReference import ServiceReference
 from enigma import eListboxPythonMultiContent, eListbox, gFont, iServiceInformation, eServiceCenter
 from Tools.Transponder import ConvertToHumanReadable, getChannelNumber
 import skin
+from Components.ScrollLabel import ScrollLabel
 
 RT_HALIGN_LEFT = 0
 
@@ -70,7 +71,7 @@ class ServiceInfo(Screen):
 		Screen.__init__(self, session)
 
 		self.setTitle(_("Service info"))
-
+		self["infotext"] = ScrollLabel()
 		self["actions"] = ActionMap(["OkCancelActions", "ColorActions"],
 		{
 			"ok": self.close,
@@ -202,13 +203,13 @@ class ServiceInfo(Screen):
 					band = "High"
 				else:
 					band = "Low"
-				return ((_("NIM"), chr(ord('A') + frontendData["tuner_number"]), TYPE_TEXT),
+				return (( _("NIM"), chr(ord('A') + frontendData["tuner_number"]), TYPE_TEXT),
 						(_("Type"), frontendData["tuner_type"], TYPE_TEXT),
 						(_("System"), frontendData["system"], TYPE_TEXT),
 						(_("Modulation"), frontendData["modulation"], TYPE_TEXT),
 						(_("Orbital position"), frontendData["orbital_position"], TYPE_VALUE_DEC),
-						(_("Frequency"), frontendData["frequency"], TYPE_VALUE_DEC),
-						(_("Symbol rate"), frontendData["symbol_rate"], TYPE_VALUE_DEC),
+						(_("Frequency"), frontendData["frequency"]/1000, TYPE_VALUE_DEC),
+						(_("Symbol rate"), frontendData["symbol_rate"]/1000, TYPE_VALUE_DEC),
 						(_("Polarization"), frontendData["polarization"], TYPE_TEXT),
 						(_("Band"), band, TYPE_TEXT),
 						(_("Inversion"), frontendData["inversion"], TYPE_TEXT),
@@ -219,14 +220,14 @@ class ServiceInfo(Screen):
 				return ((_("NIM"), chr(ord('A') + frontendData["tuner_number"]), TYPE_TEXT),
 						(_("Type"), frontendData["tuner_type"], TYPE_TEXT),
 						(_("Modulation"), frontendData["modulation"], TYPE_TEXT),
-						(_("Frequency"), frontendData["frequency"], TYPE_VALUE_DEC),
-						(_("Symbol rate"), frontendData["symbol_rate"], TYPE_VALUE_DEC),
+						(_("Frequency"), frontendData["frequency"]/1000, TYPE_VALUE_DEC),
+						(_("Symbol rate"), frontendData["symbol_rate"]/1000, TYPE_VALUE_DEC),
 						(_("Inversion"), frontendData["inversion"], TYPE_TEXT),
 						(_("FEC"), frontendData["fec_inner"], TYPE_TEXT))
 			elif frontendDataOrg["tuner_type"] == "DVB-T":
 				return ((_("NIM"), chr(ord('A') + frontendData["tuner_number"]), TYPE_TEXT),
 						(_("Type"), frontendData["tuner_type"], TYPE_TEXT),
-						(_("Frequency"), frontendData["frequency"], TYPE_VALUE_DEC),
+						(_("Frequency"), frontendData["frequency"]/1000/1000, TYPE_VALUE_DEC),
 						(_("Channel"), getChannelNumber(frontendData["frequency"], frontendData["tuner_number"]), TYPE_VALUE_DEC),
 						(_("Inversion"), frontendData["inversion"], TYPE_TEXT),
 						(_("Bandwidth"), frontendData["bandwidth"], TYPE_VALUE_DEC),
@@ -240,26 +241,99 @@ class ServiceInfo(Screen):
 
 	def fillList(self, Labels):
 		tlist = [ ]
-
+		serviceinfotxt = ""
+		streaminfotxt = ""
 		for item in Labels:
 			if item[1] is None:
 				continue;
 			value = item[1]
+			if item[0] == _("Frequency"):
+				value = str(value) + ' MHz'
+			sref = value
+
+			if item[0] == _("Service reference"):
+				if self.getConvertServiceref(sref)[1] is not False:
+					value = str(self.getConvertServiceref(sref)[0])
+					streaminfotxt = _("Location:") + self.getConvertServiceref(sref)[1][:45] + "\n"
 			if len(item) < 4:
 				tlist.append(ServiceInfoListEntry(item[0]+":", value, item[2]))
+				if item[2] ==1 or item[2] ==3:
+					hexhex = self.converthex(item[2],value)
+					serviceinfotxt += str(item[0]) + ":" + hexhex + "\n" 
+				else:
+					serviceinfotxt += str(item[0]) + ":" + str(value)[:50] + "\n"
 			else:
 				tlist.append(ServiceInfoListEntry(item[0]+":", value, item[2], item[3]))
-
+				if item[2] ==1 or item[2] ==3:
+					hexhex = self.converthex(item[2],value)
+					serviceinfotxt += str(item[0]) + ":" + hexhex + "\n" 
+				else:
+					serviceinfotxt += str(item[0]) + ":" + str(value)[:50] + "\n"
+			if streaminfotxt != "":
+				serviceinfotxt += streaminfotxt + "\n"
+				self["key_yellow"].setText("")
+				self["key_blue"].setText("")
+				self["key_red"].setText(_("Stream"))
+				self["key_green"].setText("")
+		self["infotext"].setText(serviceinfotxt)
 		self["infolist"].l.setList(tlist)
 
 	def getServiceInfoValue(self, what):
 		if self.info is None:
 			return ""
-
 		v = self.info.getInfo(what)
 		if v == -2:
 			v = self.info.getInfoString(what)
 		elif v == -1:
 			v = _("N/A")
-
 		return v
+
+	def converthex(self, item,value):
+		if type(value) != int:
+			return '-'
+		if value == 0 or value == 'N/V':
+			return "-"
+		if item == 1: #TYPE_VALUE_HEX = 1 #Namespace
+			return str("0x%0" + str(4) + "x") % to_unsigned(value)
+		elif item == 2: #
+			return "item=2"
+		elif item == 3: #TYPE_VALUE_HEX_DEC	#SID PIDS
+			return (("(%d) ") % value)  + '  ' + ((( "%04" + "x") % (value)).upper())
+			#return str("0x%0" + str(4) + "x (%dd)") % (to_unsigned(value), value)
+		else:
+			return _("not avaible")
+
+	def getConvertServiceref(self, sref):
+		try:
+			stream="";ref=""
+			if '%3a//' in str(sref) and sref[:4] == '4097':
+				sref = sref.upper().split('%3A//')
+				url = str(sref[1])[:50].split("/")[0].replace('%3A',":").lower()
+				if "@" in url:
+					url = '<user:pass>'+ url.split("@")[1]
+				stream = sref[0].split(":")[len(sref[0].split(":"))-1].lower() + "://" + url
+				ref = sref[0].replace(':'+sref[0].split(":")[len(sref[0].split(":"))-1],'')
+				return ref, stream
+			elif ':0:0:0:0:0:0:0:0:0:' in str(sref):
+				ref  = sref.split(":/")[0]
+				stream = sref.split(":/")[1]
+				x = stream.split('/')
+				rm = x[len(x) -1]
+				stream = "/" + stream.replace(rm,'')
+				return ref, stream
+			elif '%3a//' in str(sref):
+				sref = sref.upper().split('%3A//')
+				url = str(sref[1])[:50].split("/")[0].replace('%3A',":").lower()
+				if "@" in url:
+					url = '<user:pass>'+ url.split("@")[1]
+				stream = sref[0].split(":")[len(sref[0].split(":"))-1].lower() + "://" + url
+				ref = sref[0].replace(':'+sref[0].split(":")[len(sref[0].split(":"))-1],'')
+				return ref, stream
+			else:
+				ref = ''
+				stream = False
+				return ref, stream
+		except:
+			ref = ''
+			stream = False
+			return ref, stream
