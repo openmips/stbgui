@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-18 22:35+0200\n"
+"POT-Creation-Date: 2016-08-20 17:13+0200\n"
 "PO-Revision-Date: 2015-08-25 18:31+0100\n"
 "Last-Translator: andy1 <dmmm8000pvr@gmail.com>\n"
 "Language-Team: none\n"
@@ -405,6 +405,9 @@ msgstr ""
 msgid "%s:%s"
 msgstr ""
 
+msgid "(DHCP is off)"
+msgstr ""
+
 msgid "(ZAP)"
 msgstr "(GÅ TIL)"
 
@@ -605,10 +608,6 @@ msgstr ""
 
 #
 msgid "9"
-msgstr ""
-
-#, python-format
-msgid ": %s"
 msgstr ""
 
 msgid ": 0000 - default (disabled)"
@@ -815,6 +814,11 @@ msgid "Active"
 msgstr ""
 
 #
+#, fuzzy
+msgid "Adapter"
+msgstr "LAN nettverk"
+
+#
 msgid "Adapter settings"
 msgstr "Nettverks innstillinger"
 
@@ -976,12 +980,6 @@ msgstr "Undertekst språk er samme som lyd språk"
 
 msgid "Allow subtitles for hearing impaired"
 msgstr "Bruk undertekst for hørselshemmede"
-
-msgid "Load the EPG data regularly"
-msgstr ""
-
-msgid "Save the EPG data regularly"
-msgstr ""
 
 msgid "Allows you to enable the debug log. They contain very detailed information of everything the system does."
 msgstr ""
@@ -1246,6 +1244,11 @@ msgid "Auto"
 msgstr ""
 
 #
+#, fuzzy
+msgid "Auto Diseqc"
+msgstr "Automatisk"
+
+#
 msgid "Auto chapter split every ? minutes (0=never)"
 msgstr "Auto oppdeling hvert ? minutter (0=aldri)"
 
@@ -1456,7 +1459,7 @@ msgid "Brightness"
 msgstr "Lysstyrke"
 
 #, fuzzy
-msgid "Broadcast:\t"
+msgid "Broadcast:"
 msgstr "direktesending"
 
 #, python-format
@@ -1494,12 +1497,6 @@ msgid "By openMips Image Team"
 msgstr ""
 
 msgid "Bypass HDMI EDID checking"
-msgstr ""
-
-msgid "Bytes received:"
-msgstr ""
-
-msgid "Bytes sent:"
 msgstr ""
 
 msgid "C"
@@ -1944,6 +1941,10 @@ msgstr "Kompleks (tillater blanding av lyd spor)"
 msgid "Composition of the recording filenames"
 msgstr "Sammensetning på opptakenes filnavn"
 
+#, fuzzy
+msgid "Config Scan Details"
+msgstr "Vis detaljer"
+
 msgid "Config resolution of pictures"
 msgstr "Still inn bildeoppløsning"
 
@@ -2258,6 +2259,10 @@ msgid "Configure which tuner will be preferred, when more than one tuner is avai
 msgstr "Still inn tuneren som skal foretrekkes når flere tunere er tilgjengelige. Hvis satt til 'auto', vil systemet gi prioritet til den tuneren som har lavest antall kanaler/satellitter."
 
 #, fuzzy
+msgid "Configure your Cable settings and press OK to start the scan"
+msgstr "Still inn nettverksinnstillingene, og trykk OK for å starte søket"
+
+#, fuzzy
 msgid "Configure your NTP server."
 msgstr "Still inn navnetjenere"
 
@@ -2267,9 +2272,6 @@ msgstr "Still inn ditt lokale LAN nettverk"
 
 msgid "Configure your network again"
 msgstr "Still inn nettverket på nytt"
-
-msgid "Configure your network settings, and press OK to start the scan"
-msgstr "Still inn nettverksinnstillingene, og trykk OK for å starte søket"
 
 msgid "Configure your wireless LAN again"
 msgstr "Still inn ditt trådløse nettverk igjen"
@@ -2310,6 +2312,20 @@ msgstr ""
 #
 msgid "Constellation"
 msgstr "Konstellasjon"
+
+#
+#, fuzzy
+msgid "Contact Info"
+msgstr "Kontrast"
+
+#
+#, fuzzy
+msgid "Content Encoding"
+msgstr "Direkte opptak..."
+
+#, fuzzy
+msgid "Content Type"
+msgstr "Fortsett"
 
 #
 msgid "Content does not fit on DVD!"
@@ -2731,6 +2747,11 @@ msgstr "Gjenkjent lagring:"
 #
 msgid "Detected NIMs:"
 msgstr "Gjenkjent modul:"
+
+#
+#, fuzzy
+msgid "Device"
+msgstr "Kanaler"
 
 #, fuzzy
 msgid "Device Details"
@@ -3276,9 +3297,6 @@ msgstr "Aktiver Virgin EPG"
 msgid "Enable Wake On LAN"
 msgstr "Slå på med LAN"
 
-msgid "Enable auto cable scan"
-msgstr "Aktiver automatisk kabel TV skanning"
-
 msgid "Enable auto fast scan"
 msgstr "Aktiver automatisk hurtigsøk"
 
@@ -3379,10 +3397,6 @@ msgstr "Sluttid for å overse avstenging i standby"
 #
 msgid "English"
 msgstr "Engelsk"
-
-#, python-format
-msgid "Enigma (re)starts: %d\n"
-msgstr "Enigma (re)starter: %d\n"
 
 #, python-format
 msgid "Enigma2 Build: %s"
@@ -3977,6 +3991,9 @@ msgstr "AC3 forsinkelse"
 msgid "General PCM delay"
 msgstr "PCM forsinkelse"
 
+msgid "Generator"
+msgstr ""
+
 #
 msgid "Genre"
 msgstr "Sjanger"
@@ -4113,6 +4130,11 @@ msgstr ""
 msgid "HDMI"
 msgstr ""
 
+#
+#, fuzzy
+msgid "HDMI Colorspace"
+msgstr "Farge format"
+
 #, fuzzy
 msgid "HDMI-CEC"
 msgstr "HDMI-CEC innstilling"
@@ -4167,6 +4189,9 @@ msgstr "Hjelp for antenne oppsett"
 
 msgid "Hidden network"
 msgstr "Skjult nettverk"
+
+msgid "Hide"
+msgstr ""
 
 msgid "Hide channel list in radio mode"
 msgstr "Skjul kanalliste i radiomodus"
@@ -4541,12 +4566,17 @@ msgid "Instant recording..."
 msgstr "Direkte opptak..."
 
 #
-#, fuzzy
-msgid "Interface:\t/dev/"
+msgid "Interface: "
 msgstr "Grensesnitt:"
 
 #
-msgid "Interface: "
+#, fuzzy
+msgid "Interface: /dev/"
+msgstr "Grensesnitt:"
+
+#
+#, fuzzy
+msgid "Interface:/dev/"
 msgstr "Grensesnitt:"
 
 #
@@ -4624,6 +4654,9 @@ msgstr "Kanaler pr. side"
 
 msgid "Items per page for list screen"
 msgstr "Kanaler pr. side på skjermmeny"
+
+msgid "Itu_R_BT_709"
+msgstr ""
 
 msgid "J"
 msgstr ""
@@ -4712,8 +4745,21 @@ msgid "Language"
 msgstr "Språkvalg"
 
 #
+#, fuzzy
+msgid "Language Team"
+msgstr "Språkvalg"
+
+#
 msgid "Language selection"
 msgstr "Språkvalg"
+
+msgid "Large"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Last Translator"
+msgstr "Oversetting"
 
 #
 msgid "Last config"
@@ -4855,6 +4901,9 @@ msgstr "Last inn opptakslengden i opptaksliste"
 msgid "Load playlist"
 msgstr "Last inn opptaksliste"
 
+msgid "Load the EPG data regularly"
+msgstr ""
+
 #
 msgid "Load unlinked userbouquets"
 msgstr "Last kanallister som ikke er tilknyttet"
@@ -4873,6 +4922,11 @@ msgstr "Plasser"
 #
 msgid "Location for instant recordings"
 msgstr "Plassering for direkte opptak"
+
+#
+#, fuzzy
+msgid "Location:"
+msgstr "Plasser"
 
 msgid "Lock ratio"
 msgstr "Låsforhold"
@@ -4926,6 +4980,10 @@ msgstr ""
 
 msgid "MAC:"
 msgstr ""
+
+#, fuzzy
+msgid "MIME Version"
+msgstr "Krenging"
 
 #
 msgid "MMC card"
@@ -4992,6 +5050,11 @@ msgid "Manufacturer"
 msgstr "Produsent"
 
 #
+#, fuzzy
+msgid "Manufacturer info"
+msgstr "Produsent"
+
+#
 msgid "Margin after recording (minutes)"
 msgstr "Stopptid etter opptak (minutter)"
 
@@ -5000,6 +5063,10 @@ msgid "Margin before recording (minutes)"
 msgstr "Starttid før opptak (minutter)"
 
 msgid "Mark service as dedicated 3D service"
+msgstr "Merk kanal som dedikert 3D kanal"
+
+#, fuzzy
+msgid "Mark service to hide VBI line"
 msgstr "Merk kanal som dedikert 3D kanal"
 
 #
@@ -5042,8 +5109,15 @@ msgstr "Minne info"
 msgid "Memory index"
 msgstr "Minne oversikt"
 
+msgid "MemoryInfo - only for Developers"
+msgstr ""
+
 msgid "Menu"
 msgstr "Meny"
+
+#, python-format
+msgid "Menusort (%s)"
+msgstr ""
 
 msgid "Message"
 msgstr "Beskjed"
@@ -5258,6 +5332,10 @@ msgstr "Nedskalering av flerkanals lyd"
 msgid "Multi-EPG bouquet selection"
 msgstr "Full-EPG i kanallister"
 
+#, fuzzy
+msgid "Multichannel as PCM"
+msgstr "Nedskalering av flerkanals lyd"
+
 #
 msgid "Multimedia"
 msgstr ""
@@ -5294,6 +5372,12 @@ msgstr "NESTE"
 #, fuzzy
 msgid "NFS Setup"
 msgstr "Innstilling"
+
+msgid "NFS Shares OFF"
+msgstr ""
+
+msgid "NFS Shares ON"
+msgstr ""
 
 #
 #, fuzzy
@@ -5338,6 +5422,11 @@ msgid "Nameserver %d"
 msgstr "Navneserver %d"
 
 #
+#, fuzzy
+msgid "Nameserver is off"
+msgstr "Navneserver"
+
+#
 msgid "Nameserver settings"
 msgstr "Navneserver innstillinger"
 
@@ -5376,6 +5465,11 @@ msgstr "Nettverksinnstilling..."
 #, fuzzy
 msgid "Network MAC settings"
 msgstr "Aktiver nettverks innstillingene"
+
+#
+#, fuzzy
+msgid "Network Speed:"
+msgstr "Nettverk:"
 
 #
 #, fuzzy
@@ -5452,6 +5546,12 @@ msgstr "Neste"
 #
 msgid "No"
 msgstr "Nei"
+
+msgid ""
+"No '/etc/exports' Configuration File found.\n"
+"Press blue button to activate default Enigma2\n"
+"HDD and USB as NFS exports, if the hardware is available."
+msgstr ""
 
 #
 msgid "No (supported) DVDROM found!"
@@ -5928,10 +6028,6 @@ msgstr "Overskrive konfigurerte filer under programvareoppdateringen?"
 msgid "PAL"
 msgstr ""
 
-#, fuzzy
-msgid "PCM Multichannel"
-msgstr "Nedskalering av flerkanals lyd"
-
 msgid "PCR PID"
 msgstr ""
 
@@ -5959,6 +6055,9 @@ msgid "PLP ID"
 msgstr ""
 
 msgid "PMT PID"
+msgstr ""
+
+msgid "POT-Creation Date"
 msgstr ""
 
 #
@@ -6057,6 +6156,9 @@ msgstr "Permanent fjerne alle slettede elementer"
 
 msgid "Persian"
 msgstr "Persisk"
+
+msgid "Phone"
+msgstr ""
 
 #
 msgid "PiP setup"
@@ -6688,6 +6790,9 @@ msgstr "Framdriftslinje høyre"
 msgid "Progress:"
 msgstr "Stor framdriftsbar"
 
+msgid "Project"
+msgstr ""
+
 #
 msgid "Properties of current title"
 msgstr "Egenskaper for gjeldende navn"
@@ -6709,6 +6814,10 @@ msgstr "Beskytt hovedmeny"
 
 msgid "Protect manufacturer reset screen"
 msgstr "Beskytt produsentens oppstarts skjermbilde"
+
+#, fuzzy
+msgid "Protect menu sort"
+msgstr "Beskytt opptaksliste"
 
 msgid "Protect movie list"
 msgstr "Beskytt opptaksliste"
@@ -6880,10 +6989,6 @@ msgstr "Opptak"
 
 msgid "Recall to previous service"
 msgstr "Husk tilbake til forrige kanal"
-
-#
-msgid "Reception Settings"
-msgstr "Innstilling for mottakerforhold"
 
 #
 #, fuzzy
@@ -7109,6 +7214,9 @@ msgstr "Gjentakelser"
 msgid "Replace `- ` in dialogs with colored text per speaker (like teletext subtitles for the hearing impaired)"
 msgstr "Erstatt `- ` i dialogboksen med farget tekst for tale (som tekst-TV tekst for hørselshemmede)"
 
+msgid "Report Msgid Bugs To"
+msgstr ""
+
 msgid "Require authentication for http streams"
 msgstr "Krev autentisering for http strømmer"
 
@@ -7246,6 +7354,9 @@ msgstr "Reverser CH+/CH- knappene"
 #
 msgid "Reverse list"
 msgstr "Reverser listen"
+
+msgid "Revision Date"
+msgstr ""
 
 #
 msgid "Rewind speeds"
@@ -7403,6 +7514,9 @@ msgstr "Lagre og stopp tidsskift"
 
 msgid "Save playlist"
 msgstr "Lagre opptaksliste"
+
+msgid "Save the EPG data regularly"
+msgstr ""
 
 #
 msgid "Save timeshift and zap"
@@ -7859,6 +7973,9 @@ msgstr "Endre PIN"
 msgid "Set all hotkey to default?"
 msgstr "Sette alle snarveistaster til standard?"
 
+msgid "Set blocktimes by weekday"
+msgstr ""
+
 #
 msgid "Set default"
 msgstr "Sett standard"
@@ -7938,6 +8055,11 @@ msgstr "Menyoppsett"
 msgid "Setup network time synchronization interval."
 msgstr ""
 
+#
+#, fuzzy
+msgid "Setup tuner"
+msgstr "Velg tuner"
+
 msgid "Setup your positioner"
 msgstr "Posisjonsoppsett"
 
@@ -7958,6 +8080,11 @@ msgstr "Skript"
 
 msgid "Short filenames"
 msgstr "Korte filnavn"
+
+#
+#, fuzzy
+msgid "Show"
+msgstr "Vis info"
 
 msgid "Show Audioselection"
 msgstr "Vis lydvalg"
@@ -8111,6 +8238,11 @@ msgstr "Vis siste endringer"
 
 msgid "Show latest upgrade log"
 msgstr "Vis siste oppgraderings logg"
+
+#
+#, fuzzy
+msgid "Show menu paths"
+msgstr "Vis opptakene"
 
 msgid "Show message when recording starts"
 msgstr "Vis melding når opptak starter"
@@ -8293,6 +8425,9 @@ msgstr "Enkel navneinnstilling(kompatibilitet for eldre spillere)"
 msgid "Simple zoom"
 msgstr "Enkel"
 
+msgid "Simplified Chinese"
+msgstr ""
+
 msgid "Simulate (no write)"
 msgstr ""
 
@@ -8394,6 +8529,9 @@ msgstr "Langsom"
 
 msgid "Slow motion speeds"
 msgstr "Saktefilm hastighet"
+
+msgid "Small"
+msgstr ""
 
 #
 msgid "Small progress"
@@ -8512,6 +8650,10 @@ msgstr "Sorter listen til standard og avslutte?"
 msgid "Sort list:"
 msgstr "Sorter liste:"
 
+#, fuzzy
+msgid "Sort order for menu entries"
+msgstr "Motor kommando forsøker igjen"
+
 msgid "Sort plugins list to default?"
 msgstr "Sorter programtilleggs liste til standard?"
 
@@ -8528,6 +8670,10 @@ msgstr "Lyd"
 msgid "Sound carrier"
 msgstr "Lydbærer"
 
+#, fuzzy
+msgid "Source Charset"
+msgstr "Server forespørsel"
+
 msgid "Source request"
 msgstr "Server forespørsel"
 
@@ -8541,6 +8687,9 @@ msgstr "Spansk"
 
 msgid "Specify extra timeframe to ignore inactivity sleeptimer"
 msgstr "Sett inn ekstra tidsrom når inaktiv tidtaker skal oversees"
+
+msgid "Specify if you want to set the blocktimes separately by weekday"
+msgstr ""
 
 msgid "Specify the end time to ignore the shutdown timer when the receiver is in standby mode"
 msgstr "Sett stopp tid for overstyring av tidtaker når mottakeren er i avslått modus"
@@ -8747,6 +8896,11 @@ msgstr "Stoppet"
 #, fuzzy
 msgid "Storage media"
 msgstr "ny media"
+
+#
+#, fuzzy
+msgid "Store"
+msgstr "Gjenopprett"
 
 msgid "Store at index"
 msgstr "Lagre i meny"
@@ -9057,12 +9211,6 @@ msgstr "Takk for at du bruker veiviseren."
 msgid "The %d min remaining before the end of the event."
 msgstr "%d min gjenstår før slutten av filmen"
 
-msgid "The stored EPG data will be read every (hours)"
-msgstr ""
-
-msgid "The EPG data will be stored every (hours)"
-msgstr ""
-
 msgid "The DVD standard doesn't support H.264 (HDTV) video streams."
 msgstr ""
 
@@ -9074,6 +9222,9 @@ msgid ""
 msgstr ""
 "Det trådløse LAN programtillegg er ikke installert!\n"
 "Vennligst installer det."
+
+msgid "The EPG data will be stored every (hours)"
+msgstr ""
 
 #
 #, fuzzy
@@ -9201,6 +9352,9 @@ msgid ""
 msgstr ""
 "Programutvidelse er ikke installert!\n"
 "Vennligst installer den."
+
+msgid "The stored EPG data will be read every (hours)"
+msgstr ""
 
 #
 msgid "The timer file (timers.xml) is corrupt and could not be loaded."
@@ -9348,6 +9502,15 @@ msgid "This option allows you to boost the blue tones in the picture."
 msgstr ""
 
 msgid "This option allows you to boost the green tones in the picture."
+msgstr ""
+
+msgid "This option allows you to hide and sort menu entries. When selecting user you can change order and hide menu items via the blue button"
+msgstr ""
+
+msgid "This option allows you to set the Colorspace of HDMI from Auto to RGB"
+msgstr ""
+
+msgid "This option allows you to show menu paths."
 msgstr ""
 
 msgid "This option allows you to view the old and new settings side by side."
@@ -9662,6 +9825,10 @@ msgstr ""
 msgid "Track"
 msgstr "Spor"
 
+#, fuzzy
+msgid "Traditional Chinese"
+msgstr "folk/tradisjonell musikk"
+
 #
 #, fuzzy
 msgid "Transcode"
@@ -9682,6 +9849,11 @@ msgstr "Oversetting:"
 
 #
 msgid "Translations"
+msgstr "Oversetting"
+
+#
+#, fuzzy
+msgid "Translations Info"
 msgstr "Oversetting"
 
 #
@@ -9904,6 +10076,10 @@ msgid "Unknown"
 msgstr "Ukjent"
 
 msgid "Unmark service as dedicated 3D service"
+msgstr "Slett denne kanal som dedikert 3D kanal"
+
+#, fuzzy
+msgid "Unmark service to unhide VBI line"
 msgstr "Slett denne kanal som dedikert 3D kanal"
 
 msgid "Unmount"
@@ -11084,10 +11260,6 @@ msgstr "Gå tilbake til forrige kanal?"
 msgid "Zap back to service before positioner setup?"
 msgstr "Gå tilbake til kanal før motoroppsett?"
 
-#
-msgid "Zap back to service before tuner setup?"
-msgstr "Gå tilbake til kanal før oppsett av tuner?"
-
 msgid "Zap bouquets blindly on zap buttons"
 msgstr ""
 
@@ -11184,6 +11356,9 @@ msgstr "starter opp"
 msgid "activate network adapter configuration"
 msgstr "aktiver nettverksinnstilling"
 
+msgid "active NFS Shares:"
+msgstr ""
+
 #
 msgid "actual time only"
 msgstr "aktuell tid"
@@ -11244,6 +11419,11 @@ msgstr "alfabetisk"
 
 msgid "alphabetic reverse"
 msgstr "alfabetisk bakover"
+
+#
+#, fuzzy
+msgid "alphabetical"
+msgstr "alfabetisk"
 
 #
 msgid "alternative"
@@ -11309,6 +11489,15 @@ msgstr "auto"
 #
 msgid "automatic"
 msgstr "automatisk"
+
+#
+#, fuzzy
+msgid "automatic from DHCP"
+msgstr "automatisk"
+
+#, fuzzy
+msgid "automatically scan every day"
+msgstr "Automatisk søk"
 
 #
 msgid "back"
@@ -11666,6 +11855,11 @@ msgid "forward to the next chapter"
 msgstr "framover til neste kapittel"
 
 #
+#, fuzzy
+msgid "found"
+msgstr "Lyd"
+
+#
 msgid "free"
 msgstr "ledig"
 
@@ -11705,6 +11899,9 @@ msgstr "høyde"
 #
 msgid "help..."
 msgstr "hjelp..."
+
+msgid "hide"
+msgstr ""
 
 #
 msgid "horizontal"
@@ -11902,6 +12099,21 @@ msgid "no channel list"
 msgstr "ingen kanalliste"
 
 #
+#, fuzzy
+msgid "no domain name found"
+msgstr "Ingen modul er funnet"
+
+#
+#, fuzzy
+msgid "no gateway found"
+msgstr "Ingen modul er funnet"
+
+#
+#, fuzzy
+msgid "no log entrys"
+msgstr "Spilloppføring"
+
+#
 msgid "no module found"
 msgstr "Ingen modul er funnet"
 
@@ -11911,12 +12123,23 @@ msgstr "ingen ressurs utdeler"
 msgid "no storage devices found"
 msgstr "ingen lagringsenheter er funnet"
 
+msgid ""
+"no valid entrys in /etc/exports found\n"
+"Press blue button to activate default Enigma2\n"
+"HDD and USB as NFS exports,\n"
+"if valid mounted hardware is available."
+msgstr ""
+
 #
 msgid "none"
 msgstr "Ingen"
 
 msgid "normal"
 msgstr "normal"
+
+#, fuzzy
+msgid "not avaible"
+msgstr "utilgjengelig"
 
 #
 msgid "not configured"
@@ -12029,6 +12252,21 @@ msgstr "spill av i hovedvinduet"
 
 msgid "please press OK when ready"
 msgstr "vennligst trykk OK for å fortsette"
+
+#
+#, fuzzy
+msgid "please wait"
+msgstr "Vennligst vent"
+
+msgid ""
+"please wait\n"
+"while acticate NFS exports"
+msgstr ""
+
+msgid ""
+"please wait\n"
+"while deacticate NFS exports"
+msgstr ""
 
 #
 msgid "please wait, loading picture..."
@@ -12218,6 +12456,10 @@ msgstr "bruk denne som oppstartskanal"
 #, fuzzy
 msgid "settings"
 msgstr "Innstillinger"
+
+#, fuzzy
+msgid "show"
+msgstr "talk show"
 
 #
 msgid "show DVD main menu"
@@ -12611,6 +12853,12 @@ msgstr "gått til"
 #~ msgid "Enable auto PIN"
 #~ msgstr "Aktiver ViaSat EPG"
 
+#~ msgid "Enable auto cable scan"
+#~ msgstr "Aktiver automatisk kabel TV skanning"
+
+#~ msgid "Enigma (re)starts: %d\n"
+#~ msgstr "Enigma (re)starter: %d\n"
+
 #
 #, fuzzy
 #~ msgid "FP Upgrade"
@@ -12685,6 +12933,10 @@ msgstr "gått til"
 
 #~ msgid "Reboot"
 #~ msgstr "Start på nytt"
+
+#
+#~ msgid "Reception Settings"
+#~ msgstr "Innstilling for mottakerforhold"
 
 #
 #~ msgid "Restore is running..."
@@ -12852,6 +13104,10 @@ msgstr "gått til"
 #~ msgstr ""
 #~ "Frontprosessorens programvare må oppdateres.\n"
 #~ "Trykk OK for å starte oppdatering."
+
+#
+#~ msgid "Zap back to service before tuner setup?"
+#~ msgstr "Gå tilbake til kanal før oppsett av tuner?"
 
 #
 #~ msgid "continue"

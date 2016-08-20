@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-18 22:35+0200\n"
+"POT-Creation-Date: 2016-08-20 17:13+0200\n"
 "PO-Revision-Date: 2015-01-29 17:40+0200\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -389,6 +389,9 @@ msgstr ""
 msgid "%s:%s"
 msgstr ""
 
+msgid "(DHCP is off)"
+msgstr ""
+
 msgid "(ZAP)"
 msgstr "(Prepnúť)"
 
@@ -562,10 +565,6 @@ msgstr "8"
 
 msgid "9"
 msgstr "9"
-
-#, python-format
-msgid ": %s"
-msgstr ""
 
 msgid ": 0000 - default (disabled)"
 msgstr ""
@@ -746,6 +745,10 @@ msgstr ""
 msgid "Active"
 msgstr ""
 
+#, fuzzy
+msgid "Adapter"
+msgstr "Adaptér LAN"
+
 msgid "Adapter settings"
 msgstr "Nastavenia adaptéra"
 
@@ -904,12 +907,6 @@ msgid "Allow subtitle language to equal audio language"
 msgstr ""
 
 msgid "Allow subtitles for hearing impaired"
-msgstr ""
-
-msgid "Load the EPG data regularly"
-msgstr ""
-
-msgid "Save the EPG data regularly"
 msgstr ""
 
 msgid "Allows you to enable the debug log. They contain very detailed information of everything the system does."
@@ -1155,6 +1152,10 @@ msgstr "Režim autorizácie"
 msgid "Auto"
 msgstr "Auto"
 
+#, fuzzy
+msgid "Auto Diseqc"
+msgstr "Automaticky"
+
 msgid "Auto chapter split every ? minutes (0=never)"
 msgstr "Automaticky rozdeľovať kapitoly každých ? minút (0 = nikdy)"
 
@@ -1338,7 +1339,7 @@ msgid "Brightness"
 msgstr "Jas"
 
 #, fuzzy
-msgid "Broadcast:\t"
+msgid "Broadcast:"
 msgstr "Podobné programy:"
 
 #, python-format
@@ -1372,12 +1373,6 @@ msgid "By openMips Image Team"
 msgstr ""
 
 msgid "Bypass HDMI EDID checking"
-msgstr ""
-
-msgid "Bytes received:"
-msgstr ""
-
-msgid "Bytes sent:"
 msgstr ""
 
 msgid "C"
@@ -1777,6 +1772,10 @@ msgstr "Komplexné (umožňuje miešanie rôznych zvukových a obrazových form�
 msgid "Composition of the recording filenames"
 msgstr "Zloženie názvov súborov nahrávok"
 
+#, fuzzy
+msgid "Config Scan Details"
+msgstr "Zobraziť podrobnosti"
+
 msgid "Config resolution of pictures"
 msgstr ""
 
@@ -2100,6 +2099,10 @@ msgid "Configure which tuner will be preferred, when more than one tuner is avai
 msgstr ""
 
 #, fuzzy
+msgid "Configure your Cable settings and press OK to start the scan"
+msgstr "Stlačením OK zapnete zvolený vzhľad."
+
+#, fuzzy
 msgid "Configure your NTP server."
 msgstr "Nastavte názvy serverov"
 
@@ -2108,9 +2111,6 @@ msgstr "Nakonfigurujte internú LAN"
 
 msgid "Configure your network again"
 msgstr "Znova nakonfigurujte sieť"
-
-msgid "Configure your network settings, and press OK to start the scan"
-msgstr ""
 
 msgid "Configure your wireless LAN again"
 msgstr "Znova nakonfigurujte bezdrôtovú sieť"
@@ -2146,6 +2146,18 @@ msgstr ""
 
 msgid "Constellation"
 msgstr "Zostava"
+
+#, fuzzy
+msgid "Contact Info"
+msgstr "Kontrast"
+
+#, fuzzy
+msgid "Content Encoding"
+msgstr "Okamžité nahrávanie..."
+
+#, fuzzy
+msgid "Content Type"
+msgstr "Pokračovať"
 
 msgid "Content does not fit on DVD!"
 msgstr "Obsah sa nezmestí na DVD!"
@@ -2535,6 +2547,10 @@ msgstr "Zistený pevný disk:"
 
 msgid "Detected NIMs:"
 msgstr "Zistené tunery:"
+
+#, fuzzy
+msgid "Device"
+msgstr "Stanice"
 
 #, fuzzy
 msgid "Device Details"
@@ -3028,10 +3044,6 @@ msgstr ""
 msgid "Enable Wake On LAN"
 msgstr ""
 
-#, fuzzy
-msgid "Enable auto cable scan"
-msgstr "Zapnúť rodičovskú zámku"
-
 msgid "Enable auto fast scan"
 msgstr ""
 
@@ -3123,10 +3135,6 @@ msgstr ""
 
 msgid "English"
 msgstr "Angličtina"
-
-#, python-format
-msgid "Enigma (re)starts: %d\n"
-msgstr ""
 
 #, python-format
 msgid "Enigma2 Build: %s"
@@ -3671,6 +3679,9 @@ msgstr "Oneskorenie AC3"
 msgid "General PCM delay"
 msgstr "Oneskorenie PCM"
 
+msgid "Generator"
+msgstr ""
+
 msgid "Genre"
 msgstr "Žáner"
 
@@ -3801,6 +3812,10 @@ msgstr ""
 msgid "HDMI"
 msgstr ""
 
+#, fuzzy
+msgid "HDMI Colorspace"
+msgstr "Formát farby"
+
 msgid "HDMI-CEC"
 msgstr ""
 
@@ -3855,6 +3870,9 @@ msgstr ""
 
 msgid "Hidden network"
 msgstr "Skrytá sieť"
+
+msgid "Hide"
+msgstr ""
 
 msgid "Hide channel list in radio mode"
 msgstr ""
@@ -4197,11 +4215,15 @@ msgstr "Umiestnenie okamžitého záznamu"
 msgid "Instant recording..."
 msgstr "Okamžité nahrávanie..."
 
-#, fuzzy
-msgid "Interface:\t/dev/"
+msgid "Interface: "
 msgstr "Rozhranie:"
 
-msgid "Interface: "
+#, fuzzy
+msgid "Interface: /dev/"
+msgstr "Rozhranie:"
+
+#, fuzzy
+msgid "Interface:/dev/"
 msgstr "Rozhranie:"
 
 msgid "Intermediate"
@@ -4274,6 +4296,9 @@ msgid "Items per page "
 msgstr ""
 
 msgid "Items per page for list screen"
+msgstr ""
+
+msgid "Itu_R_BT_709"
 msgstr ""
 
 msgid "J"
@@ -4354,8 +4379,19 @@ msgstr "LNB"
 msgid "Language"
 msgstr "Jazyk"
 
+#, fuzzy
+msgid "Language Team"
+msgstr "Jazyk"
+
 msgid "Language selection"
 msgstr "Voľba jazyka"
+
+msgid "Large"
+msgstr ""
+
+#, fuzzy
+msgid "Last Translator"
+msgstr "Preklad"
 
 msgid "Last config"
 msgstr "Posledné nastavenie"
@@ -4486,6 +4522,9 @@ msgstr "Prevziať dĺžku filmov do zoznamu filmov"
 msgid "Load playlist"
 msgstr "otvoriť zoznam prehrávok"
 
+msgid "Load the EPG data regularly"
+msgstr ""
+
 #, fuzzy
 msgid "Load unlinked userbouquets"
 msgstr "Zapnúť viacnásobné bukety"
@@ -4502,6 +4541,10 @@ msgstr "Umiestnenie"
 
 msgid "Location for instant recordings"
 msgstr "Umiestnenie okamžitých záznamov"
+
+#, fuzzy
+msgid "Location:"
+msgstr "Umiestnenie"
 
 msgid "Lock ratio"
 msgstr ""
@@ -4550,6 +4593,10 @@ msgstr ""
 
 msgid "MAC:"
 msgstr ""
+
+#, fuzzy
+msgid "MIME Version"
+msgstr "Inverzia"
 
 #, fuzzy
 msgid "MMC card"
@@ -4606,6 +4653,10 @@ msgid "Manufacturer"
 msgstr "Výrobca"
 
 #, fuzzy
+msgid "Manufacturer info"
+msgstr "Výrobca"
+
+#, fuzzy
 msgid "Margin after recording (minutes)"
 msgstr "Rezerva pred začiatkom programu (min)"
 
@@ -4614,6 +4665,9 @@ msgid "Margin before recording (minutes)"
 msgstr "Rezerva pred začiatkom programu (min)"
 
 msgid "Mark service as dedicated 3D service"
+msgstr ""
+
+msgid "Mark service to hide VBI line"
 msgstr ""
 
 msgid "Max memory positions"
@@ -4653,8 +4707,15 @@ msgstr ""
 msgid "Memory index"
 msgstr ""
 
+msgid "MemoryInfo - only for Developers"
+msgstr ""
+
 msgid "Menu"
 msgstr "Menu"
+
+#, python-format
+msgid "Menusort (%s)"
+msgstr ""
 
 msgid "Message"
 msgstr "Správa"
@@ -4858,6 +4919,10 @@ msgstr ""
 msgid "Multi-EPG bouquet selection"
 msgstr ""
 
+#, fuzzy
+msgid "Multichannel as PCM"
+msgstr "Stanica"
+
 msgid "Multimedia"
 msgstr "Multimédiá"
 
@@ -4888,6 +4953,12 @@ msgstr "NASLED."
 #, fuzzy
 msgid "NFS Setup"
 msgstr "Nastavenia"
+
+msgid "NFS Shares OFF"
+msgstr ""
+
+msgid "NFS Shares ON"
+msgstr ""
 
 #, fuzzy
 msgid "NFS setup"
@@ -4923,6 +4994,10 @@ msgstr "Nameserver"
 msgid "Nameserver %d"
 msgstr "DNS (nameserver) %d"
 
+#, fuzzy
+msgid "Nameserver is off"
+msgstr "Nameserver"
+
 msgid "Nameserver settings"
 msgstr "Nastavenie DNS"
 
@@ -4956,6 +5031,10 @@ msgstr "Konfigurácia siete..."
 #, fuzzy
 msgid "Network MAC settings"
 msgstr "Aktivovať nastavenia siete"
+
+#, fuzzy
+msgid "Network Speed:"
+msgstr "Sieť:"
 
 #, fuzzy
 msgid "Network configuration"
@@ -5025,6 +5104,12 @@ msgstr ""
 
 msgid "No"
 msgstr "Nie"
+
+msgid ""
+"No '/etc/exports' Configuration File found.\n"
+"Press blue button to activate default Enigma2\n"
+"HDD and USB as NFS exports, if the hardware is available."
+msgstr ""
 
 msgid "No (supported) DVDROM found!"
 msgstr "Nenájdený (podporovaný) DVDROM!"
@@ -5463,10 +5548,6 @@ msgstr "Prepísať konfiguračné súbory pri aktualizácii softvéru? "
 msgid "PAL"
 msgstr "PAL"
 
-#, fuzzy
-msgid "PCM Multichannel"
-msgstr "Stanica"
-
 msgid "PCR PID"
 msgstr ""
 
@@ -5493,6 +5574,9 @@ msgid "PLP ID"
 msgstr ""
 
 msgid "PMT PID"
+msgstr ""
+
+msgid "POT-Creation Date"
 msgstr ""
 
 msgid "PPanel"
@@ -5585,6 +5669,9 @@ msgstr ""
 
 msgid "Persian"
 msgstr "Perzština"
+
+msgid "Phone"
+msgstr ""
 
 #, fuzzy
 msgid "PiP setup"
@@ -6150,6 +6237,9 @@ msgstr ""
 msgid "Progress:"
 msgstr "Prebieha"
 
+msgid "Project"
+msgstr ""
+
 msgid "Properties of current title"
 msgstr "Vlastnosti aktuálneho titulu"
 
@@ -6171,6 +6261,10 @@ msgstr "Otvoriť hlavné menu..."
 
 msgid "Protect manufacturer reset screen"
 msgstr ""
+
+#, fuzzy
+msgid "Protect menu sort"
+msgstr "zatvoriť zoznam filmov"
 
 #, fuzzy
 msgid "Protect movie list"
@@ -6328,10 +6422,6 @@ msgstr ""
 #, fuzzy
 msgid "Recall to previous service"
 msgstr "Návrat na predchádzajúcu stanicu"
-
-#, fuzzy
-msgid "Reception Settings"
-msgstr "Nastavenia príjmu"
 
 #, fuzzy
 msgid "Reception lists"
@@ -6541,6 +6631,9 @@ msgstr "Opakovania"
 msgid "Replace `- ` in dialogs with colored text per speaker (like teletext subtitles for the hearing impaired)"
 msgstr ""
 
+msgid "Report Msgid Bugs To"
+msgstr ""
+
 msgid "Require authentication for http streams"
 msgstr ""
 
@@ -6662,6 +6755,9 @@ msgid "Reverse bouquet buttons"
 msgstr ""
 
 msgid "Reverse list"
+msgstr ""
+
+msgid "Revision Date"
 msgstr ""
 
 msgid "Rewind speeds"
@@ -6809,6 +6905,9 @@ msgstr "zastaviť časový posun"
 #, fuzzy
 msgid "Save playlist"
 msgstr "uložiť zoznam prehrávok"
+
+msgid "Save the EPG data regularly"
+msgstr ""
 
 #, fuzzy
 msgid "Save timeshift and zap"
@@ -7244,6 +7343,9 @@ msgstr "PIN nastavení"
 msgid "Set all hotkey to default?"
 msgstr ""
 
+msgid "Set blocktimes by weekday"
+msgstr ""
+
 msgid "Set default"
 msgstr ""
 
@@ -7323,6 +7425,10 @@ msgstr "Režim nastavení"
 msgid "Setup network time synchronization interval."
 msgstr ""
 
+#, fuzzy
+msgid "Setup tuner"
+msgstr "Zvoľte film"
+
 msgid "Setup your positioner"
 msgstr ""
 
@@ -7343,6 +7449,10 @@ msgstr "Opis"
 
 msgid "Short filenames"
 msgstr "Krátke názvy súborov"
+
+#, fuzzy
+msgid "Show"
+msgstr "Zobraziť informácie"
 
 #, fuzzy
 msgid "Show Audioselection"
@@ -7493,6 +7603,10 @@ msgstr "zrušiť úpravu obľúbených"
 #, fuzzy
 msgid "Show latest upgrade log"
 msgstr "Zvoľte zdroj aktualizácie, ktorý chcete upraviť."
+
+#, fuzzy
+msgid "Show menu paths"
+msgstr "zobraziť menu štítkov"
 
 #, fuzzy
 msgid "Show message when recording starts"
@@ -7664,6 +7778,9 @@ msgstr "Jednoduchá sada titulov (kompatibilita so staršími prehrávačmi)"
 msgid "Simple zoom"
 msgstr "jednoduchý"
 
+msgid "Simplified Chinese"
+msgstr ""
+
 msgid "Simulate (no write)"
 msgstr ""
 
@@ -7760,6 +7877,9 @@ msgstr "pomaly"
 #, fuzzy
 msgid "Slow motion speeds"
 msgstr "Rýchlosti časovej lupy"
+
+msgid "Small"
+msgstr ""
 
 #, fuzzy
 msgid "Small progress"
@@ -7872,6 +7992,9 @@ msgstr ""
 msgid "Sort list:"
 msgstr ""
 
+msgid "Sort order for menu entries"
+msgstr ""
+
 msgid "Sort plugins list to default?"
 msgstr ""
 
@@ -7887,6 +8010,9 @@ msgstr "Zvuk"
 msgid "Sound carrier"
 msgstr "Nosný kmitočet zvuku"
 
+msgid "Source Charset"
+msgstr ""
+
 msgid "Source request"
 msgstr ""
 
@@ -7897,6 +8023,9 @@ msgid "Spanish"
 msgstr "Španielčina"
 
 msgid "Specify extra timeframe to ignore inactivity sleeptimer"
+msgstr ""
+
+msgid "Specify if you want to set the blocktimes separately by weekday"
 msgstr ""
 
 msgid "Specify the end time to ignore the shutdown timer when the receiver is in standby mode"
@@ -8098,6 +8227,10 @@ msgstr ""
 
 msgid "Storage media"
 msgstr ""
+
+#, fuzzy
+msgid "Store"
+msgstr "Obnoviť"
 
 msgid "Store at index"
 msgstr ""
@@ -8393,12 +8526,6 @@ msgstr ""
 msgid "The %d min remaining before the end of the event."
 msgstr ""
 
-msgid "The stored EPG data will be read every (hours)"
-msgstr ""
-
-msgid "The EPG data will be stored every (hours)"
-msgstr ""
-
 msgid "The DVD standard doesn't support H.264 (HDTV) video streams."
 msgstr ""
 
@@ -8409,6 +8536,9 @@ msgid ""
 msgstr ""
 "Modul bezdrôtovej LAN nie je nainštalovaný!\n"
 "Nainštalujte ho."
+
+msgid "The EPG data will be stored every (hours)"
+msgstr ""
 
 #, fuzzy
 msgid ""
@@ -8528,6 +8658,9 @@ msgid ""
 msgstr ""
 "Rozšírenie Správa softvéru nie je nainštalované!\n"
 "Nainštalujte si ho."
+
+msgid "The stored EPG data will be read every (hours)"
+msgstr ""
 
 msgid "The timer file (timers.xml) is corrupt and could not be loaded."
 msgstr "Súbor časovača (timers.xml) je porušený a nedá sa otvoriť."
@@ -8661,6 +8794,15 @@ msgid "This option allows you to boost the blue tones in the picture."
 msgstr ""
 
 msgid "This option allows you to boost the green tones in the picture."
+msgstr ""
+
+msgid "This option allows you to hide and sort menu entries. When selecting user you can change order and hide menu items via the blue button"
+msgstr ""
+
+msgid "This option allows you to set the Colorspace of HDMI from Auto to RGB"
+msgstr ""
+
+msgid "This option allows you to show menu paths."
 msgstr ""
 
 msgid "This option allows you to view the old and new settings side by side."
@@ -8945,6 +9087,9 @@ msgstr ""
 msgid "Track"
 msgstr "Stopa"
 
+msgid "Traditional Chinese"
+msgstr ""
+
 #, fuzzy
 msgid "Transcode"
 msgstr "Transpondér"
@@ -8961,6 +9106,10 @@ msgstr "Preklad:"
 
 msgid "Translations"
 msgstr ""
+
+#, fuzzy
+msgid "Translations Info"
+msgstr "Preklad"
 
 msgid "Transmission mode"
 msgstr "Režim prenosu"
@@ -9152,6 +9301,9 @@ msgid "Unknown"
 msgstr "Neznáme"
 
 msgid "Unmark service as dedicated 3D service"
+msgstr ""
+
+msgid "Unmark service to unhide VBI line"
 msgstr ""
 
 msgid "Unmount"
@@ -10252,9 +10404,6 @@ msgstr "Prepnúť späť na predtým naladenú stanicu?"
 msgid "Zap back to service before positioner setup?"
 msgstr "Prepnúť späť na stanicu spred nastavovania motora?"
 
-msgid "Zap back to service before tuner setup?"
-msgstr "Prepnúť späť na stanicu spred nastavovania tunera?"
-
 msgid "Zap bouquets blindly on zap buttons"
 msgstr ""
 
@@ -10341,6 +10490,9 @@ msgstr "hneď začne"
 msgid "activate network adapter configuration"
 msgstr "aktivovať konfiguráciu sieťového adaptéra"
 
+msgid "active NFS Shares:"
+msgstr ""
+
 msgid "actual time only"
 msgstr ""
 
@@ -10394,6 +10546,10 @@ msgstr "triediť podľa abecedy"
 
 msgid "alphabetic reverse"
 msgstr ""
+
+#, fuzzy
+msgid "alphabetical"
+msgstr "triediť podľa abecedy"
 
 msgid "alternative"
 msgstr ""
@@ -10454,6 +10610,14 @@ msgstr "auto"
 #, fuzzy
 msgid "automatic"
 msgstr "Automaticky"
+
+#, fuzzy
+msgid "automatic from DHCP"
+msgstr "Automaticky"
+
+#, fuzzy
+msgid "automatically scan every day"
+msgstr "Automatické vyhľadávanie"
 
 msgid "back"
 msgstr "späť"
@@ -10769,6 +10933,10 @@ msgstr ""
 msgid "forward to the next chapter"
 msgstr "preskočiť na ďalšiu kapitolu"
 
+#, fuzzy
+msgid "found"
+msgstr "Zvuk"
+
 msgid "free"
 msgstr "voľných"
 
@@ -10804,6 +10972,9 @@ msgstr ""
 
 msgid "help..."
 msgstr "Pomoc..."
+
+msgid "hide"
+msgstr ""
 
 msgid "horizontal"
 msgstr "vodorovná"
@@ -10973,6 +11144,18 @@ msgstr "nenájdené otvory CI"
 msgid "no channel list"
 msgstr "Nasledujúca stanica v histórii"
 
+#, fuzzy
+msgid "no domain name found"
+msgstr "Nenájdený modul"
+
+#, fuzzy
+msgid "no gateway found"
+msgstr "Nenájdený modul"
+
+#, fuzzy
+msgid "no log entrys"
+msgstr "prehrať"
+
 msgid "no module found"
 msgstr "Nenájdený modul"
 
@@ -10983,11 +11166,22 @@ msgstr "Správca balíčkov"
 msgid "no storage devices found"
 msgstr ""
 
+msgid ""
+"no valid entrys in /etc/exports found\n"
+"Press blue button to activate default Enigma2\n"
+"HDD and USB as NFS exports,\n"
+"if valid mounted hardware is available."
+msgstr ""
+
 msgid "none"
 msgstr "žiadne"
 
 msgid "normal"
 msgstr ""
+
+#, fuzzy
+msgid "not avaible"
+msgstr "nedostupné"
 
 msgid "not configured"
 msgstr "nenakonfigurované"
@@ -11087,6 +11281,20 @@ msgstr ""
 
 msgid "please press OK when ready"
 msgstr "Keď budete pripravení, stlačte tlačidlo OK."
+
+#, fuzzy
+msgid "please wait"
+msgstr "Čakajte..."
+
+msgid ""
+"please wait\n"
+"while acticate NFS exports"
+msgstr ""
+
+msgid ""
+"please wait\n"
+"while deacticate NFS exports"
+msgstr ""
 
 msgid "please wait, loading picture..."
 msgstr "Čakajte, nahrávam obraz..."
@@ -11261,6 +11469,9 @@ msgstr ""
 #, fuzzy
 msgid "settings"
 msgstr "Nastavenia"
+
+msgid "show"
+msgstr ""
 
 msgid "show DVD main menu"
 msgstr "zobraziť hlavné menu DVD"
@@ -11652,6 +11863,10 @@ msgstr "prepnuté"
 #~ msgid "Edit services list"
 #~ msgstr "Upraviť zoznam staníc"
 
+#, fuzzy
+#~ msgid "Enable auto cable scan"
+#~ msgstr "Zapnúť rodičovskú zámku"
+
 #~ msgid "Enable parental control"
 #~ msgstr "Zapnúť rodičovskú zámku"
 
@@ -11755,6 +11970,10 @@ msgstr "prepnuté"
 #~ msgstr "Reštartovať"
 
 #, fuzzy
+#~ msgid "Reception Settings"
+#~ msgstr "Nastavenia príjmu"
+
+#, fuzzy
 #~ msgid "Restart STB"
 #~ msgstr "Reštartovať"
 
@@ -11784,10 +12003,6 @@ msgstr "prepnuté"
 #, fuzzy
 #~ msgid "Show shutdown menu"
 #~ msgstr "zobraziť menu vypnutia"
-
-#, fuzzy
-#~ msgid "Show tag menu"
-#~ msgstr "zobraziť menu štítkov"
 
 #~ msgid "Show the tv player..."
 #~ msgstr "Prehrávanie TV..."
@@ -11881,6 +12096,9 @@ msgstr "prepnuté"
 
 #~ msgid "Zap back to service before satfinder?"
 #~ msgstr "Prepnúť späť na stanicu spred hľadania satelitu?"
+
+#~ msgid "Zap back to service before tuner setup?"
+#~ msgstr "Prepnúť späť na stanicu spred nastavovania tunera?"
 
 #~ msgid "complex"
 #~ msgstr "komplexné"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-18 22:35+0200\n"
+"POT-Creation-Date: 2016-08-20 17:13+0200\n"
 "PO-Revision-Date: 2015-01-29 17:40+0200\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -411,6 +411,9 @@ msgstr ""
 msgid "%s:%s"
 msgstr ""
 
+msgid "(DHCP is off)"
+msgstr ""
+
 #
 msgid "(ZAP)"
 msgstr "(ZAP)"
@@ -617,10 +620,6 @@ msgstr "8"
 #
 msgid "9"
 msgstr "9"
-
-#, python-format
-msgid ": %s"
-msgstr ""
 
 msgid ": 0000 - default (disabled)"
 msgstr ""
@@ -833,6 +832,11 @@ msgid "Active"
 msgstr ""
 
 #
+#, fuzzy
+msgid "Adapter"
+msgstr "LAN adapter"
+
+#
 msgid "Adapter settings"
 msgstr "Postavke adaptera"
 
@@ -1022,12 +1026,6 @@ msgid "Allow subtitle language to equal audio language"
 msgstr ""
 
 msgid "Allow subtitles for hearing impaired"
-msgstr ""
-
-msgid "Load the EPG data regularly"
-msgstr ""
-
-msgid "Save the EPG data regularly"
 msgstr ""
 
 msgid "Allows you to enable the debug log. They contain very detailed information of everything the system does."
@@ -1312,6 +1310,11 @@ msgid "Auto"
 msgstr "Auto"
 
 #
+#, fuzzy
+msgid "Auto Diseqc"
+msgstr "Automatski"
+
+#
 msgid "Auto chapter split every ? minutes (0=never)"
 msgstr "Automatska podela delova svakih ? minuta (0=nikad)"
 
@@ -1533,7 +1536,7 @@ msgstr "Osvetljenje"
 
 #
 #, fuzzy
-msgid "Broadcast:\t"
+msgid "Broadcast:"
 msgstr "Slične emisije:"
 
 #, python-format
@@ -1571,12 +1574,6 @@ msgid "By openMips Image Team"
 msgstr ""
 
 msgid "Bypass HDMI EDID checking"
-msgstr ""
-
-msgid "Bytes received:"
-msgstr ""
-
-msgid "Bytes sent:"
 msgstr ""
 
 #
@@ -2034,6 +2031,11 @@ msgstr "Složen (dozvoljava miksovanje audio zapisa i aspekta)"
 msgid "Composition of the recording filenames"
 msgstr "Sklapanje imena snimljenih datoteka"
 
+#
+#, fuzzy
+msgid "Config Scan Details"
+msgstr "Vidi detalje"
+
 msgid "Config resolution of pictures"
 msgstr ""
 
@@ -2379,6 +2381,11 @@ msgstr ""
 
 #
 #, fuzzy
+msgid "Configure your Cable settings and press OK to start the scan"
+msgstr "Pritisnite OK za aktiviranje izabrane maske."
+
+#
+#, fuzzy
 msgid "Configure your NTP server."
 msgstr "Konfiguriši nejmservere"
 
@@ -2389,9 +2396,6 @@ msgstr "Konfiguriši svoj interni LAN"
 #
 msgid "Configure your network again"
 msgstr "Konfigurišite vašu mrežu ponovo"
-
-msgid "Configure your network settings, and press OK to start the scan"
-msgstr ""
 
 #
 msgid "Configure your wireless LAN again"
@@ -2434,6 +2438,21 @@ msgstr ""
 #
 msgid "Constellation"
 msgstr "Konstelacija"
+
+#
+#, fuzzy
+msgid "Contact Info"
+msgstr "Kontrast"
+
+#
+#, fuzzy
+msgid "Content Encoding"
+msgstr "Trenutno snimanje..."
+
+#
+#, fuzzy
+msgid "Content Type"
+msgstr "Nastaviti"
 
 #
 msgid "Content does not fit on DVD!"
@@ -2882,6 +2901,11 @@ msgstr "Primećeni hard disk:"
 #
 msgid "Detected NIMs:"
 msgstr "Primećeni NIMs:"
+
+#
+#, fuzzy
+msgid "Device"
+msgstr "Kanali"
 
 #
 #, fuzzy
@@ -3457,11 +3481,6 @@ msgstr ""
 msgid "Enable Wake On LAN"
 msgstr ""
 
-#
-#, fuzzy
-msgid "Enable auto cable scan"
-msgstr "Uključi roditeljsku zaštitu"
-
 msgid "Enable auto fast scan"
 msgstr ""
 
@@ -3568,10 +3587,6 @@ msgstr ""
 #
 msgid "English"
 msgstr "Engleski"
-
-#, python-format
-msgid "Enigma (re)starts: %d\n"
-msgstr ""
 
 #, python-format
 msgid "Enigma2 Build: %s"
@@ -4199,6 +4214,9 @@ msgstr "Opšte AC3 kašnjenje"
 msgid "General PCM delay"
 msgstr "Opšte PCM kašnjenje"
 
+msgid "Generator"
+msgstr ""
+
 #
 msgid "Genre"
 msgstr "Žanrovi"
@@ -4344,6 +4362,11 @@ msgstr ""
 msgid "HDMI"
 msgstr ""
 
+#
+#, fuzzy
+msgid "HDMI Colorspace"
+msgstr "Kolor format"
+
 msgid "HDMI-CEC"
 msgstr ""
 
@@ -4404,6 +4427,9 @@ msgid "Helps setting up your signal"
 msgstr ""
 
 msgid "Hidden network"
+msgstr ""
+
+msgid "Hide"
 msgstr ""
 
 msgid "Hide channel list in radio mode"
@@ -4801,12 +4827,17 @@ msgid "Instant recording..."
 msgstr "Trenutno snimanje..."
 
 #
-#, fuzzy
-msgid "Interface:\t/dev/"
+msgid "Interface: "
 msgstr "Iinterfejs:"
 
 #
-msgid "Interface: "
+#, fuzzy
+msgid "Interface: /dev/"
+msgstr "Iinterfejs:"
+
+#
+#, fuzzy
+msgid "Interface:/dev/"
 msgstr "Iinterfejs:"
 
 #
@@ -4891,6 +4922,9 @@ msgid "Items per page "
 msgstr ""
 
 msgid "Items per page for list screen"
+msgstr ""
+
+msgid "Itu_R_BT_709"
 msgstr ""
 
 msgid "J"
@@ -4986,8 +5020,21 @@ msgid "Language"
 msgstr "Jezik"
 
 #
+#, fuzzy
+msgid "Language Team"
+msgstr "Jezik"
+
+#
 msgid "Language selection"
 msgstr "Izbor jezika"
+
+msgid "Large"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Last Translator"
+msgstr "Prevod"
 
 #
 msgid "Last config"
@@ -5142,6 +5189,9 @@ msgstr "Ubaciti dužinu filma u listi filmova"
 msgid "Load playlist"
 msgstr "učitaj plejlistu"
 
+msgid "Load the EPG data regularly"
+msgstr ""
+
 #
 #, fuzzy
 msgid "Load unlinked userbouquets"
@@ -5162,6 +5212,11 @@ msgstr "Lokacija"
 #
 msgid "Location for instant recordings"
 msgstr "Lokacija za instant snimanja"
+
+#
+#, fuzzy
+msgid "Location:"
+msgstr "Lokacija"
 
 msgid "Lock ratio"
 msgstr ""
@@ -5218,6 +5273,11 @@ msgstr ""
 
 msgid "MAC:"
 msgstr ""
+
+#
+#, fuzzy
+msgid "MIME Version"
+msgstr "Inverzija"
 
 #
 #, fuzzy
@@ -5288,6 +5348,11 @@ msgstr "Proizvođač"
 
 #
 #, fuzzy
+msgid "Manufacturer info"
+msgstr "Proizvođač"
+
+#
+#, fuzzy
 msgid "Margin after recording (minutes)"
 msgstr "Margina pre snimanja (minuti)"
 
@@ -5297,6 +5362,9 @@ msgid "Margin before recording (minutes)"
 msgstr "Margina pre snimanja (minuti)"
 
 msgid "Mark service as dedicated 3D service"
+msgstr ""
+
+msgid "Mark service to hide VBI line"
 msgstr ""
 
 msgid "Max memory positions"
@@ -5343,9 +5411,16 @@ msgstr ""
 msgid "Memory index"
 msgstr ""
 
+msgid "MemoryInfo - only for Developers"
+msgstr ""
+
 #
 msgid "Menu"
 msgstr "Meni"
+
+#, python-format
+msgid "Menusort (%s)"
+msgstr ""
 
 #
 msgid "Message"
@@ -5573,6 +5648,11 @@ msgid "Multi-EPG bouquet selection"
 msgstr "Multi EPG izbor buketa"
 
 #
+#, fuzzy
+msgid "Multichannel as PCM"
+msgstr "Kanal"
+
+#
 msgid "Multimedia"
 msgstr "Multimedija"
 
@@ -5609,6 +5689,12 @@ msgstr "SLEDEĆE"
 #, fuzzy
 msgid "NFS Setup"
 msgstr "Podešavanje"
+
+msgid "NFS Shares OFF"
+msgstr ""
+
+msgid "NFS Shares ON"
+msgstr ""
 
 #
 #, fuzzy
@@ -5653,6 +5739,11 @@ msgid "Nameserver %d"
 msgstr "Nejmserver %d"
 
 #
+#, fuzzy
+msgid "Nameserver is off"
+msgstr "Nejmserver"
+
+#
 msgid "Nameserver settings"
 msgstr "Postavke nejmservera"
 
@@ -5692,6 +5783,11 @@ msgstr "Mrežna konfiguracija..."
 #, fuzzy
 msgid "Network MAC settings"
 msgstr "Aktiviraj mrežne postavke"
+
+#
+#, fuzzy
+msgid "Network Speed:"
+msgstr "Mreža:"
 
 #
 #, fuzzy
@@ -5774,6 +5870,12 @@ msgstr ""
 #
 msgid "No"
 msgstr "Ne"
+
+msgid ""
+"No '/etc/exports' Configuration File found.\n"
+"Press blue button to activate default Enigma2\n"
+"HDD and USB as NFS exports, if the hardware is available."
+msgstr ""
 
 #
 msgid "No (supported) DVDROM found!"
@@ -6272,11 +6374,6 @@ msgstr "Prepiši konfiguracione datoteke za vreme nadograđivanja softvera?"
 msgid "PAL"
 msgstr "PAL"
 
-#
-#, fuzzy
-msgid "PCM Multichannel"
-msgstr "Kanal"
-
 msgid "PCR PID"
 msgstr "PCR PID"
 
@@ -6306,6 +6403,9 @@ msgstr ""
 
 msgid "PMT PID"
 msgstr "PMT PID"
+
+msgid "POT-Creation Date"
+msgstr ""
 
 msgid "PPanel"
 msgstr ""
@@ -6415,6 +6515,9 @@ msgstr ""
 
 msgid "Persian"
 msgstr "Persijski"
+
+msgid "Phone"
+msgstr ""
 
 #
 #, fuzzy
@@ -7094,6 +7197,9 @@ msgstr ""
 msgid "Progress:"
 msgstr "U toku"
 
+msgid "Project"
+msgstr ""
+
 #
 msgid "Properties of current title"
 msgstr "Svojstva tekućeg naziva"
@@ -7120,6 +7226,11 @@ msgstr "Uđi u glavni meni"
 
 msgid "Protect manufacturer reset screen"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Protect menu sort"
+msgstr "izađi iz liste filmova"
 
 #
 #, fuzzy
@@ -7311,11 +7422,6 @@ msgstr ""
 #, fuzzy
 msgid "Recall to previous service"
 msgstr "Vratite se na prethodni kanal"
-
-#
-#, fuzzy
-msgid "Reception Settings"
-msgstr "Postavke prijema"
 
 #
 #, fuzzy
@@ -7564,6 +7670,9 @@ msgstr "Ponavljanja"
 msgid "Replace `- ` in dialogs with colored text per speaker (like teletext subtitles for the hearing impaired)"
 msgstr ""
 
+msgid "Report Msgid Bugs To"
+msgstr ""
+
 msgid "Require authentication for http streams"
 msgstr ""
 
@@ -7710,6 +7819,9 @@ msgid "Reverse bouquet buttons"
 msgstr ""
 
 msgid "Reverse list"
+msgstr ""
+
+msgid "Revision Date"
 msgstr ""
 
 #
@@ -7885,6 +7997,9 @@ msgstr "zaustavi vrem.pomak"
 #, fuzzy
 msgid "Save playlist"
 msgstr "sačuvaj plejlistu"
+
+msgid "Save the EPG data regularly"
+msgstr ""
 
 #
 #, fuzzy
@@ -8399,6 +8514,9 @@ msgstr "podesi PIN"
 msgid "Set all hotkey to default?"
 msgstr ""
 
+msgid "Set blocktimes by weekday"
+msgstr ""
+
 msgid "Set default"
 msgstr ""
 
@@ -8488,6 +8606,11 @@ msgstr "Mod postavki"
 msgid "Setup network time synchronization interval."
 msgstr ""
 
+#
+#, fuzzy
+msgid "Setup tuner"
+msgstr "Odaberi film"
+
 msgid "Setup your positioner"
 msgstr ""
 
@@ -8512,6 +8635,11 @@ msgstr "Opis"
 
 msgid "Short filenames"
 msgstr "Kratka imena datoteka"
+
+#
+#, fuzzy
+msgid "Show"
+msgstr "Prikaži info"
 
 #
 #, fuzzy
@@ -8687,6 +8815,11 @@ msgstr "odustani od uređivanja favorita"
 #, fuzzy
 msgid "Show latest upgrade log"
 msgstr "Izaberi izvor nadodradnje za uređivanje."
+
+#
+#, fuzzy
+msgid "Show menu paths"
+msgstr "prikaži citat menia"
 
 #
 #, fuzzy
@@ -8889,6 +9022,9 @@ msgstr "Jednostavne postavke naslova (kompatibilnost za legacy plejere)"
 msgid "Simple zoom"
 msgstr "Jednostavno"
 
+msgid "Simplified Chinese"
+msgstr ""
+
 msgid "Simulate (no write)"
 msgstr ""
 
@@ -9002,6 +9138,9 @@ msgstr "Sporo"
 #, fuzzy
 msgid "Slow motion speeds"
 msgstr "Brzine usporene reprodukcije"
+
+msgid "Small"
+msgstr ""
 
 #
 #, fuzzy
@@ -9128,6 +9267,9 @@ msgstr ""
 msgid "Sort list:"
 msgstr ""
 
+msgid "Sort order for menu entries"
+msgstr ""
+
 msgid "Sort plugins list to default?"
 msgstr ""
 
@@ -9146,6 +9288,9 @@ msgstr "Zvuk"
 msgid "Sound carrier"
 msgstr "Zvučni nosilac"
 
+msgid "Source Charset"
+msgstr ""
+
 msgid "Source request"
 msgstr ""
 
@@ -9158,6 +9303,9 @@ msgid "Spanish"
 msgstr "Španski"
 
 msgid "Specify extra timeframe to ignore inactivity sleeptimer"
+msgstr ""
+
+msgid "Specify if you want to set the blocktimes separately by weekday"
 msgstr ""
 
 msgid "Specify the end time to ignore the shutdown timer when the receiver is in standby mode"
@@ -9391,6 +9539,11 @@ msgstr ""
 
 msgid "Storage media"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Store"
+msgstr "Vrati "
 
 msgid "Store at index"
 msgstr ""
@@ -9731,12 +9884,6 @@ msgstr ""
 msgid "The %d min remaining before the end of the event."
 msgstr ""
 
-msgid "The stored EPG data will be read every (hours)"
-msgstr ""
-
-msgid "The EPG data will be stored every (hours)"
-msgstr ""
-
 msgid "The DVD standard doesn't support H.264 (HDTV) video streams."
 msgstr ""
 
@@ -9748,6 +9895,9 @@ msgid ""
 msgstr ""
 "Bežični LAN dodatak nije instaliran!\n"
 "Molimo instalirajte ga."
+
+msgid "The EPG data will be stored every (hours)"
+msgstr ""
 
 #
 #, fuzzy
@@ -9880,6 +10030,9 @@ msgid ""
 msgstr ""
 "Softwaremanagement proširenje nije instalirano!\n"
 "molim instalirajte ga."
+
+msgid "The stored EPG data will be read every (hours)"
+msgstr ""
 
 #
 msgid "The timer file (timers.xml) is corrupt and could not be loaded."
@@ -10027,6 +10180,15 @@ msgid "This option allows you to boost the blue tones in the picture."
 msgstr ""
 
 msgid "This option allows you to boost the green tones in the picture."
+msgstr ""
+
+msgid "This option allows you to hide and sort menu entries. When selecting user you can change order and hide menu items via the blue button"
+msgstr ""
+
+msgid "This option allows you to set the Colorspace of HDMI from Auto to RGB"
+msgstr ""
+
+msgid "This option allows you to show menu paths."
 msgstr ""
 
 msgid "This option allows you to view the old and new settings side by side."
@@ -10352,6 +10514,9 @@ msgstr ""
 msgid "Track"
 msgstr "Trag"
 
+msgid "Traditional Chinese"
+msgstr ""
+
 #
 #, fuzzy
 msgid "Transcode"
@@ -10372,6 +10537,11 @@ msgstr "Prevod:"
 
 msgid "Translations"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Translations Info"
+msgstr "Prevod"
 
 #
 msgid "Transmission mode"
@@ -10601,6 +10771,9 @@ msgid "Unknown"
 msgstr ""
 
 msgid "Unmark service as dedicated 3D service"
+msgstr ""
+
+msgid "Unmark service to unhide VBI line"
 msgstr ""
 
 msgid "Unmount"
@@ -11822,10 +11995,6 @@ msgstr "Vratiti se nazad na prethodni kanal?"
 msgid "Zap back to service before positioner setup?"
 msgstr "Prebaciti na zadnji kanal pre podešavanja motora?"
 
-#
-msgid "Zap back to service before tuner setup?"
-msgstr "Vratiti se nazad na kanal pre podešavanja tjunera?"
-
 msgid "Zap bouquets blindly on zap buttons"
 msgstr ""
 
@@ -11925,6 +12094,9 @@ msgstr "spremni za početak"
 msgid "activate network adapter configuration"
 msgstr "Aktivirajte konfiguraciju mrežnog adaptera"
 
+msgid "active NFS Shares:"
+msgstr ""
+
 msgid "actual time only"
 msgstr ""
 
@@ -11989,6 +12161,11 @@ msgstr "sortiraj abecedno"
 
 msgid "alphabetic reverse"
 msgstr ""
+
+#
+#, fuzzy
+msgid "alphabetical"
+msgstr "sortiraj abecedno"
 
 msgid "alternative"
 msgstr ""
@@ -12056,6 +12233,16 @@ msgstr "Auto"
 #, fuzzy
 msgid "automatic"
 msgstr "Automatski"
+
+#
+#, fuzzy
+msgid "automatic from DHCP"
+msgstr "Automatski"
+
+#
+#, fuzzy
+msgid "automatically scan every day"
+msgstr "Automatsko skeniranje "
 
 #
 msgid "back"
@@ -12421,6 +12608,11 @@ msgid "forward to the next chapter"
 msgstr "Napred na sledeće poglavlje"
 
 #
+#, fuzzy
+msgid "found"
+msgstr "Zvuk"
+
+#
 msgid "free"
 msgstr "slobodno"
 
@@ -12461,6 +12653,9 @@ msgstr ""
 #
 msgid "help..."
 msgstr "pomoć..."
+
+msgid "hide"
+msgstr ""
 
 #
 msgid "horizontal"
@@ -12662,6 +12857,21 @@ msgid "no channel list"
 msgstr "sledeći kanal u istoriji"
 
 #
+#, fuzzy
+msgid "no domain name found"
+msgstr "nema modula "
+
+#
+#, fuzzy
+msgid "no gateway found"
+msgstr "nema modula "
+
+#
+#, fuzzy
+msgid "no log entrys"
+msgstr "reprodukuj unos"
+
+#
 msgid "no module found"
 msgstr "nema modula "
 
@@ -12673,12 +12883,24 @@ msgstr "Menadžer paketa"
 msgid "no storage devices found"
 msgstr ""
 
+msgid ""
+"no valid entrys in /etc/exports found\n"
+"Press blue button to activate default Enigma2\n"
+"HDD and USB as NFS exports,\n"
+"if valid mounted hardware is available."
+msgstr ""
+
 #
 msgid "none"
 msgstr "prazno"
 
 msgid "normal"
 msgstr ""
+
+#
+#, fuzzy
+msgid "not avaible"
+msgstr "nedostupno"
 
 #
 msgid "not configured"
@@ -12796,6 +13018,21 @@ msgstr ""
 #
 msgid "please press OK when ready"
 msgstr "pritisni OK kada si spreman"
+
+#
+#, fuzzy
+msgid "please wait"
+msgstr "Molim sačekajte"
+
+msgid ""
+"please wait\n"
+"while acticate NFS exports"
+msgstr ""
+
+msgid ""
+"please wait\n"
+"while deacticate NFS exports"
+msgstr ""
 
 #
 msgid "please wait, loading picture..."
@@ -13005,6 +13242,9 @@ msgstr ""
 #, fuzzy
 msgid "settings"
 msgstr "Postavke"
+
+msgid "show"
+msgstr ""
 
 #
 msgid "show DVD main menu"
@@ -13467,6 +13707,11 @@ msgstr "prebačen"
 #~ msgstr "Urediti listu kanala"
 
 #
+#, fuzzy
+#~ msgid "Enable auto cable scan"
+#~ msgstr "Uključi roditeljsku zaštitu"
+
+#
 #~ msgid "Enable parental control"
 #~ msgstr "Uključi roditeljsku zaštitu"
 
@@ -13592,6 +13837,11 @@ msgstr "prebačen"
 
 #
 #, fuzzy
+#~ msgid "Reception Settings"
+#~ msgstr "Postavke prijema"
+
+#
+#, fuzzy
 #~ msgid "Restart STB"
 #~ msgstr "Restart"
 
@@ -13627,11 +13877,6 @@ msgstr "prebačen"
 #, fuzzy
 #~ msgid "Show shutdown menu"
 #~ msgstr "prikaži meni isključivanja"
-
-#
-#, fuzzy
-#~ msgid "Show tag menu"
-#~ msgstr "prikaži citat menia"
 
 #
 #~ msgid "Show the tv player..."
@@ -13744,6 +13989,10 @@ msgstr "prebačen"
 #
 #~ msgid "Zap back to service before satfinder?"
 #~ msgstr "Prebaciti natrag na kanal pre sat. tražitelja?"
+
+#
+#~ msgid "Zap back to service before tuner setup?"
+#~ msgstr "Vratiti se nazad na kanal pre podešavanja tjunera?"
 
 #
 #~ msgid "complex"

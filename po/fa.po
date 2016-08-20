@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-18 22:35+0200\n"
+"POT-Creation-Date: 2016-08-20 17:13+0200\n"
 "PO-Revision-Date: 2015-01-29 17:40+0200\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -369,6 +369,9 @@ msgstr ""
 msgid "%s:%s"
 msgstr ""
 
+msgid "(DHCP is off)"
+msgstr ""
+
 msgid "(ZAP)"
 msgstr "(حذف)"
 
@@ -543,10 +546,6 @@ msgstr "8"
 
 msgid "9"
 msgstr "9"
-
-#, python-format
-msgid ": %s"
-msgstr ""
 
 msgid ": 0000 - default (disabled)"
 msgstr ""
@@ -730,6 +729,10 @@ msgstr ""
 msgid "Active"
 msgstr ""
 
+#, fuzzy
+msgid "Adapter"
+msgstr "LAN آداپتور"
+
 msgid "Adapter settings"
 msgstr "تنظیمات آداپتور"
 
@@ -885,12 +888,6 @@ msgid "Allow subtitle language to equal audio language"
 msgstr ""
 
 msgid "Allow subtitles for hearing impaired"
-msgstr ""
-
-msgid "Load the EPG data regularly"
-msgstr ""
-
-msgid "Save the EPG data regularly"
 msgstr ""
 
 msgid "Allows you to enable the debug log. They contain very detailed information of everything the system does."
@@ -1136,6 +1133,10 @@ msgstr "حالت تالیف"
 msgid "Auto"
 msgstr "خودکار"
 
+#, fuzzy
+msgid "Auto Diseqc"
+msgstr "خودکار"
+
 msgid "Auto chapter split every ? minutes (0=never)"
 msgstr "ایجاد فصل به صورت خودکار بر حسب دقیقه ؟ صفر به معنی هیچ وقت است"
 
@@ -1320,7 +1321,7 @@ msgstr ""
 msgid "Brightness"
 msgstr "روشنایی"
 
-msgid "Broadcast:\t"
+msgid "Broadcast:"
 msgstr ""
 
 #, python-format
@@ -1355,12 +1356,6 @@ msgid "By openMips Image Team"
 msgstr ""
 
 msgid "Bypass HDMI EDID checking"
-msgstr ""
-
-msgid "Bytes received:"
-msgstr ""
-
-msgid "Bytes sent:"
 msgstr ""
 
 msgid "C"
@@ -1760,6 +1755,9 @@ msgstr "مختلط (اجازه میدهد که قطعات موسیقی و منا
 msgid "Composition of the recording filenames"
 msgstr "ترکیب نام های فایل های ضبط"
 
+msgid "Config Scan Details"
+msgstr ""
+
 msgid "Config resolution of pictures"
 msgstr ""
 
@@ -2083,6 +2081,10 @@ msgstr ""
 msgid "Configure which tuner will be preferred, when more than one tuner is available. If set to 'auto' the system will give priority to the tuner having the lowest number of channels/satellites."
 msgstr ""
 
+#, fuzzy
+msgid "Configure your Cable settings and press OK to start the scan"
+msgstr "تنظیمات شبکه را پیکربندی کنید ، دکمه OK را برای شروع اسکن فشار دهید"
+
 #
 #, fuzzy
 msgid "Configure your NTP server."
@@ -2095,9 +2097,6 @@ msgstr "شبکه سیمی داخلی خود را دوباره پیکربندی �
 #
 msgid "Configure your network again"
 msgstr "شبکه خود را دوباره پیکربندی کنید"
-
-msgid "Configure your network settings, and press OK to start the scan"
-msgstr "تنظیمات شبکه را پیکربندی کنید ، دکمه OK را برای شروع اسکن فشار دهید"
 
 #
 msgid "Configure your wireless LAN again"
@@ -2135,6 +2134,18 @@ msgstr ""
 
 msgid "Constellation"
 msgstr "Constellation"
+
+#, fuzzy
+msgid "Contact Info"
+msgstr "کنتراست"
+
+#, fuzzy
+msgid "Content Encoding"
+msgstr "مکان ضبط کردن فوری"
+
+#, fuzzy
+msgid "Content Type"
+msgstr "ادامه"
 
 msgid "Content does not fit on DVD!"
 msgstr "مقدار محتوا مناسب برای DVD نیست"
@@ -2533,6 +2544,10 @@ msgstr "دیسک سخت شناخته شده:"
 
 msgid "Detected NIMs:"
 msgstr "NIM های شناسایی شده:"
+
+#, fuzzy
+msgid "Device"
+msgstr "کانال ها"
 
 msgid "Device Details"
 msgstr ""
@@ -3023,10 +3038,6 @@ msgstr ""
 msgid "Enable Wake On LAN"
 msgstr ""
 
-#, fuzzy
-msgid "Enable auto cable scan"
-msgstr "فعال کردن کنترل والدین"
-
 msgid "Enable auto fast scan"
 msgstr ""
 
@@ -3117,10 +3128,6 @@ msgstr ""
 
 msgid "English"
 msgstr "انگلیسی"
-
-#, python-format
-msgid "Enigma (re)starts: %d\n"
-msgstr ""
 
 #, python-format
 msgid "Enigma2 Build: %s"
@@ -3670,6 +3677,9 @@ msgstr "تاخیر عمومی AC3"
 msgid "General PCM delay"
 msgstr "تاخیر عمومی PCM"
 
+msgid "Generator"
+msgstr ""
+
 msgid "Genre"
 msgstr "ژانر"
 
@@ -3800,6 +3810,10 @@ msgstr ""
 msgid "HDMI"
 msgstr ""
 
+#, fuzzy
+msgid "HDMI Colorspace"
+msgstr "فرمت رنگ"
+
 msgid "HDMI-CEC"
 msgstr ""
 
@@ -3854,6 +3868,9 @@ msgstr ""
 
 msgid "Hidden network"
 msgstr "شبکه مخفی"
+
+msgid "Hide"
+msgstr ""
 
 msgid "Hide channel list in radio mode"
 msgstr ""
@@ -4200,11 +4217,15 @@ msgstr "مکان ضبط کردن فوری"
 msgid "Instant recording..."
 msgstr "مکان ضبط کردن فوری"
 
-#, fuzzy
-msgid "Interface:\t/dev/"
+msgid "Interface: "
 msgstr "رابط:"
 
-msgid "Interface: "
+#, fuzzy
+msgid "Interface: /dev/"
+msgstr "رابط:"
+
+#, fuzzy
+msgid "Interface:/dev/"
 msgstr "رابط:"
 
 msgid "Intermediate"
@@ -4284,6 +4305,9 @@ msgstr "موارد در هر صفحه"
 msgid "Items per page for list screen"
 msgstr "موارد در هر صفحه"
 
+msgid "Itu_R_BT_709"
+msgstr ""
+
 msgid "J"
 msgstr ""
 
@@ -4362,8 +4386,18 @@ msgstr "LNB"
 msgid "Language"
 msgstr "زبان"
 
+#, fuzzy
+msgid "Language Team"
+msgstr "زبان"
+
 msgid "Language selection"
 msgstr "انتخاب زبان"
+
+msgid "Large"
+msgstr ""
+
+msgid "Last Translator"
+msgstr ""
 
 #
 msgid "Last config"
@@ -4496,6 +4530,9 @@ msgstr "آماده سازی طول فیلم ها در لیست فیلم"
 msgid "Load playlist"
 msgstr "ذخیره لیست پخش"
 
+msgid "Load the EPG data regularly"
+msgstr ""
+
 #, fuzzy
 msgid "Load unlinked userbouquets"
 msgstr "فعال کردن چندین لیست"
@@ -4513,6 +4550,10 @@ msgstr "محل"
 #
 msgid "Location for instant recordings"
 msgstr ""
+
+#, fuzzy
+msgid "Location:"
+msgstr "محل"
 
 msgid "Lock ratio"
 msgstr "نسبت قفل"
@@ -4561,6 +4602,10 @@ msgstr ""
 
 msgid "MAC:"
 msgstr ""
+
+#, fuzzy
+msgid "MIME Version"
+msgstr "وارونگی"
 
 #, fuzzy
 msgid "MMC card"
@@ -4617,6 +4662,11 @@ msgstr "ترانسپوندر دستی"
 msgid "Manufacturer"
 msgstr "تولید کننده"
 
+#
+#, fuzzy
+msgid "Manufacturer info"
+msgstr "تولید کننده"
+
 #, fuzzy
 msgid "Margin after recording (minutes)"
 msgstr "حاشیه قبل از ضبط (دقیقه)"
@@ -4626,6 +4676,9 @@ msgid "Margin before recording (minutes)"
 msgstr "حاشیه قبل از ضبط (دقیقه)"
 
 msgid "Mark service as dedicated 3D service"
+msgstr ""
+
+msgid "Mark service to hide VBI line"
 msgstr ""
 
 msgid "Max memory positions"
@@ -4666,8 +4719,15 @@ msgstr "حافظه"
 msgid "Memory index"
 msgstr "فهرست حافظه"
 
+msgid "MemoryInfo - only for Developers"
+msgstr ""
+
 msgid "Menu"
 msgstr "منو"
+
+#, python-format
+msgid "Menusort (%s)"
+msgstr ""
 
 msgid "Message"
 msgstr "پیام"
@@ -4873,6 +4933,10 @@ msgstr ""
 msgid "Multi-EPG bouquet selection"
 msgstr "انتخاب لیست EPG چندگانه"
 
+#, fuzzy
+msgid "Multichannel as PCM"
+msgstr "کانال"
+
 msgid "Multimedia"
 msgstr "چند رسانه ای"
 
@@ -4903,6 +4967,12 @@ msgstr "بعدی"
 #, fuzzy
 msgid "NFS Setup"
 msgstr "تنظیمات"
+
+msgid "NFS Shares OFF"
+msgstr ""
+
+msgid "NFS Shares ON"
+msgstr ""
 
 #, fuzzy
 msgid "NFS setup"
@@ -4938,6 +5008,10 @@ msgstr "Nameserver"
 msgid "Nameserver %d"
 msgstr "Nameserver %d"
 
+#, fuzzy
+msgid "Nameserver is off"
+msgstr "Nameserver"
+
 msgid "Nameserver settings"
 msgstr "Nameserver تنظیمات"
 
@@ -4971,6 +5045,10 @@ msgstr "پیکربندی شبکه"
 #, fuzzy
 msgid "Network MAC settings"
 msgstr "فعال کردن تنظیمات شبکه"
+
+#, fuzzy
+msgid "Network Speed:"
+msgstr "شبکه:"
 
 #, fuzzy
 msgid "Network configuration"
@@ -5039,6 +5117,12 @@ msgstr ""
 
 msgid "No"
 msgstr "خیر"
+
+msgid ""
+"No '/etc/exports' Configuration File found.\n"
+"Press blue button to activate default Enigma2\n"
+"HDD and USB as NFS exports, if the hardware is available."
+msgstr ""
 
 msgid "No (supported) DVDROM found!"
 msgstr "هیچ DVDROM قابل پشتیبانی یافت نشد"
@@ -5479,10 +5563,6 @@ msgstr "بازنویسی فایل های پیکربندی هنگام به روز
 msgid "PAL"
 msgstr "PAL"
 
-#, fuzzy
-msgid "PCM Multichannel"
-msgstr "کانال"
-
 msgid "PCR PID"
 msgstr "PCR PID"
 
@@ -5510,6 +5590,9 @@ msgstr ""
 
 msgid "PMT PID"
 msgstr "PMT PID"
+
+msgid "POT-Creation Date"
+msgstr ""
 
 msgid "PPanel"
 msgstr ""
@@ -5601,6 +5684,9 @@ msgstr "حذف تمامی موارد حذف شده به صورت دائمی"
 
 msgid "Persian"
 msgstr "فارسی"
+
+msgid "Phone"
+msgstr ""
 
 #, fuzzy
 msgid "PiP setup"
@@ -6172,6 +6258,9 @@ msgstr "پیشرفت کوچک"
 msgid "Progress:"
 msgstr "پیشرفت"
 
+msgid "Project"
+msgstr ""
+
 msgid "Properties of current title"
 msgstr "مشخصات عنوان فعلی"
 
@@ -6193,6 +6282,10 @@ msgstr "ورود به منوی اصلی"
 
 msgid "Protect manufacturer reset screen"
 msgstr ""
+
+#, fuzzy
+msgid "Protect menu sort"
+msgstr "ویرایش لیست کانال ها"
 
 #, fuzzy
 msgid "Protect movie list"
@@ -6351,10 +6444,6 @@ msgstr "ضبط"
 #, fuzzy
 msgid "Recall to previous service"
 msgstr "بازگشت به کانال قبلی"
-
-#, fuzzy
-msgid "Reception Settings"
-msgstr "تنظیمات دریافت"
 
 #, fuzzy
 msgid "Reception lists"
@@ -6570,6 +6659,9 @@ msgstr "تکرار ها"
 msgid "Replace `- ` in dialogs with colored text per speaker (like teletext subtitles for the hearing impaired)"
 msgstr ""
 
+msgid "Report Msgid Bugs To"
+msgstr ""
+
 msgid "Require authentication for http streams"
 msgstr ""
 
@@ -6697,6 +6789,9 @@ msgid "Reverse bouquet buttons"
 msgstr ""
 
 msgid "Reverse list"
+msgstr ""
+
+msgid "Revision Date"
 msgstr ""
 
 msgid "Rewind speeds"
@@ -6846,6 +6941,9 @@ msgstr "توقف تغییر زمان ؟"
 #, fuzzy
 msgid "Save playlist"
 msgstr "ذخیره لیست پخش"
+
+msgid "Save the EPG data regularly"
+msgstr ""
 
 #, fuzzy
 msgid "Save timeshift and zap"
@@ -7277,6 +7375,9 @@ msgstr "رمز جدید"
 msgid "Set all hotkey to default?"
 msgstr ""
 
+msgid "Set blocktimes by weekday"
+msgstr ""
+
 msgid "Set default"
 msgstr ""
 
@@ -7359,6 +7460,10 @@ msgstr "حالت تنظیمات"
 msgid "Setup network time synchronization interval."
 msgstr ""
 
+#, fuzzy
+msgid "Setup tuner"
+msgstr "انتخاب فیلم"
+
 msgid "Setup your positioner"
 msgstr "تنظیم مکان یاب شما"
 
@@ -7380,6 +7485,10 @@ msgstr "توضیحات"
 
 msgid "Short filenames"
 msgstr "نام های کوتاه فایل"
+
+#, fuzzy
+msgid "Show"
+msgstr "نمایش اطلاعات"
 
 #, fuzzy
 msgid "Show Audioselection"
@@ -7528,6 +7637,10 @@ msgstr "اضافه کردن به مورد علاقه"
 #, fuzzy
 msgid "Show latest upgrade log"
 msgstr "آخرین به روز رسانی: "
+
+#, fuzzy
+msgid "Show menu paths"
+msgstr "نمایش اطلاعات"
 
 #
 #, fuzzy
@@ -7708,6 +7821,9 @@ msgstr ""
 msgid "Simple zoom"
 msgstr "ساده"
 
+msgid "Simplified Chinese"
+msgstr ""
+
 msgid "Simulate (no write)"
 msgstr ""
 
@@ -7803,6 +7919,9 @@ msgstr "آهسته"
 #, fuzzy
 msgid "Slow motion speeds"
 msgstr "سرعت حرکت آهسته"
+
+msgid "Small"
+msgstr ""
 
 #, fuzzy
 msgid "Small progress"
@@ -7921,6 +8040,9 @@ msgstr ""
 msgid "Sort list:"
 msgstr ""
 
+msgid "Sort order for menu entries"
+msgstr ""
+
 msgid "Sort plugins list to default?"
 msgstr ""
 
@@ -7936,6 +8058,10 @@ msgstr "صدا"
 msgid "Sound carrier"
 msgstr "حمل کننده صدا"
 
+#, fuzzy
+msgid "Source Charset"
+msgstr "درخواست منبع"
+
 msgid "Source request"
 msgstr "درخواست منبع"
 
@@ -7946,6 +8072,9 @@ msgid "Spanish"
 msgstr "اسپانیایی"
 
 msgid "Specify extra timeframe to ignore inactivity sleeptimer"
+msgstr ""
+
+msgid "Specify if you want to set the blocktimes separately by weekday"
 msgstr ""
 
 msgid "Specify the end time to ignore the shutdown timer when the receiver is in standby mode"
@@ -8149,6 +8278,10 @@ msgstr "متوقف شده"
 
 msgid "Storage media"
 msgstr ""
+
+#, fuzzy
+msgid "Store"
+msgstr "بازگردانی"
 
 msgid "Store at index"
 msgstr ""
@@ -8443,12 +8576,6 @@ msgstr ""
 msgid "The %d min remaining before the end of the event."
 msgstr ""
 
-msgid "The stored EPG data will be read every (hours)"
-msgstr ""
-
-msgid "The EPG data will be stored every (hours)"
-msgstr ""
-
 msgid "The DVD standard doesn't support H.264 (HDTV) video streams."
 msgstr ""
 
@@ -8460,6 +8587,9 @@ msgid ""
 msgstr ""
 "بسته مدیریت نرم افزار نصب نشده است\n"
 "لطفا آن را نصب کنید"
+
+msgid "The EPG data will be stored every (hours)"
+msgstr ""
 
 #
 #, fuzzy
@@ -8582,6 +8712,9 @@ msgid ""
 msgstr ""
 "بسته مدیریت نرم افزار نصب نشده است\n"
 "لطفا آن را نصب کنید"
+
+msgid "The stored EPG data will be read every (hours)"
+msgstr ""
 
 msgid "The timer file (timers.xml) is corrupt and could not be loaded."
 msgstr ""
@@ -8709,6 +8842,15 @@ msgid "This option allows you to boost the blue tones in the picture."
 msgstr ""
 
 msgid "This option allows you to boost the green tones in the picture."
+msgstr ""
+
+msgid "This option allows you to hide and sort menu entries. When selecting user you can change order and hide menu items via the blue button"
+msgstr ""
+
+msgid "This option allows you to set the Colorspace of HDMI from Auto to RGB"
+msgstr ""
+
+msgid "This option allows you to show menu paths."
 msgstr ""
 
 msgid "This option allows you to view the old and new settings side by side."
@@ -8964,6 +9106,9 @@ msgstr ""
 msgid "Track"
 msgstr ""
 
+msgid "Traditional Chinese"
+msgstr ""
+
 #, fuzzy
 msgid "Transcode"
 msgstr "فلش کردن ناموفق"
@@ -8980,6 +9125,10 @@ msgstr ""
 
 msgid "Translations"
 msgstr ""
+
+#, fuzzy
+msgid "Translations Info"
+msgstr "فرستنده فعلی"
 
 msgid "Transmission mode"
 msgstr ""
@@ -9164,6 +9313,9 @@ msgid "Unknown"
 msgstr ""
 
 msgid "Unmark service as dedicated 3D service"
+msgstr ""
+
+msgid "Unmark service to unhide VBI line"
 msgstr ""
 
 msgid "Unmount"
@@ -10216,9 +10368,6 @@ msgstr ""
 msgid "Zap back to service before positioner setup?"
 msgstr ""
 
-msgid "Zap back to service before tuner setup?"
-msgstr ""
-
 msgid "Zap bouquets blindly on zap buttons"
 msgstr ""
 
@@ -10306,6 +10455,9 @@ msgstr ""
 msgid "activate network adapter configuration"
 msgstr ""
 
+msgid "active NFS Shares:"
+msgstr ""
+
 msgid "actual time only"
 msgstr ""
 
@@ -10356,6 +10508,9 @@ msgid "alphabetic"
 msgstr ""
 
 msgid "alphabetic reverse"
+msgstr ""
+
+msgid "alphabetical"
 msgstr ""
 
 msgid "alternative"
@@ -10417,6 +10572,14 @@ msgstr ""
 #, fuzzy
 msgid "automatic"
 msgstr "خودکار"
+
+#, fuzzy
+msgid "automatic from DHCP"
+msgstr "خودکار"
+
+#, fuzzy
+msgid "automatically scan every day"
+msgstr "اسکن خودکار"
 
 msgid "back"
 msgstr ""
@@ -10728,6 +10891,10 @@ msgstr ""
 msgid "forward to the next chapter"
 msgstr ""
 
+#, fuzzy
+msgid "found"
+msgstr "صدا"
+
 msgid "free"
 msgstr ""
 
@@ -10762,6 +10929,9 @@ msgid "height"
 msgstr ""
 
 msgid "help..."
+msgstr ""
+
+msgid "hide"
 msgstr ""
 
 msgid "horizontal"
@@ -10931,6 +11101,18 @@ msgstr ""
 msgid "no channel list"
 msgstr "نصب بسته محلی"
 
+#, fuzzy
+msgid "no domain name found"
+msgstr "%d کانال یافت شد"
+
+#, fuzzy
+msgid "no gateway found"
+msgstr "هیچ شبکه ای یافت نشد"
+
+#, fuzzy
+msgid "no log entrys"
+msgstr "پخش بعدی"
+
 msgid "no module found"
 msgstr ""
 
@@ -10941,11 +11123,23 @@ msgstr "مدیریت بسته های نرم افزاری"
 msgid "no storage devices found"
 msgstr ""
 
+msgid ""
+"no valid entrys in /etc/exports found\n"
+"Press blue button to activate default Enigma2\n"
+"HDD and USB as NFS exports,\n"
+"if valid mounted hardware is available."
+msgstr ""
+
 msgid "none"
 msgstr ""
 
 msgid "normal"
 msgstr ""
+
+#
+#, fuzzy
+msgid "not avaible"
+msgstr "به روز رسانی های در دسترس"
 
 msgid "not configured"
 msgstr ""
@@ -11045,6 +11239,20 @@ msgid "play in mainwindow"
 msgstr ""
 
 msgid "please press OK when ready"
+msgstr ""
+
+#, fuzzy
+msgid "please wait"
+msgstr "لطفا صبر کنید"
+
+msgid ""
+"please wait\n"
+"while acticate NFS exports"
+msgstr ""
+
+msgid ""
+"please wait\n"
+"while deacticate NFS exports"
 msgstr ""
 
 msgid "please wait, loading picture..."
@@ -11219,6 +11427,9 @@ msgstr ""
 #, fuzzy
 msgid "settings"
 msgstr "تنظیمات"
+
+msgid "show"
+msgstr ""
 
 msgid "show DVD main menu"
 msgstr ""
@@ -11624,6 +11835,10 @@ msgstr ""
 #~ msgid "Enable auto PIN"
 #~ msgstr "فعال کردن ViaSat EPG"
 
+#, fuzzy
+#~ msgid "Enable auto cable scan"
+#~ msgstr "فعال کردن کنترل والدین"
+
 #
 #, fuzzy
 #~ msgid "FP upgrade required"
@@ -11695,6 +11910,10 @@ msgstr ""
 
 #~ msgid "Reboot"
 #~ msgstr "راه اندازی مجدد"
+
+#, fuzzy
+#~ msgid "Reception Settings"
+#~ msgstr "تنظیمات دریافت"
 
 #~ msgid "Remember these settings for each folder"
 #~ msgstr "به خاطر سپردن این تنظیمات برای هر پوشه"
