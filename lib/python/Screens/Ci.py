@@ -14,6 +14,7 @@ from Tools.BoundFunction import boundFunction
 from boxbranding import getBrandOEM, getBoxType
 import time
 import os
+import Screens.Standby
 
 MAX_NUM_CI = 4
 
@@ -337,7 +338,7 @@ class CiMessageHandler:
 							elif ci_tag == 'CLOSE' and self.auto_close:
 								show_ui = False
 								self.auto_close = False
-					if show_ui and not forceNotShowCiMessages:
+					if show_ui and not forceNotShowCiMessages and not Screens.Standby.inStandby:
 						self.dlgs[slot] = self.session.openWithCallback(self.dlgClosed, MMIDialog, slot, 3, screen_data = screen_data)
 
 	def dlgClosed(self, slot):
