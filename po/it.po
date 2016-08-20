@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-18 22:35+0200\n"
+"POT-Creation-Date: 2016-08-20 17:13+0200\n"
 "PO-Revision-Date: 2015-01-29 17:40+0200\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -415,6 +415,9 @@ msgstr "%s/%s: %s"
 msgid "%s:%s"
 msgstr ""
 
+msgid "(DHCP is off)"
+msgstr ""
+
 #
 msgid "(ZAP)"
 msgstr "(ZAP)"
@@ -623,10 +626,6 @@ msgstr "8"
 #
 msgid "9"
 msgstr "9"
-
-#, python-format
-msgid ": %s"
-msgstr ""
 
 msgid ": 0000 - default (disabled)"
 msgstr ""
@@ -844,6 +843,11 @@ msgid "Active"
 msgstr ""
 
 #
+#, fuzzy
+msgid "Adapter"
+msgstr "Scheda di rete"
+
+#
 msgid "Adapter settings"
 msgstr "Impostazioni interfaccia"
 
@@ -1016,12 +1020,6 @@ msgstr "Associare la lingua sottotitoli alla lingua audio"
 
 msgid "Allow subtitles for hearing impaired"
 msgstr "Abilitare sottotitoli per non udenti"
-
-msgid "Load the EPG data regularly"
-msgstr ""
-
-msgid "Save the EPG data regularly"
-msgstr ""
 
 msgid "Allows you to enable the debug log. They contain very detailed information of everything the system does."
 msgstr ""
@@ -1293,6 +1291,11 @@ msgstr "Modalità authoring"
 msgid "Auto"
 msgstr "Auto"
 
+#
+#, fuzzy
+msgid "Auto Diseqc"
+msgstr "Automatico"
+
 msgid "Auto chapter split every ? minutes (0=never)"
 msgstr "Divisione automatica capitoli ogni x minuti (0=mai)"
 
@@ -1508,7 +1511,7 @@ msgid "Brightness"
 msgstr "Luminosità"
 
 #, fuzzy
-msgid "Broadcast:\t"
+msgid "Broadcast:"
 msgstr "Trasmissione dal vivo"
 
 #, python-format
@@ -1545,12 +1548,6 @@ msgid "By openMips Image Team"
 msgstr ""
 
 msgid "Bypass HDMI EDID checking"
-msgstr ""
-
-msgid "Bytes received:"
-msgstr ""
-
-msgid "Bytes sent:"
 msgstr ""
 
 #
@@ -2004,6 +2001,11 @@ msgstr "Complessa (permette mix tracce audio e aspetti)"
 msgid "Composition of the recording filenames"
 msgstr "Struttura dei nomi dei file registrazioni"
 
+#
+#, fuzzy
+msgid "Config Scan Details"
+msgstr "Dettagli..."
+
 msgid "Config resolution of pictures"
 msgstr ""
 
@@ -2329,6 +2331,10 @@ msgstr "Opzione per impostare il tuner preferenziale da utilizzarsi quando lo st
 msgid "Configure which tuner will be preferred, when more than one tuner is available. If set to 'auto' the system will give priority to the tuner having the lowest number of channels/satellites."
 msgstr "Opzione per impostare il tuner preferenziale, da utilizzarsi quando più di un tuner risultasse disponibile. L'opzione \"Auto\" assegnerà la priorità al tuner sul quale risulta configurato il minor numero di canali/satelliti."
 
+#, fuzzy
+msgid "Configure your Cable settings and press OK to start the scan"
+msgstr "Configurare le proprie impostazioni di rete, poi premere Ok per iniziare la ricerca"
+
 #
 #, fuzzy
 msgid "Configure your NTP server."
@@ -2341,9 +2347,6 @@ msgstr "Impostare la rete locale (cablata)."
 #
 msgid "Configure your network again"
 msgstr "Impostare di nuovo la rete locale."
-
-msgid "Configure your network settings, and press OK to start the scan"
-msgstr "Configurare le proprie impostazioni di rete, poi premere Ok per iniziare la ricerca"
 
 #
 msgid "Configure your wireless LAN again"
@@ -2385,6 +2388,21 @@ msgstr ""
 #
 msgid "Constellation"
 msgstr "Costellazione"
+
+#
+#, fuzzy
+msgid "Contact Info"
+msgstr "Contrasto"
+
+#
+#, fuzzy
+msgid "Content Encoding"
+msgstr "Registrazione istantanea..."
+
+#
+#, fuzzy
+msgid "Content Type"
+msgstr "Proseguire"
 
 #
 msgid "Content does not fit on DVD!"
@@ -2814,6 +2832,11 @@ msgstr "HDD rilevato:"
 #
 msgid "Detected NIMs:"
 msgstr "Tuner rilevati:"
+
+#
+#, fuzzy
+msgid "Device"
+msgstr "Canali"
 
 #
 #, fuzzy
@@ -3378,10 +3401,6 @@ msgstr ""
 msgid "Enable Wake On LAN"
 msgstr ""
 
-#, fuzzy
-msgid "Enable auto cable scan"
-msgstr "Attivare il controllo parentale"
-
 msgid "Enable auto fast scan"
 msgstr ""
 
@@ -3483,10 +3502,6 @@ msgstr ""
 #
 msgid "English"
 msgstr "Inglese"
-
-#, python-format
-msgid "Enigma (re)starts: %d\n"
-msgstr ""
 
 #, python-format
 msgid "Enigma2 Build: %s"
@@ -4092,6 +4107,9 @@ msgstr "Ritardo generale AC3"
 msgid "General PCM delay"
 msgstr "Ritardo generale PCM"
 
+msgid "Generator"
+msgstr ""
+
 #
 msgid "Genre"
 msgstr "Genere"
@@ -4229,6 +4247,11 @@ msgstr ""
 msgid "HDMI"
 msgstr ""
 
+#
+#, fuzzy
+msgid "HDMI Colorspace"
+msgstr "Formato colore"
+
 msgid "HDMI-CEC"
 msgstr ""
 
@@ -4287,6 +4310,9 @@ msgstr ""
 
 msgid "Hidden network"
 msgstr "Rete nascosta"
+
+msgid "Hide"
+msgstr ""
 
 msgid "Hide channel list in radio mode"
 msgstr "Nascondere elenco canali in modalità radio"
@@ -4666,12 +4692,17 @@ msgid "Instant recording..."
 msgstr "Registrazione istantanea..."
 
 #
-#, fuzzy
-msgid "Interface:\t/dev/"
+msgid "Interface: "
 msgstr "Interfaccia: "
 
 #
-msgid "Interface: "
+#, fuzzy
+msgid "Interface: /dev/"
+msgstr "Interfaccia: "
+
+#
+#, fuzzy
+msgid "Interface:/dev/"
 msgstr "Interfaccia: "
 
 #
@@ -4752,6 +4783,9 @@ msgstr "Voci per pagina"
 
 msgid "Items per page for list screen"
 msgstr "Voci per pagina negli elenchi"
+
+msgid "Itu_R_BT_709"
+msgstr ""
 
 msgid "J"
 msgstr ""
@@ -4836,8 +4870,21 @@ msgid "Language"
 msgstr "Lingua"
 
 #
+#, fuzzy
+msgid "Language Team"
+msgstr "Lingua"
+
+#
 msgid "Language selection"
 msgstr "Selezione lingua"
+
+msgid "Large"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Last Translator"
+msgstr "Traduzione"
 
 #
 msgid "Last config"
@@ -4981,6 +5028,9 @@ msgstr "Caricare in elenco la durata registrazioni"
 msgid "Load playlist"
 msgstr "Caricare la playlist"
 
+msgid "Load the EPG data regularly"
+msgstr ""
+
 #
 #, fuzzy
 msgid "Load unlinked userbouquets"
@@ -5000,6 +5050,11 @@ msgstr "Percorso"
 #
 msgid "Location for instant recordings"
 msgstr "Percorso per registrazioni istantanee"
+
+#
+#, fuzzy
+msgid "Location:"
+msgstr "Percorso"
 
 msgid "Lock ratio"
 msgstr "Rapporto di lock"
@@ -5055,6 +5110,11 @@ msgstr ""
 
 msgid "MAC:"
 msgstr ""
+
+#
+#, fuzzy
+msgid "MIME Version"
+msgstr "Inversione"
 
 #
 msgid "MMC card"
@@ -5120,6 +5180,11 @@ msgid "Manufacturer"
 msgstr "Costruttore"
 
 #
+#, fuzzy
+msgid "Manufacturer info"
+msgstr "Costruttore"
+
+#
 msgid "Margin after recording (minutes)"
 msgstr "Margine fine registrazione (minuti)"
 
@@ -5128,6 +5193,9 @@ msgid "Margin before recording (minutes)"
 msgstr "Margine inizio registrazione (minuti)"
 
 msgid "Mark service as dedicated 3D service"
+msgstr ""
+
+msgid "Mark service to hide VBI line"
 msgstr ""
 
 msgid "Max memory positions"
@@ -5173,9 +5241,16 @@ msgstr "Memoria"
 msgid "Memory index"
 msgstr "Indice memoria"
 
+msgid "MemoryInfo - only for Developers"
+msgstr ""
+
 #
 msgid "Menu"
 msgstr "Menu"
+
+#, python-format
+msgid "Menusort (%s)"
+msgstr ""
 
 #
 msgid "Message"
@@ -5399,6 +5474,11 @@ msgid "Multi-EPG bouquet selection"
 msgstr "Selezione bouquet Multi-EPG"
 
 #
+#, fuzzy
+msgid "Multichannel as PCM"
+msgstr "Canale"
+
+#
 msgid "Multimedia"
 msgstr "Multimedia"
 
@@ -5435,6 +5515,12 @@ msgstr "PROSSIMI"
 #, fuzzy
 msgid "NFS Setup"
 msgstr "Impostazioni"
+
+msgid "NFS Shares OFF"
+msgstr ""
+
+msgid "NFS Shares ON"
+msgstr ""
 
 #
 #, fuzzy
@@ -5479,6 +5565,11 @@ msgid "Nameserver %d"
 msgstr "Nameserver %d"
 
 #
+#, fuzzy
+msgid "Nameserver is off"
+msgstr "Nameserver"
+
+#
 msgid "Nameserver settings"
 msgstr "Impostazioni nameserver"
 
@@ -5517,6 +5608,11 @@ msgstr "Configurazione rete..."
 #, fuzzy
 msgid "Network MAC settings"
 msgstr "Attivare le impostazioni di rete"
+
+#
+#, fuzzy
+msgid "Network Speed:"
+msgstr "Rete:"
 
 #
 #, fuzzy
@@ -5595,6 +5691,12 @@ msgstr "Successivo"
 #
 msgid "No"
 msgstr "No"
+
+msgid ""
+"No '/etc/exports' Configuration File found.\n"
+"Press blue button to activate default Enigma2\n"
+"HDD and USB as NFS exports, if the hardware is available."
+msgstr ""
 
 #
 msgid "No (supported) DVDROM found!"
@@ -6081,11 +6183,6 @@ msgstr "Sovrascrivere i file di configurazione a seguito di un aggiornamento sof
 msgid "PAL"
 msgstr "PAL"
 
-#
-#, fuzzy
-msgid "PCM Multichannel"
-msgstr "Canale"
-
 msgid "PCR PID"
 msgstr "PID PCR"
 
@@ -6114,6 +6211,9 @@ msgstr ""
 
 msgid "PMT PID"
 msgstr "PID PMT"
+
+msgid "POT-Creation Date"
+msgstr ""
 
 msgid "PPanel"
 msgstr ""
@@ -6215,6 +6315,9 @@ msgstr "Rimuovere definitivamente tutte le voci cancellate"
 
 msgid "Persian"
 msgstr "Persiano"
+
+msgid "Phone"
+msgstr ""
 
 #
 msgid "PiP setup"
@@ -6878,6 +6981,9 @@ msgstr "Barra progressione a Dx"
 msgid "Progress:"
 msgstr "Progressione"
 
+msgid "Project"
+msgstr ""
+
 #
 msgid "Properties of current title"
 msgstr "Proprietà titolo corrente"
@@ -6903,6 +7009,11 @@ msgstr "Menu principale..."
 
 msgid "Protect manufacturer reset screen"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Protect menu sort"
+msgstr "Uscire da elenco registrazioni"
 
 #
 #, fuzzy
@@ -7090,11 +7201,6 @@ msgstr "Rec"
 #, fuzzy
 msgid "Recall to previous service"
 msgstr "Tornare al canale precedente"
-
-#
-#, fuzzy
-msgid "Reception Settings"
-msgstr "Configurazione ricezione"
 
 #
 #, fuzzy
@@ -7335,6 +7441,9 @@ msgstr "Ripetizioni"
 msgid "Replace `- ` in dialogs with colored text per speaker (like teletext subtitles for the hearing impaired)"
 msgstr ""
 
+msgid "Report Msgid Bugs To"
+msgstr ""
+
 msgid "Require authentication for http streams"
 msgstr ""
 
@@ -7478,6 +7587,9 @@ msgid "Reverse bouquet buttons"
 msgstr ""
 
 msgid "Reverse list"
+msgstr ""
+
+msgid "Revision Date"
 msgstr ""
 
 #
@@ -7646,6 +7758,9 @@ msgstr "Arrestare timeshift"
 #
 msgid "Save playlist"
 msgstr "Salvare la playlist"
+
+msgid "Save the EPG data regularly"
+msgstr ""
 
 #
 #, fuzzy
@@ -8132,6 +8247,9 @@ msgstr "PIN configurazione"
 msgid "Set all hotkey to default?"
 msgstr ""
 
+msgid "Set blocktimes by weekday"
+msgstr ""
+
 msgid "Set default"
 msgstr ""
 
@@ -8213,6 +8331,11 @@ msgstr "Livello di accesso impostazioni"
 msgid "Setup network time synchronization interval."
 msgstr ""
 
+#
+#, fuzzy
+msgid "Setup tuner"
+msgstr "Selezionare un tuner"
+
 msgid "Setup your positioner"
 msgstr "Configurare il posizionatore"
 
@@ -8234,6 +8357,11 @@ msgstr "Descrizione"
 
 msgid "Short filenames"
 msgstr "Nomi brevi"
+
+#
+#, fuzzy
+msgid "Show"
+msgstr "Mostrare info"
 
 #, fuzzy
 msgid "Show Audioselection"
@@ -8395,6 +8523,11 @@ msgstr "Annullare edit preferiti"
 #, fuzzy
 msgid "Show latest upgrade log"
 msgstr "Ultimo aggiornamento:"
+
+#
+#, fuzzy
+msgid "Show menu paths"
+msgstr "Mostrare il menu etichette"
 
 #
 msgid "Show message when recording starts"
@@ -8586,6 +8719,9 @@ msgstr "Set titoli semplice (compatibilità con player legacy)"
 msgid "Simple zoom"
 msgstr "Semplice"
 
+msgid "Simplified Chinese"
+msgstr ""
+
 msgid "Simulate (no write)"
 msgstr ""
 
@@ -8693,6 +8829,9 @@ msgstr "Lento"
 #
 msgid "Slow motion speeds"
 msgstr "Velocità rallenty"
+
+msgid "Small"
+msgstr ""
 
 #
 msgid "Small progress"
@@ -8816,6 +8955,9 @@ msgstr ""
 msgid "Sort list:"
 msgstr ""
 
+msgid "Sort order for menu entries"
+msgstr ""
+
 msgid "Sort plugins list to default?"
 msgstr ""
 
@@ -8832,6 +8974,10 @@ msgstr "Audio"
 msgid "Sound carrier"
 msgstr "Portante audio"
 
+#, fuzzy
+msgid "Source Charset"
+msgstr "Richiesta sorgente"
+
 msgid "Source request"
 msgstr "Richiesta sorgente"
 
@@ -8844,6 +8990,9 @@ msgid "Spanish"
 msgstr "Spagnolo"
 
 msgid "Specify extra timeframe to ignore inactivity sleeptimer"
+msgstr ""
+
+msgid "Specify if you want to set the blocktimes separately by weekday"
 msgstr ""
 
 msgid "Specify the end time to ignore the shutdown timer when the receiver is in standby mode"
@@ -9061,6 +9210,11 @@ msgstr "Arrestato"
 #, fuzzy
 msgid "Storage media"
 msgstr "Nuovi media"
+
+#
+#, fuzzy
+msgid "Store"
+msgstr "Ripristinare"
 
 msgid "Store at index"
 msgstr "Memorizzare all'indice"
@@ -9386,12 +9540,6 @@ msgstr "Il ricevitore è ora pronto per essere utilizzato./nOK >> continuare."
 msgid "The %d min remaining before the end of the event."
 msgstr ""
 
-msgid "The stored EPG data will be read every (hours)"
-msgstr ""
-
-msgid "The EPG data will be stored every (hours)"
-msgstr ""
-
 msgid "The DVD standard doesn't support H.264 (HDTV) video streams."
 msgstr ""
 
@@ -9403,6 +9551,9 @@ msgid ""
 msgstr ""
 "Plugin WirelessLAN non installato!\n"
 "Installarlo per poterlo abilitare."
+
+msgid "The EPG data will be stored every (hours)"
+msgstr ""
 
 #
 #, fuzzy
@@ -9532,6 +9683,9 @@ msgid ""
 msgstr ""
 "L'estensione Sofwaremanagement non è installata.\n"
 "Provvedere a installarla."
+
+msgid "The stored EPG data will be read every (hours)"
+msgstr ""
 
 #
 msgid "The timer file (timers.xml) is corrupt and could not be loaded."
@@ -9679,6 +9833,15 @@ msgid "This option allows you to boost the blue tones in the picture."
 msgstr ""
 
 msgid "This option allows you to boost the green tones in the picture."
+msgstr ""
+
+msgid "This option allows you to hide and sort menu entries. When selecting user you can change order and hide menu items via the blue button"
+msgstr ""
+
+msgid "This option allows you to set the Colorspace of HDMI from Auto to RGB"
+msgstr ""
+
+msgid "This option allows you to show menu paths."
 msgstr ""
 
 msgid "This option allows you to view the old and new settings side by side."
@@ -9993,6 +10156,10 @@ msgstr ""
 msgid "Track"
 msgstr "Traccia"
 
+#, fuzzy
+msgid "Traditional Chinese"
+msgstr "Musica tradizionale/Folk"
+
 #
 #, fuzzy
 msgid "Transcode"
@@ -10013,6 +10180,11 @@ msgstr "Traduzione:"
 
 msgid "Translations"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Translations Info"
+msgstr "Traduzione"
 
 #
 msgid "Transmission mode"
@@ -10238,6 +10410,9 @@ msgid "Unknown"
 msgstr "Sconosciuto"
 
 msgid "Unmark service as dedicated 3D service"
+msgstr ""
+
+msgid "Unmark service to unhide VBI line"
 msgstr ""
 
 msgid "Unmount"
@@ -11462,9 +11637,6 @@ msgstr ""
 "Ritornare al canale attivo\n"
 "prima della configurazione motore?"
 
-msgid "Zap back to service before tuner setup?"
-msgstr "Ritornare al canale attivo prima della configurazione tuner?"
-
 msgid "Zap bouquets blindly on zap buttons"
 msgstr ""
 
@@ -11566,6 +11738,9 @@ msgstr "Avvio in corso"
 msgid "activate network adapter configuration"
 msgstr "Attivare la configurazione interfaccia di rete"
 
+msgid "active NFS Shares:"
+msgstr ""
+
 msgid "actual time only"
 msgstr ""
 
@@ -11627,6 +11802,11 @@ msgstr "Alfabetico"
 
 msgid "alphabetic reverse"
 msgstr "Alfabetico inverso"
+
+#
+#, fuzzy
+msgid "alphabetical"
+msgstr "Alfabetico"
 
 msgid "alternative"
 msgstr ""
@@ -11693,6 +11873,16 @@ msgstr "Auto"
 #
 msgid "automatic"
 msgstr "Automatico"
+
+#
+#, fuzzy
+msgid "automatic from DHCP"
+msgstr "Automatico"
+
+#
+#, fuzzy
+msgid "automatically scan every day"
+msgstr "Ricerca automatica"
 
 #
 msgid "back"
@@ -12056,6 +12246,11 @@ msgid "forward to the next chapter"
 msgstr "Passare al capitolo successivo"
 
 #
+#, fuzzy
+msgid "found"
+msgstr "Audio"
+
+#
 msgid "free"
 msgstr "Libero"
 
@@ -12094,6 +12289,9 @@ msgstr "Altezza"
 #
 msgid "help..."
 msgstr "Aiuto..."
+
+msgid "hide"
+msgstr ""
 
 #
 msgid "horizontal"
@@ -12295,6 +12493,21 @@ msgid "no channel list"
 msgstr "Installare elenco canali"
 
 #
+#, fuzzy
+msgid "no domain name found"
+msgstr "Nessun modulo trovato!"
+
+#
+#, fuzzy
+msgid "no gateway found"
+msgstr "Nessun modulo trovato!"
+
+#
+#, fuzzy
+msgid "no log entrys"
+msgstr "Riprodurre voce"
+
+#
 msgid "no module found"
 msgstr "Nessun modulo trovato!"
 
@@ -12305,12 +12518,24 @@ msgstr "Picon e nome canale"
 msgid "no storage devices found"
 msgstr "Nessun supporto di memorizzazione disponibile"
 
+msgid ""
+"no valid entrys in /etc/exports found\n"
+"Press blue button to activate default Enigma2\n"
+"HDD and USB as NFS exports,\n"
+"if valid mounted hardware is available."
+msgstr ""
+
 #
 msgid "none"
 msgstr "Nessuno"
 
 msgid "normal"
 msgstr "Normale"
+
+#
+#, fuzzy
+msgid "not avaible"
+msgstr "non disponibile"
 
 msgid "not configured"
 msgstr "non configurato"
@@ -12427,6 +12652,21 @@ msgstr "Riprodurre nella finestra principale"
 #
 msgid "please press OK when ready"
 msgstr "Premere OK quando pronti"
+
+#
+#, fuzzy
+msgid "please wait"
+msgstr "Attendere..."
+
+msgid ""
+"please wait\n"
+"while acticate NFS exports"
+msgstr ""
+
+msgid ""
+"please wait\n"
+"while deacticate NFS exports"
+msgstr ""
 
 #
 msgid "please wait, loading picture..."
@@ -12632,6 +12872,10 @@ msgstr "Impostare come canale di avvio"
 #, fuzzy
 msgid "settings"
 msgstr "Config."
+
+#, fuzzy
+msgid "show"
+msgstr "talk show"
 
 #
 msgid "show DVD main menu"
@@ -13110,6 +13354,10 @@ msgstr "Zap eseguito"
 #~ msgid "Enable auto PIN"
 #~ msgstr "Abilitare EPG ViaSat"
 
+#, fuzzy
+#~ msgid "Enable auto cable scan"
+#~ msgstr "Attivare il controllo parentale"
+
 #~ msgid "Enable parental control"
 #~ msgstr "Attivare il controllo parentale"
 
@@ -13244,6 +13492,11 @@ msgstr "Zap eseguito"
 #~ msgid "Reboot"
 #~ msgstr "Riavviare"
 
+#
+#, fuzzy
+#~ msgid "Reception Settings"
+#~ msgstr "Configurazione ricezione"
+
 #~ msgid "Remember these settings for each folder"
 #~ msgstr "Memorizzare queste impostazioni per ogni directory"
 
@@ -13283,10 +13536,6 @@ msgstr "Zap eseguito"
 #
 #~ msgid "Show shutdown menu"
 #~ msgstr "Mostrare menu di arresto"
-
-#
-#~ msgid "Show tag menu"
-#~ msgstr "Mostrare il menu etichette"
 
 #
 #~ msgid "Show the tv player..."
@@ -13453,6 +13702,9 @@ msgstr "Zap eseguito"
 #~ msgstr ""
 #~ "Ritornare al canale attivo\n"
 #~ "prima della ricerca satelliti?"
+
+#~ msgid "Zap back to service before tuner setup?"
+#~ msgstr "Ritornare al canale attivo prima della configurazione tuner?"
 
 #
 #~ msgid "complex"

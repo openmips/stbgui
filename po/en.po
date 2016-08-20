@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-18 22:35+0200\n"
+"POT-Creation-Date: 2016-08-20 17:13+0200\n"
 "PO-Revision-Date: 2015-01-29 18:01+0100\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -345,6 +345,9 @@ msgstr ""
 msgid "%s:%s"
 msgstr ""
 
+msgid "(DHCP is off)"
+msgstr ""
+
 msgid "(ZAP)"
 msgstr ""
 
@@ -514,10 +517,6 @@ msgstr ""
 msgid "9"
 msgstr ""
 
-#, python-format
-msgid ": %s"
-msgstr ""
-
 msgid ": 0000 - default (disabled)"
 msgstr ""
 
@@ -678,6 +677,9 @@ msgstr ""
 msgid "Active"
 msgstr ""
 
+msgid "Adapter"
+msgstr ""
+
 msgid "Adapter settings"
 msgstr ""
 
@@ -817,12 +819,6 @@ msgid "Allow subtitle language to equal audio language"
 msgstr ""
 
 msgid "Allow subtitles for hearing impaired"
-msgstr ""
-
-msgid "Load the EPG data regularly"
-msgstr ""
-
-msgid "Save the EPG data regularly"
 msgstr ""
 
 msgid "Allows you to enable the debug log. They contain very detailed information of everything the system does."
@@ -1027,6 +1023,9 @@ msgstr ""
 msgid "Auto"
 msgstr ""
 
+msgid "Auto Diseqc"
+msgstr ""
+
 msgid "Auto chapter split every ? minutes (0=never)"
 msgstr ""
 
@@ -1196,7 +1195,7 @@ msgstr ""
 msgid "Brightness"
 msgstr ""
 
-msgid "Broadcast:\t"
+msgid "Broadcast:"
 msgstr ""
 
 #, python-format
@@ -1228,12 +1227,6 @@ msgid "By openMips Image Team"
 msgstr ""
 
 msgid "Bypass HDMI EDID checking"
-msgstr ""
-
-msgid "Bytes received:"
-msgstr ""
-
-msgid "Bytes sent:"
 msgstr ""
 
 msgid "C"
@@ -1610,6 +1603,9 @@ msgstr ""
 msgid "Composition of the recording filenames"
 msgstr ""
 
+msgid "Config Scan Details"
+msgstr ""
+
 msgid "Config resolution of pictures"
 msgstr ""
 
@@ -1911,6 +1907,9 @@ msgstr ""
 msgid "Configure which tuner will be preferred, when more than one tuner is available. If set to 'auto' the system will give priority to the tuner having the lowest number of channels/satellites."
 msgstr ""
 
+msgid "Configure your Cable settings and press OK to start the scan"
+msgstr ""
+
 msgid "Configure your NTP server."
 msgstr ""
 
@@ -1918,9 +1917,6 @@ msgid "Configure your internal LAN"
 msgstr ""
 
 msgid "Configure your network again"
-msgstr ""
-
-msgid "Configure your network settings, and press OK to start the scan"
 msgstr ""
 
 msgid "Configure your wireless LAN again"
@@ -1954,6 +1950,15 @@ msgid "Console"
 msgstr ""
 
 msgid "Constellation"
+msgstr ""
+
+msgid "Contact Info"
+msgstr ""
+
+msgid "Content Encoding"
+msgstr ""
+
+msgid "Content Type"
 msgstr ""
 
 msgid "Content does not fit on DVD!"
@@ -2315,6 +2320,9 @@ msgid "Detected HDD:"
 msgstr ""
 
 msgid "Detected NIMs:"
+msgstr ""
+
+msgid "Device"
 msgstr ""
 
 msgid "Device Details"
@@ -2768,9 +2776,6 @@ msgstr ""
 msgid "Enable Wake On LAN"
 msgstr ""
 
-msgid "Enable auto cable scan"
-msgstr ""
-
 msgid "Enable auto fast scan"
 msgstr ""
 
@@ -2854,10 +2859,6 @@ msgid "End time to ignore shutdown in standby"
 msgstr ""
 
 msgid "English"
-msgstr ""
-
-#, python-format
-msgid "Enigma (re)starts: %d\n"
 msgstr ""
 
 #, python-format
@@ -3361,6 +3362,9 @@ msgstr ""
 msgid "General PCM delay"
 msgstr ""
 
+msgid "Generator"
+msgstr ""
+
 msgid "Genre"
 msgstr ""
 
@@ -3483,6 +3487,9 @@ msgstr ""
 msgid "HDMI"
 msgstr ""
 
+msgid "HDMI Colorspace"
+msgstr ""
+
 msgid "HDMI-CEC"
 msgstr ""
 
@@ -3530,6 +3537,9 @@ msgid "Helps setting up your signal"
 msgstr ""
 
 msgid "Hidden network"
+msgstr ""
+
+msgid "Hide"
 msgstr ""
 
 msgid "Hide channel list in radio mode"
@@ -3836,10 +3846,13 @@ msgstr ""
 msgid "Instant recording..."
 msgstr ""
 
-msgid "Interface:\t/dev/"
+msgid "Interface: "
 msgstr ""
 
-msgid "Interface: "
+msgid "Interface: /dev/"
+msgstr ""
+
+msgid "Interface:/dev/"
 msgstr ""
 
 msgid "Intermediate"
@@ -3905,6 +3918,9 @@ msgid "Items per page "
 msgstr ""
 
 msgid "Items per page for list screen"
+msgstr ""
+
+msgid "Itu_R_BT_709"
 msgstr ""
 
 msgid "J"
@@ -3975,7 +3991,16 @@ msgstr ""
 msgid "Language"
 msgstr ""
 
+msgid "Language Team"
+msgstr ""
+
 msgid "Language selection"
+msgstr ""
+
+msgid "Large"
+msgstr ""
+
+msgid "Last Translator"
 msgstr ""
 
 msgid "Last config"
@@ -4097,6 +4122,9 @@ msgstr ""
 msgid "Load playlist"
 msgstr ""
 
+msgid "Load the EPG data regularly"
+msgstr ""
+
 msgid "Load unlinked userbouquets"
 msgstr ""
 
@@ -4110,6 +4138,9 @@ msgid "Location"
 msgstr ""
 
 msgid "Location for instant recordings"
+msgstr ""
+
+msgid "Location:"
 msgstr ""
 
 msgid "Lock ratio"
@@ -4152,6 +4183,9 @@ msgid "MAC-adress setup"
 msgstr ""
 
 msgid "MAC:"
+msgstr ""
+
+msgid "MIME Version"
 msgstr ""
 
 msgid "MMC card"
@@ -4205,6 +4239,9 @@ msgstr ""
 msgid "Manufacturer"
 msgstr ""
 
+msgid "Manufacturer info"
+msgstr ""
+
 msgid "Margin after recording (minutes)"
 msgstr ""
 
@@ -4212,6 +4249,9 @@ msgid "Margin before recording (minutes)"
 msgstr ""
 
 msgid "Mark service as dedicated 3D service"
+msgstr ""
+
+msgid "Mark service to hide VBI line"
 msgstr ""
 
 msgid "Max memory positions"
@@ -4247,7 +4287,14 @@ msgstr ""
 msgid "Memory index"
 msgstr ""
 
+msgid "MemoryInfo - only for Developers"
+msgstr ""
+
 msgid "Menu"
+msgstr ""
+
+#, python-format
+msgid "Menusort (%s)"
 msgstr ""
 
 msgid "Message"
@@ -4444,6 +4491,9 @@ msgstr ""
 msgid "Multi-EPG bouquet selection"
 msgstr ""
 
+msgid "Multichannel as PCM"
+msgstr ""
+
 msgid "Multimedia"
 msgstr ""
 
@@ -4472,6 +4522,12 @@ msgid "NEXT"
 msgstr ""
 
 msgid "NFS Setup"
+msgstr ""
+
+msgid "NFS Shares OFF"
+msgstr ""
+
+msgid "NFS Shares ON"
 msgstr ""
 
 msgid "NFS setup"
@@ -4505,6 +4561,9 @@ msgstr ""
 msgid "Nameserver %d"
 msgstr ""
 
+msgid "Nameserver is off"
+msgstr ""
+
 msgid "Nameserver settings"
 msgstr ""
 
@@ -4533,6 +4592,9 @@ msgid "Network Information"
 msgstr ""
 
 msgid "Network MAC settings"
+msgstr ""
+
+msgid "Network Speed:"
 msgstr ""
 
 msgid "Network configuration"
@@ -4596,6 +4658,12 @@ msgid "Next"
 msgstr ""
 
 msgid "No"
+msgstr ""
+
+msgid ""
+"No '/etc/exports' Configuration File found.\n"
+"Press blue button to activate default Enigma2\n"
+"HDD and USB as NFS exports, if the hardware is available."
 msgstr ""
 
 msgid "No (supported) DVDROM found!"
@@ -4989,9 +5057,6 @@ msgstr ""
 msgid "PAL"
 msgstr ""
 
-msgid "PCM Multichannel"
-msgstr ""
-
 msgid "PCR PID"
 msgstr ""
 
@@ -5017,6 +5082,9 @@ msgid "PLP ID"
 msgstr ""
 
 msgid "PMT PID"
+msgstr ""
+
+msgid "POT-Creation Date"
 msgstr ""
 
 msgid "PPanel"
@@ -5096,6 +5164,9 @@ msgid "Permanently remove all deleted items"
 msgstr ""
 
 msgid "Persian"
+msgstr ""
+
+msgid "Phone"
 msgstr ""
 
 msgid "PiP setup"
@@ -5606,6 +5677,9 @@ msgstr ""
 msgid "Progress:"
 msgstr ""
 
+msgid "Project"
+msgstr ""
+
 msgid "Properties of current title"
 msgstr ""
 
@@ -5622,6 +5696,9 @@ msgid "Protect main menu"
 msgstr ""
 
 msgid "Protect manufacturer reset screen"
+msgstr ""
+
+msgid "Protect menu sort"
 msgstr ""
 
 msgid "Protect movie list"
@@ -5766,9 +5843,6 @@ msgid "Rec"
 msgstr ""
 
 msgid "Recall to previous service"
-msgstr ""
-
-msgid "Reception Settings"
 msgstr ""
 
 msgid "Reception lists"
@@ -5958,6 +6032,9 @@ msgstr ""
 msgid "Replace `- ` in dialogs with colored text per speaker (like teletext subtitles for the hearing impaired)"
 msgstr ""
 
+msgid "Report Msgid Bugs To"
+msgstr ""
+
 msgid "Require authentication for http streams"
 msgstr ""
 
@@ -6073,6 +6150,9 @@ msgid "Reverse bouquet buttons"
 msgstr ""
 
 msgid "Reverse list"
+msgstr ""
+
+msgid "Revision Date"
 msgstr ""
 
 msgid "Rewind speeds"
@@ -6208,6 +6288,9 @@ msgid "Save and stop timeshift"
 msgstr ""
 
 msgid "Save playlist"
+msgstr ""
+
+msgid "Save the EPG data regularly"
 msgstr ""
 
 msgid "Save timeshift and zap"
@@ -6595,6 +6678,9 @@ msgstr ""
 msgid "Set all hotkey to default?"
 msgstr ""
 
+msgid "Set blocktimes by weekday"
+msgstr ""
+
 msgid "Set default"
 msgstr ""
 
@@ -6668,6 +6754,9 @@ msgstr ""
 msgid "Setup network time synchronization interval."
 msgstr ""
 
+msgid "Setup tuner"
+msgstr ""
+
 msgid "Setup your positioner"
 msgstr ""
 
@@ -6684,6 +6773,9 @@ msgid "Shellscript"
 msgstr ""
 
 msgid "Short filenames"
+msgstr ""
+
+msgid "Show"
 msgstr ""
 
 msgid "Show Audioselection"
@@ -6813,6 +6905,9 @@ msgid "Show latest commits"
 msgstr ""
 
 msgid "Show latest upgrade log"
+msgstr ""
+
+msgid "Show menu paths"
 msgstr ""
 
 msgid "Show message when recording starts"
@@ -6964,6 +7059,9 @@ msgstr ""
 msgid "Simple zoom"
 msgstr ""
 
+msgid "Simplified Chinese"
+msgstr ""
+
 msgid "Simulate (no write)"
 msgstr ""
 
@@ -7052,6 +7150,9 @@ msgid "Slow"
 msgstr ""
 
 msgid "Slow motion speeds"
+msgstr ""
+
+msgid "Small"
 msgstr ""
 
 msgid "Small progress"
@@ -7154,6 +7255,9 @@ msgstr ""
 msgid "Sort list:"
 msgstr ""
 
+msgid "Sort order for menu entries"
+msgstr ""
+
 msgid "Sort plugins list to default?"
 msgstr ""
 
@@ -7167,6 +7271,9 @@ msgstr ""
 msgid "Sound carrier"
 msgstr ""
 
+msgid "Source Charset"
+msgstr ""
+
 msgid "Source request"
 msgstr ""
 
@@ -7177,6 +7284,9 @@ msgid "Spanish"
 msgstr ""
 
 msgid "Specify extra timeframe to ignore inactivity sleeptimer"
+msgstr ""
+
+msgid "Specify if you want to set the blocktimes separately by weekday"
 msgstr ""
 
 msgid "Specify the end time to ignore the shutdown timer when the receiver is in standby mode"
@@ -7360,6 +7470,9 @@ msgid "Stopped"
 msgstr ""
 
 msgid "Storage media"
+msgstr ""
+
+msgid "Store"
 msgstr ""
 
 msgid "Store at index"
@@ -7626,18 +7739,15 @@ msgstr ""
 msgid "The %d min remaining before the end of the event."
 msgstr ""
 
-msgid "The stored EPG data will be read every (hours)"
-msgstr ""
-
-msgid "The EPG data will be stored every (hours)"
-msgstr ""
-
 msgid "The DVD standard doesn't support H.264 (HDTV) video streams."
 msgstr ""
 
 msgid ""
 "The Device Manager plugin is not installed!\n"
 "Please install it."
+msgstr ""
+
+msgid "The EPG data will be stored every (hours)"
 msgstr ""
 
 msgid ""
@@ -7739,6 +7849,9 @@ msgstr ""
 msgid ""
 "The software management extension is not installed!\n"
 "Please install it."
+msgstr ""
+
+msgid "The stored EPG data will be read every (hours)"
 msgstr ""
 
 msgid "The timer file (timers.xml) is corrupt and could not be loaded."
@@ -7866,6 +7979,15 @@ msgid "This option allows you to boost the blue tones in the picture."
 msgstr ""
 
 msgid "This option allows you to boost the green tones in the picture."
+msgstr ""
+
+msgid "This option allows you to hide and sort menu entries. When selecting user you can change order and hide menu items via the blue button"
+msgstr ""
+
+msgid "This option allows you to set the Colorspace of HDMI from Auto to RGB"
+msgstr ""
+
+msgid "This option allows you to show menu paths."
 msgstr ""
 
 msgid "This option allows you to view the old and new settings side by side."
@@ -8118,6 +8240,9 @@ msgstr ""
 msgid "Track"
 msgstr ""
 
+msgid "Traditional Chinese"
+msgstr ""
+
 msgid "Transcode"
 msgstr ""
 
@@ -8131,6 +8256,9 @@ msgid "Translation:"
 msgstr ""
 
 msgid "Translations"
+msgstr ""
+
+msgid "Translations Info"
 msgstr ""
 
 msgid "Transmission mode"
@@ -8309,6 +8437,9 @@ msgid "Unknown"
 msgstr ""
 
 msgid "Unmark service as dedicated 3D service"
+msgstr ""
+
+msgid "Unmark service to unhide VBI line"
 msgstr ""
 
 msgid "Unmount"
@@ -9336,9 +9467,6 @@ msgstr ""
 msgid "Zap back to service before positioner setup?"
 msgstr ""
 
-msgid "Zap back to service before tuner setup?"
-msgstr ""
-
 msgid "Zap bouquets blindly on zap buttons"
 msgstr ""
 
@@ -9423,6 +9551,9 @@ msgstr ""
 msgid "activate network adapter configuration"
 msgstr ""
 
+msgid "active NFS Shares:"
+msgstr ""
+
 msgid "actual time only"
 msgstr ""
 
@@ -9472,6 +9603,9 @@ msgid "alphabetic"
 msgstr ""
 
 msgid "alphabetic reverse"
+msgstr ""
+
+msgid "alphabetical"
 msgstr ""
 
 msgid "alternative"
@@ -9527,6 +9661,12 @@ msgid "auto"
 msgstr ""
 
 msgid "automatic"
+msgstr ""
+
+msgid "automatic from DHCP"
+msgstr ""
+
+msgid "automatically scan every day"
 msgstr ""
 
 msgid "back"
@@ -9833,6 +9973,9 @@ msgstr ""
 msgid "forward to the next chapter"
 msgstr ""
 
+msgid "found"
+msgstr ""
+
 msgid "free"
 msgstr ""
 
@@ -9867,6 +10010,9 @@ msgid "height"
 msgstr ""
 
 msgid "help..."
+msgstr ""
+
+msgid "hide"
 msgstr ""
 
 msgid "horizontal"
@@ -10034,6 +10180,15 @@ msgstr ""
 msgid "no channel list"
 msgstr ""
 
+msgid "no domain name found"
+msgstr ""
+
+msgid "no gateway found"
+msgstr ""
+
+msgid "no log entrys"
+msgstr ""
+
 msgid "no module found"
 msgstr ""
 
@@ -10043,10 +10198,20 @@ msgstr ""
 msgid "no storage devices found"
 msgstr ""
 
+msgid ""
+"no valid entrys in /etc/exports found\n"
+"Press blue button to activate default Enigma2\n"
+"HDD and USB as NFS exports,\n"
+"if valid mounted hardware is available."
+msgstr ""
+
 msgid "none"
 msgstr ""
 
 msgid "normal"
+msgstr ""
+
+msgid "not avaible"
 msgstr ""
 
 msgid "not configured"
@@ -10141,6 +10306,19 @@ msgid "play in mainwindow"
 msgstr ""
 
 msgid "please press OK when ready"
+msgstr ""
+
+msgid "please wait"
+msgstr ""
+
+msgid ""
+"please wait\n"
+"while acticate NFS exports"
+msgstr ""
+
+msgid ""
+"please wait\n"
+"while deacticate NFS exports"
 msgstr ""
 
 msgid "please wait, loading picture..."
@@ -10307,6 +10485,9 @@ msgid "set as startup service"
 msgstr ""
 
 msgid "settings"
+msgstr ""
+
+msgid "show"
 msgstr ""
 
 msgid "show DVD main menu"

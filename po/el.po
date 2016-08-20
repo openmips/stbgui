@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-18 22:35+0200\n"
+"POT-Creation-Date: 2016-08-20 17:13+0200\n"
 "PO-Revision-Date: 2015-01-29 17:40+0200\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -387,6 +387,9 @@ msgstr "%s/%s: %s"
 msgid "%s:%s"
 msgstr ""
 
+msgid "(DHCP is off)"
+msgstr ""
+
 msgid "(ZAP)"
 msgstr "(ΖΑΠ)"
 
@@ -561,10 +564,6 @@ msgstr "8"
 
 msgid "9"
 msgstr "9"
-
-#, python-format
-msgid ": %s"
-msgstr ": %s"
 
 msgid ": 0000 - default (disabled)"
 msgstr ""
@@ -745,6 +744,10 @@ msgstr ""
 msgid "Active"
 msgstr ""
 
+#, fuzzy
+msgid "Adapter"
+msgstr "Προσαρμογέας LAN"
+
 msgid "Adapter settings"
 msgstr "Ρυθμίσεις προσαρμογέα δικτύου"
 
@@ -887,12 +890,6 @@ msgstr "Να επιτρέπεται η εξίσωση υποτίτλων και 
 
 msgid "Allow subtitles for hearing impaired"
 msgstr "Να επιτρέπονται υπότιτλοι για άτομα με προβλήματα ακοής"
-
-msgid "Load the EPG data regularly"
-msgstr ""
-
-msgid "Save the EPG data regularly"
-msgstr ""
 
 msgid "Allows you to enable the debug log. They contain very detailed information of everything the system does."
 msgstr ""
@@ -1125,6 +1122,10 @@ msgstr "Λειτουργία δημιουργίας ταινίας"
 msgid "Auto"
 msgstr "Αυτόματο"
 
+#, fuzzy
+msgid "Auto Diseqc"
+msgstr "Αυτόματο"
+
 msgid "Auto chapter split every ? minutes (0=never)"
 msgstr "Αυτόματη δημιουργία κεφαλαίου κάθε ; λεπτα (0=ποτέ)"
 
@@ -1305,7 +1306,7 @@ msgid "Brightness"
 msgstr "Φωτεινότητα"
 
 #, fuzzy
-msgid "Broadcast:\t"
+msgid "Broadcast:"
 msgstr "ζωντανή μετάδοση"
 
 #, python-format
@@ -1339,12 +1340,6 @@ msgid "By openMips Image Team"
 msgstr ""
 
 msgid "Bypass HDMI EDID checking"
-msgstr ""
-
-msgid "Bytes received:"
-msgstr ""
-
-msgid "Bytes sent:"
 msgstr ""
 
 msgid "C"
@@ -1740,6 +1735,10 @@ msgstr "Σύνθετη (επιτρέπει τη μίξη καναλιών ήχο
 msgid "Composition of the recording filenames"
 msgstr "Σύνθεση ονομάτων των εγγραφών"
 
+#, fuzzy
+msgid "Config Scan Details"
+msgstr "Εμφάνιση λεπτομερειών"
+
 msgid "Config resolution of pictures"
 msgstr ""
 
@@ -2049,6 +2048,10 @@ msgid "Configure which tuner will be preferred, when more than one tuner is avai
 msgstr "Ρυθμίστε ποιο tuner θα προτιμάται, όταν περισσότερα του ενός είναι διαθέσιμα. Στο 'αυτόματο', το σύστημα θα δίνει προτεραιότητα στο tuner με τον μικρότερο αριθμό καναλιών/δορυφόρων."
 
 #, fuzzy
+msgid "Configure your Cable settings and press OK to start the scan"
+msgstr "Ρυθμίστε το δίκτυο και πιέστε ΟΚ για ξεκινήσει η ανίχνευση"
+
+#, fuzzy
 msgid "Configure your NTP server."
 msgstr "Ρύθμιση nameservers"
 
@@ -2057,9 +2060,6 @@ msgstr "Ρυθμίσεις εσωτερικού δικτύου"
 
 msgid "Configure your network again"
 msgstr "Ρύθμιση του δικτύου εκ νέου"
-
-msgid "Configure your network settings, and press OK to start the scan"
-msgstr "Ρυθμίστε το δίκτυο και πιέστε ΟΚ για ξεκινήσει η ανίχνευση"
 
 msgid "Configure your wireless LAN again"
 msgstr "Ρύθμιση του ασύρματου δικτύου εκ νέου"
@@ -2094,6 +2094,18 @@ msgstr ""
 
 msgid "Constellation"
 msgstr "Αστερισμός"
+
+#, fuzzy
+msgid "Contact Info"
+msgstr "Αντίθεση"
+
+#, fuzzy
+msgid "Content Encoding"
+msgstr "Άμεση εγγραφή..."
+
+#, fuzzy
+msgid "Content Type"
+msgstr "Συνέχεια"
 
 msgid "Content does not fit on DVD!"
 msgstr "Το περιεχόμενο δεν χωράει σε DVD!"
@@ -2470,6 +2482,10 @@ msgstr "Εντοπισμένοι HDD:"
 
 msgid "Detected NIMs:"
 msgstr "Εντοπισμένα NIMs:"
+
+#, fuzzy
+msgid "Device"
+msgstr "Υπηρεσίες"
 
 #, fuzzy
 msgid "Device Details"
@@ -2961,10 +2977,6 @@ msgstr "Ενεργοποίηση Virgin EPG"
 msgid "Enable Wake On LAN"
 msgstr "Ενεργοποίηση Αφύπνισης Σε LAN"
 
-#, fuzzy
-msgid "Enable auto cable scan"
-msgstr "Ενεργοποίηση της αυτόματης γρήγορης ανίχνευσης"
-
 msgid "Enable auto fast scan"
 msgstr "Ενεργοποίηση της αυτόματης γρήγορης ανίχνευσης"
 
@@ -3054,10 +3066,6 @@ msgstr "Τέλος χρόνου αγνόησης τερματισμού σε α�
 
 msgid "English"
 msgstr "Αγγλικά"
-
-#, python-format
-msgid "Enigma (re)starts: %d\n"
-msgstr ""
 
 #, python-format
 msgid "Enigma2 Build: %s"
@@ -3592,6 +3600,9 @@ msgstr "Γενική καθυστέρηση AC3"
 msgid "General PCM delay"
 msgstr "Γενική καθυστέρηση PCM"
 
+msgid "Generator"
+msgstr ""
+
 msgid "Genre"
 msgstr "Είδος"
 
@@ -3718,6 +3729,10 @@ msgid "HDMI"
 msgstr ""
 
 #, fuzzy
+msgid "HDMI Colorspace"
+msgstr "Φορμά χρώματος"
+
+#, fuzzy
 msgid "HDMI-CEC"
 msgstr "Ρύθμιση HDMI-CEC"
 
@@ -3772,6 +3787,9 @@ msgstr "Βοήθός ρύθμισης του κατόπτρου σας"
 
 msgid "Hidden network"
 msgstr "Κρυφό δίκτυο"
+
+msgid "Hide"
+msgstr ""
 
 msgid "Hide channel list in radio mode"
 msgstr "Απόκρυψη της λίστα καναλιών σε λειτουργία ραδιοφώνου"
@@ -4102,11 +4120,15 @@ msgstr "Τοποθεσία άμεσης εγγραφής"
 msgid "Instant recording..."
 msgstr "Άμεση εγγραφή..."
 
-#, fuzzy
-msgid "Interface:\t/dev/"
+msgid "Interface: "
 msgstr "Διεπαφή: "
 
-msgid "Interface: "
+#, fuzzy
+msgid "Interface: /dev/"
+msgstr "Διεπαφή: "
+
+#, fuzzy
+msgid "Interface:/dev/"
 msgstr "Διεπαφή: "
 
 msgid "Intermediate"
@@ -4176,6 +4198,9 @@ msgstr "Αντικείμενα ανά σελίδα "
 
 msgid "Items per page for list screen"
 msgstr "Αντικείμενα ανά σελίδα για λίστα οθόνης"
+
+msgid "Itu_R_BT_709"
+msgstr ""
 
 msgid "J"
 msgstr ""
@@ -4247,8 +4272,19 @@ msgstr "LNB"
 msgid "Language"
 msgstr "Γλώσσα"
 
+#, fuzzy
+msgid "Language Team"
+msgstr "Γλώσσα"
+
 msgid "Language selection"
 msgstr "Επιλογή γλώσσας"
+
+msgid "Large"
+msgstr ""
+
+#, fuzzy
+msgid "Last Translator"
+msgstr "Μετάφραση"
 
 msgid "Last config"
 msgstr "Τελευταία ρύθμιση"
@@ -4371,6 +4407,9 @@ msgstr "Φόρτωση διάρκειας ταινιών στη λίστα"
 msgid "Load playlist"
 msgstr "Φόρτωση λίστας αναπαραγωγής"
 
+msgid "Load the EPG data regularly"
+msgstr ""
+
 #, fuzzy
 msgid "Load unlinked userbouquets"
 msgstr "Ενεργοποίηση πολλαπλών μπουκέτων"
@@ -4386,6 +4425,10 @@ msgstr "Τοποθεσία"
 
 msgid "Location for instant recordings"
 msgstr "Τοποθεσία άμεσων εγγραφών"
+
+#, fuzzy
+msgid "Location:"
+msgstr "Τοποθεσία"
 
 msgid "Lock ratio"
 msgstr "Κλείδωμα αναλογιών"
@@ -4433,6 +4476,10 @@ msgstr ""
 
 msgid "MAC:"
 msgstr ""
+
+#, fuzzy
+msgid "MIME Version"
+msgstr "Αναστροφή"
 
 msgid "MMC card"
 msgstr "Κάρτα MMC"
@@ -4486,6 +4533,10 @@ msgstr "Χειροκίνητος αναμεταδότης"
 msgid "Manufacturer"
 msgstr "Κατασκευαστής"
 
+#, fuzzy
+msgid "Manufacturer info"
+msgstr "Κατασκευαστής"
+
 msgid "Margin after recording (minutes)"
 msgstr "Περιθώριο μετά την εγγραφή (λεπτά)"
 
@@ -4493,6 +4544,9 @@ msgid "Margin before recording (minutes)"
 msgstr "Περιθώριο πριν την εγγραφή (λεπτά)"
 
 msgid "Mark service as dedicated 3D service"
+msgstr ""
+
+msgid "Mark service to hide VBI line"
 msgstr ""
 
 msgid "Max memory positions"
@@ -4531,8 +4585,15 @@ msgstr "Μνήμη"
 msgid "Memory index"
 msgstr "Θέση αποθήκευσης"
 
+msgid "MemoryInfo - only for Developers"
+msgstr ""
+
 msgid "Menu"
 msgstr "Μενού"
+
+#, python-format
+msgid "Menusort (%s)"
+msgstr ""
 
 msgid "Message"
 msgstr "Μήνυμα"
@@ -4734,6 +4795,10 @@ msgstr "Εμφάνιση EPG πολλαπλών καναλιών"
 msgid "Multi-EPG bouquet selection"
 msgstr "Επιλογή μπουκέτων πολλαπλού EPG"
 
+#, fuzzy
+msgid "Multichannel as PCM"
+msgstr "Εμφάνιση EPG πολλαπλών καναλιών"
+
 msgid "Multimedia"
 msgstr "Πολυμέσα"
 
@@ -4764,6 +4829,12 @@ msgstr "ΕΠΟΜΕΝΟ"
 #, fuzzy
 msgid "NFS Setup"
 msgstr "Εγκατάσταση"
+
+msgid "NFS Shares OFF"
+msgstr ""
+
+msgid "NFS Shares ON"
+msgstr ""
 
 #, fuzzy
 msgid "NFS setup"
@@ -4799,6 +4870,10 @@ msgstr "Nameserver"
 msgid "Nameserver %d"
 msgstr "Nameserver %d"
 
+#, fuzzy
+msgid "Nameserver is off"
+msgstr "Nameserver"
+
 msgid "Nameserver settings"
 msgstr "Ρυθμίσεις Nameserver"
 
@@ -4831,6 +4906,10 @@ msgstr "Διαμόρφωση δικτύου..."
 #, fuzzy
 msgid "Network MAC settings"
 msgstr "Ενεργοποίηση ρυθμίσεων δικτύου"
+
+#, fuzzy
+msgid "Network Speed:"
+msgstr "Δίκτυο:"
 
 #, fuzzy
 msgid "Network configuration"
@@ -4896,6 +4975,12 @@ msgstr "Επόμενο"
 
 msgid "No"
 msgstr "Όχι"
+
+msgid ""
+"No '/etc/exports' Configuration File found.\n"
+"Press blue button to activate default Enigma2\n"
+"HDD and USB as NFS exports, if the hardware is available."
+msgstr ""
 
 msgid "No (supported) DVDROM found!"
 msgstr "Δεν βρέθηκε (υποστηριζόμενο) DVDROM!"
@@ -5333,10 +5418,6 @@ msgstr "Να αντικατασταθούν τα αρχεία ρυθμίσεων
 msgid "PAL"
 msgstr "PAL"
 
-#, fuzzy
-msgid "PCM Multichannel"
-msgstr "Εμφάνιση EPG πολλαπλών καναλιών"
-
 msgid "PCR PID"
 msgstr "PCR PID"
 
@@ -5363,6 +5444,9 @@ msgstr "PLP ID"
 
 msgid "PMT PID"
 msgstr "PMT PID"
+
+msgid "POT-Creation Date"
+msgstr ""
 
 msgid "PPanel"
 msgstr ""
@@ -5449,6 +5533,9 @@ msgstr "Οριστική διαγραφή όλων των διεγραμμένω
 
 msgid "Persian"
 msgstr "Περσικά"
+
+msgid "Phone"
+msgstr ""
 
 msgid "PiP setup"
 msgstr "Ρύθμιση PiP"
@@ -6007,6 +6094,9 @@ msgstr "Μπάρα προόδου δεξιά"
 msgid "Progress:"
 msgstr "Πρόοδος"
 
+msgid "Project"
+msgstr ""
+
 msgid "Properties of current title"
 msgstr "Ιδιότητες τρέχοντα τίτλου"
 
@@ -6028,6 +6118,10 @@ msgstr "Είσοδος στο κύριο μενού..."
 
 msgid "Protect manufacturer reset screen"
 msgstr ""
+
+#, fuzzy
+msgid "Protect menu sort"
+msgstr "έξοδος από τη λίστα ταινιών"
 
 #, fuzzy
 msgid "Protect movie list"
@@ -6184,10 +6278,6 @@ msgstr "Εγγρ."
 #, fuzzy
 msgid "Recall to previous service"
 msgstr "Επιστροφή στην προηγούμενη υπηρεσία"
-
-#, fuzzy
-msgid "Reception Settings"
-msgstr "Ρυθμίσεις λήψης"
 
 #, fuzzy
 msgid "Reception lists"
@@ -6392,6 +6482,9 @@ msgstr "Επαναλήψεις"
 msgid "Replace `- ` in dialogs with colored text per speaker (like teletext subtitles for the hearing impaired)"
 msgstr ""
 
+msgid "Report Msgid Bugs To"
+msgstr ""
+
 msgid "Require authentication for http streams"
 msgstr "Απαίτηση πιστοποίησης για ροές http"
 
@@ -6513,6 +6606,9 @@ msgstr "Αντιμετάθεση πλήκτρων μπουκέτου"
 
 msgid "Reverse list"
 msgstr "Αντιστροφή λίστας"
+
+msgid "Revision Date"
+msgstr ""
 
 msgid "Rewind speeds"
 msgstr "Ταχύτητα κίνησης πίσω "
@@ -6656,6 +6752,9 @@ msgstr "Διακοπή χρονομετατόπισης"
 
 msgid "Save playlist"
 msgstr "Αποθήκευση λίστας αναπαραγωγής"
+
+msgid "Save the EPG data regularly"
+msgstr ""
 
 #, fuzzy
 msgid "Save timeshift and zap"
@@ -7069,6 +7168,9 @@ msgstr "ρύθμιση PIN"
 msgid "Set all hotkey to default?"
 msgstr ""
 
+msgid "Set blocktimes by weekday"
+msgstr ""
+
 msgid "Set default"
 msgstr "Ορισμός προεπιλογής"
 
@@ -7144,6 +7246,10 @@ msgstr "Λειτουργία εγκατάστασης"
 msgid "Setup network time synchronization interval."
 msgstr ""
 
+#, fuzzy
+msgid "Setup tuner"
+msgstr "Επιλογή tuner"
+
 msgid "Setup your positioner"
 msgstr "Εγκατάσταση μοτέρ"
 
@@ -7163,6 +7269,10 @@ msgstr "Περιγραφή"
 
 msgid "Short filenames"
 msgstr "Σύντομα ονόματα"
+
+#, fuzzy
+msgid "Show"
+msgstr "Εμφάνιση πληροφοριών"
 
 #, fuzzy
 msgid "Show Audioselection"
@@ -7305,6 +7415,10 @@ msgstr "Τελευταίες Αλλαγές"
 #, fuzzy
 msgid "Show latest upgrade log"
 msgstr "Τελευταία αναβάθμιση: "
+
+#, fuzzy
+msgid "Show menu paths"
+msgstr "Εμφάνιση μενού ετικετών"
 
 msgid "Show message when recording starts"
 msgstr "Εμφάνιση μηνύματος στην εκκίνηση της εγραφής"
@@ -7474,6 +7588,9 @@ msgstr "Απλή τιτλοδοσία (συμβατότητα με συσκευ�
 msgid "Simple zoom"
 msgstr "Απλό"
 
+msgid "Simplified Chinese"
+msgstr ""
+
 msgid "Simulate (no write)"
 msgstr ""
 
@@ -7564,6 +7681,9 @@ msgstr "Αργά"
 
 msgid "Slow motion speeds"
 msgstr "Ταχύτητες αργής κίνησης"
+
+msgid "Small"
+msgstr ""
 
 msgid "Small progress"
 msgstr "Μικρή πρόοδος"
@@ -7673,6 +7793,9 @@ msgstr ""
 msgid "Sort list:"
 msgstr "Ταξινόμηση λίστας:"
 
+msgid "Sort order for menu entries"
+msgstr ""
+
 msgid "Sort plugins list to default?"
 msgstr ""
 
@@ -7686,6 +7809,10 @@ msgstr "Ήχος"
 msgid "Sound carrier"
 msgstr "Φέρουσα ήχου"
 
+#, fuzzy
+msgid "Source Charset"
+msgstr "Επιλογή πηγής αναβάθμισης"
+
 msgid "Source request"
 msgstr "Επιλογή πηγής αναβάθμισης"
 
@@ -7698,6 +7825,9 @@ msgstr "Ισπανικά"
 #, fuzzy
 msgid "Specify extra timeframe to ignore inactivity sleeptimer"
 msgstr "Ορισμός του μεσοδιαστήματος αγνόησης της αδράνειας του χρονοδιακόπτη ύπνου"
+
+msgid "Specify if you want to set the blocktimes separately by weekday"
+msgstr ""
 
 msgid "Specify the end time to ignore the shutdown timer when the receiver is in standby mode"
 msgstr "Ορισμός του χρόνου λήξης της αγνόησης του χρονοδιακόπτη τερματισμού όταν ο δέκτης βρίσκεται σε αναμονή"
@@ -7894,6 +8024,10 @@ msgstr "Σταματημένο"
 #, fuzzy
 msgid "Storage media"
 msgstr "νέα πολυμέσα"
+
+#, fuzzy
+msgid "Store"
+msgstr "Επαναφορά"
 
 msgid "Store at index"
 msgstr "Αποθήκευση στη θέση"
@@ -8176,12 +8310,6 @@ msgstr ""
 msgid "The %d min remaining before the end of the event."
 msgstr ""
 
-msgid "The stored EPG data will be read every (hours)"
-msgstr ""
-
-msgid "The EPG data will be stored every (hours)"
-msgstr ""
-
 msgid "The DVD standard doesn't support H.264 (HDTV) video streams."
 msgstr ""
 
@@ -8192,6 +8320,9 @@ msgid ""
 msgstr ""
 "Το πρόσθετο ασύρματου LAN δεν είναι εγκατεστημένο!\n"
 "Παρακαλώ εγκαταστήστε το."
+
+msgid "The EPG data will be stored every (hours)"
+msgstr ""
 
 #, fuzzy
 msgid ""
@@ -8309,6 +8440,9 @@ msgid ""
 msgstr ""
 "Η επέκταση Softwaremanagement δεν είναι εγκατεστημένη!\n"
 "Παρακαλώ εγκαταστήστε την."
+
+msgid "The stored EPG data will be read every (hours)"
+msgstr ""
 
 msgid "The timer file (timers.xml) is corrupt and could not be loaded."
 msgstr "Το αρχείο timers.xml είναι άκυρο και δεν φορτώθηκε."
@@ -8442,6 +8576,15 @@ msgid "This option allows you to boost the blue tones in the picture."
 msgstr ""
 
 msgid "This option allows you to boost the green tones in the picture."
+msgstr ""
+
+msgid "This option allows you to hide and sort menu entries. When selecting user you can change order and hide menu items via the blue button"
+msgstr ""
+
+msgid "This option allows you to set the Colorspace of HDMI from Auto to RGB"
+msgstr ""
+
+msgid "This option allows you to show menu paths."
 msgstr ""
 
 msgid "This option allows you to view the old and new settings side by side."
@@ -8720,6 +8863,10 @@ msgid "Track"
 msgstr "Κομμάτι"
 
 #, fuzzy
+msgid "Traditional Chinese"
+msgstr "λαϊκή/παραδοσιακή μουσική"
+
+#, fuzzy
 msgid "Transcode"
 msgstr "Αναμεταδότης"
 
@@ -8734,6 +8881,10 @@ msgid "Translation:"
 msgstr "Μετάφραση:"
 
 msgid "Translations"
+msgstr "Μεταφράσεις"
+
+#, fuzzy
+msgid "Translations Info"
 msgstr "Μεταφράσεις"
 
 msgid "Transmission mode"
@@ -8925,6 +9076,9 @@ msgid "Unknown"
 msgstr "Άγνωστο"
 
 msgid "Unmark service as dedicated 3D service"
+msgstr ""
+
+msgid "Unmark service to unhide VBI line"
 msgstr ""
 
 msgid "Unmount"
@@ -10037,9 +10191,6 @@ msgstr "Επιστροφή στην προηγούμενη υπηρεσία;"
 msgid "Zap back to service before positioner setup?"
 msgstr "Επιστροφή στην υπηρεσία πριν τη ρύθμιση του μοτέρ;"
 
-msgid "Zap back to service before tuner setup?"
-msgstr "Eπιστροφή στην υπηρεσία πριν τη ρύθμιση του tuner;"
-
 msgid "Zap bouquets blindly on zap buttons"
 msgstr ""
 
@@ -10130,6 +10281,9 @@ msgstr "έτοιμο για εκκίνηση"
 msgid "activate network adapter configuration"
 msgstr "ενεργοποίηση ρύθμισης κάρτας δικτύου"
 
+msgid "active NFS Shares:"
+msgstr ""
+
 msgid "actual time only"
 msgstr ""
 
@@ -10182,6 +10336,10 @@ msgstr "αλφαβητικά"
 
 msgid "alphabetic reverse"
 msgstr "αλφαβητική αντιστροφή"
+
+#, fuzzy
+msgid "alphabetical"
+msgstr "αλφαβητικά"
 
 msgid "alternative"
 msgstr "εναλλασσόμενο"
@@ -10240,6 +10398,14 @@ msgstr "αυτόματο"
 
 msgid "automatic"
 msgstr "αυτόματο"
+
+#, fuzzy
+msgid "automatic from DHCP"
+msgstr "αυτόματο"
+
+#, fuzzy
+msgid "automatically scan every day"
+msgstr "Αυτόματη ανίχνευση"
 
 msgid "back"
 msgstr "πίσω"
@@ -10554,6 +10720,10 @@ msgstr "ξένες χώρες/εκδρομές"
 msgid "forward to the next chapter"
 msgstr "προώθηση στο επόμενο κεφάλαιο"
 
+#, fuzzy
+msgid "found"
+msgstr "Ήχος"
+
 msgid "free"
 msgstr "ελεύθερα"
 
@@ -10589,6 +10759,9 @@ msgstr "ύψος"
 
 msgid "help..."
 msgstr "βοήθεια..."
+
+msgid "hide"
+msgstr ""
 
 msgid "horizontal"
 msgstr "οριζόντια"
@@ -10758,6 +10931,18 @@ msgstr "δεν βρέθηκαν κοινές διεπαφές (CI)"
 msgid "no channel list"
 msgstr "Εγκατάσταση λίστας καναλιών"
 
+#, fuzzy
+msgid "no domain name found"
+msgstr "δεν βρέθηκε άρθρωμα"
+
+#, fuzzy
+msgid "no gateway found"
+msgstr "δεν βρέθηκε άρθρωμα"
+
+#, fuzzy
+msgid "no log entrys"
+msgstr "Αναπαραγωγή στοιχείου"
+
 msgid "no module found"
 msgstr "δεν βρέθηκε άρθρωμα"
 
@@ -10768,11 +10953,22 @@ msgstr "Εικονίδιο και όνομα υπηρεσίας"
 msgid "no storage devices found"
 msgstr "δεν βρέθηκαν συσκευές αποθήκευσης"
 
+msgid ""
+"no valid entrys in /etc/exports found\n"
+"Press blue button to activate default Enigma2\n"
+"HDD and USB as NFS exports,\n"
+"if valid mounted hardware is available."
+msgstr ""
+
 msgid "none"
 msgstr "κανένα"
 
 msgid "normal"
 msgstr "κανονικό"
+
+#, fuzzy
+msgid "not avaible"
+msgstr "μη διαθέσιμο"
 
 msgid "not configured"
 msgstr "μη ρυθμισμένο"
@@ -10871,6 +11067,20 @@ msgstr "αναπαραγωγή στο κεντρικό παράθυρο"
 
 msgid "please press OK when ready"
 msgstr "πιέστε OK όταν είστε έτοιμοι"
+
+#, fuzzy
+msgid "please wait"
+msgstr "Παρακαλώ περιμένετε"
+
+msgid ""
+"please wait\n"
+"while acticate NFS exports"
+msgstr ""
+
+msgid ""
+"please wait\n"
+"while deacticate NFS exports"
+msgstr ""
 
 msgid "please wait, loading picture..."
 msgstr "περίμενετε, φορτώνεται η εικόνα..."
@@ -11045,6 +11255,10 @@ msgstr "ορισμός ως υπηρεσία εκκίνησης"
 #, fuzzy
 msgid "settings"
 msgstr "Ρυθμίσεις"
+
+#, fuzzy
+msgid "show"
+msgstr "συζητήσεις"
 
 msgid "show DVD main menu"
 msgstr "εμφάνιση κύριου μενού DVD"
@@ -11332,6 +11546,9 @@ msgstr "μετάβαση και εγγραφή"
 msgid "zapped"
 msgstr "έγινε μετάβαση"
 
+#~ msgid ": %s"
+#~ msgstr ": %s"
+
 #~ msgid "AA"
 #~ msgstr "AA"
 
@@ -11496,6 +11713,10 @@ msgstr "έγινε μετάβαση"
 #~ msgid "Enable auto PIN"
 #~ msgstr "Ενεργοποίηση ViaSat EPG"
 
+#, fuzzy
+#~ msgid "Enable auto cable scan"
+#~ msgstr "Ενεργοποίηση της αυτόματης γρήγορης ανίχνευσης"
+
 #~ msgid "Enable neutrino style zap controlling"
 #~ msgstr "Ενεργοποίηση στυλ ελέγχου ζάπινγκ neutrino"
 
@@ -11639,6 +11860,10 @@ msgstr "έγινε μετάβαση"
 #~ msgid "Reboot"
 #~ msgstr "Επανεκκίνηση"
 
+#, fuzzy
+#~ msgid "Reception Settings"
+#~ msgstr "Ρυθμίσεις λήψης"
+
 #~ msgid "Remember these settings for each folder"
 #~ msgstr "Αποθήκευση αυτών των ρυθμίσεων για κάθε φάκελο"
 
@@ -11681,9 +11906,6 @@ msgstr "έγινε μετάβαση"
 
 #~ msgid "Show status icons in Movielist"
 #~ msgstr "Εμφάνιση εικονιδίων κατάστασης στη λίστα ταινιών"
-
-#~ msgid "Show tag menu"
-#~ msgstr "Εμφάνιση μενού ετικετών"
 
 #~ msgid "Show the tv player..."
 #~ msgstr "Εμφάνιση TV..."
@@ -11853,6 +12075,9 @@ msgstr "έγινε μετάβαση"
 
 #~ msgid "Zap back to service before satfinder?"
 #~ msgstr "Επιστροφή στην υπηρεσία πριν το satfinder;"
+
+#~ msgid "Zap back to service before tuner setup?"
+#~ msgstr "Eπιστροφή στην υπηρεσία πριν τη ρύθμιση του tuner;"
 
 #~ msgid "complex"
 #~ msgstr "σύνθετο"
