@@ -679,9 +679,6 @@ int eDVBFrontend::openFrontend()
 
 	m_multitype = m_delsys[SYS_DVBS] && (m_delsys[SYS_DVBT] || m_delsys[SYS_DVBC_ANNEX_A]);
 
-	if (!m_multitype)
-		m_type = feSatellite;
-
 	if(m_type == feSatellite)
 		setTone(iDVBFrontend::toneOff);
 	setVoltage(iDVBFrontend::voltageOff);
