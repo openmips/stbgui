@@ -643,7 +643,7 @@ class SecConfigure:
 
 class NIM(object):
 	def __init__(self, slot, type, description, has_outputs = True, internally_connectable = None, multi_type = {}, frontend_id = None, i2c = None, is_empty = False, input_name = None):
-		nim_types = ["DVB-S", "DVB-S2", "DVB-C", "DVB-T", "DVB-T2", "ATSC"]
+		nim_types = ["DVB-S", "DVB-S2", "DVB-C", "DVB-C2", "DVB-T", "DVB-T2", "ATSC"]
 
 		if type and type not in nim_types:
 			print "[NIM] warning: unknown NIM type %s, not using." % type
@@ -674,6 +674,9 @@ class NIM(object):
 		# get multi type using delsys information
 		if self.frontend_id is not None:
 			types = [type for type in nim_types if eDVBResourceManager.getInstance().frontendIsCompatible(self.frontend_id, type)]
+			if "DVB-C2" in types:
+				# DVB-C2 implies DVB-T support
+				types.remove("DVB-C")
 			if "DVB-T2" in types:
 				# DVB-T2 implies DVB-T support
 				types.remove("DVB-T")
@@ -1963,7 +1966,7 @@ def InitNimManager(nimmgr, update_slots = []):
 			print "[InitNimManager] api >=5"
 			if frontend:
 				system = configElement.getText()
-				if system == 'DVB-C':
+				if system in ('DVB-C','DVB-C2'):
 					ret = frontend.changeType(iDVBFrontend.feCable)
 				elif system in ('DVB-T','DVB-T2'):
 					ret = frontend.changeType(iDVBFrontend.feTerrestrial)
