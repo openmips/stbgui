@@ -675,7 +675,7 @@ class NIM(object):
 		if self.frontend_id is not None:
 			types = [type for type in nim_types if eDVBResourceManager.getInstance().frontendIsCompatible(self.frontend_id, type)]
 			if "DVB-C2" in types:
-				# DVB-C2 implies DVB-T support
+				# DVB-C2 implies DVB-C support
 				types.remove("DVB-C")
 			if "DVB-T2" in types:
 				# DVB-T2 implies DVB-T support
