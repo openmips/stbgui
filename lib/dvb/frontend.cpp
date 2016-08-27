@@ -2977,11 +2977,11 @@ bool eDVBFrontend::supportsDeliverySystem(const fe_delivery_system_t &sys, bool 
 	std::map<fe_delivery_system_t, bool>::iterator it = m_delsys.find(sys);
 	if (it != m_delsys.end() && it->second)
 	{
-/*		if (obeywhitelist && !m_delsys_whitelist.empty())
+		if (obeywhitelist && !m_delsys_whitelist.empty())
 		{
 			it = m_delsys_whitelist.find(sys);
 			if (it == m_delsys_whitelist.end() || !it->second) return false;
-		}*/
+		}
 		return true;
 	}
 	return false;
