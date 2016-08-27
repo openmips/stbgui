@@ -99,11 +99,11 @@ class OMMetrixWeatherWidget(Renderer):
 	def getWeather(self):
 		# skip if weather-widget is already up to date
 		tdelta = datetime.now() - datetime.strptime(config.plugins.MetrixWeather.lastUpdated.value,"%Y-%m-%d %H:%M:%S")
-		if int(tdelta.seconds) < (config.plugins.MetrixWeather.refreshInterval.value * 60):
+		if int(tdelta.seconds) < (config.plugins.MetrixWeather.refreshInterval.value * 60):   ##### 1=60 for testing purpose #####
 			return
 		woeid = config.plugins.MetrixWeather.woeid.value
 		print "[OMMetrixWeather] lookup for ID " + str(woeid)
-		url = "http://query.yahooapis.com/v1/public/yql?q=select%20item%20from%20weather.forecast%20where%20woeid%3D%22"+str(woeid)+"%22&format=xml"
+		url = "https://query.yahooapis.com/v1/public/yql?q=select%20item%20from%20weather.forecast%20where%20woeid%3D%22"+str(woeid)+"%22&format=xml"
 		#url = "http://query.yahooapis.com/v1/public/yql?q=select%20item%20from%20weather.forecast%20where%20woeid%3D%22"+str(self.woeid)+"%22%20u%3Dc&format=xml"
 		try:
 			file = urllib2.urlopen(url, timeout=2)
@@ -187,7 +187,9 @@ class OMMetrixWeatherWidget(Renderer):
 			configfile.save()
 			
 		except Exception as error:
-			print "Cant get weather data: %r" % error
+			print "[PaxWeather] Cant get weather data: %r" % error
+			# try to get weather data at next refresh interval to avoid spinner
+			config.plugins.MetrixWeather.lastUpdated.value = str(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
 			# cancel weather function
 			return
 
