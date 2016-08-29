@@ -7895,7 +7895,7 @@ msgid "TSID"
 msgstr "TSID"
 
 msgid "TUNER:"
-msgstr "Kanal arayici"
+msgstr "TUNER:"
 
 msgid "TV physical address report"
 msgstr "TV fiziksel adres raporu"
@@ -8601,7 +8601,7 @@ msgid "Tuner"
 msgstr "Kanal arama "
 
 msgid "Tuner "
-msgstr "Kanal arama"
+msgstr "Tuner "
 
 msgid "Tuner Configuration"
 msgstr "Tuner Yapılandırma"
@@ -8884,7 +8884,7 @@ msgid "Use trash can in movielist"
 msgstr "Film listesinde çöp kutusu kullanın."
 
 msgid "Used service scan type"
-msgstr "Kullanilan kanal arama tipi"
+msgstr "Kullanılan kanal arama tipi"
 
 msgid "User - bouquets"
 msgstr "Kullanıcı - buketleri"
@@ -9594,7 +9594,7 @@ msgid ""
 "\"%s\"?"
 msgstr ""
 "Zaten bir kanal listesi, yüklü\n"
-"Silmek istiyorsunuz\n"
+"Silmek istiyor musunuz\n"
 "\"%s\"?"
 
 msgid "You can cancel the installation."
@@ -10792,7 +10792,7 @@ msgid "remove bouquet from parental protection"
 msgstr "ebeveyn korumadan buket kaldır"
 
 msgid "remove cable services"
-msgstr "kablo kanallarını kaldır"
+msgstr "kablolu kanallarını kaldır"
 
 msgid "remove directory"
 msgstr "klasörü sil"
@@ -11116,7 +11116,7 @@ msgid "west"
 msgstr "batı"
 
 msgid "when PiPzap enabled zap channel down..."
-msgstr "PIPzap etkinleştirildiğinde zap kanal asagi...."
+msgstr "PIPzap etkinleştirildiğinde zap kanal aşağı...."
 
 msgid "when PiPzap enabled zap channel up..."
 msgstr "PIPzap etkinleştirildiğinde zap kanal yukarı...."
