@@ -203,7 +203,7 @@ msgid " (disabled)"
 msgstr " (devre dışı)"
 
 msgid " (external connection)"
-msgstr "(harici baglantı)"
+msgstr "(harici bağlantı)"
 
 msgid " (higher than any auto)"
 msgstr ""
@@ -407,7 +407,7 @@ msgid "* Only available if more than one interface is active."
 msgstr "* Yalnızca birden fazla arayüz olduğunda kullanılabilir."
 
 msgid "* current animation"
-msgstr "*geçerli animasyon"
+msgstr "* geçerli animasyon"
 
 msgid "/media/custom"
 msgstr "/media/custom"
@@ -512,7 +512,7 @@ msgid "32 MB"
 msgstr "32 MB"
 
 msgid "3D"
-msgstr "3D"
+msgstr "3B"
 
 msgid "3D Surround"
 msgstr "3B Ses"
@@ -737,9 +737,8 @@ msgstr "TimeShift sonu ve duraklama etkinleştirin"
 msgid "Active"
 msgstr "Etkin"
 
-#, fuzzy
 msgid "Adapter"
-msgstr "LAN adaptörü"
+msgstr "Adaptör"
 
 msgid "Adapter settings"
 msgstr "Ağ donanım ayarları"
@@ -907,7 +906,7 @@ msgid "Always hide infobar"
 msgstr "Bilgi çubuğunu daima gizle"
 
 msgid "Always include ECM in recordings"
-msgstr "Her zaman kayıtları ECM dahil"
+msgstr "Kayıtlarda her zaman ECM dahil"
 
 msgid "Always include ECM messages in recordings. This overrides the individual timer settings globally. It allows recordings to be always decrypted afterwards (sometimes called offline decoding), if supported by your receiver. Default: off."
 msgstr "Her zaman kayıtlarda ECM mesajları içerir. Bu global bireysel zamanlayıcı ayarları geçersiz kılar. Bu sizin alıcı tarafından desteklenmesi halinde kayıtları her zaman, sonradan (bazen çevrimdışı çözme) şifreli sağlar. Varsayılan: kapalı."
@@ -943,17 +942,17 @@ msgid "Arabic"
 msgstr "Arapça"
 
 msgid "Are you sure to purge all deleted userbouquets?"
-msgstr "Eğer tüm silinmiş kullanıcı buketleri temizlemek için emin misiniz?"
+msgstr "Tüm silinmiş kullanıcı buketlerini temizlemek için emin misiniz?"
 
 #, python-format
 msgid "Are you sure to remove all %d.%d%s%s services?"
-msgstr "Tüm %d.%d%s%s  kanallarını  kaldırmak istediğinize emin misiniz?"
+msgstr "Tüm %d.%d%s%s  kanallarını kaldırmak istediğinize emin misiniz?"
 
 msgid "Are you sure to remove all cable services?"
-msgstr "Tüm kablo kanallarını  kaldırmak istediğinize emin misiniz?"
+msgstr "Tüm kablolu kanallarını kaldırmak istediğinize emin misiniz?"
 
 msgid "Are you sure to remove all terrestrial services?"
-msgstr "Tüm karasal kanallarını  kaldırmak istediğinize emin misiniz?"
+msgstr "Tüm karasal kanallarını kaldırmak istediğinize emin misiniz?"
 
 msgid "Are you sure to remove this entry?"
 msgstr "Bu girişi kaldırmak istediğinize emin misiniz?"
@@ -973,7 +972,7 @@ msgstr ""
 "silmek istiyor musun?:\n"
 
 msgid "Are you sure you want to delete the EPG data from:\n"
-msgstr "EPG verileri silmek istediğinizden emin misiniz:\n"
+msgstr "EPG verilerini silmek istediğinize emin misiniz:\n"
 
 msgid "Are you sure you want to exit this wizard?"
 msgstr "Sihirbazdan çıkmak istiyor musunuz?"
@@ -1045,7 +1044,7 @@ msgid "Assigned services/provider:"
 msgstr "Atanan kanallar/sağlayıcılar:"
 
 msgid "At beginning"
-msgstr "Baslangıçta"
+msgstr "Başlangıçta"
 
 msgid "At end"
 msgstr "Sonunda"
@@ -1100,9 +1099,8 @@ msgstr "Yayınlama kipi"
 msgid "Auto"
 msgstr "Otomatik"
 
-#, fuzzy
 msgid "Auto Diseqc"
-msgstr "Otomatik"
+msgstr "Otomatik Diseqc"
 
 msgid "Auto chapter split every ? minutes (0=never)"
 msgstr "Belirtilen sürelerde otomatik bölümlere ayrılsın mı? dakika (0=ayırma)"
@@ -2420,9 +2418,8 @@ msgstr "Tanınan HDD:"
 msgid "Detected NIMs:"
 msgstr "Tanınan NIM:"
 
-#, fuzzy
 msgid "Device"
-msgstr "Aygıtlar"
+msgstr "Aygıt"
 
 msgid "Device Details"
 msgstr "Aygıt Detayları"
@@ -3952,7 +3949,7 @@ msgid "Install softcam support"
 msgstr "Softcam desteği yükleyin"
 
 msgid "Installation has completed."
-msgstr "Kurulum tamamlandi."
+msgstr "Kurulum tamamlandı."
 
 msgid "Installation or removal has completed."
 msgstr "Yükleme veya kaldırma tamamlandı."
@@ -3985,15 +3982,13 @@ msgid "Instant recording..."
 msgstr "Hızlı kayıt..."
 
 msgid "Interface: "
-msgstr "Arayüz:"
+msgstr "Arayüz: "
 
-#, fuzzy
 msgid "Interface: /dev/"
-msgstr "Arabirim: / dev /"
+msgstr "Arayüz: /dev/"
 
-#, fuzzy
 msgid "Interface:/dev/"
-msgstr "Arabirim: / dev /"
+msgstr "Arayüz:/dev/"
 
 msgid "Intermediate"
 msgstr "Orta"
@@ -4134,9 +4129,8 @@ msgstr "LNB"
 msgid "Language"
 msgstr "Dil"
 
-#, fuzzy
 msgid "Language Team"
-msgstr "Dil"
+msgstr "Dil Ekibi"
 
 msgid "Language selection"
 msgstr "Dil seçimi"
@@ -4144,9 +4138,8 @@ msgstr "Dil seçimi"
 msgid "Large"
 msgstr ""
 
-#, fuzzy
 msgid "Last Translator"
-msgstr "Çeviri"
+msgstr "Son Çevirmen"
 
 msgid "Last config"
 msgstr "Son ayar"
@@ -4284,9 +4277,8 @@ msgstr "Konum"
 msgid "Location for instant recordings"
 msgstr "Anlık kayıt konumu"
 
-#, fuzzy
 msgid "Location:"
-msgstr "Konum"
+msgstr "Konum:"
 
 msgid "Lock ratio"
 msgstr "Oranı kilitleyin"
@@ -4385,9 +4377,8 @@ msgstr "Transponder bilgilerini elle gir"
 msgid "Manufacturer"
 msgstr "Üretici"
 
-#, fuzzy
 msgid "Manufacturer info"
-msgstr "Üretici"
+msgstr "Üretici bilgisi"
 
 msgid "Margin after recording (minutes)"
 msgstr "Kayıttan sonra Marj (dakika)"
@@ -4746,9 +4737,8 @@ msgstr "Ağ Bilgisi"
 msgid "Network MAC settings"
 msgstr "Ağ ayarlarını etkinleştir"
 
-#, fuzzy
 msgid "Network Speed:"
-msgstr "NetSpeed:"
+msgstr "Ağ Hızı:"
 
 msgid "Network configuration"
 msgstr "Ağ yapılandırma"
@@ -6962,9 +6952,8 @@ msgstr "Kurulum Modu"
 msgid "Setup network time synchronization interval."
 msgstr "Kur, ağ zaman senkronizasyonu aralığı."
 
-#, fuzzy
 msgid "Setup tuner"
-msgstr "Bir tuner seç"
+msgstr "Tuner kurulumu"
 
 msgid "Setup your positioner"
 msgstr "Pozisyoner kurulumu"
@@ -6984,9 +6973,8 @@ msgstr "Shell Komut"
 msgid "Short filenames"
 msgstr "Kısa dosya adları"
 
-#, fuzzy
 msgid "Show"
-msgstr "Log göster"
+msgstr "Göster"
 
 msgid "Show Audioselection"
 msgstr "Ses seçimini göster"
@@ -8040,11 +8028,11 @@ msgid ""
 "\n"
 "menu->settings->system->userinterface->position & size"
 msgstr ""
-"Overscan sihirbaz tamamlandı.\n"
+"Overscan sihirbazı tamamlandı.\n"
 "\n"
 "Not: Her zaman Overscan Sihirbazı'nı sonra başlata bilirsiniz\n"
 "\n"
-"menu-> ayarları-> sistematik> kullanıcı arayüzü-> pozisyon ve boyut"
+"menu->ayarlar->kurulum->kullanıcı arayüzü->pozisyon ve boyut"
 
 msgid ""
 "The overscan wizard helps you to setup your TV in the correct way.\n"
@@ -8064,10 +8052,10 @@ msgstr ""
 "\n"
 "TV çoğunluğu için, fabrika overscan sağladı.Bu, her zaman bir resim yerine gerçek HD ve kullanıcı inferface (arayüzü) parçaları \"yakınlaştırılmış\" görünmez olabilir izliyor demektir.\n"
 "\n"
-"Sarı alan Full HD resim% 5 sınır bölgesi görünmez olacağı anlamına gelir.\n"
-"yeşil alan Full HD resim% 10 sınır bölgesi görünmez olacağı anlamına gelir.\n"
+"Sarı alan Full HD resim %5 sınır bölgesi görünmez olacağı anlamına gelir.\n"
+"yeşil alan Full HD resim %10 sınır bölgesi görünmez olacağı anlamına gelir.\n"
 "\n"
-"Sarı kutusu ekranın kenarlarına tüm karşılar Başka bir deyişle, o zaman her taraftan en az% 5 overscan var.\n"
+"Sarı kutusu ekranın kenarlarına tüm karşılar Başka bir deyişle, o zaman her taraftan en az %5 overscan var.\n"
 "\n"
 "sekiz ok uçları ipuçlarına bakın, sonra TV devre dışı Overscan etti.\n"
 "\n"
@@ -8082,13 +8070,13 @@ msgstr "Girdiğiniz şifre yanlış."
 
 #, python-format
 msgid "The results have been written to %s"
-msgstr "Sonuçlar% s yazılmıştır"
+msgstr "Sonuçlar %s yazılmıştır"
 
 msgid "The saved PIN was cleared."
 msgstr "Kaydedilen PIN aklandı."
 
 msgid "The servicelist is reloaded."
-msgstr "Servis listesini yeniden yüklenir."
+msgstr "Servis listesi yeniden yüklenir."
 
 msgid "The sleep timer has been activated."
 msgstr "Uyku zamanlayıcı etkinleştirildi."
@@ -8159,7 +8147,7 @@ msgid "There are at least %s updates available."
 msgstr "Yeni %s güncellemeler bulundu."
 
 msgid "There are currently no outstanding actions."
-msgstr "Seçilmis bir görev yok."
+msgstr "Seçilmiş bir görev yok."
 
 msgid "There are no updates available."
 msgstr "Yeni güncelleme yok."
@@ -8387,7 +8375,7 @@ msgid "Three"
 msgstr "Üç"
 
 msgid "Three partitions (33% - 33% - 33%)"
-msgstr "Üç bölüm (33% - 33% - 33%)"
+msgstr "Üç bölüm (%33 - %33 - %33)"
 
 msgid "Threshold"
 msgstr "Esik"
@@ -8642,11 +8630,11 @@ msgstr "İki"
 
 #, python-format
 msgid "Two partitions (50% - 50%)"
-msgstr "İki bölüm (50% - 50%)"
+msgstr "İki bölüm (%50 - %50)"
 
 #, python-format
 msgid "Two partitions (75% - 25%)"
-msgstr "İki bölüm (75% - 25%)"
+msgstr "İki bölüm (%75 - %25)"
 
 msgid "Type"
 msgstr "Tip"
@@ -8669,7 +8657,7 @@ msgid ""
 "Make sure you first insert an USB flash drive before you select USB."
 msgstr ""
 "USB = USB yedekleme yapmak istiyor musunuz?\n"
-"Bu tam otomatik olarak dosya sistemine bağlı olarak 2 ila7 dakika arasında sürer.\n"
+"Bu tam otomatik olarak dosya sistemine bağlı olarak 2 ila 7 dakika arasında sürer.\n"
 "USB seçeneğini seçmeden önce USB flaş sürücü taktığınızdan emin olun."
 
 msgid "USB Stick"
@@ -9480,13 +9468,13 @@ msgid ""
 msgstr ""
 "Bu feragatname ile openMips ekibi size gecelik inşa dosyaları ile alıcının beklendiği gibi çalışmayabiliceğini bildirir.Bu nedenle yadekleme yapmanız tavsiye edilir.Birşeyler yanlış giderse kolayca hızlı bir şekilde geri dönebilirsiniz.Eğer bir hata ile keşfederseniz lütfen www.gigablue-support.com adresine rapor edin.\n"
 "\n"
-"Bunu anlıyor musun?"
+"Bunu anlıyor musunuz?"
 
 msgid "Without popup"
 msgstr "Popup olmadan"
 
 msgid "Wizard to arrange the overscan"
-msgstr "overscan düzenlemek için sihirbazı"
+msgstr "overscan düzenlemek için sihirbaz"
 
 msgid ""
 "Would you like to be able to install softcams?\n"
@@ -9497,13 +9485,13 @@ msgid ""
 msgstr ""
 "Softcams yüklemek ister misiniz?\n"
 "\n"
-"Dikkat - Yasadışı özel Ülke!\n"
+"Dikkat - Belirli ülkerlerde yasadışı!\n"
 "\n"
-"önceden belirli bir ülke için yasallığı kontrol edin!"
+"Önceden belirli ülke için yasallığını kontrol edin!"
 
 #, python-format
 msgid "Would you save the entered PIN %s persistent?"
-msgstr "Girdiğiniz PIN%s kalıcıdır kaydetmek istiyormusunuz?"
+msgstr "Girdiğiniz PIN %s kalıcıdır kaydetmek istiyor musunuz?"
 
 msgid "Write error while recording. Disk full?\n"
 msgstr "Kaydederken hata oluştu. Disk dolu mu?\n"
@@ -9533,7 +9521,7 @@ msgid "Yes"
 msgstr "Evet"
 
 msgid "Yes (save index in setup tuner)"
-msgstr "Evet (kurulum tuner endeksi kaydedin)"
+msgstr "Evet (tuner kurulumunda endeksi kaydedin)"
 
 msgid "Yes and save"
 msgstr "Evet ve kaydet"
@@ -9554,7 +9542,7 @@ msgid "Yes, backup my settings!"
 msgstr "Evet, ayarlarımın yedeğini al!"
 
 msgid "Yes, delete this movie and return to movie list"
-msgstr "Evet, bu filmi silmek ve film listesine dönmek"
+msgstr "Evet, bu filmi sil ve film listesine dön"
 
 msgid "Yes, do a manual scan now"
 msgstr "Evet, elle kanal aramayı başlat"
@@ -9583,8 +9571,8 @@ msgid ""
 "would you like to remove\n"
 "\"%s\"?"
 msgstr ""
-"Zaten bir bootloop yüklü olan,\n"
-"Kaldırmak istediğiniz\n"
+"Zaten bir bootlogo yüklü,\n"
+"Kaldırmak istiyor musunuz\n"
 "\"%s\"?"
 
 #, python-format
@@ -9594,7 +9582,7 @@ msgid ""
 "\"%s\"?"
 msgstr ""
 "Zaten bir kanal listesi, yüklü\n"
-"Silmek istiyor musunuz\n"
+"Kaldırmak istiyor musunuz\n"
 "\"%s\"?"
 
 msgid "You can cancel the installation."
@@ -9643,7 +9631,7 @@ msgstr ""
 "\n"
 "Not: Her zaman sonra Overscan Sihirbazı'nı başlatmak için\n"
 "\n"
-"menu-> ayarları-> sistematik> userinterface-> pozisyon ve boyut"
+"menü->ayarlar->kurulum->kullanıcı arayüzü-> pozisyon ve boyut"
 
 msgid ""
 "You did not see all eight arrow heads. This means your TV has overscan enabled and presents you with a zoomed-in picture, causing you to loose part of a full HD screen. In addition this you may also miss parts of the user interface, for example volume bars and more.\n"
@@ -10000,7 +9988,6 @@ msgstr "alfabetik"
 msgid "alphabetic reverse"
 msgstr "alfabetik ters"
 
-#, fuzzy
 msgid "alphabetical"
 msgstr "alfabetik"
 
@@ -10065,9 +10052,8 @@ msgstr "otomatik"
 msgid "automatic from DHCP"
 msgstr "otomatik"
 
-#, fuzzy
 msgid "automatically scan every day"
-msgstr "Otomatik arama"
+msgstr "Günlük otomatik arama"
 
 msgid "back"
 msgstr "geri"
@@ -10375,9 +10361,8 @@ msgstr "yabancı ülkelere / keşif"
 msgid "forward to the next chapter"
 msgstr "sonraki bölüme ilerle"
 
-#, fuzzy
 msgid "found"
-msgstr "Ses"
+msgstr "bulundu"
 
 msgid "free"
 msgstr "boş"
@@ -10720,9 +10705,8 @@ msgstr "ana pencerede oynat"
 msgid "please press OK when ready"
 msgstr "Lütfen hazır olduğunuzda OK tuşuna basın"
 
-#, fuzzy
 msgid "please wait"
-msgstr "Lütfen bekleyin"
+msgstr "lütfen bekleyin"
 
 msgid ""
 "please wait\n"
@@ -10904,9 +10888,8 @@ msgstr "başlangıç kanalı yap"
 msgid "settings"
 msgstr "ayarlar"
 
-#, fuzzy
 msgid "show"
-msgstr "sohbet programı"
+msgstr "göster"
 
 msgid "show DVD main menu"
 msgstr "DVD ana menüsünü göster"
