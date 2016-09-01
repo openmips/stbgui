@@ -648,7 +648,7 @@ msgid ""
 msgstr ""
 "Yapılandırılmış ikinci bir arayüz bulundu.\n"
 "\n"
-"Ikinci ağ arayüzünü devre dışı bırakmak istiyor musunuz?"
+"İkinci ağ arayüzünü devre dışı bırakmak istiyor musunuz?"
 
 msgid ""
 "A sleep timer wants to set your\n"
@@ -2600,7 +2600,7 @@ msgstr "Çıkmak istediğinize emin misiniz?"
 
 #, python-format
 msgid "Do you really want to hold the plugin \"%s\"?"
-msgstr "gerçekten eklenti \"% s\" tutmak istiyor musunuz?"
+msgstr "Gerçekten eklenti \"% s\" tutmak istiyor musunuz?"
 
 msgid ""
 "Do you really want to initialize the device?\n"
@@ -3256,13 +3256,13 @@ msgid "Fast Scan"
 msgstr "Hızlı Tarama"
 
 msgid "Fast epoch"
-msgstr "Hizli tur"
+msgstr "Hızlı tur"
 
 msgid "Fast forward speeds"
 msgstr "Hızlı ileri sarma hızı"
 
 msgid "Fast mount"
-msgstr "hizli mount"
+msgstr "hızlı mount"
 
 msgid ""
 "Fast mounted Media unmounted.\n"
@@ -3277,7 +3277,7 @@ msgid "Favourites"
 msgstr "Favoriler"
 
 msgid "File appears to be busy.\n"
-msgstr "Dosya mesgul gibi görünüyor.\n"
+msgstr "Dosya meşgul gibi görünüyor.\n"
 
 msgid "Filesystem check"
 msgstr "Dosya sistemi kontrolü"
@@ -3301,7 +3301,7 @@ msgid "Finished"
 msgstr "Tamamlandı"
 
 msgid "Finished configuring your network"
-msgstr "Ağ yapılandırması tamamlandı."
+msgstr "Ağ yapılandırması tamamlandı"
 
 msgid "Finished restarting your network"
 msgstr "Ağ yeniden başlatıldı"
@@ -3314,7 +3314,7 @@ msgid "Firmware: %s"
 msgstr "Donanım Yazılımı: %s"
 
 msgid "Firmware: unknown"
-msgstr "Donanım Yazılımı:bilinmiyor"
+msgstr "Donanım Yazılımı: bilinmiyor"
 
 msgid "Fixed"
 msgstr "Sabit"
@@ -3328,7 +3328,7 @@ msgid ""
 "Restart your %s %s now?"
 msgstr ""
 "İlk / medya / hdd Depolama Aygıtı başlatmak monte düzeltildi. Bu etkiyi almak için sistemi yeniden başlatmayı gerektirir.\n"
-"şimdi% s% s yeniden başlatın?"
+"şimdi% s% s yeniden başlat?"
 
 msgid "Flash"
 msgstr "Flaş"
@@ -3340,7 +3340,7 @@ msgid "Flash On the fly (select a image)"
 msgstr "Flaş (bir görüntü seçin)"
 
 msgid "Flash Online"
-msgstr "Online flaş"
+msgstr "Çevrimiçi flaş"
 
 msgid "Flashed: "
 msgstr "Flaşlandı: "
@@ -3349,7 +3349,7 @@ msgid "Flashing: "
 msgstr "Flaşlanıyor: "
 
 msgid "Following tasks will be done after you press OK!"
-msgstr "Belirtilen görevler OK'a basmanizin ardindan isleme alinacak!"
+msgstr "Belirtilen görevler OK tuşuna basmanızın ardından işleme alınacak!"
 
 msgid "Force LNB Power"
 msgstr "LNB Kuvvet Gücü"
@@ -3364,7 +3364,7 @@ msgid "Format as"
 msgstr "Olarak biçimlendir"
 
 msgid "Format finished with success"
-msgstr "Format başarı ile tamamladı"
+msgstr "Biçimlendirme başarı ile tamamladı"
 
 msgid "Format/Partition your Devices and manage Mountpoints"
 msgstr "Biçim / senin Cihazları Partition ve bağlama noktaları yönetmek"
@@ -3445,13 +3445,13 @@ msgid "Further Options"
 msgstr "Öteki Seçenekler"
 
 msgid "Further options"
-msgstr "Öteki Seçenekler"
+msgstr "Öteki seçenekler"
 
 msgid "G"
 msgstr "G"
 
 msgid "GB800SOLO takes about 20 mins !!\n"
-msgstr "GB800 SOLO yaklaşık 20 dakika sürer !!\n"
+msgstr "GB800SOLO yaklaşık 20 dakika sürer !!\n"
 
 msgid "GStreamer: "
 msgstr "GStreamer: "
@@ -3549,7 +3549,7 @@ msgid "Goto next day of events"
 msgstr "Olayların Goto ertesi gün"
 
 msgid "Goto next page of events"
-msgstr "Sonraki olay sayfasi"
+msgstr "Sonraki olay sayfası"
 
 msgid "Goto position"
 msgstr "Pozisyona git"
@@ -3607,7 +3607,7 @@ msgid ""
 "This only takes 2 or 10 minutes and is fully automatic."
 msgstr ""
 "HDD = HDD üzerindeki bir yedekleme yapmak istiyor musunuz?\n"
-"Bu sadece 2-3 dakika sürer ve tam otomatik."
+"Bu tam otomatik olarak 2 - 10 dakika arası sürer."
 
 msgid "HDMI"
 msgstr "HDMI"
@@ -3666,7 +3666,7 @@ msgid "Hidden network"
 msgstr "Gizlenmiş ağ"
 
 msgid "Hide"
-msgstr ""
+msgstr "Gizle"
 
 msgid "Hide channel list in radio mode"
 msgstr "Radyo modunda kanal listesini gizle"
@@ -3844,7 +3844,7 @@ msgid "Index"
 msgstr "İndeks"
 
 msgid "Index allocated:"
-msgstr "Ayrilan Endeks:"
+msgstr "Ayrılan Endeks:"
 
 msgid "Inetd recovery"
 msgstr "Inetd kurtarma"
@@ -3877,7 +3877,7 @@ msgid "Initial location in new timers"
 msgstr "Yeni zamanlayıcı içinde ilk konum"
 
 msgid "Initial lock ratio"
-msgstr "İlk kilitleme orani"
+msgstr "İlk kilitleme oranı"
 
 msgid "Initial rewind speed"
 msgstr "İlk geri sarma hızı"
@@ -4097,7 +4097,7 @@ msgstr "Çekirdek sürümü: "
 
 #, python-format
 msgid "Kernel: %s"
-msgstr "Çekirdek:% s"
+msgstr "Çekirdek: %s"
 
 msgid "Key mapping"
 msgstr "Klavye haritası"
@@ -5026,7 +5026,7 @@ msgid ""
 "Not enough free space on /hdd !!\n"
 "You need at least 300Mb free space.\n"
 msgstr ""
-"/ Hdd yeterli boş alan !!\n"
+"/Hdd üzerinde yeterli boş alan yok !!\n"
 "En az 300 Mb boş alan gerekir.\n"
 
 msgid ""
@@ -5035,7 +5035,7 @@ msgid ""
 "\n"
 "Exit plugin."
 msgstr ""
-"/hdd Üzerinde yeterli boş alan yok !!\n"
+"/hdd üzerinde yeterli boş alan yok !!\n"
 "En az 300 Mb boş alan gerekir.\n"
 "\n"
 "Eklentiden çık."
@@ -5070,7 +5070,7 @@ msgid "Now playing"
 msgstr "Şimdi çalan"
 
 msgid "Now, use the contrast setting to turn up the brightness of the background as much as possible, but make sure that you can still see the difference between the two brightest levels of shades.If you have done that, press OK."
-msgstr "Simdi, kontrast ayarlarını kullanarak arka zemin üzerinde, ekrandaki iki parlaklık tonunu ayırt edebilecek şekilde ve mümkün olduğunca parlaklık seviyesini arttırın. İşlemi tamamladıktan sonra OK tuşuna basın."
+msgstr "Şimdi, kontrast ayarlarını kullanarak arka zemin üzerinde, ekrandaki iki parlaklık tonunu ayırt edebilecek şekilde ve mümkün olduğunca parlaklık seviyesini arttırın. İşlemi tamamladıktan sonra OK tuşuna basın."
 
 msgid "Number of channel number digits"
 msgstr "kanal numarası hane sayısı"
@@ -5184,22 +5184,22 @@ msgid "Overscan wizard"
 msgstr "Fazla tarama Sihirbazı"
 
 msgid "Overwrite Bootlogo Files ?"
-msgstr "Bootlogo dosyaları üzerine yaz?"
+msgstr "Bootlogo dosyaları üzerine yazılsın mı?"
 
 msgid "Overwrite Driver Files ?"
-msgstr "Sürücü dosyaları üzerine yaz?"
+msgstr "Sürücü dosyaları üzerine yazılsın mı?"
 
 msgid "Overwrite Emu Files ?"
-msgstr "Emu dosyaları üzerine yaz?"
+msgstr "Emu dosyaları üzerine yazılsın mı?"
 
 msgid "Overwrite Picon Files ?"
-msgstr "Picon dosyaları üzerine yaz?"
+msgstr "Picon dosyaları üzerine yazılsın mı?"
 
 msgid "Overwrite Setting Files ?"
-msgstr "Setting dosyaları üzerine yaz?"
+msgstr "Setting dosyaları üzerine yazılsın mı?"
 
 msgid "Overwrite Spinner Files ?"
-msgstr "Spinner dosyaları üzerine yaz?"
+msgstr "Spinner dosyaları üzerine yazılsın mı?"
 
 msgid "Overwrite bootlogo files during software upgrade?"
 msgstr "Yazılım yükseltme sırasında bootlogo dosyaları üzerine yazılsın mı?"
@@ -5208,7 +5208,7 @@ msgid "Overwrite configuration files during software upgrade?"
 msgstr "Yazılım yükseltme sırasında yapılandırma dosyaları üzerine yazılsın mı?"
 
 msgid "Overwrite configuration files?"
-msgstr "Konfigürasyon dosyaları üzerine yaz?"
+msgstr "Konfigürasyon dosyaları üzerine yazılsın mı?"
 
 msgid "Overwrite driver files during software upgrade?"
 msgstr "Yazılım yükseltme sırasında driver dosyaları üzerine yazılsın mı?"
@@ -5256,7 +5256,7 @@ msgid "PMT PID"
 msgstr "PMT PID"
 
 msgid "POT-Creation Date"
-msgstr ""
+msgstr "POT-Oluşturma Tarihi"
 
 msgid "PPanel"
 msgstr "PPanel"
@@ -5329,7 +5329,7 @@ msgid "Percentage right"
 msgstr "Sag oran"
 
 msgid "Permanently delete all recordings in the trash can?"
-msgstr "Çöp kutusundaki tüm kayıtları silecekmisin?"
+msgstr "Çöp kutusundaki tüm kayıtları silecek misin?"
 
 msgid "Permanently remove all deleted items"
 msgstr "Kalıcı olarak silinmiş tüm öğeleri kaldır"
@@ -5338,7 +5338,7 @@ msgid "Persian"
 msgstr "Farsça"
 
 msgid "Phone"
-msgstr ""
+msgstr "Telefon"
 
 msgid "PiP setup"
 msgstr "RiR kurulumu"
@@ -5440,7 +5440,7 @@ msgid "Please enter a name for the new bouquet"
 msgstr "Yeni buket için isim girin"
 
 msgid "Please enter a name for the new marker"
-msgstr "Yeni isaretleyici için isim girin"
+msgstr "Yeni işaretleyici için isim girin"
 
 msgid "Please enter a new filename"
 msgstr "Lütfen yeni dosya adı girin"
@@ -5500,7 +5500,7 @@ msgid "Please select device to use as swapfile location"
 msgstr "Lütfen swapfile konumu için aygıt seçin"
 
 msgid "Please select medium"
-msgstr "orta seçiniz"
+msgstr "Lütfen ortam seçin"
 
 msgid "Please select medium to be scanned"
 msgstr "Lütfen ortam seçin ve tarayın"
@@ -5512,7 +5512,7 @@ msgid "Please select tag to filter..."
 msgstr "Lütfen filtreleme için etiket seçin ..."
 
 msgid "Please select the movie path..."
-msgstr "Filmlerin bulundugu  klasörü seçin..."
+msgstr "Filmlerin bulunduğu  klasörü seçin..."
 
 msgid ""
 "Please select the network interface that you want to use for your internet connection.\n"
@@ -5521,7 +5521,7 @@ msgid ""
 msgstr ""
 "Lütfen internet bağlantınızı kullanmak için bir ağ arayüzü seçin.\n"
 "\n"
-"Devam etmek için OK tuşuna basın."
+"Devam etmek için lütfen OK tuşuna basın."
 
 msgid ""
 "Please select the wireless network that you want to connect to.\n"
@@ -5533,7 +5533,7 @@ msgstr ""
 "Devam etmek için lütfen OK tuşuna basın."
 
 msgid "Please select your preferred configuration."
-msgstr "Lütfen tercih edilen yapılandırmayı seç"
+msgstr "Lütfen tercih edilen yapılandırmayı seç."
 
 msgid "Please set up tuner A"
 msgstr "Lütfen tuner A yı ayarlayın"
@@ -5573,8 +5573,8 @@ msgid ""
 "Press Bouquet +/- to resize the window.\n"
 "Press OK to go back to the TV mode or EXIT to cancel the moving."
 msgstr ""
-"Lütfen yönlendirme tuşlarını kullanarak PiP ekranını taşıyın.\n"
-"PiP penceresini boyutlandırmak için Buket +/- tuşlarını kullanın.\n"
+"Lütfen yönlendirme tuşlarını kullanarak RiR ekranını taşıyın.\n"
+"RiR penceresini boyutlandırmak için Buket +/- tuşlarını kullanın.\n"
 "TV kipine dönmek için OK tuşuna veya taşımayı iptal etmek için EXIT tuşuna basın."
 
 msgid "Please use the UP and DOWN keys to select your language. Afterwards press the OK button."
@@ -5587,7 +5587,7 @@ msgid "Please wait (downloading channel list)"
 msgstr "Lütfen bekleyin (kanal listesi indiriliyor)"
 
 msgid "Please wait (downloading softcam support)"
-msgstr "Lütfen bekleyiniz (softcam desteği indirme)"
+msgstr "Lütfen bekleyin (softcam desteği indiriliyor)"
 
 msgid "Please wait (updating packages)"
 msgstr "Lütfen bekleyin (paketler güncelleniyor)"
@@ -5614,13 +5614,13 @@ msgid "Please wait while your network is restarting..."
 msgstr "Ağ diski yeniden başlatılırken lütfen bekleyin..."
 
 msgid "Please wait, restarting primary and secondary softcam."
-msgstr "Birincil ve ikincil Softcam yeniden başlatmadan, lütfen bekleyin."
+msgstr "Birincil ve ikincil Softcam yeniden başlatılıyor, lütfen bekleyin."
 
 msgid "Please wait, restarting primary softcam."
-msgstr "Birincil Softcam yeniden başlatmadan, lütfen bekleyin."
+msgstr "Birincil Softcam yeniden başlatılıyor, lütfen bekleyin."
 
 msgid "Please wait, restarting secondary softcam."
-msgstr "İkincil Softcam yeniden başlatmadan, lütfen bekleyin."
+msgstr "İkincil Softcam yeniden başlatılıyor, lütfen bekleyin."
 
 msgid "Please wait..."
 msgstr "Lütfen bekleyin..."
@@ -5743,19 +5743,19 @@ msgid "Preferred tuner DVB-C"
 msgstr "Tercih tuner DVB-C"
 
 msgid "Preferred tuner DVB-C for recordings"
-msgstr "kayıtları için tercih edilen radyo DVB-C"
+msgstr "Kayıtlar için tercih edilen tuner DVB-C"
 
 msgid "Preferred tuner DVB-S"
 msgstr "Tercih tuner DVB-S"
 
 msgid "Preferred tuner DVB-S for recordings"
-msgstr "kayıtları için tercih edilen radyo DVB-S"
+msgstr "Kayıtlar için tercih edilen tuner DVB-S"
 
 msgid "Preferred tuner DVB-T"
 msgstr "Tercih tuner DVB-T"
 
 msgid "Preferred tuner DVB-T for recordings"
-msgstr "kayıtları için tercih edilen radyo DVB-T"
+msgstr "Kayıtlar için tercih edilen tuner DVB-T"
 
 msgid "Preferred tuner for recordings"
 msgstr "Kayıtlar için tercih edilen tuner"
@@ -5764,13 +5764,13 @@ msgid "Preparing... Please wait"
 msgstr "Hazırlanıyor... Lütfen bekleyin"
 
 msgid "Press '0' to toggle PiP mode"
-msgstr "Basın '0' PiP modu arasında geçiş yapmak için"
+msgstr "RiR modu arasında geçiş yapmak için '0' tuşuna basın"
 
 msgid "Press INFO on your remote control for additional information."
-msgstr "Ek bilgi için uzaktan kumanda üzerindeki INFO (EPG)  tuşuna basın."
+msgstr "Ek bilgi için uzaktan kumanda üzerindeki INFO (EPG) tuşuna basın."
 
 msgid "Press MENU on your remote control for additional options."
-msgstr "Ek seçenekler için uzaktan kumanda üzerindeki MENU düğmesine basın."
+msgstr "Ek seçenekler için uzaktan kumanda üzerindeki MENU tuşuna basın."
 
 msgid "Press OK on your remote control to continue."
 msgstr "Devam etmek için kumandanızın OK tuşuna basın."
@@ -5810,7 +5810,7 @@ msgid "Press OK to start the scan"
 msgstr "Aramayı başlatmak için OK tuşuna basın"
 
 msgid "Press OK to toggle the selection"
-msgstr "Seçiminde geçiş yapmak için OK tuşuna basın."
+msgstr "Seçiminde geçiş yapmak için OK tuşuna basın"
 
 msgid "Press OK to toggle the selection."
 msgstr "Seçiminde geçiş yapmak için OK tuşuna basın."
@@ -5832,7 +5832,7 @@ msgid "Preview menu"
 msgstr "Önizleme menüsü"
 
 msgid "Preview selected channel"
-msgstr "Seçili kanali Izle"
+msgstr "Seçili kanalı önizle"
 
 msgid "Preview:"
 msgstr "Önizleme:"
@@ -5841,10 +5841,10 @@ msgid "Primary DNS"
 msgstr "Birincil DNS"
 
 msgid "Prime time"
-msgstr "yoğun zaman"
+msgstr "Yoğun zaman"
 
 msgid "PrimeTime"
-msgstr "yoğun zaman"
+msgstr "Yoğun Zaman"
 
 msgid "Priority"
 msgstr "Öncelik"
@@ -5865,7 +5865,7 @@ msgid "Progress:"
 msgstr "İlerleme:"
 
 msgid "Project"
-msgstr ""
+msgstr "Proje"
 
 msgid "Properties of current title"
 msgstr "Mevcut başlığın özellikleri"
@@ -5885,9 +5885,8 @@ msgstr "Ana menü koruması"
 msgid "Protect manufacturer reset screen"
 msgstr "Üretici sıfırlama ekranı koruması"
 
-#, fuzzy
 msgid "Protect menu sort"
-msgstr "Film listesi koruması"
+msgstr "Menü sıralama koruması"
 
 msgid "Protect movie list"
 msgstr "Film listesi koruması"
@@ -5938,7 +5937,7 @@ msgid "Quick"
 msgstr "Hızlı"
 
 msgid "Quick and safe remove for your mounted devices "
-msgstr "senin monte cihazlar için hızlı ve güvenli kaldır"
+msgstr "Bağlı aygıtlar için hızlı ve güvenli kaldırma "
 
 msgid "Quick switching of aspect ratio setting"
 msgstr "boy oranı ayarı Hızlı anahtarlama"
@@ -6018,10 +6017,10 @@ msgstr "%s %s simdi kapatmak istiyor musunuz?"
 
 #, python-format
 msgid "Really store at index %2d for current position?"
-msgstr "Gerçekten geçerli konumdan endeksi% 2d de saklamak?"
+msgstr "Gerçekten geçerli konumdan endeksi %2d de saklamak?"
 
 msgid "Really upgrade the frontprocessor and reboot now?"
-msgstr "Simdi ön islemci güncellensin ve cihaz yeniden baslatilsin mi?"
+msgstr "Şimdi ön işlemci güncellensin ve cihaz yeniden başlatılsın mı?"
 
 #, python-format
 msgid "Really upgrade your %s %s and reboot now?"
@@ -6155,10 +6154,10 @@ msgid "Remove a nameserver entry"
 msgstr "Isim sunucusu girisini sil"
 
 msgid "Remove bookmark"
-msgstr "Kisayolu kaldır"
+msgstr "Kısayolu kaldır"
 
 msgid "Remove completed timers after (days)"
-msgstr "Tamamlanmış zamanlayıcıları kaldırın (gün) sonra"
+msgstr "Tamamlanmış zamanlayıcıları (gün) sonra kaldır"
 
 msgid "Remove currently selected title"
 msgstr "Seçilen geçerli başlığı sil"
@@ -6343,7 +6342,7 @@ msgid "Reverse list"
 msgstr "Ters liste"
 
 msgid "Revision Date"
-msgstr ""
+msgstr "Revizyon Tarihi"
 
 msgid "Rewind speeds"
 msgstr "Geri sarma hızları"
@@ -6439,7 +6438,7 @@ msgid "Satellite"
 msgstr "Uydu"
 
 msgid "Satellite dish setup"
-msgstr "Çanak anten kurulumu"
+msgstr "Uydu anteni kurulumu"
 
 msgid "Satellite equipment"
 msgstr "Uydu ekipmanı"
@@ -6466,7 +6465,7 @@ msgid "Save"
 msgstr "Kaydet"
 
 msgid "Save EPG"
-msgstr "Kaydet EPG"
+msgstr "EPG Kaydet"
 
 msgid "Save EPG data"
 msgstr "EPG verisini kaydet"
@@ -6481,7 +6480,7 @@ msgid "Save and restart timeshift"
 msgstr "Kaydet ve zaman kayması yeniden tekrar başlat"
 
 msgid "Save and stop timeshift"
-msgstr "Kaydet ve zaman kaymasıni durdur"
+msgstr "Kaydet ve zaman kaymasını durdur"
 
 msgid "Save playlist"
 msgstr "Çalma listesini Kaydet"
@@ -6569,7 +6568,7 @@ msgid "Scanning..."
 msgstr "Taranıyor..."
 
 msgid "Scans default lamedbs sorted by satellite with a connected dish positioner"
-msgstr "Bagli pozisyoner üzerinden varsayilan lamedb dosyasiyla uydu sirali arama yapar"
+msgstr "Bağlı pozisyoner üzerinden varsayılan lamedb dosyasıyla uydu sıralı arama yapar"
 
 msgid "Scheduled load of epg.dat"
 msgstr "epg.dat Planlanmış yükle"
@@ -7001,7 +7000,7 @@ msgid "Show Log"
 msgstr "Log göster"
 
 msgid "Show PIP"
-msgstr "PIP göster"
+msgstr "RIR göster"
 
 msgid "Show SNR percentage instead of dB value"
 msgstr "SNR yüzdesi yerine dB değeri göster"
@@ -7019,19 +7018,19 @@ msgid "Show animation while busy"
 msgstr "Meşgulken animasyon göster"
 
 msgid "Show background behind subtitles"
-msgstr "altyazılı arkasında göster arka plan"
+msgstr "Altyazı arkasında arka plan göster"
 
 msgid "Show background in radio mode"
 msgstr "Radyo modunda arka planı göster"
 
 msgid "Show bootvideo on boot"
-msgstr "açılışta önyükleme videoyu göster"
+msgstr "Açılışta önyükleme videsunu göster"
 
 msgid "Show bouquet selection menu"
-msgstr "Buket seçim menüsü gösterir."
+msgstr "Buket seçim menüsü göster"
 
 msgid "Show busy indicator when the system is busy."
-msgstr "Sistem mesgul oldugunda mesgul göstergesi göster."
+msgstr "Sistem meşgul olduğunda meşgul göstergesi göster."
 
 msgid "Show channel numbers in channel selection"
 msgstr "Kanal seçim ekranında kanal numaralarını göster"
@@ -7073,7 +7072,7 @@ msgid "Show extensions..."
 msgstr "Eklentileri göster..."
 
 msgid "Show favourites list"
-msgstr "favori listesini göster"
+msgstr "Favori listesini göster"
 
 msgid "Show help"
 msgstr "Yardımı göster"
@@ -7103,7 +7102,7 @@ msgid "Show latest commits"
 msgstr "En son hareketin göster"
 
 msgid "Show latest upgrade log"
-msgstr "en on yükseltme log göster"
+msgstr "En son yükseltme kaydını göster"
 
 #, fuzzy
 msgid "Show menu paths"
@@ -7167,16 +7166,16 @@ msgid "Show single service EPG"
 msgstr "Tekli kanal EPG göster"
 
 msgid "Show softcam startup in extensions menu"
-msgstr "uzantıları menüsünde göster softcam başlangıç"
+msgstr "Eklentiler menüsünde softcam başlangıç göster"
 
 msgid "Show status icons in movie list"
-msgstr "Film listesinde durum simgeleri göster"
+msgstr "Film listesinde durum simgesi göster"
 
 msgid "Show status icons in movielist"
 msgstr "Film listesinde durumu simgesi göster"
 
 msgid "Show subservice selection"
-msgstr "Show alt hizmet seçimi"
+msgstr ""
 
 msgid "Show subtitle selection"
 msgstr "Altyazı seçimi göster"
@@ -7251,7 +7250,7 @@ msgid "Simple fade"
 msgstr "basit solmaya"
 
 msgid "Simple titleset (compatibility for legacy players)"
-msgstr "Basit baslikseti (klasik oynaticilarla uyumlu)"
+msgstr "Basit başlık seti (klasik oynatıcılarla uyumlu)"
 
 msgid "Simple zoom"
 msgstr "basit yakınlaştırma"
@@ -7260,7 +7259,7 @@ msgid "Simplified Chinese"
 msgstr ""
 
 msgid "Simulate (no write)"
-msgstr "Simüle (yok yazma)"
+msgstr "Simüle (yazma yok)"
 
 msgid "Single"
 msgstr "Tek"
@@ -7287,7 +7286,7 @@ msgid "Skin setup"
 msgstr "Skin kurmak"
 
 msgid "Skin: "
-msgstr "Skin: "
+msgstr "Arayüz: "
 
 msgid "Skins"
 msgstr "Arayüzler"
@@ -7342,7 +7341,7 @@ msgid "Slovenian"
 msgstr "Slovence"
 
 msgid "Slow"
-msgstr "Yavas"
+msgstr "Yavaş"
 
 msgid "Slow motion speeds"
 msgstr "Ağır çekim hızları"
@@ -7363,7 +7362,7 @@ msgid "Social/Political/Economics"
 msgstr "Sosyal/Politik/Ekonomi"
 
 msgid "Softcam startup"
-msgstr "Softcam başlangıç ..."
+msgstr "Softcam başlangıç"
 
 msgid "Softcam startup..."
 msgstr "Softcam başlangıç ..."
@@ -7518,7 +7517,7 @@ msgid "Specify timeframe to ignore the shutdown in standby"
 msgstr "bekleme kapatma görmezden zaman dilimi belirleyin"
 
 msgid "Speed: "
-msgstr "hız:"
+msgstr "hız: "
 
 msgid "Split preview mode"
 msgstr "Önizleme penceresini böl"
@@ -7611,7 +7610,7 @@ msgid "Stop PiP"
 msgstr "Durdur RiR (Resim içinde Resim)."
 
 msgid "Stop all current recordings"
-msgstr "Mevcut tüm kayıtları durdurma"
+msgstr "Mevcut tüm kayıtları durdur"
 
 msgid "Stop and delete all current recordings"
 msgstr "Dur ve mevcut tüm kayıtları silmek"
@@ -8630,11 +8629,11 @@ msgstr "İki"
 
 #, python-format
 msgid "Two partitions (50% - 50%)"
-msgstr "İki bölüm (%50 - %50)"
+msgstr "İki bölüm (50% - 50%)"
 
 #, python-format
 msgid "Two partitions (75% - 25%)"
-msgstr "İki bölüm (%75 - %25)"
+msgstr "İki bölüm (75% - 25%)"
 
 msgid "Type"
 msgstr "Tip"
@@ -8657,7 +8656,7 @@ msgid ""
 "Make sure you first insert an USB flash drive before you select USB."
 msgstr ""
 "USB = USB yedekleme yapmak istiyor musunuz?\n"
-"Bu tam otomatik olarak dosya sistemine bağlı olarak 2 ila 7 dakika arasında sürer.\n"
+"Bu tam otomatik olarak dosya sistemine bağlı olarak 4 ila 15 dakika arasında sürer.\n"
 "USB seçeneğini seçmeden önce USB flaş sürücü taktığınızdan emin olun."
 
 msgid "USB Stick"
