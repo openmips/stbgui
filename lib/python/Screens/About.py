@@ -99,7 +99,6 @@ class About(Screen):
 		CPUspeed = _("Speed: ") + about.getCPUSpeedString()
 		self["CPUspeed"] = StaticText(CPUspeed)
 		#AboutText += "(" + about.getCPUSpeedString() + ")\n"
-		#AboutText += "(" + about.getCPUSpeedString() + ")\n"
 
 		ChipsetInfo = _("Chipset: ") + about.getChipSetString()
 		self["ChipsetInfo"] = StaticText(ChipsetInfo)
@@ -119,7 +118,8 @@ class About(Screen):
 		self["KernelVersion"] = StaticText(KernelVersion)
 		AboutText += KernelVersion + "\n"
 
-		AboutText += _("DVB drivers: ") + about.getDriverInstalledDate() + "\n"
+		AboutText += _("DVB drivers: ") + self.realDriverDate() + "\n"
+		#AboutText += _("DVB drivers: ") + about.getDriverInstalledDate() + "\n"
 
 		EnigmaVersion = _("GUI Build: ") + about.getEnigmaVersionString() + "\n"
 		self["EnigmaVersion"] = StaticText(EnigmaVersion)
@@ -210,6 +210,20 @@ class About(Screen):
 
 	def showMemoryInfo(self):
 		self.session.open(MemoryInfo)
+
+	def realDriverDate(self):
+		try:
+			y = popen('lsmod').read().strip()
+			if 'dvb' in y:
+				drivername='dvb'
+				x = popen('modinfo '+ drivername +' |grep -i version')
+				x = x.read().strip().split()
+				date = x[1];date = date[:14];b=date
+				YY=b[0:4];MM=b[4:6];DD=b[6:8];HO=b[8:10];MI=b[10:12];SE=b[12:14]
+				realdate=str(DD + '.' + MM + '.' + YY + ' - ' + HO  + ':' + MI + ':' + SE)
+		except:
+			realdate = about.getDriverInstalledDate()
+		return realdate
 
 class TranslationInfo(Screen):
 	def __init__(self, session):
