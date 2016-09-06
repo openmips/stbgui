@@ -3,7 +3,7 @@ import time
 from Tools.CList import CList
 from SystemInfo import SystemInfo
 from Components.Console import Console
-from boxbranding import getBoxType
+from boxbranding import getBoxType, getMachineBuild
 import Task
 
 def readFile(filename):
@@ -716,7 +716,7 @@ class HarddiskManager:
 				dev = int(readFile(devpath + "/dev").split(':')[0])
 			else:
 				dev = None
-			if getBoxType() in ('gbuhdquad'):
+			if getMachineBuild() in ('gb7252','vusolo4k','hd51','hd52'):
 				devlist = [1, 7, 31, 253, 254, 179] # ram, loop, mtdblock, romblock, ramzswap, mmc
 			else:
 				devlist = [1, 7, 31, 253, 254] # ram, loop, mtdblock, romblock, ramzswap
