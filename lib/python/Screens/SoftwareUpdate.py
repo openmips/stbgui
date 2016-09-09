@@ -200,9 +200,10 @@ When you discover 'bugs' please keep them reported on www.gigablue-support.com.\
 			elif self.ipkg.currentCommand == IpkgComponent.CMD_UPGRADE_LIST:
 				self.total_packages = len(self.ipkg.getFetchedList())
 				if self.total_packages:
+					latestImageTimestamp = self.getLatestImageTimestamp()
 					if latestImageTimestamp:
-						message = _("Latest build: %s") % self.getLatestImageTimestamp() + "\n"
-						message = _("Do you want to update your receiver?") + "\n"
+						message = _("Latest available build: %s") % self.getLatestImageTimestamp() + "\n"
+						message += _("Do you want to update your receiver?") + "\n"
 					else:
 						message = _("Do you want to update your receiver?") + "\n"
 					message += "(" + (ngettext("%s updated package available", "%s updated packages available", self.total_packages) % self.total_packages) + ")"
