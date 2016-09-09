@@ -12,13 +12,12 @@ from Components.Sources.StaticText import StaticText
 from Components.Slider import Slider
 from Tools.BoundFunction import boundFunction
 from enigma import eTimer, eDVBDB
-from boxbranding import getBoxType
+from boxbranding import getBoxType, getImageVersion
 from Tools.Directories import fileExists
 from urllib import urlopen
 import socket
 import os
 import re
-import time
 
 class UpdatePlugin(Screen, ProtectedScreen):
 	skin = """
@@ -76,7 +75,6 @@ class UpdatePlugin(Screen, ProtectedScreen):
 			config.ParentalControl.config_sections.software_update.value
 
 	def checkTraficLight(self):
-
 		self.activityTimer.callback.remove(self.checkTraficLight)
 		self.activityTimer.start(100, False)
 
@@ -126,19 +124,21 @@ When you discover 'bugs' please keep them reported on www.gigablue-support.com.\
 		else:
 			self.startActualUpdate(answer)
 
-	#def getLatestImageTimestamp(self):
-	#	currentTimeoutDefault = socket.getdefaulttimeout()
-	#	socket.setdefaulttimeout(3)
-	#	latestImageTimestamp = ""
-	#	try:
-	#		# TODO: Use Twisted's URL fetcher, urlopen is evil. And it can
-	#		# run in parallel to the package update.
-	#		latestImageTimestamp = re.findall('class="dllink">(.*?)</a>', urlopen("http://image.openmips.com/4.2/index.php?open=" + getBoxType() ").read())[0][:16]
-	#		latestImageTimestamp = time.strftime(_("%d-%b-%Y %-H:%M"), time.strptime(latestImageTimestamp, "%Y/%m/%d %H:%M"))
-	#	except:
-	#		pass
-	#	socket.setdefaulttimeout(currentTimeoutDefault)
-	#	return latestImageTimestamp
+	def getLatestImageTimestamp(self):
+		currentTimeoutDefault = socket.getdefaulttimeout()
+		socket.setdefaulttimeout(3)
+		try:
+			# TODO: Use Twisted's URL fetcher, urlopen is evil. And it can
+			# run in parallel to the package update.
+			from time import strftime
+			from datetime import datetime
+			latestImageTimestamp = datetime.fromtimestamp(int(urlopen("http://image.openmips.com/%s/%s/build-timestamp" % (getImageVersion(), getBoxType())).read())).strftime(_("%Y-%m-%d %H:%M"))
+		except:
+			latestImageTimestamp = ""
+		print latestImageTimestamp
+		print "[SoftwareUpdate] latestImageTimestamp:", latestImageTimestamp
+		socket.setdefaulttimeout(currentTimeoutDefault)
+		return latestImageTimestamp
 
 	def startActualUpdate(self,answer):
 		if answer:
@@ -200,7 +200,11 @@ When you discover 'bugs' please keep them reported on www.gigablue-support.com.\
 			elif self.ipkg.currentCommand == IpkgComponent.CMD_UPGRADE_LIST:
 				self.total_packages = len(self.ipkg.getFetchedList())
 				if self.total_packages:
-					message = _("Do you want to update your receiver?") + "\n"
+					if latestImageTimestamp:
+						message = _("Latest build: %s") % self.getLatestImageTimestamp() + "\n"
+						message = _("Do you want to update your receiver?") + "\n"
+					else:
+						message = _("Do you want to update your receiver?") + "\n"
 					message += "(" + (ngettext("%s updated package available", "%s updated packages available", self.total_packages) % self.total_packages) + ")"
 					if self.total_packages > 150:
 						message += " " + _("Reflash recommended!")
