@@ -202,7 +202,7 @@ When you discover 'bugs' please keep them reported on www.gigablue-support.com.\
 				if self.total_packages:
 					latestImageTimestamp = self.getLatestImageTimestamp()
 					if latestImageTimestamp:
-						message = _("Latest available build: %s") % self.getLatestImageTimestamp() + "\n"
+						message = _("Latest available openMips %s build is from: %s") % (getImageVersion(), self.getLatestImageTimestamp()) + "\n"
 						message += _("Do you want to update your receiver?") + "\n"
 					else:
 						message = _("Do you want to update your receiver?") + "\n"
