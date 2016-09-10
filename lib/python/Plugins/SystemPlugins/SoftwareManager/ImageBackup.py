@@ -14,6 +14,8 @@ import datetime
 from boxbranding import getBoxType, getMachineBrand, getMachineName, getDriverDate, getImageVersion, getImageBuild, getBrandOEM, getMachineBuild, getImageFolder, getMachineUBINIZE, getMachineMKUBIFS, getMachineMtdKernel, getMachineKernelFile, getMachineRootFile, getImageFileSystem
 
 HaveGZkernel = True
+if getMachineBuild() in ("vusolo4k", "spark", "spark7162", "hd51", "hd52"):
+	HaveGZkernel = False
 
 VERSION = "Version 1.0 openMips"
 

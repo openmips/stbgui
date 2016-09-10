@@ -81,11 +81,14 @@ class About(Screen):
 		self["ImageType"] = StaticText(ImageType)
 
 		Boxserial = popen('cat /proc/stb/info/sn').read().strip()
+		serial = ""
+		if Boxserial != "":
+			serial = ":Serial : " + Boxserial
 
 		AboutHeader = _("About") + " " + BoxName 
 		self["AboutHeader"] = StaticText(AboutHeader)
 
-		AboutText = BoxName + " - " + ImageType + ": Serial " + Boxserial + "\n"
+		AboutText = BoxName + " - " + ImageType + serial + "\n"
 
 		#AboutText += _("Hardware: ") + about.getHardwareTypeString() + "\n"
 		#AboutText += _("CPU: ") + about.getCPUInfoString() + "\n"
@@ -212,6 +215,7 @@ class About(Screen):
 		self.session.open(MemoryInfo)
 
 	def realDriverDate(self):
+		realdate = about.getDriverInstalledDate()
 		try:
 			y = popen('lsmod').read().strip()
 			if 'dvb' in y:

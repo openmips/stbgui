@@ -20,7 +20,7 @@ except:
 	chipset = "unknown"
 
 has_rca = False
-if getBoxType() in ('gbuhdquad', 'gb800seplus', 'gb800ueplus', 'gbquad', 'gbquadplus', 'gbipbox', 'gbultra', 'gbultraue', 'gbultrase', 'spycat', 'quadbox2400', 'gbx1', 'gbx2', 'gbx3'):
+if getBoxType() in ('mutant51', 'ax51','gbuhdquad', 'gb800seplus', 'gb800ueplus', 'gbquad', 'gbquadplus', 'gbipbox', 'gbultra', 'gbultraue', 'gbultrase', 'spycat', 'quadbox2400', 'gbx1', 'gbx2', 'gbx3'):
 	has_rca = True
 
 class VideoWizardSummary(WizardSummary):

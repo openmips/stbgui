@@ -267,6 +267,33 @@ def InitAVSwitch():
 		config.av.osd_alpha = ConfigSlider(default=255, increment = 5, limits=(20,255))
 		config.av.osd_alpha.addNotifier(setAlpha)
 
+	if os.path.exists("/proc/stb/video/hdmi_colorimetry"):
+		f = open("/proc/stb/video/hdmi_colorimetry", "r")
+		have_colorimetry = f.read().strip().split(" ")
+		f.close()
+	else:
+		have_colorimetry = False
+
+	SystemInfo["havecolorimetry"] = have_colorimetry
+
+	if have_colorimetry:
+		def setHDMIColorimetry(configElement):
+			try:
+				f = open("/proc/stb/video/hdmi_colorimetry", "w")
+				f.write(configElement.value)
+				f.close()
+			except:
+				pass
+		config.av.hdmicolorimetry = ConfigSelection(choices={
+				"auto": _("auto"),
+				"bt2020ncl": _("BT 2020 NCL"),
+				"bt2020cl": _("BT 2020 CL"),
+				"bt709": _("BT 709")},
+				default = "auto")
+		config.av.hdmicolorimetry.addNotifier(setHDMIColorimetry)
+	else:
+		config.av.hdmicolorimetry = ConfigNothing()
+
 	if os.path.exists("/proc/stb/vmpeg/0/pep_scaler_sharpness"):
 		def setScaler_sharpness(config):
 			myval = int(config.value)
