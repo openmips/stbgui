@@ -38,16 +38,11 @@ class HTTPProgressDownloader(client.HTTPDownloader):
 
 class downloadWithProgress:
 	def __init__(self, url, outputfile, contextFactory=None, *args, **kwargs):
-#<<<<<<< HEAD
 		if hasattr(client, '_parse'):
 			scheme, host, port, path = client._parse(url)
 		else:
-			# _URI class renamed to URI in 15.0.0
- 			try:
- 				from twisted.web.client import _URI as URI
- 			except ImportError:
- 				from twisted.web.client import URI
- 			uri = URI.fromBytes(url)
+			from twisted.web.client import URI
+			uri = URI.fromBytes(url)
 			scheme = uri.scheme
 			host = uri.host
 			port = uri.port
