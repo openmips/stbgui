@@ -1055,6 +1055,7 @@ void eDVBFrontend::calculateSignalQuality(int snr, int &signalquality, int &sign
 		|| !strcmp(m_description, "BCM7362 DVB-S2 NIM (internal)")
 		|| !strcmp(m_description, "GIGA DVB-S2 NIM (Internal)")
 		|| !strcmp(m_description, "GIGA DVB-S2 NIM (SP2246T)")
+		|| !strcmp(m_description, "GIGA DVB-S2 NIM (TS2M08)")
 		)
 	{
 		ret = (int)((((double(snr) / (65536.0 / 100.0)) * 0.1710) - 1.0000) * 100);
@@ -1063,6 +1064,7 @@ void eDVBFrontend::calculateSignalQuality(int snr, int &signalquality, int &sign
 		|| strstr(m_description, "GIGA DVB-C/T NIM (SI4765)")
 		|| strstr(m_description, "GIGA DVB-C/T NIM (SI41652)")
 		|| strstr(m_description, "GIGA DVB-C/T2 NIM (SI4768)")
+		|| strstr(m_description, "GIGA DVB-C/T2 NIM (SI41682)")
 		)
 	{
 		int type = -1;
