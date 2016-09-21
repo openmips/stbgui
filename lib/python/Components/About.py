@@ -23,7 +23,7 @@ def getImageVersionString():
 
 def getFlashDateString():
 	try:
-        return time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(os.stat("/boot").st_ctime))
+		return time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(os.stat("/boot").st_ctime))
 	except:
 		return _("unknown")
 
