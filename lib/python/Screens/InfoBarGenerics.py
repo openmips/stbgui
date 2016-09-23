@@ -2733,18 +2733,24 @@ class InfoBarInstantRecord:
 			return
 
 		if isStandardInfoBar(self):
-			common = ((_("Add recording (stop after current event)"), "event"),
-				(_("Add recording (indefinitely)"), "indefinitely"),
+			common = ((_("Add recording (stop after current event)"), "event"),)
+			if not SystemInfo["hasGBIpboxClient"]:
+				common += ((_("Add recording (indefinitely)"), "indefinitely"),
 				(_("Add recording (enter recording duration)"), "manualduration"),
 				(_("Add recording (enter recording endtime)"), "manualendtime"),)
 		else:
 			common = ()
+
 		if self.isInstantRecordRunning():
 			title =_("A recording is currently running.\nWhat do you want to do?")
-			list = common + \
-				((_("Change recording (duration)"), "changeduration"),
-				(_("Change recording (add time)"), "addrecordingtime"),
-				(_("Change recording (endtime)"), "changeendtime"),)
+			if not SystemInfo["hasGBIpboxClient"]:
+				list = common + \
+					((_("Change recording (duration)"), "changeduration"),
+					(_("Change recording (add time)"), "addrecordingtime"),
+					(_("Change recording (endtime)"), "changeendtime"),)
+			else:
+				list = common
+
 			list += ((_("Stop recording"), "stop"),)
 			if config.usage.movielist_trashcan.value:
 				list += ((_("Stop and delete recording"), "stopdelete"),)
