@@ -37,7 +37,7 @@ def initWeatherConfig():
 		("Celsius", _("Celsius")),
 		("Fahrenheit", _("Fahrenheit"))
 	])
-	config.plugins.MetrixWeather.refreshInterval = ConfigNumber(default=60)
+	config.plugins.MetrixWeather.refreshInterval = ConfigNumber(default=720)
 	config.plugins.MetrixWeather.lastUpdated = ConfigText(default="2001-01-01 01:01:01")
 
 	## RENDERER CONFIG:
