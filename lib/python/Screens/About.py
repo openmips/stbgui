@@ -124,6 +124,10 @@ class About(Screen):
 		AboutText += _("DVB drivers: ") + self.realDriverDate() + "\n"
 		#AboutText += _("DVB drivers: ") + about.getDriverInstalledDate() + "\n"
 
+		ImageVersion = _("Last upgrade: ") + about.getImageVersionString()
+		self["ImageVersion"] = StaticText(ImageVersion)
+		AboutText += ImageVersion + "\n"
+
 		EnigmaVersion = _("GUI Build: ") + about.getEnigmaVersionString() + "\n"
 		self["EnigmaVersion"] = StaticText(EnigmaVersion)
 		#AboutText += EnigmaVersion
@@ -133,10 +137,6 @@ class About(Screen):
 		FlashDate = _("Flashed: ") + about.getFlashDateString()
 		self["FlashDate"] = StaticText(FlashDate)
 		AboutText += FlashDate + "\n"
-
-		ImageVersion = _("Last upgrade: ") + about.getImageVersionString()
-		self["ImageVersion"] = StaticText(ImageVersion)
-		AboutText += ImageVersion + "\n"
 
 		EnigmaSkin = _("Skin: ") + config.skin.primary_skin.value[0:-9]
 		self["EnigmaSkin"] = StaticText(EnigmaSkin)
@@ -220,11 +220,8 @@ class About(Screen):
 			y = popen('lsmod').read().strip()
 			if 'dvb' in y:
 				drivername='dvb'
-				x = popen('modinfo '+ drivername +' |grep -i version')
-				x = x.read().strip().split()
-				date = x[1];date = date[:14];b=date
-				YY=b[0:4];MM=b[4:6];DD=b[6:8];HO=b[8:10];MI=b[10:12];SE=b[12:14]
-				realdate=str(DD + '.' + MM + '.' + YY + ' - ' + HO  + ':' + MI + ':' + SE)
+				b = popen('modinfo '+ drivername +' |grep -i version').read().strip().split()[1][:14]
+				realdate=str(b[0:4] + '-' + b[4:6] + '-' + b[6:8] + ' ' + b[8:10]  + ':' + b[10:12] + ':' + b[12:14])
 		except:
 			realdate = about.getDriverInstalledDate()
 		return realdate
@@ -527,18 +524,21 @@ class SystemNetworkInfo(Screen):
 		self.AboutText += iNetwork.getFriendlyAdapterName (self.iface) + ":" + iNetwork.getFriendlyAdapterDescription(self.iface) +"\n"
 
 		def nameserver():
-			nameserver=""
-			i=0
-			for line in open('/etc/resolv.conf','r'):
+			nameserver = ""
+			v4=0 ; v6=0; ns4 =""; ns6 = ""
+			datei = open("/etc/resolv.conf","r")
+			for line in datei.readlines():
 				line = line.strip()
 				if "nameserver" in line:
-					i=i+1
-					nameserver += str(i) +".Nameserver" + ":"  +line.strip().replace("nameserver ","")+"\n"
-					if nameserver.strip() == "0.0.0.0":
-						nameserver =  _("Nameserver is off")
-					else:
-						nameserver =  nameserver.strip()
-			return nameserver
+					if line.count(".") == 3:
+						v4=v4+1
+						ns4 += str(v4) + ".IPv4 Nameserver" + ":"  + line.strip().replace("nameserver ","") + "\n"
+					if line.count(":") == 5:
+						v6=v6+1
+						ns6 += str(v6) + ".IPv6 Nameserver" + ":"  + line.strip().replace("nameserver ","") + "\n"
+			nameserver = ns4 + ns6
+			datei.close()
+			return nameserver.strip()
 
 		def domain():
 			domain=""
@@ -592,7 +592,7 @@ class SystemNetworkInfo(Screen):
 				self.AboutText += _("Netmask:") + eth0['netmask'] + "\n"
 			if eth0.has_key('brdaddr'):
 				if eth0['brdaddr']=="0.0.0.0":
-					self.AboutText += _('Broadcast:') + eth0['brdaddr']  + _("(DHCP is off)") + "\n"
+					self.AboutText += _('Broadcast:') + _("DHCP is off") + "\n"
 				else:
 					self.AboutText += _('Broadcast:' + eth0['brdaddr'] + "\n")
 			self.AboutText += _("Domain:") + domain() + "\n"
@@ -612,7 +612,7 @@ class SystemNetworkInfo(Screen):
 				self.AboutText += _("Netmask:") + eth1['netmask'] + "\n"
 			if eth1.has_key('brdaddr'):
 				if eth1['brdaddr']=="0.0.0.0":
-					self.AboutText += _('Broadcast:') + eth1['brdaddr']  + _("(DHCP is off)") + "\n"
+					self.AboutText += _('Broadcast:') + _("DHCP is off") + "\n"
 				else:
 					self.AboutText += _('Broadcast:' + eth1['brdaddr'] + "\n")
 			self.AboutText += _("Domain:") + domain() + "\n"
@@ -644,7 +644,7 @@ class SystemNetworkInfo(Screen):
 				self.AboutText += _("Netmask:") + wlan0['netmask'] + "\n"
 			if wlan0.has_key('brdaddr'):
 				if wlan0['brdaddr']=="0.0.0.0":
-					self.AboutText += _('Broadcast:') + wlan0['brdaddr'] + _("(DHCP is off)") + "\n"
+					self.AboutText += _('Broadcast:') + _("DHCP is off") + "\n"
 				else:
 					self.AboutText += _('Broadcast:') + wlan0['brdaddr'] + "\n"
 			self.AboutText += _("Domain:") +  domain() + "\n"
