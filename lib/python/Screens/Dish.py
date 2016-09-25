@@ -225,14 +225,7 @@ class Dish(Screen):
 	def getTunerName(self):
 		nr = self.getCurrentTuner()
 		if nr is not None:
-			nims = nimmanager.nimList()
-			if nr < len(nims) and nr >= 0:
-				return "".join(nims[nr].split(':')[:1])
-			print "[Dish] getTunerName nr: %s\n" %nr
-			print "[Dish] getTunerName nims:\n"
-			print nims
-			raise
-#			return " ".join((_("Tuner"),str(nr)))
+			return _("Tuner") + " " + chr(nr+65)
 		return ""
 
 	def OrbToStr(self, orbpos):
