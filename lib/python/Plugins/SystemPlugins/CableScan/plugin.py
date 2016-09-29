@@ -172,7 +172,7 @@ class CableScanScreen(ConfigListScreen, Screen):
 
 class CableScanAutoScreen(CableScanScreen):
 
-	def __init__(self, session, nimlist):
+	def __init__(self, session):
 		print "[AutoCableScan] start"
 		Screen.__init__(self, session)
 		self.skinName="Standby"
@@ -184,7 +184,7 @@ class CableScanAutoScreen(CableScanScreen):
 		self.onClose.append(self.__onClose)
 		self.scan = eCableScan(config.plugins.CableScan.networkid.value, config.plugins.CableScan.frequency.value * 1000, config.plugins.CableScan.symbolrate.value * 1000, int(config.plugins.CableScan.modulation.value), config.plugins.CableScan.keepnumbering.value, config.plugins.CableScan.hdlist.value)
 		self.scan.scanCompleted.get().append(self.scanCompleted)
-		self.scan.start(int(nimlist[0]))
+		self.scan.start(int(nimmanager.getNimListOfType("DVB-C")[0]))
 
 	def __onClose(self):
 		if self.scan:
@@ -206,22 +206,18 @@ class CableScanAutoScreen(CableScanScreen):
 		from Screens.Standby import StandbySummary
 		return StandbySummary
 
-def CableScanMain(session, **kwargs):
-	nims = nimmanager.getNimListOfType("DVB-C")
-
-	nimList = []
-	for x in nims:
-		nimList.append(x)
-
-	if len(nimList) == 0:
-		session.open(MessageBox, _("No cable tuner found!"), MessageBox.TYPE_ERROR)
-	else:
-		if session.nav.RecordTimer.isRecording():
-			session.open(MessageBox, _("A recording is currently running. Please stop the recording before trying to scan."), MessageBox.TYPE_ERROR)
-		else:
-			session.open(CableScanScreen)
 Session = None
 CableScanAutoStartTimer = eTimer()
+
+def CableScanMain(session, **kwargs):
+	if session.nav.RecordTimer.isRecording():
+		session.openWithCallback(CableScanMainCallback, MessageBox, _("A recording is currently running. When you scan you can corrupt the recording. Do you still want to scan?"), type=MessageBox.TYPE_YESNO, default=False)
+	else:
+		CableScanMainCallback(True)
+
+def CableScanMainCallback(answer):
+	if answer:
+		Session.open(CableScanScreen)
 
 def restartScanAutoStartTimer(reply=False):
 	if not reply:
@@ -231,12 +227,10 @@ def restartScanAutoStartTimer(reply=False):
 		CableScanAutoStartTimer.startLongTimer(86400)
 
 def CableScanAuto():
-	nimlist = nimmanager.getNimListOfType("DVB-C")
-	if nimlist:
-		if Session.nav.RecordTimer.isRecording():
-			restartScanAutoStartTimer()
-		else:
-			Session.openWithCallback(restartScanAutoStartTimer, CableScanAutoScreen, nimlist)
+	if Session.nav.RecordTimer.isRecording():
+		restartScanAutoStartTimer()
+	else:
+		Session.openWithCallback(restartScanAutoStartTimer, CableScanAutoScreen)
 
 CableScanAutoStartTimer.callback.append(CableScanAuto)
 
@@ -261,7 +255,7 @@ def CableScanStart(menuid, **kwargs):
 		return []
 
 def Plugins(**kwargs):
-	if (nimmanager.hasNimType("DVB-C")):
+	if nimmanager.hasNimType("DVB-C"):
 		return [PluginDescriptor(name=_("Cable Scan"), description="Scan cable provider channels", where = PluginDescriptor.WHERE_MENU, fnc=CableScanStart),
 			PluginDescriptor(where=[PluginDescriptor.WHERE_SESSIONSTART], fnc=startSession)]
 	else:
