@@ -7,6 +7,7 @@ from Components.NimManager import nimmanager
 from Components.MenuList import MenuList
 from Components.config import config, ConfigSubsection, ConfigSelection, ConfigYesNo, ConfigInteger, getConfigListEntry
 from Components.ConfigList import ConfigListScreen
+from Components.Sources.StaticText import StaticText
 from Components.ProgressBar import ProgressBar
 from Components.Pixmap import Pixmap
 from Components.ServiceList import refreshServiceList
@@ -75,8 +76,12 @@ class CableScanStatus(Screen):
 		self["frontend"] = Pixmap()
 		self["scan_progress"] = ProgressBar()
 		self["scan_state"] = Label(_("scan state"))
-		self.prevservice = self.session.nav.getCurrentlyPlayingServiceReference()
-		self.session.nav.stopService()
+
+		service = self.session.nav.getCurrentService()
+		self.prevservice = service and service.frontendInfo().getAll(True)["tuner_number"] == scanTuner and self.session.nav.getCurrentlyPlayingServiceReference()
+		if self.prevservice:
+			self.session.nav.stopService()
+
 		self["actions"] = ActionMap(["OkCancelActions"],
 			{
 			"ok": self.ok,
@@ -127,6 +132,9 @@ class CableScanScreen(ConfigListScreen, Screen):
 	def __init__(self, session):
 		Screen.__init__(self, session)
 		self.setTitle(_("Cable Scan"))
+		self["key_red"] = StaticText(_("Cancel"))
+		self["key_green"] = StaticText(_("Save"))
+
 		self["actions"] = ActionMap(["SetupActions", "MenuActions"],
 		{
 			"ok": self.keyGo,
