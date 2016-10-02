@@ -129,7 +129,7 @@ class CableScanScreen(ConfigListScreen, Screen):
 	<widget name="introduction" position="10,240" size="560,70" font="Regular;20" halign="center" />
 </screen>"""
 
-	def __init__(self, session):
+	def __init__(self, session, nimlist):
 		Screen.__init__(self, session)
 		self.setTitle(_("Cable Scan"))
 		self["key_red"] = StaticText(_("Cancel"))
@@ -143,7 +143,6 @@ class CableScanScreen(ConfigListScreen, Screen):
 			"menu": self.closeRecursive,
 		}, -2)
 
-		nimlist = nimmanager.getNimListOfType("DVB-C")
 		nim_list = []
 		for x in nimlist:
 			if config.Nims[nimmanager.nim_slots[x].slot].configMode.value != "nothing":
@@ -181,8 +180,7 @@ class CableScanScreen(ConfigListScreen, Screen):
 		self.close()
 
 class CableScanAutoScreen(CableScanScreen):
-
-	def __init__(self, session):
+	def __init__(self, session, nimlist):
 		print "[AutoCableScan] start"
 		Screen.__init__(self, session)
 		self.skinName="Standby"
@@ -194,7 +192,7 @@ class CableScanAutoScreen(CableScanScreen):
 		self.onClose.append(self.__onClose)
 		self.scan = eCableScan(config.plugins.CableScan.networkid.value, config.plugins.CableScan.frequency.value * 1000, config.plugins.CableScan.symbolrate.value * 1000, int(config.plugins.CableScan.modulation.value), config.plugins.CableScan.keepnumbering.value, config.plugins.CableScan.hdlist.value)
 		self.scan.scanCompleted.get().append(self.scanCompleted)
-		self.scan.start(int(nimmanager.getNimListOfType("DVB-C")[0]))
+		self.scan.start(int(nimlist[0]))
 
 	def __onClose(self):
 		if self.scan:
@@ -220,20 +218,26 @@ Session = None
 CableScanAutoStartTimer = eTimer()
 
 def CableScanMain(session, **kwargs):
-	Session.open(CableScanScreen)
+	nimlist = nimmanager.getNimListOfType("DVB-C")
+	if nimlist:
+		Session.open(CableScanScreen, nimlist)
+	else:
+		Session.open(MessageBox, _("No cable tuner found!"), type=MessageBox.TYPE_ERROR)
 
 def restartScanAutoStartTimer(reply=False):
-	if not reply:
+	if reply:
+		CableScanAutoStartTimer.startLongTimer(86400)
+	else:
 		print "[AutoCableScan] Scan was not succesfully retry in one hour"
 		CableScanAutoStartTimer.startLongTimer(3600)
-	else:
-		CableScanAutoStartTimer.startLongTimer(86400)
 
 def CableScanAuto():
-	if Session.nav.RecordTimer.isRecording():
-		restartScanAutoStartTimer()
-	else:
-		Session.openWithCallback(restartScanAutoStartTimer, CableScanAutoScreen)
+	nimlist = nimmanager.getNimListOfType("DVB-C")
+	if nimlist:
+		if Session.nav.RecordTimer.isRecording():
+			restartScanAutoStartTimer()
+		else:
+			Session.openWithCallback(restartScanAutoStartTimer, CableScanAutoScreen, nimlist)
 
 CableScanAutoStartTimer.callback.append(CableScanAuto)
 
