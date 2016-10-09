@@ -1,6 +1,6 @@
 ## Our buildserver is currently running on: ##
 
-> Ubuntu 12.04.5 LTS (GNU/Linux 3.14.32-xxxx-grs-ipv6-64 x86_64)
+> Ubuntu 16.04.1 LTS (GNU/Linux 3.14.32-xxxx-grs-ipv6-64 x86_64)
 
 ## openMips 5.3 (based on openPLi) is build using oe-alliance build-environment "3.4" and several git repositories: ##
 
