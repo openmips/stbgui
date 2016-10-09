@@ -208,8 +208,8 @@ class ServiceInfo(Screen):
 						(_("System"), frontendData["system"], TYPE_TEXT),
 						(_("Modulation"), frontendData["modulation"], TYPE_TEXT),
 						(_("Orbital position"), frontendData["orbital_position"], TYPE_VALUE_DEC),
-						(_("Frequency"), frontendData["frequency"]/1000, TYPE_VALUE_DEC),
-						(_("Symbol rate"), frontendData["symbol_rate"]/1000, TYPE_VALUE_DEC),
+						(_("Frequency"), frontendData["frequency"], TYPE_VALUE_DEC),
+						(_("Symbol rate"), frontendData["symbol_rate"], TYPE_VALUE_DEC),
 						(_("Polarization"), frontendData["polarization"], TYPE_TEXT),
 						(_("Band"), band, TYPE_TEXT),
 						(_("Inversion"), frontendData["inversion"], TYPE_TEXT),
@@ -220,14 +220,14 @@ class ServiceInfo(Screen):
 				return ((_("NIM"), chr(ord('A') + frontendData["tuner_number"]), TYPE_TEXT),
 						(_("Type"), frontendData["tuner_type"], TYPE_TEXT),
 						(_("Modulation"), frontendData["modulation"], TYPE_TEXT),
-						(_("Frequency"), frontendData["frequency"]/1000, TYPE_VALUE_DEC),
-						(_("Symbol rate"), frontendData["symbol_rate"]/1000, TYPE_VALUE_DEC),
+						(_("Frequency"), frontendData["frequency"], TYPE_VALUE_DEC),
+						(_("Symbol rate"), frontendData["symbol_rate"], TYPE_VALUE_DEC),
 						(_("Inversion"), frontendData["inversion"], TYPE_TEXT),
 						(_("FEC"), frontendData["fec_inner"], TYPE_TEXT))
 			elif frontendDataOrg["tuner_type"] == "DVB-T":
 				return ((_("NIM"), chr(ord('A') + frontendData["tuner_number"]), TYPE_TEXT),
 						(_("Type"), frontendData["tuner_type"], TYPE_TEXT),
-						(_("Frequency"), frontendData["frequency"]/1000/1000, TYPE_VALUE_DEC),
+						(_("Frequency"), frontendData["frequency"], TYPE_VALUE_DEC),
 						(_("Channel"), getChannelNumber(frontendData["frequency"], frontendData["tuner_number"]), TYPE_VALUE_DEC),
 						(_("Inversion"), frontendData["inversion"], TYPE_TEXT),
 						(_("Bandwidth"), frontendData["bandwidth"], TYPE_VALUE_DEC),
@@ -254,8 +254,6 @@ class ServiceInfo(Screen):
 			if item[1] is None:
 				continue;
 			value = item[1]
-			if item[0] == _("Frequency"):
-				value = str(value) + ' MHz'
 			sref = value
 
 			if item[0] == _("Service reference"):
