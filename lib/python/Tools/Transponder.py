@@ -12,6 +12,8 @@ def getTunerDescription(nim):
 	return ""
 
 def getMHz(frequency):
+	if str(frequency).endswith('MHz'):
+		return float(frequency.split()[0])
 	return (frequency+50000)/100000/10.
 
 def getChannelNumber(frequency, nim):
@@ -140,6 +142,8 @@ def ConvertToHumanReadable(tp, type = None):
 		ret["system"] = {
 			eDVBFrontendParametersCable.System_DVB_C_ANNEX_A : "DVB-C",
 			eDVBFrontendParametersCable.System_DVB_C_ANNEX_C : "DVB-C ANNEX C"}.get(tp.get("system"))
+		ret["frequency"] = (tp.get("frequency") and ('%s MHz' % str(tp.get("frequency")/1000.))) or '0 MHz'
+		ret["symbol_rate"] = (tp.get("symbol_rate") and tp.get("symbol_rate")/1000) or 0
 	elif type == "DVB-T":
 		ret["tuner_type"] = _("Terrestrial")
 		ret["bandwidth"] = {
@@ -205,7 +209,10 @@ def ConvertToHumanReadable(tp, type = None):
 			eDVBFrontendParametersTerrestrial.System_DVB_T_T2 : "DVB-T/T2",
 			eDVBFrontendParametersTerrestrial.System_DVB_T : "DVB-T",
 			eDVBFrontendParametersTerrestrial.System_DVB_T2 : "DVB-T2"}.get(tp.get("system"))
-		ret["channel"] = "CH%s" % getChannelNumber(tp.get("frequency"), "DVB-T")
+#		print 'system:',tp.get("system")
+		ret["frequency"] = (tp.get("frequency") and ('%s MHz' % str(tp.get("frequency")/1000000.))) or '0 MHz'
+#		print 'frequency:',tp.get("frequency")
+		ret["channel"] = _("CH%s") % getChannelNumber(tp.get("frequency"), "DVB-T")
 	elif type == "ATSC":
 		ret["tuner_type"] = "ATSC"
 		ret["modulation"] = {
