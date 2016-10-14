@@ -109,16 +109,16 @@ class CableScanStatus(Screen):
 config.plugins.CableScan = ConfigSubsection()
 config.plugins.CableScan.keepnumbering = ConfigYesNo(default = True)
 config.plugins.CableScan.hdlist = ConfigYesNo(default = True)
-config.plugins.CableScan.frequency = ConfigFloat(default = [323, 0], limits = [(50, 999),(0, 999)])
-config.plugins.CableScan.symbolrate = ConfigInteger(default = 6875, limits = (1, 9999))
+config.plugins.CableScan.frequency = ConfigFloat(default = [130, 0], limits = [(50, 999),(0, 999)])
+config.plugins.CableScan.symbolrate = ConfigInteger(default = 6900, limits = (1, 9999))
 config.plugins.CableScan.networkid = ConfigInteger(default = 0, limits = (0, 99999))
 config.plugins.CableScan.modulation = ConfigSelection(
 	choices =
-		[(str(eDVBFrontendParametersCable.Modulation_QAM16), "QAM16"),
-		(str(eDVBFrontendParametersCable.Modulation_QAM32), "QAM32"),
-		(str(eDVBFrontendParametersCable.Modulation_QAM64), "QAM64"),
-		(str(eDVBFrontendParametersCable.Modulation_QAM128), "QAM128"),
-		(str(eDVBFrontendParametersCable.Modulation_QAM256), "QAM256")],
+		[(str(eDVBFrontendParametersCable.Modulation_QAM16), "16-QAM"),
+		(str(eDVBFrontendParametersCable.Modulation_QAM32), "32-QAM"),
+		(str(eDVBFrontendParametersCable.Modulation_QAM64), "64-QAM"),
+		(str(eDVBFrontendParametersCable.Modulation_QAM128), "128-QAM"),
+		(str(eDVBFrontendParametersCable.Modulation_QAM256), "256-QAM")],
 	default = str(eDVBFrontendParametersCable.Modulation_QAM256))
 config.plugins.CableScan.auto = ConfigYesNo(default = False)
 
@@ -153,7 +153,7 @@ class CableScanScreen(ConfigListScreen, Screen):
 		self.list.append(getConfigListEntry(_('Frequency'), config.plugins.CableScan.frequency))
 		self.list.append(getConfigListEntry(_('Symbol rate'), config.plugins.CableScan.symbolrate))
 		self.list.append(getConfigListEntry(_('Modulation'), config.plugins.CableScan.modulation))
-		self.list.append(getConfigListEntry(_('Network ID'), config.plugins.CableScan.networkid))
+		self.list.append(getConfigListEntry(_('Network ID') + _(' (0 - all networks)'), config.plugins.CableScan.networkid))
 		self.list.append(getConfigListEntry(_("Use official channel numbering"), config.plugins.CableScan.keepnumbering))
 		self.list.append(getConfigListEntry(_("HD list"), config.plugins.CableScan.hdlist))
 		self.list.append(getConfigListEntry(_("automatically scan every day"), config.plugins.CableScan.auto))
@@ -190,12 +190,7 @@ class CableScanAutoScreen(CableScanScreen):
 			"discrete_on": self.Power
 		}, -1)
 		self.onClose.append(self.__onClose)
-<<<<<<< HEAD
-		self.scan = eCableScan(config.plugins.CableScan.networkid.value, config.plugins.CableScan.frequency.value * 1000, config.plugins.CableScan.symbolrate.value * 1000, int(config.plugins.CableScan.modulation.value), config.plugins.CableScan.keepnumbering.value, config.plugins.CableScan.hdlist.value)
-=======
-
 		self.scan = eCableScan(config.plugins.CableScan.networkid.value, config.plugins.CableScan.frequency.floatint, config.plugins.CableScan.symbolrate.value * 1000, int(config.plugins.CableScan.modulation.value), config.plugins.CableScan.keepnumbering.value, config.plugins.CableScan.hdlist.value)
->>>>>>> bf00068... [Cablescan] Also add three additional digits for the frequency
 		self.scan.scanCompleted.get().append(self.scanCompleted)
 		self.scan.start(int(nimlist[0]))
 
