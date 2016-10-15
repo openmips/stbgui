@@ -533,7 +533,7 @@ class SystemNetworkInfo(Screen):
 					if line.count(".") == 3:
 						v4=v4+1
 						ns4 += str(v4) + ".IPv4 Nameserver" + ":"  + line.strip().replace("nameserver ","") + "\n"
-					if line.count(":") == 5:
+					if line.count(":") > 1  and line.count(":") < 8:
 						v6=v6+1
 						ns6 += str(v6) + ".IPv6 Nameserver" + ":"  + line.strip().replace("nameserver ","") + "\n"
 			nameserver = ns4 + ns6
