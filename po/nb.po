@@ -10059,7 +10059,7 @@ msgstr "Unikabel LNB"
 #
 #, fuzzy
 msgid "Unicable Matrix"
-msgstr "Unikabel Martix"
+msgstr "Unikabel Matrix"
 
 #
 msgid "Uninstall"

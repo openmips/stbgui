@@ -9276,7 +9276,7 @@ msgstr "Unicable LNB"
 
 #, fuzzy
 msgid "Unicable Matrix"
-msgstr "Unicable Martix"
+msgstr "Unicable Matrix"
 
 msgid "Uninstall"
 msgstr "Šalinti"
