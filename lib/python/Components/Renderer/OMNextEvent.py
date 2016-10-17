@@ -43,7 +43,7 @@ class OMNextEvent(Renderer, VariableText):
 				self.text = ""
 				return
 			ENext = ""
-			eventNext = self.epgcache.lookupEvent(['IBDCTSERNX', (ref.toString(), 1, -1)])
+			eventNext = self.epgcache.lookupEvent(['IBDCTSERNXM', (ref.toString(), 1, -1)])
 			if eventNext:
 				if eventNext[0][4]:
 					t = localtime(eventNext[0][1])

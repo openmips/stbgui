@@ -9015,14 +9015,14 @@ msgstr "家長頻道編輯"
 
 #, fuzzy
 msgid "Unicable / JESS"
-msgstr "Unicable Martix"
+msgstr "Unicable Matrix"
 
 msgid "Unicable LNB"
 msgstr ""
 
 #, fuzzy
 msgid "Unicable Matrix"
-msgstr "Unicable Martix"
+msgstr "Unicable Matrix"
 
 msgid "Uninstall"
 msgstr "反安裝"

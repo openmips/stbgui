@@ -1050,6 +1050,7 @@ void eDVBFrontend::calculateSignalQuality(int snr, int &signalquality, int &sign
 		)
 	{
 		ret = (int)((((double(snr) / (65536.0 / 100.0)) * 0.1244) + 2.5079) * 100);
+		sat_max = 1490;
 	}
 	else if (!strcmp(m_description, "BCM7346 (internal)"))
 	{
