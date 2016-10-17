@@ -9087,7 +9087,7 @@ msgstr "Vienkabeļa LNB"
 
 #, fuzzy
 msgid "Unicable Matrix"
-msgstr "Vienkabeļa Martix"
+msgstr "Vienkabeļa Matrix"
 
 msgid "Uninstall"
 msgstr "Atinstalēt"
