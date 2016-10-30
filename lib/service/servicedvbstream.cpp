@@ -181,6 +181,11 @@ int eDVBServiceStream::doRecord()
 			// cached pids
 			for (int x = 0; x < eDVBService::cacheMax; ++x)
 			{
+				if (x == 5)
+				{
+					x += 3; // ignore cVTYPE, cACHANNEL, cAC3DELAY, cPCMDELAY
+					continue;
+				}
 				int entry = service->getCacheEntry((eDVBService::cacheID)x);
 				if (entry != -1)
 				{
@@ -300,31 +305,30 @@ int eDVBServiceStream::doRecord()
 bool eDVBServiceStream::recordCachedPids()
 {
 	eServiceReferenceDVB ref = m_ref.getParentServiceReference();
-	ePtr<eDVBResourceManager> res_mgr;
+	ePtr<eDVBService> service;
 	std::set<int> pids_to_record;
+
 	if (!ref.valid())
 		ref = m_ref;
-	if (!eDVBResourceManager::getInstance(res_mgr))
+
+	if (!eDVBDB::getInstance()->getService(ref, service) && !service->usePMT())
 	{
-		ePtr<iDVBChannelList> db;
-		if (!res_mgr->getChannelList(db))
+		// cached pids
+		for (int x = 0; x < eDVBService::cacheMax; ++x)
 		{
-			ePtr<eDVBService> service;
-			if (!db->getService(ref, service) && !service->usePMT())
+			if (x == 5)
 			{
-				// cached pids
-				for (int x = 0; x < eDVBService::cacheMax; ++x)
+				x += 3; // ignore cVTYPE, cACHANNEL, cAC3DELAY, cPCMDELAY
+				continue;
+			}
+			int entry = service->getCacheEntry((eDVBService::cacheID)x);
+			if (entry != -1)
+			{
+				if (eDVBService::cSUBTITLE == (eDVBService::cacheID)x)
 				{
-					int entry = service->getCacheEntry((eDVBService::cacheID)x);
-					if (entry != -1)
-					{
-						if (eDVBService::cSUBTITLE == (eDVBService::cacheID)x)
-						{
-							entry = (entry&0xFFFF0000)>>16;
-						}
-						pids_to_record.insert(entry);
-					}
+					entry = (entry&0xFFFF0000)>>16;
 				}
+				pids_to_record.insert(entry);
 			}
 		}
 	}
