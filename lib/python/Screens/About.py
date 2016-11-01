@@ -148,6 +148,9 @@ class About(Screen):
 		self["GStreamerVersion"] = StaticText(GStreamerVersion)
 		AboutText += GStreamerVersion + "\n"
 
+		twisted = popen('opkg list-installed  |grep -i python-twisted-core').read().strip().split(' - ')[1]
+		AboutText += "Python-Twisted: " + str(twisted) + "\n"
+
 		AboutText += "\n"
 		self["TunerHeader"] = StaticText(_("Detected NIMs:"))
 		#AboutText += _("Detected NIMs:") + "\n"
