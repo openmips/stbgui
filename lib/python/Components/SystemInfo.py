@@ -74,4 +74,4 @@ SystemInfo["HasColorspaceSimple"] = SystemInfo["HasColorspace"] and getBoxType()
 SystemInfo["HasMultichannelPCM"] = fileCheck("/proc/stb/audio/multichannel_pcm")
 SystemInfo["HasMMC"] = getBoxType() in ('vusolo4k', 'hd51', 'hd52')
 SystemInfo["CommonInterfaceCIDelay"] = fileCheck("/proc/stb/tsmux/rmx_delay")
-SystemInfo["CanDoTranscodeAndPIP"] = HardwareInfo().get_device_model() in "vusolo4k"
+SystemInfo["CanDoTranscodeAndPIP"] = getBoxType() in ('vusolo4k')
