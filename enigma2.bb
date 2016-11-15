@@ -18,7 +18,7 @@ PACKAGES =+ "${PN}-src"
 PACKAGES += "${PN}-meta"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
-inherit autotools pkgconfig pythonnative
+inherit autotools-brokensep pkgconfig pythonnative
 
 ACLOCALDIR = "${B}/aclocal-copy"
 e2_copy_aclocal () {
@@ -37,7 +37,7 @@ EXTRACONFFUNCS += "e2_copy_aclocal"
 bindir = "/usr/bin"
 sbindir = "/usr/sbin"
 
-EXTRA_OECONF = "\
+EXTRA_OECONF = " \
     BUILD_SYS=${BUILD_SYS} \
     HOST_SYS=${HOST_SYS} \
     STAGING_INCDIR=${STAGING_INCDIR} \
