@@ -1,5 +1,5 @@
 from Components.Harddisk import harddiskmanager
-from config import ConfigSubsection, ConfigYesNo, config, ConfigSelection, ConfigText, ConfigNumber, ConfigSet, ConfigLocations, ConfigSelectionNumber, ConfigClock, ConfigSlider, ConfigDictionarySet, ConfigSubDict
+from config import ConfigSubsection, ConfigYesNo, config, ConfigSelection, ConfigText, ConfigNumber, ConfigSet, ConfigLocations, ConfigSelectionNumber, ConfigClock, ConfigSlider, ConfigDictionarySet, ConfigEnableDisable, ConfigSubDict, ConfigNothing
 from Tools.Directories import resolveFilename, SCOPE_HDD, defaultRecordingLocation
 from enigma import setTunerTypePriorityOrder, setPreferredTuner, setSpinnerOnOff, setEnableTtCachingOnOff, eEnv, eDVBDB, Misc_Options, eBackgroundFileEraser, eServiceEvent
 from Components.NimManager import nimmanager
@@ -154,7 +154,18 @@ def InitUsageConfig():
 		("intermediate", _("Intermediate")),
 		("expert", _("Expert")) ])
 
-	config.usage.startup_to_standby = ConfigYesNo(default = False)
+	config.usage.startup_to_standby = ConfigSelection(default = "no", choices = [
+		("no", _("No")),
+		("yes", _("Yes")),
+		("except", _("No, except Wakeup timer")) ])
+
+	config.usage.wakeup_menu = ConfigNothing()
+	config.usage.wakeup_enabled = ConfigYesNo(default = False)
+	config.usage.wakeup_day = ConfigSubDict()
+	config.usage.wakeup_time = ConfigSubDict()
+	for i in range(7):
+		config.usage.wakeup_day[i] = ConfigEnableDisable(default = False)
+		config.usage.wakeup_time[i] = ConfigClock(default = ((6 * 60 + 0) * 60))
 
 	choicelist = [("0", _("Do nothing"))]
 	for i in range(3600, 21601, 3600):
