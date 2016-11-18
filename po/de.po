@@ -7300,8 +7300,8 @@ msgstr "Überspringe leere Sender"
 msgid "Skip internet connection check (disables automatic package installation)"
 msgstr "Überspringe Internet-Verbindungstest (automatische Paketinstallation deaktivieren)"
 
-msgid "Sleep timer"
-msgstr "Ausschalt-Timer"
+msgid "Sleep/wakeup timer"
+msgstr "Aus-/Einschalt-Timer"
 
 msgid "SleepTimer Configuration"
 msgstr "Sleeptimer Einstellungen"

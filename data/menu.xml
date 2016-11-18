@@ -26,7 +26,7 @@
 		<menu weight="5" level="0" text="Timer" entryID="timer_menu">
 			<id val="timermenu" />
 			<item weight="100" level="0" text="Recording" entryID="timer_edit"><screen module="TimerEdit" screen="TimerEditList" /></item>
-			<item weight="150" level="0" text="Sleep timer" entryID="sleep"><screen module="SleepTimerEdit" screen="SleepTimerEdit" /></item>
+			<item weight="150" level="0" text="Sleep/wakeup timer" entryID="sleep"><screen module="SleepTimerEdit" screen="SleepTimerEdit" /></item>
 		</menu>
 
 		<item weight="10" level="1" text="Plugins" entryID="plugin_selection"><screen module="PluginBrowser" screen="PluginBrowser" /></item>
