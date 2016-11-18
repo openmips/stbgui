@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuxbox-enigma 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-20 17:13+0200\n"
+"POT-Creation-Date: 2016-11-18 19:53+0100\n"
 "PO-Revision-Date: 2016-06-17 12:13+0800\n"
 "Last-Translator: nx111 <gdzdz@163.com>\n"
 "Language-Team: NEWBOLT\n"
@@ -172,6 +172,10 @@ msgstr "自定义组 (电视)"
 
 msgid " "
 msgstr ""
+
+#, fuzzy
+msgid " (0 - all networks)"
+msgstr "列出可用网络"
 
 #, fuzzy, python-format
 msgid " (Channel %s)"
@@ -384,9 +388,6 @@ msgstr ""
 
 #, python-format
 msgid "%s:%s"
-msgstr ""
-
-msgid "(DHCP is off)"
 msgstr ""
 
 msgid "(ZAP)"
@@ -621,6 +622,10 @@ msgstr ""
 "录制已经开始:\n"
 "%s"
 
+#, fuzzy
+msgid "A recording is currently running on the selected tuner. Please select a different tuner or consider to stop the recording to try again."
+msgstr "录制正在进行中. 扫描前请停止录制."
+
 msgid ""
 "A recording is currently running.\n"
 "What do you want to do?"
@@ -691,6 +696,17 @@ msgstr ""
 
 msgid "ASPECT key"
 msgstr ""
+
+#, fuzzy
+msgid "ASS file"
+msgstr "%d file"
+
+msgid "ATSC"
+msgstr ""
+
+#, fuzzy
+msgid "ATSC provider"
+msgstr "供应商"
 
 msgid "Abort"
 msgstr "放弃"
@@ -1187,6 +1203,15 @@ msgstr "误码:"
 msgid "BLUDISC RECORDABLE"
 msgstr ""
 
+msgid "BT 2020 CL"
+msgstr ""
+
+msgid "BT 2020 NCL"
+msgstr ""
+
+msgid "BT 709"
+msgstr ""
+
 msgid "Back"
 msgstr "返回"
 
@@ -1546,6 +1571,16 @@ msgstr "频道:"
 msgid "Channellist menu"
 msgstr "频道列表菜单"
 
+msgid "Channelnumber and picon"
+msgstr ""
+
+#, fuzzy
+msgid "Channelnumber and servicename"
+msgstr "频道不在列表中"
+
+msgid "Channelnumber, picon and servicename"
+msgstr ""
+
 msgid "Chap."
 msgstr "章节."
 
@@ -1670,16 +1705,13 @@ msgstr "结束时关闭画中画"
 msgid "Close title selection"
 msgstr "关闭标题选择"
 
+msgid "Code R. LP-HP & Guard Int."
+msgstr ""
+
 msgid "Code rate HP"
 msgstr "HP编码率"
 
 msgid "Code rate LP"
-msgstr "LP编码率"
-
-msgid "Coderate HP"
-msgstr "HP编码率"
-
-msgid "Coderate LP"
 msgstr "LP编码率"
 
 msgid "Collection name"
@@ -2067,6 +2099,9 @@ msgstr "连接到"
 msgid "Connected to"
 msgstr "连接到"
 
+msgid "Connected transcoding, limit - no PiP!"
+msgstr ""
+
 #, fuzzy
 msgid "Consider CI assignment"
 msgstr "CI选择"
@@ -2074,7 +2109,8 @@ msgstr "CI选择"
 msgid "Console"
 msgstr ""
 
-msgid "Constellation"
+#, fuzzy
+msgid "Constellation & FFT mode"
 msgstr "星位"
 
 #, fuzzy
@@ -2253,6 +2289,9 @@ msgstr ""
 msgid "DHCP"
 msgstr "自动分配地址(DHCP)"
 
+msgid "DHCP is off"
+msgstr ""
+
 msgid "DMM advanced"
 msgstr ""
 
@@ -2265,6 +2304,9 @@ msgstr ""
 msgid "DUAL LAYER DVD"
 msgstr "双层DVD"
 
+msgid "DVB CI Delay"
+msgstr ""
+
 msgid "DVB drivers: "
 msgstr ""
 
@@ -2272,6 +2314,9 @@ msgid "DVB subtitle black transparency"
 msgstr "DVB字幕黑色透明"
 
 msgid "DVB-C"
+msgstr ""
+
+msgid "DVB-C ANNEX B"
 msgstr ""
 
 msgid "DVB-C ANNEX C"
@@ -2993,6 +3038,10 @@ msgstr ""
 msgid "Enable volume control with arrow buttons"
 msgstr ""
 
+#, fuzzy
+msgid "Enable wakeup timer"
+msgstr "启用定时器"
+
 msgid "Enable zapping with CH+/-, B+/-, P+/-"
 msgstr ""
 
@@ -3355,6 +3404,9 @@ msgstr "喜爱频道"
 msgid "File appears to be busy.\n"
 msgstr ""
 
+msgid "Filename"
+msgstr "文件名"
+
 msgid "Filesystem check"
 msgstr ""
 
@@ -3474,6 +3526,14 @@ msgstr "法国"
 msgid "Frequency"
 msgstr "频率"
 
+#, fuzzy
+msgid "Frequency & Channel"
+msgstr "频带"
+
+#, fuzzy
+msgid "Frequency & Polarization"
+msgstr "极化"
+
 msgid "Frequency bands"
 msgstr "频带"
 
@@ -3498,8 +3558,8 @@ msgstr ""
 msgid "Frontpanel"
 msgstr ""
 
-#, python-format
-msgid "Frontprocessor version: %d"
+#, fuzzy, python-format
+msgid "Frontprocessor version: %s"
 msgstr "前端版本: %d"
 
 msgid "Full transparency"
@@ -3677,10 +3737,10 @@ msgstr ""
 msgid "HD list"
 msgstr "高清列表"
 
-msgid "HD1100/HD1200/et7x00/et8500"
+msgid "HD2400"
 msgstr ""
 
-msgid "HD2400"
+msgid "HD51/HD1100/HD1200/et7x00/et8500"
 msgstr ""
 
 msgid ""
@@ -3689,6 +3749,9 @@ msgid ""
 msgstr ""
 
 msgid "HDMI"
+msgstr ""
+
+msgid "HDMI Colorimetry"
 msgstr ""
 
 msgid "HDMI Colorspace"
@@ -3770,9 +3833,6 @@ msgstr "隐藏调谐错误"
 
 msgid "Hierarchy info"
 msgstr "分级模式"
-
-msgid "Hierarchy information"
-msgstr ""
 
 msgid "High bitrate support"
 msgstr "高比特率支持"
@@ -4124,6 +4184,13 @@ msgstr "手动转发器扫描"
 msgid "Inversion"
 msgstr "反向"
 
+#, fuzzy
+msgid "Inversion & Bandwidth"
+msgstr "带宽"
+
+msgid "Inversion, Pilot & Roll-off"
+msgstr ""
+
 msgid "Invert"
 msgstr "反向"
 
@@ -4257,6 +4324,10 @@ msgstr ""
 msgid "Latest Commits"
 msgstr ""
 
+#, python-format
+msgid "Latest available openMips %s build is from: %s"
+msgstr ""
+
 msgid "Latitude"
 msgstr "纬度"
 
@@ -4380,10 +4451,6 @@ msgstr "位置"
 
 msgid "Location for instant recordings"
 msgstr "实时录像的位置"
-
-#, fuzzy
-msgid "Location:"
-msgstr "位置"
 
 msgid "Lock ratio"
 msgstr ""
@@ -4764,9 +4831,6 @@ msgstr "多媒体"
 msgid "Multiple service support"
 msgstr "多系统支持"
 
-msgid "Multiplex"
-msgstr "传输"
-
 msgid "Multisat"
 msgstr "多星"
 
@@ -4800,7 +4864,7 @@ msgstr "NFS服务"
 msgid "NFS setup"
 msgstr "设置"
 
-msgid "NIM"
+msgid "NIM & Type"
 msgstr ""
 
 #, fuzzy
@@ -4829,10 +4893,6 @@ msgstr "DNS服务器"
 #, python-format
 msgid "Nameserver %d"
 msgstr "DNS %d"
-
-#, fuzzy
-msgid "Nameserver is off"
-msgstr "DNS服务器"
 
 msgid "Nameserver settings"
 msgstr "DNS设置"
@@ -5104,6 +5164,9 @@ msgstr "不，重新开始播放这个视频"
 msgid "No, do nothing."
 msgstr "不，什么也不做."
 
+msgid "No, except Wakeup timer"
+msgstr ""
+
 #, fuzzy
 msgid "No, just start my GigaBlue"
 msgstr "不，仅启动dreambox"
@@ -5168,6 +5231,9 @@ msgid "Not tested:"
 msgstr "网络测试"
 
 msgid "Not-Associated"
+msgstr ""
+
+msgid "Note: when enabled, and you do want standby mode after wake up, set option 'Startup to Standby' as 'No, except Wakeup timer'."
 msgstr ""
 
 #, fuzzy
@@ -5377,8 +5443,9 @@ msgstr ""
 msgid "PDC"
 msgstr ""
 
-msgid "PIDs"
-msgstr "PIDs"
+#, fuzzy
+msgid "PGS file"
+msgstr "%d file"
 
 msgid "PIN code needed"
 msgstr ""
@@ -5497,8 +5564,9 @@ msgstr ""
 msgid "Picon"
 msgstr ""
 
-msgid "Picon and service name"
-msgstr ""
+#, fuzzy
+msgid "Picon and servicename"
+msgstr "星位"
 
 #, fuzzy
 msgid "Picture in Picture Setup"
@@ -5911,6 +5979,14 @@ msgid "Prefer subtitles stored by service"
 msgstr ""
 
 msgid "Preferred tuner"
+msgstr "首选调谐器"
+
+#, fuzzy
+msgid "Preferred tuner ATSC"
+msgstr "首选调谐器"
+
+#, fuzzy
+msgid "Preferred tuner ATSC for recordings"
 msgstr "首选调谐器"
 
 #, fuzzy
@@ -6615,8 +6691,8 @@ msgstr "俄语"
 msgid "S-Video"
 msgstr "S-Video"
 
-msgid "SID"
-msgstr "SID"
+msgid "SCPC optimized search range"
+msgstr ""
 
 msgid "SINGLE LAYER DVD"
 msgstr "单层DVD"
@@ -6629,6 +6705,14 @@ msgstr "信噪:"
 
 msgid "SPDIF"
 msgstr ""
+
+#, fuzzy
+msgid "SRT file"
+msgstr "%d file"
+
+#, fuzzy
+msgid "SSA file"
+msgstr "%d file"
 
 msgid "SSID:"
 msgstr ""
@@ -7089,8 +7173,12 @@ msgid "Service"
 msgstr "频道"
 
 #, fuzzy
-msgid "Service Information"
-msgstr "分级信息"
+msgid "Service & PIDs"
+msgstr "频道"
+
+#, fuzzy
+msgid "Service ID"
+msgstr "频道"
 
 msgid "Service has been added to the favourites."
 msgstr "频道已添加到喜爱频道"
@@ -7099,6 +7187,15 @@ msgid "Service has been added to the selected bouquet."
 msgstr "频道已添加到选定的自定义组."
 
 msgid "Service info"
+msgstr ""
+
+msgid "Service info - service & PIDs"
+msgstr ""
+
+msgid "Service info - tuner live values"
+msgstr ""
+
+msgid "Service info - tuner setting values"
 msgstr ""
 
 msgid ""
@@ -7133,6 +7230,10 @@ msgid ""
 msgstr ""
 "频道无法使用!\n"
 "请检查调谐器配置!"
+
+#, fuzzy
+msgid "Servicename"
+msgstr "设备名:"
 
 msgid "Services"
 msgstr "频道"
@@ -7606,6 +7707,10 @@ msgid "Sleep timer"
 msgstr ""
 
 #, fuzzy
+msgid "Sleep/wakeup timer"
+msgstr "休眠时间"
+
+#, fuzzy
 msgid "SleepTimer Configuration"
 msgstr "调谐器配置"
 
@@ -7904,6 +8009,13 @@ msgstr ""
 msgid "Starting on"
 msgstr "开始"
 
+msgid "Startup the set top box in standby"
+msgstr ""
+
+#, fuzzy
+msgid "Startup to Standby"
+msgstr "待机"
+
 #, fuzzy
 msgid "Status:"
 msgstr "状态：运行"
@@ -8192,6 +8304,10 @@ msgid "Symbol rate"
 msgstr "符号率"
 
 #, fuzzy
+msgid "Symbol rate & FEC"
+msgstr "符号率"
+
+#, fuzzy
 msgid "Symbol rate:"
 msgstr "符号率"
 
@@ -8210,6 +8326,10 @@ msgstr ""
 
 msgid "System"
 msgstr "系统"
+
+#, fuzzy
+msgid "System & Modulation"
+msgstr "调制"
 
 #. TRANSLATORS: Add here whatever should be shown in the "translator" about screen, up to 6 lines (use \n for newline)
 msgid "TRANSLATOR_INFO"
@@ -8538,6 +8658,9 @@ msgstr ""
 msgid "This option allows to set the level of dynamic contrast of the picture."
 msgstr ""
 
+msgid "This option allows you can config the Colorimetry for HDR"
+msgstr ""
+
 msgid "This option allows you enable smoothing filter to control the dithering process."
 msgstr ""
 
@@ -8786,6 +8909,9 @@ msgstr ""
 msgid "Toggle a cut mark at the current position"
 msgstr ""
 
+msgid "Toggle dashed flickering line for this service"
+msgstr ""
+
 msgid "Toggle infoBar"
 msgstr ""
 
@@ -8845,13 +8971,6 @@ msgstr "传输模式"
 msgid "Transponder"
 msgstr "转发器"
 
-#, fuzzy
-msgid "Transponder Information"
-msgstr "分级信息"
-
-msgid "Transponder type"
-msgstr ""
-
 msgid "Trash can"
 msgstr ""
 
@@ -8902,14 +9021,19 @@ msgid "Tuner is not supported"
 msgstr "调谐器不支持"
 
 #, fuzzy
+msgid "Tuner live values"
+msgstr "调谐器状态"
+
+#, fuzzy
 msgid "Tuner not available."
 msgstr "更新资源无效"
 
+#, fuzzy
+msgid "Tuner setting values"
+msgstr "调谐器状态"
+
 msgid "Tuner slot"
 msgstr ""
-
-msgid "Tuner status"
-msgstr "调谐器状态"
 
 #, python-format
 msgid "Tuner status %s"
@@ -8947,6 +9071,9 @@ msgstr "类型"
 
 msgid "Type of scan"
 msgstr "扫描类型"
+
+msgid "URL"
+msgstr ""
 
 msgid "URL of fallback remote receiver"
 msgstr ""
@@ -9223,6 +9350,10 @@ msgstr "录像机"
 msgid "VMGM (intro trailer)"
 msgstr ""
 
+#, fuzzy
+msgid "VOB file"
+msgstr "%d file"
+
 msgid "VU+"
 msgstr ""
 
@@ -9294,14 +9425,9 @@ msgstr "视频设置"
 msgid "VideoMode"
 msgstr "视频编码"
 
-msgid "Videocodec"
-msgstr "视频编码"
-
-msgid "Videoformat"
+#, fuzzy
+msgid "Videocodec, size & format"
 msgstr "画面格式"
-
-msgid "Videosize"
-msgstr "画面大小"
 
 msgid "View Rass interactive..."
 msgstr "View Rass interactive..."
@@ -9432,6 +9558,14 @@ msgid "Wakeup signal from TV"
 msgstr ""
 
 #, fuzzy
+msgid "Wakeup time"
+msgstr "唤醒"
+
+#, fuzzy
+msgid "Wakeup timer"
+msgstr "唤醒"
+
+#, fuzzy
 msgid "Wakeup type"
 msgstr "唤醒"
 
@@ -9451,6 +9585,9 @@ msgid "Watch movies..."
 msgstr ""
 
 msgid "Watch recordings..."
+msgstr ""
+
+msgid "Weather GigaBlue Pax"
 msgstr ""
 
 #, fuzzy
@@ -9526,12 +9663,6 @@ msgid "What do you want to scan?"
 msgstr "是否开始扫描?"
 
 msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are upgraded"
-msgstr ""
-
-msgid "When enabled the LNB power will not be switched off in standby"
-msgstr ""
-
-msgid "When enabled the LNB toneburst will be forced"
 msgstr ""
 
 msgid "When enabled the PiP can be closed by the exit button."
@@ -9854,6 +9985,14 @@ msgstr "是，开始自动扫描"
 
 msgid "Yes, do another manual scan now"
 msgstr "是，手动扫描另一个参数"
+
+#, fuzzy
+msgid "Yes, only from deep standby"
+msgstr "深度休眠"
+
+#, fuzzy
+msgid "Yes, only from standby"
+msgstr "一直开着"
 
 msgid "Yes, perform a shutdown now."
 msgstr "是，立即关机。"
@@ -10493,6 +10632,9 @@ msgstr "编辑选项"
 msgid "education/science/factual topics (general)"
 msgstr ""
 
+msgid "embedded"
+msgstr ""
+
 msgid "empty"
 msgstr "空的"
 
@@ -10879,10 +11021,6 @@ msgstr "无"
 
 msgid "normal"
 msgstr ""
-
-#, fuzzy
-msgid "not avaible"
-msgstr "可用"
 
 msgid "not configured"
 msgstr "未设置"
@@ -12054,6 +12192,12 @@ msgstr "转自"
 #~ msgid "Code rate low"
 #~ msgstr "低编码率"
 
+#~ msgid "Coderate HP"
+#~ msgstr "HP编码率"
+
+#~ msgid "Coderate LP"
+#~ msgstr "LP编码率"
+
 #~ msgid "Color Format"
 #~ msgstr "色彩模式"
 
@@ -12395,9 +12539,6 @@ msgstr "转自"
 #~ msgid "Enable parental control"
 #~ msgstr "启用家长控制"
 
-#~ msgid "Enable timer"
-#~ msgstr "启用定时器"
-
 #~ msgid "Enables access by CIFS on Dreambox"
 #~ msgstr "允许访问samba (CIFS)"
 
@@ -12511,9 +12652,6 @@ msgstr "转自"
 
 #~ msgid "File(s)"
 #~ msgstr "文件(S)"
-
-#~ msgid "Filename"
-#~ msgstr "文件名"
 
 #~ msgid "Filesize: "
 #~ msgstr "文件大小: "
@@ -12938,6 +13076,10 @@ msgstr "转自"
 #~ msgid "Location for Logfile:"
 #~ msgstr "冲突日志的位置"
 
+#, fuzzy
+#~ msgid "Location:"
+#~ msgstr "位置"
+
 #~ msgid "Logfile"
 #~ msgstr "日志文件:"
 
@@ -13049,6 +13191,9 @@ msgstr "转自"
 #~ msgid "Movies"
 #~ msgstr "电影"
 
+#~ msgid "Multiplex"
+#~ msgstr "传输"
+
 #~ msgid "NFI Image Flashing"
 #~ msgstr "正在刷NFI映像"
 
@@ -13062,6 +13207,10 @@ msgstr "转自"
 
 #~ msgid "Name_or_IP"
 #~ msgstr "名称或IP"
+
+#, fuzzy
+#~ msgid "Nameserver is off"
+#~ msgstr "DNS服务器"
 
 #~ msgid "Namespace:"
 #~ msgstr "空间名称:"
@@ -13236,6 +13385,9 @@ msgstr "转自"
 
 #~ msgid "Output"
 #~ msgstr "输出"
+
+#~ msgid "PIDs"
+#~ msgstr "PIDs"
 
 #~ msgid "PM"
 #~ msgstr "下午"
@@ -13654,6 +13806,9 @@ msgstr "转自"
 #~ msgid "Running Time"
 #~ msgstr "运行时间"
 
+#~ msgid "SID"
+#~ msgstr "SID"
+
 #~ msgid "Same size as the Ram"
 #~ msgstr "一倍内存大小"
 
@@ -13791,6 +13946,10 @@ msgstr "转自"
 
 #~ msgid "September"
 #~ msgstr "9月"
+
+#, fuzzy
+#~ msgid "Service Information"
+#~ msgstr "分级信息"
 
 #~ msgid "Service Reference:"
 #~ msgstr "频道参考"
@@ -14396,6 +14555,10 @@ msgstr "转自"
 #~ msgid "Transmission Mode"
 #~ msgstr "传输模式"
 
+#, fuzzy
+#~ msgid "Transponder Information"
+#~ msgstr "分级信息"
+
 #~ msgid "Transponder Type"
 #~ msgstr "转发器类型"
 
@@ -14576,8 +14739,14 @@ msgstr "转自"
 #~ msgid "VideoPid or AudioPid not found"
 #~ msgstr "视频Pid 或 音频Pid 没找到"
 
+#~ msgid "Videocodec"
+#~ msgstr "视频编码"
+
 #~ msgid "Videoenhancement Setup"
 #~ msgstr "视频增强器设置"
+
+#~ msgid "Videosize"
+#~ msgstr "画面大小"
 
 #~ msgid "Videosize:"
 #~ msgstr "画面大小:"
@@ -15252,6 +15421,10 @@ msgstr "转自"
 #~ msgstr ""
 #~ "没有picon png文件在\n"
 #~ "\n"
+
+#, fuzzy
+#~ msgid "not avaible"
+#~ msgstr "可用"
 
 #~ msgid "not by PiP !"
 #~ msgstr "没有录像 !"

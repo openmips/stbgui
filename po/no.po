@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-20 17:13+0200\n"
+"POT-Creation-Date: 2016-11-18 19:53+0100\n"
 "PO-Revision-Date: 2015-01-29 17:40+0200\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -184,6 +184,11 @@ msgstr "Kanallister"
 
 msgid " "
 msgstr ""
+
+#
+#, fuzzy
+msgid " (0 - all networks)"
+msgstr "Lokalt nettverk"
 
 #
 #, fuzzy, python-format
@@ -401,9 +406,6 @@ msgstr ""
 
 #, python-format
 msgid "%s:%s"
-msgstr ""
-
-msgid "(DHCP is off)"
 msgstr ""
 
 msgid "(ZAP)"
@@ -680,6 +682,10 @@ msgstr ""
 "Et opptak har startet:\n"
 "%s"
 
+#, fuzzy
+msgid "A recording is currently running on the selected tuner. Please select a different tuner or consider to stop the recording to try again."
+msgstr "Et opptak er igang. Vennligst stopp opptaket før du starter et søk."
+
 msgid ""
 "A recording is currently running.\n"
 "What do you want to do?"
@@ -752,6 +758,18 @@ msgstr ""
 
 msgid "ASPECT key"
 msgstr ""
+
+#, fuzzy
+msgid "ASS file"
+msgstr "%d mappe"
+
+msgid "ATSC"
+msgstr ""
+
+#
+#, fuzzy
+msgid "ATSC provider"
+msgstr "Legge til leverandør"
 
 #
 msgid "Abort"
@@ -1321,6 +1339,15 @@ msgstr ""
 msgid "BLUDISC RECORDABLE"
 msgstr ""
 
+msgid "BT 2020 CL"
+msgstr ""
+
+msgid "BT 2020 NCL"
+msgstr ""
+
+msgid "BT 709"
+msgstr ""
+
 #
 msgid "Back"
 msgstr "Tilbake"
@@ -1729,6 +1756,17 @@ msgstr "Kanal:"
 msgid "Channellist menu"
 msgstr "Kanalliste-meny"
 
+msgid "Channelnumber and picon"
+msgstr ""
+
+#, fuzzy
+msgid "Channelnumber and servicename"
+msgstr "Picon og kanal navn"
+
+#, fuzzy
+msgid "Channelnumber, picon and servicename"
+msgstr "Picon og kanal navn"
+
 #
 msgid "Chap."
 msgstr "Kap."
@@ -1874,18 +1912,13 @@ msgstr "Slå av PiP (bilde i bilde) med exit knapp"
 msgid "Close title selection"
 msgstr "Lukke navnevalg"
 
+msgid "Code R. LP-HP & Guard Int."
+msgstr ""
+
 msgid "Code rate HP"
 msgstr "Kode hastighet HP"
 
 msgid "Code rate LP"
-msgstr "Kode hastighet LP"
-
-#
-msgid "Coderate HP"
-msgstr "Kode hastighet HP"
-
-#
-msgid "Coderate LP"
 msgstr "Kode hastighet LP"
 
 #
@@ -2304,6 +2337,9 @@ msgstr ""
 msgid "Connected to"
 msgstr "Koblet til"
 
+msgid "Connected transcoding, limit - no PiP!"
+msgstr ""
+
 #
 #, fuzzy
 msgid "Consider CI assignment"
@@ -2313,7 +2349,8 @@ msgid "Console"
 msgstr ""
 
 #
-msgid "Constellation"
+#, fuzzy
+msgid "Constellation & FFT mode"
 msgstr "Konstellasjon"
 
 #
@@ -2518,6 +2555,9 @@ msgstr ""
 msgid "DHCP"
 msgstr ""
 
+msgid "DHCP is off"
+msgstr ""
+
 #
 msgid "DMM advanced"
 msgstr "DMM avansert"
@@ -2532,6 +2572,9 @@ msgstr ""
 msgid "DUAL LAYER DVD"
 msgstr "To lags DVD"
 
+msgid "DVB CI Delay"
+msgstr ""
+
 msgid "DVB drivers: "
 msgstr ""
 
@@ -2540,6 +2583,10 @@ msgstr "Sort-visningsnivå for DVB undertekst"
 
 msgid "DVB-C"
 msgstr ""
+
+#, fuzzy
+msgid "DVB-C ANNEX B"
+msgstr "DVB-C VEDLEGG C"
 
 msgid "DVB-C ANNEX C"
 msgstr "DVB-C VEDLEGG C"
@@ -3350,6 +3397,10 @@ msgstr ""
 msgid "Enable volume control with arrow buttons"
 msgstr "Velg videoinngang med opp/ned tastene"
 
+#, fuzzy
+msgid "Enable wakeup timer"
+msgstr "Slå av med hjelp av tidtaker"
+
 msgid "Enable zapping with CH+/-, B+/-, P+/-"
 msgstr ""
 
@@ -3768,6 +3819,11 @@ msgstr "Favorittliste"
 msgid "File appears to be busy.\n"
 msgstr "Filen ser ut til å være opptatt.\n"
 
+#
+#, fuzzy
+msgid "Filename"
+msgstr "filnavn"
+
 msgid "Filesystem check"
 msgstr "Sjekk av filsystem"
 
@@ -3898,6 +3954,16 @@ msgid "Frequency"
 msgstr "Frekvens"
 
 #
+#, fuzzy
+msgid "Frequency & Channel"
+msgstr "Frekvensbånd"
+
+#
+#, fuzzy
+msgid "Frequency & Polarization"
+msgstr "Polarisasjon"
+
+#
 msgid "Frequency bands"
 msgstr "Frekvensbånd"
 
@@ -3927,8 +3993,8 @@ msgid "Frontpanel"
 msgstr ""
 
 #
-#, python-format
-msgid "Frontprocessor version: %d"
+#, fuzzy, python-format
+msgid "Frontprocessor version: %s"
 msgstr "Frontprosessor versjon: %d"
 
 msgid "Full transparency"
@@ -4125,10 +4191,10 @@ msgstr ""
 msgid "HD list"
 msgstr "HD liste"
 
-msgid "HD1100/HD1200/et7x00/et8500"
+msgid "HD2400"
 msgstr ""
 
-msgid "HD2400"
+msgid "HD51/HD1100/HD1200/et7x00/et8500"
 msgstr ""
 
 msgid ""
@@ -4138,6 +4204,11 @@ msgstr ""
 
 msgid "HDMI"
 msgstr ""
+
+#
+#, fuzzy
+msgid "HDMI Colorimetry"
+msgstr "Farge format"
 
 #
 #, fuzzy
@@ -4226,10 +4297,6 @@ msgstr "Skjul hopp feil"
 
 msgid "Hierarchy info"
 msgstr "Hierarki info"
-
-#
-msgid "Hierarchy information"
-msgstr "Hierarki informasjon"
 
 #
 msgid "High bitrate support"
@@ -4635,6 +4702,14 @@ msgstr ""
 msgid "Inversion"
 msgstr "Krenging"
 
+#
+#, fuzzy
+msgid "Inversion & Bandwidth"
+msgstr "Båndbredde"
+
+msgid "Inversion, Pilot & Roll-off"
+msgstr ""
+
 msgid "Invert"
 msgstr "Vend"
 
@@ -4790,6 +4865,10 @@ msgstr "Siste oppdatering:"
 msgid "Latest Commits"
 msgstr ""
 
+#, python-format
+msgid "Latest available openMips %s build is from: %s"
+msgstr ""
+
 #
 msgid "Latitude"
 msgstr "Breddegrad"
@@ -4934,11 +5013,6 @@ msgstr "Plassering"
 #
 msgid "Location for instant recordings"
 msgstr "Plassering for direkte opptak"
-
-#
-#, fuzzy
-msgid "Location:"
-msgstr "Plassering"
 
 msgid "Lock ratio"
 msgstr "Låsforhold"
@@ -5357,9 +5431,6 @@ msgstr ""
 msgid "Multiple service support"
 msgstr "Flerkanal støtte"
 
-msgid "Multiplex"
-msgstr "Multiplex"
-
 #
 msgid "Multisat"
 msgstr "Multisat"
@@ -5397,8 +5468,8 @@ msgstr ""
 msgid "NFS setup"
 msgstr "Innstilling"
 
-msgid "NIM"
-msgstr "Tuner"
+msgid "NIM & Type"
+msgstr ""
 
 #
 #, fuzzy
@@ -5433,11 +5504,6 @@ msgstr "Navneserver"
 #, python-format
 msgid "Nameserver %d"
 msgstr "Navneserver %d"
-
-#
-#, fuzzy
-msgid "Nameserver is off"
-msgstr "Navneserver"
 
 #
 msgid "Nameserver settings"
@@ -5747,6 +5813,9 @@ msgstr "Nei, men start på nytt"
 msgid "No, do nothing."
 msgstr "Nei, gjør ingenting"
 
+msgid "No, except Wakeup timer"
+msgstr ""
+
 #, fuzzy
 msgid "No, just start my GigaBlue"
 msgstr "Nei, bare start min mottaker"
@@ -5816,6 +5885,9 @@ msgstr "Nettverkstest:"
 #, fuzzy
 msgid "Not-Associated"
 msgstr "Ikke tilknyttet"
+
+msgid "Note: when enabled, and you do want standby mode after wake up, set option 'Startup to Standby' as 'No, except Wakeup timer'."
+msgstr ""
 
 msgid "Nothing connected"
 msgstr ""
@@ -6049,9 +6121,9 @@ msgstr ""
 msgid "PDC"
 msgstr ""
 
-#
-msgid "PIDs"
-msgstr ""
+#, fuzzy
+msgid "PGS file"
+msgstr "%d mappe"
 
 #
 msgid "PIN code needed"
@@ -6181,7 +6253,8 @@ msgstr "PiP-bilde i bilde oppsett"
 msgid "Picon"
 msgstr ""
 
-msgid "Picon and service name"
+#, fuzzy
+msgid "Picon and servicename"
 msgstr "Picon og kanal navn"
 
 #
@@ -6649,6 +6722,14 @@ msgid "Prefer subtitles stored by service"
 msgstr "Foretrekk undertekster utsendt av kanal"
 
 msgid "Preferred tuner"
+msgstr "Foretrukket tuner"
+
+#, fuzzy
+msgid "Preferred tuner ATSC"
+msgstr "Foretrukket tuner"
+
+#, fuzzy
+msgid "Preferred tuner ATSC for recordings"
 msgstr "Foretrukket tuner"
 
 #, fuzzy
@@ -7425,7 +7506,7 @@ msgstr "Russisk"
 msgid "S-Video"
 msgstr ""
 
-msgid "SID"
+msgid "SCPC optimized search range"
 msgstr ""
 
 #
@@ -7442,6 +7523,14 @@ msgstr ""
 
 msgid "SPDIF"
 msgstr ""
+
+#, fuzzy
+msgid "SRT file"
+msgstr "%d mappe"
+
+#, fuzzy
+msgid "SSA file"
+msgstr "%d mappe"
 
 #
 msgid "SSID:"
@@ -7940,8 +8029,13 @@ msgstr "Kanal"
 
 #
 #, fuzzy
-msgid "Service Information"
-msgstr "Informasjon"
+msgid "Service & PIDs"
+msgstr "Kanaler"
+
+#
+#, fuzzy
+msgid "Service ID"
+msgstr "Kanal"
 
 msgid "Service has been added to the favourites."
 msgstr "Kanalen ble lagt til i favorittlisten."
@@ -7951,6 +8045,15 @@ msgstr "Kanal ble lagt til i den valgte kanallisten."
 
 msgid "Service info"
 msgstr "Kanalinfo"
+
+msgid "Service info - service & PIDs"
+msgstr ""
+
+msgid "Service info - tuner live values"
+msgstr ""
+
+msgid "Service info - tuner setting values"
+msgstr ""
 
 msgid ""
 "Service invalid!\n"
@@ -7986,6 +8089,11 @@ msgid ""
 msgstr ""
 "Kanal utilgjengelig!\n"
 "Kontroller tuner konfigurasjon!"
+
+#
+#, fuzzy
+msgid "Servicename"
+msgstr "Kanalnavn"
 
 #
 msgid "Services"
@@ -8523,6 +8631,10 @@ msgstr "Hopp over internett tilkobling (automatisk pakke installasjon deaktivere
 msgid "Sleep timer"
 msgstr "Slå av med hjelp av tidtaker"
 
+#, fuzzy
+msgid "Sleep/wakeup timer"
+msgstr "Slå av med hjelp av tidtaker"
+
 msgid "SleepTimer Configuration"
 msgstr "Tidtaker innstilling"
 
@@ -8845,6 +8957,13 @@ msgstr "Start med listevisning"
 msgid "Starting on"
 msgstr "Starter på"
 
+msgid "Startup the set top box in standby"
+msgstr ""
+
+#, fuzzy
+msgid "Startup to Standby"
+msgstr "slå av"
+
 msgid "Status:"
 msgstr ""
 
@@ -9165,6 +9284,10 @@ msgstr "Valgbare tuner typer:"
 msgid "Symbol rate"
 msgstr "Symbolrate"
 
+#, fuzzy
+msgid "Symbol rate & FEC"
+msgstr "Symbolrate"
+
 msgid "Symbol rate:"
 msgstr ""
 
@@ -9183,6 +9306,11 @@ msgstr ""
 #
 msgid "System"
 msgstr "System"
+
+#
+#, fuzzy
+msgid "System & Modulation"
+msgstr "Modulasjon"
 
 #. TRANSLATORS: Add here whatever should be shown in the "translator" about screen, up to 6 lines (use \n for newline)
 msgid "TRANSLATOR_INFO"
@@ -9546,6 +9674,9 @@ msgstr ""
 msgid "This option allows to set the level of dynamic contrast of the picture."
 msgstr ""
 
+msgid "This option allows you can config the Colorimetry for HDR"
+msgstr ""
+
 msgid "This option allows you enable smoothing filter to control the dithering process."
 msgstr ""
 
@@ -9848,6 +9979,9 @@ msgstr ""
 msgid "Toggle a cut mark at the current position"
 msgstr "Bytte mellom klipp på den aktuelle posisjonen"
 
+msgid "Toggle dashed flickering line for this service"
+msgstr ""
+
 msgid "Toggle infoBar"
 msgstr ""
 
@@ -9918,15 +10052,6 @@ msgstr "Sendingstype"
 msgid "Transponder"
 msgstr ""
 
-#
-#, fuzzy
-msgid "Transponder Information"
-msgstr "Informasjon"
-
-#
-msgid "Transponder type"
-msgstr ""
-
 msgid "Trash can"
 msgstr "Papirkurv"
 
@@ -9988,17 +10113,23 @@ msgstr "Tuneroppsett"
 msgid "Tuner is not supported"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Tuner live values"
+msgstr "Tuner status"
+
 #, fuzzy
 msgid "Tuner not available."
 msgstr "Oppdateringsstedet er ikke tilgjengelig."
 
 #
-msgid "Tuner slot"
-msgstr "Tuner spalte"
+#, fuzzy
+msgid "Tuner setting values"
+msgstr "Tuner status"
 
 #
-msgid "Tuner status"
-msgstr "Tuner status"
+msgid "Tuner slot"
+msgstr "Tuner spalte"
 
 #
 #, python-format
@@ -10040,6 +10171,9 @@ msgstr "Type"
 
 msgid "Type of scan"
 msgstr "Søketype"
+
+msgid "URL"
+msgstr ""
 
 msgid "URL of fallback remote receiver"
 msgstr ""
@@ -10353,6 +10487,10 @@ msgstr ""
 msgid "VMGM (intro trailer)"
 msgstr "VMGM (intro trailer)"
 
+#, fuzzy
+msgid "VOB file"
+msgstr "%d mappe"
+
 msgid "VU+"
 msgstr ""
 
@@ -10431,14 +10569,9 @@ msgstr "Bilde: %s fps"
 msgid "VideoMode"
 msgstr "Bildevisning"
 
-msgid "Videocodec"
-msgstr "Videokoding"
-
-msgid "Videoformat"
+#, fuzzy
+msgid "Videocodec, size & format"
 msgstr "Videoformat"
-
-msgid "Videosize"
-msgstr "Videostørrelse"
 
 #
 msgid "View Rass interactive..."
@@ -10585,6 +10718,14 @@ msgstr "Våkne mottakeren fra avslått stilling"
 msgid "Wakeup signal from TV"
 msgstr "Våkne signal fra TV"
 
+#, fuzzy
+msgid "Wakeup time"
+msgstr "Våkne"
+
+#, fuzzy
+msgid "Wakeup timer"
+msgstr "Slå av med hjelp av tidtaker"
+
 msgid "Wakeup type"
 msgstr ""
 
@@ -10606,6 +10747,9 @@ msgstr "Se filmer..."
 
 msgid "Watch recordings..."
 msgstr "Se på opptak..."
+
+msgid "Weather GigaBlue Pax"
+msgstr ""
 
 msgid "Weather ID"
 msgstr ""
@@ -10699,14 +10843,6 @@ msgstr "Hva vil du søke etter?"
 
 msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are upgraded"
 msgstr ""
-
-#, fuzzy
-msgid "When enabled the LNB power will not be switched off in standby"
-msgstr "Når dette er valgt, vises VCR scart innstillingen på hovedmenyen."
-
-#, fuzzy
-msgid "When enabled the LNB toneburst will be forced"
-msgstr "Når dette er valgt, skjules nummermarkører."
 
 msgid "When enabled the PiP can be closed by the exit button."
 msgstr "Når dette er valgt, kan PiP (bilde i bilde) bli avsluttet med exit knappen."
@@ -11041,6 +11177,15 @@ msgstr "Ja, gjør et automatisk søk nå"
 
 msgid "Yes, do another manual scan now"
 msgstr "Ja, gjør et nytt manuelt søk nå"
+
+#
+#, fuzzy
+msgid "Yes, only from deep standby"
+msgstr "slå helt av"
+
+#, fuzzy
+msgid "Yes, only from standby"
+msgstr "slå av"
 
 msgid "Yes, perform a shutdown now."
 msgstr "Ja, slå av nå."
@@ -11757,6 +11902,9 @@ msgstr "alternativer"
 msgid "education/science/factual topics (general)"
 msgstr "utdanning/vitenskap/faktaprogram (generelt)"
 
+msgid "embedded"
+msgstr ""
+
 #
 msgid "empty"
 msgstr "tom"
@@ -12203,10 +12351,6 @@ msgstr "Ingen"
 
 msgid "normal"
 msgstr "normal"
-
-#, fuzzy
-msgid "not avaible"
-msgstr "utilgjengelig"
 
 #
 msgid "not configured"
@@ -12906,6 +13050,14 @@ msgstr "gått til"
 #~ msgid "Changelog"
 #~ msgstr "Endringslogg"
 
+#
+#~ msgid "Coderate HP"
+#~ msgstr "Kode hastighet HP"
+
+#
+#~ msgid "Coderate LP"
+#~ msgstr "Kode hastighet LP"
+
 #~ msgid "Committed DiSEqC command"
 #~ msgstr "Utvidet DiSEqC kommando"
 
@@ -13041,6 +13193,10 @@ msgstr "gått til"
 #~ msgid "Green boost"
 #~ msgstr "Green boost"
 
+#
+#~ msgid "Hierarchy information"
+#~ msgstr "Hierarki informasjon"
+
 #~ msgid "Immediate shutdown"
 #~ msgstr "Slå helt av"
 
@@ -13049,6 +13205,11 @@ msgstr "gått til"
 
 #~ msgid "Load Length of Movies in Movielist"
 #~ msgstr "Vis opptakslengde i listen"
+
+#
+#, fuzzy
+#~ msgid "Location:"
+#~ msgstr "Plassering"
 
 #
 #~ msgid "Memory positions"
@@ -13073,12 +13234,23 @@ msgstr "gått til"
 #~ msgid "Movie Selection"
 #~ msgstr "Opptaksvalg"
 
+#~ msgid "Multiplex"
+#~ msgstr "Multiplex"
+
 #~ msgid "NFI image flashing"
 #~ msgstr "NFI image flashing"
 
 #
 #~ msgid "NFI image flashing completed. Press Yellow to Reboot!"
 #~ msgstr "NFI image flashing er ferdig. Trykk Gul knapp for å starte på nytt!"
+
+#~ msgid "NIM"
+#~ msgstr "Tuner"
+
+#
+#, fuzzy
+#~ msgid "Nameserver is off"
+#~ msgstr "Navneserver"
 
 #~ msgid "New PIN"
 #~ msgstr "Ny PIN"
@@ -13190,6 +13362,11 @@ msgstr "gått til"
 
 #~ msgid "Select desired image from feed list"
 #~ msgstr "Velg ønsket image fra menyliste"
+
+#
+#, fuzzy
+#~ msgid "Service Information"
+#~ msgstr "Informasjon"
 
 #~ msgid "Service searching"
 #~ msgstr "Kanalsøk"
@@ -13314,6 +13491,11 @@ msgstr "gått til"
 #~ "2) Slå strøm på igjen og hold NED-knappen på frontpanelet inne i 10 sekunder.\n"
 #~ "3) Vent til oppstart og følg instruksjonen i veiviseren."
 
+#
+#, fuzzy
+#~ msgid "Transponder Information"
+#~ msgstr "Informasjon"
+
 #~ msgid "Tuning step size"
 #~ msgstr "Søketrinnstørrelse"
 
@@ -13341,9 +13523,23 @@ msgstr "gått til"
 #~ msgid "Video fine tuning"
 #~ msgstr "Finjustering av bilde"
 
+#~ msgid "Videocodec"
+#~ msgstr "Videokoding"
+
+#~ msgid "Videosize"
+#~ msgstr "Videostørrelse"
+
 #, fuzzy
 #~ msgid "Welcome…"
 #~ msgstr "Velkommen..."
+
+#, fuzzy
+#~ msgid "When enabled the LNB power will not be switched off in standby"
+#~ msgstr "Når dette er valgt, vises VCR scart innstillingen på hovedmenyen."
+
+#, fuzzy
+#~ msgid "When enabled the LNB toneburst will be forced"
+#~ msgstr "Når dette er valgt, skjules nummermarkører."
 
 #~ msgid "When enabled, error messages related to the Common Interface module will not be shown."
 #~ msgstr "Når dette er valgt, skjules feilmeldinger knyttet til Common Interface modulen."
@@ -13410,6 +13606,10 @@ msgstr "gått til"
 #
 #~ msgid "fine-tune your display"
 #~ msgstr "fininnstill din skjerm"
+
+#, fuzzy
+#~ msgid "not avaible"
+#~ msgstr "utilgjengelig"
 
 #~ msgid "on end of movie"
 #~ msgstr "på slutten av opptaket"

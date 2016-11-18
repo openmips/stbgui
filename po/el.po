@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-20 17:13+0200\n"
+"POT-Creation-Date: 2016-11-18 19:53+0100\n"
 "PO-Revision-Date: 2015-01-29 17:40+0200\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -173,6 +173,10 @@ msgstr "Μπουκέτα χρήστη"
 
 msgid " "
 msgstr ""
+
+#, fuzzy
+msgid " (0 - all networks)"
+msgstr "Τοπικό δίκτυο"
 
 #, fuzzy, python-format
 msgid " (Channel %s)"
@@ -385,9 +389,6 @@ msgstr "%s/%s: %s"
 
 #, python-format
 msgid "%s:%s"
-msgstr ""
-
-msgid "(DHCP is off)"
 msgstr ""
 
 msgid "(ZAP)"
@@ -626,6 +627,10 @@ msgstr ""
 "Μια εγγραφή έχει ξεκινήσει:\n"
 "%s"
 
+#, fuzzy
+msgid "A recording is currently running on the selected tuner. Please select a different tuner or consider to stop the recording to try again."
+msgstr "Μια εγγραφή είναι σε εξέλιξη. Πρέπει να σταματήσετε την εγγραφή πριν την ανίχνευση."
+
 msgid ""
 "A recording is currently running.\n"
 "What do you want to do?"
@@ -694,6 +699,17 @@ msgstr ""
 
 msgid "ASPECT key"
 msgstr ""
+
+#, fuzzy
+msgid "ASS file"
+msgstr "%d αρχείο"
+
+msgid "ATSC"
+msgstr ""
+
+#, fuzzy
+msgid "ATSC provider"
+msgstr "Προσθήκη παρόχου"
 
 msgid "Abort"
 msgstr "Ακύρωση"
@@ -1192,6 +1208,15 @@ msgstr "BER:"
 msgid "BLUDISC RECORDABLE"
 msgstr ""
 
+msgid "BT 2020 CL"
+msgstr ""
+
+msgid "BT 2020 NCL"
+msgstr ""
+
+msgid "BT 709"
+msgstr ""
+
 msgid "Back"
 msgstr "Πίσω"
 
@@ -1553,6 +1578,17 @@ msgstr "Κανάλι:"
 msgid "Channellist menu"
 msgstr "Μενού λίστας καναλιών"
 
+msgid "Channelnumber and picon"
+msgstr ""
+
+#, fuzzy
+msgid "Channelnumber and servicename"
+msgstr "Εικονίδιο και όνομα υπηρεσίας"
+
+#, fuzzy
+msgid "Channelnumber, picon and servicename"
+msgstr "Εικονίδιο και όνομα υπηρεσίας"
+
 msgid "Chap."
 msgstr "Κεφ."
 
@@ -1682,16 +1718,13 @@ msgstr "Κλείσιμο του PiP κατά την έξοδο"
 msgid "Close title selection"
 msgstr "Κλείσιμο επιλογής τίτλου"
 
+msgid "Code R. LP-HP & Guard Int."
+msgstr ""
+
 msgid "Code rate HP"
 msgstr "Κωδικορυθμός HP"
 
 msgid "Code rate LP"
-msgstr "Κωδικορυθμός LP"
-
-msgid "Coderate HP"
-msgstr "Κωδικορυθμός HP"
-
-msgid "Coderate LP"
 msgstr "Κωδικορυθμός LP"
 
 msgid "Collection name"
@@ -2085,6 +2118,9 @@ msgstr "Συνδεδεμένοι δορυφόροι"
 msgid "Connected to"
 msgstr "Συνδέθηκε με"
 
+msgid "Connected transcoding, limit - no PiP!"
+msgstr ""
+
 #, fuzzy
 msgid "Consider CI assignment"
 msgstr "Ορισμός CI"
@@ -2092,7 +2128,8 @@ msgstr "Ορισμός CI"
 msgid "Console"
 msgstr ""
 
-msgid "Constellation"
+#, fuzzy
+msgid "Constellation & FFT mode"
 msgstr "Αστερισμός"
 
 #, fuzzy
@@ -2273,6 +2310,9 @@ msgstr ""
 msgid "DHCP"
 msgstr "DHCP"
 
+msgid "DHCP is off"
+msgstr ""
+
 msgid "DMM advanced"
 msgstr "DMM προχωρημένο"
 
@@ -2285,6 +2325,9 @@ msgstr ""
 msgid "DUAL LAYER DVD"
 msgstr "DVD ΔΙΠΛΗΣ ΣΤΡΩΣΗΣ"
 
+msgid "DVB CI Delay"
+msgstr ""
+
 msgid "DVB drivers: "
 msgstr ""
 
@@ -2293,6 +2336,10 @@ msgstr "Διαφάνεια υποτίτλων DVB"
 
 msgid "DVB-C"
 msgstr "DVB-C"
+
+#, fuzzy
+msgid "DVB-C ANNEX B"
+msgstr "DVB-C ANNEX C"
 
 msgid "DVB-C ANNEX C"
 msgstr "DVB-C ANNEX C"
@@ -3027,6 +3074,10 @@ msgstr "Ενεργοποίηση ΟΚ για επιλογή καναλιών"
 msgid "Enable volume control with arrow buttons"
 msgstr "Επιλογή εισόδου εικόνας με τα πλήκτρα πάνω/κάτω"
 
+#, fuzzy
+msgid "Enable wakeup timer"
+msgstr "Χρονοδιακόπτης ύπνου"
+
 msgid "Enable zapping with CH+/-, B+/-, P+/-"
 msgstr "Ενεργοποίηση ζάπινγκ με τα CH+/-, B+/-, P+/-"
 
@@ -3391,6 +3442,10 @@ msgstr "Αγαπημένα"
 msgid "File appears to be busy.\n"
 msgstr "Το αρχείο είναι απασχολημένο. \n"
 
+#, fuzzy
+msgid "Filename"
+msgstr "όνομα αρχείου"
+
 msgid "Filesystem check"
 msgstr "Έλεγχος συστήματος αρχείων"
 
@@ -3511,6 +3566,14 @@ msgstr "Γαλλικά"
 msgid "Frequency"
 msgstr "Συχνότητα"
 
+#, fuzzy
+msgid "Frequency & Channel"
+msgstr "Χρήση συχνότητας ή καναλιού"
+
+#, fuzzy
+msgid "Frequency & Polarization"
+msgstr "Πόλωση"
+
 msgid "Frequency bands"
 msgstr "Μπάντες συχνότητας"
 
@@ -3535,8 +3598,8 @@ msgstr "Από :"
 msgid "Frontpanel"
 msgstr ""
 
-#, python-format
-msgid "Frontprocessor version: %d"
+#, fuzzy, python-format
+msgid "Frontprocessor version: %s"
 msgstr "Έκδοση frontprocessor: %d"
 
 msgid "Full transparency"
@@ -3714,10 +3777,10 @@ msgstr "Κ. "
 msgid "HD list"
 msgstr "Λίστα HD"
 
-msgid "HD1100/HD1200/et7x00/et8500"
+msgid "HD2400"
 msgstr ""
 
-msgid "HD2400"
+msgid "HD51/HD1100/HD1200/et7x00/et8500"
 msgstr ""
 
 msgid ""
@@ -3727,6 +3790,10 @@ msgstr ""
 
 msgid "HDMI"
 msgstr ""
+
+#, fuzzy
+msgid "HDMI Colorimetry"
+msgstr "Φορμά χρώματος"
 
 #, fuzzy
 msgid "HDMI Colorspace"
@@ -3811,9 +3878,6 @@ msgid "Hide zap errors"
 msgstr "Απόκρυψη σφαλμάτων του ζάπινγκ"
 
 msgid "Hierarchy info"
-msgstr "Πληροφορίες ιεραρχίας"
-
-msgid "Hierarchy information"
 msgstr "Πληροφορίες ιεραρχίας"
 
 msgid "High bitrate support"
@@ -4168,6 +4232,13 @@ msgstr "Μη έγκυρα δεδομένα αναμεταδότη"
 msgid "Inversion"
 msgstr "Αναστροφή"
 
+#, fuzzy
+msgid "Inversion & Bandwidth"
+msgstr "Εύρος μπάντας"
+
+msgid "Inversion, Pilot & Roll-off"
+msgstr ""
+
 msgid "Invert"
 msgstr "Αντιστροφή"
 
@@ -4302,6 +4373,10 @@ msgstr "Τελευταία αναβάθμιση: "
 msgid "Latest Commits"
 msgstr "Τελευταίες Αλλαγές"
 
+#, python-format
+msgid "Latest available openMips %s build is from: %s"
+msgstr ""
+
 msgid "Latitude"
 msgstr "Γεωγραφικό πλάτος"
 
@@ -4425,10 +4500,6 @@ msgstr "Τοποθεσία"
 
 msgid "Location for instant recordings"
 msgstr "Τοποθεσία άμεσων εγγραφών"
-
-#, fuzzy
-msgid "Location:"
-msgstr "Τοποθεσία"
 
 msgid "Lock ratio"
 msgstr "Κλείδωμα αναλογιών"
@@ -4805,9 +4876,6 @@ msgstr "Πολυμέσα"
 msgid "Multiple service support"
 msgstr "Υποστήριξη πολλαπλών υπηρεσιών"
 
-msgid "Multiplex"
-msgstr "Πολυπλέκτης"
-
 msgid "Multisat"
 msgstr "Πολλοί δορυφόροι"
 
@@ -4840,8 +4908,8 @@ msgstr ""
 msgid "NFS setup"
 msgstr "Εγκατάσταση"
 
-msgid "NIM"
-msgstr "Μονάδα tuner"
+msgid "NIM & Type"
+msgstr ""
 
 #, fuzzy
 msgid "NO"
@@ -4869,10 +4937,6 @@ msgstr "Nameserver"
 #, python-format
 msgid "Nameserver %d"
 msgstr "Nameserver %d"
-
-#, fuzzy
-msgid "Nameserver is off"
-msgstr "Nameserver"
 
 msgid "Nameserver settings"
 msgstr "Ρυθμίσεις Nameserver"
@@ -5145,6 +5209,9 @@ msgstr "Όχι, επανεκκίνηση από την αρχή."
 msgid "No, do nothing."
 msgstr "Όχι, να μη γίνει τίποτα."
 
+msgid "No, except Wakeup timer"
+msgstr ""
+
 #, fuzzy
 msgid "No, just start my GigaBlue"
 msgstr "Όχι, απλά εκκίνηση του δέκτη"
@@ -5210,6 +5277,9 @@ msgstr "Έλεγχος δικτύου: "
 #, fuzzy
 msgid "Not-Associated"
 msgstr "Χωρίς συσχέτιση"
+
+msgid "Note: when enabled, and you do want standby mode after wake up, set option 'Startup to Standby' as 'No, except Wakeup timer'."
+msgstr ""
 
 msgid "Nothing connected"
 msgstr "Δεν έχει συνδεθεί τίποτα"
@@ -5424,8 +5494,9 @@ msgstr "PCR PID"
 msgid "PDC"
 msgstr ""
 
-msgid "PIDs"
-msgstr "PIDs"
+#, fuzzy
+msgid "PGS file"
+msgstr "%d αρχείο"
 
 msgid "PIN code needed"
 msgstr "Απαιτείται κωδικός PIN"
@@ -5543,7 +5614,8 @@ msgstr "Ρύθμιση PiP"
 msgid "Picon"
 msgstr "Εικονίδιο"
 
-msgid "Picon and service name"
+#, fuzzy
+msgid "Picon and servicename"
 msgstr "Εικονίδιο και όνομα υπηρεσίας"
 
 #, fuzzy
@@ -5956,6 +6028,14 @@ msgstr "Να προτιμώνται υπότιτλοι αποθηκευμένο�
 
 msgid "Preferred tuner"
 msgstr "Προτιμώμενο tuner"
+
+#, fuzzy
+msgid "Preferred tuner ATSC"
+msgstr "Προτιμώμενο tuner"
+
+#, fuzzy
+msgid "Preferred tuner ATSC for recordings"
+msgstr "Προτιμώμενο tuner για εγγραφές"
 
 #, fuzzy
 msgid "Preferred tuner DVB-C"
@@ -6654,8 +6734,8 @@ msgstr "Ρωσικά"
 msgid "S-Video"
 msgstr "S-Video"
 
-msgid "SID"
-msgstr "SID"
+msgid "SCPC optimized search range"
+msgstr ""
 
 msgid "SINGLE LAYER DVD"
 msgstr "DVD ΜΟΝΗΣ ΣΤΡΩΣΗΣ"
@@ -6668,6 +6748,14 @@ msgstr "SNR:"
 
 msgid "SPDIF"
 msgstr ""
+
+#, fuzzy
+msgid "SRT file"
+msgstr "%d αρχείο"
+
+#, fuzzy
+msgid "SSA file"
+msgstr "%d αρχείο"
 
 msgid "SSID:"
 msgstr "SSID:"
@@ -7113,8 +7201,12 @@ msgid "Service"
 msgstr "Υπηρεσία"
 
 #, fuzzy
-msgid "Service Information"
-msgstr "Πληροφορίες"
+msgid "Service & PIDs"
+msgstr "Υπηρεσίες"
+
+#, fuzzy
+msgid "Service ID"
+msgstr "Υπηρεσία"
 
 msgid "Service has been added to the favourites."
 msgstr "Η υπηρεσία προστέθηκε στα αγαπημένα."
@@ -7124,6 +7216,15 @@ msgstr "Η υπηρεσία προστέθηκε στo επιλεγμένο μπ
 
 msgid "Service info"
 msgstr "Πληροφορίες υπηρεσίας"
+
+msgid "Service info - service & PIDs"
+msgstr ""
+
+msgid "Service info - tuner live values"
+msgstr ""
+
+msgid "Service info - tuner setting values"
+msgstr ""
 
 msgid ""
 "Service invalid!\n"
@@ -7157,6 +7258,10 @@ msgid ""
 msgstr ""
 "Υπηρεσία μη διαθέσιμη!\n"
 "Ελέγξτε τις ρυθμίσεις του tuner!"
+
+#, fuzzy
+msgid "Servicename"
+msgstr "Όνομα υπηρεσίας"
 
 msgid "Services"
 msgstr "Υπηρεσίες"
@@ -7635,6 +7740,10 @@ msgstr "Παράλειψη ελέγχου σύνδεσης στο διαδίκτ
 msgid "Sleep timer"
 msgstr "Χρονοδιακόπτης ύπνου"
 
+#, fuzzy
+msgid "Sleep/wakeup timer"
+msgstr "Χρονοδιακόπτης ύπνου"
+
 msgid "SleepTimer Configuration"
 msgstr "Ρύθμιση Χρονοδιακόπτη Ύπνου"
 
@@ -7930,6 +8039,12 @@ msgstr "Έναρξη με την οθόνη λίστας"
 msgid "Starting on"
 msgstr "Έναρξη από το"
 
+msgid "Startup the set top box in standby"
+msgstr "Εκκίνηση του δέκτη από την αναμονή"
+
+msgid "Startup to Standby"
+msgstr "Εκκίνηση από Αναμονή"
+
 msgid "Status:"
 msgstr ""
 
@@ -8213,6 +8328,10 @@ msgstr "Εναλλακτοί τύποι tuner:"
 msgid "Symbol rate"
 msgstr "Ρυθμός συμβόλων"
 
+#, fuzzy
+msgid "Symbol rate & FEC"
+msgstr "Ρυθμός συμβόλων"
+
 msgid "Symbol rate:"
 msgstr "Ρυθμός συμβόλων:"
 
@@ -8230,6 +8349,10 @@ msgstr ""
 
 msgid "System"
 msgstr "Σύστημα"
+
+#, fuzzy
+msgid "System & Modulation"
+msgstr "Διαμόρφωση"
 
 #. TRANSLATORS: Add here whatever should be shown in the "translator" about screen, up to 6 lines (use \n for newline)
 msgid "TRANSLATOR_INFO"
@@ -8566,6 +8689,9 @@ msgstr ""
 msgid "This option allows to set the level of dynamic contrast of the picture."
 msgstr ""
 
+msgid "This option allows you can config the Colorimetry for HDR"
+msgstr ""
+
 msgid "This option allows you enable smoothing filter to control the dithering process."
 msgstr ""
 
@@ -8833,6 +8959,9 @@ msgstr ""
 msgid "Toggle a cut mark at the current position"
 msgstr "Εναλλαγή σημειωτή αποκοπής στην τρέχουσα θέση"
 
+msgid "Toggle dashed flickering line for this service"
+msgstr ""
+
 msgid "Toggle infoBar"
 msgstr ""
 
@@ -8893,13 +9022,6 @@ msgstr "Λειτουργία μετάδοσης"
 msgid "Transponder"
 msgstr "Αναμεταδότης"
 
-#, fuzzy
-msgid "Transponder Information"
-msgstr "Τύπος αναμεταδότη"
-
-msgid "Transponder type"
-msgstr "Τύπος αναμεταδότη"
-
 msgid "Trash can"
 msgstr "Κάδος αχρήστων"
 
@@ -8950,14 +9072,19 @@ msgid "Tuner is not supported"
 msgstr "Μη υποστηριζόμενο tuner"
 
 #, fuzzy
+msgid "Tuner live values"
+msgstr "Κατάσταση tuner"
+
+#, fuzzy
 msgid "Tuner not available."
 msgstr "Η πηγή αναβάθμισης δεν είναι διαθέσιμη."
 
+#, fuzzy
+msgid "Tuner setting values"
+msgstr "Κατάσταση tuner"
+
 msgid "Tuner slot"
 msgstr "Υποδοχή tuner"
-
-msgid "Tuner status"
-msgstr "Κατάσταση tuner"
 
 #, python-format
 msgid "Tuner status %s"
@@ -8994,6 +9121,9 @@ msgstr "Τύπος"
 
 msgid "Type of scan"
 msgstr "Τύπος ανίχνευσης"
+
+msgid "URL"
+msgstr ""
 
 msgid "URL of fallback remote receiver"
 msgstr ""
@@ -9275,6 +9405,10 @@ msgstr "VCR scart"
 msgid "VMGM (intro trailer)"
 msgstr "VMGM (εντός τρέιλερ)"
 
+#, fuzzy
+msgid "VOB file"
+msgstr "%d αρχείο"
+
 msgid "VU+"
 msgstr ""
 
@@ -9345,14 +9479,9 @@ msgstr "Βίντεο: %s fps"
 msgid "VideoMode"
 msgstr "Λειτουργία εικόνας"
 
-msgid "Videocodec"
-msgstr "Κωδικοποιητής"
-
-msgid "Videoformat"
+#, fuzzy
+msgid "Videocodec, size & format"
 msgstr "Λόγος πλευρών"
-
-msgid "Videosize"
-msgstr "Μέγεθος εικόνας"
 
 msgid "View Rass interactive..."
 msgstr "Εμφάνιση διαδραστικού Rass..."
@@ -9482,6 +9611,14 @@ msgstr "Αφύπνιση δέκτη από αναμονή"
 msgid "Wakeup signal from TV"
 msgstr "Σήμα αφύπνισης από TV"
 
+#, fuzzy
+msgid "Wakeup time"
+msgstr "Τύπος αφύπνισης"
+
+#, fuzzy
+msgid "Wakeup timer"
+msgstr "Τύπος αφύπνισης"
+
 msgid "Wakeup type"
 msgstr "Τύπος αφύπνισης"
 
@@ -9503,6 +9640,9 @@ msgstr "Αναπαραγωγή ταινιών..."
 
 msgid "Watch recordings..."
 msgstr "Παρακολούθηση εγγραφών..."
+
+msgid "Weather GigaBlue Pax"
+msgstr ""
 
 msgid "Weather ID"
 msgstr ""
@@ -9592,14 +9732,6 @@ msgstr "Τι θέλετε να ανιχνεύσετε;"
 
 msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are upgraded"
 msgstr ""
-
-#, fuzzy
-msgid "When enabled the LNB power will not be switched off in standby"
-msgstr "Όταν είναι ενεργό, η επιλογή VCR scart θα εμφανίζεται στο κύριο μενού"
-
-#, fuzzy
-msgid "When enabled the LNB toneburst will be forced"
-msgstr "Όταν είναι ενεργό, δεν θα εμφανίζονται οι σημειωτές των αριθμών."
 
 msgid "When enabled the PiP can be closed by the exit button."
 msgstr "Όταν είναι ενεργό, το PiP μπορεί να τερματιστεί με το πλήκτρο εξόδου."
@@ -9923,6 +10055,14 @@ msgstr "Ναι, να γίνει αυτόματη ανίχνευση τώρα"
 
 msgid "Yes, do another manual scan now"
 msgstr "Ναι, να γίνει ακόμα μία χειροκίνητη ανίχνευση τώρα"
+
+#, fuzzy
+msgid "Yes, only from deep standby"
+msgstr "μόνο από βαθιά αναμονή"
+
+#, fuzzy
+msgid "Yes, only from standby"
+msgstr "μόνο από αναμονή"
 
 msgid "Yes, perform a shutdown now."
 msgstr "Ναι, τερματισμός τώρα."
@@ -10576,6 +10716,9 @@ msgstr "επεξεργασία εναλλακτικών"
 msgid "education/science/factual topics (general)"
 msgstr "εκπαίδευση/επιστήμη/πραγματικά θέματα (γενικά)"
 
+msgid "embedded"
+msgstr ""
+
 msgid "empty"
 msgstr "κενό"
 
@@ -10965,10 +11108,6 @@ msgstr "κανένα"
 
 msgid "normal"
 msgstr "κανονικό"
-
-#, fuzzy
-msgid "not avaible"
-msgstr "μη διαθέσιμο"
 
 msgid "not configured"
 msgstr "μη ρυθμισμένο"
@@ -11608,6 +11747,12 @@ msgstr "έγινε μετάβαση"
 #~ msgid "Changelog"
 #~ msgstr "Καταγραφολόγιο"
 
+#~ msgid "Coderate HP"
+#~ msgstr "Κωδικορυθμός HP"
+
+#~ msgid "Coderate LP"
+#~ msgstr "Κωδικορυθμός LP"
+
 #~ msgid "Committed DiSEqC command"
 #~ msgstr "Δεσμευμένη εντολή DiSEqC"
 
@@ -11749,6 +11894,9 @@ msgstr "έγινε μετάβαση"
 #~ msgid "Green boost"
 #~ msgstr "Ενίσχυση του πράσινου"
 
+#~ msgid "Hierarchy information"
+#~ msgstr "Πληροφορίες ιεραρχίας"
+
 #~ msgid "Immediate shutdown"
 #~ msgstr "Άμεσος τερματισμός"
 
@@ -11757,6 +11905,10 @@ msgstr "έγινε μετάβαση"
 
 #~ msgid "Load Length of Movies in Movielist"
 #~ msgstr "Φόρτωση Διάρκειας Ταινιών στη Λίστα"
+
+#, fuzzy
+#~ msgid "Location:"
+#~ msgstr "Τοποθεσία"
 
 #~ msgid "Loop through to"
 #~ msgstr "Loop στο"
@@ -11781,11 +11933,21 @@ msgstr "έγινε μετάβαση"
 #~ msgid "Movie Selection"
 #~ msgstr "Επιλογή Ταινιών"
 
+#~ msgid "Multiplex"
+#~ msgstr "Πολυπλέκτης"
+
 #~ msgid "NFI image flashing"
 #~ msgstr "Φλασάρισμα λογισμικού NFI"
 
 #~ msgid "NFI image flashing completed. Press Yellow to Reboot!"
 #~ msgstr "Η εγκατάσταση λογισμικού NFI τελείωσε. Πατήστε Κίτρινο για επανεκκίνηση!"
+
+#~ msgid "NIM"
+#~ msgstr "Μονάδα tuner"
+
+#, fuzzy
+#~ msgid "Nameserver is off"
+#~ msgstr "Nameserver"
 
 #~ msgid "New PIN"
 #~ msgstr "Νέο PIN"
@@ -11829,6 +11991,9 @@ msgstr "έγινε μετάβαση"
 
 #~ msgid "Output"
 #~ msgstr "Έξοδος"
+
+#~ msgid "PIDs"
+#~ msgstr "PIDs"
 
 #~ msgid "Parental control type"
 #~ msgstr "Είδος γονικού ελέγχου"
@@ -11874,6 +12039,9 @@ msgstr "έγινε μετάβαση"
 #~ msgid "Restore is running..."
 #~ msgstr "Επαναφορά σε εκτέλεση..."
 
+#~ msgid "SID"
+#~ msgstr "SID"
+
 #~ msgid "Satellites"
 #~ msgstr "Δορυφόροι"
 
@@ -11885,6 +12053,10 @@ msgstr "έγινε μετάβαση"
 
 #~ msgid "Select desired image from feed list"
 #~ msgstr "Επιλέξτε το επιθυμητό λογισμικό από τη λίστα"
+
+#, fuzzy
+#~ msgid "Service Information"
+#~ msgstr "Πληροφορίες"
 
 #~ msgid "Service searching"
 #~ msgstr "Αναζήτηση υπηρεσιών"
@@ -11935,12 +12107,6 @@ msgstr "έγινε μετάβαση"
 
 #~ msgid "Standby fan %d voltage"
 #~ msgstr "Τάση αναμονής ανεμιστήρα %d"
-
-#~ msgid "Startup the set top box in standby"
-#~ msgstr "Εκκίνηση του δέκτη από την αναμονή"
-
-#~ msgid "Startup to Standby"
-#~ msgstr "Εκκίνηση από Αναμονή"
 
 #~ msgid "Switch to HDMI in mode"
 #~ msgstr "Αλλαγή σε HDMI σε λειτουργία"
@@ -12015,6 +12181,13 @@ msgstr "έγινε μετάβαση"
 #~ "2) Ανοίξτε το διακόπτη και κρατήστε πατημένο το πλήκτρο ΚΑΤΩ στο εμπρόσθιο πάνελ για 10 δευτερόλεπτα.\n"
 #~ "3) Περιμένετε την εκκίνηση και ακολουθήστε τα βήματα του οδηγού."
 
+#, fuzzy
+#~ msgid "Transponder Information"
+#~ msgstr "Τύπος αναμεταδότη"
+
+#~ msgid "Transponder type"
+#~ msgstr "Τύπος αναμεταδότη"
+
 #~ msgid "Tuning step size"
 #~ msgstr "Μέγεθος βήματος συντονισμού"
 
@@ -12036,9 +12209,23 @@ msgstr "έγινε μετάβαση"
 #~ msgid "Video fine tuning"
 #~ msgstr "Μικρορύθμιση οθόνης"
 
+#~ msgid "Videocodec"
+#~ msgstr "Κωδικοποιητής"
+
+#~ msgid "Videosize"
+#~ msgstr "Μέγεθος εικόνας"
+
 #, fuzzy
 #~ msgid "Welcome…"
 #~ msgstr "Καλώς ορίσατε..."
+
+#, fuzzy
+#~ msgid "When enabled the LNB power will not be switched off in standby"
+#~ msgstr "Όταν είναι ενεργό, η επιλογή VCR scart θα εμφανίζεται στο κύριο μενού"
+
+#, fuzzy
+#~ msgid "When enabled the LNB toneburst will be forced"
+#~ msgstr "Όταν είναι ενεργό, δεν θα εμφανίζονται οι σημειωτές των αριθμών."
 
 #~ msgid "When enabled the arrow buttons around the OK button will follow the neutrino style zap controls instead of the enigma2 style."
 #~ msgstr "Όταν είναι ενεργό, τα πλήκτρα βέλη γύρω από το ΟΚ θα ακολουθούν το στυλ ελέγχου ζάπινγκ του neutrino αντί του enigma2."
@@ -12099,6 +12286,10 @@ msgstr "έγινε μετάβαση"
 
 #~ msgid "fine-tune your display"
 #~ msgstr "μικρορύθμιση οθόνης"
+
+#, fuzzy
+#~ msgid "not avaible"
+#~ msgstr "μη διαθέσιμο"
 
 #~ msgid "on end of movie"
 #~ msgstr "στο τέλος της ταινίας"

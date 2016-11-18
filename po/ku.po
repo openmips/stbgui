@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-20 17:13+0200\n"
+"POT-Creation-Date: 2016-11-18 19:53+0100\n"
 "PO-Revision-Date: 2015-01-29 17:40+0200\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -181,6 +181,10 @@ msgstr "User - bouquets"
 
 msgid " "
 msgstr ""
+
+#, fuzzy
+msgid " (0 - all networks)"
+msgstr "Local network"
 
 #, fuzzy, python-format
 msgid " (Channel %s)"
@@ -393,9 +397,6 @@ msgstr "%s/%s: %s"
 
 #, python-format
 msgid "%s:%s"
-msgstr ""
-
-msgid "(DHCP is off)"
 msgstr ""
 
 msgid "(ZAP)"
@@ -638,6 +639,10 @@ msgstr ""
 "A record has been started:\n"
 "%s"
 
+#, fuzzy
+msgid "A recording is currently running on the selected tuner. Please select a different tuner or consider to stop the recording to try again."
+msgstr "A recording is currently running. Please stop the recording before trying to scan."
+
 msgid ""
 "A recording is currently running.\n"
 "What do you want to do?"
@@ -710,6 +715,16 @@ msgstr ""
 
 msgid "ASPECT key"
 msgstr ""
+
+msgid "ASS file"
+msgstr ""
+
+msgid "ATSC"
+msgstr ""
+
+#, fuzzy
+msgid "ATSC provider"
+msgstr "Add provider"
 
 msgid "Abort"
 msgstr "Bettal Bike"
@@ -1211,6 +1226,15 @@ msgstr "BER:"
 msgid "BLUDISC RECORDABLE"
 msgstr ""
 
+msgid "BT 2020 CL"
+msgstr ""
+
+msgid "BT 2020 NCL"
+msgstr ""
+
+msgid "BT 709"
+msgstr ""
+
 msgid "Back"
 msgstr "Paş"
 
@@ -1572,6 +1596,17 @@ msgstr "Qenal:"
 msgid "Channellist menu"
 msgstr "Menu Qenal Liste"
 
+msgid "Channelnumber and picon"
+msgstr ""
+
+#, fuzzy
+msgid "Channelnumber and servicename"
+msgstr "Picon and service name"
+
+#, fuzzy
+msgid "Channelnumber, picon and servicename"
+msgstr "Picon and service name"
+
 msgid "Chap."
 msgstr "Mirov"
 
@@ -1701,17 +1736,14 @@ msgstr ""
 msgid "Close title selection"
 msgstr "Close title selection"
 
+msgid "Code R. LP-HP & Guard Int."
+msgstr ""
+
 msgid "Code rate HP"
 msgstr "Code rate HP"
 
 msgid "Code rate LP"
 msgstr "Code rate LP"
-
-msgid "Coderate HP"
-msgstr "Coderate HP"
-
-msgid "Coderate LP"
-msgstr "Coderate LP"
 
 msgid "Collection name"
 msgstr "Nav Koleksiyon"
@@ -2104,6 +2136,9 @@ msgstr ""
 msgid "Connected to"
 msgstr "Girédi "
 
+msgid "Connected transcoding, limit - no PiP!"
+msgstr ""
+
 #, fuzzy
 msgid "Consider CI assignment"
 msgstr "CI assignment"
@@ -2111,7 +2146,8 @@ msgstr "CI assignment"
 msgid "Console"
 msgstr ""
 
-msgid "Constellation"
+#, fuzzy
+msgid "Constellation & FFT mode"
 msgstr "Constellation"
 
 #, fuzzy
@@ -2292,6 +2328,9 @@ msgstr ""
 msgid "DHCP"
 msgstr "DHCP"
 
+msgid "DHCP is off"
+msgstr ""
+
 msgid "DMM advanced"
 msgstr "DMM advanced"
 
@@ -2304,6 +2343,9 @@ msgstr ""
 msgid "DUAL LAYER DVD"
 msgstr "DUAL LAYER DVD"
 
+msgid "DVB CI Delay"
+msgstr ""
+
 msgid "DVB drivers: "
 msgstr ""
 
@@ -2312,6 +2354,10 @@ msgstr "DVB subtitle black transparency"
 
 msgid "DVB-C"
 msgstr "DVB-C"
+
+#, fuzzy
+msgid "DVB-C ANNEX B"
+msgstr "DVB-C ANNEX C"
 
 msgid "DVB-C ANNEX C"
 msgstr "DVB-C ANNEX C"
@@ -3043,6 +3089,10 @@ msgstr ""
 msgid "Enable volume control with arrow buttons"
 msgstr "Select video input with up/down buttons"
 
+#, fuzzy
+msgid "Enable wakeup timer"
+msgstr "Enable timer"
+
 msgid "Enable zapping with CH+/-, B+/-, P+/-"
 msgstr ""
 
@@ -3403,6 +3453,10 @@ msgstr "Favourites"
 msgid "File appears to be busy.\n"
 msgstr "File appears to be busy.\n"
 
+#, fuzzy
+msgid "Filename"
+msgstr "filename"
+
 msgid "Filesystem check"
 msgstr "Filesystem check"
 
@@ -3523,6 +3577,14 @@ msgstr "French"
 msgid "Frequency"
 msgstr "Frequency"
 
+#, fuzzy
+msgid "Frequency & Channel"
+msgstr "Frequency bands"
+
+#, fuzzy
+msgid "Frequency & Polarization"
+msgstr "Polarization"
+
 msgid "Frequency bands"
 msgstr "Frequency bands"
 
@@ -3548,8 +3610,8 @@ msgstr "From :"
 msgid "Frontpanel"
 msgstr "dreambox front panel"
 
-#, python-format
-msgid "Frontprocessor version: %d"
+#, fuzzy, python-format
+msgid "Frontprocessor version: %s"
 msgstr "Frontprocessor version: %d"
 
 msgid "Full transparency"
@@ -3730,10 +3792,10 @@ msgstr ""
 msgid "HD list"
 msgstr "HD list"
 
-msgid "HD1100/HD1200/et7x00/et8500"
+msgid "HD2400"
 msgstr ""
 
-msgid "HD2400"
+msgid "HD51/HD1100/HD1200/et7x00/et8500"
 msgstr ""
 
 msgid ""
@@ -3743,6 +3805,10 @@ msgstr ""
 
 msgid "HDMI"
 msgstr ""
+
+#, fuzzy
+msgid "HDMI Colorimetry"
+msgstr "Formata Renga"
 
 #, fuzzy
 msgid "HDMI Colorspace"
@@ -3825,9 +3891,6 @@ msgstr "Hide zap errors"
 
 msgid "Hierarchy info"
 msgstr "Hierarchy info"
-
-msgid "Hierarchy information"
-msgstr "Hierarchy information"
 
 msgid "High bitrate support"
 msgstr "High bitrate support"
@@ -4181,6 +4244,13 @@ msgstr ""
 msgid "Inversion"
 msgstr "Inversion"
 
+#, fuzzy
+msgid "Inversion & Bandwidth"
+msgstr "Frehiya Band"
+
+msgid "Inversion, Pilot & Roll-off"
+msgstr ""
+
 msgid "Invert"
 msgstr "Invert"
 
@@ -4314,6 +4384,10 @@ msgstr "Last upgrade: "
 msgid "Latest Commits"
 msgstr ""
 
+#, python-format
+msgid "Latest available openMips %s build is from: %s"
+msgstr ""
+
 msgid "Latitude"
 msgstr "Latitude"
 
@@ -4437,10 +4511,6 @@ msgstr "Location"
 
 msgid "Location for instant recordings"
 msgstr "Location for instant recordings"
-
-#, fuzzy
-msgid "Location:"
-msgstr "Location"
 
 msgid "Lock ratio"
 msgstr "Lock ratio"
@@ -4818,9 +4888,6 @@ msgstr "Multimedia"
 msgid "Multiple service support"
 msgstr "Multiple service support"
 
-msgid "Multiplex"
-msgstr "Multiplex"
-
 msgid "Multisat"
 msgstr "Multisat"
 
@@ -4853,8 +4920,8 @@ msgstr ""
 msgid "NFS setup"
 msgstr "Çékirin"
 
-msgid "NIM"
-msgstr "NIM"
+msgid "NIM & Type"
+msgstr ""
 
 #, fuzzy
 msgid "NO"
@@ -4882,10 +4949,6 @@ msgstr "Nameserver"
 #, python-format
 msgid "Nameserver %d"
 msgstr "Nameserver %d"
-
-#, fuzzy
-msgid "Nameserver is off"
-msgstr "Nameserver"
 
 msgid "Nameserver settings"
 msgstr "Nameserver settings"
@@ -5155,6 +5218,9 @@ msgstr "No, but restart from begin"
 msgid "No, do nothing."
 msgstr "No, do nothing."
 
+msgid "No, except Wakeup timer"
+msgstr ""
+
 #, fuzzy
 msgid "No, just start my GigaBlue"
 msgstr "No, just start my receiver"
@@ -5220,6 +5286,9 @@ msgstr "Network test: "
 #, fuzzy
 msgid "Not-Associated"
 msgstr "Not associated"
+
+msgid "Note: when enabled, and you do want standby mode after wake up, set option 'Startup to Standby' as 'No, except Wakeup timer'."
+msgstr ""
 
 msgid "Nothing connected"
 msgstr ""
@@ -5434,8 +5503,8 @@ msgstr "PCR PID"
 msgid "PDC"
 msgstr ""
 
-msgid "PIDs"
-msgstr "PIDs"
+msgid "PGS file"
+msgstr ""
 
 msgid "PIN code needed"
 msgstr "PIN code needed"
@@ -5554,7 +5623,8 @@ msgstr "PiP setup"
 msgid "Picon"
 msgstr "Picon"
 
-msgid "Picon and service name"
+#, fuzzy
+msgid "Picon and servicename"
 msgstr "Picon and service name"
 
 #, fuzzy
@@ -5966,6 +6036,14 @@ msgid "Prefer subtitles stored by service"
 msgstr "Prefer subtitles stored by service"
 
 msgid "Preferred tuner"
+msgstr "Preferred tuner"
+
+#, fuzzy
+msgid "Preferred tuner ATSC"
+msgstr "Preferred tuner"
+
+#, fuzzy
+msgid "Preferred tuner ATSC for recordings"
 msgstr "Preferred tuner"
 
 #, fuzzy
@@ -6662,8 +6740,8 @@ msgstr "Russian"
 msgid "S-Video"
 msgstr "S-Video"
 
-msgid "SID"
-msgstr "SID"
+msgid "SCPC optimized search range"
+msgstr ""
 
 msgid "SINGLE LAYER DVD"
 msgstr "SINGLE LAYER DVD"
@@ -6675,6 +6753,12 @@ msgid "SNR:"
 msgstr "SNR:"
 
 msgid "SPDIF"
+msgstr ""
+
+msgid "SRT file"
+msgstr ""
+
+msgid "SSA file"
 msgstr ""
 
 msgid "SSID:"
@@ -7120,8 +7204,12 @@ msgid "Service"
 msgstr "Hizmeti"
 
 #, fuzzy
-msgid "Service Information"
-msgstr "Hakké İmagéda"
+msgid "Service & PIDs"
+msgstr "Services"
+
+#, fuzzy
+msgid "Service ID"
+msgstr "Hizmeti"
 
 msgid "Service has been added to the favourites."
 msgstr "Service has been added to the favourites."
@@ -7131,6 +7219,15 @@ msgstr "Service has been added to the selected bouquet."
 
 msgid "Service info"
 msgstr "Service info"
+
+msgid "Service info - service & PIDs"
+msgstr ""
+
+msgid "Service info - tuner live values"
+msgstr ""
+
+msgid "Service info - tuner setting values"
+msgstr ""
 
 msgid ""
 "Service invalid!\n"
@@ -7164,6 +7261,10 @@ msgid ""
 msgstr ""
 "Service unavailable!\n"
 "Check tuner configuration!"
+
+#, fuzzy
+msgid "Servicename"
+msgstr "Service name"
 
 msgid "Services"
 msgstr "Services"
@@ -7642,6 +7743,10 @@ msgstr "Skip internet connection check (disables automatic package installation)
 msgid "Sleep timer"
 msgstr "Sleep timer"
 
+#, fuzzy
+msgid "Sleep/wakeup timer"
+msgstr "Sleep timer"
+
 msgid "SleepTimer Configuration"
 msgstr ""
 
@@ -7934,6 +8039,13 @@ msgstr "Start with list screen"
 msgid "Starting on"
 msgstr "Starting on"
 
+msgid "Startup the set top box in standby"
+msgstr ""
+
+#, fuzzy
+msgid "Startup to Standby"
+msgstr "go to standby"
+
 #, fuzzy
 msgid "Status:"
 msgstr "Timer status:"
@@ -8217,6 +8329,10 @@ msgstr "Switchable tuner types:"
 msgid "Symbol rate"
 msgstr "Symbol rate"
 
+#, fuzzy
+msgid "Symbol rate & FEC"
+msgstr "Symbol rate"
+
 msgid "Symbol rate:"
 msgstr ""
 
@@ -8234,6 +8350,10 @@ msgstr ""
 
 msgid "System"
 msgstr "Systemé wi"
+
+#, fuzzy
+msgid "System & Modulation"
+msgstr "Modulation"
 
 #. TRANSLATORS: Add here whatever should be shown in the "translator" about screen, up to 6 lines (use \n for newline)
 msgid "TRANSLATOR_INFO"
@@ -8571,6 +8691,9 @@ msgstr ""
 msgid "This option allows to set the level of dynamic contrast of the picture."
 msgstr ""
 
+msgid "This option allows you can config the Colorimetry for HDR"
+msgstr ""
+
 msgid "This option allows you enable smoothing filter to control the dithering process."
 msgstr ""
 
@@ -8838,6 +8961,9 @@ msgstr ""
 msgid "Toggle a cut mark at the current position"
 msgstr "Toggle a cut mark at the current position"
 
+msgid "Toggle dashed flickering line for this service"
+msgstr ""
+
 msgid "Toggle infoBar"
 msgstr ""
 
@@ -8898,13 +9024,6 @@ msgstr "Transmission mode"
 msgid "Transponder"
 msgstr "Transponder"
 
-#, fuzzy
-msgid "Transponder Information"
-msgstr "Transponder type"
-
-msgid "Transponder type"
-msgstr "Transponder type"
-
 msgid "Trash can"
 msgstr "Trash can"
 
@@ -8955,14 +9074,19 @@ msgid "Tuner is not supported"
 msgstr ""
 
 #, fuzzy
+msgid "Tuner live values"
+msgstr "Tuner status"
+
+#, fuzzy
 msgid "Tuner not available."
 msgstr "Updatefeed not available."
 
+#, fuzzy
+msgid "Tuner setting values"
+msgstr "Tuner status"
+
 msgid "Tuner slot"
 msgstr "Tuner slot"
-
-msgid "Tuner status"
-msgstr "Tuner status"
 
 #, python-format
 msgid "Tuner status %s"
@@ -8999,6 +9123,9 @@ msgstr "Type"
 
 msgid "Type of scan"
 msgstr "Type of scan"
+
+msgid "URL"
+msgstr ""
 
 msgid "URL of fallback remote receiver"
 msgstr ""
@@ -9280,6 +9407,9 @@ msgstr "VCR scart"
 msgid "VMGM (intro trailer)"
 msgstr "VMGM (intro trailer)"
 
+msgid "VOB file"
+msgstr ""
+
 msgid "VU+"
 msgstr ""
 
@@ -9350,14 +9480,9 @@ msgstr ""
 msgid "VideoMode"
 msgstr ""
 
-msgid "Videocodec"
-msgstr "Videocodec"
-
-msgid "Videoformat"
+#, fuzzy
+msgid "Videocodec, size & format"
 msgstr "Videoformat"
-
-msgid "Videosize"
-msgstr "Videosize"
 
 msgid "View Rass interactive..."
 msgstr "View Rass interactive..."
@@ -9488,6 +9613,14 @@ msgstr "Wakeup receiver from standby"
 msgid "Wakeup signal from TV"
 msgstr "Wakeup signal from TV"
 
+#, fuzzy
+msgid "Wakeup time"
+msgstr "Wakeup"
+
+#, fuzzy
+msgid "Wakeup timer"
+msgstr "Sleep timer"
+
 msgid "Wakeup type"
 msgstr ""
 
@@ -9509,6 +9642,9 @@ msgstr "Watch movies..."
 
 msgid "Watch recordings..."
 msgstr "Watch recordings..."
+
+msgid "Weather GigaBlue Pax"
+msgstr ""
 
 msgid "Weather ID"
 msgstr ""
@@ -9597,13 +9733,6 @@ msgid "What do you want to scan?"
 msgstr "What do you want to scan?"
 
 msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are upgraded"
-msgstr ""
-
-#, fuzzy
-msgid "When enabled the LNB power will not be switched off in standby"
-msgstr "When enabled, the infobar will be displayed when a new event starts."
-
-msgid "When enabled the LNB toneburst will be forced"
 msgstr ""
 
 msgid "When enabled the PiP can be closed by the exit button."
@@ -9927,6 +10056,14 @@ msgstr "Yes, do an automatic scan now"
 
 msgid "Yes, do another manual scan now"
 msgstr "Yes, do another manual scan now"
+
+#, fuzzy
+msgid "Yes, only from deep standby"
+msgstr "go to deep standby"
+
+#, fuzzy
+msgid "Yes, only from standby"
+msgstr "go to standby"
 
 msgid "Yes, perform a shutdown now."
 msgstr "Yes, perform a shutdown now."
@@ -10583,6 +10720,9 @@ msgstr "edit alternatives"
 msgid "education/science/factual topics (general)"
 msgstr "education/science/factual topics (general)"
 
+msgid "embedded"
+msgstr ""
+
 msgid "empty"
 msgstr "empty"
 
@@ -10972,10 +11112,6 @@ msgstr "none"
 
 msgid "normal"
 msgstr "normal"
-
-#, fuzzy
-msgid "not avaible"
-msgstr "unavailable"
 
 msgid "not configured"
 msgstr "not configured"
@@ -11608,6 +11744,12 @@ msgstr "zapped"
 #~ msgid "Changelog"
 #~ msgstr "Tewirna"
 
+#~ msgid "Coderate HP"
+#~ msgstr "Coderate HP"
+
+#~ msgid "Coderate LP"
+#~ msgstr "Coderate LP"
+
 #~ msgid "Committed DiSEqC command"
 #~ msgstr "Qomuta Disegi"
 
@@ -11702,9 +11844,6 @@ msgstr "zapped"
 #~ msgid "Enable parental control"
 #~ msgstr "Enable parental control"
 
-#~ msgid "Enable timer"
-#~ msgstr "Enable timer"
-
 #, fuzzy
 #~ msgid "FP Upgrade"
 #~ msgstr "Upgrading"
@@ -11737,11 +11876,18 @@ msgstr "zapped"
 #~ msgid "Green boost"
 #~ msgstr "Green boost"
 
+#~ msgid "Hierarchy information"
+#~ msgstr "Hierarchy information"
+
 #~ msgid "Immediate shutdown"
 #~ msgstr "Immediate shutdown"
 
 #~ msgid "List EPG functions..."
 #~ msgstr "List EPG functions..."
+
+#, fuzzy
+#~ msgid "Location:"
+#~ msgstr "Location"
 
 #, fuzzy
 #~ msgid "Mode 1"
@@ -11754,11 +11900,21 @@ msgstr "zapped"
 #~ msgid "Move to other directory"
 #~ msgstr "Move to other directory"
 
+#~ msgid "Multiplex"
+#~ msgstr "Multiplex"
+
 #~ msgid "NFI image flashing"
 #~ msgstr "NFI image flashing"
 
 #~ msgid "NFI image flashing completed. Press Yellow to Reboot!"
 #~ msgstr "NFI image flashing completed. Press Yellow to Reboot!"
+
+#~ msgid "NIM"
+#~ msgstr "NIM"
+
+#, fuzzy
+#~ msgid "Nameserver is off"
+#~ msgstr "Nameserver"
 
 #~ msgid "New PIN"
 #~ msgstr "New PIN"
@@ -11806,6 +11962,9 @@ msgstr "zapped"
 #~ msgid "Output"
 #~ msgstr "Output"
 
+#~ msgid "PIDs"
+#~ msgstr "PIDs"
+
 #~ msgid "Parental control type"
 #~ msgstr "Parental control type"
 
@@ -11847,6 +12006,9 @@ msgstr "zapped"
 #~ msgid "Restore is running..."
 #~ msgstr "Restore is running..."
 
+#~ msgid "SID"
+#~ msgstr "SID"
+
 #~ msgid "Satellites"
 #~ msgstr "Satellites"
 
@@ -11858,6 +12020,10 @@ msgstr "zapped"
 
 #~ msgid "Select desired image from feed list"
 #~ msgstr "Select desired image from feed list"
+
+#, fuzzy
+#~ msgid "Service Information"
+#~ msgstr "Hakké İmagéda"
 
 #~ msgid "Service searching"
 #~ msgstr "Çékirina Anten"
@@ -11977,6 +12143,13 @@ msgstr "zapped"
 #~ "2) Turn mains back on and hold the DOWN button on the front panel pressed for 10 seconds.\n"
 #~ "3) Wait for bootup and follow instructions of the wizard."
 
+#, fuzzy
+#~ msgid "Transponder Information"
+#~ msgstr "Transponder type"
+
+#~ msgid "Transponder type"
+#~ msgstr "Transponder type"
+
 #~ msgid "Tuning step size"
 #~ msgstr "Tuning step size"
 
@@ -11998,9 +12171,19 @@ msgstr "zapped"
 #~ msgid "Video fine tuning"
 #~ msgstr "Eyaré Video Tenik"
 
+#~ msgid "Videocodec"
+#~ msgstr "Videocodec"
+
+#~ msgid "Videosize"
+#~ msgstr "Videosize"
+
 #, fuzzy
 #~ msgid "Welcome…"
 #~ msgstr "Welcome..."
+
+#, fuzzy
+#~ msgid "When enabled the LNB power will not be switched off in standby"
+#~ msgstr "When enabled, the infobar will be displayed when a new event starts."
 
 #~ msgid "When enabled, error messages related to the Common Interface module will not be shown."
 #~ msgstr "When enabled, error messages related to the Common Interface module will not be shown."
@@ -12069,6 +12252,10 @@ msgstr "zapped"
 
 #~ msgid "fine-tune your display"
 #~ msgstr "fine-tune your display"
+
+#, fuzzy
+#~ msgid "not avaible"
+#~ msgstr "unavailable"
 
 #~ msgid "play from next mark or playlist entry"
 #~ msgstr "play from next mark or playlist entry"

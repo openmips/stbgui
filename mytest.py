@@ -51,6 +51,11 @@ config.misc.useTransponderTime = ConfigYesNo(default=True)
 config.misc.startCounter = ConfigInteger(default=0) # number of e2 starts...
 config.misc.standbyCounter = NoSave(ConfigInteger(default=0)) # number of standby
 config.misc.DeepStandby = NoSave(ConfigYesNo(default=False)) # detect deepstandby
+config.misc.RestartUI = ConfigYesNo(default=False) # detect user interface restart
+config.misc.prev_wakeup_time = ConfigInteger(default=0)
+#config.misc.prev_wakeup_time_type is only valid when wakeup_time is not 0
+config.misc.prev_wakeup_time_type = ConfigInteger(default=0)
+# 0 = RecordTimer, 1 = ZapTimer, 2 = Plugins, 3 = WakeupTimer
 config.misc.epgcache_filename = ConfigText(default = '/etc/enigma2/epg.dat', fixed_size=False)
 config.misc.isNextRecordTimerAfterEventActionAuto = ConfigYesNo(default=False)
 config.misc.SyncTimeUsing = ConfigSelection(default = "0", choices = [("0", "Transponder Time"), ("1", _("NTP"))])
@@ -524,12 +529,14 @@ def runScreenTest():
 
 	from time import time, strftime, localtime
 	from Tools.StbHardware import setFPWakeuptime, getFPWakeuptime, setRTCtime
+	from Screens.SleepTimerEdit import isNextWakeupTime
 	#get currentTime
 	nowTime = time()
 	wakeupList = [
 		x for x in ((session.nav.RecordTimer.getNextRecordingTime(), 0, session.nav.RecordTimer.isNextRecordAfterEventActionAuto()),
 					(session.nav.RecordTimer.getNextZapTime(), 1),
-					(plugins.getNextWakeupTime(), 2))
+					(plugins.getNextWakeupTime(), 2),
+					(isNextWakeupTime(), 3))
 		if x[0] != -1
 	]
 	wakeupList.sort()
@@ -548,7 +555,12 @@ def runScreenTest():
 		setFPWakeuptime(wptime)
 		recordTimerWakeupAuto = startTime[1] == 0 and startTime[2]
 		print '[mytest] recordTimerWakeupAuto',recordTimerWakeupAuto
-
+		config.misc.prev_wakeup_time.value = startTime[0]
+		config.misc.prev_wakeup_time_type.value = startTime[1]
+		config.misc.prev_wakeup_time_type.save()
+	else:
+		config.misc.prev_wakeup_time.value = 0
+	config.misc.prev_wakeup_time.save()
 	config.misc.isNextRecordTimerAfterEventActionAuto.value = recordTimerWakeupAuto
 	config.misc.isNextRecordTimerAfterEventActionAuto.save()
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-20 17:13+0200\n"
+"POT-Creation-Date: 2016-11-18 19:53+0100\n"
 "PO-Revision-Date: 2015-01-29 17:40+0200\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -163,6 +163,10 @@ msgstr ""
 
 msgid " "
 msgstr ""
+
+#, fuzzy
+msgid " (0 - all networks)"
+msgstr "شبکه محلی"
 
 #, fuzzy, python-format
 msgid " (Channel %s)"
@@ -367,9 +371,6 @@ msgstr ""
 
 #, python-format
 msgid "%s:%s"
-msgstr ""
-
-msgid "(DHCP is off)"
 msgstr ""
 
 msgid "(ZAP)"
@@ -608,6 +609,10 @@ msgstr ""
 "ضبط کردن شروع شد\n"
 "%s"
 
+#, fuzzy
+msgid "A recording is currently running on the selected tuner. Please select a different tuner or consider to stop the recording to try again."
+msgstr "ضبط کردن در حال اجرا است ، لطفا قبل از اسکن کردن ضبط را متوقف کنید"
+
 msgid ""
 "A recording is currently running.\n"
 "What do you want to do?"
@@ -676,6 +681,16 @@ msgstr ""
 
 msgid "ASPECT key"
 msgstr ""
+
+msgid "ASS file"
+msgstr ""
+
+msgid "ATSC"
+msgstr ""
+
+#, fuzzy
+msgid "ATSC provider"
+msgstr "ارائه کننده"
 
 msgid "Abort"
 msgstr "لغو"
@@ -1205,6 +1220,15 @@ msgstr "مقدار خطا:"
 msgid "BLUDISC RECORDABLE"
 msgstr ""
 
+msgid "BT 2020 CL"
+msgstr ""
+
+msgid "BT 2020 NCL"
+msgstr ""
+
+msgid "BT 709"
+msgstr ""
+
 msgid "Back"
 msgstr "بازگشت"
 
@@ -1575,6 +1599,16 @@ msgstr "کانال:"
 msgid "Channellist menu"
 msgstr "منوی لیست کانال"
 
+msgid "Channelnumber and picon"
+msgstr ""
+
+#, fuzzy
+msgid "Channelnumber and servicename"
+msgstr "کانال در لیست کانال ها وجود ندارد"
+
+msgid "Channelnumber, picon and servicename"
+msgstr ""
+
 msgid "Chap."
 msgstr "فصل"
 
@@ -1700,17 +1734,14 @@ msgstr ""
 msgid "Close title selection"
 msgstr "بستن انتخاب کردن عنوان"
 
+msgid "Code R. LP-HP & Guard Int."
+msgstr ""
+
 msgid "Code rate HP"
 msgstr "نرخ کد HP"
 
 msgid "Code rate LP"
 msgstr "نرخ کد LP"
-
-msgid "Coderate HP"
-msgstr "Coderate HP"
-
-msgid "Coderate LP"
-msgstr "Coderate LP"
 
 msgid "Collection name"
 msgstr "نام مجموعه"
@@ -2124,6 +2155,9 @@ msgstr ""
 msgid "Connected to"
 msgstr "وصل شده به"
 
+msgid "Connected transcoding, limit - no PiP!"
+msgstr ""
+
 #
 #, fuzzy
 msgid "Consider CI assignment"
@@ -2132,7 +2166,8 @@ msgstr "CI وظیفه"
 msgid "Console"
 msgstr ""
 
-msgid "Constellation"
+#, fuzzy
+msgid "Constellation & FFT mode"
 msgstr "Constellation"
 
 #, fuzzy
@@ -2325,6 +2360,9 @@ msgstr ""
 msgid "DHCP"
 msgstr "DHCP"
 
+msgid "DHCP is off"
+msgstr ""
+
 msgid "DMM advanced"
 msgstr ""
 
@@ -2338,6 +2376,9 @@ msgstr ""
 msgid "DUAL LAYER DVD"
 msgstr "DVD دو لایه"
 
+msgid "DVB CI Delay"
+msgstr ""
+
 msgid "DVB drivers: "
 msgstr ""
 
@@ -2346,6 +2387,10 @@ msgstr "شفافیت سیاه زیرنویس DVB"
 
 msgid "DVB-C"
 msgstr "DVB-C"
+
+#, fuzzy
+msgid "DVB-C ANNEX B"
+msgstr "DVB-C ANNEX C"
 
 msgid "DVB-C ANNEX C"
 msgstr "DVB-C ANNEX C"
@@ -3088,6 +3133,10 @@ msgstr ""
 msgid "Enable volume control with arrow buttons"
 msgstr "انتخاب ورودی تصویر توسط کلید های بالا/پایین"
 
+#, fuzzy
+msgid "Enable wakeup timer"
+msgstr "زمان خواب"
+
 msgid "Enable zapping with CH+/-, B+/-, P+/-"
 msgstr ""
 
@@ -3459,6 +3508,10 @@ msgid "File appears to be busy.\n"
 msgstr ""
 
 #, fuzzy
+msgid "Filename"
+msgstr "تغییر نام"
+
+#, fuzzy
 msgid "Filesystem check"
 msgstr "بررسی سیستم فایل"
 
@@ -3580,6 +3633,14 @@ msgstr "فرانسوی"
 msgid "Frequency"
 msgstr "فرکانس"
 
+#, fuzzy
+msgid "Frequency & Channel"
+msgstr "باند های فرکانس"
+
+#, fuzzy
+msgid "Frequency & Polarization"
+msgstr "قطبش"
+
 msgid "Frequency bands"
 msgstr "باند های فرکانس"
 
@@ -3604,8 +3665,8 @@ msgstr "از :"
 msgid "Frontpanel"
 msgstr ""
 
-#, python-format
-msgid "Frontprocessor version: %d"
+#, fuzzy, python-format
+msgid "Frontprocessor version: %s"
 msgstr "نسخه پردازنده جلویی: %d"
 
 #, fuzzy
@@ -3796,10 +3857,10 @@ msgstr ""
 msgid "HD list"
 msgstr "لیست HD"
 
-msgid "HD1100/HD1200/et7x00/et8500"
+msgid "HD2400"
 msgstr ""
 
-msgid "HD2400"
+msgid "HD51/HD1100/HD1200/et7x00/et8500"
 msgstr ""
 
 msgid ""
@@ -3809,6 +3870,10 @@ msgstr ""
 
 msgid "HDMI"
 msgstr ""
+
+#, fuzzy
+msgid "HDMI Colorimetry"
+msgstr "فرمت رنگ"
 
 #, fuzzy
 msgid "HDMI Colorspace"
@@ -3893,10 +3958,6 @@ msgid "Hide zap errors"
 msgstr "مخفی کردن خطا های جابجایی"
 
 msgid "Hierarchy info"
-msgstr "اطلاعات سلسله مراتبی"
-
-#, fuzzy
-msgid "Hierarchy information"
 msgstr "اطلاعات سلسله مراتبی"
 
 #
@@ -4267,6 +4328,13 @@ msgstr ""
 msgid "Inversion"
 msgstr "وارونگی"
 
+#, fuzzy
+msgid "Inversion & Bandwidth"
+msgstr "پهنای باند"
+
+msgid "Inversion, Pilot & Roll-off"
+msgstr ""
+
 msgid "Invert"
 msgstr "معکوس کردن"
 
@@ -4417,6 +4485,10 @@ msgstr "آخرین به روز رسانی: "
 msgid "Latest Commits"
 msgstr ""
 
+#, python-format
+msgid "Latest available openMips %s build is from: %s"
+msgstr ""
+
 msgid "Latitude"
 msgstr "عرض جغرافیایی"
 
@@ -4550,10 +4622,6 @@ msgstr "محل"
 #
 msgid "Location for instant recordings"
 msgstr ""
-
-#, fuzzy
-msgid "Location:"
-msgstr "محل"
 
 msgid "Lock ratio"
 msgstr "نسبت قفل"
@@ -4943,9 +5011,6 @@ msgstr "چند رسانه ای"
 msgid "Multiple service support"
 msgstr "پشتیبانی از چند کانال"
 
-msgid "Multiplex"
-msgstr "مرکب"
-
 msgid "Multisat"
 msgstr "چندین ماهواره"
 
@@ -4978,8 +5043,8 @@ msgstr ""
 msgid "NFS setup"
 msgstr "تنظیمات"
 
-msgid "NIM"
-msgstr "NIM"
+msgid "NIM & Type"
+msgstr ""
 
 #, fuzzy
 msgid "NO"
@@ -5007,10 +5072,6 @@ msgstr "Nameserver"
 #, python-format
 msgid "Nameserver %d"
 msgstr "Nameserver %d"
-
-#, fuzzy
-msgid "Nameserver is off"
-msgstr "Nameserver"
 
 msgid "Nameserver settings"
 msgstr "Nameserver تنظیمات"
@@ -5290,6 +5351,9 @@ msgstr "خیر ، ولی از ابتدا راه اندازی شود"
 msgid "No, do nothing."
 msgstr "خیر ، کاری انجام نشود"
 
+msgid "No, except Wakeup timer"
+msgstr ""
+
 #, fuzzy
 msgid "No, just start my GigaBlue"
 msgstr "خیر ، ولی از ابتدا راه اندازی شود"
@@ -5352,6 +5416,9 @@ msgid "Not tested:"
 msgstr "تست شبکه:"
 
 msgid "Not-Associated"
+msgstr ""
+
+msgid "Note: when enabled, and you do want standby mode after wake up, set option 'Startup to Standby' as 'No, except Wakeup timer'."
 msgstr ""
 
 msgid "Nothing connected"
@@ -5569,8 +5636,8 @@ msgstr "PCR PID"
 msgid "PDC"
 msgstr ""
 
-msgid "PIDs"
-msgstr "PIDs"
+msgid "PGS file"
+msgstr ""
 
 #, fuzzy
 msgid "PIN code needed"
@@ -5695,8 +5762,9 @@ msgstr "تنظیمات تصویر در تصویر"
 msgid "Picon"
 msgstr ""
 
-msgid "Picon and service name"
-msgstr ""
+#, fuzzy
+msgid "Picon and servicename"
+msgstr "مکان یاب"
 
 #, fuzzy
 msgid "Picture in Picture Setup"
@@ -6118,6 +6186,14 @@ msgid "Prefer subtitles stored by service"
 msgstr "ترجیح دادن زیرنویس ذخیره شده توسط کانال"
 
 msgid "Preferred tuner"
+msgstr "تیونر ترجیحی"
+
+#, fuzzy
+msgid "Preferred tuner ATSC"
+msgstr "تیونر ترجیحی"
+
+#, fuzzy
+msgid "Preferred tuner ATSC for recordings"
 msgstr "تیونر ترجیحی"
 
 #, fuzzy
@@ -6838,8 +6914,8 @@ msgstr "روسی"
 msgid "S-Video"
 msgstr "S-Video"
 
-msgid "SID"
-msgstr "SID"
+msgid "SCPC optimized search range"
+msgstr ""
 
 #
 msgid "SINGLE LAYER DVD"
@@ -6852,6 +6928,12 @@ msgid "SNR:"
 msgstr "کیفیت سیگنال:"
 
 msgid "SPDIF"
+msgstr ""
+
+msgid "SRT file"
+msgstr ""
+
+msgid "SSA file"
 msgstr ""
 
 #
@@ -7317,8 +7399,12 @@ msgid "Service"
 msgstr "کانال"
 
 #, fuzzy
-msgid "Service Information"
-msgstr "اطلاعات"
+msgid "Service & PIDs"
+msgstr "کانال ها"
+
+#, fuzzy
+msgid "Service ID"
+msgstr "کانال"
 
 msgid "Service has been added to the favourites."
 msgstr "کانال به مورد علاقه اضافه شد"
@@ -7329,6 +7415,15 @@ msgstr "کانال به لیست انتخاب شده اضافه شد"
 #, fuzzy
 msgid "Service info"
 msgstr "اطلاعات کانال"
+
+msgid "Service info - service & PIDs"
+msgstr ""
+
+msgid "Service info - tuner live values"
+msgstr ""
+
+msgid "Service info - tuner setting values"
+msgstr ""
 
 msgid ""
 "Service invalid!\n"
@@ -7364,6 +7459,10 @@ msgid ""
 msgstr ""
 "کانال در دسترس نیست\n"
 "تنظیمات تیونر را بررسی کنید"
+
+#, fuzzy
+msgid "Servicename"
+msgstr "نام وسیله:"
 
 msgid "Services"
 msgstr "کانال ها"
@@ -7871,6 +7970,10 @@ msgstr ""
 msgid "Sleep timer"
 msgstr "زمان خواب"
 
+#, fuzzy
+msgid "Sleep/wakeup timer"
+msgstr "زمان خواب"
+
 msgid "SleepTimer Configuration"
 msgstr ""
 
@@ -8180,6 +8283,12 @@ msgstr ""
 msgid "Starting on"
 msgstr "شروع در"
 
+msgid "Startup the set top box in standby"
+msgstr ""
+
+msgid "Startup to Standby"
+msgstr ""
+
 msgid "Status:"
 msgstr ""
 
@@ -8477,6 +8586,10 @@ msgstr "انواع تیونر های قابل تعویض:"
 msgid "Symbol rate"
 msgstr "سیمبل ریت"
 
+#, fuzzy
+msgid "Symbol rate & FEC"
+msgstr "سیمبل ریت"
+
 msgid "Symbol rate:"
 msgstr ""
 
@@ -8494,6 +8607,10 @@ msgstr ""
 
 msgid "System"
 msgstr "سیستم"
+
+#, fuzzy
+msgid "System & Modulation"
+msgstr "زیر و بم"
 
 #. TRANSLATORS: Add here whatever should be shown in the "translator" about screen, up to 6 lines (use \n for newline)
 msgid "TRANSLATOR_INFO"
@@ -8832,6 +8949,9 @@ msgstr ""
 msgid "This option allows to set the level of dynamic contrast of the picture."
 msgstr ""
 
+msgid "This option allows you can config the Colorimetry for HDR"
+msgstr ""
+
 msgid "This option allows you enable smoothing filter to control the dithering process."
 msgstr ""
 
@@ -9077,6 +9197,9 @@ msgstr ""
 msgid "Toggle a cut mark at the current position"
 msgstr ""
 
+msgid "Toggle dashed flickering line for this service"
+msgstr ""
+
 msgid "Toggle infoBar"
 msgstr ""
 
@@ -9136,14 +9259,6 @@ msgstr ""
 msgid "Transponder"
 msgstr ""
 
-#, fuzzy
-msgid "Transponder Information"
-msgstr "فرستنده فعلی"
-
-#, fuzzy
-msgid "Transponder type"
-msgstr "فرستنده فعلی"
-
 msgid "Trash can"
 msgstr ""
 
@@ -9191,15 +9306,19 @@ msgstr "پیکربندی شبکه"
 msgid "Tuner is not supported"
 msgstr ""
 
+msgid "Tuner live values"
+msgstr ""
+
 #
 #, fuzzy
 msgid "Tuner not available."
 msgstr "به روز رسانی های در دسترس"
 
-msgid "Tuner slot"
-msgstr ""
+#, fuzzy
+msgid "Tuner setting values"
+msgstr "تنظیمات آداپتور"
 
-msgid "Tuner status"
+msgid "Tuner slot"
 msgstr ""
 
 #, python-format
@@ -9236,6 +9355,9 @@ msgid "Type"
 msgstr ""
 
 msgid "Type of scan"
+msgstr ""
+
+msgid "URL"
 msgstr ""
 
 msgid "URL of fallback remote receiver"
@@ -9513,6 +9635,9 @@ msgstr ""
 msgid "VMGM (intro trailer)"
 msgstr ""
 
+msgid "VOB file"
+msgstr ""
+
 msgid "VU+"
 msgstr ""
 
@@ -9581,13 +9706,7 @@ msgstr ""
 msgid "VideoMode"
 msgstr ""
 
-msgid "Videocodec"
-msgstr ""
-
-msgid "Videoformat"
-msgstr ""
-
-msgid "Videosize"
+msgid "Videocodec, size & format"
 msgstr ""
 
 msgid "View Rass interactive..."
@@ -9717,6 +9836,14 @@ msgstr ""
 msgid "Wakeup signal from TV"
 msgstr ""
 
+#, fuzzy
+msgid "Wakeup time"
+msgstr "زمان خواب"
+
+#, fuzzy
+msgid "Wakeup timer"
+msgstr "زمان خواب"
+
 msgid "Wakeup type"
 msgstr ""
 
@@ -9739,6 +9866,9 @@ msgstr "پخش فیلم های ضبط شده"
 #, fuzzy
 msgid "Watch recordings..."
 msgstr "شروع ضبط کردن؟"
+
+msgid "Weather GigaBlue Pax"
+msgstr ""
 
 msgid "Weather ID"
 msgstr ""
@@ -9805,12 +9935,6 @@ msgid "What do you want to scan?"
 msgstr ""
 
 msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are upgraded"
-msgstr ""
-
-msgid "When enabled the LNB power will not be switched off in standby"
-msgstr ""
-
-msgid "When enabled the LNB toneburst will be forced"
 msgstr ""
 
 msgid "When enabled the PiP can be closed by the exit button."
@@ -10127,6 +10251,14 @@ msgstr ""
 
 msgid "Yes, do another manual scan now"
 msgstr ""
+
+#, fuzzy
+msgid "Yes, only from deep standby"
+msgstr "فقط کانال های مجانی"
+
+#, fuzzy
+msgid "Yes, only from standby"
+msgstr "خاموشی موقت"
 
 msgid "Yes, perform a shutdown now."
 msgstr ""
@@ -10749,6 +10881,9 @@ msgstr ""
 msgid "education/science/factual topics (general)"
 msgstr ""
 
+msgid "embedded"
+msgstr ""
+
 msgid "empty"
 msgstr ""
 
@@ -11135,11 +11270,6 @@ msgstr ""
 
 msgid "normal"
 msgstr ""
-
-#
-#, fuzzy
-msgid "not avaible"
-msgstr "به روز رسانی های در دسترس"
 
 msgid "not configured"
 msgstr ""
@@ -11768,6 +11898,12 @@ msgstr ""
 #~ msgid "Changelog"
 #~ msgstr "تغییرات"
 
+#~ msgid "Coderate HP"
+#~ msgstr "Coderate HP"
+
+#~ msgid "Coderate LP"
+#~ msgstr "Coderate LP"
+
 #~ msgid "Committed DiSEqC command"
 #~ msgstr "فرمان سپرده شده DiSEqC"
 
@@ -11866,6 +12002,14 @@ msgstr ""
 #~ msgstr "boost سبز"
 
 #, fuzzy
+#~ msgid "Hierarchy information"
+#~ msgstr "اطلاعات سلسله مراتبی"
+
+#, fuzzy
+#~ msgid "Location:"
+#~ msgstr "محل"
+
+#, fuzzy
 #~ msgid "Mode 1"
 #~ msgstr "حالت"
 
@@ -11876,10 +12020,20 @@ msgstr ""
 #~ msgid "Move to other directory"
 #~ msgstr "انتقال به پوشه دیگر"
 
+#~ msgid "Multiplex"
+#~ msgstr "مرکب"
+
 #
 #, fuzzy
 #~ msgid "NFI image flashing"
 #~ msgstr "فلش کردن ایمیج NFI"
+
+#~ msgid "NIM"
+#~ msgstr "NIM"
+
+#, fuzzy
+#~ msgid "Nameserver is off"
+#~ msgstr "Nameserver"
 
 #~ msgid "New version:"
 #~ msgstr "نسخه جدید:"
@@ -11893,6 +12047,9 @@ msgstr ""
 
 #~ msgid "Output"
 #~ msgstr "خروجی"
+
+#~ msgid "PIDs"
+#~ msgstr "PIDs"
 
 #~ msgid "Parental control type"
 #~ msgstr "نوع کنترل والدین"
@@ -11926,6 +12083,9 @@ msgstr ""
 #~ msgid "Restore is running..."
 #~ msgstr "بازگردانی در حال اجرا است"
 
+#~ msgid "SID"
+#~ msgstr "SID"
+
 #~ msgid "Satellites"
 #~ msgstr "ماهواره ها"
 
@@ -11935,6 +12095,10 @@ msgstr ""
 
 #~ msgid "Select desired image from feed list"
 #~ msgstr "انتخاب ایمیج درخواستی از لیست"
+
+#, fuzzy
+#~ msgid "Service Information"
+#~ msgstr "اطلاعات"
 
 #, fuzzy
 #~ msgid "Service searching"
@@ -11987,8 +12151,21 @@ msgstr ""
 #~ msgstr "خروج از ویرایشگر"
 
 #, fuzzy
+#~ msgid "Transponder Information"
+#~ msgstr "فرستنده فعلی"
+
+#, fuzzy
+#~ msgid "Transponder type"
+#~ msgstr "فرستنده فعلی"
+
+#, fuzzy
 #~ msgid "Update channel list only"
 #~ msgstr "منوی لیست کانال"
+
+#
+#, fuzzy
+#~ msgid "not avaible"
+#~ msgstr "به روز رسانی های در دسترس"
 
 #, fuzzy
 #~ msgid "unknown error"
