@@ -1338,7 +1338,8 @@ class ChannelSelectionBase(Screen):
 				"9": self.keyNumberGlobal,
 				"0": self.keyNumber0
 			}, -2)
-		self.maintitle = _("Channel selection")
+		#self.maintitle = _("Channel selection")
+		self.maintitle = _(" ")
 		self.recallBouquetMode()
 
 	def getBouquetNumOffset(self, bouquet):
