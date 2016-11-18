@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-20 17:13+0200\n"
+"POT-Creation-Date: 2016-11-18 19:53+0100\n"
 "PO-Revision-Date: 2015-01-29 17:40+0200\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -184,6 +184,11 @@ msgstr "Bukiety"
 
 msgid " "
 msgstr ""
+
+#
+#, fuzzy
+msgid " (0 - all networks)"
+msgstr "Sieć lokalna"
 
 #
 #, fuzzy, python-format
@@ -423,9 +428,6 @@ msgstr ""
 
 #, python-format
 msgid "%s:%s"
-msgstr ""
-
-msgid "(DHCP is off)"
 msgstr ""
 
 #
@@ -711,6 +713,10 @@ msgstr ""
 "Nagrywanie rozpoczęło się:\n"
 "%s"
 
+#, fuzzy
+msgid "A recording is currently running on the selected tuner. Please select a different tuner or consider to stop the recording to try again."
+msgstr "Trwa nagrywanie. Zatrzymaj nagrywanie zanim rozpoczniesz skanowanie."
+
 #
 msgid ""
 "A recording is currently running.\n"
@@ -789,6 +795,18 @@ msgstr ""
 
 msgid "ASPECT key"
 msgstr ""
+
+#, fuzzy
+msgid "ASS file"
+msgstr "%d plik"
+
+msgid "ATSC"
+msgstr ""
+
+#
+#, fuzzy
+msgid "ATSC provider"
+msgstr "Dodaj nadawcę"
 
 #
 msgid "Abort"
@@ -1403,6 +1421,15 @@ msgstr "BER:"
 msgid "BLUDISC RECORDABLE"
 msgstr ""
 
+msgid "BT 2020 CL"
+msgstr ""
+
+msgid "BT 2020 NCL"
+msgstr ""
+
+msgid "BT 709"
+msgstr ""
+
 #
 msgid "Back"
 msgstr "Powrót"
@@ -1826,6 +1853,17 @@ msgstr "Kanał:"
 msgid "Channellist menu"
 msgstr "Menu listy kanałów"
 
+msgid "Channelnumber and picon"
+msgstr ""
+
+#, fuzzy
+msgid "Channelnumber and servicename"
+msgstr "Picon i nazwa"
+
+#, fuzzy
+msgid "Channelnumber, picon and servicename"
+msgstr "Picon i nazwa"
+
 #
 msgid "Chap."
 msgstr "Rozdz."
@@ -1974,19 +2012,14 @@ msgstr "Wyłączaj PiP klawiszem exit"
 msgid "Close title selection"
 msgstr "Zamknij wybór tytułu"
 
+msgid "Code R. LP-HP & Guard Int."
+msgstr ""
+
 msgid "Code rate HP"
 msgstr ""
 
 msgid "Code rate LP"
 msgstr ""
-
-#
-msgid "Coderate HP"
-msgstr "Coderate HP"
-
-#
-msgid "Coderate LP"
-msgstr "Coderate LP"
 
 #
 msgid "Collection name"
@@ -2419,6 +2452,9 @@ msgstr "Podłączone satelity"
 msgid "Connected to"
 msgstr "Podłączony do"
 
+msgid "Connected transcoding, limit - no PiP!"
+msgstr ""
+
 #
 #, fuzzy
 msgid "Consider CI assignment"
@@ -2428,7 +2464,8 @@ msgid "Console"
 msgstr ""
 
 #
-msgid "Constellation"
+#, fuzzy
+msgid "Constellation & FFT mode"
 msgstr "Konstelacja"
 
 #
@@ -2646,6 +2683,9 @@ msgstr ""
 msgid "DHCP"
 msgstr "DHCP"
 
+msgid "DHCP is off"
+msgstr ""
+
 #
 msgid "DMM advanced"
 msgstr "DMM zaawansowane"
@@ -2660,6 +2700,9 @@ msgstr ""
 msgid "DUAL LAYER DVD"
 msgstr "DUAL LAYER DVD"
 
+msgid "DVB CI Delay"
+msgstr ""
+
 msgid "DVB drivers: "
 msgstr ""
 
@@ -2668,6 +2711,9 @@ msgid "DVB subtitle black transparency"
 msgstr "Przezroczystość tła napisów DVB"
 
 msgid "DVB-C"
+msgstr ""
+
+msgid "DVB-C ANNEX B"
 msgstr ""
 
 msgid "DVB-C ANNEX C"
@@ -3539,6 +3585,11 @@ msgstr "Wywołanie listy kanałów klawiszem OK"
 msgid "Enable volume control with arrow buttons"
 msgstr "Regulacja głośności strzałkami L/P"
 
+#
+#, fuzzy
+msgid "Enable wakeup timer"
+msgstr "Wyłącznik czasowy"
+
 msgid "Enable zapping with CH+/-, B+/-, P+/-"
 msgstr "Włącz przełączanie kanałów przyciskami CH+/-, B+/-, P+/-"
 
@@ -3964,6 +4015,11 @@ msgid "File appears to be busy.\n"
 msgstr "Plik wydaje się zajęty.\n"
 
 #
+#, fuzzy
+msgid "Filename"
+msgstr "Nazwa pliku"
+
+#
 msgid "Filesystem check"
 msgstr "Sprawdzanie systemu plików"
 
@@ -4101,6 +4157,15 @@ msgstr "Francuski"
 msgid "Frequency"
 msgstr "Częstotliwość"
 
+#, fuzzy
+msgid "Frequency & Channel"
+msgstr "Użyj częstotliwości lub kanału"
+
+#
+#, fuzzy
+msgid "Frequency & Polarization"
+msgstr "Polaryzacja"
+
 #
 msgid "Frequency bands"
 msgstr "Pasma częstotliwości"
@@ -4131,8 +4196,8 @@ msgid "Frontpanel"
 msgstr ""
 
 #
-#, python-format
-msgid "Frontprocessor version: %d"
+#, fuzzy, python-format
+msgid "Frontprocessor version: %s"
 msgstr "Wersja frontprocesora: %d"
 
 #
@@ -4332,10 +4397,10 @@ msgstr ""
 msgid "HD list"
 msgstr "Lista HD"
 
-msgid "HD1100/HD1200/et7x00/et8500"
+msgid "HD2400"
 msgstr ""
 
-msgid "HD2400"
+msgid "HD51/HD1100/HD1200/et7x00/et8500"
 msgstr ""
 
 msgid ""
@@ -4345,6 +4410,11 @@ msgstr ""
 
 msgid "HDMI"
 msgstr ""
+
+#
+#, fuzzy
+msgid "HDMI Colorimetry"
+msgstr "Format koloru"
 
 #
 #, fuzzy
@@ -4444,10 +4514,6 @@ msgstr "Ukryj komunikaty błędów przy przełączaniu"
 #
 msgid "Hierarchy info"
 msgstr "Informacje o hierarchii"
-
-#
-msgid "Hierarchy information"
-msgstr "Informacja hierarchii"
 
 #
 msgid "High bitrate support"
@@ -4871,6 +4937,14 @@ msgstr "Błędne dane transpondera"
 msgid "Inversion"
 msgstr "Inwersja"
 
+#
+#, fuzzy
+msgid "Inversion & Bandwidth"
+msgstr "Pasmo"
+
+msgid "Inversion, Pilot & Roll-off"
+msgstr ""
+
 msgid "Invert"
 msgstr "Odwróć"
 
@@ -5026,6 +5100,10 @@ msgstr "Ostatnia aktualizacja:"
 msgid "Latest Commits"
 msgstr "Ostatnie commit'y"
 
+#, python-format
+msgid "Latest available openMips %s build is from: %s"
+msgstr ""
+
 #
 msgid "Latitude"
 msgstr "Szerokość geogr."
@@ -5176,11 +5254,6 @@ msgstr "Lokalizacja"
 #
 msgid "Location for instant recordings"
 msgstr "Lokalizacja dla 'natychmiastowych' nagrań"
-
-#
-#, fuzzy
-msgid "Location:"
-msgstr "Lokalizacja"
 
 msgid "Lock ratio"
 msgstr ""
@@ -5620,9 +5693,6 @@ msgstr ""
 msgid "Multiple service support"
 msgstr "Wsparcie wielokronego dekodowania"
 
-msgid "Multiplex"
-msgstr ""
-
 #
 msgid "Multisat"
 msgstr ""
@@ -5662,9 +5732,8 @@ msgstr ""
 msgid "NFS setup"
 msgstr "Ustawienia"
 
-#
-msgid "NIM"
-msgstr "Tuner"
+msgid "NIM & Type"
+msgstr ""
 
 #
 #, fuzzy
@@ -5699,11 +5768,6 @@ msgstr "Nameserver (DNS)"
 #, python-format
 msgid "Nameserver %d"
 msgstr "Nameserver %d"
-
-#
-#, fuzzy
-msgid "Nameserver is off"
-msgstr "Nameserver (DNS)"
 
 #
 msgid "Nameserver settings"
@@ -6026,6 +6090,9 @@ msgstr "Nie, ale odtwórz od początku"
 msgid "No, do nothing."
 msgstr "Nie, nie rób nic."
 
+msgid "No, except Wakeup timer"
+msgstr ""
+
 #, fuzzy
 msgid "No, just start my GigaBlue"
 msgstr "Nie, po prostu włącz odbiornik"
@@ -6098,6 +6165,9 @@ msgstr "Test sieci:"
 #, fuzzy
 msgid "Not-Associated"
 msgstr "Nie powiązane"
+
+msgid "Note: when enabled, and you do want standby mode after wake up, set option 'Startup to Standby' as 'No, except Wakeup timer'."
+msgstr ""
 
 #
 msgid "Nothing connected"
@@ -6353,9 +6423,9 @@ msgstr ""
 msgid "PDC"
 msgstr ""
 
-#
-msgid "PIDs"
-msgstr "PIDy"
+#, fuzzy
+msgid "PGS file"
+msgstr "%d plik"
 
 #
 msgid "PIN code needed"
@@ -6494,7 +6564,8 @@ msgstr "Ustawienia PiP"
 msgid "Picon"
 msgstr ""
 
-msgid "Picon and service name"
+#, fuzzy
+msgid "Picon and servicename"
 msgstr "Picon i nazwa"
 
 #
@@ -7008,6 +7079,16 @@ msgstr "Preferuj napisy zapamiętane dla kanału"
 #
 msgid "Preferred tuner"
 msgstr "Tuner preferowany"
+
+#
+#, fuzzy
+msgid "Preferred tuner ATSC"
+msgstr "Tuner preferowany"
+
+#
+#, fuzzy
+msgid "Preferred tuner ATSC for recordings"
+msgstr "Tuner preferowany dla nagrywania"
 
 #
 #, fuzzy
@@ -7867,7 +7948,7 @@ msgstr "Rosyjski"
 msgid "S-Video"
 msgstr ""
 
-msgid "SID"
+msgid "SCPC optimized search range"
 msgstr ""
 
 #
@@ -7884,6 +7965,14 @@ msgstr ""
 
 msgid "SPDIF"
 msgstr ""
+
+#, fuzzy
+msgid "SRT file"
+msgstr "%d plik"
+
+#, fuzzy
+msgid "SSA file"
+msgstr "%d plik"
 
 #
 msgid "SSID:"
@@ -8430,8 +8519,13 @@ msgstr "O serwisie..."
 
 #
 #, fuzzy
-msgid "Service Information"
-msgstr "Informacje"
+msgid "Service & PIDs"
+msgstr "Kanały"
+
+#
+#, fuzzy
+msgid "Service ID"
+msgstr "O serwisie..."
 
 #
 msgid "Service has been added to the favourites."
@@ -8444,6 +8538,15 @@ msgstr "Kanał został dodany do wybranego bukietu."
 #
 msgid "Service info"
 msgstr "O serwisie..."
+
+msgid "Service info - service & PIDs"
+msgstr ""
+
+msgid "Service info - tuner live values"
+msgstr ""
+
+msgid "Service info - tuner setting values"
+msgstr ""
 
 #
 msgid ""
@@ -8482,6 +8585,10 @@ msgid ""
 msgstr ""
 "Kanał niedostępny!\n"
 "Sprawdź konfigurację tunera!"
+
+#, fuzzy
+msgid "Servicename"
+msgstr "Nazwa kanału"
 
 #
 msgid "Services"
@@ -9046,6 +9153,11 @@ msgstr "Pomiń sprawdzenie połączenia internetowego (wyłącza automatyczną i
 msgid "Sleep timer"
 msgstr "Wyłącznik czasowy"
 
+#
+#, fuzzy
+msgid "Sleep/wakeup timer"
+msgstr "Wyłącznik czasowy"
+
 msgid "SleepTimer Configuration"
 msgstr "Ustawienia sleeptimer'a"
 
@@ -9387,6 +9499,13 @@ msgstr "Rozpocznij ekranem z listą"
 #
 msgid "Starting on"
 msgstr "Rozpocznij od"
+
+msgid "Startup the set top box in standby"
+msgstr "Po uruchomieniu odbiornika przejdź w tryb czuwania"
+
+#, fuzzy
+msgid "Startup to Standby"
+msgstr "Po uruchomieniu odbiornika przejdź w tryb czuwania"
 
 msgid "Status:"
 msgstr ""
@@ -9731,6 +9850,10 @@ msgstr "Wymienne typy tunerów:"
 msgid "Symbol rate"
 msgstr "Wartość SR"
 
+#, fuzzy
+msgid "Symbol rate & FEC"
+msgstr "Wartość SR"
+
 msgid "Symbol rate:"
 msgstr ""
 
@@ -9749,6 +9872,11 @@ msgstr ""
 #
 msgid "System"
 msgstr ""
+
+#
+#, fuzzy
+msgid "System & Modulation"
+msgstr "Modulacja"
 
 #
 #. TRANSLATORS: Add here whatever should be shown in the "translator" about screen, up to 6 lines (use \n for newline)
@@ -10131,6 +10259,9 @@ msgstr ""
 msgid "This option allows to set the level of dynamic contrast of the picture."
 msgstr ""
 
+msgid "This option allows you can config the Colorimetry for HDR"
+msgstr ""
+
 msgid "This option allows you enable smoothing filter to control the dithering process."
 msgstr ""
 
@@ -10434,6 +10565,9 @@ msgstr ""
 msgid "Toggle a cut mark at the current position"
 msgstr "Wstaw znacznik cięcia w aktualnej pozycji"
 
+msgid "Toggle dashed flickering line for this service"
+msgstr ""
+
 msgid "Toggle infoBar"
 msgstr ""
 
@@ -10504,15 +10638,6 @@ msgstr "Tryb transmisji"
 msgid "Transponder"
 msgstr ""
 
-#
-#, fuzzy
-msgid "Transponder Information"
-msgstr "Typ transpondera"
-
-#
-msgid "Transponder type"
-msgstr "Typ transpondera"
-
 msgid "Trash can"
 msgstr "Kosz"
 
@@ -10577,16 +10702,22 @@ msgstr "Tuner nieobsługiwany"
 
 #
 #, fuzzy
+msgid "Tuner live values"
+msgstr "Status tunera"
+
+#
+#, fuzzy
 msgid "Tuner not available."
 msgstr "Aktualizacje nie dostępne."
 
 #
-msgid "Tuner slot"
-msgstr "Slot tunera"
+#, fuzzy
+msgid "Tuner setting values"
+msgstr "Status tunera"
 
 #
-msgid "Tuner status"
-msgstr "Status tunera"
+msgid "Tuner slot"
+msgstr "Slot tunera"
 
 #
 #, python-format
@@ -10629,6 +10760,9 @@ msgstr "Typ"
 #
 msgid "Type of scan"
 msgstr "Typ skanowania"
+
+msgid "URL"
+msgstr ""
 
 msgid "URL of fallback remote receiver"
 msgstr ""
@@ -10954,6 +11088,10 @@ msgstr ""
 msgid "VMGM (intro trailer)"
 msgstr ""
 
+#, fuzzy
+msgid "VOB file"
+msgstr "%d plik"
+
 msgid "VU+"
 msgstr ""
 
@@ -11036,14 +11174,7 @@ msgstr ""
 msgid "VideoMode"
 msgstr ""
 
-#
-msgid "Videocodec"
-msgstr ""
-
-msgid "Videoformat"
-msgstr ""
-
-msgid "Videosize"
+msgid "Videocodec, size & format"
 msgstr ""
 
 msgid "View Rass interactive..."
@@ -11210,6 +11341,16 @@ msgid "Wakeup signal from TV"
 msgstr "Sygnał wybudzenia z TV"
 
 #
+#, fuzzy
+msgid "Wakeup time"
+msgstr "Typ wybudzania"
+
+#
+#, fuzzy
+msgid "Wakeup timer"
+msgstr "Typ wybudzania"
+
+#
 msgid "Wakeup type"
 msgstr "Typ wybudzania"
 
@@ -11233,6 +11374,9 @@ msgstr "Oglądaj filmy..."
 #
 msgid "Watch recordings..."
 msgstr "Oglądaj nagrania..."
+
+msgid "Weather GigaBlue Pax"
+msgstr ""
 
 msgid "Weather ID"
 msgstr ""
@@ -11329,14 +11473,6 @@ msgstr "Co chcesz skanować?"
 
 msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are upgraded"
 msgstr ""
-
-#, fuzzy
-msgid "When enabled the LNB power will not be switched off in standby"
-msgstr "Gdy włączone, opcja VCR scart będzie wyświetlana w menu głównym "
-
-#, fuzzy
-msgid "When enabled the LNB toneburst will be forced"
-msgstr "Gdy włączone, markery numeryczne będą ukryte "
 
 msgid "When enabled the PiP can be closed by the exit button."
 msgstr "Gdy włączone, PiP może być wyłączony klawiszem exit"
@@ -11684,6 +11820,16 @@ msgstr "Tak, rozpocznij automatyczne skanowanie"
 #
 msgid "Yes, do another manual scan now"
 msgstr "Tak, rozpocznij kolejne ręczne skanowanie"
+
+#
+#, fuzzy
+msgid "Yes, only from deep standby"
+msgstr "tyko z głębokiego czuwania"
+
+#
+#, fuzzy
+msgid "Yes, only from standby"
+msgstr "tylko ze stanu czuwania"
 
 #
 msgid "Yes, perform a shutdown now."
@@ -12423,6 +12569,9 @@ msgstr "Edytuj alternatywne kanały"
 msgid "education/science/factual topics (general)"
 msgstr "Edukacja/Nauka/Fakty"
 
+msgid "embedded"
+msgstr ""
+
 #
 msgid "empty"
 msgstr "Pusty"
@@ -12879,10 +13028,6 @@ msgstr "Brak"
 
 msgid "normal"
 msgstr "Zwykły"
-
-#, fuzzy
-msgid "not avaible"
-msgstr "Niedostępny"
 
 #
 msgid "not configured"
@@ -13605,6 +13750,14 @@ msgstr "Przełączony"
 #~ msgstr "Zmień PIN kanałów"
 
 #
+#~ msgid "Coderate HP"
+#~ msgstr "Coderate HP"
+
+#
+#~ msgid "Coderate LP"
+#~ msgstr "Coderate LP"
+
+#
 #~ msgid "Common Interface assignment"
 #~ msgstr "Zadania Modułu CI"
 
@@ -13704,12 +13857,21 @@ msgstr "Przełączony"
 #~ msgstr "Zielony"
 
 #
+#~ msgid "Hierarchy information"
+#~ msgstr "Informacja hierarchii"
+
+#
 #~ msgid "Immediate shutdown"
 #~ msgstr "Natychmiastowe wyłączenie"
 
 #
 #~ msgid "List EPG functions..."
 #~ msgstr "Lista rodzajów EPG..."
+
+#
+#, fuzzy
+#~ msgid "Location:"
+#~ msgstr "Lokalizacja"
 
 #
 #~ msgid "Loop through to"
@@ -13728,6 +13890,15 @@ msgstr "Przełączony"
 #
 #~ msgid "Move to other directory"
 #~ msgstr "Przenieś do innego folderu"
+
+#
+#~ msgid "NIM"
+#~ msgstr "Tuner"
+
+#
+#, fuzzy
+#~ msgid "Nameserver is off"
+#~ msgstr "Nameserver (DNS)"
 
 #
 #~ msgid "New PIN"
@@ -13771,6 +13942,10 @@ msgstr "Przełączony"
 
 #~ msgid "Output"
 #~ msgstr "Wyjście"
+
+#
+#~ msgid "PIDs"
+#~ msgstr "PIDy"
 
 #
 #~ msgid "Parental control type"
@@ -13824,6 +13999,11 @@ msgstr "Przełączony"
 #~ msgstr "Wybierz image z listy"
 
 #
+#, fuzzy
+#~ msgid "Service Information"
+#~ msgstr "Informacje"
+
+#
 #~ msgid "Service searching"
 #~ msgstr "Szukanie kanałów"
 
@@ -13865,9 +14045,6 @@ msgstr "Przełączony"
 #
 #~ msgid "Standby fan %d voltage"
 #~ msgstr "Wiatrak w standby %d napięcie"
-
-#~ msgid "Startup the set top box in standby"
-#~ msgstr "Po uruchomieniu odbiornika przejdź w tryb czuwania"
 
 #
 #~ msgid "Switch to HDMI in mode"
@@ -13918,6 +14095,15 @@ msgstr "Przełączony"
 #~ msgstr "Edytor timera"
 
 #
+#, fuzzy
+#~ msgid "Transponder Information"
+#~ msgstr "Typ transpondera"
+
+#
+#~ msgid "Transponder type"
+#~ msgstr "Typ transpondera"
+
+#
 #~ msgid "USB stick wizard"
 #~ msgstr "Kreator pena USB"
 
@@ -13937,6 +14123,14 @@ msgstr "Przełączony"
 #, fuzzy
 #~ msgid "Welcome…"
 #~ msgstr "Witaj..."
+
+#, fuzzy
+#~ msgid "When enabled the LNB power will not be switched off in standby"
+#~ msgstr "Gdy włączone, opcja VCR scart będzie wyświetlana w menu głównym "
+
+#, fuzzy
+#~ msgid "When enabled the LNB toneburst will be forced"
+#~ msgstr "Gdy włączone, markery numeryczne będą ukryte "
 
 #~ msgid "When enabled, error messages related to the Common Interface module will not be shown."
 #~ msgstr "Gdy włączone, komunikaty błędów związanych z modułem CI nie będą wyświetlane."
@@ -13988,6 +14182,10 @@ msgstr "Przełączony"
 #
 #~ msgid "fine-tune your display"
 #~ msgstr "Dostrajanie ustawień ekranu"
+
+#, fuzzy
+#~ msgid "not avaible"
+#~ msgstr "Niedostępny"
 
 #
 #~ msgid "open EPG..."

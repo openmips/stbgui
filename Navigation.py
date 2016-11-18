@@ -36,7 +36,6 @@ class Navigation:
 		self.currentlyPlayingServiceReference = None
 		self.currentlyPlayingServiceOrGroup = None
 		self.currentlyPlayingService = None
-		
 		self.RecordTimer = None
 		for p in plugins.getPlugins(PluginDescriptor.WHERE_RECORDTIMER):
 			self.RecordTimer = p()
@@ -48,6 +47,8 @@ class Navigation:
 		self.__wasTimerWakeup = False
 		self.__wasRecTimerWakeup = False
 		self.syncCount = 0
+		startup_to_standby = config.usage.startup_to_standby.value
+		wakeup_time_type = config.misc.prev_wakeup_time_type.value
 
 		wasTimerWakeup = getFPWasTimerWakeup()
 		if not wasTimerWakeup: #work-around for boxes where driver not sent was_timer_wakeup signal to e2
@@ -87,6 +88,17 @@ class Navigation:
 				self.standbytimer = eTimer()
 				self.standbytimer.callback.append(self.gotostandby)
 				self.standbytimer.start(15000, True)
+		if config.misc.RestartUI.value:
+			config.misc.RestartUI.value = False
+			config.misc.RestartUI.save()
+			configfile.save()
+		elif startup_to_standby == "yes" or self.__wasTimerWakeup and config.misc.prev_wakeup_time.value and ((wakeup_time_type == 0 or wakeup_time_type == 1) or ( wakeup_time_type == 3 and startup_to_standby == "except")):
+			if not Screens.Standby.inTryQuitMainloop:
+				Notifications.AddNotification(Screens.Standby.Standby)
+		if config.misc.prev_wakeup_time.value:
+			config.misc.prev_wakeup_time.value = 0
+			config.misc.prev_wakeup_time.save()
+			configfile.save()
 
 	def wasTimerWakeup(self):
 		return self.__wasTimerWakeup

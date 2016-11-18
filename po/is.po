@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-20 17:13+0200\n"
+"POT-Creation-Date: 2016-11-18 19:53+0100\n"
 "PO-Revision-Date: 2015-01-29 17:40+0200\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -167,6 +167,11 @@ msgstr ""
 
 msgid " "
 msgstr ""
+
+#
+#, fuzzy
+msgid " (0 - all networks)"
+msgstr "Nærnet"
 
 #, fuzzy, python-format
 msgid " (Channel %s)"
@@ -390,9 +395,6 @@ msgstr ""
 
 #, python-format
 msgid "%s:%s"
-msgstr ""
-
-msgid "(DHCP is off)"
 msgstr ""
 
 #
@@ -669,6 +671,11 @@ msgstr ""
 "%s"
 
 #
+#, fuzzy
+msgid "A recording is currently running on the selected tuner. Please select a different tuner or consider to stop the recording to try again."
+msgstr "Upptaka er í gangi núna. Stoppaðu upptökuna áður en að þú byrjar gervihnattaleit."
+
+#
 msgid ""
 "A recording is currently running.\n"
 "What do you want to do?"
@@ -739,6 +746,17 @@ msgstr ""
 
 msgid "ASPECT key"
 msgstr ""
+
+msgid "ASS file"
+msgstr ""
+
+msgid "ATSC"
+msgstr ""
+
+#
+#, fuzzy
+msgid "ATSC provider"
+msgstr "bæta við sendanda"
 
 #
 msgid "Abort"
@@ -1310,6 +1328,15 @@ msgstr "BER:"
 msgid "BLUDISC RECORDABLE"
 msgstr ""
 
+msgid "BT 2020 CL"
+msgstr ""
+
+msgid "BT 2020 NCL"
+msgstr ""
+
+msgid "BT 709"
+msgstr ""
+
 msgid "Back"
 msgstr "Til baka"
 
@@ -1687,6 +1714,16 @@ msgstr "Rás:"
 msgid "Channellist menu"
 msgstr "Valmynd rásalista"
 
+msgid "Channelnumber and picon"
+msgstr ""
+
+#, fuzzy
+msgid "Channelnumber and servicename"
+msgstr "Rás ekki á rásalista"
+
+msgid "Channelnumber, picon and servicename"
+msgstr ""
+
 msgid "Chap."
 msgstr "Kafli."
 
@@ -1816,17 +1853,14 @@ msgstr ""
 msgid "Close title selection"
 msgstr "Loka titils vali"
 
+msgid "Code R. LP-HP & Guard Int."
+msgstr ""
+
 msgid "Code rate HP"
 msgstr "Bitahraði HP"
 
 msgid "Code rate LP"
 msgstr "Bitahraði LP"
-
-msgid "Coderate HP"
-msgstr "Gagnahraði HP"
-
-msgid "Coderate LP"
-msgstr "Gagnahraði LP"
 
 msgid "Collection name"
 msgstr "Nafn safns"
@@ -2244,6 +2278,9 @@ msgstr ""
 msgid "Connected to"
 msgstr "Tengd við"
 
+msgid "Connected transcoding, limit - no PiP!"
+msgstr ""
+
 #, fuzzy
 msgid "Consider CI assignment"
 msgstr "CI stillingar"
@@ -2251,7 +2288,8 @@ msgstr "CI stillingar"
 msgid "Console"
 msgstr ""
 
-msgid "Constellation"
+#, fuzzy
+msgid "Constellation & FFT mode"
 msgstr "Constellation"
 
 #, fuzzy
@@ -2442,6 +2480,9 @@ msgstr ""
 msgid "DHCP"
 msgstr "DHCP"
 
+msgid "DHCP is off"
+msgstr ""
+
 #
 #, fuzzy
 msgid "DMM advanced"
@@ -2456,6 +2497,9 @@ msgstr ""
 msgid "DUAL LAYER DVD"
 msgstr "Tveggja laga DVD"
 
+msgid "DVB CI Delay"
+msgstr ""
+
 msgid "DVB drivers: "
 msgstr ""
 
@@ -2463,6 +2507,9 @@ msgid "DVB subtitle black transparency"
 msgstr ""
 
 msgid "DVB-C"
+msgstr ""
+
+msgid "DVB-C ANNEX B"
 msgstr ""
 
 msgid "DVB-C ANNEX C"
@@ -3300,6 +3347,11 @@ msgstr ""
 msgid "Enable volume control with arrow buttons"
 msgstr "Veldu mynd inngang með up/niður tökkum"
 
+#
+#, fuzzy
+msgid "Enable wakeup timer"
+msgstr "Tímastilling"
+
 msgid "Enable zapping with CH+/-, B+/-, P+/-"
 msgstr ""
 
@@ -3715,6 +3767,11 @@ msgstr "Eftirlætis listar"
 msgid "File appears to be busy.\n"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Filename"
+msgstr "skráarnafn"
+
 #, fuzzy
 msgid "Filesystem check"
 msgstr "Skráarkerfis athugun"
@@ -3851,6 +3908,16 @@ msgid "Frequency"
 msgstr "Tíðni"
 
 #
+#, fuzzy
+msgid "Frequency & Channel"
+msgstr "Tíðni bönd"
+
+#
+#, fuzzy
+msgid "Frequency & Polarization"
+msgstr "Pólun"
+
+#
 msgid "Frequency bands"
 msgstr "Tíðni bönd"
 
@@ -3880,8 +3947,8 @@ msgid "Frontpanel"
 msgstr ""
 
 #
-#, python-format
-msgid "Frontprocessor version: %d"
+#, fuzzy, python-format
+msgid "Frontprocessor version: %s"
 msgstr "Útgáfa framheila: %d"
 
 msgid "Full transparency"
@@ -4087,10 +4154,10 @@ msgstr ""
 msgid "HD list"
 msgstr ""
 
-msgid "HD1100/HD1200/et7x00/et8500"
+msgid "HD2400"
 msgstr ""
 
-msgid "HD2400"
+msgid "HD51/HD1100/HD1200/et7x00/et8500"
 msgstr ""
 
 msgid ""
@@ -4100,6 +4167,10 @@ msgstr ""
 
 msgid "HDMI"
 msgstr ""
+
+#, fuzzy
+msgid "HDMI Colorimetry"
+msgstr "Lita kerfi"
 
 #, fuzzy
 msgid "HDMI Colorspace"
@@ -4194,11 +4265,6 @@ msgstr ""
 
 msgid "Hierarchy info"
 msgstr "Hierarchy upplýsingar"
-
-#
-#, fuzzy
-msgid "Hierarchy information"
-msgstr "Stigskipta upplýsingar"
 
 #
 msgid "High bitrate support"
@@ -4611,6 +4677,13 @@ msgstr ""
 msgid "Inversion"
 msgstr "Umbreyting"
 
+#, fuzzy
+msgid "Inversion & Bandwidth"
+msgstr "Bandbreidd"
+
+msgid "Inversion, Pilot & Roll-off"
+msgstr ""
+
 #
 msgid "Invert"
 msgstr "Snúa við"
@@ -4779,6 +4852,10 @@ msgstr ""
 msgid "Latest Commits"
 msgstr ""
 
+#, python-format
+msgid "Latest available openMips %s build is from: %s"
+msgstr ""
+
 #
 msgid "Latitude"
 msgstr "Breiddargráða"
@@ -4931,11 +5008,6 @@ msgstr "Staðsetning"
 
 msgid "Location for instant recordings"
 msgstr "Staðsetning fyrir skyndi upptökur"
-
-#
-#, fuzzy
-msgid "Location:"
-msgstr "Staðsetning"
 
 msgid "Lock ratio"
 msgstr ""
@@ -5373,9 +5445,6 @@ msgstr "Margmiðlun"
 msgid "Multiple service support"
 msgstr "Styður margar rásir"
 
-msgid "Multiplex"
-msgstr "Margar rásir"
-
 #
 msgid "Multisat"
 msgstr "Margir gervihnettir"
@@ -5414,8 +5483,8 @@ msgstr ""
 msgid "NFS setup"
 msgstr "Uppsetning"
 
-msgid "NIM"
-msgstr "NIM"
+msgid "NIM & Type"
+msgstr ""
 
 #
 #, fuzzy
@@ -5450,11 +5519,6 @@ msgstr "Nafnaþjónn"
 #, python-format
 msgid "Nameserver %d"
 msgstr "Nafnaþjónn %d"
-
-#
-#, fuzzy
-msgid "Nameserver is off"
-msgstr "Nafnaþjónn"
 
 #
 msgid "Nameserver settings"
@@ -5778,6 +5842,9 @@ msgstr "Nei, en byrja frá byrjun"
 msgid "No, do nothing."
 msgstr "Nei, ekki gera neitt."
 
+msgid "No, except Wakeup timer"
+msgstr ""
+
 #
 #, fuzzy
 msgid "No, just start my GigaBlue"
@@ -5851,6 +5918,9 @@ msgstr "Prufa nettengingu:"
 #, fuzzy
 msgid "Not-Associated"
 msgstr "Ekki tengt"
+
+msgid "Note: when enabled, and you do want standby mode after wake up, set option 'Startup to Standby' as 'No, except Wakeup timer'."
+msgstr ""
 
 msgid "Nothing connected"
 msgstr ""
@@ -6086,9 +6156,8 @@ msgstr "PCR PID"
 msgid "PDC"
 msgstr ""
 
-#
-msgid "PIDs"
-msgstr "PIDs"
+msgid "PGS file"
+msgstr ""
 
 #
 #, fuzzy
@@ -6231,8 +6300,10 @@ msgstr "Uppsetning Mynd í Mynd"
 msgid "Picon"
 msgstr ""
 
-msgid "Picon and service name"
-msgstr ""
+#
+#, fuzzy
+msgid "Picon and servicename"
+msgstr "Mótorstýring"
 
 #
 #, fuzzy
@@ -6726,6 +6797,12 @@ msgid "Prefer subtitles stored by service"
 msgstr ""
 
 msgid "Preferred tuner"
+msgstr ""
+
+msgid "Preferred tuner ATSC"
+msgstr ""
+
+msgid "Preferred tuner ATSC for recordings"
 msgstr ""
 
 msgid "Preferred tuner DVB-C"
@@ -7552,8 +7629,8 @@ msgstr "Rússneska"
 msgid "S-Video"
 msgstr "S-Video"
 
-msgid "SID"
-msgstr "SID"
+msgid "SCPC optimized search range"
+msgstr ""
 
 msgid "SINGLE LAYER DVD"
 msgstr "SINGLE LAYER DVD"
@@ -7567,6 +7644,12 @@ msgid "SNR:"
 msgstr "SNR:"
 
 msgid "SPDIF"
+msgstr ""
+
+msgid "SRT file"
+msgstr ""
+
+msgid "SSA file"
 msgstr ""
 
 #
@@ -8111,8 +8194,13 @@ msgstr "Rás"
 
 #
 #, fuzzy
-msgid "Service Information"
-msgstr "Upplýsingar"
+msgid "Service & PIDs"
+msgstr "Rásir"
+
+#
+#, fuzzy
+msgid "Service ID"
+msgstr "Rás"
 
 msgid "Service has been added to the favourites."
 msgstr "Rás hefur verið bætt við eftirlætis lista."
@@ -8125,6 +8213,15 @@ msgstr "Rás hefur verið bætt við valinn rásavöndul."
 #, fuzzy
 msgid "Service info"
 msgstr "Upplýsingar"
+
+msgid "Service info - service & PIDs"
+msgstr ""
+
+msgid "Service info - tuner live values"
+msgstr ""
+
+msgid "Service info - tuner setting values"
+msgstr ""
 
 #
 msgid ""
@@ -8166,6 +8263,11 @@ msgid ""
 msgstr ""
 "Rás finnst ekki!\n"
 "Athugaðu stillingar móttakara!"
+
+#
+#, fuzzy
+msgid "Servicename"
+msgstr "Leita að rásum"
 
 #
 msgid "Services"
@@ -8731,6 +8833,11 @@ msgstr ""
 msgid "Sleep timer"
 msgstr "Tímastilling"
 
+#
+#, fuzzy
+msgid "Sleep/wakeup timer"
+msgstr "Tímastilling"
+
 msgid "SleepTimer Configuration"
 msgstr ""
 
@@ -9070,6 +9177,14 @@ msgstr ""
 #
 msgid "Starting on"
 msgstr "Byrja á"
+
+msgid "Startup the set top box in standby"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Startup to Standby"
+msgstr "fara í biðstöðu"
 
 msgid "Status:"
 msgstr ""
@@ -9419,6 +9534,10 @@ msgstr "Gerðir umskiptanlegra móttakara:"
 msgid "Symbol rate"
 msgstr "Bitahraði"
 
+#, fuzzy
+msgid "Symbol rate & FEC"
+msgstr "Bitahraði"
+
 msgid "Symbol rate:"
 msgstr ""
 
@@ -9437,6 +9556,11 @@ msgstr ""
 #
 msgid "System"
 msgstr "Kerfi"
+
+#
+#, fuzzy
+msgid "System & Modulation"
+msgstr "Mótun"
 
 #
 #. TRANSLATORS: Add here whatever should be shown in the "translator" about screen, up to 6 lines (use \n for newline)
@@ -9813,6 +9937,9 @@ msgstr ""
 msgid "This option allows to set the level of dynamic contrast of the picture."
 msgstr ""
 
+msgid "This option allows you can config the Colorimetry for HDR"
+msgstr ""
+
 msgid "This option allows you enable smoothing filter to control the dithering process."
 msgstr ""
 
@@ -10117,6 +10244,9 @@ msgstr ""
 msgid "Toggle a cut mark at the current position"
 msgstr "setja merki á núverandi stað"
 
+msgid "Toggle dashed flickering line for this service"
+msgstr ""
+
 msgid "Toggle infoBar"
 msgstr ""
 
@@ -10187,16 +10317,6 @@ msgstr "Sendi stilling"
 msgid "Transponder"
 msgstr "Sendir"
 
-#
-#, fuzzy
-msgid "Transponder Information"
-msgstr "Gerð sendis"
-
-#
-#, fuzzy
-msgid "Transponder type"
-msgstr "Gerð sendis"
-
 msgid "Trash can"
 msgstr ""
 
@@ -10260,18 +10380,24 @@ msgstr "Stilling móttakara"
 msgid "Tuner is not supported"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Tuner live values"
+msgstr "Móttakari"
+
 #, fuzzy
 msgid "Tuner not available."
 msgstr "Uppfærslur á fæðirásum ekki tiltækar."
 
 #
 #, fuzzy
-msgid "Tuner slot"
-msgstr "Móttakara tengi"
+msgid "Tuner setting values"
+msgstr "Móttakari"
 
 #
-msgid "Tuner status"
-msgstr "Móttakari"
+#, fuzzy
+msgid "Tuner slot"
+msgstr "Móttakara tengi"
 
 #
 #, fuzzy, python-format
@@ -10313,6 +10439,9 @@ msgstr "Gerð"
 #
 msgid "Type of scan"
 msgstr "Gerð leitunar"
+
+msgid "URL"
+msgstr ""
 
 msgid "URL of fallback remote receiver"
 msgstr ""
@@ -10632,6 +10761,9 @@ msgstr "Vídeó scart"
 msgid "VMGM (intro trailer)"
 msgstr "VMGM (mynd sýnishorn)"
 
+msgid "VOB file"
+msgstr ""
+
 msgid "VU+"
 msgstr ""
 
@@ -10717,13 +10849,7 @@ msgstr ""
 msgid "VideoMode"
 msgstr ""
 
-msgid "Videocodec"
-msgstr ""
-
-msgid "Videoformat"
-msgstr ""
-
-msgid "Videosize"
+msgid "Videocodec, size & format"
 msgstr ""
 
 #
@@ -10890,6 +11016,16 @@ msgstr ""
 msgid "Wakeup signal from TV"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Wakeup time"
+msgstr "Tímastilling"
+
+#
+#, fuzzy
+msgid "Wakeup timer"
+msgstr "Tímastilling"
+
 msgid "Wakeup type"
 msgstr ""
 
@@ -10913,6 +11049,9 @@ msgstr "Spila uppteknar bíómyndir..."
 #, fuzzy
 msgid "Watch recordings..."
 msgstr "tek upp...."
+
+msgid "Weather GigaBlue Pax"
+msgstr ""
 
 msgid "Weather ID"
 msgstr ""
@@ -10999,12 +11138,6 @@ msgid "What do you want to scan?"
 msgstr "Að hverju viltu leita?"
 
 msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are upgraded"
-msgstr ""
-
-msgid "When enabled the LNB power will not be switched off in standby"
-msgstr ""
-
-msgid "When enabled the LNB toneburst will be forced"
 msgstr ""
 
 msgid "When enabled the PiP can be closed by the exit button."
@@ -11342,6 +11475,16 @@ msgstr "Já, leita sjálfvirkt núna"
 #
 msgid "Yes, do another manual scan now"
 msgstr "Já, leitaðu aftur handvirkt núna"
+
+#
+#, fuzzy
+msgid "Yes, only from deep standby"
+msgstr "fara í djúpsvefn"
+
+#
+#, fuzzy
+msgid "Yes, only from standby"
+msgstr "fara í biðstöðu"
 
 #
 msgid "Yes, perform a shutdown now."
@@ -12046,6 +12189,9 @@ msgstr "breyta valkosti"
 msgid "education/science/factual topics (general)"
 msgstr ""
 
+msgid "embedded"
+msgstr ""
+
 #
 msgid "empty"
 msgstr "tómt"
@@ -12500,11 +12646,6 @@ msgstr "engin"
 
 msgid "normal"
 msgstr ""
-
-#
-#, fuzzy
-msgid "not avaible"
-msgstr "ekki tiltækt"
 
 msgid "not configured"
 msgstr "ekki stillt"
@@ -13226,6 +13367,12 @@ msgstr "stokkið"
 #~ msgid "Changelog"
 #~ msgstr "Breytingaskrá"
 
+#~ msgid "Coderate HP"
+#~ msgstr "Gagnahraði HP"
+
+#~ msgid "Coderate LP"
+#~ msgstr "Gagnahraði LP"
+
 #~ msgid "Committed DiSEqC command"
 #~ msgstr "Fyrsta DiSEqC rofa stýring"
 
@@ -13324,12 +13471,22 @@ msgstr "stokkið"
 
 #
 #, fuzzy
+#~ msgid "Hierarchy information"
+#~ msgstr "Stigskipta upplýsingar"
+
+#
+#, fuzzy
 #~ msgid "Immediate shutdown"
 #~ msgstr "slökkva strax"
 
 #, fuzzy
 #~ msgid "List EPG functions..."
 #~ msgstr "listi EPG skoðunar..."
+
+#
+#, fuzzy
+#~ msgid "Location:"
+#~ msgstr "Staðsetning"
 
 #
 #, fuzzy
@@ -13341,6 +13498,9 @@ msgstr "stokkið"
 #~ msgid "Mode 2"
 #~ msgstr "Hamur"
 
+#~ msgid "Multiplex"
+#~ msgstr "Margar rásir"
+
 #, fuzzy
 #~ msgid "NFI image flashing"
 #~ msgstr "NFI stýrikerfis forritun"
@@ -13348,6 +13508,14 @@ msgstr "stokkið"
 #
 #~ msgid "NFI image flashing completed. Press Yellow to Reboot!"
 #~ msgstr "NFI forritun er lokið. Ýttu á gulan til að endurræsa!"
+
+#~ msgid "NIM"
+#~ msgstr "NIM"
+
+#
+#, fuzzy
+#~ msgid "Nameserver is off"
+#~ msgstr "Nafnaþjónn"
 
 #~ msgid "New PIN"
 #~ msgstr "Nýtt PIN númer"
@@ -13382,6 +13550,10 @@ msgstr "stokkið"
 #, fuzzy
 #~ msgid "OSD position setup"
 #~ msgstr "Uppsetning mótors"
+
+#
+#~ msgid "PIDs"
+#~ msgstr "PIDs"
 
 #
 #~ msgid "Parental control type"
@@ -13423,6 +13595,9 @@ msgstr "stokkið"
 #~ msgid "Restore is running..."
 #~ msgstr "Set inn afrit..."
 
+#~ msgid "SID"
+#~ msgstr "SID"
+
 #
 #~ msgid "Satellites"
 #~ msgstr "Gervihnettir"
@@ -13433,6 +13608,11 @@ msgstr "stokkið"
 
 #~ msgid "Select desired image from feed list"
 #~ msgstr "Veldu stýrikerfi af listanum"
+
+#
+#, fuzzy
+#~ msgid "Service Information"
+#~ msgstr "Upplýsingar"
 
 #
 #, fuzzy
@@ -13513,6 +13693,16 @@ msgstr "stokkið"
 #~ msgstr "Breyta Tímastillingum"
 
 #
+#, fuzzy
+#~ msgid "Transponder Information"
+#~ msgstr "Gerð sendis"
+
+#
+#, fuzzy
+#~ msgid "Transponder type"
+#~ msgstr "Gerð sendis"
+
+#
 #~ msgid "USB stick wizard"
 #~ msgstr "USB stauta stjóri"
 
@@ -13584,6 +13774,11 @@ msgstr "stokkið"
 #
 #~ msgid "fine-tune your display"
 #~ msgstr "fínstilla sjónvarpið"
+
+#
+#, fuzzy
+#~ msgid "not avaible"
+#~ msgstr "ekki tiltækt"
 
 #
 #~ msgid "select movie"

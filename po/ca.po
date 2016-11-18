@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-20 17:13+0200\n"
+"POT-Creation-Date: 2016-11-18 19:53+0100\n"
 "PO-Revision-Date: 2015-01-29 17:40+0200\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -148,6 +148,9 @@ msgid ""
 msgstr ""
 
 msgid " "
+msgstr ""
+
+msgid " (0 - all networks)"
 msgstr ""
 
 #
@@ -369,9 +372,6 @@ msgstr ""
 
 #, python-format
 msgid "%s:%s"
-msgstr ""
-
-msgid "(DHCP is off)"
 msgstr ""
 
 #
@@ -653,6 +653,11 @@ msgstr ""
 "%s"
 
 #
+#, fuzzy
+msgid "A recording is currently running on the selected tuner. Please select a different tuner or consider to stop the recording to try again."
+msgstr "En aquests moments s'està realitzant una gravació. Sisplau, atura-la abans de posar en marxa el satfinder."
+
+#
 msgid ""
 "A recording is currently running.\n"
 "What do you want to do?"
@@ -723,6 +728,17 @@ msgstr ""
 
 msgid "ASPECT key"
 msgstr ""
+
+msgid "ASS file"
+msgstr ""
+
+msgid "ATSC"
+msgstr ""
+
+#
+#, fuzzy
+msgid "ATSC provider"
+msgstr "Proveïdor"
 
 #
 msgid "Abort"
@@ -1313,6 +1329,15 @@ msgstr "BER:"
 msgid "BLUDISC RECORDABLE"
 msgstr ""
 
+msgid "BT 2020 CL"
+msgstr ""
+
+msgid "BT 2020 NCL"
+msgstr ""
+
+msgid "BT 709"
+msgstr ""
+
 #
 msgid "Back"
 msgstr ""
@@ -1725,6 +1750,15 @@ msgstr "Canal:"
 msgid "Channellist menu"
 msgstr "Menú de llista de canals"
 
+msgid "Channelnumber and picon"
+msgstr ""
+
+msgid "Channelnumber and servicename"
+msgstr ""
+
+msgid "Channelnumber, picon and servicename"
+msgstr ""
+
 #
 msgid "Chap."
 msgstr ""
@@ -1863,19 +1897,14 @@ msgstr ""
 msgid "Close title selection"
 msgstr ""
 
+msgid "Code R. LP-HP & Guard Int."
+msgstr ""
+
 msgid "Code rate HP"
 msgstr ""
 
 msgid "Code rate LP"
 msgstr ""
-
-#
-msgid "Coderate HP"
-msgstr "Velocitat de codi HP"
-
-#
-msgid "Coderate LP"
-msgstr "Velocitat de codi LP"
 
 #
 msgid "Collection name"
@@ -2295,6 +2324,9 @@ msgstr ""
 msgid "Connected to"
 msgstr ""
 
+msgid "Connected transcoding, limit - no PiP!"
+msgstr ""
+
 #
 #, fuzzy
 msgid "Consider CI assignment"
@@ -2304,7 +2336,8 @@ msgid "Console"
 msgstr ""
 
 #
-msgid "Constellation"
+#, fuzzy
+msgid "Constellation & FFT mode"
 msgstr "Constel·lació"
 
 #
@@ -2506,6 +2539,9 @@ msgstr ""
 msgid "DHCP"
 msgstr ""
 
+msgid "DHCP is off"
+msgstr ""
+
 #
 #, fuzzy
 msgid "DMM advanced"
@@ -2521,6 +2557,9 @@ msgstr ""
 msgid "DUAL LAYER DVD"
 msgstr ""
 
+msgid "DVB CI Delay"
+msgstr ""
+
 msgid "DVB drivers: "
 msgstr ""
 
@@ -2528,6 +2567,9 @@ msgid "DVB subtitle black transparency"
 msgstr ""
 
 msgid "DVB-C"
+msgstr ""
+
+msgid "DVB-C ANNEX B"
 msgstr ""
 
 msgid "DVB-C ANNEX C"
@@ -3364,6 +3406,11 @@ msgstr ""
 msgid "Enable volume control with arrow buttons"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Enable wakeup timer"
+msgstr "Programació d'apagada"
+
 msgid "Enable zapping with CH+/-, B+/-, P+/-"
 msgstr ""
 
@@ -3779,6 +3826,11 @@ msgstr "Preferits"
 msgid "File appears to be busy.\n"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Filename"
+msgstr "Recerca de canal"
+
 msgid "Filesystem check"
 msgstr ""
 
@@ -3909,6 +3961,16 @@ msgid "Frequency"
 msgstr "Freqüència"
 
 #
+#, fuzzy
+msgid "Frequency & Channel"
+msgstr "Bandes de freqüència"
+
+#
+#, fuzzy
+msgid "Frequency & Polarization"
+msgstr "Polarització"
+
+#
 msgid "Frequency bands"
 msgstr "Bandes de freqüència"
 
@@ -3939,8 +4001,8 @@ msgid "Frontpanel"
 msgstr ""
 
 #
-#, python-format
-msgid "Frontprocessor version: %d"
+#, fuzzy, python-format
+msgid "Frontprocessor version: %s"
 msgstr "Versió processador: %d"
 
 msgid "Full transparency"
@@ -4142,10 +4204,10 @@ msgstr ""
 msgid "HD list"
 msgstr ""
 
-msgid "HD1100/HD1200/et7x00/et8500"
+msgid "HD2400"
 msgstr ""
 
-msgid "HD2400"
+msgid "HD51/HD1100/HD1200/et7x00/et8500"
 msgstr ""
 
 msgid ""
@@ -4155,6 +4217,11 @@ msgstr ""
 
 msgid "HDMI"
 msgstr ""
+
+#
+#, fuzzy
+msgid "HDMI Colorimetry"
+msgstr "Format de color"
 
 #
 #, fuzzy
@@ -4250,11 +4317,6 @@ msgstr ""
 
 msgid "Hierarchy info"
 msgstr ""
-
-#
-#, fuzzy
-msgid "Hierarchy information"
-msgstr "Informació jeràrquica"
 
 #
 msgid "High bitrate support"
@@ -4658,6 +4720,14 @@ msgstr ""
 msgid "Inversion"
 msgstr "Inversió"
 
+#
+#, fuzzy
+msgid "Inversion & Bandwidth"
+msgstr "Ample de banda"
+
+msgid "Inversion, Pilot & Roll-off"
+msgstr ""
+
 msgid "Invert"
 msgstr ""
 
@@ -4814,6 +4884,10 @@ msgstr ""
 msgid "Latest Commits"
 msgstr ""
 
+#, python-format
+msgid "Latest available openMips %s build is from: %s"
+msgstr ""
+
 #
 msgid "Latitude"
 msgstr "Latitud"
@@ -4958,11 +5032,6 @@ msgstr ""
 #
 msgid "Location for instant recordings"
 msgstr ""
-
-#
-#, fuzzy
-msgid "Location:"
-msgstr "Selecció EPG"
 
 msgid "Lock ratio"
 msgstr ""
@@ -5395,9 +5464,6 @@ msgstr ""
 msgid "Multiple service support"
 msgstr "Suport per a serveis múltiples"
 
-msgid "Multiplex"
-msgstr ""
-
 #
 msgid "Multisat"
 msgstr "Multisat"
@@ -5436,7 +5502,7 @@ msgstr ""
 msgid "NFS setup"
 msgstr "Configuració"
 
-msgid "NIM"
+msgid "NIM & Type"
 msgstr ""
 
 #
@@ -5472,11 +5538,6 @@ msgstr "Servidor de noms"
 #, python-format
 msgid "Nameserver %d"
 msgstr "Servidor de noms %d"
-
-#
-#, fuzzy
-msgid "Nameserver is off"
-msgstr "Servidor de noms"
 
 #
 msgid "Nameserver settings"
@@ -5792,6 +5853,9 @@ msgstr ""
 msgid "No, do nothing."
 msgstr "No, no cal."
 
+msgid "No, except Wakeup timer"
+msgstr ""
+
 msgid "No, just start my GigaBlue"
 msgstr ""
 
@@ -5860,6 +5924,9 @@ msgid "Not tested:"
 msgstr "Definit per l'usuari"
 
 msgid "Not-Associated"
+msgstr ""
+
+msgid "Note: when enabled, and you do want standby mode after wake up, set option 'Startup to Standby' as 'No, except Wakeup timer'."
 msgstr ""
 
 msgid "Nothing connected"
@@ -6099,10 +6166,8 @@ msgstr ""
 msgid "PDC"
 msgstr ""
 
-#
-#, fuzzy
-msgid "PIDs"
-msgstr "PIDs"
+msgid "PGS file"
+msgstr ""
 
 #
 #, fuzzy
@@ -6239,8 +6304,10 @@ msgstr "Configuració PiP"
 msgid "Picon"
 msgstr ""
 
-msgid "Picon and service name"
-msgstr ""
+#
+#, fuzzy
+msgid "Picon and servicename"
+msgstr "Motor"
 
 #
 #, fuzzy
@@ -6733,6 +6800,12 @@ msgid "Prefer subtitles stored by service"
 msgstr ""
 
 msgid "Preferred tuner"
+msgstr ""
+
+msgid "Preferred tuner ATSC"
+msgstr ""
+
+msgid "Preferred tuner ATSC for recordings"
 msgstr ""
 
 msgid "Preferred tuner DVB-C"
@@ -7546,7 +7619,7 @@ msgstr "Rus"
 msgid "S-Video"
 msgstr "S-Vídeo"
 
-msgid "SID"
+msgid "SCPC optimized search range"
 msgstr ""
 
 #
@@ -7562,6 +7635,12 @@ msgid "SNR:"
 msgstr ""
 
 msgid "SPDIF"
+msgstr ""
+
+msgid "SRT file"
+msgstr ""
+
+msgid "SSA file"
 msgstr ""
 
 #
@@ -8106,8 +8185,13 @@ msgstr "Canal"
 
 #
 #, fuzzy
-msgid "Service Information"
-msgstr "Informació"
+msgid "Service & PIDs"
+msgstr "Canals"
+
+#
+#, fuzzy
+msgid "Service ID"
+msgstr "Canal"
 
 #
 msgid "Service has been added to the favourites."
@@ -8121,6 +8205,15 @@ msgstr "S'ha afegit el canal a la llista seleccionada."
 #, fuzzy
 msgid "Service info"
 msgstr "Info del canal"
+
+msgid "Service info - service & PIDs"
+msgstr ""
+
+msgid "Service info - tuner live values"
+msgstr ""
+
+msgid "Service info - tuner setting values"
+msgstr ""
 
 #
 #, fuzzy
@@ -8162,6 +8255,11 @@ msgid ""
 "Service unavailable!\n"
 "Check tuner configuration!"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Servicename"
+msgstr "Recerca de canal"
 
 #
 msgid "Services"
@@ -8703,6 +8801,11 @@ msgstr ""
 msgid "Sleep timer"
 msgstr "Programació d'apagada"
 
+#
+#, fuzzy
+msgid "Sleep/wakeup timer"
+msgstr "Programació d'apagada"
+
 msgid "SleepTimer Configuration"
 msgstr ""
 
@@ -9034,6 +9137,14 @@ msgstr ""
 #
 msgid "Starting on"
 msgstr "Començar el"
+
+msgid "Startup the set top box in standby"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Startup to Standby"
+msgstr "posar en repòs"
 
 msgid "Status:"
 msgstr ""
@@ -9380,6 +9491,9 @@ msgstr ""
 msgid "Symbol rate"
 msgstr ""
 
+msgid "Symbol rate & FEC"
+msgstr ""
+
 msgid "Symbol rate:"
 msgstr ""
 
@@ -9398,6 +9512,11 @@ msgstr ""
 #
 msgid "System"
 msgstr "Sistema"
+
+#
+#, fuzzy
+msgid "System & Modulation"
+msgstr "Modulació"
 
 #
 #. TRANSLATORS: Add here whatever should be shown in the "translator" about screen, up to 6 lines (use \n for newline)
@@ -9728,6 +9847,9 @@ msgstr ""
 msgid "This option allows to set the level of dynamic contrast of the picture."
 msgstr ""
 
+msgid "This option allows you can config the Colorimetry for HDR"
+msgstr ""
+
 msgid "This option allows you enable smoothing filter to control the dithering process."
 msgstr ""
 
@@ -10007,6 +10129,9 @@ msgstr ""
 msgid "Toggle a cut mark at the current position"
 msgstr "posar una marca de tall en l'actual posició"
 
+msgid "Toggle dashed flickering line for this service"
+msgstr ""
+
 msgid "Toggle infoBar"
 msgstr ""
 
@@ -10078,16 +10203,6 @@ msgstr "Mode transmissió"
 msgid "Transponder"
 msgstr "Transponedor"
 
-#
-#, fuzzy
-msgid "Transponder Information"
-msgstr "Tipus Transponedor"
-
-#
-#, fuzzy
-msgid "Transponder type"
-msgstr "Tipus Transponedor"
-
 msgid "Trash can"
 msgstr ""
 
@@ -10152,17 +10267,23 @@ msgstr ""
 
 #
 #, fuzzy
+msgid "Tuner live values"
+msgstr "Estat del sintonitzador"
+
+#
+#, fuzzy
 msgid "Tuner not available."
 msgstr "Alguns plugins no estan disponibles:\n"
 
 #
 #, fuzzy
-msgid "Tuner slot"
-msgstr "Slot del sintonitzador"
+msgid "Tuner setting values"
+msgstr "Estat del sintonitzador"
 
 #
-msgid "Tuner status"
-msgstr "Estat del sintonitzador"
+#, fuzzy
+msgid "Tuner slot"
+msgstr "Slot del sintonitzador"
 
 #
 #, fuzzy, python-format
@@ -10205,6 +10326,9 @@ msgstr ""
 #
 msgid "Type of scan"
 msgstr "Tipus de recerca"
+
+msgid "URL"
+msgstr ""
 
 msgid "URL of fallback remote receiver"
 msgstr ""
@@ -10521,6 +10645,9 @@ msgstr "Euroconnector VCR"
 msgid "VMGM (intro trailer)"
 msgstr ""
 
+msgid "VOB file"
+msgstr ""
+
 msgid "VU+"
 msgstr ""
 
@@ -10599,13 +10726,7 @@ msgstr ""
 msgid "VideoMode"
 msgstr ""
 
-msgid "Videocodec"
-msgstr ""
-
-msgid "Videoformat"
-msgstr ""
-
-msgid "Videosize"
+msgid "Videocodec, size & format"
 msgstr ""
 
 #
@@ -10766,6 +10887,16 @@ msgstr ""
 msgid "Wakeup signal from TV"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Wakeup time"
+msgstr "Programació d'apagada"
+
+#
+#, fuzzy
+msgid "Wakeup timer"
+msgstr "Programació d'apagada"
+
 msgid "Wakeup type"
 msgstr ""
 
@@ -10790,6 +10921,9 @@ msgstr "Reproduir pel·lícules gravades..."
 #, fuzzy
 msgid "Watch recordings..."
 msgstr "gravant..."
+
+msgid "Weather GigaBlue Pax"
+msgstr ""
 
 msgid "Weather ID"
 msgstr ""
@@ -10862,12 +10996,6 @@ msgid "What do you want to scan?"
 msgstr "Què vols buscar?"
 
 msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are upgraded"
-msgstr ""
-
-msgid "When enabled the LNB power will not be switched off in standby"
-msgstr ""
-
-msgid "When enabled the LNB toneburst will be forced"
 msgstr ""
 
 msgid "When enabled the PiP can be closed by the exit button."
@@ -11197,6 +11325,16 @@ msgstr "Si, fes una recerca automàtica ara"
 #
 msgid "Yes, do another manual scan now"
 msgstr "Si, fer una altra recerca manual ara"
+
+#
+#, fuzzy
+msgid "Yes, only from deep standby"
+msgstr "aturar completament"
+
+#
+#, fuzzy
+msgid "Yes, only from standby"
+msgstr "posar en repòs"
 
 #
 msgid "Yes, perform a shutdown now."
@@ -11893,6 +12031,9 @@ msgstr "editar alternatives"
 msgid "education/science/factual topics (general)"
 msgstr ""
 
+msgid "embedded"
+msgstr ""
+
 #
 msgid "empty"
 msgstr "buit"
@@ -12339,11 +12480,6 @@ msgstr "cap"
 
 msgid "normal"
 msgstr ""
-
-#
-#, fuzzy
-msgid "not avaible"
-msgstr "Alguns plugins no estan disponibles:\n"
 
 #
 msgid "not configured"
@@ -13043,6 +13179,14 @@ msgstr "zappejat"
 #~ msgstr "Canviar codi pin"
 
 #
+#~ msgid "Coderate HP"
+#~ msgstr "Velocitat de codi HP"
+
+#
+#~ msgid "Coderate LP"
+#~ msgstr "Velocitat de codi LP"
+
+#
 #~ msgid "Committed DiSEqC command"
 #~ msgstr "Comanda DISEqC enviada"
 
@@ -13098,8 +13242,18 @@ msgstr "zappejat"
 
 #
 #, fuzzy
+#~ msgid "Hierarchy information"
+#~ msgstr "Informació jeràrquica"
+
+#
+#, fuzzy
 #~ msgid "Immediate shutdown"
 #~ msgstr "apagar"
+
+#
+#, fuzzy
+#~ msgid "Location:"
+#~ msgstr "Selecció EPG"
 
 #
 #, fuzzy
@@ -13110,6 +13264,11 @@ msgstr "zappejat"
 #, fuzzy
 #~ msgid "Mode 2"
 #~ msgstr "Mode"
+
+#
+#, fuzzy
+#~ msgid "Nameserver is off"
+#~ msgstr "Servidor de noms"
 
 #
 #~ msgid "New version:"
@@ -13141,6 +13300,11 @@ msgstr "zappejat"
 #~ msgstr "Configuració del motor"
 
 #
+#, fuzzy
+#~ msgid "PIDs"
+#~ msgstr "PIDs"
+
+#
 #~ msgid "Parental control type"
 #~ msgstr "Tipus de control parental"
 
@@ -13157,6 +13321,11 @@ msgstr "zappejat"
 #
 #~ msgid "Satellites"
 #~ msgstr "Satèl·lits"
+
+#
+#, fuzzy
+#~ msgid "Service Information"
+#~ msgstr "Informació"
 
 #
 #, fuzzy
@@ -13201,6 +13370,16 @@ msgstr "zappejat"
 #~ msgstr "Editor de programacions"
 
 #
+#, fuzzy
+#~ msgid "Transponder Information"
+#~ msgstr "Tipus Transponedor"
+
+#
+#, fuzzy
+#~ msgid "Transponder type"
+#~ msgstr "Tipus Transponedor"
+
+#
 #~ msgid "Uncommitted DiSEqC command"
 #~ msgstr "Comanda DiSEqC no enviada"
 
@@ -13236,6 +13415,11 @@ msgstr "zappejat"
 #
 #~ msgid "enable"
 #~ msgstr "habilitar"
+
+#
+#, fuzzy
+#~ msgid "not avaible"
+#~ msgstr "Alguns plugins no estan disponibles:\n"
 
 #
 #, fuzzy
