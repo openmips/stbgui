@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-20 17:13+0200\n"
+"POT-Creation-Date: 2016-11-18 19:53+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -132,6 +132,9 @@ msgid ""
 msgstr ""
 
 msgid " "
+msgstr ""
+
+msgid " (0 - all networks)"
 msgstr ""
 
 #, python-format
@@ -344,9 +347,6 @@ msgstr ""
 msgid "%s:%s"
 msgstr ""
 
-msgid "(DHCP is off)"
-msgstr ""
-
 msgid "(ZAP)"
 msgstr ""
 
@@ -544,6 +544,9 @@ msgid ""
 "%s"
 msgstr ""
 
+msgid "A recording is currently running on the selected tuner. Please select a different tuner or consider to stop the recording to try again."
+msgstr ""
+
 msgid ""
 "A recording is currently running.\n"
 "What do you want to do?"
@@ -602,6 +605,15 @@ msgid "AGC:"
 msgstr ""
 
 msgid "ASPECT key"
+msgstr ""
+
+msgid "ASS file"
+msgstr ""
+
+msgid "ATSC"
+msgstr ""
+
+msgid "ATSC provider"
 msgstr ""
 
 msgid "Abort"
@@ -1004,6 +1016,15 @@ msgstr ""
 msgid "BLUDISC RECORDABLE"
 msgstr ""
 
+msgid "BT 2020 CL"
+msgstr ""
+
+msgid "BT 2020 NCL"
+msgstr ""
+
+msgid "BT 709"
+msgstr ""
+
 msgid "Back"
 msgstr ""
 
@@ -1281,10 +1302,16 @@ msgstr ""
 msgid "Channel not in services list"
 msgstr ""
 
-msgid "Channel selection"
+msgid "Channel:"
 msgstr ""
 
-msgid "Channel:"
+msgid "Channelnumber and picon"
+msgstr ""
+
+msgid "Channelnumber and servicename"
+msgstr ""
+
+msgid "Channelnumber, picon and servicename"
 msgstr ""
 
 msgid "Chap."
@@ -1382,16 +1409,13 @@ msgstr ""
 msgid "Close title selection"
 msgstr ""
 
+msgid "Code R. LP-HP & Guard Int."
+msgstr ""
+
 msgid "Code rate HP"
 msgstr ""
 
 msgid "Code rate LP"
-msgstr ""
-
-msgid "Coderate HP"
-msgstr ""
-
-msgid "Coderate LP"
 msgstr ""
 
 msgid "Collection name"
@@ -1515,10 +1539,13 @@ msgstr ""
 msgid "Connected to"
 msgstr ""
 
+msgid "Connected transcoding, limit - no PiP!"
+msgstr ""
+
 msgid "Console"
 msgstr ""
 
-msgid "Constellation"
+msgid "Constellation & FFT mode"
 msgstr ""
 
 msgid "Contact Info"
@@ -1663,6 +1690,9 @@ msgstr ""
 msgid "DHCP"
 msgstr ""
 
+msgid "DHCP is off"
+msgstr ""
+
 msgid "DMM advanced"
 msgstr ""
 
@@ -1675,10 +1705,16 @@ msgstr ""
 msgid "DUAL LAYER DVD"
 msgstr ""
 
+msgid "DVB CI Delay"
+msgstr ""
+
 msgid "DVB drivers: "
 msgstr ""
 
 msgid "DVB-C"
+msgstr ""
+
+msgid "DVB-C ANNEX B"
 msgstr ""
 
 msgid "DVB-C ANNEX C"
@@ -2238,6 +2274,9 @@ msgstr ""
 msgid "Enable timer conflict detection"
 msgstr ""
 
+msgid "Enable wakeup timer"
+msgstr ""
+
 msgid "Enable/Disable IPv6"
 msgstr ""
 
@@ -2532,6 +2571,9 @@ msgstr ""
 msgid "File appears to be busy.\n"
 msgstr ""
 
+msgid "Filename"
+msgstr ""
+
 msgid "Final position at"
 msgstr ""
 
@@ -2593,6 +2635,12 @@ msgstr ""
 msgid "Following tasks will be done after you press OK!"
 msgstr ""
 
+msgid "Force LNB Power"
+msgstr ""
+
+msgid "Force ToneBurst"
+msgstr ""
+
 msgid "Format"
 msgstr ""
 
@@ -2632,6 +2680,12 @@ msgstr ""
 msgid "Frequency"
 msgstr ""
 
+msgid "Frequency & Channel"
+msgstr ""
+
+msgid "Frequency & Polarization"
+msgstr ""
+
 msgid "Frequency bands"
 msgstr ""
 
@@ -2654,7 +2708,7 @@ msgid "From :"
 msgstr ""
 
 #, python-format
-msgid "Frontprocessor version: %d"
+msgid "Frontprocessor version: %s"
 msgstr ""
 
 msgid "Full transparency"
@@ -2819,10 +2873,10 @@ msgstr ""
 msgid "HD list"
 msgstr ""
 
-msgid "HD1100/HD1200/et7x00/et8500"
+msgid "HD2400"
 msgstr ""
 
-msgid "HD2400"
+msgid "HD51/HD1100/HD1200/et7x00/et8500"
 msgstr ""
 
 msgid ""
@@ -2831,6 +2885,9 @@ msgid ""
 msgstr ""
 
 msgid "HDMI"
+msgstr ""
+
+msgid "HDMI Colorimetry"
 msgstr ""
 
 msgid "HDMI Colorspace"
@@ -2889,9 +2946,6 @@ msgid "Hide player"
 msgstr ""
 
 msgid "Hierarchy info"
-msgstr ""
-
-msgid "Hierarchy information"
 msgstr ""
 
 msgid "High bitrate support"
@@ -3154,6 +3208,12 @@ msgstr ""
 msgid "Inversion"
 msgstr ""
 
+msgid "Inversion & Bandwidth"
+msgstr ""
+
+msgid "Inversion, Pilot & Roll-off"
+msgstr ""
+
 msgid "Invert"
 msgstr ""
 
@@ -3266,6 +3326,10 @@ msgstr ""
 msgid "Latest Commits"
 msgstr ""
 
+#, python-format
+msgid "Latest available openMips %s build is from: %s"
+msgstr ""
+
 msgid "Latitude"
 msgstr ""
 
@@ -3364,9 +3428,6 @@ msgid "Location"
 msgstr ""
 
 msgid "Location for instant recordings"
-msgstr ""
-
-msgid "Location:"
 msgstr ""
 
 msgid "Lock ratio"
@@ -3675,9 +3736,6 @@ msgstr ""
 msgid "Multiple service support"
 msgstr ""
 
-msgid "Multiplex"
-msgstr ""
-
 msgid "Multisat"
 msgstr ""
 
@@ -3699,7 +3757,7 @@ msgstr ""
 msgid "NFS Shares ON"
 msgstr ""
 
-msgid "NIM"
+msgid "NIM & Type"
 msgstr ""
 
 msgid "NO"
@@ -3719,9 +3777,6 @@ msgstr ""
 
 #, python-format
 msgid "Nameserver %d"
-msgstr ""
-
-msgid "Nameserver is off"
 msgstr ""
 
 msgid "Nameserver settings"
@@ -3953,6 +4008,9 @@ msgstr ""
 msgid "No, but restart from begin"
 msgstr ""
 
+msgid "No, except Wakeup timer"
+msgstr ""
+
 msgid "No, never"
 msgstr ""
 
@@ -4007,6 +4065,9 @@ msgid "Not tested:"
 msgstr ""
 
 msgid "Not-Associated"
+msgstr ""
+
+msgid "Note: when enabled, and you do want standby mode after wake up, set option 'Startup to Standby' as 'No, except Wakeup timer'."
 msgstr ""
 
 msgid "Nothing connected"
@@ -4174,7 +4235,7 @@ msgstr ""
 msgid "PDC"
 msgstr ""
 
-msgid "PIDs"
+msgid "PGS file"
 msgstr ""
 
 msgid "PIP"
@@ -4274,7 +4335,7 @@ msgstr ""
 msgid "Picon"
 msgstr ""
 
-msgid "Picon and service name"
+msgid "Picon and servicename"
 msgstr ""
 
 msgid "Picture in Picture Setup"
@@ -5138,7 +5199,7 @@ msgstr ""
 msgid "S-Video"
 msgstr ""
 
-msgid "SID"
+msgid "SCPC optimized search range"
 msgstr ""
 
 msgid "SINGLE LAYER DVD"
@@ -5148,6 +5209,12 @@ msgid "SNR:"
 msgstr ""
 
 msgid "SPDIF"
+msgstr ""
+
+msgid "SRT file"
+msgstr ""
+
+msgid "SSA file"
 msgstr ""
 
 msgid "SSID:"
@@ -5498,10 +5565,10 @@ msgstr ""
 msgid "Serial: unknown"
 msgstr ""
 
-msgid "Service"
+msgid "Service & PIDs"
 msgstr ""
 
-msgid "Service Information"
+msgid "Service ID"
 msgstr ""
 
 msgid "Service has been added to the favourites."
@@ -5511,6 +5578,15 @@ msgid "Service has been added to the selected bouquet."
 msgstr ""
 
 msgid "Service info"
+msgstr ""
+
+msgid "Service info - service & PIDs"
+msgstr ""
+
+msgid "Service info - tuner live values"
+msgstr ""
+
+msgid "Service info - tuner setting values"
 msgstr ""
 
 msgid ""
@@ -5538,6 +5614,9 @@ msgstr ""
 msgid ""
 "Service unavailable!\n"
 "Check tuner configuration!"
+msgstr ""
+
+msgid "Servicename"
 msgstr ""
 
 msgid "Services"
@@ -6344,6 +6423,9 @@ msgstr ""
 msgid "Symbol rate"
 msgstr ""
 
+msgid "Symbol rate & FEC"
+msgstr ""
+
 msgid "Symbol rate:"
 msgstr ""
 
@@ -6351,6 +6433,9 @@ msgid "Sync failure moving back to origin !"
 msgstr ""
 
 msgid "System"
+msgstr ""
+
+msgid "System & Modulation"
 msgstr ""
 
 #. TRANSLATORS: Add here whatever should be shown in the "translator" about screen, up to 6 lines (use \n for newline)
@@ -6613,6 +6698,9 @@ msgstr ""
 msgid "This option allows to set the level of dynamic contrast of the picture."
 msgstr ""
 
+msgid "This option allows you can config the Colorimetry for HDR"
+msgstr ""
+
 msgid "This option allows you enable smoothing filter to control the dithering process."
 msgstr ""
 
@@ -6838,6 +6926,9 @@ msgstr ""
 msgid "Toggle a cut mark at the current position"
 msgstr ""
 
+msgid "Toggle dashed flickering line for this service"
+msgstr ""
+
 msgid "Toggle infoBar"
 msgstr ""
 
@@ -6890,12 +6981,6 @@ msgstr ""
 msgid "Transponder"
 msgstr ""
 
-msgid "Transponder Information"
-msgstr ""
-
-msgid "Transponder type"
-msgstr ""
-
 msgid "Trash can"
 msgstr ""
 
@@ -6941,10 +7026,13 @@ msgstr ""
 msgid "Tuner is not supported"
 msgstr ""
 
+msgid "Tuner live values"
+msgstr ""
+
 msgid "Tuner not available."
 msgstr ""
 
-msgid "Tuner status"
+msgid "Tuner setting values"
 msgstr ""
 
 #, python-format
@@ -6978,6 +7066,9 @@ msgid "Type"
 msgstr ""
 
 msgid "Type of scan"
+msgstr ""
+
+msgid "URL"
 msgstr ""
 
 msgid "USALS"
@@ -7193,6 +7284,9 @@ msgstr ""
 msgid "VMGM (intro trailer)"
 msgstr ""
 
+msgid "VOB file"
+msgstr ""
+
 msgid "VU+"
 msgstr ""
 
@@ -7233,13 +7327,7 @@ msgstr ""
 msgid "Video: %s fps"
 msgstr ""
 
-msgid "Videocodec"
-msgstr ""
-
-msgid "Videoformat"
-msgstr ""
-
-msgid "Videosize"
+msgid "Videocodec, size & format"
 msgstr ""
 
 msgid "View Rass interactive..."
@@ -7357,6 +7445,12 @@ msgid "Wakeup receiver from standby"
 msgstr ""
 
 msgid "Wakeup signal from TV"
+msgstr ""
+
+msgid "Wakeup time"
+msgstr ""
+
+msgid "Wakeup timer"
 msgstr ""
 
 msgid "Wakeup type"
@@ -7532,6 +7626,12 @@ msgid "Yes, and delete this movie"
 msgstr ""
 
 msgid "Yes, delete this movie and return to movie list"
+msgstr ""
+
+msgid "Yes, only from deep standby"
+msgstr ""
+
+msgid "Yes, only from standby"
 msgstr ""
 
 msgid "Yes, returning to movie list"
@@ -8079,6 +8179,9 @@ msgstr ""
 msgid "education/science/factual topics (general)"
 msgstr ""
 
+msgid "embedded"
+msgstr ""
+
 msgid "empty"
 msgstr ""
 
@@ -8450,9 +8553,6 @@ msgid "none"
 msgstr ""
 
 msgid "normal"
-msgstr ""
-
-msgid "not avaible"
 msgstr ""
 
 msgid "not configured"
@@ -9004,7 +9104,138 @@ msgstr ""
 msgid "zapped"
 msgstr ""
 
+msgid "REC"
+msgstr ""
+
 msgid "Audio"
+msgstr ""
+
+msgid "BER"
+msgstr ""
+
+msgid "C"
+msgstr ""
+
+msgid "D"
+msgstr ""
+
+msgid "Extensions"
+msgstr ""
+
+msgid "Info bar"
+msgstr ""
+
+msgid "SNR"
+msgstr ""
+
+msgid "Timeshift"
+msgstr ""
+
+msgid "Check the internet connection"
+msgstr ""
+
+msgid "Check the internet connection again"
+msgstr ""
+
+msgid "Checking the internet connection"
+msgstr ""
+
+msgid "Do you want to do a service scan?"
+msgstr ""
+
+msgid "Do you want to do another manual service scan?"
+msgstr ""
+
+msgid "Do you want to install a channel list?"
+msgstr ""
+
+msgid "Exit the wizard"
+msgstr ""
+
+msgid "No, scan later manually"
+msgstr ""
+
+msgid "Please connect your %s %s to the internet"
+msgstr ""
+
+msgid "Please set up tuner A"
+msgstr ""
+
+msgid "Please set up tuner B"
+msgstr ""
+
+msgid "Please set up tuner C"
+msgstr ""
+
+msgid "Please set up tuner D"
+msgstr ""
+
+msgid "Please set up tuner E"
+msgstr ""
+
+msgid "Please set up tuner F"
+msgstr ""
+
+msgid "Please set up tuner G"
+msgstr ""
+
+msgid "Please set up tuner H"
+msgstr ""
+
+msgid "Please set up tuner I"
+msgstr ""
+
+msgid "Please set up tuner J"
+msgstr ""
+
+msgid "Please set up tuner K"
+msgstr ""
+
+msgid "Skip internet connection check (disables automatic package installation)"
+msgstr ""
+
+msgid ""
+"Thank you for using the wizard. Your %s %s is now ready to use.\n"
+"Please press OK to start using your %s %s.."
+msgstr ""
+
+msgid "Use the up/down keys on your remote control to select an option. After that, press OK."
+msgstr ""
+
+msgid "Use the wizard to set up basic features"
+msgstr ""
+
+msgid ""
+"Welcome.\n"
+"\n"
+"This start wizard will guide you through the basic setup of your %s %s.\n"
+"Press the OK button on your remote control to move to the next step."
+msgstr ""
+
+msgid "What do you want to scan?"
+msgstr ""
+
+msgid ""
+"Would you like to be able to install softcams?\n"
+"\n"
+"Attention - Country specific illegal!\n"
+"\n"
+"Check legality for your specific country in advance!"
+msgstr ""
+
+msgid "Yes, do a manual scan now"
+msgstr ""
+
+msgid "Yes, do an automatic scan now"
+msgstr ""
+
+msgid "Yes, do another manual scan now"
+msgstr ""
+
+msgid "Your %s %s does not have an internet connection"
+msgstr ""
+
+msgid "Rec"
 msgstr ""
 
 msgid "CAM/CI"
@@ -9064,6 +9295,9 @@ msgstr ""
 msgid "Save EPG"
 msgstr ""
 
+msgid "Service"
+msgstr ""
+
 msgid "Setup"
 msgstr ""
 
@@ -9071,6 +9305,9 @@ msgid "Shutdown"
 msgstr ""
 
 msgid "Sleep timer"
+msgstr ""
+
+msgid "Sleep/wakeup timer"
 msgstr ""
 
 msgid "Standby / restart"
@@ -9089,6 +9326,9 @@ msgid "Video Settings"
 msgstr ""
 
 msgid "WOL standby"
+msgstr ""
+
+msgid "Weather GigaBlue Pax"
 msgstr ""
 
 msgid "12V output"
@@ -9616,12 +9856,6 @@ msgstr ""
 msgid "Finetune"
 msgstr ""
 
-msgid "Force LNB Power"
-msgstr ""
-
-msgid "Force ToneBurst"
-msgstr ""
-
 msgid "HI-cleanup for external subtitles"
 msgstr ""
 
@@ -9773,6 +10007,12 @@ msgid "Prefer subtitles stored by service"
 msgstr ""
 
 msgid "Preferred tuner"
+msgstr ""
+
+msgid "Preferred tuner ATSC"
+msgstr ""
+
+msgid "Preferred tuner ATSC for recordings"
 msgstr ""
 
 msgid "Preferred tuner DVB-C"
@@ -9973,6 +10213,12 @@ msgstr ""
 msgid "StandbyLED"
 msgstr ""
 
+msgid "Startup the set top box in standby"
+msgstr ""
+
+msgid "Startup to Standby"
+msgstr ""
+
 msgid "Subtitle alignment"
 msgstr ""
 
@@ -10088,12 +10334,6 @@ msgid "Usually when the subtitle language is the same as the audio language, the
 msgstr ""
 
 msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are upgraded"
-msgstr ""
-
-msgid "When enabled the LNB power will not be switched off in standby"
-msgstr ""
-
-msgid "When enabled the LNB toneburst will be forced"
 msgstr ""
 
 msgid "When enabled the PiP can be closed by the exit button."
@@ -10303,6 +10543,9 @@ msgstr ""
 msgid "9"
 msgstr ""
 
+msgid "Channel selection"
+msgstr ""
+
 msgid "Channellist menu"
 msgstr ""
 
@@ -10435,18 +10678,6 @@ msgstr ""
 msgid "help..."
 msgstr ""
 
-msgid "Rec"
-msgstr ""
-
-msgid "REC"
-msgstr ""
-
-msgid "C"
-msgstr ""
-
-msgid "D"
-msgstr ""
-
 msgid "F"
 msgstr ""
 
@@ -10465,123 +10696,27 @@ msgstr ""
 msgid "TUNER:"
 msgstr ""
 
-msgid "BER"
+msgid "Refresh rate selection."
 msgstr ""
 
-msgid "Extensions"
+msgid "Select refresh rate"
 msgstr ""
 
-msgid "Info bar"
+msgid "Select video input with up/down buttons"
 msgstr ""
 
-msgid "SNR"
-msgstr ""
-
-msgid "Timeshift"
-msgstr ""
-
-msgid "Check the internet connection"
-msgstr ""
-
-msgid "Check the internet connection again"
-msgstr ""
-
-msgid "Checking the internet connection"
-msgstr ""
-
-msgid "Do you want to do a service scan?"
-msgstr ""
-
-msgid "Do you want to do another manual service scan?"
-msgstr ""
-
-msgid "Do you want to install a channel list?"
-msgstr ""
-
-msgid "Exit the wizard"
-msgstr ""
-
-msgid "No, scan later manually"
-msgstr ""
-
-msgid "Please connect your %s %s to the internet"
-msgstr ""
-
-msgid "Please set up tuner A"
-msgstr ""
-
-msgid "Please set up tuner B"
-msgstr ""
-
-msgid "Please set up tuner C"
-msgstr ""
-
-msgid "Please set up tuner D"
-msgstr ""
-
-msgid "Please set up tuner E"
-msgstr ""
-
-msgid "Please set up tuner F"
-msgstr ""
-
-msgid "Please set up tuner G"
-msgstr ""
-
-msgid "Please set up tuner H"
-msgstr ""
-
-msgid "Please set up tuner I"
-msgstr ""
-
-msgid "Please set up tuner J"
-msgstr ""
-
-msgid "Please set up tuner K"
-msgstr ""
-
-msgid "Skip internet connection check (disables automatic package installation)"
+msgid "Select video mode"
 msgstr ""
 
 msgid ""
-"Thank you for using the wizard. Your %s %s is now ready to use.\n"
-"Please press OK to start using your %s %s.."
-msgstr ""
-
-msgid "Use the up/down keys on your remote control to select an option. After that, press OK."
-msgstr ""
-
-msgid "Use the wizard to set up basic features"
-msgstr ""
-
-msgid ""
-"Welcome.\n"
+"Video input selection\n"
 "\n"
-"This start wizard will guide you through the basic setup of your %s %s.\n"
-"Press the OK button on your remote control to move to the next step."
-msgstr ""
-
-msgid "What do you want to scan?"
-msgstr ""
-
-msgid ""
-"Would you like to be able to install softcams?\n"
+"Please press OK if you can see this page on your TV (or select a different input port).\n"
 "\n"
-"Attention - Country specific illegal!\n"
-"\n"
-"Check legality for your specific country in advance!"
+"The next input port will be automatically probed in 20 seconds."
 msgstr ""
 
-msgid "Yes, do a manual scan now"
-msgstr ""
-
-msgid "Yes, do an automatic scan now"
-msgstr ""
-
-msgid "Yes, do another manual scan now"
-msgstr ""
-
-msgid "Your %s %s does not have an internet connection"
+msgid "Video mode selection."
 msgstr ""
 
 msgid "Configure interface"
@@ -10727,27 +10862,4 @@ msgid ""
 msgstr ""
 
 msgid "Your backup succeeded. We will now continue to explain the further upgrade process."
-msgstr ""
-
-msgid "Refresh rate selection."
-msgstr ""
-
-msgid "Select refresh rate"
-msgstr ""
-
-msgid "Select video input with up/down buttons"
-msgstr ""
-
-msgid "Select video mode"
-msgstr ""
-
-msgid ""
-"Video input selection\n"
-"\n"
-"Please press OK if you can see this page on your TV (or select a different input port).\n"
-"\n"
-"The next input port will be automatically probed in 20 seconds."
-msgstr ""
-
-msgid "Video mode selection."
 msgstr ""
