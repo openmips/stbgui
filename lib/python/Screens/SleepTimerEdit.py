@@ -7,7 +7,7 @@ from Components.Label import Label
 from Components.Sources.StaticText import StaticText
 from Components.config import config, getConfigListEntry
 from enigma import eEPGCache
-from time import time
+from time import time, localtime, mktime
 
 class SleepTimerEdit(ConfigListScreen, Screen):
 	def __init__(self, session):
@@ -107,10 +107,23 @@ class SleepTimerEdit(ConfigListScreen, Screen):
 				self.list.append(getConfigListEntry(sub2 + _("End time to ignore shutdown in standby"),
 					config.usage.standby_to_shutdown_timer_blocktime_end,
 					_("Specify the end time to ignore the shutdown timer when the receiver is in standby mode")))
+		self.list.append(getConfigListEntry(_("Enable wakeup timer"),
+			config.usage.wakeup_enabled,
+			_("Note: when enabled, and you do want standby mode after wake up, set option 'Startup to Standby' as 'No, except Wakeup timer'.")))
+		if config.usage.wakeup_enabled.value != "no":
+			for i in range(7):
+				self.list.append(getConfigListEntry([_("Monday"), _("Tuesday"), _("Wednesday"), _("Thursday"), _("Friday"), _("Saturday"), _("Sunday")][i],
+					config.usage.wakeup_day[i]))
+				if config.usage.wakeup_day[i].value:
+					self.list.append(getConfigListEntry(_("Wakeup time"),
+						config.usage.wakeup_time[i]))
 		self["config"].list = self.list
 		self["config"].l.setList(self.list)
 
 	def ok(self):
+		if self.getCurrentEntry() == _("Wakeup timer"):
+			self.session.open(WakeupTimerEdit)
+			return
 		if self["config"].isChanged():
 			for x in self["config"].list:
 				x[1].save()
@@ -146,7 +159,7 @@ class SleepTimerEdit(ConfigListScreen, Screen):
 
 	def currentEventTime(self):
 		remaining = 0
-		ref = self.session.nav.getCurrentlyPlayingServiceOrGroup()
+		ref = self.session.nav.getCurrentlyPlayingServiceReference()
 		if ref:
 			path = ref.getPath()
 			if path: # Movie
@@ -168,4 +181,36 @@ class SleepTimerEdit(ConfigListScreen, Screen):
 					duration = event.getDuration()
 					end = start + duration
 					remaining = end - now
-		return remaining + config.recording.margin_after.value * 60
+		if remaining > 0:
+			return remaining + config.recording.margin_after.value * 60
+		return remaining
+
+def isNextWakeupTime(standby_timer=False):
+	wakeup_enabled = config.usage.wakeup_enabled.value
+	if wakeup_enabled != "no":
+		if not standby_timer:
+			if wakeup_enabled == "standby":
+				return -1
+		else:
+			if wakeup_enabled == "deepstandby":
+				return -1
+		wakeup_day, wakeup_time = WakeupDayTimeOfWeek()
+		if wakeup_day == -1:
+				return -1
+		elif wakeup_day == 0:
+			return wakeup_time
+		return wakeup_time + (86400 * wakeup_day)
+	return -1
+
+def WakeupDayTimeOfWeek():
+	now = localtime()
+	current_day = int(now.tm_wday)
+	if current_day >= 0:
+		if config.usage.wakeup_day[current_day].value:
+			wakeup_time = int(mktime((now.tm_year, now.tm_mon, now.tm_mday, config.usage.wakeup_time[current_day].value[0], config.usage.wakeup_time[current_day].value[1], 0, now.tm_wday, now.tm_yday, now.tm_isdst)))
+			if wakeup_time > time():
+				return 0, wakeup_time
+		for i in range(1,8):
+			if config.usage.wakeup_day[(current_day+i)%7].value:
+				return i, int(mktime((now.tm_year, now.tm_mon, now.tm_mday, config.usage.wakeup_time[(current_day+i)%7].value[0], config.usage.wakeup_time[(current_day+i)%7].value[1], 0, now.tm_wday, now.tm_yday, now.tm_isdst)))
+	return -1, None

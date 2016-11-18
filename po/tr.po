@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-20 17:13+0200\n"
+"POT-Creation-Date: 2016-11-18 19:53+0100\n"
 "PO-Revision-Date: 2016-07-02 11:10+0300\n"
 "Last-Translator: Hasan Kiran <Sunder67@hotmail.com>\n"
 "Language-Team: Turkish <Sunder67@hotmail.com>\n"
@@ -181,6 +181,10 @@ msgstr ""
 
 msgid " "
 msgstr " "
+
+#, fuzzy
+msgid " (0 - all networks)"
+msgstr "Yerel ağ"
 
 #, python-format
 msgid " (Channel %s)"
@@ -383,9 +387,6 @@ msgstr "%s/%s: %s"
 #, python-format
 msgid "%s:%s"
 msgstr "%s:%s"
-
-msgid "(DHCP is off)"
-msgstr ""
 
 msgid "(ZAP)"
 msgstr "(ZAP)"
@@ -621,6 +622,10 @@ msgstr ""
 "Kayıt başlatıldı:\n"
 "%s"
 
+#, fuzzy
+msgid "A recording is currently running on the selected tuner. Please select a different tuner or consider to stop the recording to try again."
+msgstr "Bir kayıt şu anda çalışıyor. Tarama yapmayı denemeden önce kaydı durdurun."
+
 msgid ""
 "A recording is currently running.\n"
 "What do you want to do?"
@@ -691,6 +696,17 @@ msgstr "AGC:"
 
 msgid "ASPECT key"
 msgstr "ASPECT key"
+
+#, fuzzy
+msgid "ASS file"
+msgstr "%d dosya"
+
+msgid "ATSC"
+msgstr ""
+
+#, fuzzy
+msgid "ATSC provider"
+msgstr "Sağlayıcı ekle"
 
 msgid "Abort"
 msgstr "Vazgeç"
@@ -1165,6 +1181,15 @@ msgstr "BER:"
 msgid "BLUDISC RECORDABLE"
 msgstr "BLU DİSK kaydebilen"
 
+msgid "BT 2020 CL"
+msgstr ""
+
+msgid "BT 2020 NCL"
+msgstr ""
+
+msgid "BT 709"
+msgstr ""
+
 msgid "Back"
 msgstr "Geri"
 
@@ -1520,6 +1545,18 @@ msgstr "Kanal:"
 msgid "Channellist menu"
 msgstr "Kanal listesi menüsü"
 
+#, fuzzy
+msgid "Channelnumber and picon"
+msgstr "Kanal numarası,Beklemede kapalı"
+
+#, fuzzy
+msgid "Channelnumber and servicename"
+msgstr "Simge ve kanal ismi"
+
+#, fuzzy
+msgid "Channelnumber, picon and servicename"
+msgstr "Simge ve kanal ismi"
+
 msgid "Chap."
 msgstr "Bölüm"
 
@@ -1641,16 +1678,13 @@ msgstr "Çıkışta Kapat PiP"
 msgid "Close title selection"
 msgstr "Başlık seçimini kapat"
 
+msgid "Code R. LP-HP & Guard Int."
+msgstr ""
+
 msgid "Code rate HP"
 msgstr "HP Kod oranı"
 
 msgid "Code rate LP"
-msgstr "LP Kod oranı"
-
-msgid "Coderate HP"
-msgstr "HP Kod oranı"
-
-msgid "Coderate LP"
 msgstr "LP Kod oranı"
 
 msgid "Collection name"
@@ -2034,13 +2068,17 @@ msgstr "Bağlı uydular"
 msgid "Connected to"
 msgstr "Bağlanılıyor"
 
+msgid "Connected transcoding, limit - no PiP!"
+msgstr ""
+
 msgid "Consider CI assignment"
 msgstr "CI atama düşünün"
 
 msgid "Console"
 msgstr "Uçbirim"
 
-msgid "Constellation"
+#, fuzzy
+msgid "Constellation & FFT mode"
 msgstr "Takimyildiz"
 
 #, fuzzy
@@ -2217,6 +2255,9 @@ msgstr "DAC"
 msgid "DHCP"
 msgstr "DHCP"
 
+msgid "DHCP is off"
+msgstr ""
+
 msgid "DMM advanced"
 msgstr "DMM gelismis"
 
@@ -2229,6 +2270,9 @@ msgstr "DTS"
 msgid "DUAL LAYER DVD"
 msgstr "ÇIFT KATMAN DVD"
 
+msgid "DVB CI Delay"
+msgstr ""
+
 msgid "DVB drivers: "
 msgstr "DVB sürücüleri: "
 
@@ -2237,6 +2281,10 @@ msgstr "DVB altyazı siyah saydamlığı"
 
 msgid "DVB-C"
 msgstr "DVB-C"
+
+#, fuzzy
+msgid "DVB-C ANNEX B"
+msgstr "DVB-C EK C"
 
 msgid "DVB-C ANNEX C"
 msgstr "DVB-C EK C"
@@ -2931,6 +2979,10 @@ msgstr "Zamanlayıcı çakışma algılamasını etkinleştirmek"
 msgid "Enable volume control with arrow buttons"
 msgstr "Ok tuşları ile ses kontrolünü etkinleştir"
 
+#, fuzzy
+msgid "Enable wakeup timer"
+msgstr "Uyku zamanlayıcı"
+
 msgid "Enable zapping with CH+/-, B+/-, P+/-"
 msgstr "CH+/-, B+/-, P+/- ile kanal değiştirmeyi etkinleştir"
 
@@ -3279,6 +3331,10 @@ msgstr "Favoriler"
 msgid "File appears to be busy.\n"
 msgstr "Dosya meşgul gibi görünüyor.\n"
 
+#, fuzzy
+msgid "Filename"
+msgstr "dosyaadı"
+
 msgid "Filesystem check"
 msgstr "Dosya sistemi kontrolü"
 
@@ -3396,6 +3452,14 @@ msgstr "Fransızca"
 msgid "Frequency"
 msgstr "Frekans"
 
+#, fuzzy
+msgid "Frequency & Channel"
+msgstr "Kanal veya frekans kullan"
+
+#, fuzzy
+msgid "Frequency & Polarization"
+msgstr "Polarizasyon"
+
 msgid "Frequency bands"
 msgstr "Frekans bantları"
 
@@ -3420,8 +3484,8 @@ msgstr "Gönderen :"
 msgid "Frontpanel"
 msgstr "Ön panel"
 
-#, python-format
-msgid "Frontprocessor version: %d"
+#, fuzzy, python-format
+msgid "Frontprocessor version: %s"
 msgstr "Önişlemci sürümü: %d"
 
 msgid "Full transparency"
@@ -3596,11 +3660,12 @@ msgstr "H"
 msgid "HD list"
 msgstr "HD listesi"
 
-msgid "HD1100/HD1200/et7x00/et8500"
-msgstr "HD1100/HD1200/et7x00/et8500"
-
 msgid "HD2400"
 msgstr "HD2400"
+
+#, fuzzy
+msgid "HD51/HD1100/HD1200/et7x00/et8500"
+msgstr "HD1100/HD1200/et7x00/et8500"
 
 msgid ""
 "HDD = Do you want to create a fullbackup on HDD? \n"
@@ -3611,6 +3676,10 @@ msgstr ""
 
 msgid "HDMI"
 msgstr "HDMI"
+
+#, fuzzy
+msgid "HDMI Colorimetry"
+msgstr "Renk alanı"
 
 #, fuzzy
 msgid "HDMI Colorspace"
@@ -3687,9 +3756,6 @@ msgid "Hide zap errors"
 msgstr "Kanal değiştirme hatalarını gizle"
 
 msgid "Hierarchy info"
-msgstr "Hiyerarşi bilgisi"
-
-msgid "Hierarchy information"
 msgstr "Hiyerarşi bilgisi"
 
 msgid "High bitrate support"
@@ -4024,6 +4090,13 @@ msgstr "Geçersiz transponder verisi"
 msgid "Inversion"
 msgstr "Tersine çevir"
 
+#, fuzzy
+msgid "Inversion & Bandwidth"
+msgstr "Bant genişliği"
+
+msgid "Inversion, Pilot & Roll-off"
+msgstr ""
+
 msgid "Invert"
 msgstr "Ters"
 
@@ -4157,6 +4230,10 @@ msgstr "Son güncelleme: "
 msgid "Latest Commits"
 msgstr "En Son İşlenenler"
 
+#, python-format
+msgid "Latest available openMips %s build is from: %s"
+msgstr ""
+
 msgid "Latitude"
 msgstr "Enlem"
 
@@ -4276,9 +4353,6 @@ msgstr "Konum"
 
 msgid "Location for instant recordings"
 msgstr "Anlık kayıt konumu"
-
-msgid "Location:"
-msgstr "Konum:"
 
 msgid "Lock ratio"
 msgstr "Oranı kilitleyin"
@@ -4642,9 +4716,6 @@ msgstr "Çoklu ortam"
 msgid "Multiple service support"
 msgstr "Çoklu kanal desteği"
 
-msgid "Multiplex"
-msgstr "Çoklandırıcı"
-
 msgid "Multisat"
 msgstr "Çoklu uydu"
 
@@ -4675,8 +4746,8 @@ msgstr ""
 msgid "NFS setup"
 msgstr "NFS kurulumu"
 
-msgid "NIM"
-msgstr "NIM"
+msgid "NIM & Type"
+msgstr ""
 
 msgid "NO"
 msgstr "hayir"
@@ -4702,10 +4773,6 @@ msgstr "Isim sunucusu (DNS)"
 #, python-format
 msgid "Nameserver %d"
 msgstr "İsim sunucusu (DNS) %d"
-
-#, fuzzy
-msgid "Nameserver is off"
-msgstr "Isim sunucusu (DNS)"
 
 msgid "Nameserver settings"
 msgstr "İsim sunucusu (DNS) ayarları"
@@ -4976,6 +5043,9 @@ msgstr "Hayır, ama en başından başlat"
 msgid "No, do nothing."
 msgstr "Hayır, birşey yapma"
 
+msgid "No, except Wakeup timer"
+msgstr ""
+
 msgid "No, just start my GigaBlue"
 msgstr "Hayır, sadece benim GigaBlue başlasın"
 
@@ -5045,6 +5115,9 @@ msgstr "Test edilmedi:"
 
 msgid "Not-Associated"
 msgstr "İliŞkili değil"
+
+msgid "Note: when enabled, and you do want standby mode after wake up, set option 'Startup to Standby' as 'No, except Wakeup timer'."
+msgstr ""
 
 msgid "Nothing connected"
 msgstr "bağlı değil"
@@ -5234,8 +5307,9 @@ msgstr "PCR PID"
 msgid "PDC"
 msgstr "PDC"
 
-msgid "PIDs"
-msgstr "PIDs"
+#, fuzzy
+msgid "PGS file"
+msgstr "%d dosya"
 
 msgid "PIN code needed"
 msgstr "Şifre gerekli"
@@ -5346,7 +5420,8 @@ msgstr "RiR kurulumu"
 msgid "Picon"
 msgstr "Simge"
 
-msgid "Picon and service name"
+#, fuzzy
+msgid "Picon and servicename"
 msgstr "Simge ve kanal ismi"
 
 msgid "Picture in Picture Setup"
@@ -5738,6 +5813,14 @@ msgstr "Servis tanımlı altyazı tercihi"
 
 msgid "Preferred tuner"
 msgstr "Seçili tuner"
+
+#, fuzzy
+msgid "Preferred tuner ATSC"
+msgstr "Seçili tuner"
+
+#, fuzzy
+msgid "Preferred tuner ATSC for recordings"
+msgstr "Kayıtlar için tercih edilen tuner"
 
 msgid "Preferred tuner DVB-C"
 msgstr "Tercih tuner DVB-C"
@@ -6386,8 +6469,8 @@ msgstr "Rusça"
 msgid "S-Video"
 msgstr "S-Video"
 
-msgid "SID"
-msgstr "SID"
+msgid "SCPC optimized search range"
+msgstr ""
 
 msgid "SINGLE LAYER DVD"
 msgstr "TEK KATMAN DVD"
@@ -6400,6 +6483,14 @@ msgstr "SNR:"
 
 msgid "SPDIF"
 msgstr "SPDIF"
+
+#, fuzzy
+msgid "SRT file"
+msgstr "%d dosya"
+
+#, fuzzy
+msgid "SSA file"
+msgstr "%d dosya"
 
 msgid "SSID:"
 msgstr "SSID:"
@@ -6822,8 +6913,13 @@ msgstr "Seri: bilinmiyor"
 msgid "Service"
 msgstr "Kanal"
 
-msgid "Service Information"
-msgstr "Kanal Bilgileri"
+#, fuzzy
+msgid "Service & PIDs"
+msgstr "Kanallar"
+
+#, fuzzy
+msgid "Service ID"
+msgstr "Kanal"
 
 msgid "Service has been added to the favourites."
 msgstr "Kanal favorilere eklendi."
@@ -6833,6 +6929,15 @@ msgstr "Kanal seçilen bukete eklendi."
 
 msgid "Service info"
 msgstr "Kanal bilgisi"
+
+msgid "Service info - service & PIDs"
+msgstr ""
+
+msgid "Service info - tuner live values"
+msgstr ""
+
+msgid "Service info - tuner setting values"
+msgstr ""
 
 msgid ""
 "Service invalid!\n"
@@ -6866,6 +6971,10 @@ msgid ""
 msgstr ""
 "Kanal kullanılamaz!\n"
 "Tuner ayarlarınızı kontrol edin!"
+
+#, fuzzy
+msgid "Servicename"
+msgstr "Kanal adı"
 
 msgid "Services"
 msgstr "Kanallar"
@@ -7300,6 +7409,10 @@ msgstr "Internet bağlantısı kontrolünü atla. (Otomatik paket yükleme devre
 msgid "Sleep timer"
 msgstr "Uyku zamanlayıcı"
 
+#, fuzzy
+msgid "Sleep/wakeup timer"
+msgstr "Uyku zamanlayıcı"
+
 msgid "SleepTimer Configuration"
 msgstr "Uyku zamanlayıcı Yapılandırma"
 
@@ -7588,6 +7701,14 @@ msgstr "Liste ekranıyla başla"
 msgid "Starting on"
 msgstr "Başlangıç"
 
+#, fuzzy
+msgid "Startup the set top box in standby"
+msgstr "bekleme kapatıldı görmezden başlangıç zamanı"
+
+#, fuzzy
+msgid "Startup to Standby"
+msgstr "uyku kipine geç"
+
 msgid "Status:"
 msgstr "Durum:"
 
@@ -7853,6 +7974,10 @@ msgstr "Seçilebilir tuner tipleri:"
 msgid "Symbol rate"
 msgstr "Sembol oranı"
 
+#, fuzzy
+msgid "Symbol rate & FEC"
+msgstr "Sembol oranı"
+
 msgid "Symbol rate:"
 msgstr "Sembol oranı:"
 
@@ -7870,6 +7995,10 @@ msgstr "İnternet veya transponder kullanarak sistem saatini senkronize et."
 
 msgid "System"
 msgstr "Sistem"
+
+#, fuzzy
+msgid "System & Modulation"
+msgstr "Modülasyon"
 
 #. TRANSLATORS: Add here whatever should be shown in the "translator" about screen, up to 6 lines (use \n for newline)
 msgid "TRANSLATOR_INFO"
@@ -8221,6 +8350,10 @@ msgstr "Bu seçenek resimdeki blok gürültüyü azaltmak için izin verir. Aç�
 msgid "This option allows to set the level of dynamic contrast of the picture."
 msgstr "Bu seçenek resmin dinamik kontrast seviyesini ayarlamanızı sağlar."
 
+#, fuzzy
+msgid "This option allows you can config the Colorimetry for HDR"
+msgstr "Bu seçenek, resimde mavi tonları artırmak için izin verir."
+
 msgid "This option allows you enable smoothing filter to control the dithering process."
 msgstr "Bu seçenek Titreme sürecini kontrol etmek için yumuşatma filtre olanak sağlar."
 
@@ -8488,6 +8621,9 @@ msgstr "Geçiş PIPZap"
 msgid "Toggle a cut mark at the current position"
 msgstr "Mevcut konuma Kesme işareti koyun"
 
+msgid "Toggle dashed flickering line for this service"
+msgstr ""
+
 msgid "Toggle infoBar"
 msgstr "Geçiş infobar"
 
@@ -8545,12 +8681,6 @@ msgstr "İletim (transmisyon) modu"
 msgid "Transponder"
 msgstr "Transponder"
 
-msgid "Transponder Information"
-msgstr "transponder Bilgileri"
-
-msgid "Transponder type"
-msgstr "Transponder tipi"
-
 msgid "Trash can"
 msgstr "Çöp kutusu"
 
@@ -8596,14 +8726,19 @@ msgstr "Tuner Yapılandırma"
 msgid "Tuner is not supported"
 msgstr "Tuner desteklenmiyor"
 
+#, fuzzy
+msgid "Tuner live values"
+msgstr "Tuner durumu"
+
 msgid "Tuner not available."
 msgstr "Tuner mevcut değil."
 
+#, fuzzy
+msgid "Tuner setting values"
+msgstr "Tuner durumu"
+
 msgid "Tuner slot"
 msgstr "Tuner yuvası"
-
-msgid "Tuner status"
-msgstr "Tuner durumu"
 
 #, python-format
 msgid "Tuner status %s"
@@ -8640,6 +8775,9 @@ msgstr "Tip"
 
 msgid "Type of scan"
 msgstr "Tarama tipi"
+
+msgid "URL"
+msgstr ""
 
 msgid "URL of fallback remote receiver"
 msgstr "Yedek uzaktan kumanda alıcısı URL"
@@ -8914,6 +9052,10 @@ msgstr "VCR scart"
 msgid "VMGM (intro trailer)"
 msgstr "VMGM (tanıtım filmi)"
 
+#, fuzzy
+msgid "VOB file"
+msgstr "%d dosya"
+
 msgid "VU+"
 msgstr "VU+"
 
@@ -8979,14 +9121,9 @@ msgstr "Video: %s fps"
 msgid "VideoMode"
 msgstr "Video Kipi"
 
-msgid "Videocodec"
-msgstr "Video çözücü (Codec)"
-
-msgid "Videoformat"
+#, fuzzy
+msgid "Videocodec, size & format"
 msgstr "Video formatı"
-
-msgid "Videosize"
-msgstr "Video boyutu"
 
 msgid "View Rass interactive..."
 msgstr "Etkilesimli RASS'i göster"
@@ -9111,6 +9248,14 @@ msgstr "Alıcının bekleme modundan açılması bekleniyor."
 msgid "Wakeup signal from TV"
 msgstr "TV'den uyandırma sinyali"
 
+#, fuzzy
+msgid "Wakeup time"
+msgstr "Uyandırma türü"
+
+#, fuzzy
+msgid "Wakeup timer"
+msgstr "Uyandırma türü"
+
 msgid "Wakeup type"
 msgstr "Uyandırma türü"
 
@@ -9134,6 +9279,9 @@ msgstr "Film izleyin ..."
 
 msgid "Watch recordings..."
 msgstr "Kayıtları izleyin ..."
+
+msgid "Weather GigaBlue Pax"
+msgstr ""
 
 msgid "Weather ID"
 msgstr "Hava Durumu Kimliği"
@@ -9220,12 +9368,6 @@ msgstr "Neleri aramak istiyorsunuz?"
 
 msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are upgraded"
 msgstr "Ne zaman etkin enigma2 bağlantısız userbouquets yükleyecektir. Bu, mevcut değil, fakat bouquets.tv ya bouquets.radio dosyaları dahil değildir userbouquets zaten yüklü olacağı anlamına gelir. Yüklü ayarlar yükseltilmiş ise bu kendi kullanıcı buket tutmak için örneğin olanak sağlar"
-
-msgid "When enabled the LNB power will not be switched off in standby"
-msgstr "LNB güç bekleme kapalı olmayacak etkin zaman"
-
-msgid "When enabled the LNB toneburst will be forced"
-msgstr "zorunlu olacak Toneburst LNB etkin olduğunda"
 
 msgid "When enabled the PiP can be closed by the exit button."
 msgstr "Etkin olduğunda PIP çıkış düğmesi ile kapatılabilir."
@@ -9551,6 +9693,14 @@ msgstr "Evet, otomatik kanal aramayı başlat"
 
 msgid "Yes, do another manual scan now"
 msgstr "Evet, yeni bir elle kanal araması başlat"
+
+#, fuzzy
+msgid "Yes, only from deep standby"
+msgstr "sadece derin bekleme modundan"
+
+#, fuzzy
+msgid "Yes, only from standby"
+msgstr "Sadece bekleme modunda"
 
 msgid "Yes, perform a shutdown now."
 msgstr "Evet, cihazı şimdi kapat."
@@ -10222,6 +10372,9 @@ msgstr "alternatifleri düzenle"
 msgid "education/science/factual topics (general)"
 msgstr "eğitim / bilim / gerçeklere dayanan konular (genel)"
 
+msgid "embedded"
+msgstr ""
+
 msgid "empty"
 msgstr "boş"
 
@@ -10600,10 +10753,6 @@ msgstr "yok"
 
 msgid "normal"
 msgstr "normal"
-
-#, fuzzy
-msgid "not avaible"
-msgstr "kullanılamaz"
 
 msgid "not configured"
 msgstr "henüz yapılandırılmamış"
@@ -11183,9 +11332,6 @@ msgstr "kanal değiştirildi"
 #~ msgid "Channelnumber in Standby Clock"
 #~ msgstr "Kanal numarası,Beklemede Saat"
 
-#~ msgid "Channelnumber in Standby off"
-#~ msgstr "Kanal numarası,Beklemede kapalı"
-
 #~ msgid "Channelnumber/Clock in Standby Clock"
 #~ msgstr "Kanal numarası/Saat,Beklemede Saat"
 
@@ -11195,20 +11341,45 @@ msgstr "kanal değiştirildi"
 #~ msgid "Clock always"
 #~ msgstr "Daima saat"
 
+#~ msgid "Coderate HP"
+#~ msgstr "HP Kod oranı"
+
+#~ msgid "Coderate LP"
+#~ msgstr "LP Kod oranı"
+
 #~ msgid "Enable auto cable scan"
 #~ msgstr "Otomatik kablo tarama etkinleştir"
 
 #~ msgid "Enigma (re)starts: %d\n"
 #~ msgstr "Enigma (yeniden) başlar: %d\n"
 
+#~ msgid "Hierarchy information"
+#~ msgstr "Hiyerarşi bilgisi"
+
 #~ msgid "Lets you configure your softcams"
 #~ msgstr "Softcam yapılandırmanıza olanak sağlar"
+
+#~ msgid "Location:"
+#~ msgstr "Konum:"
+
+#~ msgid "Multiplex"
+#~ msgstr "Çoklandırıcı"
+
+#~ msgid "NIM"
+#~ msgstr "NIM"
+
+#, fuzzy
+#~ msgid "Nameserver is off"
+#~ msgstr "Isim sunucusu (DNS)"
 
 #~ msgid "Number and Name"
 #~ msgstr "Numara ve İsim"
 
 #~ msgid "Only Number"
 #~ msgstr "Sadece Numara"
+
+#~ msgid "PIDs"
+#~ msgstr "PIDs"
 
 #~ msgid "Please wait, restarting cardserver."
 #~ msgstr "Lütfen bekleyin, kart sunucusu yeniden başlatılıyor."
@@ -11228,11 +11399,17 @@ msgstr "kanal değiştirildi"
 #~ msgid "Restart softcam"
 #~ msgstr "Softcam yeniden başlat"
 
+#~ msgid "SID"
+#~ msgstr "SID"
+
 #~ msgid "Select Card Server"
 #~ msgstr "Kart Sunucusu seçin"
 
 #~ msgid "Select Softcam"
 #~ msgstr "Softcam seçin"
+
+#~ msgid "Service Information"
+#~ msgstr "Kanal Bilgileri"
 
 #~ msgid "Show softcam setup in extensions menu"
 #~ msgstr "Softcam kurulumunu eklentiler menüsünde göster"
@@ -11243,5 +11420,27 @@ msgstr "kanal değiştirildi"
 #~ msgid "Softcam setup..."
 #~ msgstr "Softcam kurulumu..."
 
+#~ msgid "Transponder Information"
+#~ msgstr "transponder Bilgileri"
+
+#~ msgid "Transponder type"
+#~ msgstr "Transponder tipi"
+
+#~ msgid "Videocodec"
+#~ msgstr "Video çözücü (Codec)"
+
+#~ msgid "Videosize"
+#~ msgstr "Video boyutu"
+
+#~ msgid "When enabled the LNB power will not be switched off in standby"
+#~ msgstr "LNB güç bekleme kapalı olmayacak etkin zaman"
+
+#~ msgid "When enabled the LNB toneburst will be forced"
+#~ msgstr "zorunlu olacak Toneburst LNB etkin olduğunda"
+
 #~ msgid "Zap back to service before tuner setup?"
 #~ msgstr "Tuner ayarlarından çıkıldığında seyrettiğiniz kanala dönmek istiyor musunuz?"
+
+#, fuzzy
+#~ msgid "not avaible"
+#~ msgstr "kullanılamaz"

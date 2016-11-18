@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-20 17:13+0200\n"
+"POT-Creation-Date: 2016-11-18 19:53+0100\n"
 "PO-Revision-Date: 2015-01-29 17:40+0200\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -153,6 +153,11 @@ msgstr ""
 
 msgid " "
 msgstr ""
+
+#
+#, fuzzy
+msgid " (0 - all networks)"
+msgstr "Lokaal netwurk"
 
 #
 #, fuzzy, python-format
@@ -375,9 +380,6 @@ msgstr ""
 
 #, python-format
 msgid "%s:%s"
-msgstr ""
-
-msgid "(DHCP is off)"
 msgstr ""
 
 #
@@ -660,6 +662,11 @@ msgstr ""
 "%s"
 
 #
+#, fuzzy
+msgid "A recording is currently running on the selected tuner. Please select a different tuner or consider to stop the recording to try again."
+msgstr "Opnimmen is dwaande. Stopje it opnimmen earst, foar jo de satfyner brûke."
+
+#
 msgid ""
 "A recording is currently running.\n"
 "What do you want to do?"
@@ -730,6 +737,17 @@ msgstr ""
 
 msgid "ASPECT key"
 msgstr ""
+
+msgid "ASS file"
+msgstr ""
+
+msgid "ATSC"
+msgstr ""
+
+#
+#, fuzzy
+msgid "ATSC provider"
+msgstr "Leveransier"
 
 #
 msgid "Abort"
@@ -1340,6 +1358,15 @@ msgstr "BER:"
 msgid "BLUDISC RECORDABLE"
 msgstr ""
 
+msgid "BT 2020 CL"
+msgstr ""
+
+msgid "BT 2020 NCL"
+msgstr ""
+
+msgid "BT 709"
+msgstr ""
+
 #
 msgid "Back"
 msgstr "Werom"
@@ -1764,6 +1791,15 @@ msgstr "Kanaal:"
 msgid "Channellist menu"
 msgstr "Kanaal-lyst menu"
 
+msgid "Channelnumber and picon"
+msgstr ""
+
+msgid "Channelnumber and servicename"
+msgstr ""
+
+msgid "Channelnumber, picon and servicename"
+msgstr ""
+
 #
 msgid "Chap."
 msgstr "Haads."
@@ -1909,19 +1945,14 @@ msgstr ""
 msgid "Close title selection"
 msgstr ""
 
+msgid "Code R. LP-HP & Guard Int."
+msgstr ""
+
 msgid "Code rate HP"
 msgstr ""
 
 msgid "Code rate LP"
 msgstr ""
-
-#
-msgid "Coderate HP"
-msgstr "Kode faasje HP"
-
-#
-msgid "Coderate LP"
-msgstr "Kode faasje LP"
 
 #
 msgid "Collection name"
@@ -2357,6 +2388,9 @@ msgstr ""
 msgid "Connected to"
 msgstr "Ferbûn mei"
 
+msgid "Connected transcoding, limit - no PiP!"
+msgstr ""
+
 #
 #, fuzzy
 msgid "Consider CI assignment"
@@ -2366,7 +2400,8 @@ msgid "Console"
 msgstr ""
 
 #
-msgid "Constellation"
+#, fuzzy
+msgid "Constellation & FFT mode"
 msgstr "Himmel"
 
 #
@@ -2582,6 +2617,9 @@ msgstr ""
 msgid "DHCP"
 msgstr "DHCP"
 
+msgid "DHCP is off"
+msgstr ""
+
 #
 #, fuzzy
 msgid "DMM advanced"
@@ -2597,6 +2635,9 @@ msgstr ""
 msgid "DUAL LAYER DVD"
 msgstr ""
 
+msgid "DVB CI Delay"
+msgstr ""
+
 msgid "DVB drivers: "
 msgstr ""
 
@@ -2604,6 +2645,9 @@ msgid "DVB subtitle black transparency"
 msgstr ""
 
 msgid "DVB-C"
+msgstr ""
+
+msgid "DVB-C ANNEX B"
 msgstr ""
 
 msgid "DVB-C ANNEX C"
@@ -3446,6 +3490,11 @@ msgstr ""
 msgid "Enable volume control with arrow buttons"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Enable wakeup timer"
+msgstr "Tiidstjoering"
+
 msgid "Enable zapping with CH+/-, B+/-, P+/-"
 msgstr ""
 
@@ -3879,6 +3928,11 @@ msgstr "Favoryten"
 msgid "File appears to be busy.\n"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Filename"
+msgstr "triemnamme"
+
 msgid "Filesystem check"
 msgstr ""
 
@@ -4015,6 +4069,16 @@ msgid "Frequency"
 msgstr "Frekwinsje"
 
 #
+#, fuzzy
+msgid "Frequency & Channel"
+msgstr "Frekwinsje bânnen"
+
+#
+#, fuzzy
+msgid "Frequency & Polarization"
+msgstr "Polarisaasje"
+
+#
 msgid "Frequency bands"
 msgstr "Frekwinsje bânnen"
 
@@ -4044,8 +4108,8 @@ msgid "Frontpanel"
 msgstr ""
 
 #
-#, python-format
-msgid "Frontprocessor version: %d"
+#, fuzzy, python-format
+msgid "Frontprocessor version: %s"
 msgstr "Foarprocessor ferzje: %d"
 
 msgid "Full transparency"
@@ -4249,10 +4313,10 @@ msgstr ""
 msgid "HD list"
 msgstr ""
 
-msgid "HD1100/HD1200/et7x00/et8500"
+msgid "HD2400"
 msgstr ""
 
-msgid "HD2400"
+msgid "HD51/HD1100/HD1200/et7x00/et8500"
 msgstr ""
 
 msgid ""
@@ -4262,6 +4326,11 @@ msgstr ""
 
 msgid "HDMI"
 msgstr ""
+
+#
+#, fuzzy
+msgid "HDMI Colorimetry"
+msgstr "Kleur formaat"
 
 #
 #, fuzzy
@@ -4357,11 +4426,6 @@ msgstr ""
 
 msgid "Hierarchy info"
 msgstr ""
-
-#
-#, fuzzy
-msgid "Hierarchy information"
-msgstr "Hiërarchie Ynformaasje"
 
 #
 msgid "High bitrate support"
@@ -4777,6 +4841,14 @@ msgstr ""
 msgid "Inversion"
 msgstr "Infertearring"
 
+#
+#, fuzzy
+msgid "Inversion & Bandwidth"
+msgstr "Bânbridte"
+
+msgid "Inversion, Pilot & Roll-off"
+msgstr ""
+
 msgid "Invert"
 msgstr ""
 
@@ -4943,6 +5015,10 @@ msgstr ""
 msgid "Latest Commits"
 msgstr ""
 
+#, python-format
+msgid "Latest available openMips %s build is from: %s"
+msgstr ""
+
 #
 msgid "Latitude"
 msgstr "Bridtegraad"
@@ -5093,11 +5169,6 @@ msgstr "Doel"
 #
 msgid "Location for instant recordings"
 msgstr ""
-
-#
-#, fuzzy
-msgid "Location:"
-msgstr "Doel"
 
 msgid "Lock ratio"
 msgstr ""
@@ -5532,9 +5603,6 @@ msgstr ""
 msgid "Multiple service support"
 msgstr "Kin meardere utstjoeringen oan"
 
-msgid "Multiplex"
-msgstr ""
-
 #
 msgid "Multisat"
 msgstr "Multisat"
@@ -5573,7 +5641,7 @@ msgstr ""
 msgid "NFS setup"
 msgstr "Ynstelle"
 
-msgid "NIM"
+msgid "NIM & Type"
 msgstr ""
 
 #
@@ -5609,11 +5677,6 @@ msgstr "Nammeserver"
 #, python-format
 msgid "Nameserver %d"
 msgstr "Nammeserver %d"
-
-#
-#, fuzzy
-msgid "Nameserver is off"
-msgstr "Nammeserver"
 
 #
 msgid "Nameserver settings"
@@ -5934,6 +5997,9 @@ msgstr "Nee, mar start fanôf it begjin"
 msgid "No, do nothing."
 msgstr "Nee, doch neat.."
 
+msgid "No, except Wakeup timer"
+msgstr ""
+
 #
 #, fuzzy
 msgid "No, just start my GigaBlue"
@@ -6005,6 +6071,9 @@ msgid "Not tested:"
 msgstr "Gebruker ynstelling"
 
 msgid "Not-Associated"
+msgstr ""
+
+msgid "Note: when enabled, and you do want standby mode after wake up, set option 'Startup to Standby' as 'No, except Wakeup timer'."
 msgstr ""
 
 msgid "Nothing connected"
@@ -6244,9 +6313,8 @@ msgstr ""
 msgid "PDC"
 msgstr ""
 
-#
-msgid "PIDs"
-msgstr "PIDs"
+msgid "PGS file"
+msgstr ""
 
 #
 #, fuzzy
@@ -6389,8 +6457,10 @@ msgstr "PIP Ynstellingen"
 msgid "Picon"
 msgstr ""
 
-msgid "Picon and service name"
-msgstr ""
+#
+#, fuzzy
+msgid "Picon and servicename"
+msgstr "Rotor"
 
 #
 #, fuzzy
@@ -6892,6 +6962,12 @@ msgid "Prefer subtitles stored by service"
 msgstr ""
 
 msgid "Preferred tuner"
+msgstr ""
+
+msgid "Preferred tuner ATSC"
+msgstr ""
+
+msgid "Preferred tuner ATSC for recordings"
 msgstr ""
 
 msgid "Preferred tuner DVB-C"
@@ -7726,7 +7802,7 @@ msgstr "Russysk"
 msgid "S-Video"
 msgstr "S Video"
 
-msgid "SID"
+msgid "SCPC optimized search range"
 msgstr ""
 
 #
@@ -7742,6 +7818,12 @@ msgid "SNR:"
 msgstr "SNR:"
 
 msgid "SPDIF"
+msgstr ""
+
+msgid "SRT file"
+msgstr ""
+
+msgid "SSA file"
 msgstr ""
 
 #
@@ -8289,8 +8371,13 @@ msgstr "Kanaal ynfo"
 
 #
 #, fuzzy
-msgid "Service Information"
-msgstr "Ynformaasje"
+msgid "Service & PIDs"
+msgstr "Kanalen"
+
+#
+#, fuzzy
+msgid "Service ID"
+msgstr "Kanaal ynfo"
 
 #
 msgid "Service has been added to the favourites."
@@ -8304,6 +8391,15 @@ msgstr "Kanaal is tafoege oan selektearre bouquet."
 #, fuzzy
 msgid "Service info"
 msgstr "Kanaal ynformaasje"
+
+msgid "Service info - service & PIDs"
+msgstr ""
+
+msgid "Service info - tuner live values"
+msgstr ""
+
+msgid "Service info - tuner setting values"
+msgstr ""
 
 #
 msgid ""
@@ -8343,6 +8439,11 @@ msgid ""
 "Service unavailable!\n"
 "Check tuner configuration!"
 msgstr "Kanaal net beskikber!<br> Sjoch tuner ynstellingen nei."
+
+#
+#, fuzzy
+msgid "Servicename"
+msgstr "Kanaal sykje"
 
 #
 msgid "Services"
@@ -8912,6 +9013,11 @@ msgstr ""
 msgid "Sleep timer"
 msgstr "Tiidstjoering"
 
+#
+#, fuzzy
+msgid "Sleep/wakeup timer"
+msgstr "Tiidstjoering"
+
 msgid "SleepTimer Configuration"
 msgstr ""
 
@@ -9248,6 +9354,14 @@ msgstr ""
 #
 msgid "Starting on"
 msgstr "Starte op"
+
+msgid "Startup the set top box in standby"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Startup to Standby"
+msgstr "gean nei paraatstand"
 
 msgid "Status:"
 msgstr ""
@@ -9596,6 +9710,9 @@ msgstr ""
 msgid "Symbol rate"
 msgstr ""
 
+msgid "Symbol rate & FEC"
+msgstr ""
+
 msgid "Symbol rate:"
 msgstr ""
 
@@ -9614,6 +9731,11 @@ msgstr ""
 #
 msgid "System"
 msgstr "Systeem"
+
+#
+#, fuzzy
+msgid "System & Modulation"
+msgstr "Modulaasje"
 
 #
 #. TRANSLATORS: Add here whatever should be shown in the "translator" about screen, up to 6 lines (use \n for newline)
@@ -9978,6 +10100,9 @@ msgstr ""
 msgid "This option allows to set the level of dynamic contrast of the picture."
 msgstr ""
 
+msgid "This option allows you can config the Colorimetry for HDR"
+msgstr ""
+
 msgid "This option allows you enable smoothing filter to control the dithering process."
 msgstr ""
 
@@ -10288,6 +10413,9 @@ msgstr ""
 msgid "Toggle a cut mark at the current position"
 msgstr "merker oan/út op dizze posysje"
 
+msgid "Toggle dashed flickering line for this service"
+msgstr ""
+
 msgid "Toggle infoBar"
 msgstr ""
 
@@ -10359,16 +10487,6 @@ msgstr "Oerstjoeren type"
 msgid "Transponder"
 msgstr "Transponder"
 
-#
-#, fuzzy
-msgid "Transponder Information"
-msgstr "Transponder type"
-
-#
-#, fuzzy
-msgid "Transponder type"
-msgstr "Transponder type"
-
 msgid "Trash can"
 msgstr ""
 
@@ -10432,17 +10550,23 @@ msgstr ""
 
 #
 #, fuzzy
+msgid "Tuner live values"
+msgstr "Tuner status"
+
+#
+#, fuzzy
 msgid "Tuner not available."
 msgstr "Inkele ynstekkers binne net anwêzig:\n"
 
 #
 #, fuzzy
-msgid "Tuner slot"
-msgstr "Tuner Slot"
+msgid "Tuner setting values"
+msgstr "Tuner status"
 
 #
-msgid "Tuner status"
-msgstr "Tuner status"
+#, fuzzy
+msgid "Tuner slot"
+msgstr "Tuner Slot"
 
 #
 #, fuzzy, python-format
@@ -10485,6 +10609,9 @@ msgstr ""
 #
 msgid "Type of scan"
 msgstr "Type fan sykjen"
+
+msgid "URL"
+msgstr ""
 
 msgid "URL of fallback remote receiver"
 msgstr ""
@@ -10809,6 +10936,9 @@ msgstr "VCR scart"
 msgid "VMGM (intro trailer)"
 msgstr "VMGM (yntro fan film)"
 
+msgid "VOB file"
+msgstr ""
+
 msgid "VU+"
 msgstr ""
 
@@ -10894,13 +11024,7 @@ msgstr ""
 msgid "VideoMode"
 msgstr ""
 
-msgid "Videocodec"
-msgstr ""
-
-msgid "Videoformat"
-msgstr ""
-
-msgid "Videosize"
+msgid "Videocodec, size & format"
 msgstr ""
 
 #
@@ -11062,6 +11186,16 @@ msgstr ""
 msgid "Wakeup signal from TV"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Wakeup time"
+msgstr "Tiidstjoering"
+
+#
+#, fuzzy
+msgid "Wakeup timer"
+msgstr "Tiidstjoering"
+
 msgid "Wakeup type"
 msgstr ""
 
@@ -11086,6 +11220,9 @@ msgstr "Opname films ôfspielje..."
 #, fuzzy
 msgid "Watch recordings..."
 msgstr "an it opnimmen..."
+
+msgid "Weather GigaBlue Pax"
+msgstr ""
 
 msgid "Weather ID"
 msgstr ""
@@ -11172,12 +11309,6 @@ msgid "What do you want to scan?"
 msgstr "Wat wolle jo ôfsykje ?"
 
 msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are upgraded"
-msgstr ""
-
-msgid "When enabled the LNB power will not be switched off in standby"
-msgstr ""
-
-msgid "When enabled the LNB toneburst will be forced"
 msgstr ""
 
 msgid "When enabled the PiP can be closed by the exit button."
@@ -11513,6 +11644,16 @@ msgstr "Ja, no automatysk sykje"
 #
 msgid "Yes, do another manual scan now"
 msgstr "Ja, no nochris hânmatig sykje"
+
+#
+#, fuzzy
+msgid "Yes, only from deep standby"
+msgstr "gean nei djip paraatstand"
+
+#
+#, fuzzy
+msgid "Yes, only from standby"
+msgstr "gean nei paraatstand"
 
 #
 msgid "Yes, perform a shutdown now."
@@ -12213,6 +12354,9 @@ msgstr "bewurkje alternatief"
 msgid "education/science/factual topics (general)"
 msgstr ""
 
+msgid "embedded"
+msgstr ""
+
 #
 msgid "empty"
 msgstr "leeg"
@@ -12668,11 +12812,6 @@ msgstr "gjin"
 
 msgid "normal"
 msgstr ""
-
-#
-#, fuzzy
-msgid "not avaible"
-msgstr "Inkele ynstekkers binne net anwêzig:\n"
 
 #
 msgid "not configured"
@@ -13384,6 +13523,14 @@ msgstr "knipt"
 #~ msgstr "Feroarje pinkode"
 
 #
+#~ msgid "Coderate HP"
+#~ msgstr "Kode faasje HP"
+
+#
+#~ msgid "Coderate LP"
+#~ msgstr "Kode faasje LP"
+
+#
 #~ msgid "Committed DiSEqC command"
 #~ msgstr "Oanwizen DiSEqC kommando"
 
@@ -13446,8 +13593,18 @@ msgstr "knipt"
 
 #
 #, fuzzy
+#~ msgid "Hierarchy information"
+#~ msgstr "Hiërarchie Ynformaasje"
+
+#
+#, fuzzy
 #~ msgid "Immediate shutdown"
 #~ msgstr "direkt útskeakelje"
+
+#
+#, fuzzy
+#~ msgid "Location:"
+#~ msgstr "Doel"
 
 #
 #, fuzzy
@@ -13462,6 +13619,11 @@ msgstr "knipt"
 #
 #~ msgid "NFI image flashing completed. Press Yellow to Reboot!"
 #~ msgstr "NFI image flashen is klear. Druk giel om nei te starten!"
+
+#
+#, fuzzy
+#~ msgid "Nameserver is off"
+#~ msgstr "Nammeserver"
 
 #
 #~ msgid "New version:"
@@ -13497,6 +13659,10 @@ msgstr "knipt"
 #~ msgstr "Rotor ynstellingen"
 
 #
+#~ msgid "PIDs"
+#~ msgstr "PIDs"
+
+#
 #~ msgid "Parental control type"
 #~ msgstr "Alderlik tasjoch type"
 
@@ -13517,6 +13683,11 @@ msgstr "knipt"
 #
 #~ msgid "Satellites"
 #~ msgstr "Satellyten"
+
+#
+#, fuzzy
+#~ msgid "Service Information"
+#~ msgstr "Ynformaasje"
 
 #
 #, fuzzy
@@ -13573,6 +13744,16 @@ msgstr "knipt"
 #, fuzzy
 #~ msgid "Timer editor"
 #~ msgstr "Tiidsbarren bewurker"
+
+#
+#, fuzzy
+#~ msgid "Transponder Information"
+#~ msgstr "Transponder type"
+
+#
+#, fuzzy
+#~ msgid "Transponder type"
+#~ msgstr "Transponder type"
 
 #
 #~ msgid "USB stick wizard"
@@ -13632,6 +13813,11 @@ msgstr "knipt"
 #
 #~ msgid "fine-tune your display"
 #~ msgstr "it skerm fyn tune"
+
+#
+#, fuzzy
+#~ msgid "not avaible"
+#~ msgstr "Inkele ynstekkers binne net anwêzig:\n"
 
 #
 #~ msgid "select movie"

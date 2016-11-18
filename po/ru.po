@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-20 17:13+0200\n"
+"POT-Creation-Date: 2016-11-18 19:53+0100\n"
 "PO-Revision-Date: 2015-01-29 17:40+0200\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -180,6 +180,10 @@ msgstr "Список фаворитов"
 
 msgid " "
 msgstr ""
+
+#, fuzzy
+msgid " (0 - all networks)"
+msgstr "Локальная сеть"
 
 #, fuzzy, python-format
 msgid " (Channel %s)"
@@ -402,9 +406,6 @@ msgstr "%s/%s: %s"
 
 #, python-format
 msgid "%s:%s"
-msgstr ""
-
-msgid "(DHCP is off)"
 msgstr ""
 
 msgid "(ZAP)"
@@ -647,6 +648,10 @@ msgstr ""
 "Запись была начата:\n"
 "%s"
 
+#, fuzzy
+msgid "A recording is currently running on the selected tuner. Please select a different tuner or consider to stop the recording to try again."
+msgstr "В текущее время идет запись.Пожалуйста, остановите запись, прежде чем попытаться сканировать."
+
 msgid ""
 "A recording is currently running.\n"
 "What do you want to do?"
@@ -719,6 +724,17 @@ msgstr ""
 
 msgid "ASPECT key"
 msgstr ""
+
+#, fuzzy
+msgid "ASS file"
+msgstr "%d файл"
+
+msgid "ATSC"
+msgstr ""
+
+#, fuzzy
+msgid "ATSC provider"
+msgstr "Добавить провайдера"
 
 msgid "Abort"
 msgstr "Прервать"
@@ -1219,6 +1235,15 @@ msgstr "BER:"
 msgid "BLUDISC RECORDABLE"
 msgstr ""
 
+msgid "BT 2020 CL"
+msgstr ""
+
+msgid "BT 2020 NCL"
+msgstr ""
+
+msgid "BT 709"
+msgstr ""
+
 msgid "Back"
 msgstr "Назад"
 
@@ -1580,6 +1605,17 @@ msgstr "Канал:"
 msgid "Channellist menu"
 msgstr "Меню списка каналов"
 
+msgid "Channelnumber and picon"
+msgstr ""
+
+#, fuzzy
+msgid "Channelnumber and servicename"
+msgstr "Пикон и название сервиса"
+
+#, fuzzy
+msgid "Channelnumber, picon and servicename"
+msgstr "Пикон и название сервиса"
+
 msgid "Chap."
 msgstr "Глава."
 
@@ -1709,16 +1745,13 @@ msgstr "Закрыть PiP кнопкой выход"
 msgid "Close title selection"
 msgstr "Закрыть выбор названий"
 
+msgid "Code R. LP-HP & Guard Int."
+msgstr ""
+
 msgid "Code rate HP"
 msgstr "Скорость кодирования HP"
 
 msgid "Code rate LP"
-msgstr "Скорость кодирования LP"
-
-msgid "Coderate HP"
-msgstr "Скорость кодирования HP"
-
-msgid "Coderate LP"
 msgstr "Скорость кодирования LP"
 
 msgid "Collection name"
@@ -2113,6 +2146,9 @@ msgstr ""
 msgid "Connected to"
 msgstr "Подключено к"
 
+msgid "Connected transcoding, limit - no PiP!"
+msgstr ""
+
 #, fuzzy
 msgid "Consider CI assignment"
 msgstr "Назначение CI"
@@ -2120,7 +2156,8 @@ msgstr "Назначение CI"
 msgid "Console"
 msgstr ""
 
-msgid "Constellation"
+#, fuzzy
+msgid "Constellation & FFT mode"
 msgstr "Созвездие"
 
 #, fuzzy
@@ -2301,6 +2338,9 @@ msgstr ""
 msgid "DHCP"
 msgstr "DHCP"
 
+msgid "DHCP is off"
+msgstr ""
+
 msgid "DMM advanced"
 msgstr "DMM расширенный"
 
@@ -2313,6 +2353,9 @@ msgstr ""
 msgid "DUAL LAYER DVD"
 msgstr "Двухслойный ДВД"
 
+msgid "DVB CI Delay"
+msgstr ""
+
 msgid "DVB drivers: "
 msgstr ""
 
@@ -2321,6 +2364,10 @@ msgstr "Черная прозрачность DVB субтитров"
 
 msgid "DVB-C"
 msgstr "DVB-C"
+
+#, fuzzy
+msgid "DVB-C ANNEX B"
+msgstr "DVB-C ANNEX C"
 
 msgid "DVB-C ANNEX C"
 msgstr "DVB-C ANNEX C"
@@ -3052,6 +3099,10 @@ msgstr ""
 msgid "Enable volume control with arrow buttons"
 msgstr "Выберите видеовход кнопками вверх/вниз"
 
+#, fuzzy
+msgid "Enable wakeup timer"
+msgstr "Таймер сна"
+
 msgid "Enable zapping with CH+/-, B+/-, P+/-"
 msgstr ""
 
@@ -3415,6 +3466,10 @@ msgstr "Фавориты"
 msgid "File appears to be busy.\n"
 msgstr "Файл оказался занятым.\n"
 
+#, fuzzy
+msgid "Filename"
+msgstr "имя файла"
+
 msgid "Filesystem check"
 msgstr "Проверка файловой системы"
 
@@ -3535,6 +3590,14 @@ msgstr "Французский"
 msgid "Frequency"
 msgstr "Частота"
 
+#, fuzzy
+msgid "Frequency & Channel"
+msgstr "Частотные диапазоны"
+
+#, fuzzy
+msgid "Frequency & Polarization"
+msgstr "Поляризация"
+
 msgid "Frequency bands"
 msgstr "Частотные диапазоны"
 
@@ -3559,8 +3622,8 @@ msgstr "От :"
 msgid "Frontpanel"
 msgstr ""
 
-#, python-format
-msgid "Frontprocessor version: %d"
+#, fuzzy, python-format
+msgid "Frontprocessor version: %s"
 msgstr "Версия фронтпроцессора: %d"
 
 msgid "Full transparency"
@@ -3741,10 +3804,10 @@ msgstr ""
 msgid "HD list"
 msgstr "HD лист"
 
-msgid "HD1100/HD1200/et7x00/et8500"
+msgid "HD2400"
 msgstr ""
 
-msgid "HD2400"
+msgid "HD51/HD1100/HD1200/et7x00/et8500"
 msgstr ""
 
 msgid ""
@@ -3754,6 +3817,10 @@ msgstr ""
 
 msgid "HDMI"
 msgstr ""
+
+#, fuzzy
+msgid "HDMI Colorimetry"
+msgstr "Формат цвета"
 
 #, fuzzy
 msgid "HDMI Colorspace"
@@ -3835,9 +3902,6 @@ msgid "Hide zap errors"
 msgstr "Спрятать ошибки при переключении каналов"
 
 msgid "Hierarchy info"
-msgstr "Иерархия информации"
-
-msgid "Hierarchy information"
 msgstr "Иерархия информации"
 
 msgid "High bitrate support"
@@ -4194,6 +4258,13 @@ msgstr ""
 msgid "Inversion"
 msgstr "Инверсия"
 
+#, fuzzy
+msgid "Inversion & Bandwidth"
+msgstr "Пропускная способность"
+
+msgid "Inversion, Pilot & Roll-off"
+msgstr ""
+
 msgid "Invert"
 msgstr "Выбрать все"
 
@@ -4327,6 +4398,10 @@ msgstr "Последнее обновление: "
 msgid "Latest Commits"
 msgstr ""
 
+#, python-format
+msgid "Latest available openMips %s build is from: %s"
+msgstr ""
+
 msgid "Latitude"
 msgstr "Широта"
 
@@ -4451,10 +4526,6 @@ msgstr "Расположение"
 
 msgid "Location for instant recordings"
 msgstr "Расположение моментальных записей"
-
-#, fuzzy
-msgid "Location:"
-msgstr "Расположение"
 
 msgid "Lock ratio"
 msgstr "Качество захвата"
@@ -4830,9 +4901,6 @@ msgstr "Мультмедиа"
 msgid "Multiple service support"
 msgstr "Поддержка мультисервисов"
 
-msgid "Multiplex"
-msgstr "Мультиплекс"
-
 msgid "Multisat"
 msgstr "Несколько спутников"
 
@@ -4865,8 +4933,8 @@ msgstr ""
 msgid "NFS setup"
 msgstr "Настройка"
 
-msgid "NIM"
-msgstr "Тюнер"
+msgid "NIM & Type"
+msgstr ""
 
 #, fuzzy
 msgid "NO"
@@ -4894,10 +4962,6 @@ msgstr "DNS сервер"
 #, python-format
 msgid "Nameserver %d"
 msgstr "DNS сервер %d"
-
-#, fuzzy
-msgid "Nameserver is off"
-msgstr "DNS сервер"
 
 msgid "Nameserver settings"
 msgstr "Настройки DNS"
@@ -5167,6 +5231,9 @@ msgstr "Нет, рестарт и начать сначала"
 msgid "No, do nothing."
 msgstr "Нет, ничего не делать."
 
+msgid "No, except Wakeup timer"
+msgstr ""
+
 #, fuzzy
 msgid "No, just start my GigaBlue"
 msgstr "Нет, включить мой ресивер"
@@ -5232,6 +5299,9 @@ msgstr "Тест сети: "
 #, fuzzy
 msgid "Not-Associated"
 msgstr "Нет ассоциаций"
+
+msgid "Note: when enabled, and you do want standby mode after wake up, set option 'Startup to Standby' as 'No, except Wakeup timer'."
+msgstr ""
 
 msgid "Nothing connected"
 msgstr ""
@@ -5445,8 +5515,9 @@ msgstr "PCR PID"
 msgid "PDC"
 msgstr ""
 
-msgid "PIDs"
-msgstr "ПИДы"
+#, fuzzy
+msgid "PGS file"
+msgstr "%d файл"
 
 msgid "PIN code needed"
 msgstr "Необходим PIN-код"
@@ -5564,7 +5635,8 @@ msgstr "Настройки PiP"
 msgid "Picon"
 msgstr "Пикон"
 
-msgid "Picon and service name"
+#, fuzzy
+msgid "Picon and servicename"
 msgstr "Пикон и название сервиса"
 
 #, fuzzy
@@ -5976,6 +6048,14 @@ msgid "Prefer subtitles stored by service"
 msgstr "Приоритет субтитров, сохраненных сервисом"
 
 msgid "Preferred tuner"
+msgstr "Приоритетный тюнер"
+
+#, fuzzy
+msgid "Preferred tuner ATSC"
+msgstr "Приоритетный тюнер"
+
+#, fuzzy
+msgid "Preferred tuner ATSC for recordings"
 msgstr "Приоритетный тюнер"
 
 #, fuzzy
@@ -6672,8 +6752,8 @@ msgstr "Русский"
 msgid "S-Video"
 msgstr "S-Видео"
 
-msgid "SID"
-msgstr "SID"
+msgid "SCPC optimized search range"
+msgstr ""
 
 msgid "SINGLE LAYER DVD"
 msgstr "Однослойный ДВД"
@@ -6686,6 +6766,14 @@ msgstr "SNR:"
 
 msgid "SPDIF"
 msgstr ""
+
+#, fuzzy
+msgid "SRT file"
+msgstr "%d файл"
+
+#, fuzzy
+msgid "SSA file"
+msgstr "%d файл"
 
 msgid "SSID:"
 msgstr "SSID:"
@@ -7133,8 +7221,12 @@ msgid "Service"
 msgstr "Сервис"
 
 #, fuzzy
-msgid "Service Information"
-msgstr "Информация"
+msgid "Service & PIDs"
+msgstr "Сервисы"
+
+#, fuzzy
+msgid "Service ID"
+msgstr "Сервис"
 
 msgid "Service has been added to the favourites."
 msgstr "Сервис был добавлен в фавориты."
@@ -7144,6 +7236,15 @@ msgstr "Сервис был добавлен в выбранный пакет."
 
 msgid "Service info"
 msgstr "Информация о сервисе"
+
+msgid "Service info - service & PIDs"
+msgstr ""
+
+msgid "Service info - tuner live values"
+msgstr ""
+
+msgid "Service info - tuner setting values"
+msgstr ""
 
 msgid ""
 "Service invalid!\n"
@@ -7177,6 +7278,10 @@ msgid ""
 msgstr ""
 "Сервис не доступен!\n"
 "Проверьте настройки тюнера!"
+
+#, fuzzy
+msgid "Servicename"
+msgstr "Название сервиса"
 
 msgid "Services"
 msgstr "Сервисы"
@@ -7655,6 +7760,10 @@ msgstr "Пропустить проверку интернет соединен�
 msgid "Sleep timer"
 msgstr "Таймер сна"
 
+#, fuzzy
+msgid "Sleep/wakeup timer"
+msgstr "Таймер сна"
+
 msgid "SleepTimer Configuration"
 msgstr "Настройки таймера сна"
 
@@ -7950,6 +8059,13 @@ msgstr "Начало с режима списка"
 msgid "Starting on"
 msgstr "Начиная с"
 
+msgid "Startup the set top box in standby"
+msgstr ""
+
+#, fuzzy
+msgid "Startup to Standby"
+msgstr "перейти в режим ожидания"
+
 msgid "Status:"
 msgstr ""
 
@@ -8233,6 +8349,10 @@ msgstr "Переключаемые типы тюнеров:"
 msgid "Symbol rate"
 msgstr "Скорость потока"
 
+#, fuzzy
+msgid "Symbol rate & FEC"
+msgstr "Скорость потока"
+
 msgid "Symbol rate:"
 msgstr ""
 
@@ -8250,6 +8370,10 @@ msgstr ""
 
 msgid "System"
 msgstr "Система"
+
+#, fuzzy
+msgid "System & Modulation"
+msgstr "Модуляция"
 
 #. TRANSLATORS: Add here whatever should be shown in the "translator" about screen, up to 6 lines (use \n for newline)
 msgid "TRANSLATOR_INFO"
@@ -8587,6 +8711,9 @@ msgstr ""
 msgid "This option allows to set the level of dynamic contrast of the picture."
 msgstr ""
 
+msgid "This option allows you can config the Colorimetry for HDR"
+msgstr ""
+
 msgid "This option allows you enable smoothing filter to control the dithering process."
 msgstr ""
 
@@ -8856,6 +8983,9 @@ msgstr ""
 msgid "Toggle a cut mark at the current position"
 msgstr "Расположить метку обработки в текущей позиции"
 
+msgid "Toggle dashed flickering line for this service"
+msgstr ""
+
 msgid "Toggle infoBar"
 msgstr ""
 
@@ -8916,13 +9046,6 @@ msgstr "Режим передачи"
 msgid "Transponder"
 msgstr "Транспондер"
 
-#, fuzzy
-msgid "Transponder Information"
-msgstr "Тип транспондера"
-
-msgid "Transponder type"
-msgstr "Тип транспондера"
-
 msgid "Trash can"
 msgstr "Корзина"
 
@@ -8973,14 +9096,19 @@ msgid "Tuner is not supported"
 msgstr ""
 
 #, fuzzy
+msgid "Tuner live values"
+msgstr "Статус тюнера"
+
+#, fuzzy
 msgid "Tuner not available."
 msgstr "Обновления с фида недоступны."
 
+#, fuzzy
+msgid "Tuner setting values"
+msgstr "Статус тюнера"
+
 msgid "Tuner slot"
 msgstr "Слот тюнера"
-
-msgid "Tuner status"
-msgstr "Статус тюнера"
 
 #, python-format
 msgid "Tuner status %s"
@@ -9017,6 +9145,9 @@ msgstr "Тип"
 
 msgid "Type of scan"
 msgstr "Тип сканирования"
+
+msgid "URL"
+msgstr ""
 
 msgid "URL of fallback remote receiver"
 msgstr ""
@@ -9299,6 +9430,10 @@ msgstr "Видеомагнитофон"
 msgid "VMGM (intro trailer)"
 msgstr "VMGM (трейлер)"
 
+#, fuzzy
+msgid "VOB file"
+msgstr "%d файл"
+
 msgid "VU+"
 msgstr ""
 
@@ -9369,14 +9504,9 @@ msgstr "Видео: %s fps"
 msgid "VideoMode"
 msgstr ""
 
-msgid "Videocodec"
-msgstr "Видеокодек"
-
-msgid "Videoformat"
+#, fuzzy
+msgid "Videocodec, size & format"
 msgstr "Видеоформат"
-
-msgid "Videosize"
-msgstr "Видеоразмер"
 
 msgid "View Rass interactive..."
 msgstr "Интерактивный просмотр RASS"
@@ -9507,6 +9637,14 @@ msgstr "Поднять ресивер из режима ожидания"
 msgid "Wakeup signal from TV"
 msgstr "Сигнал просыпания от телевизора"
 
+#, fuzzy
+msgid "Wakeup time"
+msgstr "Включение ТВ"
+
+#, fuzzy
+msgid "Wakeup timer"
+msgstr "Таймер сна"
+
 msgid "Wakeup type"
 msgstr ""
 
@@ -9528,6 +9666,9 @@ msgstr "Воспроизвести записанное видео..."
 
 msgid "Watch recordings..."
 msgstr "запись..."
+
+msgid "Weather GigaBlue Pax"
+msgstr ""
 
 msgid "Weather ID"
 msgstr ""
@@ -9617,14 +9758,6 @@ msgstr "Что Вы хотите найти?"
 
 msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are upgraded"
 msgstr ""
-
-#, fuzzy
-msgid "When enabled the LNB power will not be switched off in standby"
-msgstr "При включении этой опции 'Видеомагнитофон' будет показан в главном меню."
-
-#, fuzzy
-msgid "When enabled the LNB toneburst will be forced"
-msgstr "Если включено, то номера маркеров не будут показаны в списке каналов."
 
 msgid "When enabled the PiP can be closed by the exit button."
 msgstr "Если включено, то можно закрыть экран PiP с помощью кнопки выход."
@@ -9948,6 +10081,14 @@ msgstr "Да, выполнить автоматический поиск"
 
 msgid "Yes, do another manual scan now"
 msgstr "Да, выполнить еще ручной поиск"
+
+#, fuzzy
+msgid "Yes, only from deep standby"
+msgstr "перейти в глубокий режим ожидания"
+
+#, fuzzy
+msgid "Yes, only from standby"
+msgstr "перейти в режим ожидания"
 
 msgid "Yes, perform a shutdown now."
 msgstr "Да, выключить сейчас."
@@ -10605,6 +10746,9 @@ msgstr "изменить альтернативу"
 msgid "education/science/factual topics (general)"
 msgstr "образование/наука/факты (общее)"
 
+msgid "embedded"
+msgstr ""
+
 msgid "empty"
 msgstr "пустой"
 
@@ -10993,10 +11137,6 @@ msgstr "никакой"
 
 msgid "normal"
 msgstr "нормальная (декодирование)"
-
-#, fuzzy
-msgid "not avaible"
-msgstr "недоступно"
 
 msgid "not configured"
 msgstr "нет конфигурации"
@@ -11636,6 +11776,12 @@ msgstr "переключено"
 #~ msgid "Changelog"
 #~ msgstr "лог изменений"
 
+#~ msgid "Coderate HP"
+#~ msgstr "Скорость кодирования HP"
+
+#~ msgid "Coderate LP"
+#~ msgstr "Скорость кодирования LP"
+
 #~ msgid "Committed DiSEqC command"
 #~ msgstr "Команда переключения DiSEqC"
 
@@ -11750,11 +11896,18 @@ msgstr "переключено"
 #~ msgid "Green boost"
 #~ msgstr "Повышение зеленого"
 
+#~ msgid "Hierarchy information"
+#~ msgstr "Иерархия информации"
+
 #~ msgid "Immediate shutdown"
 #~ msgstr "глубокий режим ожидания"
 
 #~ msgid "List EPG functions..."
 #~ msgstr "Список функций EPG..."
+
+#, fuzzy
+#~ msgid "Location:"
+#~ msgstr "Расположение"
 
 #~ msgid "Memory positions"
 #~ msgstr "Позиция памяти"
@@ -11770,11 +11923,21 @@ msgstr "переключено"
 #~ msgid "Move to other directory"
 #~ msgstr "Выбор начального каталога"
 
+#~ msgid "Multiplex"
+#~ msgstr "Мультиплекс"
+
 #~ msgid "NFI image flashing"
 #~ msgstr "Установка прошивки NFI"
 
 #~ msgid "NFI image flashing completed. Press Yellow to Reboot!"
 #~ msgstr "NFI имидж удачно установлен. Нажмите ЖЕЛТЫЙ для перезагрузки!"
+
+#~ msgid "NIM"
+#~ msgstr "Тюнер"
+
+#, fuzzy
+#~ msgid "Nameserver is off"
+#~ msgstr "DNS сервер"
 
 #~ msgid "New PIN"
 #~ msgstr "Новый PIN-код"
@@ -11822,6 +11985,9 @@ msgstr "переключено"
 #~ msgid "Output"
 #~ msgstr "Видеовыход"
 
+#~ msgid "PIDs"
+#~ msgstr "ПИДы"
+
 #~ msgid "Parental control type"
 #~ msgstr "Тип родительского контроля"
 
@@ -11863,6 +12029,9 @@ msgstr "переключено"
 #~ msgid "Restore is running..."
 #~ msgstr "Выполняется восстановление..."
 
+#~ msgid "SID"
+#~ msgstr "SID"
+
 #~ msgid "Satellites"
 #~ msgstr "Спутники"
 
@@ -11874,6 +12043,10 @@ msgstr "переключено"
 
 #~ msgid "Select desired image from feed list"
 #~ msgstr "Выберите желаемый имидж из списка"
+
+#, fuzzy
+#~ msgid "Service Information"
+#~ msgstr "Информация"
 
 #~ msgid "Service searching"
 #~ msgstr "Поиск сервисов"
@@ -11987,6 +12160,13 @@ msgstr "переключено"
 #~ "2) Включите ресивер и нажмите кнопку ВНИЗ на передней панели ресивера около 10 секунд.\n"
 #~ "Дождитесь загрузки и следуйте указаниям Мастера."
 
+#, fuzzy
+#~ msgid "Transponder Information"
+#~ msgstr "Тип транспондера"
+
+#~ msgid "Transponder type"
+#~ msgstr "Тип транспондера"
+
 #~ msgid "Tuning step size"
 #~ msgstr "Размер шага поворота"
 
@@ -12008,9 +12188,23 @@ msgstr "переключено"
 #~ msgid "Video fine tuning"
 #~ msgstr "Настройка экрана"
 
+#~ msgid "Videocodec"
+#~ msgstr "Видеокодек"
+
+#~ msgid "Videosize"
+#~ msgstr "Видеоразмер"
+
 #, fuzzy
 #~ msgid "Welcome…"
 #~ msgstr "Добро пожаловать..."
+
+#, fuzzy
+#~ msgid "When enabled the LNB power will not be switched off in standby"
+#~ msgstr "При включении этой опции 'Видеомагнитофон' будет показан в главном меню."
+
+#, fuzzy
+#~ msgid "When enabled the LNB toneburst will be forced"
+#~ msgstr "Если включено, то номера маркеров не будут показаны в списке каналов."
 
 #~ msgid "When enabled, error messages related to the Common Interface module will not be shown."
 #~ msgstr "Скрыть сообщения об ошибках от CI модуля."
@@ -12067,6 +12261,10 @@ msgstr "переключено"
 
 #~ msgid "fine-tune your display"
 #~ msgstr "точная настройка дисплея"
+
+#, fuzzy
+#~ msgid "not avaible"
+#~ msgstr "недоступно"
 
 #~ msgid "on end of movie"
 #~ msgstr "в конце фильма"

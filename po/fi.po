@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-20 17:13+0200\n"
+"POT-Creation-Date: 2016-11-18 19:53+0100\n"
 "PO-Revision-Date: 2015-01-29 17:40+0200\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -188,6 +188,11 @@ msgstr "Käyttäjä - suosikit"
 
 msgid " "
 msgstr ""
+
+#
+#, fuzzy
+msgid " (0 - all networks)"
+msgstr "Lähiverkko"
 
 #
 #, fuzzy, python-format
@@ -408,9 +413,6 @@ msgstr "%s/%s: %s"
 
 #, python-format
 msgid "%s:%s"
-msgstr ""
-
-msgid "(DHCP is off)"
 msgstr ""
 
 #
@@ -679,6 +681,10 @@ msgstr ""
 "Tallennus on alkanut:\n"
 "%s"
 
+#, fuzzy
+msgid "A recording is currently running on the selected tuner. Please select a different tuner or consider to stop the recording to try again."
+msgstr "Tallennus on käynnissä. Lopeta tallennus ennen kuin käytät hakua."
+
 #
 msgid ""
 "A recording is currently running.\n"
@@ -760,6 +766,18 @@ msgstr ""
 
 msgid "ASPECT key"
 msgstr ""
+
+#, fuzzy
+msgid "ASS file"
+msgstr "%d tiedosto"
+
+msgid "ATSC"
+msgstr ""
+
+#
+#, fuzzy
+msgid "ATSC provider"
+msgstr "Lisää palveluntarjoaja"
 
 #
 msgid "Abort"
@@ -1351,6 +1369,15 @@ msgstr "BER:"
 msgid "BLUDISC RECORDABLE"
 msgstr ""
 
+msgid "BT 2020 CL"
+msgstr ""
+
+msgid "BT 2020 NCL"
+msgstr ""
+
+msgid "BT 709"
+msgstr ""
+
 #
 msgid "Back"
 msgstr "Takaisin"
@@ -1762,6 +1789,17 @@ msgstr "Kanava:"
 msgid "Channellist menu"
 msgstr "Kanavalistan muokkaus"
 
+msgid "Channelnumber and picon"
+msgstr ""
+
+#, fuzzy
+msgid "Channelnumber and servicename"
+msgstr "Kanavalogo ja kanavan nimi"
+
+#, fuzzy
+msgid "Channelnumber, picon and servicename"
+msgstr "Kanavalogo ja kanavan nimi"
+
 #
 msgid "Chap."
 msgstr "Osa"
@@ -1914,19 +1952,14 @@ msgstr "Sulje PiP poistuttaessa"
 msgid "Close title selection"
 msgstr "Sulje otsikon valinta"
 
+msgid "Code R. LP-HP & Guard Int."
+msgstr ""
+
 msgid "Code rate HP"
 msgstr "Koodinopeus HP"
 
 msgid "Code rate LP"
 msgstr "Koodinopeus LP"
-
-#
-msgid "Coderate HP"
-msgstr "Koodinopeus (HP)"
-
-#
-msgid "Coderate LP"
-msgstr "Koodinopeus (LP)"
 
 #
 msgid "Collection name"
@@ -2351,6 +2384,9 @@ msgstr ""
 msgid "Connected to"
 msgstr "Kytketty virittimestä"
 
+msgid "Connected transcoding, limit - no PiP!"
+msgstr ""
+
 #
 #, fuzzy
 msgid "Consider CI assignment"
@@ -2360,7 +2396,8 @@ msgid "Console"
 msgstr ""
 
 #
-msgid "Constellation"
+#, fuzzy
+msgid "Constellation & FFT mode"
 msgstr "Modulaatio"
 
 #
@@ -2569,6 +2606,9 @@ msgstr ""
 msgid "DHCP"
 msgstr "DCHP"
 
+msgid "DHCP is off"
+msgstr ""
+
 #
 msgid "DMM advanced"
 msgstr "Laaja"
@@ -2582,6 +2622,9 @@ msgstr ""
 msgid "DUAL LAYER DVD"
 msgstr "DUAL LAYER DVD"
 
+msgid "DVB CI Delay"
+msgstr ""
+
 msgid "DVB drivers: "
 msgstr ""
 
@@ -2590,6 +2633,10 @@ msgstr "DVB-tekstin mustan reunan läpinäkyvyys"
 
 msgid "DVB-C"
 msgstr "DVB-C"
+
+#, fuzzy
+msgid "DVB-C ANNEX B"
+msgstr "DVB-C ANNEX C"
 
 msgid "DVB-C ANNEX C"
 msgstr "DVB-C ANNEX C"
@@ -3431,6 +3478,11 @@ msgstr ""
 msgid "Enable volume control with arrow buttons"
 msgstr "Valitse video-sisäänmeno ylös/alas-näppäimillä"
 
+#
+#, fuzzy
+msgid "Enable wakeup timer"
+msgstr "Ajastin päälle"
+
 msgid "Enable zapping with CH+/-, B+/-, P+/-"
 msgstr ""
 
@@ -3839,6 +3891,11 @@ msgstr "Suosikit"
 msgid "File appears to be busy.\n"
 msgstr "Tiedosto näyttää olevan käytössä.\n"
 
+#
+#, fuzzy
+msgid "Filename"
+msgstr "tiedostonimi"
+
 msgid "Filesystem check"
 msgstr "Tiedostojärjestelmän tarkistus"
 
@@ -3973,6 +4030,16 @@ msgid "Frequency"
 msgstr "Taajuus"
 
 #
+#, fuzzy
+msgid "Frequency & Channel"
+msgstr "Taajuusalueet"
+
+#
+#, fuzzy
+msgid "Frequency & Polarization"
+msgstr "Polarisaatio"
+
+#
 msgid "Frequency bands"
 msgstr "Taajuusalueet"
 
@@ -4003,8 +4070,8 @@ msgstr "Mistä:"
 msgid "Frontpanel"
 msgstr "etupaneeli"
 
-#, python-format
-msgid "Frontprocessor version: %d"
+#, fuzzy, python-format
+msgid "Frontprocessor version: %s"
 msgstr "Etuprosessorin versio: %d"
 
 msgid "Full transparency"
@@ -4204,10 +4271,10 @@ msgstr ""
 msgid "HD list"
 msgstr "HD-luettelo"
 
-msgid "HD1100/HD1200/et7x00/et8500"
+msgid "HD2400"
 msgstr ""
 
-msgid "HD2400"
+msgid "HD51/HD1100/HD1200/et7x00/et8500"
 msgstr ""
 
 msgid ""
@@ -4217,6 +4284,11 @@ msgstr ""
 
 msgid "HDMI"
 msgstr ""
+
+#
+#, fuzzy
+msgid "HDMI Colorimetry"
+msgstr "Videolähtö (TV-SCART)"
 
 #
 #, fuzzy
@@ -4309,10 +4381,6 @@ msgstr "Piilota kanavanvaihton virheilmoitukset"
 
 msgid "Hierarchy info"
 msgstr "Hierarkia info"
-
-#
-msgid "Hierarchy information"
-msgstr "Hierarkia-tietoja"
 
 #
 msgid "High bitrate support"
@@ -4720,6 +4788,14 @@ msgstr ""
 msgid "Inversion"
 msgstr "Inversio"
 
+#
+#, fuzzy
+msgid "Inversion & Bandwidth"
+msgstr "Kaistanleveys"
+
+msgid "Inversion, Pilot & Roll-off"
+msgstr ""
+
 msgid "Invert"
 msgstr "Käänteinen"
 
@@ -4872,6 +4948,10 @@ msgstr "Viimeisin päivitys:"
 msgid "Latest Commits"
 msgstr ""
 
+#, python-format
+msgid "Latest available openMips %s build is from: %s"
+msgstr ""
+
 #
 msgid "Latitude"
 msgstr "Leveysaste"
@@ -5018,11 +5098,6 @@ msgstr "Hakemisto"
 
 msgid "Location for instant recordings"
 msgstr "Tallennuksien hakemisto"
-
-#
-#, fuzzy
-msgid "Location:"
-msgstr "Hakemisto"
 
 msgid "Lock ratio"
 msgstr "Lukitse suhde"
@@ -5452,9 +5527,6 @@ msgstr "Multimedia"
 msgid "Multiple service support"
 msgstr "Usean kanavan tuki"
 
-msgid "Multiplex"
-msgstr "Multipleksi"
-
 #
 msgid "Multisat"
 msgstr "Usea satelliitti"
@@ -5493,8 +5565,8 @@ msgstr ""
 msgid "NFS setup"
 msgstr "Asetukset"
 
-msgid "NIM"
-msgstr "NIM"
+msgid "NIM & Type"
+msgstr ""
 
 #
 #, fuzzy
@@ -5529,11 +5601,6 @@ msgstr "Nimipalvelin"
 #, python-format
 msgid "Nameserver %d"
 msgstr "Nimipalvelin %d"
-
-#
-#, fuzzy
-msgid "Nameserver is off"
-msgstr "Nimipalvelin"
 
 #
 msgid "Nameserver settings"
@@ -5860,6 +5927,9 @@ msgstr "Ei, aloita alusta"
 msgid "No, do nothing."
 msgstr "Ei, älä tee mitään."
 
+msgid "No, except Wakeup timer"
+msgstr ""
+
 #, fuzzy
 msgid "No, just start my GigaBlue"
 msgstr "Ei, Käynnistä vain vastaanottimeni"
@@ -5933,6 +6003,9 @@ msgstr "Lähiverkon testi: "
 #, fuzzy
 msgid "Not-Associated"
 msgstr "Ei liitetty"
+
+msgid "Note: when enabled, and you do want standby mode after wake up, set option 'Startup to Standby' as 'No, except Wakeup timer'."
+msgstr ""
 
 msgid "Nothing connected"
 msgstr ""
@@ -6175,9 +6248,9 @@ msgstr "PCR PID"
 msgid "PDC"
 msgstr ""
 
-#
-msgid "PIDs"
-msgstr "PIDit"
+#, fuzzy
+msgid "PGS file"
+msgstr "%d tiedosto"
 
 #
 msgid "PIN code needed"
@@ -6310,7 +6383,8 @@ msgstr "PiP-kuvan asetukset"
 msgid "Picon"
 msgstr "Kanavalogo"
 
-msgid "Picon and service name"
+#, fuzzy
+msgid "Picon and servicename"
 msgstr "Kanavalogo ja kanavan nimi"
 
 #
@@ -6818,6 +6892,14 @@ msgid "Prefer subtitles stored by service"
 msgstr "Suosi kanavakohtaisesti tallennettua tekstitystä"
 
 msgid "Preferred tuner"
+msgstr "Ensisijainen viritin"
+
+#, fuzzy
+msgid "Preferred tuner ATSC"
+msgstr "Ensisijainen viritin"
+
+#, fuzzy
+msgid "Preferred tuner ATSC for recordings"
 msgstr "Ensisijainen viritin"
 
 #, fuzzy
@@ -7635,8 +7717,8 @@ msgstr "Venäjä"
 msgid "S-Video"
 msgstr "S-video (Y/C)"
 
-msgid "SID"
-msgstr "SID"
+msgid "SCPC optimized search range"
+msgstr ""
 
 msgid "SINGLE LAYER DVD"
 msgstr "SINGLE LAYER DVD"
@@ -7651,6 +7733,14 @@ msgstr "SNR:"
 
 msgid "SPDIF"
 msgstr ""
+
+#, fuzzy
+msgid "SRT file"
+msgstr "%d tiedosto"
+
+#, fuzzy
+msgid "SSA file"
+msgstr "%d tiedosto"
 
 msgid "SSID:"
 msgstr "SSID:"
@@ -8188,8 +8278,13 @@ msgstr "Kanava"
 
 #
 #, fuzzy
-msgid "Service Information"
-msgstr "Tietoja"
+msgid "Service & PIDs"
+msgstr "Kanavat"
+
+#
+#, fuzzy
+msgid "Service ID"
+msgstr "Kanava"
 
 #
 msgid "Service has been added to the favourites."
@@ -8202,6 +8297,15 @@ msgstr "Kanava on lisätty valitulle suosikkilistalle."
 #
 msgid "Service info"
 msgstr "Kanavatiedot"
+
+msgid "Service info - service & PIDs"
+msgstr ""
+
+msgid "Service info - tuner live values"
+msgstr ""
+
+msgid "Service info - tuner setting values"
+msgstr ""
 
 #
 msgid ""
@@ -8241,6 +8345,10 @@ msgid ""
 msgstr ""
 "Ei kanavaa,\n"
 "tarkista virittimen asetukset"
+
+#, fuzzy
+msgid "Servicename"
+msgstr "Kanavan nimi"
 
 #
 msgid "Services"
@@ -8789,6 +8897,11 @@ msgid "Sleep timer"
 msgstr "Uniajastin"
 
 #
+#, fuzzy
+msgid "Sleep/wakeup timer"
+msgstr "Uniajastin"
+
+#
 msgid "SleepTimer Configuration"
 msgstr "Uniajastimen asetukset"
 
@@ -9127,6 +9240,14 @@ msgstr "Käynnistä luettelotilaan"
 msgid "Starting on"
 msgstr "Alkaen"
 
+msgid "Startup the set top box in standby"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Startup to Standby"
+msgstr "siirry valmiustilaan"
+
 #
 #, fuzzy
 msgid "Status:"
@@ -9455,6 +9576,10 @@ msgstr "Vaihdettavat viritintyypit:"
 msgid "Symbol rate"
 msgstr "Symbol rate"
 
+#, fuzzy
+msgid "Symbol rate & FEC"
+msgstr "Symbol rate"
+
 msgid "Symbol rate:"
 msgstr "Symbolinopeus:"
 
@@ -9473,6 +9598,11 @@ msgstr ""
 #
 msgid "System"
 msgstr "Järjestelmä"
+
+#
+#, fuzzy
+msgid "System & Modulation"
+msgstr "Modulaatio"
 
 #. TRANSLATORS: Add here whatever should be shown in the "translator" about screen, up to 6 lines (use \n for newline)
 msgid "TRANSLATOR_INFO"
@@ -9839,6 +9969,9 @@ msgstr ""
 msgid "This option allows to set the level of dynamic contrast of the picture."
 msgstr ""
 
+msgid "This option allows you can config the Colorimetry for HDR"
+msgstr ""
+
 msgid "This option allows you enable smoothing filter to control the dithering process."
 msgstr ""
 
@@ -10141,6 +10274,9 @@ msgstr ""
 msgid "Toggle a cut mark at the current position"
 msgstr "Vaihda leikkausmerkki nykyiseen kohtaan"
 
+msgid "Toggle dashed flickering line for this service"
+msgstr ""
+
 msgid "Toggle infoBar"
 msgstr ""
 
@@ -10214,15 +10350,6 @@ msgstr "Lähetystapa"
 msgid "Transponder"
 msgstr "Lähetin"
 
-#
-#, fuzzy
-msgid "Transponder Information"
-msgstr "Lähettimen tyyppi"
-
-#
-msgid "Transponder type"
-msgstr "Lähettimen tyyppi"
-
 msgid "Trash can"
 msgstr "Roskakori"
 
@@ -10284,17 +10411,23 @@ msgstr "Virittimien asetukset"
 msgid "Tuner is not supported"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Tuner live values"
+msgstr "Virittimen tila"
+
 #, fuzzy
 msgid "Tuner not available."
 msgstr "Päivityslähde ei ole saatavilla."
 
 #
-msgid "Tuner slot"
-msgstr "Viritinpaikka"
+#, fuzzy
+msgid "Tuner setting values"
+msgstr "Virittimen tila"
 
 #
-msgid "Tuner status"
-msgstr "Virittimen tila"
+msgid "Tuner slot"
+msgstr "Viritinpaikka"
 
 #
 #, python-format
@@ -10336,6 +10469,9 @@ msgstr "Tyyppi"
 #
 msgid "Type of scan"
 msgstr "Hakutapa"
+
+msgid "URL"
+msgstr ""
 
 msgid "URL of fallback remote receiver"
 msgstr ""
@@ -10660,6 +10796,10 @@ msgstr "SCART-läpivienti"
 msgid "VMGM (intro trailer)"
 msgstr "VMGM (intro trailer)"
 
+#, fuzzy
+msgid "VOB file"
+msgstr "%d tiedosto"
+
 msgid "VU+"
 msgstr ""
 
@@ -10742,14 +10882,9 @@ msgstr "Video: %s fps"
 msgid "VideoMode"
 msgstr "Kuvatila"
 
-msgid "Videocodec"
-msgstr "Videokoodekki"
-
-msgid "Videoformat"
+#, fuzzy
+msgid "Videocodec, size & format"
 msgstr "Videoformaatti"
-
-msgid "Videosize"
-msgstr "Videon koko"
 
 msgid "View Rass interactive..."
 msgstr "Näytä Rass interactive..."
@@ -10909,6 +11044,15 @@ msgstr "Käynnistä vastaanotin valmiustilasta"
 msgid "Wakeup signal from TV"
 msgstr "Käynnisty TV-signaalista"
 
+#, fuzzy
+msgid "Wakeup time"
+msgstr "Käynnisty"
+
+#
+#, fuzzy
+msgid "Wakeup timer"
+msgstr "Uniajastin"
+
 msgid "Wakeup type"
 msgstr ""
 
@@ -10932,6 +11076,9 @@ msgstr "Toista tallenteet..."
 #
 msgid "Watch recordings..."
 msgstr "Tallennetaan..."
+
+msgid "Weather GigaBlue Pax"
+msgstr ""
 
 msgid "Weather ID"
 msgstr ""
@@ -11031,14 +11178,6 @@ msgstr "Kanavahaun lisäasetukset:"
 
 msgid "When enabled enigma2 will load unlinked userbouquets. This means that userbouquets that are available, but not included in the bouquets.tv or bouquets.radio files, will still be loaded. This allows you for example to keep your own user bouquet while installed settings are upgraded"
 msgstr ""
-
-#, fuzzy
-msgid "When enabled the LNB power will not be switched off in standby"
-msgstr "Kun päällä, Videonauhurin scart vaihtoehto näytetään päävalikossa."
-
-#, fuzzy
-msgid "When enabled the LNB toneburst will be forced"
-msgstr "Kun päällä, suosikkilistan väliotsikot joilla on kanavanumero piilotetaan."
 
 msgid "When enabled the PiP can be closed by the exit button."
 msgstr "Kun päällä, PiP voidaan sulkea exit-napilla."
@@ -11380,6 +11519,16 @@ msgstr "Kyllä, tee automaattihaku nyt"
 #
 msgid "Yes, do another manual scan now"
 msgstr "Kyllä, tee toinen manuaalihaku nyt"
+
+#
+#, fuzzy
+msgid "Yes, only from deep standby"
+msgstr "siirry virransäästötilaan"
+
+#
+#, fuzzy
+msgid "Yes, only from standby"
+msgstr "siirry valmiustilaan"
 
 #
 msgid "Yes, perform a shutdown now."
@@ -12114,6 +12263,9 @@ msgstr "Vaihtoehtoisten kanavien lisäys ja poisto"
 msgid "education/science/factual topics (general)"
 msgstr "koulutus/tiede/tosiasiat (yleinen)"
 
+msgid "embedded"
+msgstr ""
+
 #
 msgid "empty"
 msgstr "tyhjä"
@@ -12568,11 +12720,6 @@ msgstr "ei mitään"
 
 msgid "normal"
 msgstr "normaali"
-
-#
-#, fuzzy
-msgid "not avaible"
-msgstr "ei saatavilla"
 
 #
 msgid "not configured"
@@ -13394,6 +13541,14 @@ msgstr "Vaihdettu"
 #~ msgstr "Puhdistusavustaja"
 
 #
+#~ msgid "Coderate HP"
+#~ msgstr "Koodinopeus (HP)"
+
+#
+#~ msgid "Coderate LP"
+#~ msgstr "Koodinopeus (LP)"
+
+#
 #~ msgid "Committed DiSEqC command"
 #~ msgstr "Committed DiSEqC-käsky"
 
@@ -13597,10 +13752,6 @@ msgstr "Vaihdettu"
 #~ msgstr "Ota lapsilukko käyttöön"
 
 #
-#~ msgid "Enable timer"
-#~ msgstr "Ajastin päälle"
-
-#
 #~ msgid "EndTime"
 #~ msgstr "Lopetusaika"
 
@@ -13660,6 +13811,10 @@ msgstr "Vaihdettu"
 #~ msgstr "Suojaväli"
 
 #
+#~ msgid "Hierarchy information"
+#~ msgstr "Hierarkia-tietoja"
+
+#
 #~ msgid "How to handle found crashlogs?"
 #~ msgstr "Mitä löydetyille lokeille tehdään?"
 
@@ -13717,6 +13872,11 @@ msgstr "Vaihdettu"
 #~ msgstr "Lataa tallenteiden pituus tallenneluetteloon"
 
 #
+#, fuzzy
+#~ msgid "Location:"
+#~ msgstr "Hakemisto"
+
+#
 #~ msgid "Mainmenu"
 #~ msgstr "Päävalikko"
 
@@ -13750,12 +13910,23 @@ msgstr "Vaihdettu"
 #~ msgid "Movie Selection"
 #~ msgstr "Tallenteen valinta"
 
+#~ msgid "Multiplex"
+#~ msgstr "Multipleksi"
+
 #~ msgid "NFI image flashing"
 #~ msgstr "NFI-tiedoston asennus"
 
 #
 #~ msgid "NFI image flashing completed. Press Yellow to Reboot!"
 #~ msgstr "NFI-päivityksen asennus on suoritettu. Käynnistä uudelleen keltaisella näppäimellä!"
+
+#~ msgid "NIM"
+#~ msgstr "NIM"
+
+#
+#, fuzzy
+#~ msgid "Nameserver is off"
+#~ msgstr "Nimipalvelin"
 
 #
 #~ msgid "NetworkWizard"
@@ -13852,6 +14023,10 @@ msgstr "Vaihdettu"
 
 #~ msgid "Output"
 #~ msgstr "Ulostulo"
+
+#
+#~ msgid "PIDs"
+#~ msgstr "PIDit"
 
 #~ msgid "Package removal failed.\n"
 #~ msgstr "Ohjelmapaketin poisto epäonnistui.\n"
@@ -13953,6 +14128,9 @@ msgstr "Vaihdettu"
 #~ msgid "Restore is running..."
 #~ msgstr "Palautus käynnissä..."
 
+#~ msgid "SID"
+#~ msgstr "SID"
+
 #
 #~ msgid "Satellites"
 #~ msgstr "Satelliitit"
@@ -13965,6 +14143,11 @@ msgstr "Vaihdettu"
 
 #~ msgid "Select desired image from feed list"
 #~ msgstr "Valitse haluamasi ohjelmistopäivitys feed-luettelosta"
+
+#
+#, fuzzy
+#~ msgid "Service Information"
+#~ msgstr "Tietoja"
 
 #
 #~ msgid "Service searching"
@@ -14099,6 +14282,15 @@ msgstr "Vaihdettu"
 #~ "2) Laita virta takaisin päälle ja paina ALAS näppäintä vastaanottimesi etupaneelissa 10 sekunnin ajan.\n"
 #~ "3) Odota käynnistymistä ja seuraa avustajan ohjeita."
 
+#
+#, fuzzy
+#~ msgid "Transponder Information"
+#~ msgstr "Lähettimen tyyppi"
+
+#
+#~ msgid "Transponder type"
+#~ msgstr "Lähettimen tyyppi"
+
 #~ msgid "Tuning step size"
 #~ msgstr "Viritysaskeleen koko"
 
@@ -14124,10 +14316,24 @@ msgstr "Vaihdettu"
 #~ msgid "Video fine tuning"
 #~ msgstr "TV-kuvan hienosäätö"
 
+#~ msgid "Videocodec"
+#~ msgstr "Videokoodekki"
+
+#~ msgid "Videosize"
+#~ msgstr "Videon koko"
+
 #
 #, fuzzy
 #~ msgid "Welcome…"
 #~ msgstr "Tervetuloa..."
+
+#, fuzzy
+#~ msgid "When enabled the LNB power will not be switched off in standby"
+#~ msgstr "Kun päällä, Videonauhurin scart vaihtoehto näytetään päävalikossa."
+
+#, fuzzy
+#~ msgid "When enabled the LNB toneburst will be forced"
+#~ msgstr "Kun päällä, suosikkilistan väliotsikot joilla on kanavanumero piilotetaan."
 
 #~ msgid "When enabled, error messages related to the Common Interface module will not be shown."
 #~ msgstr "Kun päällä, CI-moduuliin liittyviä virheilmoituksia ei näytetä."
@@ -14217,6 +14423,11 @@ msgstr "Vaihdettu"
 #
 #~ msgid "fine-tune your display"
 #~ msgstr "hienosäädä näyttöä"
+
+#
+#, fuzzy
+#~ msgid "not avaible"
+#~ msgstr "ei saatavilla"
 
 #~ msgid "on end of movie"
 #~ msgstr "Tallenteen lopussa"
