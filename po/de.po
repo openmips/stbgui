@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-11-18 19:53+0100\n"
-"PO-Revision-Date: 2016-11-18 20:22+0100\n"
+"PO-Revision-Date: 2016-11-19 07:03+0100\n"
 "Last-Translator: -=niki=- <niki_msn@hotmail.de>\n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -7576,34 +7576,34 @@ msgid "Spanish"
 msgstr "Spanisch"
 
 msgid "Specify extra timeframe to ignore inactivity sleeptimer"
-msgstr "Spezifiziere den Zeitbereich, in dem der Inaktivität-Sleeptimer ignoriert werden soll"
+msgstr "Zusätzlicher Zeitbereich, in dem der Inaktivität-Sleeptimer ignoriert werden soll"
 
 msgid "Specify if you want to set the blocktimes separately by weekday"
-msgstr "Möchten Sie die Ausnahmen separat nach Wochentag definieren"
+msgstr "Ausnahmen separat nach Wochentag definieren"
 
 msgid "Specify the end time to ignore the shutdown timer when the receiver is in standby mode"
-msgstr "Definiere die Endzeit, bis wann das automatische Ausschalten ignoriert werden soll."
+msgstr "Endzeit, bis wann das automatische Ausschalten im Standby ignoriert werden soll"
 
 msgid "Specify the end time until the inactivity sleeptimer should be ignored"
-msgstr "Spezifiziere die Endzeit, bis wann der Inaktivität-Sleeptimer ignoriert werden soll"
+msgstr "Endzeit, bis wann der Inaktivität-Sleeptimer ignoriert werden soll"
 
 msgid "Specify the extra end time until the inactivity sleeptimer should be ignored"
-msgstr "Spezifiziere die Endzeit, bis wann der Inaktivität-Sleeptimer ignoriert werden soll"
+msgstr "Zusätzliche Endzeit, bis wann der Inaktivität-Sleeptimer ignoriert werden soll"
 
 msgid "Specify the extra start time when the inactivity sleeptimer should be ignored"
-msgstr "Spezifiziere die Anfangszeit, aber wann der Inaktivität-Sleeptimer ignoriert werden soll"
+msgstr "Zusätzliche Anfangszeit, ab wann der Inaktivität-Sleeptimer ignoriert werden soll"
 
 msgid "Specify the start time to ignore the shutdown timer when the receiver is in standby mode"
-msgstr "Definiere die Startzeit, ab wann das automatische Ausschalten ignoriert werden soll."
+msgstr "Anfangszeit, ab wann das automatische Ausschalten im Standby ignoriert werden soll"
 
 msgid "Specify the start time when the inactivity sleeptimer should be ignored"
-msgstr "Spezifiziere die Anfangszeit, aber wann der Inaktivität-Sleeptimer ignoriert werden soll"
+msgstr "Anfangszeit, ab wann der Inaktivität-Sleeptimer ignoriert werden soll"
 
 msgid "Specify timeframe to ignore inactivity sleeptimer"
-msgstr "Spezifiziere den Zeitbereich, in dem der Inaktivität-Sleeptimer ignoriert werden soll"
+msgstr "Zeitbereich, in dem der Inaktivität-Sleeptimer ignoriert werden soll"
 
 msgid "Specify timeframe to ignore the shutdown in standby"
-msgstr "Zeitfenster angeben in dem der Ausschalttimer ignoriert werden soll"
+msgstr "Zeitbereich, in dem das Ausschalten im Standby ignoriert werden soll"
 
 msgid "Speed: "
 msgstr "Speed: "
@@ -7771,7 +7771,7 @@ msgid "Storage media"
 msgstr "Speichergeräte"
 
 msgid "Store"
-msgstr "Speicher"
+msgstr "Webshop"
 
 msgid "Store at index"
 msgstr "Speichern auf Index"
