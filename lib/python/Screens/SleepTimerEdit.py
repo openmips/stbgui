@@ -13,7 +13,7 @@ class SleepTimerEdit(ConfigListScreen, Screen):
 	def __init__(self, session):
 		Screen.__init__(self, session)
 		self.skinName = ["SleepTimerSetup", "Setup"]
-		self.setup_title = _("SleepTimer Configuration")
+		self.setup_title = _("Sleep/wakeup timer")
 		self.setTitle(self.setup_title)
 		self["key_red"] = StaticText(_("Cancel"))
 		self["key_green"] = StaticText(_("Save"))
@@ -31,12 +31,12 @@ class SleepTimerEdit(ConfigListScreen, Screen):
 
 	def createSetup(self):
 		self.list = []
-		sub1 = "     "
-		sub2 = "        "
-		sub3 = "            "
-		sub4 = "              "
-		sub5 = "                 "
-		sub6 = "                     "
+		sub1 = "   "
+		sub2 = "      "
+		sub3 = "         "
+		sub4 = "            "
+		sub5 = "               "
+		sub6 = "                  "
 		if InfoBar.instance and InfoBar.instance.sleepTimer.isActive():
 			statusSleeptimerText = _("(activated +%d min)") % InfoBar.instance.sleepTimerState()
 		else:
