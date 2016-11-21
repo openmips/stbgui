@@ -3554,11 +3554,6 @@ msgstr ""
 msgid "Enable volume control with arrow buttons"
 msgstr "Vælg video input med op/ned knapperne"
 
-#
-#, fuzzy
-msgid "Wakeup timer"
-msgstr "Sleep Timer"
-
 msgid "Enable zapping with CH+/-, B+/-, P+/-"
 msgstr ""
 
@@ -11381,10 +11376,8 @@ msgstr "Vågn op signal fra TV"
 msgid "Wakeup time"
 msgstr "Vågn op"
 
-#
-#, fuzzy
 msgid "Wakeup timer"
-msgstr "Sleep Timer"
+msgstr ""
 
 msgid "Wakeup type"
 msgstr ""
