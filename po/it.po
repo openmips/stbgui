@@ -3501,11 +3501,6 @@ msgstr ""
 msgid "Enable volume control with arrow buttons"
 msgstr "Selezionare l'ingresso video con i tasti Sù/Giù"
 
-#
-#, fuzzy
-msgid "Enable wakeup timer"
-msgstr "Timer di spegnimento"
-
 msgid "Enable zapping with CH+/-, B+/-, P+/-"
 msgstr ""
 
@@ -11492,12 +11487,12 @@ msgid "Yes, do another manual scan now"
 msgstr "Sì, fare un'altra ricerca manuale ora"
 
 #, fuzzy
-msgid "Yes, only from deep standby"
+msgid "Enabled, only from deep standby"
 msgstr "Spegnimento (deep standby)"
 
 #
 #, fuzzy
-msgid "Yes, only from standby"
+msgid "Enabled, only from standby"
 msgstr "Standby"
 
 #

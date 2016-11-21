@@ -3133,10 +3133,6 @@ msgstr ""
 msgid "Enable volume control with arrow buttons"
 msgstr "انتخاب ورودی تصویر توسط کلید های بالا/پایین"
 
-#, fuzzy
-msgid "Enable wakeup timer"
-msgstr "زمان خواب"
-
 msgid "Enable zapping with CH+/-, B+/-, P+/-"
 msgstr ""
 
@@ -10253,11 +10249,11 @@ msgid "Yes, do another manual scan now"
 msgstr ""
 
 #, fuzzy
-msgid "Yes, only from deep standby"
+msgid "Enabled, only from deep standby"
 msgstr "فقط کانال های مجانی"
 
 #, fuzzy
-msgid "Yes, only from standby"
+msgid "Enabled, only from standby"
 msgstr "خاموشی موقت"
 
 msgid "Yes, perform a shutdown now."

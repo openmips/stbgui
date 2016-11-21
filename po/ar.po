@@ -3309,11 +3309,6 @@ msgstr ""
 msgid "Enable volume control with arrow buttons"
 msgstr "أختار مدخل الفيديو بأزرار أعلى/أسفا"
 
-#
-#, fuzzy
-msgid "Enable wakeup timer"
-msgstr "مؤقت النوم"
-
 msgid "Enable zapping with CH+/-, B+/-, P+/-"
 msgstr ""
 
@@ -10913,11 +10908,11 @@ msgid "Yes, do another manual scan now"
 msgstr "نعم، أعمل بحث يدوى آخر الان"
 
 #, fuzzy
-msgid "Yes, only from deep standby"
+msgid "Enabled, only from deep standby"
 msgstr "الذهاب الى وضع الاستعداد العميق"
 
 #, fuzzy
-msgid "Yes, only from standby"
+msgid "Enabled, only from standby"
 msgstr "الذهاب لوضع الاستعداد"
 
 msgid "Yes, perform a shutdown now."

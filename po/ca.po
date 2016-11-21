@@ -3406,11 +3406,6 @@ msgstr ""
 msgid "Enable volume control with arrow buttons"
 msgstr ""
 
-#
-#, fuzzy
-msgid "Enable wakeup timer"
-msgstr "Programació d'apagada"
-
 msgid "Enable zapping with CH+/-, B+/-, P+/-"
 msgstr ""
 
@@ -11328,12 +11323,12 @@ msgstr "Si, fer una altra recerca manual ara"
 
 #
 #, fuzzy
-msgid "Yes, only from deep standby"
+msgid "Enabled, only from deep standby"
 msgstr "aturar completament"
 
 #
 #, fuzzy
-msgid "Yes, only from standby"
+msgid "Enabled, only from standby"
 msgstr "posar en repòs"
 
 #

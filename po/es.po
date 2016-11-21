@@ -3551,12 +3551,6 @@ msgstr "Habilitar OK para selección de canal"
 msgid "Enable volume control with arrow buttons"
 msgstr "Seleccione entrada de vídeo con los botones arriba/abajo"
 
-#
-#
-#, fuzzy
-msgid "Enable wakeup timer"
-msgstr "Apagado automático"
-
 msgid "Enable zapping with CH+/-, B+/-, P+/-"
 msgstr "Habilitar zapping con CH + /-, B + /-, P + /-"
 
@@ -11669,12 +11663,12 @@ msgstr "Si, hacer otra búsqueda manual ahora"
 
 #
 #, fuzzy
-msgid "Yes, only from deep standby"
+msgid "Enabled, only from deep standby"
 msgstr "ir a standby profundo"
 
 #
 #, fuzzy
-msgid "Yes, only from standby"
+msgid "Enabled, only from standby"
 msgstr "ir al modo de espera"
 
 #

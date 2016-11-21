@@ -3120,10 +3120,6 @@ msgstr ""
 msgid "Enable volume control with arrow buttons"
 msgstr "Išsirinkite vaizdo įėjimą su mygtukais aukštyn/žemyn"
 
-#, fuzzy
-msgid "Enable wakeup timer"
-msgstr "Budėjimo laikmatis"
-
 msgid "Enable zapping with CH+/-, B+/-, P+/-"
 msgstr ""
 
@@ -10267,11 +10263,11 @@ msgid "Yes, do another manual scan now"
 msgstr "Taip, atlikti dar kitą rankinę paiešką"
 
 #, fuzzy
-msgid "Yes, only from deep standby"
+msgid "Enabled, only from deep standby"
 msgstr "eiti į visišką išjungimą"
 
 #, fuzzy
-msgid "Yes, only from standby"
+msgid "Enabled, only from standby"
 msgstr "eiti į išjungimą"
 
 msgid "Yes, perform a shutdown now."

@@ -3592,11 +3592,6 @@ msgstr "Vklopi tipko OK za priklic izbirnika kanalov"
 msgid "Enable volume control with arrow buttons"
 msgstr "Z gor in dol tipkami izberite video vhod"
 
-#
-#, fuzzy
-msgid "Enable wakeup timer"
-msgstr "Časovnik spanja"
-
 msgid "Enable zapping with CH+/-, B+/-, P+/-"
 msgstr "Omogoči preklapljanje kanalov s tipkami CH+/-, B+/- in P+/-"
 
@@ -11804,12 +11799,12 @@ msgstr "Da, začni še eno ročno iskanje"
 
 #
 #, fuzzy
-msgid "Yes, only from deep standby"
+msgid "Enabled, only from deep standby"
 msgstr "samo iz globokega spanja"
 
 #
 #, fuzzy
-msgid "Yes, only from standby"
+msgid "Enabled, only from standby"
 msgstr "samo iz stanja pripravljenosti"
 
 #

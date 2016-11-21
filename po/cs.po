@@ -3566,11 +3566,6 @@ msgstr "Povolit OK pro výběr kanálu"
 msgid "Enable volume control with arrow buttons"
 msgstr "Povolit ovládání hlasitosti pomocí tlačítek se šipkami"
 
-#
-#, fuzzy
-msgid "Enable wakeup timer"
-msgstr "Časovač usínání"
-
 msgid "Enable zapping with CH+/-, B+/-, P+/-"
 msgstr "Povolit přepínání  s CH+/-, B+/-, P+/-"
 
@@ -11658,12 +11653,12 @@ msgstr "Ano, proveď další ruční prohledávání"
 
 #
 #, fuzzy
-msgid "Yes, only from deep standby"
+msgid "Enabled, only from deep standby"
 msgstr "pouze z hlubokého spánku"
 
 #
 #, fuzzy
-msgid "Yes, only from standby"
+msgid "Enabled, only from standby"
 msgstr "pouze ze standby"
 
 #

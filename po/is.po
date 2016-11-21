@@ -3347,11 +3347,6 @@ msgstr ""
 msgid "Enable volume control with arrow buttons"
 msgstr "Veldu mynd inngang með up/niður tökkum"
 
-#
-#, fuzzy
-msgid "Enable wakeup timer"
-msgstr "Tímastilling"
-
 msgid "Enable zapping with CH+/-, B+/-, P+/-"
 msgstr ""
 
@@ -11478,12 +11473,12 @@ msgstr "Já, leitaðu aftur handvirkt núna"
 
 #
 #, fuzzy
-msgid "Yes, only from deep standby"
+msgid "Enabled, only from deep standby"
 msgstr "fara í djúpsvefn"
 
 #
 #, fuzzy
-msgid "Yes, only from standby"
+msgid "Enabled, only from standby"
 msgstr "fara í biðstöðu"
 
 #

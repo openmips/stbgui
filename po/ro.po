@@ -3097,10 +3097,6 @@ msgstr ""
 msgid "Enable volume control with arrow buttons"
 msgstr "Selectati intrarea vieo cu tastele sus/jos"
 
-#, fuzzy
-msgid "Enable wakeup timer"
-msgstr "Sleep timer"
-
 msgid "Enable zapping with CH+/-, B+/-, P+/-"
 msgstr ""
 
@@ -10170,11 +10166,11 @@ msgid "Yes, do another manual scan now"
 msgstr "Da, scaneaza inca odata manual"
 
 #, fuzzy
-msgid "Yes, only from deep standby"
+msgid "Enabled, only from deep standby"
 msgstr "treci la deep standby"
 
 #, fuzzy
-msgid "Yes, only from standby"
+msgid "Enabled, only from standby"
 msgstr "intra in standby"
 
 msgid "Yes, perform a shutdown now."

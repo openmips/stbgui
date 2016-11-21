@@ -107,7 +107,7 @@ class SleepTimerEdit(ConfigListScreen, Screen):
 				self.list.append(getConfigListEntry(sub2 + _("End time to ignore shutdown in standby"),
 					config.usage.standby_to_shutdown_timer_blocktime_end,
 					_("Specify the end time to ignore the shutdown timer when the receiver is in standby mode")))
-		self.list.append(getConfigListEntry(_("Enable wakeup timer"),
+		self.list.append(getConfigListEntry(_("Wakeup timer"),
 			config.usage.wakeup_enabled,
 			_("Note: when enabled, and you do want standby mode after wake up, set option 'Startup to Standby' as 'No, except Wakeup timer'.")))
 		if config.usage.wakeup_enabled.value != "no":

@@ -3556,7 +3556,7 @@ msgstr "Vælg video input med op/ned knapperne"
 
 #
 #, fuzzy
-msgid "Enable wakeup timer"
+msgid "Wakeup timer"
 msgstr "Sleep Timer"
 
 msgid "Enable zapping with CH+/-, B+/-, P+/-"
@@ -11843,12 +11843,12 @@ msgstr "Ja, start en ny manuel søgning nu"
 
 #
 #, fuzzy
-msgid "Yes, only from deep standby"
+msgid "Enabled, only from deep standby"
 msgstr "gå til dyb standby"
 
 #
 #, fuzzy
-msgid "Yes, only from standby"
+msgid "Enabled, only from standby"
 msgstr "gå til Standby"
 
 #

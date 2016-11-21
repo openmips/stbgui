@@ -3585,11 +3585,6 @@ msgstr "Wywołanie listy kanałów klawiszem OK"
 msgid "Enable volume control with arrow buttons"
 msgstr "Regulacja głośności strzałkami L/P"
 
-#
-#, fuzzy
-msgid "Enable wakeup timer"
-msgstr "Wyłącznik czasowy"
-
 msgid "Enable zapping with CH+/-, B+/-, P+/-"
 msgstr "Włącz przełączanie kanałów przyciskami CH+/-, B+/-, P+/-"
 
@@ -11823,12 +11818,12 @@ msgstr "Tak, rozpocznij kolejne ręczne skanowanie"
 
 #
 #, fuzzy
-msgid "Yes, only from deep standby"
+msgid "Enabled, only from deep standby"
 msgstr "tyko z głębokiego czuwania"
 
 #
 #, fuzzy
-msgid "Yes, only from standby"
+msgid "Enabled, only from standby"
 msgstr "tylko ze stanu czuwania"
 
 #

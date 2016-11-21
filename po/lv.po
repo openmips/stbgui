@@ -3102,10 +3102,6 @@ msgstr ""
 msgid "Enable volume control with arrow buttons"
 msgstr "Izvēlieties video ieeju ar augšup/lejup pogām"
 
-#, fuzzy
-msgid "Enable wakeup timer"
-msgstr "Miega taimeris"
-
 msgid "Enable zapping with CH+/-, B+/-, P+/-"
 msgstr ""
 
@@ -10086,11 +10082,11 @@ msgid "Yes, do another manual scan now"
 msgstr "Jā, veikt vēl vienu manuālo meklēšanu tagad"
 
 #, fuzzy
-msgid "Yes, only from deep standby"
+msgid "Enabled, only from deep standby"
 msgstr "iet uz dziļo gaidstāvi"
 
 #, fuzzy
-msgid "Yes, only from standby"
+msgid "Enabled, only from standby"
 msgstr "iet uz gaidstāvi"
 
 msgid "Yes, perform a shutdown now."
