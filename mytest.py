@@ -117,10 +117,10 @@ except ImportError:
 	def runReactor():
 		enigma.runMainloop()
 
-profile("LOAD:Plugin")
+#profile("LOAD:Plugin")
 
 # initialize autorun plugins and plugin menu entries
-from Components.PluginComponent import plugins
+#from Components.PluginComponent import plugins
 
 profile("LOAD:Wizard")
 from Screens.Wizard import wizardManager
@@ -449,6 +449,10 @@ from Screens.Ci import CiHandler
 
 profile("Load:VolumeControl")
 from Components.VolumeControl import VolumeControl
+
+profile("LOAD:Plugin")
+# initialize autorun plugins and plugin menu entries
+from Components.PluginComponent import plugins
 
 def runScreenTest():
 	config.misc.startCounter.value += 1
