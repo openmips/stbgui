@@ -15,6 +15,11 @@ enigma.eConsoleAppContainer = eConsoleImpl.eConsoleAppContainer
 from boxbranding import getBoxType
 
 from traceback import print_exc
+
+profile("SetupDevices")
+import Components.SetupDevices
+Components.SetupDevices.InitSetupDevices()
+
 profile("SimpleSummary")
 from Screens import InfoBar
 from Screens.SimpleSummary import SimpleSummary
@@ -588,10 +593,6 @@ profile("InputDevice")
 import Components.InputDevice
 Components.InputDevice.InitInputDevices()
 import Components.InputHotplug
-
-profile("SetupDevices")
-import Components.SetupDevices
-Components.SetupDevices.InitSetupDevices()
 
 profile("AVSwitch")
 import Components.AVSwitch
