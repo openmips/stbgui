@@ -3076,10 +3076,6 @@ msgstr ""
 msgid "Enable volume control with arrow buttons"
 msgstr "Selecione a entrada de vídeo com os botões de cima/baixo"
 
-#, fuzzy
-msgid "Enable wakeup timer"
-msgstr "Temporizador ativo"
-
 msgid "Enable zapping with CH+/-, B+/-, P+/-"
 msgstr ""
 
@@ -10059,11 +10055,11 @@ msgid "Yes, do another manual scan now"
 msgstr "Sim, fazer outra busca avançada"
 
 #, fuzzy
-msgid "Yes, only from deep standby"
+msgid "Enabled, only from deep standby"
 msgstr "Desligar"
 
 #, fuzzy
-msgid "Yes, only from standby"
+msgid "Enabled, only from standby"
 msgstr "Ir para StandBy"
 
 msgid "Yes, perform a shutdown now."

@@ -3138,10 +3138,6 @@ msgstr ""
 msgid "Enable volume control with arrow buttons"
 msgstr "Tlačidlami nahor a nadol zvoľte vstup obrazu"
 
-#, fuzzy
-msgid "Enable wakeup timer"
-msgstr "Časovač vypnutia"
-
 msgid "Enable zapping with CH+/-, B+/-, P+/-"
 msgstr ""
 
@@ -10276,11 +10272,11 @@ msgid "Yes, do another manual scan now"
 msgstr "Áno, urobiť ďalšie ručné vyhľadávanie"
 
 #, fuzzy
-msgid "Yes, only from deep standby"
+msgid "Enabled, only from deep standby"
 msgstr "prejsť do vypnutia"
 
 #, fuzzy
-msgid "Yes, only from standby"
+msgid "Enabled, only from standby"
 msgstr "prejsť do pohotovostného režimu"
 
 msgid "Yes, perform a shutdown now."

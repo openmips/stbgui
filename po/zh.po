@@ -3038,10 +3038,6 @@ msgstr ""
 msgid "Enable volume control with arrow buttons"
 msgstr ""
 
-#, fuzzy
-msgid "Enable wakeup timer"
-msgstr "启用定时器"
-
 msgid "Enable zapping with CH+/-, B+/-, P+/-"
 msgstr ""
 
@@ -9987,11 +9983,11 @@ msgid "Yes, do another manual scan now"
 msgstr "是，手动扫描另一个参数"
 
 #, fuzzy
-msgid "Yes, only from deep standby"
+msgid "Enabled, only from deep standby"
 msgstr "深度休眠"
 
 #, fuzzy
-msgid "Yes, only from standby"
+msgid "Enabled, only from standby"
 msgstr "一直开着"
 
 msgid "Yes, perform a shutdown now."

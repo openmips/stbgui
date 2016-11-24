@@ -3583,11 +3583,6 @@ msgstr ""
 msgid "Enable volume control with arrow buttons"
 msgstr "Izaberi video ulaz sa UP/DOWN tipkama"
 
-#
-#, fuzzy
-msgid "Enable wakeup timer"
-msgstr "Tajmer spavanja"
-
 msgid "Enable zapping with CH+/-, B+/-, P+/-"
 msgstr ""
 
@@ -11859,12 +11854,12 @@ msgstr "Da, započni drugu ručnu pretragu sada"
 
 #
 #, fuzzy
-msgid "Yes, only from deep standby"
+msgid "Enabled, only from deep standby"
 msgstr "pokreni isključivanje drimboxa"
 
 #
 #, fuzzy
-msgid "Yes, only from standby"
+msgid "Enabled, only from standby"
 msgstr "pođi u pripravnost"
 
 #

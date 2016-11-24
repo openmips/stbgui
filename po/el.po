@@ -3074,10 +3074,6 @@ msgstr "Ενεργοποίηση ΟΚ για επιλογή καναλιών"
 msgid "Enable volume control with arrow buttons"
 msgstr "Επιλογή εισόδου εικόνας με τα πλήκτρα πάνω/κάτω"
 
-#, fuzzy
-msgid "Enable wakeup timer"
-msgstr "Χρονοδιακόπτης ύπνου"
-
 msgid "Enable zapping with CH+/-, B+/-, P+/-"
 msgstr "Ενεργοποίηση ζάπινγκ με τα CH+/-, B+/-, P+/-"
 
@@ -10057,11 +10053,11 @@ msgid "Yes, do another manual scan now"
 msgstr "Ναι, να γίνει ακόμα μία χειροκίνητη ανίχνευση τώρα"
 
 #, fuzzy
-msgid "Yes, only from deep standby"
+msgid "Enabled, only from deep standby"
 msgstr "μόνο από βαθιά αναμονή"
 
 #, fuzzy
-msgid "Yes, only from standby"
+msgid "Enabled, only from standby"
 msgstr "μόνο από αναμονή"
 
 msgid "Yes, perform a shutdown now."

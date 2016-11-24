@@ -160,17 +160,17 @@ def InitUsageConfig():
 		("except", _("No, except Wakeup timer")) ])
 
 	config.usage.wakeup_enabled = ConfigSelection(default = "no", choices = [
-		("no", _("No")),
-		("yes", _("Yes")),
-		("standby", _("Yes, only from standby")),
-		("deepstandby", _("Yes, only from deep standby")) ])
+		("no", _("Disabled")),
+		("yes", _("Enabled")),
+		("standby", _("Enabled, only from standby")),
+		("deepstandby", _("Enabled, only from deep standby")) ])
 	config.usage.wakeup_day = ConfigSubDict()
 	config.usage.wakeup_time = ConfigSubDict()
 	for i in range(7):
 		config.usage.wakeup_day[i] = ConfigEnableDisable(default = False)
 		config.usage.wakeup_time[i] = ConfigClock(default = ((6 * 60 + 0) * 60))
 
-	choicelist = [("0", _("Do nothing"))]
+	choicelist = [("0", _("Disabled"))]
 	for i in range(3600, 21601, 3600):
 		h = abs(i / 3600)
 		h = ngettext("%d hour", "%d hours", h) % h

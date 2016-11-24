@@ -3099,10 +3099,6 @@ msgstr ""
 msgid "Enable volume control with arrow buttons"
 msgstr "Выберите видеовход кнопками вверх/вниз"
 
-#, fuzzy
-msgid "Enable wakeup timer"
-msgstr "Таймер сна"
-
 msgid "Enable zapping with CH+/-, B+/-, P+/-"
 msgstr ""
 
@@ -10083,11 +10079,11 @@ msgid "Yes, do another manual scan now"
 msgstr "Да, выполнить еще ручной поиск"
 
 #, fuzzy
-msgid "Yes, only from deep standby"
+msgid "Enabled, only from deep standby"
 msgstr "перейти в глубокий режим ожидания"
 
 #, fuzzy
-msgid "Yes, only from standby"
+msgid "Enabled, only from standby"
 msgstr "перейти в режим ожидания"
 
 msgid "Yes, perform a shutdown now."

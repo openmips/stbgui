@@ -3087,10 +3087,6 @@ msgstr ""
 msgid "Enable volume control with arrow buttons"
 msgstr "Válasszon videó bemenetet a FEL/LE gombokkal"
 
-#, fuzzy
-msgid "Enable wakeup timer"
-msgstr "Elalvás időzítő"
-
 msgid "Enable zapping with CH+/-, B+/-, P+/-"
 msgstr ""
 
@@ -10069,11 +10065,11 @@ msgid "Yes, do another manual scan now"
 msgstr "Igen, indítsunk most el egy másik keresést"
 
 #, fuzzy
-msgid "Yes, only from deep standby"
+msgid "Enabled, only from deep standby"
 msgstr "lekapcsolás mély-készenléti módba"
 
 #, fuzzy
-msgid "Yes, only from standby"
+msgid "Enabled, only from standby"
 msgstr "lekapcsolás készenléti módba"
 
 msgid "Yes, perform a shutdown now."

@@ -2971,9 +2971,6 @@ msgstr "Aktiviere Konflikterkennung für Aufnahmen"
 msgid "Enable volume control with arrow buttons"
 msgstr "Lautstärkeregelung mit den Pfeiltasten aktivieren"
 
-msgid "Enable wakeup timer"
-msgstr "Einschalt-Timer aktivieren"
-
 msgid "Enable zapping with CH+/-, B+/-, P+/-"
 msgstr "Aktiviere Kanalumschalten mit CH+/-, B+/-, P+/-"
 
@@ -2984,7 +2981,7 @@ msgid "Enable/Disable IPv6 support of your receiver.\n"
 msgstr "Bearbeiten Sie die IPv6-Einstellungen Ihres Receivers.\n"
 
 msgid "Enabled"
-msgstr "Eingeschaltet"
+msgstr "Aktiviert"
 
 msgid "Encrypted: "
 msgstr "Verschlüsselt: "
@@ -9204,7 +9201,7 @@ msgid "Wakeup time"
 msgstr "Aufweckzeit"
 
 msgid "Wakeup timer"
-msgstr "Aufweck Timer"
+msgstr "Einschalt Timer"
 
 msgid "Wakeup type"
 msgstr "Aufweck-Modus"
@@ -9643,11 +9640,11 @@ msgstr "Ja, einen automatischen Suchlauf durchführen"
 msgid "Yes, do another manual scan now"
 msgstr "Ja, einen weiteren manuellen Suchlauf durchführen"
 
-msgid "Yes, only from deep standby"
-msgstr "Ja, nur aus Deep Standby"
+msgid "Enabled, only from deep standby"
+msgstr "Aktiviert, nur aus Deep Standby"
 
-msgid "Yes, only from standby"
-msgstr "Ja, nur aus Standby\v"
+msgid "Enabled, only from standby"
+msgstr "Aktiviert, nur aus Standby\v"
 
 msgid "Yes, perform a shutdown now."
 msgstr "Ja, jetzt herunterfahren."
@@ -10060,7 +10057,7 @@ msgid "advertisement/shopping"
 msgstr "Werbung/Einkaufen"
 
 msgid "after "
-msgstr "nach"
+msgstr "nach "
 
 msgid "all"
 msgstr "alle"
