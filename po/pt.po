@@ -3571,11 +3571,6 @@ msgstr "Activar OK para selecção de canal"
 msgid "Enable volume control with arrow buttons"
 msgstr "Seleccionar entrada de vídeo com os botões de cima/baixo"
 
-#
-#, fuzzy
-msgid "Enable wakeup timer"
-msgstr "Temporizador"
-
 msgid "Enable zapping with CH+/-, B+/-, P+/-"
 msgstr "Activar Zapping com os botões CH+/-, B+/-, P+/-"
 
@@ -11854,11 +11849,11 @@ msgid "Yes, do another manual scan now"
 msgstr "Sim, iniciar outra pesquisa manual"
 
 #, fuzzy
-msgid "Yes, only from deep standby"
+msgid "Enabled, only from deep standby"
 msgstr "apenas a partir de desligado"
 
 #, fuzzy
-msgid "Yes, only from standby"
+msgid "Enabled, only from standby"
 msgstr "apenas a partir de Standby"
 
 #

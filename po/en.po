@@ -2861,9 +2861,6 @@ msgstr ""
 msgid "Enable volume control with arrow buttons"
 msgstr ""
 
-msgid "Enable wakeup timer"
-msgstr ""
-
 msgid "Enable zapping with CH+/-, B+/-, P+/-"
 msgstr ""
 
@@ -9333,10 +9330,10 @@ msgstr ""
 msgid "Yes, do another manual scan now"
 msgstr ""
 
-msgid "Yes, only from deep standby"
+msgid "Enabled, only from deep standby"
 msgstr ""
 
-msgid "Yes, only from standby"
+msgid "Enabled, only from standby"
 msgstr ""
 
 msgid "Yes, perform a shutdown now."

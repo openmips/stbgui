@@ -15,6 +15,11 @@ enigma.eConsoleAppContainer = eConsoleImpl.eConsoleAppContainer
 from boxbranding import getBoxType
 
 from traceback import print_exc
+
+profile("SetupDevices")
+import Components.SetupDevices
+Components.SetupDevices.InitSetupDevices()
+
 profile("SimpleSummary")
 from Screens import InfoBar
 from Screens.SimpleSummary import SimpleSummary
@@ -117,10 +122,10 @@ except ImportError:
 	def runReactor():
 		enigma.runMainloop()
 
-profile("LOAD:Plugin")
+#profile("LOAD:Plugin")
 
 # initialize autorun plugins and plugin menu entries
-from Components.PluginComponent import plugins
+#from Components.PluginComponent import plugins
 
 profile("LOAD:Wizard")
 from Screens.Wizard import wizardManager
@@ -450,6 +455,10 @@ from Screens.Ci import CiHandler
 profile("Load:VolumeControl")
 from Components.VolumeControl import VolumeControl
 
+profile("LOAD:Plugin")
+# initialize autorun plugins and plugin menu entries
+from Components.PluginComponent import plugins
+
 def runScreenTest():
 	config.misc.startCounter.value += 1
 	config.misc.startCounter.save()
@@ -584,10 +593,6 @@ profile("InputDevice")
 import Components.InputDevice
 Components.InputDevice.InitInputDevices()
 import Components.InputHotplug
-
-profile("SetupDevices")
-import Components.SetupDevices
-Components.SetupDevices.InitSetupDevices()
 
 profile("AVSwitch")
 import Components.AVSwitch

@@ -3397,10 +3397,6 @@ msgstr "Aktiver OK for kanal valg"
 msgid "Enable volume control with arrow buttons"
 msgstr "Aktiver lyd kontroll med piltastene"
 
-#, fuzzy
-msgid "Enable wakeup timer"
-msgstr "Slå av med hjelp av tidtaker"
-
 msgid "Enable zapping with CH+/-, B+/-, P+/-"
 msgstr "Aktiver zapping med CH+/-, P+/-"
 
@@ -11117,11 +11113,11 @@ msgstr "Ja, ta et nytt manuelt skann nå"
 
 #
 #, fuzzy
-msgid "Yes, only from deep standby"
+msgid "Enabled, only from deep standby"
 msgstr "bare fra helt avslått"
 
 #, fuzzy
-msgid "Yes, only from standby"
+msgid "Enabled, only from standby"
 msgstr "bare fra avslått"
 
 msgid "Yes, perform a shutdown now."

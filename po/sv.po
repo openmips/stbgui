@@ -3488,11 +3488,6 @@ msgstr ""
 msgid "Enable volume control with arrow buttons"
 msgstr "Välj videoingång med upp/ner knapparna"
 
-#
-#, fuzzy
-msgid "Enable wakeup timer"
-msgstr "Insomningstimer"
-
 msgid "Enable zapping with CH+/-, B+/-, P+/-"
 msgstr ""
 
@@ -11479,12 +11474,12 @@ msgstr "Ja, utför manuell sökning igen"
 
 #
 #, fuzzy
-msgid "Yes, only from deep standby"
+msgid "Enabled, only from deep standby"
 msgstr "stäng av mottagaren"
 
 #
 #, fuzzy
-msgid "Yes, only from standby"
+msgid "Enabled, only from standby"
 msgstr "inta viloläge"
 
 #

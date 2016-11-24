@@ -3262,10 +3262,6 @@ msgstr "Zenderlijst via OK openen"
 msgid "Enable volume control with arrow buttons"
 msgstr "Selecteer video-ingang met de omhoog / omlaag toetsen"
 
-#, fuzzy
-msgid "Enable wakeup timer"
-msgstr "Sleeptimer"
-
 msgid "Enable zapping with CH+/-, B+/-, P+/-"
 msgstr "Zappen met de  CH +/-, B +/-, P +/- inschakelen"
 
@@ -10292,11 +10288,11 @@ msgid "Yes, do another manual scan now"
 msgstr "Ja, ik wil nogmaals handmatig zoeken"
 
 #, fuzzy
-msgid "Yes, only from deep standby"
+msgid "Enabled, only from deep standby"
 msgstr "enkel vanuit 'deep standby'"
 
 #, fuzzy
-msgid "Yes, only from standby"
+msgid "Enabled, only from standby"
 msgstr "enkel vanuit 'standby'"
 
 msgid "Yes, perform a shutdown now."
