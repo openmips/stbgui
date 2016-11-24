@@ -2979,10 +2979,6 @@ msgstr "Zamanlayıcı çakışma algılamasını etkinleştirmek"
 msgid "Enable volume control with arrow buttons"
 msgstr "Ok tuşları ile ses kontrolünü etkinleştir"
 
-#, fuzzy
-msgid "Enable wakeup timer"
-msgstr "Uyku zamanlayıcı"
-
 msgid "Enable zapping with CH+/-, B+/-, P+/-"
 msgstr "CH+/-, B+/-, P+/- ile kanal değiştirmeyi etkinleştir"
 
@@ -9695,11 +9691,11 @@ msgid "Yes, do another manual scan now"
 msgstr "Evet, yeni bir elle kanal araması başlat"
 
 #, fuzzy
-msgid "Yes, only from deep standby"
+msgid "Enabled, only from deep standby"
 msgstr "sadece derin bekleme modundan"
 
 #, fuzzy
-msgid "Yes, only from standby"
+msgid "Enabled, only from standby"
 msgstr "Sadece bekleme modunda"
 
 msgid "Yes, perform a shutdown now."

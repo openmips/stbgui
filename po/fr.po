@@ -3011,10 +3011,6 @@ msgstr "Activer la détection des conflits de la minuterie"
 msgid "Enable volume control with arrow buttons"
 msgstr "Activer le contrôle du volume avec les flèches"
 
-#, fuzzy
-msgid "Enable wakeup timer"
-msgstr "Arrêt automatique"
-
 msgid "Enable zapping with CH+/-, B+/-, P+/-"
 msgstr "Activer le zap avec CH+/-, B+/-, P+/-"
 
@@ -9766,11 +9762,11 @@ msgid "Yes, do another manual scan now"
 msgstr "Oui, faire une autre analyse manuelle maintenant"
 
 #, fuzzy
-msgid "Yes, only from deep standby"
+msgid "Enabled, only from deep standby"
 msgstr "Mettre en veille profonde"
 
 #, fuzzy
-msgid "Yes, only from standby"
+msgid "Enabled, only from standby"
 msgstr "Mettre en veille"
 
 msgid "Yes, perform a shutdown now."

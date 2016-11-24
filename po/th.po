@@ -3104,10 +3104,6 @@ msgstr ""
 msgid "Enable volume control with arrow buttons"
 msgstr "เลือกช่องต่อสัญญาณวิดีโอโดยกดปุ่มขึ้น/ลง"
 
-#, fuzzy
-msgid "Enable wakeup timer"
-msgstr "ตั้งเวลาปิดเครื่อง"
-
 msgid "Enable zapping with CH+/-, B+/-, P+/-"
 msgstr ""
 
@@ -10203,11 +10199,11 @@ msgid "Yes, do another manual scan now"
 msgstr "ใช่ - ทำการค้นหาอีกครั้งตอนนี้เลย"
 
 #, fuzzy
-msgid "Yes, only from deep standby"
+msgid "Enabled, only from deep standby"
 msgstr "เข้าสู่โหมด Deep standby"
 
 #, fuzzy
-msgid "Yes, only from standby"
+msgid "Enabled, only from standby"
 msgstr "เข้าสู้โหมด Standby"
 
 msgid "Yes, perform a shutdown now."

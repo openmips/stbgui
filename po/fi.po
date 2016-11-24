@@ -3478,11 +3478,6 @@ msgstr ""
 msgid "Enable volume control with arrow buttons"
 msgstr "Valitse video-sisäänmeno ylös/alas-näppäimillä"
 
-#
-#, fuzzy
-msgid "Enable wakeup timer"
-msgstr "Ajastin päälle"
-
 msgid "Enable zapping with CH+/-, B+/-, P+/-"
 msgstr ""
 
@@ -11522,12 +11517,12 @@ msgstr "Kyllä, tee toinen manuaalihaku nyt"
 
 #
 #, fuzzy
-msgid "Yes, only from deep standby"
+msgid "Enabled, only from deep standby"
 msgstr "siirry virransäästötilaan"
 
 #
 #, fuzzy
-msgid "Yes, only from standby"
+msgid "Enabled, only from standby"
 msgstr "siirry valmiustilaan"
 
 #

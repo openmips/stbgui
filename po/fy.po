@@ -3490,11 +3490,6 @@ msgstr ""
 msgid "Enable volume control with arrow buttons"
 msgstr ""
 
-#
-#, fuzzy
-msgid "Enable wakeup timer"
-msgstr "Tiidstjoering"
-
 msgid "Enable zapping with CH+/-, B+/-, P+/-"
 msgstr ""
 
@@ -11647,12 +11642,12 @@ msgstr "Ja, no nochris hânmatig sykje"
 
 #
 #, fuzzy
-msgid "Yes, only from deep standby"
+msgid "Enabled, only from deep standby"
 msgstr "gean nei djip paraatstand"
 
 #
 #, fuzzy
-msgid "Yes, only from standby"
+msgid "Enabled, only from standby"
 msgstr "gean nei paraatstand"
 
 #
