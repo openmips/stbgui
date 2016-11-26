@@ -1083,6 +1083,9 @@ msgstr "Ton"
 msgid "Audio Auto Volume Level"
 msgstr "Audio Auto Volume Level"
 
+msgid "Audio channel"
+msgstr "Ton Kanal"
+
 msgid "Audio PID"
 msgstr "Ton PID"
 
@@ -1099,7 +1102,7 @@ msgid "Audio language selection 4"
 msgstr "Ton Sprachwahl 4"
 
 msgid "Audio options..."
-msgstr "Ton-Optionen..."
+msgstr "Ton Optionen..."
 
 msgid "Audio plugins"
 msgstr "Audio Erweiterungen"
