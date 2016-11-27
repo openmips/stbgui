@@ -104,7 +104,7 @@ class AudioSelection(Screen, ConfigListScreen):
 					choicelist = [("0",_("left")), ("1",_("stereo")), ("2", _("right"))]
 					self.settings.channelmode = ConfigSelection(choices = choicelist, default = str(self.audioChannel.getCurrentChannel()))
 					self.settings.channelmode.addNotifier(self.changeMode, initial_call = False)
-					conflist.append(getConfigListEntry(_("Channel"), self.settings.channelmode))
+					conflist.append(getConfigListEntry(_("Audio channel"), self.settings.channelmode))
 					self["key_green"].setBoolean(True)
 				else:
 					conflist.append(('',))
