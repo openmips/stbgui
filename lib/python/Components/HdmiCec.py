@@ -35,7 +35,7 @@ for i in (10, 50, 100, 150, 250, 500, 750, 1000, 1500, 2000, 2500, 3000, 3500, 4
 config.hdmicec.minimum_send_interval = ConfigSelection(default = "0", choices = [("0", _("Disabled"))] + choicelist)
 choicelist = []
 for i in range(5, 65, 5):
-	choicelist.append(("%d" % i, "%d sec" % i))
+	choicelist.append(("%d" % i, _("%d sec") % i))
 config.hdmicec.repeat_wakeup_timer = ConfigSelection(default = "0", choices = [("0", _("Disabled"))] + choicelist)
 
 class HdmiCec:
@@ -187,7 +187,7 @@ class HdmiCec:
 
 	def onLeaveStandby(self):
 		self.wakeupMessages()
-		if config.hdmicec.repeat_wakeup_timer.value:
+		if int(config.hdmicec.repeat_wakeup_timer.value):
 			self.repeat.startLongTimer(int(config.hdmicec.repeat_wakeup_timer.value))
 
 	def onEnterStandby(self, configElement):
@@ -229,7 +229,7 @@ class HdmiCec:
 				else:
 					self.volumeForwardingDestination = 0 # off: send volume keys to tv
 				if config.hdmicec.volume_forwarding.value:
-					print 'eHdmiCec: volume forwarding to device %02x enabled'% self.volumeForwardingDestination
+					print 'eHdmiCec: volume forwarding to device %02x enabled'%(self.volumeForwardingDestination)
 					self.volumeForwardingEnabled = True
 			elif cmd == 0x8f: # request power status
 				if inStandby:
