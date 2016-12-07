@@ -47,6 +47,7 @@ class Navigation:
 		self.__wasTimerWakeup = False
 		self.__wasRecTimerWakeup = False
 		self.syncCount = 0
+		self.__isRestartUI = config.misc.RestartUI.value
 		startup_to_standby = config.usage.startup_to_standby.value
 		wakeup_time_type = config.misc.prev_wakeup_time_type.value
 
@@ -102,6 +103,9 @@ class Navigation:
 
 	def wasTimerWakeup(self):
 		return self.__wasTimerWakeup
+
+	def isRestartUI(self):
+		return self.__isRestartUI
 
 	def wasRecTimerWakeup(self):
 		return self.__wasRecTimerWakeup
