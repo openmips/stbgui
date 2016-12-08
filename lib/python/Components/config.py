@@ -435,7 +435,10 @@ class ConfigBoolean(ConfigElement):
 		return self.descriptions[self.value]
 
 	def getMulti(self, selected):
-		return ("text", self.descriptions[self.value])
+		descr = self.descriptions[self.value]
+		if descr:
+			return ("text", _(descr))
+		return ("text", descr)
 
 	def tostring(self, value):
 		if not value or value == 'false':
