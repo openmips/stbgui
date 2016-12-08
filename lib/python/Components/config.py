@@ -386,9 +386,13 @@ class ConfigSelection(ConfigElement):
 		return self._descr
 
 	def getMulti(self, selected):
-		if self._descr is None:
-			self._descr = self.description[self.value]
-		return ("text", self._descr)
+		if self._descr is not None:
+			descr = self._descr
+		else:
+			descr = self._descr = self.description[self.value]
+		if descr:
+			return ("text", _(descr))
+		return ("text", descr)
 
 	# HTML
 	def getHTML(self, id):
