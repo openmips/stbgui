@@ -105,7 +105,7 @@ class VideoHardware:
 		modes["DVI"] = ["720p", "1080i", "576p", "480p", "576i", "480i"]
 		widescreen_modes = set(["720p", "1080i"])
 
-	if modes.has_key("YPbPr") and getBoxType() in ('gbipbox', 'gbx1', 'gbx2', 'gbx3','mutant51', 'ax51'):
+	if modes.has_key("YPbPr") and getBoxType() in ('gbipbox', 'gbx1', 'gbx2', 'gbx3', 'gbx3h','mutant51', 'ax51'):
 		del modes["YPbPr"]
 
 	def getOutputAspect(self):
