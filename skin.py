@@ -101,7 +101,7 @@ addSkin('skin_box.xml')
 # add optional discrete second infobar
 addSkin('skin_second_infobar.xml')
 
-if getBoxType() in ('gb800ue', 'gb800ueplus', 'gbultraue', 'gbquad', 'gbquadplus', 'gbuhdquad'):
+if getBoxType() in ('gb800ue', 'gb800ueplus', 'gbultraue', 'gbultraueh', 'gbquad', 'gbquadplus', 'gbuhdquad'):
 	config.skin.lcdskin = ConfigText(default = "skin_lcd_default.xml")
 else:
 	config.skin.lcdskin = ConfigNothing()
@@ -437,7 +437,11 @@ class AttributeParser:
 	def shadowOffset(self, value):
 		self.guiObject.setShadowOffset(parsePosition(value, self.scaleTuple))
 	def noWrap(self, value):
-		self.guiObject.setNoWrap(1)
+		self.guiObject.setNoWrap(int(value))
+	def linelength(self, value):
+		pass
+	def OverScan(self, value):
+		self.guiObject.setOverscan(value)
 
 def applySingleAttribute(guiObject, desktop, attrib, value, scale = ((1,1),(1,1))):
 	# Someone still using applySingleAttribute?
