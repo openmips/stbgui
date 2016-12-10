@@ -33,6 +33,13 @@ if not fileExists('/etc/init.d/cardserver.None'):
 else:
 	pass
 
+if fileExists ('/etc/rc0.d/K20softcam'):
+	os.system('update-rc.d -f softcam remove && update-rc.d -f cardserver remove')
+
+if not fileExists('/etc/rc0.d/K09softcam'):
+	os.system('update-rc.d softcam stop 09 0 1 6 . start  60 2 3 4 5 .')
+	os.system('update-rc.d cardserver stop 09 0 1 6 . start  60 2 3 4 5 .')
+
 class ConfigAction(ConfigElement):
 	def __init__(self, action, *args):
 		ConfigElement.__init__(self)

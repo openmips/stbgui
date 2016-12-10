@@ -60,6 +60,8 @@ class About(Screen):
 			BoxName = "GigaBlue HD Ultra"
 		elif boxtype == 'gbultraue':
 			BoxName = "GigaBlue HD Ultra UE"
+		elif boxtype == 'gbultraueh':
+			BoxName = "GigaBlue HD Ultra UEh"
 		elif boxtype == 'gbultrase':
 			BoxName = "GigaBlue HD Ultra SE"
 		elif boxtype == 'gbx1':
@@ -68,6 +70,8 @@ class About(Screen):
 			BoxName = "GigaBlue X2"
 		elif boxtype == 'gbx3':
 			BoxName = "GigaBlue X3"
+		elif boxtype == 'gbx3h':
+			BoxName = "GigaBlue X3h"
 		elif boxtype == 'spycat':
 			BoxName = "XCORE Spycat"
 		elif boxtype == 'quadbox2400':
