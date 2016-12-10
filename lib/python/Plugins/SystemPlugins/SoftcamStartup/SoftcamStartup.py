@@ -33,13 +33,6 @@ if not fileExists('/etc/init.d/cardserver.None'):
 else:
 	pass
 
-if fileExists ('/etc/rc0.d/K20softcam'):
-	os.system('update-rc.d -f softcam remove && update-rc.d -f cardserver remove')
-
-if not fileExists('/etc/rc0.d/K09softcam'):
-	os.system('update-rc.d softcam stop 09 0 1 6 . start  60 2 3 4 5 .')
-	os.system('update-rc.d cardserver stop 09 0 1 6 . start  60 2 3 4 5 .')
-
 class ConfigAction(ConfigElement):
 	def __init__(self, action, *args):
 		ConfigElement.__init__(self)
@@ -75,6 +68,8 @@ class SoftcamStartup(Screen, ConfigListScreen):
 
 		self.list = [ ]
 		ConfigListScreen.__init__(self, self.list, session = session)
+
+		self.initd()
 
 		self.softcam1 = CamControl('softcam')
 		self.softcam2 = CamControl('cardserver')
@@ -165,3 +160,15 @@ class SoftcamStartup(Screen, ConfigListScreen):
 
 	def cancel(self):
 		self.close()
+
+	def initd (self):
+		if not fileExists('/etc/init.d/softcam'):
+			os.system('ln -s /etc/init.d/softcam.None /etc/init.d/softcam')
+		if not fileExists('/etc/init.d/cardserver'):
+			os.system('ln -s /etc/init.d/cardserver.None /etc/init.d/cardserver')
+
+		if fileExists ('/etc/rc0.d/K20softcam'):
+			os.system('update-rc.d -f softcam remove && update-rc.d -f cardserver remove')
+		if not fileExists('/etc/rc0.d/K09softcam'):
+			os.system('update-rc.d softcam stop 09 0 1 6 . start  60 2 3 4 5 .')
+			os.system('update-rc.d cardserver stop 09 0 1 6 . start  60 2 3 4 5 .')
