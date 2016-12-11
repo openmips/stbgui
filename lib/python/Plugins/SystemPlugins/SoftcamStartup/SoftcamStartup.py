@@ -15,24 +15,6 @@ import os
 from camcontrol import CamControl
 from enigma import eTimer, eDVBCI_UI, eListboxPythonStringContent, eListboxPythonConfigContent
 
-NoneData = "#!/bin/sh\n"
-
-if not fileExists('/etc/init.d/softcam.None'):
-	fd = file('/etc/init.d/softcam.None', 'w')
-	fd.write(NoneData)
-	fd.close()
-	os.chmod("/etc/init.d/softcam.None", 0755)
-else:
-	pass
-
-if not fileExists('/etc/init.d/cardserver.None'):
-	fd = file('/etc/init.d/cardserver.None', 'w')
-	fd.write(NoneData)
-	fd.close()
-	os.chmod("/etc/init.d/cardserver.None", 0755)
-else:
-	pass
-
 class ConfigAction(ConfigElement):
 	def __init__(self, action, *args):
 		ConfigElement.__init__(self)
@@ -162,6 +144,21 @@ class SoftcamStartup(Screen, ConfigListScreen):
 		self.close()
 
 	def initd (self):
+		CSNoneData = '#!/bin/sh\necho "Cardserver is deactivated."\n'
+		SCNoneData = '#!/bin/sh\necho "Softcam is deactivated."\n'
+
+		if not fileExists('/etc/init.d/softcam.None'):
+			fd = file('/etc/init.d/softcam.None', 'w')
+			fd.write(SCNoneData)
+			fd.close()
+			os.chmod("/etc/init.d/softcam.None", 0755)
+
+		if not fileExists('/etc/init.d/cardserver.None'):
+			fd = file('/etc/init.d/cardserver.None', 'w')
+			fd.write(CSNoneData)
+			fd.close()
+			os.chmod("/etc/init.d/cardserver.None", 0755)
+
 		if not fileExists('/etc/init.d/softcam'):
 			os.system('ln -s /etc/init.d/softcam.None /etc/init.d/softcam')
 		if not fileExists('/etc/init.d/cardserver'):
