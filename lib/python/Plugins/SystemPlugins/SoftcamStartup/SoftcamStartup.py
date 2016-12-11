@@ -143,7 +143,7 @@ class SoftcamStartup(Screen, ConfigListScreen):
 	def cancel(self):
 		self.close()
 
-	def initd (self):
+	def initd(self):
 		CSNoneData = '#!/bin/sh\necho "Cardserver is deactivated."\n'
 		SCNoneData = '#!/bin/sh\necho "Softcam is deactivated."\n'
 
