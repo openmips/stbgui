@@ -15,31 +15,6 @@ import os
 from camcontrol import CamControl
 from enigma import eTimer, eDVBCI_UI, eListboxPythonStringContent, eListboxPythonConfigContent
 
-NoneData = "#!/bin/sh\n"
-
-if not fileExists('/etc/init.d/softcam.None'):
-	fd = file('/etc/init.d/softcam.None', 'w')
-	fd.write(NoneData)
-	fd.close()
-	os.chmod("/etc/init.d/softcam.None", 0755)
-else:
-	pass
-
-if not fileExists('/etc/init.d/cardserver.None'):
-	fd = file('/etc/init.d/cardserver.None', 'w')
-	fd.write(NoneData)
-	fd.close()
-	os.chmod("/etc/init.d/cardserver.None", 0755)
-else:
-	pass
-
-if fileExists ('/etc/rc0.d/K20softcam'):
-	os.system('update-rc.d -f softcam remove && update-rc.d -f cardserver remove')
-
-if not fileExists('/etc/rc0.d/K09softcam'):
-	os.system('update-rc.d softcam stop 09 0 1 6 . start  60 2 3 4 5 .')
-	os.system('update-rc.d cardserver stop 09 0 1 6 . start  60 2 3 4 5 .')
-
 class ConfigAction(ConfigElement):
 	def __init__(self, action, *args):
 		ConfigElement.__init__(self)
@@ -75,6 +50,8 @@ class SoftcamStartup(Screen, ConfigListScreen):
 
 		self.list = [ ]
 		ConfigListScreen.__init__(self, self.list, session = session)
+
+		self.initd()
 
 		self.softcam1 = CamControl('softcam')
 		self.softcam2 = CamControl('cardserver')
@@ -165,3 +142,30 @@ class SoftcamStartup(Screen, ConfigListScreen):
 
 	def cancel(self):
 		self.close()
+
+	def initd(self):
+		CSNoneData = '#!/bin/sh\necho "Cardserver is deactivated."\n'
+		SCNoneData = '#!/bin/sh\necho "Softcam is deactivated."\n'
+
+		if not fileExists('/etc/init.d/softcam.None'):
+			fd = file('/etc/init.d/softcam.None', 'w')
+			fd.write(SCNoneData)
+			fd.close()
+			os.chmod("/etc/init.d/softcam.None", 0755)
+
+		if not fileExists('/etc/init.d/cardserver.None'):
+			fd = file('/etc/init.d/cardserver.None', 'w')
+			fd.write(CSNoneData)
+			fd.close()
+			os.chmod("/etc/init.d/cardserver.None", 0755)
+
+		if not fileExists('/etc/init.d/softcam'):
+			os.system('ln -s /etc/init.d/softcam.None /etc/init.d/softcam')
+		if not fileExists('/etc/init.d/cardserver'):
+			os.system('ln -s /etc/init.d/cardserver.None /etc/init.d/cardserver')
+
+		if fileExists ('/etc/rc0.d/K20softcam'):
+			os.system('update-rc.d -f softcam remove && update-rc.d -f cardserver remove')
+		if not fileExists('/etc/rc0.d/K09softcam'):
+			os.system('update-rc.d softcam stop 09 0 1 6 . start  60 2 3 4 5 .')
+			os.system('update-rc.d cardserver stop 09 0 1 6 . start  60 2 3 4 5 .')
