@@ -381,9 +381,12 @@ class ConfigSelection(ConfigElement):
 		self.value = self.choices[(i + 1) % nchoices]
 
 	def getText(self):
-		if self._descr is None:
-			self._descr = self.description[self.value]
-		return self._descr
+		if self._descr is not None:
+			return self._descr
+		descr = self._descr = self.description[self.value]
+		if descr:
+			return _(descr)
+		return descr
 
 	def getMulti(self, selected):
 		if self._descr is not None:
@@ -417,8 +420,9 @@ class ConfigSelection(ConfigElement):
 # several customized versions exist for different
 # descriptions.
 #
+boolean_descriptions = {False: _("false"), True: _("true")}
 class ConfigBoolean(ConfigElement):
-	def __init__(self, default = False, descriptions = {False: _("false"), True: _("true")}):
+	def __init__(self, default = False, descriptions = boolean_descriptions):
 		ConfigElement.__init__(self)
 		self.descriptions = descriptions
 		self.value = self.last_value = self.default = default
@@ -432,7 +436,10 @@ class ConfigBoolean(ConfigElement):
 			self.value = True
 
 	def getText(self):
-		return self.descriptions[self.value]
+		descr = self.descriptions[self.value]
+		if descr:
+			return _(descr)
+		return descr
 
 	def getMulti(self, selected):
 		descr = self.descriptions[self.value]
@@ -471,17 +478,20 @@ class ConfigBoolean(ConfigElement):
 			self.changedFinal()
 			self.last_value = self.value
 
+yes_no_descriptions = {False: _("no"), True: _("yes")}
 class ConfigYesNo(ConfigBoolean):
 	def __init__(self, default = False):
-		ConfigBoolean.__init__(self, default = default, descriptions = {False: _("no"), True: _("yes")})
+		ConfigBoolean.__init__(self, default = default, descriptions = yes_no_descriptions)
 
+on_off_descriptions = {False: _("off"), True: _("on")}
 class ConfigOnOff(ConfigBoolean):
 	def __init__(self, default = False):
-		ConfigBoolean.__init__(self, default = default, descriptions = {False: _("off"), True: _("on")})
+		ConfigBoolean.__init__(self, default = default, descriptions = on_off_descriptions)
 
+enable_disable_descriptions = {False: _("disabled"), True: _("enabled")}
 class ConfigEnableDisable(ConfigBoolean):
 	def __init__(self, default = False):
-		ConfigBoolean.__init__(self, default = default, descriptions = {False: _("disabled"), True: _("enabled")})
+		ConfigBoolean.__init__(self, default = default, descriptions = enable_disable_descriptions)
 
 class ConfigDateTime(ConfigElement):
 	def __init__(self, default, formatstring, increment = 86400):
