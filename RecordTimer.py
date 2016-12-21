@@ -754,7 +754,10 @@ class RecordTimer(timer.Timer):
 				self.cleanupDisabled()
 				# Remove old timers as set in config
 				self.cleanupDaily(config.recording.keep_timers.value)
-				insort(self.processed_timers, w)
+				# If we want to keep done timers, re-insert in the active list
+				if config.recording.keep_timers.value > 0 and w not in self.processed_timers:
+					insort(self.processed_timers, w)
+
 		self.stateChanged(w)
 	
 	def isRecTimerWakeup(self):
@@ -1291,8 +1294,9 @@ class RecordTimer(timer.Timer):
 			for x in self.timer_list:
 				if x.setAutoincreaseEnd():
 					self.timeChanged(x)
-		# now the timer should be in the processed_timers list. remove it from there.
-		self.processed_timers.remove(entry)
+		if entry in self.processed_timers:
+			# now the timer should be in the processed_timers list. remove it from there.
+			self.processed_timers.remove(entry)
 		self.saveTimer()
 
 	def shutdown(self):
