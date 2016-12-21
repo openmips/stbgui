@@ -9,15 +9,15 @@ msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-11-25 13:39+0300\n"
-"PO-Revision-Date: 2016-11-25 14:15+0200\n"
-"Last-Translator: Hasan Kiran <Sunder67@hotmail.com>\n"
+"PO-Revision-Date: 2016-12-18 15:32+0200\n"
+"Last-Translator: Hasan Kiran <sunder67@hotmail.com>\n"
 "Language-Team: Turkish <Sunder67@hotmail.com>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural= (1 != 1);\n"
-"X-Generator: Poedit 1.8.7.1\n"
+"X-Generator: Lokalize 2.0\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
 msgid ""
@@ -1587,7 +1587,7 @@ msgid ""
 "Configure if the HDMI EDID checking should be bypassed as this might solve "
 "issue with some TVs."
 msgstr ""
-"HDMI EDID denetimi bazı TV'ler ile sorunu çözebilir olabilir bu şekilde "
+"HDMI EDID denetimi bazı TV'ler ile sorunu çözebilir.Bu şekilde "
 "baypas gerekip gerekmediğini yapılandırın."
 
 msgid "Configure nameservers"
@@ -3155,7 +3155,7 @@ msgid "Horizontal turning speed"
 msgstr "Yatay tarama hızı"
 
 msgid "Hostname:"
-msgstr "Makinaadı:"
+msgstr "Makina adı:"
 
 msgid "HotKey Setup"
 msgstr "Kısayol Kurulum"
@@ -5877,9 +5877,8 @@ msgstr "Seri: %s"
 msgid "Serial: unknown"
 msgstr "Seri: bilinmiyor"
 
-#, fuzzy
 msgid "Service & PIDs"
-msgstr "Kanallar"
+msgstr "Kanal & PIDs"
 
 msgid "Service ID"
 msgstr "Kanal Kimliği"
@@ -5894,13 +5893,13 @@ msgid "Service info"
 msgstr "Kanal bilgisi"
 
 msgid "Service info - service & PIDs"
-msgstr ""
+msgstr "Kanal bilgisi - kanal & PIDs"
 
 msgid "Service info - tuner live values"
-msgstr ""
+msgstr "Kanal bilgisi - canlı tuner değerleri"
 
 msgid "Service info - tuner setting values"
-msgstr ""
+msgstr "Kanal bilgisi - tuner ayar değerleri"
 
 msgid ""
 "Service invalid!\n"
@@ -6634,9 +6633,8 @@ msgstr "Zaman kaydırma dursun mu?"
 msgid "Stopped"
 msgstr "Durduruldu"
 
-#, fuzzy
 msgid "Store"
-msgstr "Geri Yükle"
+msgstr "Mağaza"
 
 msgid "Store at index"
 msgstr "Indeksteki depo"
@@ -6654,7 +6652,7 @@ msgid "Stream request"
 msgstr "Akış isteği"
 
 msgid "Streaming clients info"
-msgstr "Akış istemcileri bilgi"
+msgstr "Akış istemcileri bilgisi"
 
 msgid "Stripes"
 msgstr "Stripes"
@@ -6793,9 +6791,8 @@ msgstr "Senkronizasyon hatası geriye orjine hareket  !"
 msgid "System"
 msgstr "Sistem"
 
-#, fuzzy
 msgid "System & Modulation"
-msgstr "Modülasyon"
+msgstr "Sistem & Modülasyon"
 
 #. TRANSLATORS: Add here whatever should be shown in the "translator" about screen, up to 6 lines (use \n for newline)
 msgid "TRANSLATOR_INFO"
@@ -7510,16 +7507,14 @@ msgstr "Tuner Yapılandırma"
 msgid "Tuner is not supported"
 msgstr "Tuner desteklenmiyor"
 
-#, fuzzy
 msgid "Tuner live values"
-msgstr "Tuner durumu"
+msgstr "Canlı tuner değerleri"
 
 msgid "Tuner not available."
 msgstr "Tuner mevcut değil."
 
-#, fuzzy
 msgid "Tuner setting values"
-msgstr "Tuner durumu"
+msgstr "Tuner ayar değerleri"
 
 #, python-format
 msgid "Tuner status %s"
@@ -7823,9 +7818,8 @@ msgstr "Görüntü sihirbazı"
 msgid "Video: %s fps"
 msgstr "Video: %s fps"
 
-#, fuzzy
 msgid "Videocodec, size & format"
-msgstr "Video formatı"
+msgstr "Videocodec, boyut & biçim"
 
 msgid "View Rass interactive..."
 msgstr "Etkilesimli RASS'i göster"
@@ -10933,7 +10927,7 @@ msgid "Rewind speeds"
 msgstr "Geri sarma hızları"
 
 msgid "Rewrap subtitles"
-msgstr "altyazıları sarmaktır"
+msgstr "Altyazıları yeniden sar"
 
 msgid "Satellite dish setup"
 msgstr "Uydu anteni kurulumu"
