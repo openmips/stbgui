@@ -237,12 +237,12 @@ self.condition = nimmanager.somethingConnected() and not config.misc.installwiza
 self.hideRc()
 			</code>	
 			<list>
-				<listentry caption="No, scan later manually" step="softcam" />
+				<listentry caption="No, scan later manually" step="end" />
 				<listentry caption="Yes, do an automatic scan now" step="scan" />
 				<listentry caption="Yes, do a manual scan now" step="manualscan" />
 			</list>
 		</step>
-		<step id="scan" nextstep="softcam">
+		<step id="scan" nextstep="end">
 			<condition>
 from Components.NimManager import nimmanager
 self.condition = nimmanager.somethingConnected() and not config.misc.installwizard.channellistdownloaded.value
@@ -267,7 +267,7 @@ self.condition = nimmanager.somethingConnected() and not config.misc.installwiza
 			</condition>
 			<text value="Do you want to do another manual service scan?" />
 			<list>
-				<listentry caption="No, scan later manually" step="softcam" />
+				<listentry caption="No, scan later manually" step="end" />
 				<listentry caption="Yes, do another manual scan now" step="manualscan" />
 			</list>
 		</step>
@@ -313,8 +313,6 @@ config.ParentalControl.servicepinactive.save()
 			<text value="After the start wizard is completed, you need to protect single services. Refer to your %s %s's manual on how to do that." />
 		</step>
 
- -->
-
 		<step id="softcam">
 			<condition>
 self.condition = config.misc.installwizard.hasnetwork.value and config.misc.installwizard.ipkgloaded.value
@@ -327,6 +325,8 @@ self.selectKey("LEFT")
 self.selectKey("RIGHT")
 			</code>
 		</step>
+ -->
+
 
 		<step id="end" laststep="true">
 			<condition>
