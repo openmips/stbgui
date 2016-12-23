@@ -3,6 +3,7 @@ SUBDIRS = countries fonts extensions keymaps skin_default
 dist_pkgdata_DATA = \
 	encoding.conf \
 	keymap.xml \
+	keytranslation.xml \
 	menu.xml \
 	prev.png \
 	radio.mvi \
