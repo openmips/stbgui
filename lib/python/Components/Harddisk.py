@@ -70,7 +70,7 @@ class Harddisk:
 		self.phys_path = os.path.realpath(self.sysfsPath('device'))
 
 		self.removable = removable
-		self.internal = "pci" in self.phys_path or "ahci" in self.phys_path
+		self.internal = "pci" in self.phys_path or "ahci" in self.phys_path or "sata" in self.phys_path
 		try:
 			data = open("/sys/block/%s/queue/rotational" % device, "r").read().strip()
 			self.rotational = int(data)
@@ -630,7 +630,27 @@ DEVICEDB =  \
 			"/devices/platform/ehci-brcm.0/usb1/1-2/1-2:1.0": "Front USB Slot",
 			"/devices/platform/ehci-brcm.0/usb1/1-1/1-1:1.0": "Back USB Slot"
 		},
+		"gbultraueh":
+		{
+			"/devices/platform/ehci-brcm.0/usb1/1-2/1-2:1.0": "Front USB Slot",
+			"/devices/platform/ehci-brcm.0/usb1/1-1/1-1:1.0": "Back USB Slot"
+		},
 		"gbx1":
+		{
+			"/devices/platform/ehci-brcm.0/usb1/1-1/1-1:1.0": "Back USB Slot (LAN-Port)",
+			"/devices/platform/ehci-brcm.0/usb1/1-2/1-2:1.0": "Back USB Slot"
+		},
+		"gbx2":
+		{
+			"/devices/platform/ehci-brcm.0/usb1/1-1/1-1:1.0": "Back USB Slot (LAN-Port)",
+			"/devices/platform/ehci-brcm.0/usb1/1-2/1-2:1.0": "Back USB Slot"
+		},
+		"gbx3":
+		{
+			"/devices/platform/ehci-brcm.0/usb1/1-1/1-1:1.0": "Back USB Slot (LAN-Port)",
+			"/devices/platform/ehci-brcm.0/usb1/1-2/1-2:1.0": "Back USB Slot"
+		},
+		"gbx3h":
 		{
 			"/devices/platform/ehci-brcm.0/usb1/1-1/1-1:1.0": "Back USB Slot (LAN-Port)",
 			"/devices/platform/ehci-brcm.0/usb1/1-2/1-2:1.0": "Back USB Slot"
