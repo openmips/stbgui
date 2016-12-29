@@ -338,6 +338,7 @@ def InitUsageConfig():
 		setPreferredTuner(int(configElement.value))
 	config.usage.frontend_priority.addNotifier(PreferredTunerChanged)
 
+	config.usage.show_picon_in_display = ConfigYesNo(default = True)
 	config.usage.hide_zap_errors = ConfigYesNo(default = True)
 	config.misc.use_ci_assignment = ConfigYesNo(default = True)
 	config.usage.hide_ci_messages = ConfigYesNo(default = False)
