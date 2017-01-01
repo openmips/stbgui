@@ -28,9 +28,9 @@
 
 #define PACK_VERSION(major,minor,micro) (((major) << 16) + ((minor) << 8) + (micro))
 #define UNPACK_VERSION(version,major,minor,micro) { \
-        major = (version)&0xff; \
-        minor = (version>>8)&0xff; \
-        micro = (version>>16)&0xff; \
+	major = (version)&0xff; \
+	minor = (version>>8)&0xff; \
+	micro = (version>>16)&0xff; \
 }
 
 eDVBServicePMTHandler::eDVBServicePMTHandler()
@@ -286,7 +286,7 @@ void eDVBServicePMTHandler::AITready(int error)
 	ePtr<eTable<ApplicationInformationSection> > ptr;
 	if (!m_AIT.getCurrent(ptr))
 	{
-                short profilecode = 0;
+		short profilecode = 0;
 		int orgid = 0, appid = 0, profileVersion = 0;
 		m_ApplicationName = m_HBBTVUrl = "";
 
@@ -304,14 +304,14 @@ void eDVBServicePMTHandler::AITready(int error)
 			for (; i != (*it)->getApplicationInformation()->end(); ++i)
 			{
 				std::string hbbtvUrl = "", applicaionName = "";
-                                std::string boundaryExtension = "";
+				std::string boundaryExtension = "";
 
 				int controlCode = (*i)->getApplicationControlCode();
 				ApplicationIdentifier * applicationIdentifier = (ApplicationIdentifier *)(*i)->getApplicationIdentifier();
-                                profilecode = 0;
+				profilecode = 0;
 				orgid = applicationIdentifier->getOrganisationId();
 				appid = applicationIdentifier->getApplicationId();
-				eDebug("found applicaions ids >> pid : %x, orgid : %d, appid : %d", m_ait_pid, orgid, appid);
+				eDebug("found application ids >> pid : %x, orgid : %d, appid : %d", m_ait_pid, orgid, appid);
 				if (controlCode == 1)
 				{
 					saveData(orgid, m_AITData, sectionLength);
@@ -889,7 +889,7 @@ int eDVBServicePMTHandler::getDecodeDemux(ePtr<iDVBDemux> &demux)
 {
 	int ret=0;
 		/* if we're using the decoding demux as data source
-		   (for example in pvr playbacks), return that one. */
+		(for example in pvr playbacks), return that one. */
 	if (m_pvr_channel)
 	{
 		demux = m_demux;
