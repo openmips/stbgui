@@ -44,9 +44,10 @@ def ServiceInfoListEntry(a, b, valueType=TYPE_TEXT, param=4):
 			b = ("%d.%d%s") % (b // 10, b % 10, direction)
 		else:
 			b = str(b)
-	x, y, w, h = skin.parameters.get("ServiceInfo",(0, 0, 300, 30))
+	x, y, w, h = skin.parameters.get("ServiceInfo",(0, 0, 1200, 30))
 	xa, ya, wa, ha = skin.parameters.get("ServiceInfoLeft",(0, 0, 300, 25))
-	xb, yb, wb, hb = skin.parameters.get("ServiceInfoRight",(300, 0, 600, 25))
+	xb, yb, wb, hb = skin.parameters.get("ServiceInfoRight",(300, 0, 900, 25))
+
 	return [
 		#PyObject *type, *px, *py, *pwidth, *pheight, *pfnt, *pstring, *pflags;
 		(eListboxPythonMultiContent.TYPE_TEXT, x, y, w, h, 0, RT_HALIGN_LEFT, ""),
@@ -112,7 +113,6 @@ class ServiceInfo(Screen):
 				self["key_blue"] = self["blue"] = Label(_("Tuner setting values"))
 			else:
 				self.skinName="ServiceInfoSimple"
-
 		self.onShown.append(self.ShowServiceInformation)
 
 	def ShowServiceInformation(self):
@@ -148,15 +148,28 @@ class ServiceInfo(Screen):
 					(_("URL"), refstr.split(":")[10].replace("%3a", ":"), TYPE_TEXT)]
 			else:
 				if ":/" in refstr:
-					fillList = [(_("Service name"), name, TYPE_TEXT),
-						(_("Videocodec, size & format"), resolution, TYPE_TEXT),
-						(_("Service reference"), ":".join(refstr.split(":")[:9]), TYPE_TEXT),
-						(_("Filename"), refstr.split(":")[10], TYPE_TEXT)]
+					pfad = refstr.split(":")[10]
+					pfad = pfad.split('/')
+					title = str(refstr.split(":")[10])
+					filename = str(pfad[len(pfad)-1])
+					location = refstr.split(":")[10].replace(filename,'')
+					fillList = []
+					if name != filename:
+						fillList = fillList + [(_("Title"), name, TYPE_TEXT)]
+					fillList = fillList + [
+					(_("Filename"), filename, TYPE_TEXT),
+					(_("Location"), location , TYPE_TEXT),
+					(_("Videocodec, size & format"), resolution, TYPE_TEXT),
+					(_("Service reference"), ":".join(refstr.split(":")[:9]), TYPE_TEXT)
+					]
+					#self["Title"].text = filename
 				else:
-					fillList = [(_("Service name"), name, TYPE_TEXT),
+					fillList = [
+						(_("Service name"), name, TYPE_TEXT),
 						(_("Provider"), self.getServiceInfoValue(iServiceInformation.sProvider), TYPE_TEXT),
 						(_("Videocodec, size & format"), resolution, TYPE_TEXT),
-						(_("Service reference"), refstr, TYPE_TEXT)]
+						(_("Service reference"), refstr, TYPE_TEXT)
+						]
 				fillList = fillList + [(_("Namespace"), self.getServiceInfoValue(iServiceInformation.sNamespace), TYPE_VALUE_HEX, 8),
 					(_("Service ID"), self.getServiceInfoValue(iServiceInformation.sSID), TYPE_VALUE_HEX_DEC, 4),
 					(_("Video PID"), self.getServiceInfoValue(iServiceInformation.sVideoPID), TYPE_VALUE_HEX_DEC, 4),
