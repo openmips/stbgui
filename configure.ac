@@ -53,10 +53,16 @@ AC_CHECK_LIB([ungif], [DGifOpen], [LIBGIF_LIBS="-lungif"], [AC_CHECK_LIB([gif], 
 AC_SUBST(LIBGIF_LIBS)
 
 AC_ARG_WITH(boxtype,
-	[  --with-boxtype=NAME box type [[none,dm7025,dm800...]]],
-	[BOXTYPE="$withval"],[BOXTYPE="dm800"])
+	[  --with-boxtype=NAME box type [[none,gb7356,gb7358...]]],
+	[BOXTYPE="$withval"],[BOXTYPE="gb7358"])
 AC_SUBST(BOXTYPE)
 AC_DEFINE_UNQUOTED(BOXTYPE,"$BOXTYPE",[box type])
+
+AC_ARG_WITH(machinebuild,
+	[  --with-machinebuild=NAME machine build [[none,gbipbox,gbquad...]]],
+	[MACHINEBUILD="$withval"],[MACHINEBUILD="gbipbox"])
+AC_SUBST(MACHINEBUILD)
+AC_DEFINE_UNQUOTED(MACHINEBUILD,"$MACHINEBUILD",[machine build])
 
 AC_ARG_WITH(distro,
 	[  --with-distro=NAME distro name [[openvix,openaaf,...]]],
@@ -98,30 +104,7 @@ AM_CONDITIONAL(DREAMBOX, test `echo "$BOXTYPE" | cut -b 1-2` == "dm")
 AM_CONDITIONAL(SKYLAKE, test `echo "$BOXTYPE" | cut -b 1-2` == "hd")
 AM_CONDITIONAL(HAVE_TEMPFANCONTROL, test "$BOXTYPE" == dm8000 -o "$BOXTYPE" == dm800se -o "$BOXTYPE" == dm500hd)
 AM_CONDITIONAL(GIGABLUE, test `echo "$BOXTYPE" | cut -b 1-2` == "gb")
-AM_CONDITIONAL(GB800SE, test "$BOXTYPE" == gb800se)
-AM_CONDITIONAL(GB800UE, test "$BOXTYPE" == gb800ue)
-AM_CONDITIONAL(GB800SEPLUS, test "$BOXTYPE" == gb800seplus)
-AM_CONDITIONAL(GB800UEPLUS, test "$BOXTYPE" == gb800ueplus)
-AM_CONDITIONAL(GB800SOLO, test "$BOXTYPE" == gb800solo)
-AM_CONDITIONAL(GBQUAD, test "$BOXTYPE" == gbquad)
-AM_CONDITIONAL(GBQUADPLUS, test "$BOXTYPE" == gbquadplus)
-AM_CONDITIONAL(GBUHDQUAD, test "$BOXTYPE" == gbuhdquad)
-AM_CONDITIONAL(GBIPBOX, test "$BOXTYPE" == gbipbox)
-AM_CONDITIONAL(GBULTRA, test "$BOXTYPE" == gbultra)
-AM_CONDITIONAL(GBULTRAUE, test "$BOXTYPE" == gbultraue)
-AM_CONDITIONAL(GBULTRAUEH, test "$BOXTYPE" == gbultraueh)
-AM_CONDITIONAL(GBULTRASE, test "$BOXTYPE" == gbultrase)
-AM_CONDITIONAL(GBX1, test "$BOXTYPE" == gbx1)
-AM_CONDITIONAL(GBX2, test "$BOXTYPE" == gbx2)
-AM_CONDITIONAL(GBX3, test "$BOXTYPE" == gbx3)
-AM_CONDITIONAL(GBX3H, test "$BOXTYPE" == gbx3h)
-AM_CONDITIONAL(QUADBOX2400, test "$BOXTYPE" == quadbox2400)
-
-AC_ARG_WITH(machinebuild,
-	[  --with-machinebuild=NAME machine build [[none,atemeo5200,atemeo6000...]]],
-	[MACHINEBUILD="$withval"],[MACHINEBUILD="atemeo5200"])
-AC_SUBST(MACHINEBUILD)
-AC_DEFINE_UNQUOTED(MACHINEBUILD,"$MACHINEBUILD",[machine build])
+AM_CONDITIONAL(GBIPBOX, test "$MACHINEBUILD" == gbipbox)
 
 if test `echo "$BOXTYPE" | cut -b 1-2` == "dm"; then
 	AC_DEFINE(DREAMBOX, 1, [Dreambox hardware])
@@ -188,14 +171,14 @@ if test `echo "$BOXTYPE" | cut -b 1-2` == "vu"; then
 	AC_DEFINE(FORCE_ADVANCED_REMOTE, 1,[define to fixup the input device identification when the remote control is actually an 'advanced' remote (with play/forward/rewind keys)])
 fi
 
-if test "$BOXTYPE" == "gb800se" -o "$BOXTYPE" == "gb800solo" -o "$BOXTYPE" == "gb800ue" -o "$BOXTYPE" == "gbquad" -o "$BOXTYPE" == "gbquadplus" -o "$BOXTYPE" == "gb800seplus" -o "$BOXTYPE" == "gb800ueplus" -o "$BOXTYPE" == "gbipbox" -o "$BOXTYPE" == "gbultra" -o "$BOXTYPE" == "gbultraue" -o "$BOXTYPE" == "gbultraueh" -o "$BOXTYPE" == "gbultrase" -o "$BOXTYPE" == "gbx1" -o "$BOXTYPE" == "gbx2" -o "$BOXTYPE" == "gbx3" -o "$BOXTYPE" == "gbx3h" -o "$BOXTYPE" == "gb7358" -o "$BOXTYPE" == "gb7325" -o "$BOXTYPE" == "gb7362" -o "$BOXTYPE" == "gb73625" -o "$BOXTYPE" == "gb7356" -o "$BOXTYPE" == "gb7252"; then
+if test `echo "$BOXTYPE" | cut -b 1-2` == "gb"; then
 	AC_DEFINE(KEY_PLAY_ACTUALLY_IS_KEY_PLAYPAUSE, 1,[define when rc sends a KEY_PLAY event for its KEY_PLAYPAUSE key])
 	AC_DEFINE(KEY_GUIDE_TO_KEY_EPG, 1,[define when rc sends a KEY_HELP event for its KEY_EPG key])
 	AC_DEFINE(KEY_F2_TO_KEY_F6, 1,[define when rc sends a KEY_F2 event for its KEY_F6 key])
 	AC_DEFINE(KEY_SCREEN_TO_KEY_MODE, 1,[define when rc sends a KEY_MODE event for its KEY_ASPECT key])
 fi
 
-#if test "$BOXTYPE" == "gbipbox"; then
+#if test "$MACHINEBUILD" == "gbipbox"; then
 #	AC_DEFINE(FORCE_SERVICEAVAIL, 1,[define SERVICEAVAIL for GBIPBOX allways true ])
 #fi
 
