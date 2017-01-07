@@ -222,6 +222,7 @@ bool eFBCTunerManager::isUnicable(eDVBRegisteredFrontend *fe)
 {
 	ePtr<eDVBSatelliteEquipmentControl> sec = eDVBSatelliteEquipmentControl::getInstance();
 	int slot_idx = fe_slot_id(fe);
+	bool is_unicable = false;
 	int idx;
 
 	for (idx = 0; idx <= sec->m_lnbidx; ++idx)
@@ -229,9 +230,12 @@ bool eFBCTunerManager::isUnicable(eDVBRegisteredFrontend *fe)
 		eDVBSatelliteLNBParameters &lnb_param = sec->m_lnbs[idx];
 
 		if (lnb_param.m_slot_mask & (1 << slot_idx))
-			return(lnb_param.SatCR_format != SatCR_format_none);
+		{
+			is_unicable = lnb_param.SatCR_format != 0;
+			break;
+		}
 	}
-	return false;
+	return is_unicable;
 }
 
 int eFBCTunerManager::isCompatibleWith(ePtr<iDVBFrontendParameters> &feparm, eDVBRegisteredFrontend *link_fe, eDVBRegisteredFrontend *&fbc_fe, bool simulate)
