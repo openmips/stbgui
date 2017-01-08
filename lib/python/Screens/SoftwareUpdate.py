@@ -96,11 +96,11 @@ class UpdatePlugin(Screen, ProtectedScreen):
 				status = urlopen(url, timeout=5, context=_create_unverified_context()).read().split('!', 1)
 				print status
 			if getBoxType() in status[0].split(','):
-				message = len(status) > 1 and status[1] or _("The current software might not be stable.\nFor more information see %s.") % ("www.image.openmips.com")
+				message = len(status) > 1 and status[1] or _("The current software might not be stable.\nFor more information see %s.") % ("http://image.openmips.com")
 				picon = MessageBox.TYPE_ERROR
 				default = False
 		except:
-			message = _("The status of the current software could not be checked because %s can not be reached.") % ("www.image.openmips.com")
+			message = _("The status of the current software could not be checked because %s can not be reached.") % ("http://image.openmips.com")
 			picon = MessageBox.TYPE_ERROR
 			default = False
 		socket.setdefaulttimeout(currentTimeoutDefault)
