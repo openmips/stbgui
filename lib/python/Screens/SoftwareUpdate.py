@@ -12,7 +12,7 @@ from Components.Sources.StaticText import StaticText
 from Components.Slider import Slider
 from Tools.BoundFunction import boundFunction
 from enigma import eTimer, eDVBDB
-from boxbranding import getBoxType, getImageVersion
+from boxbranding import getBoxType, getImageVersion, getMachineBuild
 from Tools.Directories import fileExists
 from urllib2 import urlopen
 import socket
@@ -95,7 +95,13 @@ class UpdatePlugin(Screen, ProtectedScreen):
 				from ssl import _create_unverified_context
 				status = urlopen(url, timeout=5, context=_create_unverified_context()).read().split('!', 1)
 				print status
-			if getBoxType() in status[0].split(','):
+			# prefer getMachineBuild
+			if getMachineBuild() in status[0].split(','):
+				message = len(status) > 1 and status[1] or _("The current software might not be stable.\nFor more information see %s.") % ("http://image.openmips.com")
+				picon = MessageBox.TYPE_ERROR
+				default = False
+			# only use getBoxType if no getMachineBuild
+			elif getBoxType() in status[0].split(','):
 				message = len(status) > 1 and status[1] or _("The current software might not be stable.\nFor more information see %s.") % ("http://image.openmips.com")
 				picon = MessageBox.TYPE_ERROR
 				default = False
