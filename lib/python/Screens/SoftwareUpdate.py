@@ -86,18 +86,18 @@ class UpdatePlugin(Screen, ProtectedScreen):
 		message = ""
 		picon = None
 		default = True
-#		try:
+		try:
 			# TODO: Use Twisted's URL fetcher, urlopen is evil. And it can
 			# run in parallel to the package update.
-#			status = urlopen("http://openpli.org/status").read().split('!', 1)
-#			if getBoxType() in status[0].split(','):
-#				message = len(status) > 1 and status[1] or _("The current beta image might not be stable.\nFor more information see %s.") % ("www.openpli.org")
-#				picon = MessageBox.TYPE_ERROR
-#				default = False
-#		except:
-#			message = _("The status of the current beta image could not be checked because %s can not be reached.") % ("www.openpli.org")
-#			picon = MessageBox.TYPE_ERROR
-#			default = False
+			status = urlopen("http://openpli.org/status").read().split('!', 1)
+			if getBoxType() in status[0].split(','):
+				message = len(status) > 1 and status[1] or _("The current beta image might not be stable.\nFor more information see %s.") % ("www.openpli.org")
+				picon = MessageBox.TYPE_ERROR
+				default = False
+		except:
+			message = _("The status of the current beta image could not be checked because %s can not be reached.") % ("www.openpli.org")
+			picon = MessageBox.TYPE_ERROR
+			default = False
 		socket.setdefaulttimeout(currentTimeoutDefault)
 		if default:
 			self.showDisclaimer()
