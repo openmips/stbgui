@@ -12,9 +12,9 @@ from Components.Sources.StaticText import StaticText
 from Components.Slider import Slider
 from Tools.BoundFunction import boundFunction
 from enigma import eTimer, eDVBDB
-from boxbranding import getBoxType, getImageVersion
+from boxbranding import getBoxType, getImageVersion, getMachineBuild
 from Tools.Directories import fileExists
-from urllib import urlopen
+from urllib2 import urlopen
 import socket
 import os
 import re
@@ -78,26 +78,37 @@ class UpdatePlugin(Screen, ProtectedScreen):
 		self.activityTimer.callback.remove(self.checkTraficLight)
 		self.activityTimer.start(100, False)
 
-		from urllib import urlopen
-		import socket
-		import os
 		currentTimeoutDefault = socket.getdefaulttimeout()
 		socket.setdefaulttimeout(3)
 		message = ""
 		picon = None
 		default = True
-#		try:
+		try:
 			# TODO: Use Twisted's URL fetcher, urlopen is evil. And it can
 			# run in parallel to the package update.
-#			status = urlopen("http://openpli.org/status").read().split('!', 1)
-#			if getBoxType() in status[0].split(','):
-#				message = len(status) > 1 and status[1] or _("The current beta image might not be stable.\nFor more information see %s.") % ("www.openpli.org")
-#				picon = MessageBox.TYPE_ERROR
-#				default = False
-#		except:
-#			message = _("The status of the current beta image could not be checked because %s can not be reached.") % ("www.openpli.org")
-#			picon = MessageBox.TYPE_ERROR
-#			default = False
+			url = "http://image.openmips.com/status/%s/" % (getImageVersion())
+			try:
+				status = urlopen(url, timeout=5).read().split('!', 1)
+				print status
+			except:
+				# bypass the certificate check
+				from ssl import _create_unverified_context
+				status = urlopen(url, timeout=5, context=_create_unverified_context()).read().split('!', 1)
+				print status
+			# prefer getMachineBuild
+			if getMachineBuild() in status[0].split(','):
+				message = len(status) > 1 and status[1] or _("The current software might not be stable.\nFor more information see %s.") % ("http://image.openmips.com")
+				picon = MessageBox.TYPE_ERROR
+				default = False
+			# only use getBoxType if no getMachineBuild
+			elif getBoxType() in status[0].split(','):
+				message = len(status) > 1 and status[1] or _("The current software might not be stable.\nFor more information see %s.") % ("http://image.openmips.com")
+				picon = MessageBox.TYPE_ERROR
+				default = False
+		except:
+			message = _("The status of the current software could not be checked because %s can not be reached.") % ("http://image.openmips.com")
+			picon = MessageBox.TYPE_ERROR
+			default = False
 		socket.setdefaulttimeout(currentTimeoutDefault)
 		if default:
 			self.showDisclaimer()
@@ -132,7 +143,13 @@ When you discover 'bugs' please keep them reported on www.gigablue-support.com.\
 			# run in parallel to the package update.
 			from time import strftime
 			from datetime import datetime
-			latestImageTimestamp = datetime.fromtimestamp(int(urlopen("http://image.openmips.com/%s/%s/build-timestamp" % (getImageVersion(), getBoxType())).read())).strftime(_("%Y-%m-%d %H:%M"))
+			url = "http://image.openmips.com/%s/%s/build-timestamp" % (getImageVersion(), getBoxType())
+			try:
+				latestImageTimestamp = datetime.fromtimestamp(int(urlopen(url, timeout=5).read())).strftime(_("%Y-%m-%d %H:%M"))
+			except:
+				# bypass the certificate check
+				from ssl import _create_unverified_context
+				latestImageTimestamp = datetime.fromtimestamp(int(urlopen(url, timeout=5, context=_create_unverified_context()).read())).strftime(_("%Y-%m-%d %H:%M"))
 		except:
 			latestImageTimestamp = ""
 		print latestImageTimestamp

@@ -45,4 +45,4 @@ SUBDIRS += displaytext
 endif
 
 skin_display.xml: $(srcdir)/skin_display_default.xml
-	test -f $(srcdir)/skin_display_$(BOXTYPE).xml && cp $(srcdir)/skin_display_$(BOXTYPE).xml skin_display.xml || cp $(srcdir)/skin_display_default.xml skin_display.xml
+	test -f $(srcdir)/skin_display_$(MACHINEBUILD).xml && cp $(srcdir)/skin_display_$(MACHINEBUILD).xml skin_display.xml || cp $(srcdir)/skin_display_default.xml skin_display.xml
