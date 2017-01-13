@@ -91,7 +91,7 @@ class NimSetup(Screen, ConfigListScreen, ServiceStopScreen):
 			if len(nimmanager.canExternalConnectTo(self.slotid)) > 0:
 				choices["loopthrough_external"] = _("External loopthrough to")
 			if self.nim.isFBCLink():
-				choices = { "nothing": _("FBC automatic loop through"), "advanced": _("FBC Unicable")}
+				choices = { "nothing": _("FBC automatic"), "advanced": _("FBC SCR (Unicable or JESS)")}
 			self.nimConfig.configMode.setChoices(choices, self.nim.isFBCLink() and "nothing" or "simple")
 
 	def createSetup(self):
@@ -812,7 +812,7 @@ class NimSelection(Screen):
 				if x.isCompatible("DVB-S"):
 					if nimConfig.configMode.value in ("loopthrough_internal", "loopthrough_external", "equal", "satposdepends"):
 						if x.isFBCLink():
-							text = "FBC automatic loop through\nlinked to"
+							text = "FBC automatic\nconnected to"
 						else:
 							text = { "loopthrough_internal": _("Internal loopthrough to"),
 									 "loopthrough_external": _("External loopthrough to"),
@@ -823,10 +823,10 @@ class NimSelection(Screen):
 						if x.isFBCLink():
 							link = getLinkedSlotID(x.slot)
 							if link == -1:
-								text = _("FBC automatic loop through\ninactive")
+								text = _("FBC automatic\ninactive")
 							else:
 								link = nimmanager.getNim(link).slot_name
-								text = _("FBC automatic loop through\nlinked to %s") % link
+								text = _("FBC automatic\nconnected to %s") % link
 						else:
 							text = _("not configured")
 					elif nimConfig.configMode.value == "simple":
