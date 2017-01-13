@@ -812,7 +812,7 @@ class NimSelection(Screen):
 				if x.isCompatible("DVB-S"):
 					if nimConfig.configMode.value in ("loopthrough_internal", "loopthrough_external", "equal", "satposdepends"):
 						if x.isFBCLink():
-							text = "FBC automatic\nconnected to"
+							text = _("FBC automatic\nconnected to")
 						else:
 							text = { "loopthrough_internal": _("Internal loopthrough to"),
 									 "loopthrough_external": _("External loopthrough to"),
