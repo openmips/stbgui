@@ -110,7 +110,7 @@ class PositionerSetup(Screen):
 					self.oldref_stop = True
 				else:
 					for n in nimmanager.nim_slots:
-						if n.config_mode in ("loopthrough", "satposdepends"):
+						if n.config_mode in ("loopthrough_internal", "loopthrough_external", "satposdepends"):
 							root_id = nimmanager.sec.getRoot(n.slot_id, int(n.config.connectedTo.value))
 							if int(n.config.connectedTo.value) == self.feid:
 								self.oldref_stop = True
