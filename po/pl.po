@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-18 19:53+0100\n"
+"POT-Creation-Date: 2017-02-10 18:08+0100\n"
 "PO-Revision-Date: 2015-01-29 17:40+0200\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -357,6 +357,11 @@ msgstr[1] "%d piksele"
 msgstr[2] "%d pikseli"
 
 #
+#, fuzzy, python-format
+msgid "%d sec"
+msgstr "%d sekunda"
+
+#
 #, python-format
 msgid "%d second"
 msgid_plural "%d seconds"
@@ -500,6 +505,9 @@ msgstr "1.2"
 msgid "1024 MB"
 msgstr ""
 
+msgid "10bit"
+msgstr ""
+
 msgid "128 MB"
 msgstr ""
 
@@ -509,6 +517,9 @@ msgstr ""
 #
 msgid "12V output"
 msgstr "Wyjście 12V"
+
+msgid "12bit"
+msgstr ""
 
 #
 msgid "13 V"
@@ -633,6 +644,9 @@ msgstr "7"
 #
 msgid "8"
 msgstr "8"
+
+msgid "8bit"
+msgstr ""
 
 #
 msgid "9"
@@ -1293,6 +1307,11 @@ msgstr ""
 
 msgid "Audio PID"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Audio channel"
+msgstr "Zainstaluj listę kanałów"
 
 #
 msgid "Audio language selection 1"
@@ -2043,6 +2062,9 @@ msgstr "Format koloru"
 msgid "Color space"
 msgstr "Format koloru"
 
+msgid "Combo"
+msgstr ""
+
 #
 msgid "Command execution..."
 msgstr "Wykonywanie polecenia..."
@@ -2050,6 +2072,11 @@ msgstr "Wykonywanie polecenia..."
 #
 msgid "Command order"
 msgstr "Kolejność poleceń"
+
+#
+#, fuzzy
+msgid "Commit info"
+msgstr "Komunikacja"
 
 #
 msgid "Common Interface"
@@ -2140,6 +2167,10 @@ msgstr "Skonfiguruj zachowanie przy rozpoczęciu odtwarzania."
 #, fuzzy
 msgid "Configure if epg.dat should be saved at all."
 msgstr "Skonfiguruj które wyście wideo ma być użyte."
+
+#, fuzzy
+msgid "Configure if service picons will be shown in display (when supported by the skin)."
+msgstr "Skonfiguruj czy wyświetlać pikony w liście kanałów."
 
 msgid "Configure if service picons will be shown in the channel selection list."
 msgstr "Skonfiguruj czy wyświetlać pikony w liście kanałów."
@@ -2566,6 +2597,9 @@ msgid "Create ISO"
 msgstr "Utwórz DVD-ISO"
 
 msgid "Create new folder and exit"
+msgstr ""
+
+msgid "Create seperate radio userbouquet"
 msgstr ""
 
 #
@@ -3078,6 +3112,10 @@ msgstr "Wyłącz timer"
 msgid "Disabled"
 msgstr "Wyłączone"
 
+#, fuzzy
+msgid "Disclaimer"
+msgstr "Wyświetl ostrzeżenie"
+
 #
 msgid "Disk space to reserve for recordings (in GB)"
 msgstr "Przestrzeń dyskowa zarezerwowana dla nagrań (w GB)"
@@ -3265,6 +3303,11 @@ msgstr "Chcesz uruchomić ponownie odbiornik?"
 
 msgid "Do you want to reboot your receiver?"
 msgstr "Chcesz uruchomić ponownie odbiornik?"
+
+#
+#, fuzzy
+msgid "Do you want to remove all the crahs logfiles"
+msgstr "Chcesz usunąć pakiet:\n"
 
 #
 msgid "Do you want to remove the package:\n"
@@ -3600,6 +3643,16 @@ msgid "Enabled"
 msgstr "Włączone"
 
 #
+#, fuzzy
+msgid "Enabled, only from deep standby"
+msgstr "tyko z głębokiego czuwania"
+
+#
+#, fuzzy
+msgid "Enabled, only from standby"
+msgstr "tylko ze stanu czuwania"
+
+#
 msgid "Encrypted: "
 msgstr "Szyfrowany:"
 
@@ -3702,6 +3755,9 @@ msgstr "Interfejs sieciowy ethernet"
 
 msgid "Event font size (relative to skin size)"
 msgstr "Wielkość czcionki (w stos. do czcionki w skinie)"
+
+msgid "Event name first"
+msgstr ""
 
 #
 msgid "Event view"
@@ -3904,21 +3960,30 @@ msgstr ""
 msgid "F1/F3"
 msgstr ""
 
-msgid "FBC Unicable"
+msgid "FBC SCR (Unicable or JESS)"
 msgstr ""
 
-msgid "FBC automatic loop through"
-msgstr ""
+#
+#, fuzzy
+msgid "FBC automatic"
+msgstr "Automatycznie"
 
+#
+#, fuzzy
 msgid ""
-"FBC automatic loop through\n"
-"inactive"
-msgstr ""
+"FBC automatic\n"
+"connected to"
+msgstr "Podłączony do"
 
 #, python-format
 msgid ""
-"FBC automatic loop through\n"
-"linked to %s"
+"FBC automatic\n"
+"connected to %s"
+msgstr ""
+
+msgid ""
+"FBC automatic\n"
+"inactive"
 msgstr ""
 
 #
@@ -4237,6 +4302,15 @@ msgstr ""
 #
 #, fuzzy
 msgid ""
+"GUI needs a restart to apply a new language\n"
+"Do you want to restart the GUI now?"
+msgstr ""
+"GUI musi zostać zrestartowane, aby zastosować nowy skin\n"
+"Czy chcesz zrobić restart teraz?"
+
+#
+#, fuzzy
+msgid ""
 "GUI needs a restart to apply a new skin\n"
 "Do you want to Restart the GUI now?"
 msgstr ""
@@ -4315,6 +4389,9 @@ msgstr "Idź do poprzedniej strony z audycjami"
 
 msgid "Go up the list"
 msgstr "Idź w górę listy"
+
+msgid "Gold"
+msgstr ""
 
 #
 msgid "Goto"
@@ -4405,6 +4482,11 @@ msgstr ""
 
 msgid "HDMI"
 msgstr ""
+
+#
+#, fuzzy
+msgid "HDMI Colordepth"
+msgstr "Format koloru"
 
 #
 #, fuzzy
@@ -4775,6 +4857,14 @@ msgstr "Inicjalizacja urządzenia..."
 msgid "Input"
 msgstr "Wejście"
 
+#
+#, fuzzy
+msgid "Input "
+msgstr "Wejście"
+
+msgid "Input Stream ID"
+msgstr ""
+
 msgid "Input device setup"
 msgstr "Konfiguracjia urządzenia wejściowego"
 
@@ -4826,11 +4916,6 @@ msgstr "Zainstaluj picony na"
 #, fuzzy
 msgid "Install plugins"
 msgstr "Zainstaluj picony na"
-
-#
-#, fuzzy
-msgid "Install softcam support"
-msgstr "Instalowanie oprogramowania..."
 
 msgid "Installation has completed."
 msgstr "Instalacja zakończona."
@@ -5262,6 +5347,9 @@ msgstr ""
 msgid "Log results to /tmp"
 msgstr "Zapisuj log na HDD"
 
+msgid "Logfile does not exist anymore"
+msgstr ""
+
 #
 #, fuzzy
 msgid "Logs location"
@@ -5614,6 +5702,11 @@ msgstr "Przenieś"
 #
 msgid "Move PiP to main picture"
 msgstr "Przełącz PiP do głównego ekranu"
+
+#
+#, fuzzy
+msgid "Move Picture in Picture"
+msgstr "Włącz PiP"
 
 #
 msgid "Move east"
@@ -6438,6 +6531,14 @@ msgstr ""
 msgid "PLP ID"
 msgstr ""
 
+msgid "PLS Code"
+msgstr ""
+
+#
+#, fuzzy
+msgid "PLS Mode"
+msgstr "Tryb"
+
 msgid "PMT PID"
 msgstr ""
 
@@ -6877,11 +6978,6 @@ msgid "Please wait (downloading channel list)"
 msgstr "Czekaj (pobieranie listy kanałów)"
 
 #
-#, fuzzy
-msgid "Please wait (downloading softcam support)"
-msgstr "Czekaj (pobieranie listy kanałów)"
-
-#
 msgid "Please wait (updating packages)"
 msgstr "Czekaj (aktualizacja pakietów)"
 
@@ -7033,6 +7129,9 @@ msgstr "Ustawienia pozycjonera"
 #, fuzzy
 msgid "Positioner setup log"
 msgstr "Ustawienia pozycjonera"
+
+msgid "Power on display"
+msgstr ""
 
 #
 msgid "Power threshold in mA"
@@ -7649,6 +7748,11 @@ msgid "Remove a nameserver entry"
 msgstr "Usuń wpis DNS"
 
 #
+#, fuzzy
+msgid "Remove all logfiles"
+msgstr "Usuń wszystkie alternatywne"
+
+#
 msgid "Remove bookmark"
 msgstr "Usuń zakładkę"
 
@@ -7670,6 +7774,11 @@ msgstr "Usuń pluginy"
 
 msgid "Remove texts for the hearing impaired from external subtitles (instrumental music or environmental sounds, e.g., when a doorbell rings or a gun shot is heard)."
 msgstr ""
+
+#
+#, fuzzy
+msgid "Remove this logfile"
+msgstr "Usuń tytuł"
 
 #
 #, fuzzy
@@ -7912,6 +8021,9 @@ msgstr ""
 
 msgid "Romanian"
 msgstr "Rumuński"
+
+msgid "Root"
+msgstr ""
 
 #
 msgid "Root directory"
@@ -8889,6 +9001,11 @@ msgstr "Ostatnia aktualizacja:"
 
 #
 #, fuzzy
+msgid "Show menu numbers"
+msgstr "Pokaż menu tagów"
+
+#
+#, fuzzy
 msgid "Show menu paths"
 msgstr "Pokaż menu tagów"
 
@@ -8924,6 +9041,11 @@ msgstr "Pakiety do zaktualizowania"
 #, fuzzy
 msgid "Show picons in channel selection list"
 msgstr "Pikony w liście kanałów"
+
+#
+#, fuzzy
+msgid "Show picons in display"
+msgstr "Ikony stanu w liście filmów"
 
 #
 msgid "Show positioner movement"
@@ -9145,16 +9267,9 @@ msgid "Skip internet connection check (disables automatic package installation)"
 msgstr "Pomiń sprawdzenie połączenia internetowego (wyłącza automatyczną instalację pakietów)"
 
 #
-msgid "Sleep timer"
-msgstr "Wyłącznik czasowy"
-
-#
 #, fuzzy
 msgid "Sleep/wakeup timer"
 msgstr "Wyłącznik czasowy"
-
-msgid "SleepTimer Configuration"
-msgstr "Ustawienia sleeptimer'a"
 
 msgid "Sleeptimer"
 msgstr "Wyłącznik czasowy"
@@ -9255,6 +9370,9 @@ msgstr "Aktualizacja oprogramowania"
 #
 msgid "Softwaremanager information"
 msgstr "Informacje Softwaremanagera"
+
+msgid "Some error occured - Please try later"
+msgstr ""
 
 #
 msgid "Some plugins are not available:\n"
@@ -10026,6 +10144,15 @@ msgid "The backup failed. Please choose a different backup location."
 msgstr "Tworzenie backupu nie powiodło się. Wybierz inna lokalizacje dla kopii."
 
 #
+#, fuzzy, python-format
+msgid ""
+"The current software might not be stable.\n"
+"For more information see %s."
+msgstr ""
+"Aktualne beta image może być niestabilne.\n"
+"Aby uzyskać więcej informacji zobacz %s."
+
+#
 #, python-format
 msgid ""
 "The directory %s is not writable.\n"
@@ -10114,6 +10241,11 @@ msgid ""
 msgstr ""
 "Rozszerzenie 'Zarządzanie oprogramowaniem' nie jest zainstalowane!\n"
 "Zainstaluj je najpierw."
+
+#
+#, fuzzy, python-format
+msgid "The status of the current software could not be checked because %s can not be reached."
+msgstr "Status aktualnego beta image nie może zostać zweryfikowany ze względu na brak dostępu do %s."
 
 msgid "The stored EPG data will be read every (hours)"
 msgstr ""
@@ -10254,6 +10386,9 @@ msgstr ""
 msgid "This option allows to set the level of dynamic contrast of the picture."
 msgstr ""
 
+msgid "This option allows you can config the Colordepth for UHD"
+msgstr ""
+
 msgid "This option allows you can config the Colorimetry for HDR"
 msgstr ""
 
@@ -10272,7 +10407,13 @@ msgstr ""
 msgid "This option allows you to hide and sort menu entries. When selecting user you can change order and hide menu items via the blue button"
 msgstr ""
 
+msgid "This option allows you to power off the display."
+msgstr ""
+
 msgid "This option allows you to set the Colorspace of HDMI from Auto to RGB"
+msgstr ""
+
+msgid "This option allows you to show menu number quick links."
 msgstr ""
 
 msgid "This option allows you to show menu paths."
@@ -10639,6 +10780,9 @@ msgstr "Kosz"
 #
 msgid "Tries left:"
 msgstr "Pozostało prób:"
+
+msgid "Troubleshoot"
+msgstr ""
 
 #
 msgid "Try to find used transponders in cable network.. please wait..."
@@ -11728,14 +11872,6 @@ msgstr "Bez ostrzeżenia"
 msgid "Wizard to arrange the overscan"
 msgstr ""
 
-msgid ""
-"Would you like to be able to install softcams?\n"
-"\n"
-"Attention - Country specific illegal!\n"
-"\n"
-"Check legality for your specific country in advance!"
-msgstr ""
-
 #, python-format
 msgid "Would you save the entered PIN %s persistent?"
 msgstr ""
@@ -11751,6 +11887,15 @@ msgstr "Błąd zapisu!"
 #, fuzzy
 msgid "Write to /tmp/positionersetup.log"
 msgstr "Zapis do /tmp/positionersetup.log nieudany:"
+
+msgid "YCbCr420"
+msgstr ""
+
+msgid "YCbCr422"
+msgstr ""
+
+msgid "YCbCr444"
+msgstr ""
 
 msgid "YES"
 msgstr ""
@@ -11815,16 +11960,6 @@ msgstr "Tak, rozpocznij automatyczne skanowanie"
 #
 msgid "Yes, do another manual scan now"
 msgstr "Tak, rozpocznij kolejne ręczne skanowanie"
-
-#
-#, fuzzy
-msgid "Enabled, only from deep standby"
-msgstr "tyko z głębokiego czuwania"
-
-#
-#, fuzzy
-msgid "Enabled, only from standby"
-msgstr "tylko ze stanu czuwania"
 
 #
 msgid "Yes, perform a shutdown now."
@@ -13409,11 +13544,6 @@ msgid "shut down"
 msgstr "Wyłącz"
 
 #
-#, fuzzy
-msgid "shutdown"
-msgstr "Wyłącz"
-
-#
 msgid "simple"
 msgstr "Prosty"
 
@@ -13462,11 +13592,6 @@ msgstr "Magazyn sportowy"
 #
 msgid "standard"
 msgstr "Standardowe"
-
-#
-#, fuzzy
-msgid "standby"
-msgstr "Czuwanie"
 
 #
 msgid "start cut here"
@@ -13860,6 +13985,11 @@ msgstr "Przełączony"
 #~ msgstr "Natychmiastowe wyłączenie"
 
 #
+#, fuzzy
+#~ msgid "Install softcam support"
+#~ msgstr "Instalowanie oprogramowania..."
+
+#
 #~ msgid "List EPG functions..."
 #~ msgstr "Lista rodzajów EPG..."
 
@@ -13953,6 +14083,11 @@ msgstr "Przełączony"
 #~ msgid "Please select a default EPG type..."
 #~ msgstr "Wybierz domyślny typ EPG..."
 
+#
+#, fuzzy
+#~ msgid "Please wait (downloading softcam support)"
+#~ msgstr "Czekaj (pobieranie listy kanałów)"
+
 #~ msgid "Polarisation:"
 #~ msgstr "Polaryzacja:"
 
@@ -14030,6 +14165,13 @@ msgstr "Przełączony"
 #~ msgstr "Jeden transponder"
 
 #
+#~ msgid "Sleep timer"
+#~ msgstr "Wyłącznik czasowy"
+
+#~ msgid "SleepTimer Configuration"
+#~ msgstr "Ustawienia sleeptimer'a"
+
+#
 #~ msgid "SoftCam / CI"
 #~ msgstr "Softcam / CI"
 
@@ -14067,20 +14209,8 @@ msgstr "Przełączony"
 #~ "Czy zrozumiałeś powyższą informację?"
 
 #
-#~ msgid ""
-#~ "The current beta image might not be stable.\n"
-#~ "For more information see %s."
-#~ msgstr ""
-#~ "Aktualne beta image może być niestabilne.\n"
-#~ "Aby uzyskać więcej informacji zobacz %s."
-
-#
 #~ msgid "The md5sum validation failed, the file may be corrupted!"
 #~ msgstr "Suma kontrolna md5sum nieprawidłowa, plik może być uszkodzony!"
-
-#
-#~ msgid "The status of the current beta image could not be checked because %s can not be reached."
-#~ msgstr "Status aktualnego beta image nie może zostać zweryfikowany ze względu na brak dostępu do %s."
 
 #~ msgid "The wizard found a configuration backup. Do you want to restore your old settings from %s?"
 #~ msgstr "Kreator znalazł backup plików konfiguracyjnych, Przywrócić stare ustawienia z %s?"
@@ -14201,8 +14331,18 @@ msgstr "Przełączony"
 #~ msgstr "PIN kanału"
 
 #
+#, fuzzy
+#~ msgid "shutdown"
+#~ msgstr "Wyłącz"
+
+#
 #~ msgid "special characters"
 #~ msgstr "Znaki specjalne"
+
+#
+#, fuzzy
+#~ msgid "standby"
+#~ msgstr "Czuwanie"
 
 #
 #, fuzzy

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-18 19:53+0100\n"
+"POT-Creation-Date: 2017-02-10 18:08+0100\n"
 "PO-Revision-Date: 2015-02-09 16:12+0100\n"
 "Last-Translator: jrodzar <jrodzar@gmail.com>\n"
 "Language-Team: none\n"
@@ -346,6 +346,10 @@ msgid_plural "%d pixels wide"
 msgstr[0] "%d pixel ancho"
 msgstr[1] "%d píxeles ancho"
 
+#, fuzzy, python-format
+msgid "%d sec"
+msgstr "%d segundo"
+
 #, python-format
 msgid "%d second"
 msgid_plural "%d seconds"
@@ -483,6 +487,9 @@ msgstr "1.2"
 msgid "1024 MB"
 msgstr ""
 
+msgid "10bit"
+msgstr ""
+
 msgid "128 MB"
 msgstr ""
 
@@ -492,6 +499,9 @@ msgstr ""
 #
 msgid "12V output"
 msgstr "Salida de 12V"
+
+msgid "12bit"
+msgstr ""
 
 #
 msgid "13 V"
@@ -615,6 +625,9 @@ msgstr "7"
 #
 msgid "8"
 msgstr "8"
+
+msgid "8bit"
+msgstr ""
 
 #
 msgid "9"
@@ -1286,6 +1299,11 @@ msgstr "Audio Nivel de volumen automático"
 
 msgid "Audio PID"
 msgstr "Sonido PID"
+
+#
+#, fuzzy
+msgid "Audio channel"
+msgstr "Instalar lista de canales"
 
 msgid "Audio language selection 1"
 msgstr "Selección de idioma de sonido 1"
@@ -2023,6 +2041,9 @@ msgstr "Formato de Color"
 msgid "Color space"
 msgstr "Espacio de color"
 
+msgid "Combo"
+msgstr ""
+
 #
 msgid "Command execution..."
 msgstr "Ejecución comando..."
@@ -2030,6 +2051,11 @@ msgstr "Ejecución comando..."
 #
 msgid "Command order"
 msgstr "Orden de comando"
+
+#
+#, fuzzy
+msgid "Commit info"
+msgstr "Comunicación"
 
 #
 msgid "Common Interface"
@@ -2122,6 +2148,10 @@ msgstr "Configurar comportamiento cuando se empieza la reproducción."
 #, fuzzy
 msgid "Configure if epg.dat should be saved at all."
 msgstr "Configurar donde se almacenarán epg.dat."
+
+#, fuzzy
+msgid "Configure if service picons will be shown in display (when supported by the skin)."
+msgstr "Configurar picons de servicio en la lista de selección de canales."
 
 msgid "Configure if service picons will be shown in the channel selection list."
 msgstr "Configurar picons de servicio en la lista de selección de canales."
@@ -2546,6 +2576,10 @@ msgstr "Crear DVD-ISO"
 
 msgid "Create new folder and exit"
 msgstr ""
+
+#, fuzzy
+msgid "Create seperate radio userbouquet"
+msgstr "restaurar userbouquets eliminados"
 
 #
 #, python-format
@@ -3056,6 +3090,11 @@ msgstr "Desactiva grabación"
 msgid "Disabled"
 msgstr "Desactivado"
 
+#
+#, fuzzy
+msgid "Disclaimer"
+msgstr "Mostrar disclaimer"
+
 msgid "Disk space to reserve for recordings (in GB)"
 msgstr "Espacio para reservar a las grabaciones (en GB)"
 
@@ -3244,6 +3283,11 @@ msgstr "¿Quiere reiniciar su receptor?"
 
 msgid "Do you want to reboot your receiver?"
 msgstr "¿Quiere reiniciar su receptor?"
+
+#
+#, fuzzy
+msgid "Do you want to remove all the crahs logfiles"
+msgstr "Quiere eliminar el paquete:\n"
 
 #
 msgid "Do you want to remove the package:\n"
@@ -3566,6 +3610,16 @@ msgid "Enabled"
 msgstr "Activado"
 
 #
+#, fuzzy
+msgid "Enabled, only from deep standby"
+msgstr "ir a standby profundo"
+
+#
+#, fuzzy
+msgid "Enabled, only from standby"
+msgstr "ir al modo de espera"
+
+#
 msgid "Encrypted: "
 msgstr "Encriptado:"
 
@@ -3666,6 +3720,9 @@ msgstr "Interfaz de red Ethernet"
 
 msgid "Event font size (relative to skin size)"
 msgstr "Tamaño de la fuente del evento (con respecto al tamaño de la piel)"
+
+msgid "Event name first"
+msgstr ""
 
 #
 msgid "Event view"
@@ -3871,21 +3928,31 @@ msgstr "F1/F3"
 
 #
 #, fuzzy
-msgid "FBC Unicable"
-msgstr "LNB Unicable"
+msgid "FBC SCR (Unicable or JESS)"
+msgstr "Unicable"
 
-msgid "FBC automatic loop through"
-msgstr ""
+#
+#
+#, fuzzy
+msgid "FBC automatic"
+msgstr "Automático"
 
+#
+#, fuzzy
 msgid ""
-"FBC automatic loop through\n"
-"inactive"
-msgstr ""
+"FBC automatic\n"
+"connected to"
+msgstr "Conectado a"
 
 #, python-format
 msgid ""
-"FBC automatic loop through\n"
-"linked to %s"
+"FBC automatic\n"
+"connected to %s"
+msgstr ""
+
+msgid ""
+"FBC automatic\n"
+"inactive"
 msgstr ""
 
 #
@@ -4201,6 +4268,15 @@ msgid "GUI Build: "
 msgstr ""
 
 #
+#, fuzzy
+msgid ""
+"GUI needs a restart to apply a new language\n"
+"Do you want to restart the GUI now?"
+msgstr ""
+"GUI necesita reiniciar para aplicar la nueva piel\n"
+"¿Quiere Reiniciar el GUI ahora?"
+
+#
 #
 msgid ""
 "GUI needs a restart to apply a new skin\n"
@@ -4291,6 +4367,9 @@ msgstr "Ir a la página anterior del servicio"
 msgid "Go up the list"
 msgstr "Ir arrriba de la lista"
 
+msgid "Gold"
+msgstr ""
+
 msgid "Goto"
 msgstr "Ir a"
 
@@ -4378,6 +4457,11 @@ msgstr ""
 
 msgid "HDMI"
 msgstr ""
+
+#
+#, fuzzy
+msgid "HDMI Colordepth"
+msgstr "Espacio de color"
 
 #
 #, fuzzy
@@ -4732,6 +4816,14 @@ msgstr "Inicializando dispositivo de almacenamiento..."
 msgid "Input"
 msgstr "Entrada"
 
+#
+#, fuzzy
+msgid "Input "
+msgstr "Entrada"
+
+msgid "Input Stream ID"
+msgstr ""
+
 msgid "Input device setup"
 msgstr "Configuración del dispositivo de entrada"
 
@@ -4778,12 +4870,6 @@ msgstr "Instalar picons on"
 #
 msgid "Install plugins"
 msgstr "Instalar Plugins"
-
-#
-#
-#, fuzzy
-msgid "Install softcam support"
-msgstr "Instalando Software..."
 
 #
 msgid "Installation has completed."
@@ -5226,6 +5312,9 @@ msgstr "Bloqueo:"
 msgid "Log results to /tmp"
 msgstr "Logear resultados al disco duro"
 
+msgid "Logfile does not exist anymore"
+msgstr ""
+
 #
 msgid "Logs location"
 msgstr "Ubicación de los registros"
@@ -5566,6 +5655,11 @@ msgstr "Mover PIP"
 #
 msgid "Move PiP to main picture"
 msgstr "mover PiP a la imagen principal"
+
+#
+#, fuzzy
+msgid "Move Picture in Picture"
+msgstr "Activar PiP"
 
 #
 msgid "Move east"
@@ -6381,6 +6475,15 @@ msgstr "PIP con OSD"
 msgid "PLP ID"
 msgstr ""
 
+msgid "PLS Code"
+msgstr ""
+
+#
+#
+#, fuzzy
+msgid "PLS Mode"
+msgstr "Modo"
+
 msgid "PMT PID"
 msgstr ""
 
@@ -6813,11 +6916,6 @@ msgid "Please wait (downloading channel list)"
 msgstr "Por favor, espere (descargando lista de canales)"
 
 #
-#, fuzzy
-msgid "Please wait (downloading softcam support)"
-msgstr "Por favor, espere (descargando lista de canales)"
-
-#
 msgid "Please wait (updating packages)"
 msgstr "Por favor espere (actualizando paquetes)"
 
@@ -6971,6 +7069,9 @@ msgstr "Configuración del motor"
 #, fuzzy
 msgid "Positioner setup log"
 msgstr "Configuración del motor"
+
+msgid "Power on display"
+msgstr ""
 
 #
 msgid "Power threshold in mA"
@@ -7559,6 +7660,11 @@ msgid "Remove a nameserver entry"
 msgstr "borrar entrada de servidor de nombres"
 
 #
+#, fuzzy
+msgid "Remove all logfiles"
+msgstr "borrar todas alternativas"
+
+#
 #
 msgid "Remove bookmark"
 msgstr "borrar marcador"
@@ -7579,6 +7685,11 @@ msgstr "Borrar complmentos"
 
 msgid "Remove texts for the hearing impaired from external subtitles (instrumental music or environmental sounds, e.g., when a doorbell rings or a gun shot is heard)."
 msgstr "Quitar los textos para sordos de subtítulos externos (música instrumental o sonidos ambientales, por ejemplo, cuando un timbre o un disparo se escucha)."
+
+#
+#, fuzzy
+msgid "Remove this logfile"
+msgstr "Borrar el título"
 
 #
 msgid "Remove timer"
@@ -7810,6 +7921,9 @@ msgstr ""
 
 msgid "Romanian"
 msgstr "Rumano"
+
+msgid "Root"
+msgstr ""
 
 msgid "Root directory"
 msgstr "Directorio raíz"
@@ -8755,6 +8869,11 @@ msgid "Show latest upgrade log"
 msgstr "Última actualización:"
 
 #
+#, fuzzy
+msgid "Show menu numbers"
+msgstr "Número de teléfono"
+
+#
 #
 #, fuzzy
 msgid "Show menu paths"
@@ -8790,6 +8909,10 @@ msgstr "Mostrar los paquetes sean actualizados"
 #, fuzzy
 msgid "Show picons in channel selection list"
 msgstr "Mostrar picons en la lista de canales"
+
+#, fuzzy
+msgid "Show picons in display"
+msgstr "Mostrar iconos de estado en lista de películas"
 
 #
 msgid "Show positioner movement"
@@ -9007,17 +9130,9 @@ msgstr "Saltar comprobación de la conexión a Internet (desactiva la instalaci�
 
 #
 #
-msgid "Sleep timer"
-msgstr "Apagado automático"
-
-#
-#
 #, fuzzy
 msgid "Sleep/wakeup timer"
 msgstr "Apagado automático"
-
-msgid "SleepTimer Configuration"
-msgstr "Configuración de apagado automático"
 
 msgid "Sleeptimer"
 msgstr "Apagado automático"
@@ -9122,6 +9237,9 @@ msgstr "Actualizar software"
 
 msgid "Softwaremanager information"
 msgstr "Información Softwaremanager"
+
+msgid "Some error occured - Please try later"
+msgstr ""
 
 #
 msgid "Some plugins are not available:\n"
@@ -9867,6 +9985,12 @@ msgstr ""
 msgid "The backup failed. Please choose a different backup location."
 msgstr "El backup ha fallado. Elija una localización diferente para el backup."
 
+#, python-format
+msgid ""
+"The current software might not be stable.\n"
+"For more information see %s."
+msgstr ""
+
 #
 #, python-format
 msgid ""
@@ -9955,6 +10079,10 @@ msgid ""
 msgstr ""
 "¡La extensión Softwaremanagement no está instalada!\n"
 "Por favor, instálela."
+
+#, python-format
+msgid "The status of the current software could not be checked because %s can not be reached."
+msgstr ""
 
 msgid "The stored EPG data will be read every (hours)"
 msgstr ""
@@ -10102,6 +10230,10 @@ msgid "This option allows to set the level of dynamic contrast of the picture."
 msgstr "Esta opción permite para establecer el nivel de contraste dinámico de la imagen."
 
 #, fuzzy
+msgid "This option allows you can config the Colordepth for UHD"
+msgstr "Esta opción le permite aumentar los tonos azules en la imagen."
+
+#, fuzzy
 msgid "This option allows you can config the Colorimetry for HDR"
 msgstr "Esta opción le permite aumentar los tonos azules en la imagen."
 
@@ -10121,8 +10253,16 @@ msgid "This option allows you to hide and sort menu entries. When selecting user
 msgstr ""
 
 #, fuzzy
+msgid "This option allows you to power off the display."
+msgstr "Esto permite mostrar los codecs en descargas"
+
+#, fuzzy
 msgid "This option allows you to set the Colorspace of HDMI from Auto to RGB"
 msgstr "Esta opción le permite aumentar los tonos azules en la imagen."
+
+#, fuzzy
+msgid "This option allows you to show menu number quick links."
+msgstr "Esto permite mostrar los codecs en descargas"
 
 #, fuzzy
 msgid "This option allows you to show menu paths."
@@ -10495,6 +10635,9 @@ msgstr "Papelera"
 #
 msgid "Tries left:"
 msgstr "Intentos que quedan:"
+
+msgid "Troubleshoot"
+msgstr ""
 
 #
 msgid "Try to find used transponders in cable network.. please wait..."
@@ -11576,14 +11719,6 @@ msgstr "Sin ventana emergente"
 msgid "Wizard to arrange the overscan"
 msgstr ""
 
-msgid ""
-"Would you like to be able to install softcams?\n"
-"\n"
-"Attention - Country specific illegal!\n"
-"\n"
-"Check legality for your specific country in advance!"
-msgstr ""
-
 #, python-format
 msgid "Would you save the entered PIN %s persistent?"
 msgstr ""
@@ -11599,6 +11734,15 @@ msgstr "¡Falló la escritura!"
 #, fuzzy
 msgid "Write to /tmp/positionersetup.log"
 msgstr "Error al escribir /tmp/positionersetup.log:"
+
+msgid "YCbCr420"
+msgstr ""
+
+msgid "YCbCr422"
+msgstr ""
+
+msgid "YCbCr444"
+msgstr ""
 
 msgid "YES"
 msgstr ""
@@ -11660,16 +11804,6 @@ msgstr "Si, haga una búsqueda automática ahora"
 #
 msgid "Yes, do another manual scan now"
 msgstr "Si, hacer otra búsqueda manual ahora"
-
-#
-#, fuzzy
-msgid "Enabled, only from deep standby"
-msgstr "ir a standby profundo"
-
-#
-#, fuzzy
-msgid "Enabled, only from standby"
-msgstr "ir al modo de espera"
 
 #
 msgid "Yes, perform a shutdown now."
@@ -13264,11 +13398,6 @@ msgid "shut down"
 msgstr "apagar"
 
 #
-#
-msgid "shutdown"
-msgstr "apagar"
-
-#
 msgid "simple"
 msgstr "sencillo"
 
@@ -13316,11 +13445,6 @@ msgstr "revista deportiva"
 #
 msgid "standard"
 msgstr "estándar"
-
-#
-#
-msgid "standby"
-msgstr "Reposo"
 
 #
 msgid "start cut here"
@@ -13723,6 +13847,11 @@ msgstr "zapeado"
 
 #
 #, fuzzy
+#~ msgid "FBC Unicable"
+#~ msgstr "LNB Unicable"
+
+#
+#, fuzzy
 #~ msgid "FP Upgrade"
 #~ msgstr "Actualizando"
 
@@ -13759,6 +13888,12 @@ msgstr "zapeado"
 #
 #~ msgid "Immediate shutdown"
 #~ msgstr "apagado inmediato"
+
+#
+#
+#, fuzzy
+#~ msgid "Install softcam support"
+#~ msgstr "Instalando Software..."
 
 #
 #~ msgid "List EPG functions..."
@@ -13839,10 +13974,6 @@ msgstr "zapeado"
 #~ msgid "Password"
 #~ msgstr "Contraseña"
 
-#
-#~ msgid "Phone number"
-#~ msgstr "Número de teléfono"
-
 #~ msgid "Please be aware, that anyone can disable the parental control, if you have not set a PIN."
 #~ msgstr "Por favor, tenga en cuenta, que nadie puede deshabilitar el control parental, si no ha configurado un PIN."
 
@@ -13852,6 +13983,11 @@ msgstr "zapeado"
 
 #~ msgid "Please select an NFI file and press green key to flash!"
 #~ msgstr "Por favor, ¡seleccione un fichero NFI y pulse la tecla verde para flashear!"
+
+#
+#, fuzzy
+#~ msgid "Please wait (downloading softcam support)"
+#~ msgstr "Por favor, espere (descargando lista de canales)"
 
 #~ msgid "Polarisation:"
 #~ msgstr "Polarización:"
@@ -13921,6 +14057,14 @@ msgstr "zapeado"
 #
 #~ msgid "Single transponder"
 #~ msgstr "Transponder único"
+
+#
+#
+#~ msgid "Sleep timer"
+#~ msgstr "Apagado automático"
+
+#~ msgid "SleepTimer Configuration"
+#~ msgstr "Configuración de apagado automático"
 
 #
 #~ msgid "Standby fan %d PWM"
@@ -14114,8 +14258,18 @@ msgstr "zapeado"
 #~ msgid "service PIN"
 #~ msgstr "PIN del canal"
 
+#
+#
+#~ msgid "shutdown"
+#~ msgstr "apagar"
+
 #~ msgid "special characters"
 #~ msgstr "caracteres especiales"
+
+#
+#
+#~ msgid "standby"
+#~ msgstr "Reposo"
 
 #~ msgid "tuner is not supported"
 #~ msgstr "tuner no soportado"

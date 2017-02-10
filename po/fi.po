@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-18 19:53+0100\n"
+"POT-Creation-Date: 2017-02-10 18:08+0100\n"
 "PO-Revision-Date: 2015-01-29 17:40+0200\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -348,6 +348,10 @@ msgid_plural "%d pixels wide"
 msgstr[0] ""
 msgstr[1] ""
 
+#, fuzzy, python-format
+msgid "%d sec"
+msgstr "%d sekunti"
+
 #, python-format
 msgid "%d second"
 msgid_plural "%d seconds"
@@ -482,6 +486,9 @@ msgstr "1.2"
 msgid "1024 MB"
 msgstr ""
 
+msgid "10bit"
+msgstr ""
+
 msgid "128 MB"
 msgstr ""
 
@@ -491,6 +498,9 @@ msgstr ""
 #
 msgid "12V output"
 msgstr "12V ulostulo"
+
+msgid "12bit"
+msgstr ""
 
 #
 msgid "13 V"
@@ -605,6 +615,9 @@ msgstr "7"
 
 msgid "8"
 msgstr "8"
+
+msgid "8bit"
+msgstr ""
 
 msgid "9"
 msgstr "9"
@@ -1247,6 +1260,11 @@ msgstr ""
 
 msgid "Audio PID"
 msgstr "Ääni-PID"
+
+#
+#, fuzzy
+msgid "Audio channel"
+msgstr "Asenna kanavalista"
 
 msgid "Audio language selection 1"
 msgstr "Äänen kielivalinta 1"
@@ -1983,6 +2001,9 @@ msgstr "Videolähtö (TV-SCART)"
 msgid "Color space"
 msgstr "Videolähtö (TV-SCART)"
 
+msgid "Combo"
+msgstr ""
+
 #
 msgid "Command execution..."
 msgstr "Komennon suoritus..."
@@ -1990,6 +2011,10 @@ msgstr "Komennon suoritus..."
 #
 msgid "Command order"
 msgstr "Käskyjen järjestys"
+
+#, fuzzy
+msgid "Commit info"
+msgstr "Kommunikointi"
 
 #
 msgid "Common Interface"
@@ -2076,6 +2101,10 @@ msgstr "Määrittele näytetäänkö ja kuinka näytetään kanavatyypin kuvakke
 #, fuzzy
 msgid "Configure if epg.dat should be saved at all."
 msgstr "Määrittelee mitä videolähtöä käytetään."
+
+#, fuzzy
+msgid "Configure if service picons will be shown in display (when supported by the skin)."
+msgstr "Kun päällä, salaustieto näytetään tietopalkissa (mikäli teema tukee tätä)."
 
 msgid "Configure if service picons will be shown in the channel selection list."
 msgstr ""
@@ -2492,6 +2521,9 @@ msgid "Create ISO"
 msgstr "Luo DVD-ISO"
 
 msgid "Create new folder and exit"
+msgstr ""
+
+msgid "Create seperate radio userbouquet"
 msgstr ""
 
 #
@@ -2988,6 +3020,10 @@ msgstr "Poista käytöstä"
 msgid "Disabled"
 msgstr "Ei käytössä"
 
+#, fuzzy
+msgid "Disclaimer"
+msgstr "Näytä näytönsäästäjä"
+
 msgid "Disk space to reserve for recordings (in GB)"
 msgstr "Tallenteille varattu levytila (GB)"
 
@@ -3173,6 +3209,11 @@ msgstr "Haluatko uudelleenkäynnistää vastaanottimesi?"
 
 msgid "Do you want to reboot your receiver?"
 msgstr "Haluatko uudelleenkäynnistää vastaanottimesi?"
+
+#
+#, fuzzy
+msgid "Do you want to remove all the crahs logfiles"
+msgstr "Haluatko poistaa ohjelmapaketin:\n"
 
 #
 msgid "Do you want to remove the package:\n"
@@ -3492,6 +3533,16 @@ msgstr "Muokkaa nimipalvelimen asetuksia vastaanottimessasi.\n"
 msgid "Enabled"
 msgstr "Käytössä"
 
+#
+#, fuzzy
+msgid "Enabled, only from deep standby"
+msgstr "siirry virransäästötilaan"
+
+#
+#, fuzzy
+msgid "Enabled, only from standby"
+msgstr "siirry valmiustilaan"
+
 msgid "Encrypted: "
 msgstr "Salattu: "
 
@@ -3590,6 +3641,9 @@ msgstr "Verkkokortti"
 
 msgid "Event font size (relative to skin size)"
 msgstr "Ohjelmantiedon tekstikoko (suhteessa teeman kokoon)"
+
+msgid "Event name first"
+msgstr ""
 
 #
 msgid "Event view"
@@ -3785,21 +3839,30 @@ msgid "F1/F3"
 msgstr ""
 
 #, fuzzy
-msgid "FBC Unicable"
-msgstr "Unicable LNB"
+msgid "FBC SCR (Unicable or JESS)"
+msgstr "Unicable"
 
-msgid "FBC automatic loop through"
-msgstr ""
+#
+#, fuzzy
+msgid "FBC automatic"
+msgstr "automaattinen"
 
+#
+#, fuzzy
 msgid ""
-"FBC automatic loop through\n"
-"inactive"
-msgstr ""
+"FBC automatic\n"
+"connected to"
+msgstr "Kytketty virittimestä"
 
 #, python-format
 msgid ""
-"FBC automatic loop through\n"
-"linked to %s"
+"FBC automatic\n"
+"connected to %s"
+msgstr ""
+
+msgid ""
+"FBC automatic\n"
+"inactive"
 msgstr ""
 
 #
@@ -4109,6 +4172,17 @@ msgstr ""
 #
 #, fuzzy
 msgid ""
+"GUI needs a restart to apply a new language\n"
+"Do you want to restart the GUI now?"
+msgstr ""
+"Teema vaihtuu vasta kun laitteen\n"
+"käyttöliittymä on käynnistetty uudelleen.\n"
+"Haluatko käynnistää käyttöliittymän\n"
+"uudelleen nyt?"
+
+#
+#, fuzzy
+msgid ""
 "GUI needs a restart to apply a new skin\n"
 "Do you want to Restart the GUI now?"
 msgstr ""
@@ -4191,6 +4265,9 @@ msgstr "Mene edelliselle kanavasivulle"
 
 msgid "Go up the list"
 msgstr "Mene luettelossa ylöspäin"
+
+msgid "Gold"
+msgstr ""
 
 msgid "Goto"
 msgstr "Mene"
@@ -4279,6 +4356,11 @@ msgstr ""
 
 msgid "HDMI"
 msgstr ""
+
+#
+#, fuzzy
+msgid "HDMI Colordepth"
+msgstr "Videolähtö (TV-SCART)"
 
 #
 #, fuzzy
@@ -4640,6 +4722,15 @@ msgstr "Alustetaan tallennusvälinettä"
 msgid "Input"
 msgstr "Valitse"
 
+#
+#  Monivalintaikkunoiden otsikkopalkin teksti
+#, fuzzy
+msgid "Input "
+msgstr "Valitse"
+
+msgid "Input Stream ID"
+msgstr ""
+
 msgid "Input device setup"
 msgstr "Syöttölaitteen asetukset"
 
@@ -4686,11 +4777,6 @@ msgstr "Asenna kanavalogot"
 #, fuzzy
 msgid "Install plugins"
 msgstr "Asenna kanavalogot"
-
-#
-#, fuzzy
-msgid "Install softcam support"
-msgstr "Asennetaan ohjelmistoa..."
 
 msgid "Installation has completed."
 msgstr "Asennus on valmis."
@@ -5106,6 +5192,9 @@ msgstr "Lukit."
 msgid "Log results to /tmp"
 msgstr "Luo lokitiedosto kiintolevylle"
 
+msgid "Logfile does not exist anymore"
+msgstr ""
+
 #
 #, fuzzy
 msgid "Logs location"
@@ -5451,6 +5540,11 @@ msgstr "Siirrä"
 #
 msgid "Move PiP to main picture"
 msgstr "Siirrä PiP-kuva pääkuvaksi"
+
+#
+#, fuzzy
+msgid "Move Picture in Picture"
+msgstr "Avaa PiP-kuva"
 
 #
 msgid "Move east"
@@ -6264,6 +6358,14 @@ msgstr ""
 msgid "PLP ID"
 msgstr "PLP ID"
 
+msgid "PLS Code"
+msgstr ""
+
+#
+#, fuzzy
+msgid "PLS Mode"
+msgstr "Tila"
+
 msgid "PMT PID"
 msgstr "PMT PID"
 
@@ -6699,11 +6801,6 @@ msgid "Please wait (downloading channel list)"
 msgstr "Kanavaluetteloa ladataan. Odota..."
 
 #
-#, fuzzy
-msgid "Please wait (downloading softcam support)"
-msgstr "Kanavaluetteloa ladataan. Odota..."
-
-#
 msgid "Please wait (updating packages)"
 msgstr "Paketteja ladataan. Odota..."
 
@@ -6854,6 +6951,9 @@ msgstr "Kääntömoottorin asetukset"
 #, fuzzy
 msgid "Positioner setup log"
 msgstr "Kääntömoottorin asetukset"
+
+msgid "Power on display"
+msgstr ""
 
 #
 msgid "Power threshold in mA"
@@ -7429,6 +7529,11 @@ msgid "Remove a nameserver entry"
 msgstr "Poista nimipalvelin"
 
 #
+#, fuzzy
+msgid "Remove all logfiles"
+msgstr "Poista kaikki vaihtoehtoiset kanavat"
+
+#
 msgid "Remove bookmark"
 msgstr "Poista kirjanmerkki"
 
@@ -7448,6 +7553,11 @@ msgstr "Poista lisäosia"
 
 msgid "Remove texts for the hearing impaired from external subtitles (instrumental music or environmental sounds, e.g., when a doorbell rings or a gun shot is heard)."
 msgstr ""
+
+#
+#, fuzzy
+msgid "Remove this logfile"
+msgstr "Poista"
 
 #
 msgid "Remove timer"
@@ -7682,6 +7792,9 @@ msgstr "Roll-off"
 
 msgid "Romanian"
 msgstr "Romania"
+
+msgid "Root"
+msgstr ""
 
 msgid "Root directory"
 msgstr "Päähakemisto"
@@ -8636,6 +8749,10 @@ msgstr "Peruuta muutokset ja poistu"
 msgid "Show latest upgrade log"
 msgstr "Viimeisin päivitys:"
 
+#, fuzzy
+msgid "Show menu numbers"
+msgstr "Puhelinnumero"
+
 #
 #, fuzzy
 msgid "Show menu paths"
@@ -8670,6 +8787,10 @@ msgstr "Ohjelmapakettiluettelon päivitys"
 #, fuzzy
 msgid "Show picons in channel selection list"
 msgstr "Näytä ohjelman pituus kanavien valintalistassa"
+
+#, fuzzy
+msgid "Show picons in display"
+msgstr "Näytä kanavalogot kanavaluettelossa"
 
 #
 msgid "Show positioner movement"
@@ -8888,17 +9009,9 @@ msgid "Skip internet connection check (disables automatic package installation)"
 msgstr "Ohita internet yhteyden tarkistus (poistaa automaattisen pakettien asennuksen käytöstä)"
 
 #
-msgid "Sleep timer"
-msgstr "Uniajastin"
-
-#
 #, fuzzy
 msgid "Sleep/wakeup timer"
 msgstr "Uniajastin"
-
-#
-msgid "SleepTimer Configuration"
-msgstr "Uniajastimen asetukset"
 
 #
 msgid "Sleeptimer"
@@ -8998,6 +9111,9 @@ msgstr "Ohjelmiston päivitys"
 
 msgid "Softwaremanager information"
 msgstr "Ohjelmistonhallinnan tiedot"
+
+msgid "Some error occured - Please try later"
+msgstr ""
 
 #
 msgid "Some plugins are not available:\n"
@@ -9745,6 +9861,14 @@ msgstr ""
 msgid "The backup failed. Please choose a different backup location."
 msgstr "Varmuuskopiointi epäonnistui. Valitse toinen varmuuskopiointipaikka."
 
+#, fuzzy, python-format
+msgid ""
+"The current software might not be stable.\n"
+"For more information see %s."
+msgstr ""
+"Nykyinen beta-ohjelmisto ei välttämättä ole vakaa.\n"
+"Katso lisätietoja %s."
+
 #, python-format
 msgid ""
 "The directory %s is not writable.\n"
@@ -9828,6 +9952,10 @@ msgid ""
 msgstr ""
 "Ohjelmistohallinnan lisäosaa ei ole asennettu!\n"
 "Asenna se."
+
+#, fuzzy, python-format
+msgid "The status of the current software could not be checked because %s can not be reached."
+msgstr "Nykyisen beta-ohjelmiston tilaa ei voitu tarkistaa koska %s osoitteeseen ei saatu yhteyttä."
 
 msgid "The stored EPG data will be read every (hours)"
 msgstr ""
@@ -9964,6 +10092,9 @@ msgstr ""
 msgid "This option allows to set the level of dynamic contrast of the picture."
 msgstr ""
 
+msgid "This option allows you can config the Colordepth for UHD"
+msgstr ""
+
 msgid "This option allows you can config the Colorimetry for HDR"
 msgstr ""
 
@@ -9982,7 +10113,13 @@ msgstr ""
 msgid "This option allows you to hide and sort menu entries. When selecting user you can change order and hide menu items via the blue button"
 msgstr ""
 
+msgid "This option allows you to power off the display."
+msgstr ""
+
 msgid "This option allows you to set the Colorspace of HDMI from Auto to RGB"
+msgstr ""
+
+msgid "This option allows you to show menu number quick links."
 msgstr ""
 
 msgid "This option allows you to show menu paths."
@@ -10351,6 +10488,9 @@ msgstr "Roskakori"
 #
 msgid "Tries left:"
 msgstr "Yrityksiä jäljellä:"
+
+msgid "Troubleshoot"
+msgstr ""
 
 #
 msgid "Try to find used transponders in cable network.. please wait..."
@@ -11429,14 +11569,6 @@ msgstr "Ilman ponnahdusikkunaa"
 msgid "Wizard to arrange the overscan"
 msgstr ""
 
-msgid ""
-"Would you like to be able to install softcams?\n"
-"\n"
-"Attention - Country specific illegal!\n"
-"\n"
-"Check legality for your specific country in advance!"
-msgstr ""
-
 #, python-format
 msgid "Would you save the entered PIN %s persistent?"
 msgstr ""
@@ -11452,6 +11584,15 @@ msgstr "Kirjoitus epäonnistui!"
 #, fuzzy
 msgid "Write to /tmp/positionersetup.log"
 msgstr "Kirjoittaminen /tmp/positionersetup.log:iin epäonnistui:  "
+
+msgid "YCbCr420"
+msgstr ""
+
+msgid "YCbCr422"
+msgstr ""
+
+msgid "YCbCr444"
+msgstr ""
 
 msgid "YES"
 msgstr ""
@@ -11514,16 +11655,6 @@ msgstr "Kyllä, tee automaattihaku nyt"
 #
 msgid "Yes, do another manual scan now"
 msgstr "Kyllä, tee toinen manuaalihaku nyt"
-
-#
-#, fuzzy
-msgid "Enabled, only from deep standby"
-msgstr "siirry virransäästötilaan"
-
-#
-#, fuzzy
-msgid "Enabled, only from standby"
-msgstr "siirry valmiustilaan"
 
 #
 msgid "Yes, perform a shutdown now."
@@ -13102,10 +13233,6 @@ msgid "shut down"
 msgstr "Sammuta"
 
 #
-msgid "shutdown"
-msgstr "sammuta"
-
-#
 msgid "simple"
 msgstr "suppea"
 
@@ -13154,10 +13281,6 @@ msgstr "urheilumakasiini"
 #
 msgid "standard"
 msgstr "Vakio"
-
-#
-msgid "standby"
-msgstr "valmiustila"
 
 #
 msgid "start cut here"
@@ -13763,6 +13886,10 @@ msgstr "Vaihdettu"
 #~ msgid "Exit wizard"
 #~ msgstr "Poistu (määritä kaikki asetukset käsin)"
 
+#, fuzzy
+#~ msgid "FBC Unicable"
+#~ msgstr "Unicable LNB"
+
 #
 #, fuzzy
 #~ msgid "FP Upgrade"
@@ -13824,6 +13951,11 @@ msgstr "Vaihdettu"
 #
 #~ msgid "Install settings, skins, software..."
 #~ msgstr "Asenna asetuksia, teemoja, ohjelmistoja..."
+
+#
+#, fuzzy
+#~ msgid "Install softcam support"
+#~ msgstr "Asennetaan ohjelmistoa..."
 
 #
 #~ msgid "Installation finished."
@@ -14037,9 +14169,6 @@ msgstr "Vaihdettu"
 #~ msgid "Password"
 #~ msgstr "Salasana"
 
-#~ msgid "Phone number"
-#~ msgstr "Puhelinnumero"
-
 #~ msgid "Please be aware, that anyone can disable the parental control, if you have not set a PIN."
 #~ msgstr "Huomaa, että kuka tahansa voi poistaa lapsilukon jos et aseta PIN-koodia."
 
@@ -14076,6 +14205,11 @@ msgstr "Vaihdettu"
 #
 #~ msgid "Please select an option below."
 #~ msgstr "Valitse jokin vaihtoehto."
+
+#
+#, fuzzy
+#~ msgid "Please wait (downloading softcam support)"
+#~ msgstr "Kanavaluetteloa ladataan. Odota..."
 
 #
 #~ msgid "Please wait while removing selected package..."
@@ -14151,9 +14285,6 @@ msgstr "Vaihdettu"
 #~ msgid "Shall the USB stick wizard proceed and program the image file %s into flash memory?"
 #~ msgstr "Saako USB-muistiavustaja jatkaa ja kirjoittaa päivityksen %s flash-muistiin?"
 
-#~ msgid "Show picons in servicelist"
-#~ msgstr "Näytä kanavalogot kanavaluettelossa"
-
 #
 #~ msgid "Show services beginning with"
 #~ msgstr "Näytä kanavat jotka alkavat"
@@ -14191,8 +14322,16 @@ msgstr "Vaihdettu"
 #~ msgstr "Yksi lähetin"
 
 #
+#~ msgid "Sleep timer"
+#~ msgstr "Uniajastin"
+
+#
 #~ msgid "Sleep timer action:"
 #~ msgstr "Uniajastintoiminta:"
+
+#
+#~ msgid "SleepTimer Configuration"
+#~ msgstr "Uniajastimen asetukset"
 
 #~ msgid "SoftCam / CI"
 #~ msgstr "SoftCam / CI"
@@ -14221,13 +14360,6 @@ msgstr "Vaihdettu"
 #~ "USB-tikusta tehtiin automaattisesti käynnistyvä.\n"
 #~ "Voit nyt ladata NFI-tiedoston."
 
-#~ msgid ""
-#~ "The current beta image might not be stable.\n"
-#~ "For more information see %s."
-#~ msgstr ""
-#~ "Nykyinen beta-ohjelmisto ei välttämättä ole vakaa.\n"
-#~ "Katso lisätietoja %s."
-
 #
 #~ msgid ""
 #~ "The following device was found:\n"
@@ -14244,9 +14376,6 @@ msgstr "Vaihdettu"
 
 #~ msgid "The md5sum validation failed, the file may be corrupted!"
 #~ msgstr "MD5-tarkistus epäonnistui, tiedosto voi olla vioittunut!"
-
-#~ msgid "The status of the current beta image could not be checked because %s can not be reached."
-#~ msgstr "Nykyisen beta-ohjelmiston tilaa ei voitu tarkistaa koska %s osoitteeseen ei saatu yhteyttä."
 
 #~ msgid "The wizard found a configuration backup. Do you want to restore your old settings from %s?"
 #~ msgstr "Avustaja löysi asetusten varmuuskopion. Haluatko, että vanhat asetukset palautetaan tiedostosta %s?"
@@ -14455,8 +14584,16 @@ msgstr "Vaihdettu"
 #~ msgstr "Näytä avainsanavalikko"
 
 #
+#~ msgid "shutdown"
+#~ msgstr "sammuta"
+
+#
 #~ msgid "special characters"
 #~ msgstr "erikoismerkit"
+
+#
+#~ msgid "standby"
+#~ msgstr "valmiustila"
 
 #~ msgid "tuner is not supported"
 #~ msgstr "viritin ei ole tuettu"

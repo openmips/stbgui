@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-18 19:53+0100\n"
+"POT-Creation-Date: 2017-02-10 18:08+0100\n"
 "PO-Revision-Date: 2015-01-29 17:40+0200\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -326,6 +326,10 @@ msgstr[0] ""
 msgstr[1] ""
 
 #, python-format
+msgid "%d sec"
+msgstr ""
+
+#, python-format
 msgid "%d second"
 msgid_plural "%d seconds"
 msgstr[0] ""
@@ -450,6 +454,9 @@ msgstr "1.2"
 msgid "1024 MB"
 msgstr ""
 
+msgid "10bit"
+msgstr ""
+
 msgid "128 MB"
 msgstr ""
 
@@ -459,6 +466,9 @@ msgstr ""
 #
 msgid "12V output"
 msgstr "12V output"
+
+msgid "12bit"
+msgstr ""
 
 #
 msgid "13 V"
@@ -571,6 +581,9 @@ msgstr "7"
 
 msgid "8"
 msgstr "8"
+
+msgid "8bit"
+msgstr ""
 
 msgid "9"
 msgstr "9"
@@ -1180,6 +1193,10 @@ msgstr ""
 
 msgid "Audio PID"
 msgstr ""
+
+#, fuzzy
+msgid "Audio channel"
+msgstr "next channel in history"
 
 msgid "Audio language selection 1"
 msgstr ""
@@ -1862,11 +1879,18 @@ msgstr "תבנית צבע"
 msgid "Color space"
 msgstr "תבנית צבע"
 
+msgid "Combo"
+msgstr ""
+
 msgid "Command execution..."
 msgstr "...הרצת פקודה"
 
 msgid "Command order"
 msgstr "סדר פקודה"
+
+#, fuzzy
+msgid "Commit info"
+msgstr "תקשורת"
 
 #
 msgid "Common Interface"
@@ -1950,6 +1974,9 @@ msgid "Configure if behind the subtitles a background is shown."
 msgstr "הפעולה כאשר סרט מתחיל"
 
 msgid "Configure if epg.dat should be saved at all."
+msgstr ""
+
+msgid "Configure if service picons will be shown in display (when supported by the skin)."
 msgstr ""
 
 msgid "Configure if service picons will be shown in the channel selection list."
@@ -2354,6 +2381,9 @@ msgid "Create ISO"
 msgstr "DVD-ISO צור "
 
 msgid "Create new folder and exit"
+msgstr ""
+
+msgid "Create seperate radio userbouquet"
 msgstr ""
 
 #, python-format
@@ -2817,6 +2847,10 @@ msgstr ""
 msgid "Disabled"
 msgstr "הושבת"
 
+#, fuzzy
+msgid "Disclaimer"
+msgstr "show Infoline"
+
 msgid "Disk space to reserve for recordings (in GB)"
 msgstr ""
 
@@ -2981,6 +3015,10 @@ msgstr "? האם ברצונך לשחזר את ההגדרות"
 
 msgid "Do you want to reboot your receiver?"
 msgstr ""
+
+#, fuzzy
+msgid "Do you want to remove all the crahs logfiles"
+msgstr "האם ברצונך להסיר את החבילה\n"
 
 msgid "Do you want to remove the package:\n"
 msgstr "האם ברצונך להסיר את החבילה\n"
@@ -3278,6 +3316,14 @@ msgstr "exit nameserver configuration"
 msgid "Enabled"
 msgstr "אפשר"
 
+#, fuzzy
+msgid "Enabled, only from deep standby"
+msgstr "go to deep standby"
+
+#, fuzzy
+msgid "Enabled, only from standby"
+msgstr "go to standby"
+
 #
 msgid "Encrypted: "
 msgstr ":קידוד"
@@ -3369,6 +3415,9 @@ msgid "Ethernet network interface"
 msgstr ""
 
 msgid "Event font size (relative to skin size)"
+msgstr ""
+
+msgid "Event name first"
 msgstr ""
 
 #
@@ -3553,21 +3602,28 @@ msgstr ""
 msgid "F1/F3"
 msgstr ""
 
-msgid "FBC Unicable"
+msgid "FBC SCR (Unicable or JESS)"
 msgstr ""
 
-msgid "FBC automatic loop through"
-msgstr ""
+#, fuzzy
+msgid "FBC automatic"
+msgstr "אוטומטי"
 
+#, fuzzy
 msgid ""
-"FBC automatic loop through\n"
-"inactive"
-msgstr ""
+"FBC automatic\n"
+"connected to"
+msgstr "מחובר אל"
 
 #, python-format
 msgid ""
-"FBC automatic loop through\n"
-"linked to %s"
+"FBC automatic\n"
+"connected to %s"
+msgstr ""
+
+msgid ""
+"FBC automatic\n"
+"inactive"
 msgstr ""
 
 msgid "FEC"
@@ -3860,6 +3916,15 @@ msgstr ""
 #
 #, fuzzy
 msgid ""
+"GUI needs a restart to apply a new language\n"
+"Do you want to restart the GUI now?"
+msgstr ""
+"GUI needs a restart to apply a new skin\n"
+"Do you want to restart the GUI now?"
+
+#
+#, fuzzy
+msgid ""
 "GUI needs a restart to apply a new skin\n"
 "Do you want to Restart the GUI now?"
 msgstr ""
@@ -3940,6 +4005,9 @@ msgid "Go to previous page of service"
 msgstr "Return to previous service"
 
 msgid "Go up the list"
+msgstr ""
+
+msgid "Gold"
 msgstr ""
 
 msgid "Goto"
@@ -4025,6 +4093,10 @@ msgstr ""
 
 msgid "HDMI"
 msgstr ""
+
+#, fuzzy
+msgid "HDMI Colordepth"
+msgstr "תבנית צבע"
 
 #, fuzzy
 msgid "HDMI Colorimetry"
@@ -4360,6 +4432,13 @@ msgstr ""
 msgid "Input"
 msgstr "Input"
 
+#, fuzzy
+msgid "Input "
+msgstr "Input"
+
+msgid "Input Stream ID"
+msgstr ""
+
 msgid "Input device setup"
 msgstr ""
 
@@ -4403,10 +4482,6 @@ msgstr ""
 #, fuzzy
 msgid "Install plugins"
 msgstr "מתקין"
-
-#, fuzzy
-msgid "Install softcam support"
-msgstr "...מתקין תוכנה"
 
 #, fuzzy
 msgid "Installation has completed."
@@ -4826,6 +4901,9 @@ msgstr ""
 msgid "Log results to /tmp"
 msgstr ""
 
+msgid "Logfile does not exist anymore"
+msgstr ""
+
 #, fuzzy
 msgid "Logs location"
 msgstr "מיקום"
@@ -5163,6 +5241,11 @@ msgstr ""
 #, fuzzy
 msgid "Move PiP to main picture"
 msgstr "move PiP to main picture"
+
+#
+#, fuzzy
+msgid "Move Picture in Picture"
+msgstr "הפעל תמונה בתוך תמונה"
 
 msgid "Move east"
 msgstr "Move east"
@@ -5908,6 +5991,14 @@ msgstr ""
 msgid "PLP ID"
 msgstr ""
 
+msgid "PLS Code"
+msgstr ""
+
+#
+#, fuzzy
+msgid "PLS Mode"
+msgstr "מוד"
+
 msgid "PMT PID"
 msgstr ""
 
@@ -6302,10 +6393,6 @@ msgid "Please wait (downloading channel list)"
 msgstr "...נא המתן...טוען רשימה"
 
 #, fuzzy
-msgid "Please wait (downloading softcam support)"
-msgstr "...נא המתן...טוען רשימה"
-
-#, fuzzy
 msgid "Please wait (updating packages)"
 msgstr "...נא המתן, טוען תמונה"
 
@@ -6442,6 +6529,9 @@ msgstr "Positioner setup"
 #, fuzzy
 msgid "Positioner setup log"
 msgstr "Positioner setup"
+
+msgid "Power on display"
+msgstr ""
 
 #
 msgid "Power threshold in mA"
@@ -6964,6 +7054,10 @@ msgstr "הסר סמן"
 msgid "Remove a nameserver entry"
 msgstr "remove a nameserver entry"
 
+#, fuzzy
+msgid "Remove all logfiles"
+msgstr "remove all alternatives"
+
 #
 #, fuzzy
 msgid "Remove bookmark"
@@ -6983,6 +7077,10 @@ msgstr "הסר פלאגינים"
 
 msgid "Remove texts for the hearing impaired from external subtitles (instrumental music or environmental sounds, e.g., when a doorbell rings or a gun shot is heard)."
 msgstr ""
+
+#, fuzzy
+msgid "Remove this logfile"
+msgstr "הסר כותרת"
 
 msgid "Remove timer"
 msgstr "הסר טיימר"
@@ -7191,6 +7289,9 @@ msgid "Roll-off"
 msgstr ""
 
 msgid "Romanian"
+msgstr ""
+
+msgid "Root"
 msgstr ""
 
 msgid "Root directory"
@@ -8099,6 +8200,11 @@ msgstr "Select upgrade source to edit."
 
 #
 #, fuzzy
+msgid "Show menu numbers"
+msgstr "מספר טלפון"
+
+#
+#, fuzzy
 msgid "Show menu paths"
 msgstr "show DVD main menu"
 
@@ -8133,6 +8239,9 @@ msgstr "עדכון רשימת חבילות"
 #, fuzzy
 msgid "Show picons in channel selection list"
 msgstr "next channel in history"
+
+msgid "Show picons in display"
+msgstr ""
 
 msgid "Show positioner movement"
 msgstr "Show positioner movement"
@@ -8348,16 +8457,8 @@ msgstr ""
 
 #
 #, fuzzy
-msgid "Sleep timer"
-msgstr "טיימר שינה"
-
-#
-#, fuzzy
 msgid "Sleep/wakeup timer"
 msgstr "טיימר שינה"
-
-msgid "SleepTimer Configuration"
-msgstr ""
 
 msgid "Sleeptimer"
 msgstr ""
@@ -8449,6 +8550,9 @@ msgid "Software update"
 msgstr "עדכון תוכנה"
 
 msgid "Softwaremanager information"
+msgstr ""
+
+msgid "Some error occured - Please try later"
 msgstr ""
 
 msgid "Some plugins are not available:\n"
@@ -9182,6 +9286,12 @@ msgstr ""
 msgid "The backup failed. Please choose a different backup location."
 msgstr "The backup failed. Please choose a different backup location."
 
+#, python-format
+msgid ""
+"The current software might not be stable.\n"
+"For more information see %s."
+msgstr ""
+
 #
 #, python-format
 msgid ""
@@ -9268,6 +9378,10 @@ msgid ""
 msgstr ""
 "The Softwaremanagement extension is not installed!\n"
 "Please install it."
+
+#, python-format
+msgid "The status of the current software could not be checked because %s can not be reached."
+msgstr ""
 
 msgid "The stored EPG data will be read every (hours)"
 msgstr ""
@@ -9397,6 +9511,9 @@ msgstr ""
 msgid "This option allows to set the level of dynamic contrast of the picture."
 msgstr ""
 
+msgid "This option allows you can config the Colordepth for UHD"
+msgstr ""
+
 msgid "This option allows you can config the Colorimetry for HDR"
 msgstr ""
 
@@ -9415,7 +9532,13 @@ msgstr ""
 msgid "This option allows you to hide and sort menu entries. When selecting user you can change order and hide menu items via the blue button"
 msgstr ""
 
+msgid "This option allows you to power off the display."
+msgstr ""
+
 msgid "This option allows you to set the Colorspace of HDMI from Auto to RGB"
+msgstr ""
+
+msgid "This option allows you to show menu number quick links."
 msgstr ""
 
 msgid "This option allows you to show menu paths."
@@ -9767,6 +9890,9 @@ msgstr ""
 
 #
 msgid "Tries left:"
+msgstr ""
+
+msgid "Troubleshoot"
 msgstr ""
 
 msgid "Try to find used transponders in cable network.. please wait..."
@@ -10767,14 +10893,6 @@ msgstr ""
 msgid "Wizard to arrange the overscan"
 msgstr ""
 
-msgid ""
-"Would you like to be able to install softcams?\n"
-"\n"
-"Attention - Country specific illegal!\n"
-"\n"
-"Check legality for your specific country in advance!"
-msgstr ""
-
 #, python-format
 msgid "Would you save the entered PIN %s persistent?"
 msgstr ""
@@ -10786,6 +10904,15 @@ msgid "Write failed!"
 msgstr "Write failed!"
 
 msgid "Write to /tmp/positionersetup.log"
+msgstr ""
+
+msgid "YCbCr420"
+msgstr ""
+
+msgid "YCbCr422"
+msgstr ""
+
+msgid "YCbCr444"
 msgstr ""
 
 msgid "YES"
@@ -10841,14 +10968,6 @@ msgstr "Yes, do an automatic scan now"
 
 msgid "Yes, do another manual scan now"
 msgstr "Yes, do another manual scan now"
-
-#, fuzzy
-msgid "Enabled, only from deep standby"
-msgstr "go to deep standby"
-
-#, fuzzy
-msgid "Enabled, only from standby"
-msgstr "go to standby"
 
 msgid "Yes, perform a shutdown now."
 msgstr "Yes, perform a shutdown now."
@@ -12265,10 +12384,6 @@ msgstr ""
 msgid "shut down"
 msgstr "כיבוי"
 
-#, fuzzy
-msgid "shutdown"
-msgstr "כיבוי"
-
 msgid "simple"
 msgstr "פשוט"
 
@@ -12313,10 +12428,6 @@ msgstr ""
 
 msgid "standard"
 msgstr "סטנדרטי"
-
-#, fuzzy
-msgid "standby"
-msgstr "המתנה"
 
 msgid "start cut here"
 msgstr "התחל גזירה כאן"
@@ -12644,6 +12755,10 @@ msgstr "זופזפ"
 #~ msgstr "כיבוי מיידי"
 
 #, fuzzy
+#~ msgid "Install softcam support"
+#~ msgstr "...מתקין תוכנה"
+
+#, fuzzy
 #~ msgid "Location:"
 #~ msgstr "מיקום"
 
@@ -12693,12 +12808,12 @@ msgstr "זופזפ"
 #~ msgid "Password"
 #~ msgstr "סיסמא"
 
-#
-#~ msgid "Phone number"
-#~ msgstr "מספר טלפון"
-
 #~ msgid "Please check your network settings!"
 #~ msgstr "Please check your network settings!"
+
+#, fuzzy
+#~ msgid "Please wait (downloading softcam support)"
+#~ msgstr "...נא המתן...טוען רשימה"
 
 #~ msgid "Reboot"
 #~ msgstr "איתחול"
@@ -12750,6 +12865,11 @@ msgstr "זופזפ"
 #
 #~ msgid "Single transponder"
 #~ msgstr "Single transponder"
+
+#
+#, fuzzy
+#~ msgid "Sleep timer"
+#~ msgstr "טיימר שינה"
 
 #
 #, fuzzy
@@ -12845,8 +12965,16 @@ msgstr "זופזפ"
 #~ msgid "select movie"
 #~ msgstr "בחר סרט"
 
+#, fuzzy
+#~ msgid "shutdown"
+#~ msgstr "כיבוי"
+
 #~ msgid "special characters"
 #~ msgstr "תוויות מיוחדות"
+
+#, fuzzy
+#~ msgid "standby"
+#~ msgstr "המתנה"
 
 #
 #, fuzzy

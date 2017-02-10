@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-18 19:53+0100\n"
+"POT-Creation-Date: 2017-02-10 18:08+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: 王彪 <satfan@163.com>\n"
 "Language-Team: 中國\n"
@@ -321,6 +321,10 @@ msgid_plural "%d pixels wide"
 msgstr[0] ""
 msgstr[1] ""
 
+#, fuzzy, python-format
+msgid "%d sec"
+msgstr "%d detik"
+
 #, python-format
 msgid "%d second"
 msgid_plural "%d seconds"
@@ -442,6 +446,9 @@ msgstr "1.2"
 msgid "1024 MB"
 msgstr ""
 
+msgid "10bit"
+msgstr ""
+
 msgid "128 MB"
 msgstr ""
 
@@ -450,6 +457,9 @@ msgstr ""
 
 msgid "12V output"
 msgstr "12V-輸出"
+
+msgid "12bit"
+msgstr ""
 
 msgid "13 V"
 msgstr "13 V"
@@ -557,6 +567,9 @@ msgstr "7"
 
 msgid "8"
 msgstr "8"
+
+msgid "8bit"
+msgstr ""
 
 msgid "9"
 msgstr "9"
@@ -1098,6 +1111,10 @@ msgstr ""
 
 msgid "Audio PID"
 msgstr ""
+
+#, fuzzy
+msgid "Audio channel"
+msgstr "歷史記錄裏的下一個頻道"
 
 msgid "Audio language selection 1"
 msgstr ""
@@ -1732,11 +1749,18 @@ msgstr ""
 msgid "Color space"
 msgstr "色彩"
 
+msgid "Combo"
+msgstr ""
+
 msgid "Command execution..."
 msgstr "執行命令..."
 
 msgid "Command order"
 msgstr "命令順序"
+
+#, fuzzy
+msgid "Commit info"
+msgstr "通訊"
 
 msgid "Common Interface"
 msgstr "通用介面 (CI)"
@@ -1812,6 +1836,9 @@ msgid "Configure if behind the subtitles a background is shown."
 msgstr ""
 
 msgid "Configure if epg.dat should be saved at all."
+msgstr ""
+
+msgid "Configure if service picons will be shown in display (when supported by the skin)."
 msgstr ""
 
 msgid "Configure if service picons will be shown in the channel selection list."
@@ -2196,6 +2223,9 @@ msgstr "創建DVD-ISO"
 #, fuzzy
 msgid "Create new folder and exit"
 msgstr "創建movie檔夾失敗"
+
+msgid "Create seperate radio userbouquet"
+msgstr ""
 
 #, python-format
 msgid "Creating directory %s failed."
@@ -2624,6 +2654,10 @@ msgstr "禁用計時器"
 msgid "Disabled"
 msgstr "禁用"
 
+#, fuzzy
+msgid "Disclaimer"
+msgstr "禁用計時器"
+
 msgid "Disk space to reserve for recordings (in GB)"
 msgstr ""
 
@@ -2770,6 +2804,10 @@ msgstr " 是否重啟您的Dreambox?"
 
 msgid "Do you want to reboot your receiver?"
 msgstr ""
+
+#, fuzzy
+msgid "Do you want to remove all the crahs logfiles"
+msgstr " 是否移出套裝軟體:\n"
 
 msgid "Do you want to remove the package:\n"
 msgstr " 是否移出套裝軟體:\n"
@@ -3053,6 +3091,14 @@ msgstr ""
 msgid "Enabled"
 msgstr "啟用的"
 
+#, fuzzy
+msgid "Enabled, only from deep standby"
+msgstr "深度休眠"
+
+#, fuzzy
+msgid "Enabled, only from standby"
+msgstr "一直開著"
+
 msgid "Encrypted: "
 msgstr "加密系統: "
 
@@ -3137,6 +3183,9 @@ msgid "Ethernet network interface"
 msgstr ""
 
 msgid "Event font size (relative to skin size)"
+msgstr ""
+
+msgid "Event name first"
 msgstr ""
 
 msgid "Event view"
@@ -3308,21 +3357,29 @@ msgstr ""
 msgid "F1/F3"
 msgstr ""
 
-msgid "FBC Unicable"
-msgstr ""
+#, fuzzy
+msgid "FBC SCR (Unicable or JESS)"
+msgstr "Unicable Matrix"
 
-msgid "FBC automatic loop through"
-msgstr ""
+#, fuzzy
+msgid "FBC automatic"
+msgstr "自動"
 
+#, fuzzy
 msgid ""
-"FBC automatic loop through\n"
-"inactive"
-msgstr ""
+"FBC automatic\n"
+"connected to"
+msgstr "連接到"
 
 #, python-format
 msgid ""
-"FBC automatic loop through\n"
-"linked to %s"
+"FBC automatic\n"
+"connected to %s"
+msgstr ""
+
+msgid ""
+"FBC automatic\n"
+"inactive"
 msgstr ""
 
 msgid "FEC"
@@ -3600,6 +3657,14 @@ msgstr ""
 msgid "GUI Build: "
 msgstr ""
 
+#, fuzzy
+msgid ""
+"GUI needs a restart to apply a new language\n"
+"Do you want to restart the GUI now?"
+msgstr ""
+"應用新的皮膚必須重啟Enigma2\n"
+"是否立即重啟?"
+
 msgid ""
 "GUI needs a restart to apply a new skin\n"
 "Do you want to Restart the GUI now?"
@@ -3669,6 +3734,9 @@ msgid "Go to previous page of service"
 msgstr ""
 
 msgid "Go up the list"
+msgstr ""
+
+msgid "Gold"
 msgstr ""
 
 msgid "Goto"
@@ -3752,6 +3820,9 @@ msgid ""
 msgstr ""
 
 msgid "HDMI"
+msgstr ""
+
+msgid "HDMI Colordepth"
 msgstr ""
 
 msgid "HDMI Colorimetry"
@@ -4060,6 +4131,13 @@ msgstr ""
 msgid "Input"
 msgstr "輸入"
 
+#, fuzzy
+msgid "Input "
+msgstr "輸入 1"
+
+msgid "Input Stream ID"
+msgstr ""
+
 msgid "Input device setup"
 msgstr ""
 
@@ -4102,10 +4180,6 @@ msgstr ""
 #, fuzzy
 msgid "Install plugins"
 msgstr "正在安裝"
-
-#, fuzzy
-msgid "Install softcam support"
-msgstr "安裝本地附件"
 
 msgid "Installation has completed."
 msgstr ""
@@ -4467,6 +4541,9 @@ msgstr "鎖定:"
 msgid "Log results to /tmp"
 msgstr "記錄日誌到硬碟"
 
+msgid "Logfile does not exist anymore"
+msgstr ""
+
 #, fuzzy
 msgid "Logs location"
 msgstr "位置"
@@ -4784,6 +4861,9 @@ msgstr "移動"
 
 msgid "Move PiP to main picture"
 msgstr ""
+
+msgid "Move Picture in Picture"
+msgstr "移動畫中畫"
 
 msgid "Move east"
 msgstr "東移"
@@ -5476,6 +5556,13 @@ msgstr ""
 msgid "PLP ID"
 msgstr ""
 
+msgid "PLS Code"
+msgstr ""
+
+#, fuzzy
+msgid "PLS Mode"
+msgstr "模式"
+
 msgid "PMT PID"
 msgstr ""
 
@@ -5836,10 +5923,6 @@ msgstr "請稍候..."
 msgid "Please wait (downloading channel list)"
 msgstr ""
 
-#, fuzzy
-msgid "Please wait (downloading softcam support)"
-msgstr "請稍候，正在載入圖片..."
-
 msgid "Please wait (updating packages)"
 msgstr ""
 
@@ -5961,6 +6044,10 @@ msgstr "極軸設定(DiSEqC 1.2)"
 #, fuzzy
 msgid "Positioner setup log"
 msgstr "極軸設定(DiSEqC 1.2)"
+
+#, fuzzy
+msgid "Power on display"
+msgstr "反向顯示"
 
 msgid "Power threshold in mA"
 msgstr "功率閾值(mA)"
@@ -6451,6 +6538,10 @@ msgstr "移除標記"
 msgid "Remove a nameserver entry"
 msgstr ""
 
+#, fuzzy
+msgid "Remove all logfiles"
+msgstr "移除所有項目"
+
 msgid "Remove bookmark"
 msgstr ""
 
@@ -6468,6 +6559,10 @@ msgstr "移除插件"
 
 msgid "Remove texts for the hearing impaired from external subtitles (instrumental music or environmental sounds, e.g., when a doorbell rings or a gun shot is heard)."
 msgstr ""
+
+#, fuzzy
+msgid "Remove this logfile"
+msgstr "移除標題"
 
 msgid "Remove timer"
 msgstr "移除計時器"
@@ -6668,6 +6763,9 @@ msgid "Roll-off"
 msgstr ""
 
 msgid "Romanian"
+msgstr ""
+
+msgid "Root"
 msgstr ""
 
 msgid "Root directory"
@@ -7498,6 +7596,10 @@ msgid "Show latest upgrade log"
 msgstr ""
 
 #, fuzzy
+msgid "Show menu numbers"
+msgstr "電話號碼"
+
+#, fuzzy
 msgid "Show menu paths"
 msgstr "顯示Gemini專案"
 
@@ -7527,6 +7629,10 @@ msgstr ""
 #, fuzzy
 msgid "Show picons in channel selection list"
 msgstr "選擇頻道時顯示事件進度"
+
+#, fuzzy
+msgid "Show picons in display"
+msgstr "無視頻輸出"
 
 msgid "Show positioner movement"
 msgstr "檢視Rotor移動"
@@ -7709,16 +7815,9 @@ msgstr ""
 msgid "Skip internet connection check (disables automatic package installation)"
 msgstr ""
 
-msgid "Sleep timer"
-msgstr ""
-
 #, fuzzy
 msgid "Sleep/wakeup timer"
 msgstr "休眠時間"
-
-#, fuzzy
-msgid "SleepTimer Configuration"
-msgstr "LT 配置"
 
 #, fuzzy
 msgid "Sleeptimer"
@@ -7805,6 +7904,9 @@ msgid "Software update"
 msgstr "軟體升級"
 
 msgid "Softwaremanager information"
+msgstr ""
+
+msgid "Some error occured - Please try later"
 msgstr ""
 
 msgid "Some plugins are not available:\n"
@@ -8466,6 +8568,12 @@ msgstr "備份操作失敗！請選擇不同的備份位置。"
 
 #, python-format
 msgid ""
+"The current software might not be stable.\n"
+"For more information see %s."
+msgstr ""
+
+#, python-format
+msgid ""
 "The directory %s is not writable.\n"
 "Make sure you select a writable directory instead."
 msgstr ""
@@ -8538,6 +8646,10 @@ msgstr "定時休眠已被禁用."
 msgid ""
 "The software management extension is not installed!\n"
 "Please install it."
+msgstr ""
+
+#, python-format
+msgid "The status of the current software could not be checked because %s can not be reached."
 msgstr ""
 
 msgid "The stored EPG data will be read every (hours)"
@@ -8665,6 +8777,9 @@ msgstr ""
 msgid "This option allows to set the level of dynamic contrast of the picture."
 msgstr ""
 
+msgid "This option allows you can config the Colordepth for UHD"
+msgstr ""
+
 msgid "This option allows you can config the Colorimetry for HDR"
 msgstr ""
 
@@ -8683,7 +8798,13 @@ msgstr ""
 msgid "This option allows you to hide and sort menu entries. When selecting user you can change order and hide menu items via the blue button"
 msgstr ""
 
+msgid "This option allows you to power off the display."
+msgstr ""
+
 msgid "This option allows you to set the Colorspace of HDMI from Auto to RGB"
+msgstr ""
+
+msgid "This option allows you to show menu number quick links."
 msgstr ""
 
 msgid "This option allows you to show menu paths."
@@ -8983,6 +9104,9 @@ msgstr ""
 
 msgid "Tries left:"
 msgstr "嘗試:"
+
+msgid "Troubleshoot"
+msgstr ""
 
 msgid "Try to find used transponders in cable network.. please wait..."
 msgstr "嘗試從電纜找尋可用的轉發器.. 請稍候..."
@@ -9911,14 +10035,6 @@ msgstr ""
 msgid "Wizard to arrange the overscan"
 msgstr ""
 
-msgid ""
-"Would you like to be able to install softcams?\n"
-"\n"
-"Attention - Country specific illegal!\n"
-"\n"
-"Check legality for your specific country in advance!"
-msgstr ""
-
 #, python-format
 msgid "Would you save the entered PIN %s persistent?"
 msgstr ""
@@ -9930,6 +10046,15 @@ msgid "Write failed!"
 msgstr "寫入失敗！"
 
 msgid "Write to /tmp/positionersetup.log"
+msgstr ""
+
+msgid "YCbCr420"
+msgstr ""
+
+msgid "YCbCr422"
+msgstr ""
+
+msgid "YCbCr444"
 msgstr ""
 
 msgid "YES"
@@ -9986,14 +10111,6 @@ msgstr "是，開始自動掃描"
 
 msgid "Yes, do another manual scan now"
 msgstr "是，手動掃描另一個參數"
-
-#, fuzzy
-msgid "Enabled, only from deep standby"
-msgstr "深度休眠"
-
-#, fuzzy
-msgid "Enabled, only from standby"
-msgstr "一直開著"
 
 msgid "Yes, perform a shutdown now."
 msgstr "是，立即關機。"
@@ -11348,9 +11465,6 @@ msgstr ""
 msgid "shut down"
 msgstr "關機"
 
-msgid "shutdown"
-msgstr "關機"
-
 msgid "simple"
 msgstr "簡單"
 
@@ -11392,9 +11506,6 @@ msgstr ""
 
 msgid "standard"
 msgstr "標準"
-
-msgid "standby"
-msgstr "待機"
 
 msgid "start cut here"
 msgstr "從這裏開始剪輯"
@@ -13402,9 +13513,6 @@ msgstr "轉自"
 #~ msgid "Initializing Harddisk..."
 #~ msgstr "正在初始化硬碟..."
 
-#~ msgid "Input 1"
-#~ msgstr "輸入 1"
-
 #~ msgid "Input 10"
 #~ msgstr "輸入 10"
 
@@ -13468,6 +13576,10 @@ msgstr "轉自"
 #~ msgid "Install settings, skins, software..."
 #~ msgstr "安裝設定,外觀,軟體..."
 
+#, fuzzy
+#~ msgid "Install softcam support"
+#~ msgstr "安裝本地附件"
+
 #~ msgid "Installation finished."
 #~ msgstr "安裝完成."
 
@@ -13521,9 +13633,6 @@ msgstr "轉自"
 
 #~ msgid "Invalid selection"
 #~ msgstr "選擇無效"
-
-#~ msgid "Invert display"
-#~ msgstr "反向顯示"
 
 #~ msgid "IpkgInstaller"
 #~ msgstr "IPKG安裝..."
@@ -13787,9 +13896,6 @@ msgstr "轉自"
 #~ msgid "Mkfs failed"
 #~ msgstr "Mkfs 失敗"
 
-#~ msgid "Mode"
-#~ msgstr "模式"
-
 #~ msgid "Modify existing timers"
 #~ msgstr "修改現有的計時器"
 
@@ -13859,9 +13965,6 @@ msgstr "轉自"
 
 #~ msgid "Mountpoints management"
 #~ msgstr "安裝點管理"
-
-#~ msgid "Move Picture in Picture"
-#~ msgstr "移動畫中畫"
 
 #~ msgid "Move screen down"
 #~ msgstr "螢幕下移"
@@ -14051,9 +14154,6 @@ msgstr "轉自"
 #~ "未找到有效的設定密碼!\n"
 #~ "是否更改當前的設定密碼?\n"
 #~ "選NO保持當前狀態!"
-
-#~ msgid "No videos to display"
-#~ msgstr "無視頻輸出"
 
 #~ msgid "No wireless networks found! Please refresh."
 #~ msgstr "未發現無線網路! 請刷新."
@@ -14268,9 +14368,6 @@ msgstr "轉自"
 #~ msgid "Permission"
 #~ msgstr "許可權"
 
-#~ msgid "Phone number"
-#~ msgstr "電話號碼"
-
 #~ msgid "PiPSetup"
 #~ msgstr "畫中畫設定"
 
@@ -14420,6 +14517,10 @@ msgstr "轉自"
 
 #~ msgid "Please unmount the device first"
 #~ msgstr "請先解除安裝裝置"
+
+#, fuzzy
+#~ msgid "Please wait (downloading softcam support)"
+#~ msgstr "請稍候，正在載入圖片..."
 
 #~ msgid "Please wait for activation of your network mount..."
 #~ msgstr "請待您的網路安裝啟動..."
@@ -15174,6 +15275,10 @@ msgstr "轉自"
 
 #~ msgid "Skins/GUI stuff..."
 #~ msgstr "皮膚/介面..."
+
+#, fuzzy
+#~ msgid "SleepTimer Configuration"
+#~ msgstr "LT 配置"
 
 #~ msgid "Slideshow Interval (sec.)"
 #~ msgstr "幻燈片放映間隔（秒）"
@@ -17300,6 +17405,9 @@ msgstr "轉自"
 #~ msgid "shuffle playlist"
 #~ msgstr "隨機播放"
 
+#~ msgid "shutdown"
+#~ msgstr "關機"
+
 #~ msgid "side"
 #~ msgstr "旁邊"
 
@@ -17329,6 +17437,9 @@ msgstr "轉自"
 
 #~ msgid "source directory"
 #~ msgstr "原始目錄"
+
+#~ msgid "standby"
+#~ msgstr "待機"
 
 #~ msgid "start sync ?"
 #~ msgstr "開始同步 ?"

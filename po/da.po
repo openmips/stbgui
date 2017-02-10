@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-18 19:53+0100\n"
+"POT-Creation-Date: 2017-02-10 18:08+0100\n"
 "PO-Revision-Date: 2015-01-29 17:40+0200\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -329,6 +329,10 @@ msgid_plural "%d pixels wide"
 msgstr[0] ""
 msgstr[1] ""
 
+#, fuzzy, python-format
+msgid "%d sec"
+msgstr "%d sekund"
+
 #, python-format
 msgid "%d second"
 msgid_plural "%d seconds"
@@ -465,6 +469,9 @@ msgstr "1.2"
 msgid "1024 MB"
 msgstr ""
 
+msgid "10bit"
+msgstr ""
+
 msgid "128 MB"
 msgstr ""
 
@@ -473,6 +480,9 @@ msgstr ""
 
 msgid "12V output"
 msgstr "12V udgang"
+
+msgid "12bit"
+msgstr ""
 
 #
 msgid "13 V"
@@ -591,6 +601,9 @@ msgstr "7"
 #
 msgid "8"
 msgstr "8"
+
+msgid "8bit"
+msgstr ""
 
 #
 msgid "9"
@@ -1256,6 +1269,11 @@ msgstr ""
 
 msgid "Audio PID"
 msgstr "Lyd PID"
+
+#
+#, fuzzy
+msgid "Audio channel"
+msgstr "næste kanal i hukommelse"
 
 msgid "Audio language selection 1"
 msgstr "Lydsprogs valg 1"
@@ -2003,6 +2021,9 @@ msgstr "Farve Format"
 msgid "Color space"
 msgstr "Farve Format"
 
+msgid "Combo"
+msgstr ""
+
 #
 msgid "Command execution..."
 msgstr "Kommando udføres..."
@@ -2010,6 +2031,11 @@ msgstr "Kommando udføres..."
 #
 msgid "Command order"
 msgstr "Kommando rækkefølge"
+
+#
+#, fuzzy
+msgid "Commit info"
+msgstr "Kommunikation"
 
 #
 msgid "Common Interface"
@@ -2106,6 +2132,9 @@ msgstr "Opførsel når en film startes"
 #, fuzzy
 msgid "Configure if epg.dat should be saved at all."
 msgstr "Oprindelig fremspolingshastighed"
+
+msgid "Configure if service picons will be shown in display (when supported by the skin)."
+msgstr ""
 
 msgid "Configure if service picons will be shown in the channel selection list."
 msgstr ""
@@ -2544,6 +2573,9 @@ msgid "Create ISO"
 msgstr "Opret DVD-ISO"
 
 msgid "Create new folder and exit"
+msgstr ""
+
+msgid "Create seperate radio userbouquet"
 msgstr ""
 
 #
@@ -3056,6 +3088,11 @@ msgstr ""
 msgid "Disabled"
 msgstr "Afbrudt"
 
+#
+#, fuzzy
+msgid "Disclaimer"
+msgstr "vis infoinje"
+
 msgid "Disk space to reserve for recordings (in GB)"
 msgstr "Plads der skal reseveres til optagelser (I GB)"
 
@@ -3246,6 +3283,11 @@ msgstr "Vil du downloade imaget til %s ?"
 
 msgid "Do you want to reboot your receiver?"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Do you want to remove all the crahs logfiles"
+msgstr "Vil du fjerne pakken:\n"
 
 #
 msgid "Do you want to remove the package:\n"
@@ -3570,6 +3612,16 @@ msgid "Enabled"
 msgstr "Aktiveret"
 
 #
+#, fuzzy
+msgid "Enabled, only from deep standby"
+msgstr "gå til dyb standby"
+
+#
+#, fuzzy
+msgid "Enabled, only from standby"
+msgstr "gå til Standby"
+
+#
 msgid "Encrypted: "
 msgstr "Krypteret:"
 
@@ -3673,6 +3725,9 @@ msgstr "Ethernet netværksinterface"
 #, fuzzy
 msgid "Event font size (relative to skin size)"
 msgstr "Begivendhed Font (relativ til skin)"
+
+msgid "Event name first"
+msgstr ""
 
 #
 #, fuzzy
@@ -3885,21 +3940,30 @@ msgstr ""
 
 #
 #, fuzzy
-msgid "FBC Unicable"
-msgstr "Unikabel LNB"
+msgid "FBC SCR (Unicable or JESS)"
+msgstr "Unikabel"
 
-msgid "FBC automatic loop through"
-msgstr ""
+#
+#, fuzzy
+msgid "FBC automatic"
+msgstr "Automatisk"
 
+#
+#, fuzzy
 msgid ""
-"FBC automatic loop through\n"
-"inactive"
-msgstr ""
+"FBC automatic\n"
+"connected to"
+msgstr "Forbundet til"
 
 #, python-format
 msgid ""
-"FBC automatic loop through\n"
-"linked to %s"
+"FBC automatic\n"
+"connected to %s"
+msgstr ""
+
+msgid ""
+"FBC automatic\n"
+"inactive"
 msgstr ""
 
 #
@@ -4214,6 +4278,15 @@ msgstr ""
 #
 #, fuzzy
 msgid ""
+"GUI needs a restart to apply a new language\n"
+"Do you want to restart the GUI now?"
+msgstr ""
+"GUI skal genstartes for aktivering af nyt grafisk tema\n"
+"Vil du genstarte GUI nu?"
+
+#
+#, fuzzy
+msgid ""
 "GUI needs a restart to apply a new skin\n"
 "Do you want to Restart the GUI now?"
 msgstr ""
@@ -4300,6 +4373,9 @@ msgstr "Gå til forrige side af kanaler"
 
 msgid "Go up the list"
 msgstr "Gå op af listen"
+
+msgid "Gold"
+msgstr ""
 
 msgid "Goto"
 msgstr "Gå til"
@@ -4388,6 +4464,11 @@ msgstr ""
 
 msgid "HDMI"
 msgstr ""
+
+#
+#, fuzzy
+msgid "HDMI Colordepth"
+msgstr "Farve Format"
 
 #
 #, fuzzy
@@ -4755,6 +4836,14 @@ msgstr "Initialisering lagerenhed"
 msgid "Input"
 msgstr "Indgang"
 
+#
+#, fuzzy
+msgid "Input "
+msgstr "Indgang"
+
+msgid "Input Stream ID"
+msgstr ""
+
 msgid "Input device setup"
 msgstr "Opsætning af enhed"
 
@@ -4802,11 +4891,6 @@ msgstr "Installer picons på"
 #, fuzzy
 msgid "Install plugins"
 msgstr "Installer picons på"
-
-#
-#, fuzzy
-msgid "Install softcam support"
-msgstr "Installerer software..."
 
 #, fuzzy
 msgid "Installation has completed."
@@ -5263,6 +5347,9 @@ msgstr "Lås:"
 msgid "Log results to /tmp"
 msgstr "Log resultaterne til harddisken"
 
+msgid "Logfile does not exist anymore"
+msgstr ""
+
 #
 #, fuzzy
 msgid "Logs location"
@@ -5620,6 +5707,11 @@ msgstr "Flyt"
 #, fuzzy
 msgid "Move PiP to main picture"
 msgstr "Flytte Billede i Billede til hoved billede"
+
+#
+#, fuzzy
+msgid "Move Picture in Picture"
+msgstr "Aktiver Billed i Billed"
 
 #
 msgid "Move east"
@@ -6438,6 +6530,14 @@ msgstr ""
 msgid "PLP ID"
 msgstr ""
 
+msgid "PLS Code"
+msgstr ""
+
+#
+#, fuzzy
+msgid "PLS Mode"
+msgstr "Type"
+
 msgid "PMT PID"
 msgstr ""
 
@@ -6890,11 +6990,6 @@ msgstr "Vent venligst... Henter liste..."
 
 #
 #, fuzzy
-msgid "Please wait (downloading softcam support)"
-msgstr "Vent venligst... Henter liste..."
-
-#
-#, fuzzy
 msgid "Please wait (updating packages)"
 msgstr "vent venligst, henter billede..."
 
@@ -7046,6 +7141,9 @@ msgstr "Motor Opsætning"
 #, fuzzy
 msgid "Positioner setup log"
 msgstr "Motor Opsætning"
+
+msgid "Power on display"
+msgstr ""
 
 #
 msgid "Power threshold in mA"
@@ -7644,6 +7742,11 @@ msgstr "fjern en navneserver angivelse"
 
 #
 #, fuzzy
+msgid "Remove all logfiles"
+msgstr "fjern alle alternativer"
+
+#
+#, fuzzy
 msgid "Remove bookmark"
 msgstr "fjern bogmærke"
 
@@ -7665,6 +7768,11 @@ msgstr "Fjerne plugins"
 
 msgid "Remove texts for the hearing impaired from external subtitles (instrumental music or environmental sounds, e.g., when a doorbell rings or a gun shot is heard)."
 msgstr ""
+
+#
+#, fuzzy
+msgid "Remove this logfile"
+msgstr "Fjerne titel"
 
 #
 msgid "Remove timer"
@@ -7903,6 +8011,9 @@ msgid "Roll-off"
 msgstr "Rul-af"
 
 msgid "Romanian"
+msgstr ""
+
+msgid "Root"
 msgstr ""
 
 msgid "Root directory"
@@ -8894,6 +9005,11 @@ msgstr "Seneste opdatering"
 
 #
 #, fuzzy
+msgid "Show menu numbers"
+msgstr "Telefonnummer"
+
+#
+#, fuzzy
 msgid "Show menu paths"
 msgstr "vis mærke menu"
 
@@ -8929,6 +9045,10 @@ msgstr "Pakke liste opdatering"
 #, fuzzy
 msgid "Show picons in channel selection list"
 msgstr "Vis programafvikling i kanalvælger"
+
+#, fuzzy
+msgid "Show picons in display"
+msgstr "Vis status ikoner i filmliset"
 
 #
 msgid "Show positioner movement"
@@ -9152,16 +9272,8 @@ msgstr ""
 
 #
 #, fuzzy
-msgid "Sleep timer"
-msgstr "Sleep Timer"
-
-#
-#, fuzzy
 msgid "Sleep/wakeup timer"
 msgstr "Sleep Timer"
-
-msgid "SleepTimer Configuration"
-msgstr ""
 
 msgid "Sleeptimer"
 msgstr ""
@@ -9264,6 +9376,9 @@ msgid "Software update"
 msgstr "Software opdatering"
 
 msgid "Softwaremanager information"
+msgstr ""
+
+msgid "Some error occured - Please try later"
 msgstr ""
 
 #
@@ -10035,6 +10150,12 @@ msgstr ""
 msgid "The backup failed. Please choose a different backup location."
 msgstr "Backup har slået fejl. Vælg en anden måde at lave backup på."
 
+#, fuzzy, python-format
+msgid ""
+"The current software might not be stable.\n"
+"For more information see %s."
+msgstr "Dette beta image kan være ustabilt"
+
 #
 #, python-format
 msgid ""
@@ -10125,6 +10246,10 @@ msgid ""
 msgstr ""
 "Udvidelsen softwareredigering er ikke installeret!\n"
 "installer den venligst."
+
+#, fuzzy, python-format
+msgid "The status of the current software could not be checked because %s can not be reached."
+msgstr "Status omkring dit nuværende image kunne ikke blive kontroleret fordiwww.openpli.org ikke kunne kontaktes"
 
 msgid "The stored EPG data will be read every (hours)"
 msgstr ""
@@ -10265,6 +10390,9 @@ msgstr ""
 msgid "This option allows to set the level of dynamic contrast of the picture."
 msgstr ""
 
+msgid "This option allows you can config the Colordepth for UHD"
+msgstr ""
+
 msgid "This option allows you can config the Colorimetry for HDR"
 msgstr ""
 
@@ -10283,7 +10411,13 @@ msgstr ""
 msgid "This option allows you to hide and sort menu entries. When selecting user you can change order and hide menu items via the blue button"
 msgstr ""
 
+msgid "This option allows you to power off the display."
+msgstr ""
+
 msgid "This option allows you to set the Colorspace of HDMI from Auto to RGB"
+msgstr ""
+
+msgid "This option allows you to show menu number quick links."
 msgstr ""
 
 msgid "This option allows you to show menu paths."
@@ -10659,6 +10793,9 @@ msgstr "Papirkurv"
 #
 msgid "Tries left:"
 msgstr "Forsøg tilbage:"
+
+msgid "Troubleshoot"
+msgstr ""
 
 #
 msgid "Try to find used transponders in cable network.. please wait..."
@@ -11749,14 +11886,6 @@ msgstr ""
 msgid "Wizard to arrange the overscan"
 msgstr ""
 
-msgid ""
-"Would you like to be able to install softcams?\n"
-"\n"
-"Attention - Country specific illegal!\n"
-"\n"
-"Check legality for your specific country in advance!"
-msgstr ""
-
 #, python-format
 msgid "Would you save the entered PIN %s persistent?"
 msgstr ""
@@ -11770,6 +11899,15 @@ msgid "Write failed!"
 msgstr "Skrivning mislykkedes!"
 
 msgid "Write to /tmp/positionersetup.log"
+msgstr ""
+
+msgid "YCbCr420"
+msgstr ""
+
+msgid "YCbCr422"
+msgstr ""
+
+msgid "YCbCr444"
 msgstr ""
 
 msgid "YES"
@@ -11833,16 +11971,6 @@ msgstr "Ja, start en automatisk søgning nu"
 #
 msgid "Yes, do another manual scan now"
 msgstr "Ja, start en ny manuel søgning nu"
-
-#
-#, fuzzy
-msgid "Enabled, only from deep standby"
-msgstr "gå til dyb standby"
-
-#
-#, fuzzy
-msgid "Enabled, only from standby"
-msgstr "gå til Standby"
 
 #
 msgid "Yes, perform a shutdown now."
@@ -13408,11 +13536,6 @@ msgid "shut down"
 msgstr "afslut"
 
 #
-#, fuzzy
-msgid "shutdown"
-msgstr "afslut"
-
-#
 msgid "simple"
 msgstr "enkel"
 
@@ -13461,11 +13584,6 @@ msgstr ""
 #
 msgid "standard"
 msgstr "normal"
-
-#
-#, fuzzy
-msgid "standby"
-msgstr "Standby"
 
 #
 msgid "start cut here"
@@ -13861,6 +13979,11 @@ msgstr "skiftet"
 
 #
 #, fuzzy
+#~ msgid "FBC Unicable"
+#~ msgstr "Unikabel LNB"
+
+#
+#, fuzzy
 #~ msgid "FP Upgrade"
 #~ msgstr "Opdaterer"
 
@@ -13900,6 +14023,11 @@ msgstr "skiftet"
 #, fuzzy
 #~ msgid "Immediate shutdown"
 #~ msgstr "omgående afbrydelse"
+
+#
+#, fuzzy
+#~ msgid "Install softcam support"
+#~ msgstr "Installerer software..."
 
 #
 #, fuzzy
@@ -13987,12 +14115,13 @@ msgstr "skiftet"
 #~ msgstr "Kodeord"
 
 #
-#~ msgid "Phone number"
-#~ msgstr "Telefonnummer"
-
-#
 #~ msgid "Please check your network settings!"
 #~ msgstr "Tjek venligst din netværks opsætning!"
+
+#
+#, fuzzy
+#~ msgid "Please wait (downloading softcam support)"
+#~ msgstr "Vent venligst... Henter liste..."
 
 #~ msgid "Prepare another USB stick for image flashing"
 #~ msgstr "Forbered en anden USB nøgle for Image installation"
@@ -14074,6 +14203,11 @@ msgstr "skiftet"
 
 #
 #, fuzzy
+#~ msgid "Sleep timer"
+#~ msgstr "Sleep Timer"
+
+#
+#, fuzzy
 #~ msgid "Standby fan %d PWM"
 #~ msgstr "Ventilator %d PWM"
 
@@ -14099,12 +14233,6 @@ msgstr "skiftet"
 #~ "USB nøglen er klargjort til boot.\n"
 #~ "nu kan du hente et NFI image!"
 
-#, fuzzy
-#~ msgid ""
-#~ "The current beta image might not be stable.\n"
-#~ "For more information see %s."
-#~ msgstr "Dette beta image kan være ustabilt"
-
 #
 #~ msgid ""
 #~ "The following device was found:\n"
@@ -14118,10 +14246,6 @@ msgstr "skiftet"
 #~ "%s\n"
 #~ "\n"
 #~ "Vil du skrive USB flash til denne stick?"
-
-#, fuzzy
-#~ msgid "The status of the current beta image could not be checked because %s can not be reached."
-#~ msgstr "Status omkring dit nuværende image kunne ikke blive kontroleret fordiwww.openpli.org ikke kunne kontaktes"
 
 #~ msgid "The wizard found a configuration backup. Do you want to restore your old settings from %s?"
 #~ msgstr "Assistenten har fundet en konfigurationsbackup. Vil du gendanne dine gamle indstillinger fra %s?"
@@ -14234,8 +14358,18 @@ msgstr "skiftet"
 #~ msgstr "Kanalliste PIN"
 
 #
+#, fuzzy
+#~ msgid "shutdown"
+#~ msgstr "afslut"
+
+#
 #~ msgid "special characters"
 #~ msgstr "special karakterer"
+
+#
+#, fuzzy
+#~ msgid "standby"
+#~ msgstr "Standby"
 
 #~ msgid "tuner is not supported"
 #~ msgstr "tuner ikke supporteret"

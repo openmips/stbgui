@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-18 19:53+0100\n"
+"POT-Creation-Date: 2017-02-10 18:08+0100\n"
 "PO-Revision-Date: 2015-01-29 17:40+0200\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -315,6 +315,10 @@ msgstr[0] ""
 msgstr[1] ""
 
 #, python-format
+msgid "%d sec"
+msgstr ""
+
+#, python-format
 msgid "%d second"
 msgid_plural "%d seconds"
 msgstr[0] ""
@@ -452,6 +456,9 @@ msgstr "1.2"
 msgid "1024 MB"
 msgstr ""
 
+msgid "10bit"
+msgstr ""
+
 msgid "128 MB"
 msgstr ""
 
@@ -461,6 +468,9 @@ msgstr ""
 #
 msgid "12V output"
 msgstr "12V útgong"
+
+msgid "12bit"
+msgstr ""
 
 #
 msgid "13 V"
@@ -585,6 +595,9 @@ msgstr "7"
 #
 msgid "8"
 msgstr "8"
+
+msgid "8bit"
+msgstr ""
 
 #
 msgid "9"
@@ -1233,6 +1246,11 @@ msgstr ""
 
 msgid "Audio PID"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Audio channel"
+msgstr "set folgende kanaal in skiednis"
 
 msgid "Audio language selection 1"
 msgstr ""
@@ -1977,6 +1995,9 @@ msgstr "Kleur formaat"
 msgid "Color space"
 msgstr "Kleur formaat"
 
+msgid "Combo"
+msgstr ""
+
 #
 msgid "Command execution..."
 msgstr "Kommando útfiere"
@@ -1984,6 +2005,11 @@ msgstr "Kommando útfiere"
 #
 msgid "Command order"
 msgstr "Kommando folgoarde"
+
+#
+#, fuzzy
+msgid "Commit info"
+msgstr "Ynformaasje sjen litte"
 
 #
 msgid "Common Interface"
@@ -2074,6 +2100,9 @@ msgid "Configure if behind the subtitles a background is shown."
 msgstr "Gedrach wannear in film start is"
 
 msgid "Configure if epg.dat should be saved at all."
+msgstr ""
+
+msgid "Configure if service picons will be shown in display (when supported by the skin)."
 msgstr ""
 
 msgid "Configure if service picons will be shown in the channel selection list."
@@ -2497,6 +2526,9 @@ msgid "Create ISO"
 msgstr "Meitsje DVD-ISO"
 
 msgid "Create new folder and exit"
+msgstr ""
+
+msgid "Create seperate radio userbouquet"
 msgstr ""
 
 #
@@ -3012,6 +3044,11 @@ msgstr ""
 msgid "Disabled"
 msgstr "Utskeakele"
 
+#
+#, fuzzy
+msgid "Disclaimer"
+msgstr "Infolyne sjen litte"
+
 msgid "Disk space to reserve for recordings (in GB)"
 msgstr ""
 
@@ -3184,6 +3221,11 @@ msgstr "Wolle jo jo ynstellingen wêrom sette ?"
 
 msgid "Do you want to reboot your receiver?"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Do you want to remove all the crahs logfiles"
+msgstr "Wolle jo wier de plugin \"%s\" binnenhelje ?"
 
 #
 msgid "Do you want to remove the package:\n"
@@ -3506,6 +3548,16 @@ msgid "Enabled"
 msgstr "Ynskeakele"
 
 #
+#, fuzzy
+msgid "Enabled, only from deep standby"
+msgstr "gean nei djip paraatstand"
+
+#
+#, fuzzy
+msgid "Enabled, only from standby"
+msgstr "gean nei paraatstand"
+
+#
 msgid "Encrypted: "
 msgstr ""
 
@@ -3608,6 +3660,9 @@ msgid "Ethernet network interface"
 msgstr ""
 
 msgid "Event font size (relative to skin size)"
+msgstr ""
+
+msgid "Event name first"
 msgstr ""
 
 #
@@ -3819,21 +3874,30 @@ msgstr ""
 msgid "F1/F3"
 msgstr ""
 
-msgid "FBC Unicable"
+msgid "FBC SCR (Unicable or JESS)"
 msgstr ""
 
-msgid "FBC automatic loop through"
-msgstr ""
+#
+#, fuzzy
+msgid "FBC automatic"
+msgstr "Automatysk"
 
+#
+#, fuzzy
 msgid ""
-"FBC automatic loop through\n"
-"inactive"
-msgstr ""
+"FBC automatic\n"
+"connected to"
+msgstr "Ferbûn mei"
 
 #, python-format
 msgid ""
-"FBC automatic loop through\n"
-"linked to %s"
+"FBC automatic\n"
+"connected to %s"
+msgstr ""
+
+msgid ""
+"FBC automatic\n"
+"inactive"
 msgstr ""
 
 #
@@ -4145,6 +4209,15 @@ msgstr ""
 #
 #, fuzzy
 msgid ""
+"GUI needs a restart to apply a new language\n"
+"Do you want to restart the GUI now?"
+msgstr ""
+"De GUI moat opnij starte fan wege de nije skin\n"
+"Wolle jo de GUI no opnei starte ?"
+
+#
+#, fuzzy
+msgid ""
 "GUI needs a restart to apply a new skin\n"
 "Do you want to Restart the GUI now?"
 msgstr ""
@@ -4234,6 +4307,9 @@ msgstr "Werom nei foariche service"
 msgid "Go up the list"
 msgstr ""
 
+msgid "Gold"
+msgstr ""
+
 msgid "Goto"
 msgstr ""
 
@@ -4321,6 +4397,11 @@ msgstr ""
 
 msgid "HDMI"
 msgstr ""
+
+#
+#, fuzzy
+msgid "HDMI Colordepth"
+msgstr "Kleur formaat"
 
 #
 #, fuzzy
@@ -4685,6 +4766,14 @@ msgstr ""
 msgid "Input"
 msgstr "Ynfier"
 
+#
+#, fuzzy
+msgid "Input "
+msgstr "Ynfier"
+
+msgid "Input Stream ID"
+msgstr ""
+
 msgid "Input device setup"
 msgstr ""
 
@@ -4732,11 +4821,6 @@ msgstr ""
 #, fuzzy
 msgid "Install plugins"
 msgstr "Oan it ynstallearjen"
-
-#
-#, fuzzy
-msgid "Install softcam support"
-msgstr "Software oan it ynstallearjen..."
 
 msgid "Installation has completed."
 msgstr ""
@@ -5175,6 +5259,9 @@ msgstr "Slot:"
 msgid "Log results to /tmp"
 msgstr ""
 
+msgid "Logfile does not exist anymore"
+msgstr ""
+
 #
 #, fuzzy
 msgid "Logs location"
@@ -5521,6 +5608,11 @@ msgstr ""
 #, fuzzy
 msgid "Move PiP to main picture"
 msgstr "ferplaats PiP nei haad skerm"
+
+#
+#, fuzzy
+msgid "Move Picture in Picture"
+msgstr "PIP ynskeakelje"
 
 #
 msgid "Move east"
@@ -6328,6 +6420,14 @@ msgstr ""
 msgid "PLP ID"
 msgstr ""
 
+msgid "PLS Code"
+msgstr ""
+
+#
+#, fuzzy
+msgid "PLS Mode"
+msgstr "Moadus"
+
 msgid "PMT PID"
 msgstr ""
 
@@ -6769,11 +6869,6 @@ msgstr "Lyst wurd laden..."
 
 #
 #, fuzzy
-msgid "Please wait (downloading softcam support)"
-msgstr "Lyst wurd laden..."
-
-#
-#, fuzzy
 msgid "Please wait (updating packages)"
 msgstr "plaatsje wurd laden..."
 
@@ -6924,6 +7019,9 @@ msgstr "Rotor ynstellingen"
 #, fuzzy
 msgid "Positioner setup log"
 msgstr "Rotor ynstellingen"
+
+msgid "Power on display"
+msgstr ""
 
 #
 msgid "Power threshold in mA"
@@ -7509,6 +7607,11 @@ msgstr "Ferwiderje in nammeserver"
 
 #
 #, fuzzy
+msgid "Remove all logfiles"
+msgstr "ferwiderje alle alternatieven"
+
+#
+#, fuzzy
 msgid "Remove bookmark"
 msgstr "boekmerk ferwiderje"
 
@@ -7528,6 +7631,11 @@ msgstr "Ferwiderje ynstekker"
 
 msgid "Remove texts for the hearing impaired from external subtitles (instrumental music or environmental sounds, e.g., when a doorbell rings or a gun shot is heard)."
 msgstr ""
+
+#
+#, fuzzy
+msgid "Remove this logfile"
+msgstr "Ferwiderje de titel"
 
 #
 #, fuzzy
@@ -7768,6 +7876,9 @@ msgid "Roll-off"
 msgstr ""
 
 msgid "Romanian"
+msgstr ""
+
+msgid "Root"
 msgstr ""
 
 msgid "Root directory"
@@ -8752,6 +8863,11 @@ msgstr "Kies fideo moadus"
 
 #
 #, fuzzy
+msgid "Show menu numbers"
+msgstr "label menu sjen litte"
+
+#
+#, fuzzy
 msgid "Show menu paths"
 msgstr "label menu sjen litte"
 
@@ -8786,6 +8902,9 @@ msgstr "Bywurkje pakketlyst  "
 #, fuzzy
 msgid "Show picons in channel selection list"
 msgstr "set folgende kanaal in skiednis"
+
+msgid "Show picons in display"
+msgstr ""
 
 #
 msgid "Show positioner movement"
@@ -9005,16 +9124,8 @@ msgstr ""
 
 #
 #, fuzzy
-msgid "Sleep timer"
-msgstr "Tiidstjoering"
-
-#
-#, fuzzy
 msgid "Sleep/wakeup timer"
 msgstr "Tiidstjoering"
-
-msgid "SleepTimer Configuration"
-msgstr ""
 
 msgid "Sleeptimer"
 msgstr ""
@@ -9115,6 +9226,9 @@ msgid "Software update"
 msgstr ""
 
 msgid "Softwaremanager information"
+msgstr ""
+
+msgid "Some error occured - Please try later"
 msgstr ""
 
 #
@@ -9873,6 +9987,12 @@ msgstr ""
 msgid "The backup failed. Please choose a different backup location."
 msgstr "Backup is mislearre. Kies in oare backup lokaasje."
 
+#, python-format
+msgid ""
+"The current software might not be stable.\n"
+"For more information see %s."
+msgstr ""
+
 #
 #, python-format
 msgid ""
@@ -9960,6 +10080,10 @@ msgid ""
 msgstr ""
 "De WLAN ynstekker is net ynstallearre!\n"
 "Ynstallearje dizze earst."
+
+#, python-format
+msgid "The status of the current software could not be checked because %s can not be reached."
+msgstr ""
 
 msgid "The stored EPG data will be read every (hours)"
 msgstr ""
@@ -10095,6 +10219,9 @@ msgstr ""
 msgid "This option allows to set the level of dynamic contrast of the picture."
 msgstr ""
 
+msgid "This option allows you can config the Colordepth for UHD"
+msgstr ""
+
 msgid "This option allows you can config the Colorimetry for HDR"
 msgstr ""
 
@@ -10113,7 +10240,13 @@ msgstr ""
 msgid "This option allows you to hide and sort menu entries. When selecting user you can change order and hide menu items via the blue button"
 msgstr ""
 
+msgid "This option allows you to power off the display."
+msgstr ""
+
 msgid "This option allows you to set the Colorspace of HDMI from Auto to RGB"
+msgstr ""
+
+msgid "This option allows you to show menu number quick links."
 msgstr ""
 
 msgid "This option allows you to show menu paths."
@@ -10488,6 +10621,9 @@ msgstr ""
 #
 msgid "Tries left:"
 msgstr "Oantal kearen besykjen oer:"
+
+msgid "Troubleshoot"
+msgstr ""
 
 #
 msgid "Try to find used transponders in cable network.. please wait..."
@@ -11555,14 +11691,6 @@ msgstr ""
 msgid "Wizard to arrange the overscan"
 msgstr ""
 
-msgid ""
-"Would you like to be able to install softcams?\n"
-"\n"
-"Attention - Country specific illegal!\n"
-"\n"
-"Check legality for your specific country in advance!"
-msgstr ""
-
 #, python-format
 msgid "Would you save the entered PIN %s persistent?"
 msgstr ""
@@ -11576,6 +11704,15 @@ msgid "Write failed!"
 msgstr "Skriuw flater!"
 
 msgid "Write to /tmp/positionersetup.log"
+msgstr ""
+
+msgid "YCbCr420"
+msgstr ""
+
+msgid "YCbCr422"
+msgstr ""
+
+msgid "YCbCr444"
 msgstr ""
 
 msgid "YES"
@@ -11639,16 +11776,6 @@ msgstr "Ja, no automatysk sykje"
 #
 msgid "Yes, do another manual scan now"
 msgstr "Ja, no nochris hânmatig sykje"
-
-#
-#, fuzzy
-msgid "Enabled, only from deep standby"
-msgstr "gean nei djip paraatstand"
-
-#
-#, fuzzy
-msgid "Enabled, only from standby"
-msgstr "gean nei paraatstand"
 
 #
 msgid "Yes, perform a shutdown now."
@@ -13189,11 +13316,6 @@ msgid "shut down"
 msgstr ""
 
 #
-#, fuzzy
-msgid "shutdown"
-msgstr "direkt útskeakelje"
-
-#
 msgid "simple"
 msgstr "simpel"
 
@@ -13240,11 +13362,6 @@ msgstr ""
 #
 msgid "standard"
 msgstr "standert"
-
-#
-#, fuzzy
-msgid "standby"
-msgstr "Paraatmode"
 
 #
 msgid "start cut here"
@@ -13598,6 +13715,11 @@ msgstr "knipt"
 
 #
 #, fuzzy
+#~ msgid "Install softcam support"
+#~ msgstr "Software oan it ynstallearjen..."
+
+#
+#, fuzzy
 #~ msgid "Location:"
 #~ msgstr "Doel"
 
@@ -13662,6 +13784,11 @@ msgstr "knipt"
 #~ msgstr "Alderlik tasjoch type"
 
 #
+#, fuzzy
+#~ msgid "Please wait (downloading softcam support)"
+#~ msgstr "Lyst wurd laden..."
+
+#
 #~ msgid "Reboot"
 #~ msgstr "kompleet nei starte"
 
@@ -13710,6 +13837,11 @@ msgstr "knipt"
 #
 #~ msgid "Single transponder"
 #~ msgstr "Ien transponder"
+
+#
+#, fuzzy
+#~ msgid "Sleep timer"
+#~ msgstr "Tiidstjoering"
 
 #
 #, fuzzy
@@ -13817,6 +13949,16 @@ msgstr "knipt"
 #
 #~ msgid "select movie"
 #~ msgstr "kies film"
+
+#
+#, fuzzy
+#~ msgid "shutdown"
+#~ msgstr "direkt útskeakelje"
+
+#
+#, fuzzy
+#~ msgid "standby"
+#~ msgstr "Paraatmode"
 
 #
 #, fuzzy
