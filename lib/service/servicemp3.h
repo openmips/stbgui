@@ -239,11 +239,12 @@ public:
 	{
 		audiotype_t audiotype;
 		containertype_t containertype;
-		bool is_audio;
-		bool is_video;
-		bool is_streaming;
+		gboolean is_audio;
+		gboolean is_video;
+		gboolean is_streaming;
+		gboolean is_hls;
 		sourceStream()
-			:audiotype(atUnknown), containertype(ctNone), is_audio(FALSE), is_video(FALSE), is_streaming(FALSE)
+			:audiotype(atUnknown), containertype(ctNone), is_audio(FALSE), is_video(FALSE), is_streaming(FALSE), is_hls(FALSE)
 		{
 		}
 	};
@@ -308,6 +309,7 @@ private:
 	bool m_subtitles_paused;
 	bool m_use_prefillbuffer;
 	bool m_paused;
+	bool m_first_paused;
 	/* cuesheet load check */
 	bool m_cuesheet_loaded;
 	/* servicemMP3 chapter TOC support CVR */
@@ -315,6 +317,7 @@ private:
 	bool m_use_chapter_entries;
 	/* last used seek position gst-1 only */
 	gint64 m_last_seek_pos;
+	gint64 m_media_lenght;
 	gint64 m_last_play_pos;
 #endif
 	bufferInfo m_bufferInfo;

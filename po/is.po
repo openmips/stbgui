@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-18 19:53+0100\n"
+"POT-Creation-Date: 2017-02-10 18:08+0100\n"
 "PO-Revision-Date: 2015-01-29 17:40+0200\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -329,6 +329,10 @@ msgstr[0] ""
 msgstr[1] ""
 
 #, python-format
+msgid "%d sec"
+msgstr ""
+
+#, python-format
 msgid "%d second"
 msgid_plural "%d seconds"
 msgstr[0] ""
@@ -467,6 +471,9 @@ msgstr "1.2"
 msgid "1024 MB"
 msgstr ""
 
+msgid "10bit"
+msgstr ""
+
 msgid "128 MB"
 msgstr ""
 
@@ -476,6 +483,9 @@ msgstr ""
 #
 msgid "12V output"
 msgstr "12V út"
+
+msgid "12bit"
+msgstr ""
 
 #
 msgid "13 V"
@@ -600,6 +610,9 @@ msgstr "7"
 #
 msgid "8"
 msgstr "8"
+
+msgid "8bit"
+msgstr ""
 
 #
 msgid "9"
@@ -1219,6 +1232,11 @@ msgstr ""
 
 msgid "Audio PID"
 msgstr "Hljóð PID"
+
+#
+#, fuzzy
+msgid "Audio channel"
+msgstr "næsta rás í sögu"
 
 msgid "Audio language selection 1"
 msgstr ""
@@ -1880,11 +1898,18 @@ msgstr "Lita kerfi"
 msgid "Color space"
 msgstr "Lita kerfi"
 
+msgid "Combo"
+msgstr ""
+
 msgid "Command execution..."
 msgstr "Keyrsla skipunar..."
 
 msgid "Command order"
 msgstr "Röðun skipana"
+
+#, fuzzy
+msgid "Commit info"
+msgstr "Samskipti"
 
 msgid "Common Interface"
 msgstr "Afruglara tengi"
@@ -1971,6 +1996,9 @@ msgstr "Aðgerð þegar mynd byrjar"
 #, fuzzy
 msgid "Configure if epg.dat should be saved at all."
 msgstr "Byrjunar hraði hraðspólunar áfram"
+
+msgid "Configure if service picons will be shown in display (when supported by the skin)."
+msgstr ""
 
 msgid "Configure if service picons will be shown in the channel selection list."
 msgstr ""
@@ -2378,6 +2406,9 @@ msgid "Create ISO"
 msgstr "Búa til DVD-ISO"
 
 msgid "Create new folder and exit"
+msgstr ""
+
+msgid "Create seperate radio userbouquet"
 msgstr ""
 
 #, python-format
@@ -2869,6 +2900,11 @@ msgstr ""
 msgid "Disabled"
 msgstr "Óvirkt"
 
+#
+#, fuzzy
+msgid "Disclaimer"
+msgstr "sýna upplýsingalínu"
+
 msgid "Disk space to reserve for recordings (in GB)"
 msgstr ""
 
@@ -3049,6 +3085,11 @@ msgstr "Viltu hlaða niður stýrikerfinu á %s ?"
 
 msgid "Do you want to reboot your receiver?"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Do you want to remove all the crahs logfiles"
+msgstr "Viltu taka út pakkann:\n"
 
 #
 msgid "Do you want to remove the package:\n"
@@ -3362,6 +3403,16 @@ msgstr "fara úr nafnaþjóns stillingum"
 msgid "Enabled"
 msgstr "Virkt"
 
+#
+#, fuzzy
+msgid "Enabled, only from deep standby"
+msgstr "fara í djúpsvefn"
+
+#
+#, fuzzy
+msgid "Enabled, only from standby"
+msgstr "fara í biðstöðu"
+
 msgid "Encrypted: "
 msgstr "Kóðun:"
 
@@ -3458,6 +3509,9 @@ msgid "Ethernet network interface"
 msgstr "Ethernet netkort"
 
 msgid "Event font size (relative to skin size)"
+msgstr ""
+
+msgid "Event name first"
 msgstr ""
 
 #
@@ -3660,21 +3714,28 @@ msgstr ""
 
 #
 #, fuzzy
-msgid "FBC Unicable"
-msgstr "Unicable LNB"
+msgid "FBC SCR (Unicable or JESS)"
+msgstr "Unicable"
 
-msgid "FBC automatic loop through"
-msgstr ""
+#, fuzzy
+msgid "FBC automatic"
+msgstr "Sjálfvirkt"
 
+#, fuzzy
 msgid ""
-"FBC automatic loop through\n"
-"inactive"
-msgstr ""
+"FBC automatic\n"
+"connected to"
+msgstr "Tengd við"
 
 #, python-format
 msgid ""
-"FBC automatic loop through\n"
-"linked to %s"
+"FBC automatic\n"
+"connected to %s"
+msgstr ""
+
+msgid ""
+"FBC automatic\n"
+"inactive"
 msgstr ""
 
 #
@@ -3984,6 +4045,15 @@ msgstr ""
 #
 #, fuzzy
 msgid ""
+"GUI needs a restart to apply a new language\n"
+"Do you want to restart the GUI now?"
+msgstr ""
+"Gluggakerfi þarf að endurræsa til að virkja nýtt skinn\n"
+"Viltu endurræsa gluggakerfi núna?"
+
+#
+#, fuzzy
+msgid ""
 "GUI needs a restart to apply a new skin\n"
 "Do you want to Restart the GUI now?"
 msgstr ""
@@ -4076,6 +4146,9 @@ msgstr "Til  baka á síðustu rás"
 msgid "Go up the list"
 msgstr ""
 
+msgid "Gold"
+msgstr ""
+
 msgid "Goto"
 msgstr ""
 
@@ -4162,6 +4235,10 @@ msgstr ""
 
 msgid "HDMI"
 msgstr ""
+
+#, fuzzy
+msgid "HDMI Colordepth"
+msgstr "Lita kerfi"
 
 #, fuzzy
 msgid "HDMI Colorimetry"
@@ -4520,6 +4597,14 @@ msgstr ""
 msgid "Input"
 msgstr "Inntak"
 
+#
+#, fuzzy
+msgid "Input "
+msgstr "Inntak"
+
+msgid "Input Stream ID"
+msgstr ""
+
 msgid "Input device setup"
 msgstr "Inntaks tækja uppsetning"
 
@@ -4566,10 +4651,6 @@ msgstr ""
 #, fuzzy
 msgid "Install plugins"
 msgstr "Set inn"
-
-#, fuzzy
-msgid "Install softcam support"
-msgstr "Set inn hugbúnað..."
 
 #
 #, fuzzy
@@ -5016,6 +5097,9 @@ msgstr "Lás:"
 msgid "Log results to /tmp"
 msgstr "Skýrslur á harðadisk"
 
+msgid "Logfile does not exist anymore"
+msgstr ""
+
 #
 #, fuzzy
 msgid "Logs location"
@@ -5367,6 +5451,11 @@ msgstr ""
 #, fuzzy
 msgid "Move PiP to main picture"
 msgstr "nota mynd glugga sem aðal mynd"
+
+#
+#, fuzzy
+msgid "Move Picture in Picture"
+msgstr "Virkja Mynd í Mynd"
 
 #
 msgid "Move east"
@@ -6171,6 +6260,14 @@ msgstr ""
 msgid "PLP ID"
 msgstr ""
 
+msgid "PLS Code"
+msgstr ""
+
+#
+#, fuzzy
+msgid "PLS Mode"
+msgstr "Hamur"
+
 msgid "PMT PID"
 msgstr "PMT PID"
 
@@ -6611,10 +6708,6 @@ msgstr ""
 msgid "Please wait (downloading channel list)"
 msgstr "Vinsamlega bíðið.. les inn lista..."
 
-#, fuzzy
-msgid "Please wait (downloading softcam support)"
-msgstr "Vinsamlega bíðið.. les inn lista..."
-
 #
 #, fuzzy
 msgid "Please wait (updating packages)"
@@ -6759,6 +6852,9 @@ msgstr "Uppsetning mótors"
 #, fuzzy
 msgid "Positioner setup log"
 msgstr "Uppsetning mótors"
+
+msgid "Power on display"
+msgstr ""
 
 #
 msgid "Power threshold in mA"
@@ -7341,6 +7437,11 @@ msgstr "taka út nafnaþjón"
 
 #
 #, fuzzy
+msgid "Remove all logfiles"
+msgstr "taka út alla valkosti"
+
+#
+#, fuzzy
 msgid "Remove bookmark"
 msgstr "eyða bókamerki"
 
@@ -7359,6 +7460,11 @@ msgstr "Taka út íforrit"
 
 msgid "Remove texts for the hearing impaired from external subtitles (instrumental music or environmental sounds, e.g., when a doorbell rings or a gun shot is heard)."
 msgstr ""
+
+#
+#, fuzzy
+msgid "Remove this logfile"
+msgstr "Taka út titil"
 
 #
 msgid "Remove timer"
@@ -7594,6 +7700,9 @@ msgid "Roll-off"
 msgstr ""
 
 msgid "Romanian"
+msgstr ""
+
+msgid "Root"
 msgstr ""
 
 msgid "Root directory"
@@ -8570,6 +8679,11 @@ msgstr "Veldu upphafs slóð til að breyta."
 
 #
 #, fuzzy
+msgid "Show menu numbers"
+msgstr "Síma númer"
+
+#
+#, fuzzy
 msgid "Show menu paths"
 msgstr "sýna merkja valmynd"
 
@@ -8604,6 +8718,9 @@ msgstr "Listi uppfærðra pakka"
 #, fuzzy
 msgid "Show picons in channel selection list"
 msgstr "Sýna framvindu atriðis við rásaval"
+
+msgid "Show picons in display"
+msgstr ""
 
 #
 msgid "Show positioner movement"
@@ -8825,16 +8942,8 @@ msgstr ""
 
 #
 #, fuzzy
-msgid "Sleep timer"
-msgstr "Tímastilling"
-
-#
-#, fuzzy
 msgid "Sleep/wakeup timer"
 msgstr "Tímastilling"
-
-msgid "SleepTimer Configuration"
-msgstr ""
 
 msgid "Sleeptimer"
 msgstr ""
@@ -8937,6 +9046,9 @@ msgstr "Hugbúnaðar uppfærsla"
 
 msgid "Softwaremanager information"
 msgstr "Upplýsingar hugbúnaðar umsýslu"
+
+msgid "Some error occured - Please try later"
+msgstr ""
 
 msgid "Some plugins are not available:\n"
 msgstr "Sum íforrit eru ekki til:\n"
@@ -9712,6 +9824,12 @@ msgstr "Afritun mistókst. Veldu annan stað fyrir afritið."
 
 #, python-format
 msgid ""
+"The current software might not be stable.\n"
+"For more information see %s."
+msgstr ""
+
+#, python-format
+msgid ""
 "The directory %s is not writable.\n"
 "Make sure you select a writable directory instead."
 msgstr ""
@@ -9797,6 +9915,10 @@ msgid ""
 msgstr ""
 "Hugbúnaðar umsýslu viðbót er ekki innsett!\n"
 "Vinsamlega settu það inn."
+
+#, python-format
+msgid "The status of the current software could not be checked because %s can not be reached."
+msgstr ""
 
 msgid "The stored EPG data will be read every (hours)"
 msgstr ""
@@ -9932,6 +10054,9 @@ msgstr ""
 msgid "This option allows to set the level of dynamic contrast of the picture."
 msgstr ""
 
+msgid "This option allows you can config the Colordepth for UHD"
+msgstr ""
+
 msgid "This option allows you can config the Colorimetry for HDR"
 msgstr ""
 
@@ -9950,7 +10075,13 @@ msgstr ""
 msgid "This option allows you to hide and sort menu entries. When selecting user you can change order and hide menu items via the blue button"
 msgstr ""
 
+msgid "This option allows you to power off the display."
+msgstr ""
+
 msgid "This option allows you to set the Colorspace of HDMI from Auto to RGB"
+msgstr ""
+
+msgid "This option allows you to show menu number quick links."
 msgstr ""
 
 msgid "This option allows you to show menu paths."
@@ -10318,6 +10449,9 @@ msgstr ""
 #
 msgid "Tries left:"
 msgstr "Tilraunir eftir:"
+
+msgid "Troubleshoot"
+msgstr ""
 
 #
 msgid "Try to find used transponders in cable network.. please wait..."
@@ -11387,14 +11521,6 @@ msgstr ""
 msgid "Wizard to arrange the overscan"
 msgstr ""
 
-msgid ""
-"Would you like to be able to install softcams?\n"
-"\n"
-"Attention - Country specific illegal!\n"
-"\n"
-"Check legality for your specific country in advance!"
-msgstr ""
-
 #, python-format
 msgid "Would you save the entered PIN %s persistent?"
 msgstr ""
@@ -11408,6 +11534,15 @@ msgid "Write failed!"
 msgstr "Tókst ekki að skrifa!"
 
 msgid "Write to /tmp/positionersetup.log"
+msgstr ""
+
+msgid "YCbCr420"
+msgstr ""
+
+msgid "YCbCr422"
+msgstr ""
+
+msgid "YCbCr444"
 msgstr ""
 
 msgid "YES"
@@ -11470,16 +11605,6 @@ msgstr "Já, leita sjálfvirkt núna"
 #
 msgid "Yes, do another manual scan now"
 msgstr "Já, leitaðu aftur handvirkt núna"
-
-#
-#, fuzzy
-msgid "Enabled, only from deep standby"
-msgstr "fara í djúpsvefn"
-
-#
-#, fuzzy
-msgid "Enabled, only from standby"
-msgstr "fara í biðstöðu"
 
 #
 msgid "Yes, perform a shutdown now."
@@ -13022,10 +13147,6 @@ msgstr ""
 msgid "shut down"
 msgstr "slökkva"
 
-#, fuzzy
-msgid "shutdown"
-msgstr "slökkva"
-
 #
 msgid "simple"
 msgstr "einfalt"
@@ -13074,11 +13195,6 @@ msgstr ""
 #
 msgid "standard"
 msgstr "venjulegt"
-
-#
-#, fuzzy
-msgid "standby"
-msgstr "Biðstaða"
 
 msgid "start cut here"
 msgstr "byrja klippingu hér"
@@ -13440,6 +13556,11 @@ msgstr "stokkið"
 
 #
 #, fuzzy
+#~ msgid "FBC Unicable"
+#~ msgstr "Unicable LNB"
+
+#
+#, fuzzy
 #~ msgid "FP Upgrade"
 #~ msgstr "Uppfæri"
 
@@ -13473,6 +13594,10 @@ msgstr "stokkið"
 #, fuzzy
 #~ msgid "Immediate shutdown"
 #~ msgstr "slökkva strax"
+
+#, fuzzy
+#~ msgid "Install softcam support"
+#~ msgstr "Set inn hugbúnað..."
 
 #, fuzzy
 #~ msgid "List EPG functions..."
@@ -13559,15 +13684,15 @@ msgstr "stokkið"
 #~ msgstr "Aðgangsorð"
 
 #
-#~ msgid "Phone number"
-#~ msgstr "Síma númer"
-
-#
 #~ msgid "Please check your network settings!"
 #~ msgstr "Vinsamlega athugaðu stillingar netkerfis!"
 
 #~ msgid "Please select an NFI file and press green key to flash!"
 #~ msgstr "Vinsamlega veldu NFI stýrikerfi og ýttu á græna takkann til að setja inn!"
+
+#, fuzzy
+#~ msgid "Please wait (downloading softcam support)"
+#~ msgstr "Vinsamlega bíðið.. les inn lista..."
 
 #~ msgid "Prepare another USB stick for image flashing"
 #~ msgstr "Undirbúa annan USB staut fyrir stýrikerfis forritun"
@@ -13637,6 +13762,11 @@ msgstr "stokkið"
 #
 #~ msgid "Single transponder"
 #~ msgstr "Einn sendir"
+
+#
+#, fuzzy
+#~ msgid "Sleep timer"
+#~ msgstr "Tímastilling"
 
 #, fuzzy
 #~ msgid "Standby fan %d PWM"
@@ -13782,8 +13912,17 @@ msgstr "stokkið"
 #~ msgid "service PIN"
 #~ msgstr "rása PIN"
 
+#, fuzzy
+#~ msgid "shutdown"
+#~ msgstr "slökkva"
+
 #~ msgid "special characters"
 #~ msgstr "sérstafir"
+
+#
+#, fuzzy
+#~ msgid "standby"
+#~ msgstr "Biðstaða"
 
 #~ msgid "tuner is not supported"
 #~ msgstr "móttakari er ekki studdur"

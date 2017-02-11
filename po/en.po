@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-18 19:53+0100\n"
+"POT-Creation-Date: 2017-02-10 18:08+0100\n"
 "PO-Revision-Date: 2015-01-29 18:01+0100\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -286,6 +286,10 @@ msgstr[0] ""
 msgstr[1] ""
 
 #, python-format
+msgid "%d sec"
+msgstr ""
+
+#, python-format
 msgid "%d second"
 msgid_plural "%d seconds"
 msgstr[0] ""
@@ -403,6 +407,9 @@ msgstr ""
 msgid "1024 MB"
 msgstr ""
 
+msgid "10bit"
+msgstr ""
+
 msgid "128 MB"
 msgstr ""
 
@@ -410,6 +417,9 @@ msgid "128 MB (recommended for this chipset)"
 msgstr ""
 
 msgid "12V output"
+msgstr ""
+
+msgid "12bit"
 msgstr ""
 
 msgid "13 V"
@@ -512,6 +522,9 @@ msgid "7"
 msgstr ""
 
 msgid "8"
+msgstr ""
+
+msgid "8bit"
 msgstr ""
 
 msgid "9"
@@ -1002,6 +1015,9 @@ msgid "Audio Auto Volume Level"
 msgstr ""
 
 msgid "Audio PID"
+msgstr ""
+
+msgid "Audio channel"
 msgstr ""
 
 msgid "Audio language selection 1"
@@ -1606,10 +1622,16 @@ msgstr ""
 msgid "Color space"
 msgstr ""
 
+msgid "Combo"
+msgstr ""
+
 msgid "Command execution..."
 msgstr ""
 
 msgid "Command order"
+msgstr ""
+
+msgid "Commit info"
 msgstr ""
 
 msgid "Common Interface"
@@ -1686,6 +1708,9 @@ msgid "Configure if behind the subtitles a background is shown."
 msgstr ""
 
 msgid "Configure if epg.dat should be saved at all."
+msgstr ""
+
+msgid "Configure if service picons will be shown in display (when supported by the skin)."
 msgstr ""
 
 msgid "Configure if service picons will be shown in the channel selection list."
@@ -2057,6 +2082,9 @@ msgid "Create ISO"
 msgstr ""
 
 msgid "Create new folder and exit"
+msgstr ""
+
+msgid "Create seperate radio userbouquet"
 msgstr ""
 
 #, python-format
@@ -2469,6 +2497,9 @@ msgstr ""
 msgid "Disabled"
 msgstr ""
 
+msgid "Disclaimer"
+msgstr ""
+
 msgid "Disk space to reserve for recordings (in GB)"
 msgstr ""
 
@@ -2605,6 +2636,9 @@ msgid "Do you want to reboot your Receiver?"
 msgstr ""
 
 msgid "Do you want to reboot your receiver?"
+msgstr ""
+
+msgid "Do you want to remove all the crahs logfiles"
 msgstr ""
 
 msgid "Do you want to remove the package:\n"
@@ -2873,6 +2907,12 @@ msgstr ""
 msgid "Enabled"
 msgstr ""
 
+msgid "Enabled, only from deep standby"
+msgstr ""
+
+msgid "Enabled, only from standby"
+msgstr ""
+
 msgid "Encrypted: "
 msgstr ""
 
@@ -2955,6 +2995,9 @@ msgid "Ethernet network interface"
 msgstr ""
 
 msgid "Event font size (relative to skin size)"
+msgstr ""
+
+msgid "Event name first"
 msgstr ""
 
 msgid "Event view"
@@ -3111,21 +3154,26 @@ msgstr ""
 msgid "F1/F3"
 msgstr ""
 
-msgid "FBC Unicable"
+msgid "FBC SCR (Unicable or JESS)"
 msgstr ""
 
-msgid "FBC automatic loop through"
+msgid "FBC automatic"
 msgstr ""
 
 msgid ""
-"FBC automatic loop through\n"
-"inactive"
+"FBC automatic\n"
+"connected to"
 msgstr ""
 
 #, python-format
 msgid ""
-"FBC automatic loop through\n"
-"linked to %s"
+"FBC automatic\n"
+"connected to %s"
+msgstr ""
+
+msgid ""
+"FBC automatic\n"
+"inactive"
 msgstr ""
 
 msgid "FEC"
@@ -3389,6 +3437,11 @@ msgid "GUI Build: "
 msgstr ""
 
 msgid ""
+"GUI needs a restart to apply a new language\n"
+"Do you want to restart the GUI now?"
+msgstr ""
+
+msgid ""
 "GUI needs a restart to apply a new skin\n"
 "Do you want to Restart the GUI now?"
 msgstr ""
@@ -3453,6 +3506,9 @@ msgid "Go to previous page of service"
 msgstr ""
 
 msgid "Go up the list"
+msgstr ""
+
+msgid "Gold"
 msgstr ""
 
 msgid "Goto"
@@ -3533,6 +3589,9 @@ msgid ""
 msgstr ""
 
 msgid "HDMI"
+msgstr ""
+
+msgid "HDMI Colordepth"
 msgstr ""
 
 msgid "HDMI Colorimetry"
@@ -3822,6 +3881,12 @@ msgstr ""
 msgid "Input"
 msgstr ""
 
+msgid "Input "
+msgstr ""
+
+msgid "Input Stream ID"
+msgstr ""
+
 msgid "Input device setup"
 msgstr ""
 
@@ -3859,9 +3924,6 @@ msgid "Install picons on"
 msgstr ""
 
 msgid "Install plugins"
-msgstr ""
-
-msgid "Install softcam support"
 msgstr ""
 
 msgid "Installation has completed."
@@ -4207,6 +4269,9 @@ msgstr ""
 msgid "Log results to /tmp"
 msgstr ""
 
+msgid "Logfile does not exist anymore"
+msgstr ""
+
 msgid "Logs location"
 msgstr ""
 
@@ -4490,6 +4555,9 @@ msgid "Move PIP"
 msgstr ""
 
 msgid "Move PiP to main picture"
+msgstr ""
+
+msgid "Move Picture in Picture"
 msgstr ""
 
 msgid "Move east"
@@ -5136,6 +5204,12 @@ msgstr ""
 msgid "PLP ID"
 msgstr ""
 
+msgid "PLS Code"
+msgstr ""
+
+msgid "PLS Mode"
+msgstr ""
+
 msgid "PMT PID"
 msgstr ""
 
@@ -5457,9 +5531,6 @@ msgstr ""
 msgid "Please wait (downloading channel list)"
 msgstr ""
 
-msgid "Please wait (downloading softcam support)"
-msgstr ""
-
 msgid "Please wait (updating packages)"
 msgstr ""
 
@@ -5575,6 +5646,9 @@ msgid "Positioner setup"
 msgstr "Positioner setup"
 
 msgid "Positioner setup log"
+msgstr ""
+
+msgid "Power on display"
 msgstr ""
 
 msgid "Power threshold in mA"
@@ -6027,6 +6101,9 @@ msgstr ""
 msgid "Remove a nameserver entry"
 msgstr ""
 
+msgid "Remove all logfiles"
+msgstr ""
+
 msgid "Remove bookmark"
 msgstr ""
 
@@ -6043,6 +6120,9 @@ msgid "Remove plugins"
 msgstr ""
 
 msgid "Remove texts for the hearing impaired from external subtitles (instrumental music or environmental sounds, e.g., when a doorbell rings or a gun shot is heard)."
+msgstr ""
+
+msgid "Remove this logfile"
 msgstr ""
 
 msgid "Remove timer"
@@ -6232,6 +6312,9 @@ msgid "Roll-off"
 msgstr ""
 
 msgid "Romanian"
+msgstr ""
+
+msgid "Root"
 msgstr ""
 
 msgid "Root directory"
@@ -6989,6 +7072,9 @@ msgstr ""
 msgid "Show latest upgrade log"
 msgstr ""
 
+msgid "Show menu numbers"
+msgstr ""
+
 msgid "Show menu paths"
 msgstr ""
 
@@ -7014,6 +7100,9 @@ msgid "Show packages to be upgraded"
 msgstr ""
 
 msgid "Show picons in channel selection list"
+msgstr ""
+
+msgid "Show picons in display"
 msgstr ""
 
 msgid "Show positioner movement"
@@ -7185,13 +7274,7 @@ msgstr ""
 msgid "Skip internet connection check (disables automatic package installation)"
 msgstr ""
 
-msgid "Sleep timer"
-msgstr ""
-
 msgid "Sleep/wakeup timer"
-msgstr ""
-
-msgid "SleepTimer Configuration"
 msgstr ""
 
 msgid "Sleeptimer"
@@ -7274,6 +7357,9 @@ msgid "Software update"
 msgstr ""
 
 msgid "Softwaremanager information"
+msgstr ""
+
+msgid "Some error occured - Please try later"
 msgstr ""
 
 msgid "Some plugins are not available:\n"
@@ -7876,6 +7962,12 @@ msgstr ""
 
 #, python-format
 msgid ""
+"The current software might not be stable.\n"
+"For more information see %s."
+msgstr ""
+
+#, python-format
+msgid ""
 "The directory %s is not writable.\n"
 "Make sure you select a writable directory instead."
 msgstr ""
@@ -7946,6 +8038,10 @@ msgstr ""
 msgid ""
 "The software management extension is not installed!\n"
 "Please install it."
+msgstr ""
+
+#, python-format
+msgid "The status of the current software could not be checked because %s can not be reached."
 msgstr ""
 
 msgid "The stored EPG data will be read every (hours)"
@@ -8066,6 +8162,9 @@ msgstr ""
 msgid "This option allows to set the level of dynamic contrast of the picture."
 msgstr ""
 
+msgid "This option allows you can config the Colordepth for UHD"
+msgstr ""
+
 msgid "This option allows you can config the Colorimetry for HDR"
 msgstr ""
 
@@ -8084,7 +8183,13 @@ msgstr ""
 msgid "This option allows you to hide and sort menu entries. When selecting user you can change order and hide menu items via the blue button"
 msgstr ""
 
+msgid "This option allows you to power off the display."
+msgstr ""
+
 msgid "This option allows you to set the Colorspace of HDMI from Auto to RGB"
+msgstr ""
+
+msgid "This option allows you to show menu number quick links."
 msgstr ""
 
 msgid "This option allows you to show menu paths."
@@ -8374,6 +8479,9 @@ msgid "Trash can"
 msgstr ""
 
 msgid "Tries left:"
+msgstr ""
+
+msgid "Troubleshoot"
 msgstr ""
 
 msgid "Try to find used transponders in cable network.. please wait..."
@@ -9258,14 +9366,6 @@ msgstr ""
 msgid "Wizard to arrange the overscan"
 msgstr ""
 
-msgid ""
-"Would you like to be able to install softcams?\n"
-"\n"
-"Attention - Country specific illegal!\n"
-"\n"
-"Check legality for your specific country in advance!"
-msgstr ""
-
 #, python-format
 msgid "Would you save the entered PIN %s persistent?"
 msgstr ""
@@ -9277,6 +9377,15 @@ msgid "Write failed!"
 msgstr ""
 
 msgid "Write to /tmp/positionersetup.log"
+msgstr ""
+
+msgid "YCbCr420"
+msgstr ""
+
+msgid "YCbCr422"
+msgstr ""
+
+msgid "YCbCr444"
 msgstr ""
 
 msgid "YES"
@@ -9328,12 +9437,6 @@ msgid "Yes, do an automatic scan now"
 msgstr ""
 
 msgid "Yes, do another manual scan now"
-msgstr ""
-
-msgid "Enabled, only from deep standby"
-msgstr ""
-
-msgid "Enabled, only from standby"
 msgstr ""
 
 msgid "Yes, perform a shutdown now."
@@ -10632,9 +10735,6 @@ msgstr ""
 msgid "shut down"
 msgstr ""
 
-msgid "shutdown"
-msgstr ""
-
 msgid "simple"
 msgstr ""
 
@@ -10675,9 +10775,6 @@ msgid "sports magazine"
 msgstr ""
 
 msgid "standard"
-msgstr ""
-
-msgid "standby"
 msgstr ""
 
 msgid "start cut here"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-18 19:53+0100\n"
+"POT-Creation-Date: 2017-02-10 18:08+0100\n"
 "PO-Revision-Date: 2015-01-29 17:40+0200\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -341,6 +341,10 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
+#, fuzzy, python-format
+msgid "%d sec"
+msgstr "%d секунда"
+
 #, python-format
 msgid "%d second"
 msgid_plural "%d seconds"
@@ -467,6 +471,9 @@ msgstr "1.2"
 msgid "1024 MB"
 msgstr ""
 
+msgid "10bit"
+msgstr ""
+
 msgid "128 MB"
 msgstr ""
 
@@ -475,6 +482,9 @@ msgstr ""
 
 msgid "12V output"
 msgstr "12V выход"
+
+msgid "12bit"
+msgstr ""
 
 msgid "13 V"
 msgstr "13 V"
@@ -579,6 +589,9 @@ msgstr "7"
 
 msgid "8"
 msgstr "8"
+
+msgid "8bit"
+msgstr ""
 
 msgid "9"
 msgstr "9"
@@ -1131,6 +1144,10 @@ msgstr ""
 
 msgid "Audio PID"
 msgstr "Аудио PID"
+
+#, fuzzy
+msgid "Audio channel"
+msgstr "Инсталлировать список каналов"
 
 msgid "Audio language selection 1"
 msgstr "Выбор языка аудио 1"
@@ -1771,11 +1788,18 @@ msgstr "Формат цвета"
 msgid "Color space"
 msgstr "Формат цвета"
 
+msgid "Combo"
+msgstr ""
+
 msgid "Command execution..."
 msgstr "Выполнение команды..."
 
 msgid "Command order"
 msgstr "Последовательность команд"
+
+#, fuzzy
+msgid "Commit info"
+msgstr "Связь"
 
 msgid "Common Interface"
 msgstr "Интерфейс модулей"
@@ -1857,6 +1881,10 @@ msgstr "Настройка для показа иконок типа серви�
 #, fuzzy
 msgid "Configure if epg.dat should be saved at all."
 msgstr "Укажите, какой разъем видеовыхода будет использован."
+
+#, fuzzy
+msgid "Configure if service picons will be shown in display (when supported by the skin)."
+msgstr "Показать информацию о декодировании на инфобаре (если это поддерживается скином)."
 
 msgid "Configure if service picons will be shown in the channel selection list."
 msgstr ""
@@ -2241,6 +2269,9 @@ msgid "Create ISO"
 msgstr "Создать DVD-ISO"
 
 msgid "Create new folder and exit"
+msgstr ""
+
+msgid "Create seperate radio userbouquet"
 msgstr ""
 
 #, python-format
@@ -2674,6 +2705,10 @@ msgstr ""
 msgid "Disabled"
 msgstr "Отключен"
 
+#, fuzzy
+msgid "Disclaimer"
+msgstr "Запустить хранитель экрана через"
+
 msgid "Disk space to reserve for recordings (in GB)"
 msgstr "Резервировать место на диске для записей (в GB)"
 
@@ -2831,6 +2866,10 @@ msgstr "Вы хотите перезагрузить ваш ресивер?"
 
 msgid "Do you want to reboot your receiver?"
 msgstr "Вы хотите перезагрузить ваш ресивер?"
+
+#, fuzzy
+msgid "Do you want to remove all the crahs logfiles"
+msgstr "Вы хотите удалить пакет:\n"
 
 msgid "Do you want to remove the package:\n"
 msgstr "Вы хотите удалить пакет:\n"
@@ -3112,6 +3151,14 @@ msgstr "Редактировать сервер DNS вашего ресивер�
 msgid "Enabled"
 msgstr "Включен"
 
+#, fuzzy
+msgid "Enabled, only from deep standby"
+msgstr "перейти в глубокий режим ожидания"
+
+#, fuzzy
+msgid "Enabled, only from standby"
+msgstr "перейти в режим ожидания"
+
 msgid "Encrypted: "
 msgstr "Шифрование:"
 
@@ -3198,6 +3245,9 @@ msgstr "Интернет сетевой интерфейс"
 
 msgid "Event font size (relative to skin size)"
 msgstr "Размер шрифта событий (по отношению к скину)"
+
+msgid "Event name first"
+msgstr ""
 
 msgid "Event view"
 msgstr "Обзор события"
@@ -3370,21 +3420,28 @@ msgid "F1/F3"
 msgstr ""
 
 #, fuzzy
-msgid "FBC Unicable"
-msgstr "Unicable LNB"
+msgid "FBC SCR (Unicable or JESS)"
+msgstr "Unicable"
 
-msgid "FBC automatic loop through"
-msgstr ""
+#, fuzzy
+msgid "FBC automatic"
+msgstr "автоматически"
 
+#, fuzzy
 msgid ""
-"FBC automatic loop through\n"
-"inactive"
-msgstr ""
+"FBC automatic\n"
+"connected to"
+msgstr "Подключено к"
 
 #, python-format
 msgid ""
-"FBC automatic loop through\n"
-"linked to %s"
+"FBC automatic\n"
+"connected to %s"
+msgstr ""
+
+msgid ""
+"FBC automatic\n"
+"inactive"
 msgstr ""
 
 msgid "FEC"
@@ -3661,6 +3718,14 @@ msgstr ""
 
 #, fuzzy
 msgid ""
+"GUI needs a restart to apply a new language\n"
+"Do you want to restart the GUI now?"
+msgstr ""
+"Для активации нового скина необходим рестарт GUI.\n"
+"Вы хотите сделать это сейчас?"
+
+#, fuzzy
+msgid ""
 "GUI needs a restart to apply a new skin\n"
 "Do you want to Restart the GUI now?"
 msgstr ""
@@ -3731,6 +3796,9 @@ msgstr "Перейти на пред. страницу сервисов"
 
 msgid "Go up the list"
 msgstr "перейти в конец списка"
+
+msgid "Gold"
+msgstr ""
 
 msgid "Goto"
 msgstr "Переход"
@@ -3813,6 +3881,10 @@ msgstr ""
 
 msgid "HDMI"
 msgstr ""
+
+#, fuzzy
+msgid "HDMI Colordepth"
+msgstr "Формат цвета"
 
 #, fuzzy
 msgid "HDMI Colorimetry"
@@ -4129,6 +4201,13 @@ msgstr "Инициализация жесткого диска..."
 msgid "Input"
 msgstr "Вход"
 
+#, fuzzy
+msgid "Input "
+msgstr "Вход"
+
+msgid "Input Stream ID"
+msgstr ""
+
 msgid "Input device setup"
 msgstr "Настройки устройства ввода"
 
@@ -4169,10 +4248,6 @@ msgstr "Установка пиконов в"
 #, fuzzy
 msgid "Install plugins"
 msgstr "Установка пиконов в"
-
-#, fuzzy
-msgid "Install softcam support"
-msgstr "Инсталляция пакетов..."
 
 msgid "Installation has completed."
 msgstr "Инсталляция завершена."
@@ -4533,6 +4608,9 @@ msgstr "Захват:"
 msgid "Log results to /tmp"
 msgstr "Записывать журнал на диск"
 
+msgid "Logfile does not exist anymore"
+msgstr ""
+
 #, fuzzy
 msgid "Logs location"
 msgstr "Расположение"
@@ -4832,6 +4910,10 @@ msgstr "Перемещение"
 
 msgid "Move PiP to main picture"
 msgstr "Переместить PiP на основной экран"
+
+#, fuzzy
+msgid "Move Picture in Picture"
+msgstr "Включить картинку в картинке"
 
 msgid "Move east"
 msgstr "Перемещение на восток"
@@ -5530,6 +5612,13 @@ msgstr ""
 msgid "PLP ID"
 msgstr ""
 
+msgid "PLS Code"
+msgstr ""
+
+#, fuzzy
+msgid "PLS Mode"
+msgstr "Режим"
+
 msgid "PMT PID"
 msgstr "РМТ PID"
 
@@ -5888,10 +5977,6 @@ msgstr ""
 msgid "Please wait (downloading channel list)"
 msgstr "Подождите (загружается список каналов)"
 
-#, fuzzy
-msgid "Please wait (downloading softcam support)"
-msgstr "Подождите (загружается список каналов)"
-
 msgid "Please wait (updating packages)"
 msgstr "Подождите (обновляем пакеты)"
 
@@ -6014,6 +6099,9 @@ msgstr "Настройка позиционера"
 #, fuzzy
 msgid "Positioner setup log"
 msgstr "Настройка позиционера"
+
+msgid "Power on display"
+msgstr ""
 
 msgid "Power threshold in mA"
 msgstr "Порог тока в mA"
@@ -6507,6 +6595,10 @@ msgstr "Удалить метку"
 msgid "Remove a nameserver entry"
 msgstr "удалить данные DNS"
 
+#, fuzzy
+msgid "Remove all logfiles"
+msgstr "удалить все альтернативы"
+
 msgid "Remove bookmark"
 msgstr "удалить закладку"
 
@@ -6524,6 +6616,10 @@ msgstr "Удаление плагинов"
 
 msgid "Remove texts for the hearing impaired from external subtitles (instrumental music or environmental sounds, e.g., when a doorbell rings or a gun shot is heard)."
 msgstr ""
+
+#, fuzzy
+msgid "Remove this logfile"
+msgstr "Удалить описание"
 
 msgid "Remove timer"
 msgstr "Удалить таймер"
@@ -6722,6 +6818,9 @@ msgstr "Roll-off фактор"
 
 msgid "Romanian"
 msgstr "Румынский"
+
+msgid "Root"
+msgstr ""
 
 msgid "Root directory"
 msgstr "Корневой каталог"
@@ -7538,6 +7637,10 @@ msgid "Show latest upgrade log"
 msgstr "Последнее обновление: "
 
 #, fuzzy
+msgid "Show menu numbers"
+msgstr "Номер набора"
+
+#, fuzzy
 msgid "Show menu paths"
 msgstr "показать меню тегов"
 
@@ -7567,6 +7670,10 @@ msgstr "Список пакетов обновления"
 #, fuzzy
 msgid "Show picons in channel selection list"
 msgstr "Вид прогресса события в селекторе каналов"
+
+#, fuzzy
+msgid "Show picons in display"
+msgstr "Показать пиконы в списке сервисов"
 
 msgid "Show positioner movement"
 msgstr "Показать движение позиционера"
@@ -7753,15 +7860,9 @@ msgstr "Пропускать пустые сервисы"
 msgid "Skip internet connection check (disables automatic package installation)"
 msgstr "Пропустить проверку интернет соединения (отключает автоматическую установку пакетов)"
 
-msgid "Sleep timer"
-msgstr "Таймер сна"
-
 #, fuzzy
 msgid "Sleep/wakeup timer"
 msgstr "Таймер сна"
-
-msgid "SleepTimer Configuration"
-msgstr "Настройки таймера сна"
 
 msgid "Sleeptimer"
 msgstr "Таймер сна"
@@ -7847,6 +7948,9 @@ msgstr "Обновление софта"
 
 msgid "Softwaremanager information"
 msgstr "Информация менеджера софта"
+
+msgid "Some error occured - Please try later"
+msgstr ""
 
 msgid "Some plugins are not available:\n"
 msgstr "Некоторые плагины недоступны:\n"
@@ -8500,6 +8604,12 @@ msgstr ""
 msgid "The backup failed. Please choose a different backup location."
 msgstr "Сохранение не выполнено. Выберите другое место ресположения. "
 
+#, fuzzy, python-format
+msgid ""
+"The current software might not be stable.\n"
+"For more information see %s."
+msgstr "Текущая бета версия может быть не стабильна"
+
 #, python-format
 msgid ""
 "The directory %s is not writable.\n"
@@ -8579,6 +8689,10 @@ msgid ""
 msgstr ""
 "Плагин Witeless LAN не установлен!\n"
 "Пожалуйста, установите его."
+
+#, fuzzy, python-format
+msgid "The status of the current software could not be checked because %s can not be reached."
+msgstr "Статус текущей бета версии не может быть проверен,одна из причин,www.pli-images.org не отвечает"
 
 msgid "The stored EPG data will be read every (hours)"
 msgstr ""
@@ -8707,6 +8821,9 @@ msgstr ""
 msgid "This option allows to set the level of dynamic contrast of the picture."
 msgstr ""
 
+msgid "This option allows you can config the Colordepth for UHD"
+msgstr ""
+
 msgid "This option allows you can config the Colorimetry for HDR"
 msgstr ""
 
@@ -8725,7 +8842,13 @@ msgstr ""
 msgid "This option allows you to hide and sort menu entries. When selecting user you can change order and hide menu items via the blue button"
 msgstr ""
 
+msgid "This option allows you to power off the display."
+msgstr ""
+
 msgid "This option allows you to set the Colorspace of HDMI from Auto to RGB"
+msgstr ""
+
+msgid "This option allows you to show menu number quick links."
 msgstr ""
 
 msgid "This option allows you to show menu paths."
@@ -9047,6 +9170,9 @@ msgstr "Корзина"
 
 msgid "Tries left:"
 msgstr "Осталось попыток:"
+
+msgid "Troubleshoot"
+msgstr ""
 
 msgid "Try to find used transponders in cable network.. please wait..."
 msgstr "Пытаемся найти транспондеры, используемые в кабельной сети .. Пожалуйста, подождите ..."
@@ -10004,14 +10130,6 @@ msgstr "без сообщения"
 msgid "Wizard to arrange the overscan"
 msgstr ""
 
-msgid ""
-"Would you like to be able to install softcams?\n"
-"\n"
-"Attention - Country specific illegal!\n"
-"\n"
-"Check legality for your specific country in advance!"
-msgstr ""
-
 #, python-format
 msgid "Would you save the entered PIN %s persistent?"
 msgstr ""
@@ -10025,6 +10143,15 @@ msgstr "Запись неудачна!"
 #, fuzzy
 msgid "Write to /tmp/positionersetup.log"
 msgstr "Не удалось записать /tmp/positionersetup.log: "
+
+msgid "YCbCr420"
+msgstr ""
+
+msgid "YCbCr422"
+msgstr ""
+
+msgid "YCbCr444"
+msgstr ""
 
 msgid "YES"
 msgstr ""
@@ -10077,14 +10204,6 @@ msgstr "Да, выполнить автоматический поиск"
 
 msgid "Yes, do another manual scan now"
 msgstr "Да, выполнить еще ручной поиск"
-
-#, fuzzy
-msgid "Enabled, only from deep standby"
-msgstr "перейти в глубокий режим ожидания"
-
-#, fuzzy
-msgid "Enabled, only from standby"
-msgstr "перейти в режим ожидания"
 
 msgid "Yes, perform a shutdown now."
 msgstr "Да, выключить сейчас."
@@ -11459,10 +11578,6 @@ msgstr "случайный порядок"
 msgid "shut down"
 msgstr "Выключить"
 
-#, fuzzy
-msgid "shutdown"
-msgstr "Выключить"
-
 msgid "simple"
 msgstr "простой"
 
@@ -11506,10 +11621,6 @@ msgstr "спортивный магазин"
 
 msgid "standard"
 msgstr "стандарт"
-
-#, fuzzy
-msgid "standby"
-msgstr "Режим ожидания"
 
 msgid "start cut here"
 msgstr "начало редактирования"
@@ -11870,6 +11981,10 @@ msgstr "переключено"
 #~ msgstr "Включить родительский контроль"
 
 #, fuzzy
+#~ msgid "FBC Unicable"
+#~ msgstr "Unicable LNB"
+
+#, fuzzy
 #~ msgid "FP Upgrade"
 #~ msgstr "Обновление"
 
@@ -11897,6 +12012,10 @@ msgstr "переключено"
 
 #~ msgid "Immediate shutdown"
 #~ msgstr "глубокий режим ожидания"
+
+#, fuzzy
+#~ msgid "Install softcam support"
+#~ msgstr "Инсталляция пакетов..."
 
 #~ msgid "List EPG functions..."
 #~ msgstr "Список функций EPG..."
@@ -11990,9 +12109,6 @@ msgstr "переключено"
 #~ msgid "Password"
 #~ msgstr "Пароль"
 
-#~ msgid "Phone number"
-#~ msgstr "Номер набора"
-
 #~ msgid "Please check your network settings!"
 #~ msgstr "Пожалуйста, проверьте настройки сети!"
 
@@ -12001,6 +12117,10 @@ msgstr "переключено"
 
 #~ msgid "Please select an NFI file and press green key to flash!"
 #~ msgstr "Пожалуйста, выберите файл NFI, и нажмите зеленую кнопку!"
+
+#, fuzzy
+#~ msgid "Please wait (downloading softcam support)"
+#~ msgstr "Подождите (загружается список каналов)"
 
 #~ msgid "Prepare another USB stick for image flashing"
 #~ msgstr "Подготовка другогой USB-флешки для инсталляции системы"
@@ -12050,9 +12170,6 @@ msgstr "переключено"
 #~ msgid "Shall the USB stick wizard proceed and program the image file %s into flash memory?"
 #~ msgstr "Должен ли мастер USB-флеша установить имидж %s во внутреннюю флеш-память?"
 
-#~ msgid "Show picons in servicelist"
-#~ msgstr "Показать пиконы в списке сервисов"
-
 #~ msgid "Show services beginning with"
 #~ msgstr "Показывать сервисы начинающиеся с"
 
@@ -12082,6 +12199,12 @@ msgstr "переключено"
 #~ msgid "Single transponder"
 #~ msgstr "Один транспондер"
 
+#~ msgid "Sleep timer"
+#~ msgstr "Таймер сна"
+
+#~ msgid "SleepTimer Configuration"
+#~ msgstr "Настройки таймера сна"
+
 #~ msgid "SoftCam / CI"
 #~ msgstr "Эму менеджер / CI"
 
@@ -12105,12 +12228,6 @@ msgstr "переключено"
 #~ "USB-флеш подготовлен как загрузочный.\n"
 #~ "Теперь Вы можете установить NFI образ!"
 
-#, fuzzy
-#~ msgid ""
-#~ "The current beta image might not be stable.\n"
-#~ "For more information see %s."
-#~ msgstr "Текущая бета версия может быть не стабильна"
-
 #~ msgid ""
 #~ "The following device was found:\n"
 #~ "\n"
@@ -12126,10 +12243,6 @@ msgstr "переключено"
 
 #~ msgid "The md5sum validation failed, the file may be corrupted!"
 #~ msgstr "MD5 сумма файла неверна, файл вероятно поврежден!"
-
-#, fuzzy
-#~ msgid "The status of the current beta image could not be checked because %s can not be reached."
-#~ msgstr "Статус текущей бета версии не может быть проверен,одна из причин,www.pli-images.org не отвечает"
 
 #~ msgid ""
 #~ "This plugin creates a USB stick which can be used to update the firmware of your receiver without the need for a network or WLAN connection.\n"
@@ -12271,8 +12384,16 @@ msgstr "переключено"
 #~ msgid "service PIN"
 #~ msgstr "Изменить PIN-код сервиса"
 
+#, fuzzy
+#~ msgid "shutdown"
+#~ msgstr "Выключить"
+
 #~ msgid "special characters"
 #~ msgstr "специальное событие"
+
+#, fuzzy
+#~ msgid "standby"
+#~ msgstr "Режим ожидания"
 
 #~ msgid "tuner is not supported"
 #~ msgstr "Неизвестная"

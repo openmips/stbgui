@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-18 19:53+0100\n"
+"POT-Creation-Date: 2017-02-10 18:08+0100\n"
 "PO-Revision-Date: 2015-01-29 17:40+0200\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -361,6 +361,10 @@ msgstr[0] "%d pixel široké"
 msgstr[1] "%d pixely široké"
 msgstr[2] "%d pixelů široké"
 
+#, fuzzy, python-format
+msgid "%d sec"
+msgstr "%d sekunda"
+
 #, python-format
 msgid "%d second"
 msgid_plural "%d seconds"
@@ -504,6 +508,9 @@ msgstr "1.2"
 msgid "1024 MB"
 msgstr ""
 
+msgid "10bit"
+msgstr ""
+
 msgid "128 MB"
 msgstr ""
 
@@ -513,6 +520,9 @@ msgstr ""
 #
 msgid "12V output"
 msgstr "12V výstup"
+
+msgid "12bit"
+msgstr ""
 
 #
 msgid "13 V"
@@ -638,6 +648,9 @@ msgstr "7"
 #
 msgid "8"
 msgstr "8"
+
+msgid "8bit"
+msgstr ""
 
 #
 msgid "9"
@@ -1291,6 +1304,11 @@ msgstr ""
 
 msgid "Audio PID"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Audio channel"
+msgstr "Instalovat seznam programů"
 
 #
 msgid "Audio language selection 1"
@@ -2029,6 +2047,9 @@ msgstr "Formát barev"
 msgid "Color space"
 msgstr "Formát barev"
 
+msgid "Combo"
+msgstr ""
+
 #
 msgid "Command execution..."
 msgstr "Výkonání příkazu..."
@@ -2036,6 +2057,11 @@ msgstr "Výkonání příkazu..."
 #
 msgid "Command order"
 msgstr "Pořadí příkazů"
+
+#
+#, fuzzy
+msgid "Commit info"
+msgstr "Komunikace"
 
 #
 msgid "Common Interface"
@@ -2129,6 +2155,11 @@ msgstr "Nastavuje chování při spuštění přehrávání filmu."
 #, fuzzy
 msgid "Configure if epg.dat should be saved at all."
 msgstr "Nastavuje, který konektor video výstupu bude použit. "
+
+#
+#, fuzzy
+msgid "Configure if service picons will be shown in display (when supported by the skin)."
+msgstr "Nastavuje, zda budou picony zobrazeny v seznamu kanálů."
 
 #
 msgid "Configure if service picons will be shown in the channel selection list."
@@ -2553,6 +2584,9 @@ msgid "Create ISO"
 msgstr "vytvořit DVD-ISO"
 
 msgid "Create new folder and exit"
+msgstr ""
+
+msgid "Create seperate radio userbouquet"
 msgstr ""
 
 #
@@ -3066,6 +3100,11 @@ msgstr "Zakázat časovač"
 msgid "Disabled"
 msgstr "zakázán"
 
+#
+#, fuzzy
+msgid "Disclaimer"
+msgstr "Zobrazit právní omezení"
+
 msgid "Disk space to reserve for recordings (in GB)"
 msgstr "Rezerva volného místa pro nahrávání (v GB)"
 
@@ -3252,6 +3291,11 @@ msgstr "Chcete přijímač restartovat?"
 
 msgid "Do you want to reboot your receiver?"
 msgstr "Chcete přijímač restartovat?"
+
+#
+#, fuzzy
+msgid "Do you want to remove all the crahs logfiles"
+msgstr "Chcete odstranit balíček:\n"
 
 #
 msgid "Do you want to remove the package:\n"
@@ -3581,6 +3625,16 @@ msgid "Enabled"
 msgstr "Povolen"
 
 #
+#, fuzzy
+msgid "Enabled, only from deep standby"
+msgstr "pouze z hlubokého spánku"
+
+#
+#, fuzzy
+msgid "Enabled, only from standby"
+msgstr "pouze ze standby"
+
+#
 msgid "Encrypted: "
 msgstr "Zabezpečeno:"
 
@@ -3684,6 +3738,9 @@ msgstr "Ethernet síťové rozhraní"
 
 msgid "Event font size (relative to skin size)"
 msgstr "Velikost písma pro událost (relativně k velikosti skinu)"
+
+msgid "Event name first"
+msgstr ""
 
 #
 msgid "Event view"
@@ -3888,21 +3945,30 @@ msgstr ""
 msgid "F1/F3"
 msgstr ""
 
-msgid "FBC Unicable"
+msgid "FBC SCR (Unicable or JESS)"
 msgstr ""
 
-msgid "FBC automatic loop through"
-msgstr ""
+#
+#, fuzzy
+msgid "FBC automatic"
+msgstr "automatické"
 
+#
+#, fuzzy
 msgid ""
-"FBC automatic loop through\n"
-"inactive"
-msgstr ""
+"FBC automatic\n"
+"connected to"
+msgstr "Připojeno k"
 
 #, python-format
 msgid ""
-"FBC automatic loop through\n"
-"linked to %s"
+"FBC automatic\n"
+"connected to %s"
+msgstr ""
+
+msgid ""
+"FBC automatic\n"
+"inactive"
 msgstr ""
 
 #
@@ -4221,6 +4287,15 @@ msgstr ""
 #
 #, fuzzy
 msgid ""
+"GUI needs a restart to apply a new language\n"
+"Do you want to restart the GUI now?"
+msgstr ""
+"Pro uplatnění skinu je potřeba restartovat GUI\n"
+"Chcete nyní restartovat GUI?"
+
+#
+#, fuzzy
+msgid ""
 "GUI needs a restart to apply a new skin\n"
 "Do you want to Restart the GUI now?"
 msgstr ""
@@ -4303,6 +4378,9 @@ msgstr "Přejít na předchozí stránku programu"
 #
 msgid "Go up the list"
 msgstr "v seznamu nahoru"
+
+msgid "Gold"
+msgstr ""
 
 msgid "Goto"
 msgstr "Přejít na"
@@ -4390,6 +4468,11 @@ msgstr ""
 
 msgid "HDMI"
 msgstr ""
+
+#
+#, fuzzy
+msgid "HDMI Colordepth"
+msgstr "Formát barev"
 
 #
 #, fuzzy
@@ -4754,6 +4837,14 @@ msgstr "Inicializace zařízení pro ukládání..."
 msgid "Input"
 msgstr "Zadání"
 
+#
+#, fuzzy
+msgid "Input "
+msgstr "Zadání"
+
+msgid "Input Stream ID"
+msgstr ""
+
 msgid "Input device setup"
 msgstr "Nastavení vstupního zařízení"
 
@@ -4804,11 +4895,6 @@ msgstr "Instalovat picons do"
 #, fuzzy
 msgid "Install plugins"
 msgstr "Instalovat picons do"
-
-#
-#, fuzzy
-msgid "Install softcam support"
-msgstr "Instalace software..."
 
 msgid "Installation has completed."
 msgstr "Instalace byla dokončena."
@@ -5240,6 +5326,9 @@ msgstr "Zámek:"
 msgid "Log results to /tmp"
 msgstr "Protokol výsledků na pevný disk"
 
+msgid "Logfile does not exist anymore"
+msgstr ""
+
 #
 #, fuzzy
 msgid "Logs location"
@@ -5588,6 +5677,11 @@ msgstr "Posunout PiP"
 #
 msgid "Move PiP to main picture"
 msgstr "Přesunout PIP do hlavního okna"
+
+#
+#, fuzzy
+msgid "Move Picture in Picture"
+msgstr "Aktivovat obraz v obraze"
 
 #
 msgid "Move east"
@@ -6395,6 +6489,14 @@ msgstr ""
 msgid "PLP ID"
 msgstr ""
 
+msgid "PLS Code"
+msgstr ""
+
+#
+#, fuzzy
+msgid "PLS Mode"
+msgstr "Mód"
+
 msgid "PMT PID"
 msgstr ""
 
@@ -6828,11 +6930,6 @@ msgid "Please wait (downloading channel list)"
 msgstr "Prosím, čekejte (nahrává se seznam programů)"
 
 #
-#, fuzzy
-msgid "Please wait (downloading softcam support)"
-msgstr "Prosím, čekejte (nahrává se seznam programů)"
-
-#
 msgid "Please wait (updating packages)"
 msgstr "Prosím, čekejte (aktualizují se balíčky)"
 
@@ -6982,6 +7079,9 @@ msgstr "Nastavení pozicioneru"
 #, fuzzy
 msgid "Positioner setup log"
 msgstr "Nastavení pozicioneru"
+
+msgid "Power on display"
+msgstr ""
 
 #
 msgid "Power threshold in mA"
@@ -7572,6 +7672,11 @@ msgid "Remove a nameserver entry"
 msgstr "Odstranit DNS položku"
 
 #
+#, fuzzy
+msgid "Remove all logfiles"
+msgstr "odebrat všechny alternativy"
+
+#
 msgid "Remove bookmark"
 msgstr "Smazat záložku"
 
@@ -7591,6 +7696,11 @@ msgstr "Odstranit pluginy"
 
 msgid "Remove texts for the hearing impaired from external subtitles (instrumental music or environmental sounds, e.g., when a doorbell rings or a gun shot is heard)."
 msgstr ""
+
+#
+#, fuzzy
+msgid "Remove this logfile"
+msgstr "Odebrat titul"
 
 #
 #, fuzzy
@@ -7833,6 +7943,9 @@ msgstr ""
 #
 msgid "Romanian"
 msgstr "Rumunsky"
+
+msgid "Root"
+msgstr ""
 
 #
 msgid "Root directory"
@@ -8785,6 +8898,11 @@ msgstr "Poslední aktualizace: "
 
 #
 #, fuzzy
+msgid "Show menu numbers"
+msgstr "Telefonní číslo"
+
+#
+#, fuzzy
 msgid "Show menu paths"
 msgstr "Zobrazit menu pro tagy"
 
@@ -8816,6 +8934,10 @@ msgstr "Balíčky k aktualizaci"
 #, fuzzy
 msgid "Show picons in channel selection list"
 msgstr "Zobrazovat pikony v seznamu kanálů"
+
+#, fuzzy
+msgid "Show picons in display"
+msgstr "Zobrazovat ikony stavu v seznamu filmů"
 
 #
 msgid "Show positioner movement"
@@ -9027,16 +9149,9 @@ msgid "Skip internet connection check (disables automatic package installation)"
 msgstr "Přeskočit test internetového připojení (zakáže automatickou instalaci balíčků)."
 
 #
-msgid "Sleep timer"
-msgstr "Časovač usínání"
-
-#
 #, fuzzy
 msgid "Sleep/wakeup timer"
 msgstr "Časovač usínání"
-
-msgid "SleepTimer Configuration"
-msgstr "Konfigurace časovače usínání"
 
 msgid "Sleeptimer"
 msgstr "Časovač usínání"
@@ -9133,6 +9248,9 @@ msgstr "Aktualizace software"
 
 msgid "Softwaremanager information"
 msgstr "Info správy software"
+
+msgid "Some error occured - Please try later"
+msgstr ""
 
 #
 msgid "Some plugins are not available:\n"
@@ -9876,6 +9994,15 @@ msgid "The backup failed. Please choose a different backup location."
 msgstr "Zálohování selhalo. Zvolte jiné umístění zálohy."
 
 #
+#, fuzzy, python-format
+msgid ""
+"The current software might not be stable.\n"
+"For more information see %s."
+msgstr ""
+"Aktuální beta image nemusí být stabilní.\n"
+"Pro více informací navštivte %s."
+
+#
 #, python-format
 msgid ""
 "The directory %s is not writable.\n"
@@ -9959,6 +10086,11 @@ msgid ""
 msgstr ""
 "Softwaremanagement rozšíření není nainstalováno!\n"
 "Prosím, nainstalujte ho."
+
+#
+#, fuzzy, python-format
+msgid "The status of the current software could not be checked because %s can not be reached."
+msgstr "Stav aktuálního beta image nemohl být ověřen z důvodu nedostupnosti %s."
 
 msgid "The stored EPG data will be read every (hours)"
 msgstr ""
@@ -10099,6 +10231,9 @@ msgstr ""
 msgid "This option allows to set the level of dynamic contrast of the picture."
 msgstr ""
 
+msgid "This option allows you can config the Colordepth for UHD"
+msgstr ""
+
 msgid "This option allows you can config the Colorimetry for HDR"
 msgstr ""
 
@@ -10117,7 +10252,13 @@ msgstr ""
 msgid "This option allows you to hide and sort menu entries. When selecting user you can change order and hide menu items via the blue button"
 msgstr ""
 
+msgid "This option allows you to power off the display."
+msgstr ""
+
 msgid "This option allows you to set the Colorspace of HDMI from Auto to RGB"
+msgstr ""
+
+msgid "This option allows you to show menu number quick links."
 msgstr ""
 
 msgid "This option allows you to show menu paths."
@@ -10488,6 +10629,9 @@ msgstr "Koš"
 #
 msgid "Tries left:"
 msgstr "Zbývá pokusů:"
+
+msgid "Troubleshoot"
+msgstr ""
 
 #
 msgid "Try to find used transponders in cable network.. please wait..."
@@ -11565,14 +11709,6 @@ msgstr "bez dialogu"
 msgid "Wizard to arrange the overscan"
 msgstr ""
 
-msgid ""
-"Would you like to be able to install softcams?\n"
-"\n"
-"Attention - Country specific illegal!\n"
-"\n"
-"Check legality for your specific country in advance!"
-msgstr ""
-
 #, python-format
 msgid "Would you save the entered PIN %s persistent?"
 msgstr ""
@@ -11588,6 +11724,15 @@ msgstr "Zápis selhal!"
 #, fuzzy
 msgid "Write to /tmp/positionersetup.log"
 msgstr "Selhal zápis do /tmp/positionersetup.log: "
+
+msgid "YCbCr420"
+msgstr ""
+
+msgid "YCbCr422"
+msgstr ""
+
+msgid "YCbCr444"
+msgstr ""
 
 msgid "YES"
 msgstr ""
@@ -11650,16 +11795,6 @@ msgstr "Ano, spusť automatické prohledávání"
 #
 msgid "Yes, do another manual scan now"
 msgstr "Ano, proveď další ruční prohledávání"
-
-#
-#, fuzzy
-msgid "Enabled, only from deep standby"
-msgstr "pouze z hlubokého spánku"
-
-#
-#, fuzzy
-msgid "Enabled, only from standby"
-msgstr "pouze ze standby"
 
 #
 msgid "Yes, perform a shutdown now."
@@ -13244,11 +13379,6 @@ msgid "shut down"
 msgstr "vypnout"
 
 #
-#, fuzzy
-msgid "shutdown"
-msgstr "vypnout"
-
-#
 msgid "simple"
 msgstr "jednoduchý"
 
@@ -13298,11 +13428,6 @@ msgstr "sportovní magazín"
 #
 msgid "standard"
 msgstr "standard"
-
-#
-#, fuzzy
-msgid "standby"
-msgstr "Pohotovostní režim"
 
 #
 msgid "start cut here"
@@ -13750,6 +13875,11 @@ msgstr "přepnutý"
 #~ msgstr "Ihned vypnout"
 
 #
+#, fuzzy
+#~ msgid "Install softcam support"
+#~ msgstr "Instalace software..."
+
+#
 #~ msgid "List EPG functions..."
 #~ msgstr "Seznam funkcí EPG..."
 
@@ -13858,10 +13988,6 @@ msgstr "přepnutý"
 #~ msgstr "Heslo"
 
 #
-#~ msgid "Phone number"
-#~ msgstr "Telefonní číslo"
-
-#
 #~ msgid "Please check your network settings!"
 #~ msgstr "Zkontrolujte Vaše nastavení sítě!"
 
@@ -13870,6 +13996,11 @@ msgstr "přepnutý"
 
 #~ msgid "Please select an NFI file and press green key to flash!"
 #~ msgstr "Zvolte NFI soubor a stiskněte zelené tlačítko pro naprogramování!"
+
+#
+#, fuzzy
+#~ msgid "Please wait (downloading softcam support)"
+#~ msgstr "Prosím, čekejte (nahrává se seznam programů)"
 
 #~ msgid "Polarisation:"
 #~ msgstr "Polarizace:"
@@ -13953,6 +14084,13 @@ msgstr "přepnutý"
 #~ msgid "Single transponder"
 #~ msgstr "jeden transponder"
 
+#
+#~ msgid "Sleep timer"
+#~ msgstr "Časovač usínání"
+
+#~ msgid "SleepTimer Configuration"
+#~ msgstr "Konfigurace časovače usínání"
+
 #~ msgid "SoftCam / CI"
 #~ msgstr "SoftCam / CI"
 
@@ -13998,14 +14136,6 @@ msgstr "přepnutý"
 
 #
 #~ msgid ""
-#~ "The current beta image might not be stable.\n"
-#~ "For more information see %s."
-#~ msgstr ""
-#~ "Aktuální beta image nemusí být stabilní.\n"
-#~ "Pro více informací navštivte %s."
-
-#
-#~ msgid ""
 #~ "The following device was found:\n"
 #~ "\n"
 #~ "%s\n"
@@ -14020,10 +14150,6 @@ msgstr "přepnutý"
 
 #~ msgid "The md5sum validation failed, the file may be corrupted!"
 #~ msgstr "Ověření md5sum selhalo, soubor může být poškozen!"
-
-#
-#~ msgid "The status of the current beta image could not be checked because %s can not be reached."
-#~ msgstr "Stav aktuálního beta image nemohl být ověřen z důvodu nedostupnosti %s."
 
 #~ msgid "The wizard found a configuration backup. Do you want to restore your old settings from %s?"
 #~ msgstr "Průvodce nalezl zálohu konfigurace. Přejete si obnovit Vaše stará nastavení z %s?"
@@ -14205,8 +14331,18 @@ msgstr "přepnutý"
 #~ msgstr "zobrazovat tag menu"
 
 #
+#, fuzzy
+#~ msgid "shutdown"
+#~ msgstr "vypnout"
+
+#
 #~ msgid "special characters"
 #~ msgstr "speciální znaky"
+
+#
+#, fuzzy
+#~ msgid "standby"
+#~ msgstr "Pohotovostní režim"
 
 #
 #, fuzzy

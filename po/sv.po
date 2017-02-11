@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-18 19:53+0100\n"
+"POT-Creation-Date: 2017-02-10 18:08+0100\n"
 "PO-Revision-Date: 2015-01-29 17:40+0200\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -348,6 +348,10 @@ msgid_plural "%d pixels wide"
 msgstr[0] ""
 msgstr[1] ""
 
+#, fuzzy, python-format
+msgid "%d sec"
+msgstr "%d sekund"
+
 #, python-format
 msgid "%d second"
 msgid_plural "%d seconds"
@@ -484,6 +488,9 @@ msgstr "1.2"
 msgid "1024 MB"
 msgstr ""
 
+msgid "10bit"
+msgstr ""
+
 msgid "128 MB"
 msgstr ""
 
@@ -493,6 +500,9 @@ msgstr ""
 #
 msgid "12V output"
 msgstr "12V utgång"
+
+msgid "12bit"
+msgstr ""
 
 #
 msgid "13 V"
@@ -614,6 +624,9 @@ msgstr "7"
 #
 msgid "8"
 msgstr "8"
+
+msgid "8bit"
+msgstr ""
 
 #
 msgid "9"
@@ -1258,6 +1271,11 @@ msgstr ""
 
 msgid "Audio PID"
 msgstr "Ljud PID"
+
+#
+#, fuzzy
+msgid "Audio channel"
+msgstr "Installera kanallistan"
 
 msgid "Audio language selection 1"
 msgstr "Audio språkval 1"
@@ -1993,6 +2011,9 @@ msgstr "Färgformat"
 msgid "Color space"
 msgstr "Färgformat"
 
+msgid "Combo"
+msgstr ""
+
 #
 msgid "Command execution..."
 msgstr "Kommando exekvering..."
@@ -2000,6 +2021,11 @@ msgstr "Kommando exekvering..."
 #
 msgid "Command order"
 msgstr "Kommandoordning"
+
+#
+#, fuzzy
+msgid "Commit info"
+msgstr "Kommunikation"
 
 #
 msgid "Common Interface"
@@ -2088,6 +2114,10 @@ msgstr "Konfigurera om och hur serviceikonerna skall visas."
 #, fuzzy
 msgid "Configure if epg.dat should be saved at all."
 msgstr "Konfigurera vilken videoutgång som ska användas."
+
+#, fuzzy
+msgid "Configure if service picons will be shown in display (when supported by the skin)."
+msgstr "Vid aktiverad, kommer krypteringsinfo att visas i infobalken (om det stöds av utseendet)."
 
 msgid "Configure if service picons will be shown in the channel selection list."
 msgstr ""
@@ -2506,6 +2536,9 @@ msgid "Create ISO"
 msgstr "Skapa DVD-ISO"
 
 msgid "Create new folder and exit"
+msgstr ""
+
+msgid "Create seperate radio userbouquet"
 msgstr ""
 
 #
@@ -3001,6 +3034,10 @@ msgstr ""
 msgid "Disabled"
 msgstr "Avaktivera"
 
+#, fuzzy
+msgid "Disclaimer"
+msgstr "Visa skärmsläckare"
+
 msgid "Disk space to reserve for recordings (in GB)"
 msgstr "Diskutrymme att reservera för inspelningar (i GB)"
 
@@ -3185,6 +3222,11 @@ msgstr "Vill du starta om din mottagare?"
 
 msgid "Do you want to reboot your receiver?"
 msgstr "Vill du starta om din mottagare?"
+
+#
+#, fuzzy
+msgid "Do you want to remove all the crahs logfiles"
+msgstr "Vill du avinstallera paketet:\n"
 
 #
 msgid "Do you want to remove the package:\n"
@@ -3503,6 +3545,16 @@ msgid "Enabled"
 msgstr "Aktiverad"
 
 #
+#, fuzzy
+msgid "Enabled, only from deep standby"
+msgstr "stäng av mottagaren"
+
+#
+#, fuzzy
+msgid "Enabled, only from standby"
+msgstr "inta viloläge"
+
+#
 msgid "Encrypted: "
 msgstr "Krypterad: "
 
@@ -3602,6 +3654,9 @@ msgstr "Ethernet nätverkskort"
 
 msgid "Event font size (relative to skin size)"
 msgstr "Programmets fontstorlek (relativt till utseendets storlek)"
+
+msgid "Event name first"
+msgstr ""
 
 #
 msgid "Event view"
@@ -3802,21 +3857,30 @@ msgstr ""
 
 #
 #, fuzzy
-msgid "FBC Unicable"
-msgstr "Unicable LNB"
+msgid "FBC SCR (Unicable or JESS)"
+msgstr "Unicable"
 
-msgid "FBC automatic loop through"
-msgstr ""
+#
+#, fuzzy
+msgid "FBC automatic"
+msgstr "Automatisk"
 
+#
+#, fuzzy
 msgid ""
-"FBC automatic loop through\n"
-"inactive"
-msgstr ""
+"FBC automatic\n"
+"connected to"
+msgstr "Ansluten till"
 
 #, python-format
 msgid ""
-"FBC automatic loop through\n"
-"linked to %s"
+"FBC automatic\n"
+"connected to %s"
+msgstr ""
+
+msgid ""
+"FBC automatic\n"
+"inactive"
 msgstr ""
 
 #
@@ -4128,6 +4192,15 @@ msgstr ""
 #
 #, fuzzy
 msgid ""
+"GUI needs a restart to apply a new language\n"
+"Do you want to restart the GUI now?"
+msgstr ""
+"GUI måste startas om för nytt utseende\n"
+"Vill du starta om GUI nu?"
+
+#
+#, fuzzy
+msgid ""
 "GUI needs a restart to apply a new skin\n"
 "Do you want to Restart the GUI now?"
 msgstr ""
@@ -4206,6 +4279,9 @@ msgstr "Gå till föregående sidas tjänster"
 
 msgid "Go up the list"
 msgstr "Gå upp i listan"
+
+msgid "Gold"
+msgstr ""
 
 msgid "Goto"
 msgstr "Gå till"
@@ -4294,6 +4370,11 @@ msgstr ""
 
 msgid "HDMI"
 msgstr ""
+
+#
+#, fuzzy
+msgid "HDMI Colordepth"
+msgstr "Färgformat"
 
 #
 #, fuzzy
@@ -4649,6 +4730,14 @@ msgstr "Initierar lagringsenhet..."
 msgid "Input"
 msgstr "Ingång"
 
+#
+#, fuzzy
+msgid "Input "
+msgstr "Ingång"
+
+msgid "Input Stream ID"
+msgstr ""
+
 msgid "Input device setup"
 msgstr "Inställningar för inmatningsenhet"
 
@@ -4695,11 +4784,6 @@ msgstr "Installera picons på"
 #, fuzzy
 msgid "Install plugins"
 msgstr "Installera picons på"
-
-#
-#, fuzzy
-msgid "Install softcam support"
-msgstr "Installerar mjukvara..."
 
 msgid "Installation has completed."
 msgstr "Installationen är klar."
@@ -5125,6 +5209,9 @@ msgstr "Lås:"
 msgid "Log results to /tmp"
 msgstr "Logga resultatet till hårddisk"
 
+msgid "Logfile does not exist anymore"
+msgstr ""
+
 #
 #, fuzzy
 msgid "Logs location"
@@ -5468,6 +5555,11 @@ msgstr "Flytta"
 #
 msgid "Move PiP to main picture"
 msgstr "Flytta BiB till huvudbild"
+
+#
+#, fuzzy
+msgid "Move Picture in Picture"
+msgstr "Aktivera Bild i Bild"
 
 #
 msgid "Move east"
@@ -6254,6 +6346,14 @@ msgstr ""
 msgid "PLP ID"
 msgstr "PLP ID"
 
+msgid "PLS Code"
+msgstr ""
+
+#
+#, fuzzy
+msgid "PLS Mode"
+msgstr "Läge"
+
 msgid "PMT PID"
 msgstr "PMT PID"
 
@@ -6680,11 +6780,6 @@ msgid "Please wait (downloading channel list)"
 msgstr "Vänligen vänta (Laddar ner kanallista)"
 
 #
-#, fuzzy
-msgid "Please wait (downloading softcam support)"
-msgstr "Vänligen vänta (Laddar ner kanallista)"
-
-#
 msgid "Please wait (updating packages)"
 msgstr "Vänligen vänta (uppdaterar paket)"
 
@@ -6835,6 +6930,9 @@ msgstr "Motorinstallation"
 #, fuzzy
 msgid "Positioner setup log"
 msgstr "Motorinstallation"
+
+msgid "Power on display"
+msgstr ""
 
 #
 msgid "Power threshold in mA"
@@ -7413,6 +7511,11 @@ msgid "Remove a nameserver entry"
 msgstr "Ta bort en namnserver post"
 
 #
+#, fuzzy
+msgid "Remove all logfiles"
+msgstr "ta bort alla alternativ"
+
+#
 msgid "Remove bookmark"
 msgstr "Ta bort bokmärke"
 
@@ -7432,6 +7535,11 @@ msgstr "Ta bort plugins"
 
 msgid "Remove texts for the hearing impaired from external subtitles (instrumental music or environmental sounds, e.g., when a doorbell rings or a gun shot is heard)."
 msgstr ""
+
+#
+#, fuzzy
+msgid "Remove this logfile"
+msgstr "Ta bort titel"
 
 #
 msgid "Remove timer"
@@ -7667,6 +7775,9 @@ msgstr "Roll-off"
 
 msgid "Romanian"
 msgstr "Rumänska"
+
+msgid "Root"
+msgstr ""
 
 msgid "Root directory"
 msgstr "Rotkatalog"
@@ -8611,6 +8722,11 @@ msgstr "Senaste uppgradering:"
 
 #
 #, fuzzy
+msgid "Show menu numbers"
+msgstr "Telefonnummer"
+
+#
+#, fuzzy
 msgid "Show menu paths"
 msgstr "Visa märkningsmeny"
 
@@ -8643,6 +8759,10 @@ msgstr "Söker efter uppdateringar"
 #, fuzzy
 msgid "Show picons in channel selection list"
 msgstr "Visa programutveckling i kanallistan"
+
+#, fuzzy
+msgid "Show picons in display"
+msgstr "Visa picon i kanallistan"
 
 #
 msgid "Show positioner movement"
@@ -8856,16 +8976,9 @@ msgid "Skip internet connection check (disables automatic package installation)"
 msgstr "Hoppa över kontroll av internetanslutning (inaktiverar automatisk paketinstallation)"
 
 #
-msgid "Sleep timer"
-msgstr "Insomningstimer"
-
-#
 #, fuzzy
 msgid "Sleep/wakeup timer"
 msgstr "Insomningstimer"
-
-msgid "SleepTimer Configuration"
-msgstr "Konfiguration av insomningstimer"
 
 msgid "Sleeptimer"
 msgstr "Insomningstimer"
@@ -8964,6 +9077,9 @@ msgstr "Mjukvaruuppdatera"
 
 msgid "Softwaremanager information"
 msgstr "Mjukvaruhanterare information"
+
+msgid "Some error occured - Please try later"
+msgstr ""
 
 #
 msgid "Some plugins are not available:\n"
@@ -9703,6 +9819,14 @@ msgstr ""
 msgid "The backup failed. Please choose a different backup location."
 msgstr "Backupen misslyckades. Välj en annan plats för din backup."
 
+#, fuzzy, python-format
+msgid ""
+"The current software might not be stable.\n"
+"For more information see %s."
+msgstr ""
+"Aktuell Beta-image är kanske inte stabil.\n"
+"För mer information se %s."
+
 #
 #, python-format
 msgid ""
@@ -9790,6 +9914,10 @@ msgid ""
 msgstr ""
 "Utökningen Mjukvaruhanterare är inte installerad!\n"
 "Vänligen installera den."
+
+#, fuzzy, python-format
+msgid "The status of the current software could not be checked because %s can not be reached."
+msgstr "Statusen för den aktuella beta-imagen kunde inte kontrolleras eftersom %s inte kunde nås."
 
 msgid "The stored EPG data will be read every (hours)"
 msgstr ""
@@ -9930,6 +10058,9 @@ msgstr ""
 msgid "This option allows to set the level of dynamic contrast of the picture."
 msgstr ""
 
+msgid "This option allows you can config the Colordepth for UHD"
+msgstr ""
+
 msgid "This option allows you can config the Colorimetry for HDR"
 msgstr ""
 
@@ -9948,7 +10079,13 @@ msgstr ""
 msgid "This option allows you to hide and sort menu entries. When selecting user you can change order and hide menu items via the blue button"
 msgstr ""
 
+msgid "This option allows you to power off the display."
+msgstr ""
+
 msgid "This option allows you to set the Colorspace of HDMI from Auto to RGB"
+msgstr ""
+
+msgid "This option allows you to show menu number quick links."
 msgstr ""
 
 msgid "This option allows you to show menu paths."
@@ -10313,6 +10450,9 @@ msgstr "Papperskorg"
 #
 msgid "Tries left:"
 msgstr "Försök kvar:"
+
+msgid "Troubleshoot"
+msgstr ""
 
 #
 msgid "Try to find used transponders in cable network.. please wait..."
@@ -11387,14 +11527,6 @@ msgstr "Utan popup"
 msgid "Wizard to arrange the overscan"
 msgstr ""
 
-msgid ""
-"Would you like to be able to install softcams?\n"
-"\n"
-"Attention - Country specific illegal!\n"
-"\n"
-"Check legality for your specific country in advance!"
-msgstr ""
-
 #, python-format
 msgid "Would you save the entered PIN %s persistent?"
 msgstr ""
@@ -11410,6 +11542,15 @@ msgstr "Skrivning misslyckades!"
 #, fuzzy
 msgid "Write to /tmp/positionersetup.log"
 msgstr "Misslyckades med att skriva /tmp/positionersetup.log:"
+
+msgid "YCbCr420"
+msgstr ""
+
+msgid "YCbCr422"
+msgstr ""
+
+msgid "YCbCr444"
+msgstr ""
 
 msgid "YES"
 msgstr ""
@@ -11471,16 +11612,6 @@ msgstr "Ja, utför automatisk sökning nu"
 #
 msgid "Yes, do another manual scan now"
 msgstr "Ja, utför manuell sökning igen"
-
-#
-#, fuzzy
-msgid "Enabled, only from deep standby"
-msgstr "stäng av mottagaren"
-
-#
-#, fuzzy
-msgid "Enabled, only from standby"
-msgstr "inta viloläge"
 
 #
 msgid "Yes, perform a shutdown now."
@@ -13057,11 +13188,6 @@ msgid "shut down"
 msgstr "stäng av"
 
 #
-#, fuzzy
-msgid "shutdown"
-msgstr "stäng av"
-
-#
 msgid "simple"
 msgstr "enkelt"
 
@@ -13110,11 +13236,6 @@ msgstr "sportmagasin"
 #
 msgid "standard"
 msgstr "standard"
-
-#
-#, fuzzy
-msgid "standby"
-msgstr "Viloläge"
 
 #
 msgid "start cut here"
@@ -13541,6 +13662,11 @@ msgstr "zapped"
 
 #
 #, fuzzy
+#~ msgid "FBC Unicable"
+#~ msgstr "Unicable LNB"
+
+#
+#, fuzzy
 #~ msgid "FP Upgrade"
 #~ msgstr "Uppgradering"
 
@@ -13575,6 +13701,11 @@ msgstr "zapped"
 #
 #~ msgid "Immediate shutdown"
 #~ msgstr "Omedelbar avstängning"
+
+#
+#, fuzzy
+#~ msgid "Install softcam support"
+#~ msgstr "Installerar mjukvara..."
 
 #
 #~ msgid "List EPG functions..."
@@ -13690,10 +13821,6 @@ msgstr "zapped"
 #~ msgstr "Lösenord"
 
 #
-#~ msgid "Phone number"
-#~ msgstr "Telefonnummer"
-
-#
 #~ msgid "Please check your network settings!"
 #~ msgstr "Vänligen kontrollera dina nätverksinställningar!"
 
@@ -13702,6 +13829,11 @@ msgstr "zapped"
 
 #~ msgid "Please select an NFI file and press green key to flash!"
 #~ msgstr "Vänligen välj en NFI fil och tryck på grön knapp för att flasha!"
+
+#
+#, fuzzy
+#~ msgid "Please wait (downloading softcam support)"
+#~ msgstr "Vänligen vänta (Laddar ner kanallista)"
 
 #~ msgid "Polarisation:"
 #~ msgstr "Polarisation:"
@@ -13762,9 +13894,6 @@ msgstr "zapped"
 #~ msgid "Shall the USB stick wizard proceed and program the image file %s into flash memory?"
 #~ msgstr "Ska guiden för USB-stickan fortsätta och programmera imagefilen %s i flashminnet?"
 
-#~ msgid "Show picons in servicelist"
-#~ msgstr "Visa picon i kanallistan"
-
 #
 #~ msgid "Show services beginning with"
 #~ msgstr "Visa kanal som börjar med"
@@ -13799,6 +13928,13 @@ msgstr "zapped"
 #~ msgid "Single transponder"
 #~ msgstr "Singel transponder"
 
+#
+#~ msgid "Sleep timer"
+#~ msgstr "Insomningstimer"
+
+#~ msgid "SleepTimer Configuration"
+#~ msgstr "Konfiguration av insomningstimer"
+
 #~ msgid "SoftCam / CI"
 #~ msgstr "SoftCam / CI"
 
@@ -13829,13 +13965,6 @@ msgstr "zapped"
 #~ "USB-stickan förbereddes för att vara bootbar.\n"
 #~ "Nu kan du ladda ner en NFI imagefil!"
 
-#~ msgid ""
-#~ "The current beta image might not be stable.\n"
-#~ "For more information see %s."
-#~ msgstr ""
-#~ "Aktuell Beta-image är kanske inte stabil.\n"
-#~ "För mer information se %s."
-
 #
 #~ msgid ""
 #~ "The following device was found:\n"
@@ -13852,9 +13981,6 @@ msgstr "zapped"
 
 #~ msgid "The md5sum validation failed, the file may be corrupted!"
 #~ msgstr "Validering av md5sum misslyckades, filen kan vara korrupt!"
-
-#~ msgid "The status of the current beta image could not be checked because %s can not be reached."
-#~ msgstr "Statusen för den aktuella beta-imagen kunde inte kontrolleras eftersom %s inte kunde nås."
 
 #~ msgid "The wizard found a configuration backup. Do you want to restore your old settings from %s?"
 #~ msgstr "Guiden hittade en konfigurationsbackup. Vill du återställla dina gamla inställningar från %s?"
@@ -14031,8 +14157,18 @@ msgstr "zapped"
 #~ msgid "show tag menu"
 #~ msgstr "Visa tag meny"
 
+#
+#, fuzzy
+#~ msgid "shutdown"
+#~ msgstr "stäng av"
+
 #~ msgid "special characters"
 #~ msgstr "speciella tecken"
+
+#
+#, fuzzy
+#~ msgid "standby"
+#~ msgstr "Viloläge"
 
 #~ msgid "tuner is not supported"
 #~ msgstr "tuner stöds inte"
