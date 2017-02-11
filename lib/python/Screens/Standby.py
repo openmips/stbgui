@@ -35,14 +35,13 @@ class Standby2(Screen):
 		print "[Standby] leave standby"
 		if os.path.exists("/usr/script/Standby.sh"):
 			Console().ePopen("/usr/script/Standby.sh on")
-		if os.path.exists("/usr/script/standby_leave.sh"):
-			Console().ePopen("/usr/script/standby_leave.sh")
+		#if os.path.exists("/usr/script/standby_leave.sh"):
+		#	Console().ePopen("/usr/script/standby_leave.sh")
 
-		self.leaveMute()
 		# set LCDminiTV
 		if SystemInfo["Display"] and SystemInfo["LCDMiniTV"]:
 			setLCDModeMinitTV(config.lcd.modeminitv.getValue())
-		#kill me
+		#self.leaveMute()
 		self.close(True)
 
 	def setMute(self):
@@ -65,8 +64,8 @@ class Standby2(Screen):
 		print "[Standby] enter standby"
 		if os.path.exists("/usr/script/Standby.sh"):
 			Console().ePopen("/usr/script/Standby.sh off")
-		if os.path.exists("/usr/script/standby_enter.sh"):
-			Console().ePopen("/usr/script/standby_enter.sh")
+		#if os.path.exists("/usr/script/standby_enter.sh"):
+		#	Console().ePopen("/usr/script/standby_enter.sh")
 
 		self["actions"] = ActionMap( [ "StandbyActions" ],
 		{
@@ -163,8 +162,9 @@ class Standby2(Screen):
 		self.avswitch.setInput("ENCODER")
 		if os.path.exists("/usr/script/Standby.sh"):
 			Console().ePopen("/usr/script/Standby.sh on")
-		if os.path.exists("/usr/script/standby_leave.sh"):
-			Console().ePopen("/usr/script/standby_leave.sh")
+		self.leaveMute()
+		#if os.path.exists("/usr/script/standby_leave.sh"):
+		#	Console().ePopen("/usr/script/standby_leave.sh")
 
 	def __onFirstExecBegin(self):
 		global inStandby
