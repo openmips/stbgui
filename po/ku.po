@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-18 19:53+0100\n"
+"POT-Creation-Date: 2017-02-10 18:08+0100\n"
 "PO-Revision-Date: 2015-01-29 17:40+0200\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -336,6 +336,10 @@ msgid_plural "%d pixels wide"
 msgstr[0] ""
 msgstr[1] ""
 
+#, fuzzy, python-format
+msgid "%d sec"
+msgstr "%d second"
+
 #, python-format
 msgid "%d second"
 msgid_plural "%d seconds"
@@ -458,6 +462,9 @@ msgstr "1.2"
 msgid "1024 MB"
 msgstr ""
 
+msgid "10bit"
+msgstr ""
+
 msgid "128 MB"
 msgstr ""
 
@@ -466,6 +473,9 @@ msgstr ""
 
 msgid "12V output"
 msgstr "12V derve"
+
+msgid "12bit"
+msgstr ""
 
 msgid "13 V"
 msgstr "13 V"
@@ -570,6 +580,9 @@ msgstr "7"
 
 msgid "8"
 msgstr "8"
+
+msgid "8bit"
+msgstr ""
 
 msgid "9"
 msgstr "9"
@@ -1122,6 +1135,10 @@ msgstr ""
 
 msgid "Audio PID"
 msgstr "Deng PID"
+
+#, fuzzy
+msgid "Audio channel"
+msgstr "Install channel list"
 
 msgid "Audio language selection 1"
 msgstr "Dengé ziman  1"
@@ -1762,11 +1779,18 @@ msgstr "Formata Renga"
 msgid "Color space"
 msgstr "Formata Renga"
 
+msgid "Combo"
+msgstr ""
+
 msgid "Command execution..."
 msgstr "Command execution..."
 
 msgid "Command order"
 msgstr "Command order"
+
+#, fuzzy
+msgid "Commit info"
+msgstr "Hevra Girédayi"
 
 msgid "Common Interface"
 msgstr "Qerta Ortax"
@@ -1848,6 +1872,10 @@ msgstr "Configure the behavior when movie playback is started."
 #, fuzzy
 msgid "Configure if epg.dat should be saved at all."
 msgstr "Configures which video output connector will be used."
+
+#, fuzzy
+msgid "Configure if service picons will be shown in display (when supported by the skin)."
+msgstr "When enabled, encryption info will be shown in the infobar (when supported by the skin)."
 
 msgid "Configure if service picons will be shown in the channel selection list."
 msgstr ""
@@ -2231,6 +2259,9 @@ msgid "Create ISO"
 msgstr "Create DVD-ISO"
 
 msgid "Create new folder and exit"
+msgstr ""
+
+msgid "Create seperate radio userbouquet"
 msgstr ""
 
 #, python-format
@@ -2665,6 +2696,10 @@ msgstr "Disable timer"
 msgid "Disabled"
 msgstr "Disabled"
 
+#, fuzzy
+msgid "Disclaimer"
+msgstr "Show info line"
+
 msgid "Disk space to reserve for recordings (in GB)"
 msgstr "Disk space to reserve for recordings (in GB)"
 
@@ -2822,6 +2857,10 @@ msgstr "Do you want to reboot your receiver?"
 
 msgid "Do you want to reboot your receiver?"
 msgstr "Do you want to reboot your receiver?"
+
+#, fuzzy
+msgid "Do you want to remove all the crahs logfiles"
+msgstr "Do you want to remove the package:\n"
 
 msgid "Do you want to remove the package:\n"
 msgstr "Do you want to remove the package:\n"
@@ -3102,6 +3141,14 @@ msgstr "Edit the nameserver configuration of your receiver.\n"
 msgid "Enabled"
 msgstr "Enabled"
 
+#, fuzzy
+msgid "Enabled, only from deep standby"
+msgstr "go to deep standby"
+
+#, fuzzy
+msgid "Enabled, only from standby"
+msgstr "go to standby"
+
 msgid "Encrypted: "
 msgstr "Encrypted: "
 
@@ -3188,6 +3235,9 @@ msgstr "Ethernet network interface"
 
 msgid "Event font size (relative to skin size)"
 msgstr "Event font size (relative to skin size)"
+
+msgid "Event name first"
+msgstr ""
 
 msgid "Event view"
 msgstr "Event view"
@@ -3357,21 +3407,28 @@ msgid "F1/F3"
 msgstr ""
 
 #, fuzzy
-msgid "FBC Unicable"
-msgstr "Unicable LNB"
+msgid "FBC SCR (Unicable or JESS)"
+msgstr "Unicable"
 
-msgid "FBC automatic loop through"
-msgstr ""
+#, fuzzy
+msgid "FBC automatic"
+msgstr "automatic"
 
+#, fuzzy
 msgid ""
-"FBC automatic loop through\n"
-"inactive"
-msgstr ""
+"FBC automatic\n"
+"connected to"
+msgstr "Girédi "
 
 #, python-format
 msgid ""
-"FBC automatic loop through\n"
-"linked to %s"
+"FBC automatic\n"
+"connected to %s"
+msgstr ""
+
+msgid ""
+"FBC automatic\n"
+"inactive"
 msgstr ""
 
 msgid "FEC"
@@ -3649,6 +3706,14 @@ msgstr ""
 
 #, fuzzy
 msgid ""
+"GUI needs a restart to apply a new language\n"
+"Do you want to restart the GUI now?"
+msgstr ""
+"GUI needs a restart to apply a new skin\n"
+"Do you want to restart the GUI now?"
+
+#, fuzzy
+msgid ""
 "GUI needs a restart to apply a new skin\n"
 "Do you want to Restart the GUI now?"
 msgstr ""
@@ -3719,6 +3784,9 @@ msgstr "Go to previous page of service"
 
 msgid "Go up the list"
 msgstr "Go up the list"
+
+msgid "Gold"
+msgstr ""
 
 msgid "Goto"
 msgstr "Goto"
@@ -3801,6 +3869,10 @@ msgstr ""
 
 msgid "HDMI"
 msgstr ""
+
+#, fuzzy
+msgid "HDMI Colordepth"
+msgstr "Formata Renga"
 
 #, fuzzy
 msgid "HDMI Colorimetry"
@@ -4115,6 +4187,13 @@ msgstr "Initializing storage device..."
 msgid "Input"
 msgstr "Input"
 
+#, fuzzy
+msgid "Input "
+msgstr "Input"
+
+msgid "Input Stream ID"
+msgstr ""
+
 msgid "Input device setup"
 msgstr "Input device setup"
 
@@ -4155,10 +4234,6 @@ msgstr "Install picons on"
 #, fuzzy
 msgid "Install plugins"
 msgstr "Install picons on"
-
-#, fuzzy
-msgid "Install softcam support"
-msgstr "Installing software..."
 
 msgid "Installation has completed."
 msgstr "Installation has completed."
@@ -4518,6 +4593,9 @@ msgstr "Lock:"
 msgid "Log results to /tmp"
 msgstr "Log results to harddisk"
 
+msgid "Logfile does not exist anymore"
+msgstr ""
+
 #, fuzzy
 msgid "Logs location"
 msgstr "Location"
@@ -4819,6 +4897,10 @@ msgstr "Move"
 
 msgid "Move PiP to main picture"
 msgstr "Move PiP to main picture"
+
+#, fuzzy
+msgid "Move Picture in Picture"
+msgstr "Aktif bike resm o resm"
 
 msgid "Move east"
 msgstr "Move east"
@@ -5518,6 +5600,13 @@ msgstr ""
 msgid "PLP ID"
 msgstr ""
 
+msgid "PLS Code"
+msgstr ""
+
+#, fuzzy
+msgid "PLS Mode"
+msgstr "Mode"
+
 msgid "PMT PID"
 msgstr "PMT PID"
 
@@ -5876,10 +5965,6 @@ msgstr ""
 msgid "Please wait (downloading channel list)"
 msgstr "Please wait (downloading channel list)"
 
-#, fuzzy
-msgid "Please wait (downloading softcam support)"
-msgstr "Please wait (downloading channel list)"
-
 msgid "Please wait (updating packages)"
 msgstr "Please wait (updating packages)"
 
@@ -6002,6 +6087,9 @@ msgstr "Pozisyoner Çéki"
 #, fuzzy
 msgid "Positioner setup log"
 msgstr "Pozisyoner Çéki"
+
+msgid "Power on display"
+msgstr ""
 
 msgid "Power threshold in mA"
 msgstr "Power threshold in mA"
@@ -6495,6 +6583,10 @@ msgstr "Remove a mark"
 msgid "Remove a nameserver entry"
 msgstr "Remove a nameserver entry"
 
+#, fuzzy
+msgid "Remove all logfiles"
+msgstr "remove all alternatives"
+
 msgid "Remove bookmark"
 msgstr "Remove bookmark"
 
@@ -6512,6 +6604,10 @@ msgstr "Remove plugins"
 
 msgid "Remove texts for the hearing impaired from external subtitles (instrumental music or environmental sounds, e.g., when a doorbell rings or a gun shot is heard)."
 msgstr ""
+
+#, fuzzy
+msgid "Remove this logfile"
+msgstr "Remove title"
 
 msgid "Remove timer"
 msgstr "Remove timer"
@@ -6710,6 +6806,9 @@ msgstr "Roll-off"
 
 msgid "Romanian"
 msgstr "Romanian"
+
+msgid "Root"
+msgstr ""
 
 msgid "Root directory"
 msgstr "Root directory"
@@ -7521,6 +7620,10 @@ msgid "Show latest upgrade log"
 msgstr "Last upgrade: "
 
 #, fuzzy
+msgid "Show menu numbers"
+msgstr "Phone number"
+
+#, fuzzy
 msgid "Show menu paths"
 msgstr "Show tag menu"
 
@@ -7550,6 +7653,10 @@ msgstr "Package list update"
 #, fuzzy
 msgid "Show picons in channel selection list"
 msgstr "Show event-progress in channel selection"
+
+#, fuzzy
+msgid "Show picons in display"
+msgstr "Show status icons in movielist"
 
 msgid "Show positioner movement"
 msgstr "Show positioner movement"
@@ -7736,15 +7843,9 @@ msgstr "Skip empty services"
 msgid "Skip internet connection check (disables automatic package installation)"
 msgstr "Skip internet connection check (disables automatic package installation)"
 
-msgid "Sleep timer"
-msgstr "Sleep timer"
-
 #, fuzzy
 msgid "Sleep/wakeup timer"
 msgstr "Sleep timer"
-
-msgid "SleepTimer Configuration"
-msgstr ""
 
 msgid "Sleeptimer"
 msgstr ""
@@ -7830,6 +7931,9 @@ msgstr "Nisisiya İmage Bine"
 
 msgid "Softwaremanager information"
 msgstr "Softwaremanager information"
+
+msgid "Some error occured - Please try later"
+msgstr ""
 
 msgid "Some plugins are not available:\n"
 msgstr "Some plugins are not available:\n"
@@ -8480,6 +8584,14 @@ msgstr ""
 msgid "The backup failed. Please choose a different backup location."
 msgstr "The backup failed. Please choose a different backup location."
 
+#, fuzzy, python-format
+msgid ""
+"The current software might not be stable.\n"
+"For more information see %s."
+msgstr ""
+"The current beta image might not be stable.\n"
+"For more information see %s."
+
 #, python-format
 msgid ""
 "The directory %s is not writable.\n"
@@ -8559,6 +8671,10 @@ msgid ""
 msgstr ""
 "The software management extension is not installed!\n"
 "Please install it."
+
+#, fuzzy, python-format
+msgid "The status of the current software could not be checked because %s can not be reached."
+msgstr "The status of the current beta image could not be checked because %s can not be reached."
 
 msgid "The stored EPG data will be read every (hours)"
 msgstr ""
@@ -8687,6 +8803,9 @@ msgstr ""
 msgid "This option allows to set the level of dynamic contrast of the picture."
 msgstr ""
 
+msgid "This option allows you can config the Colordepth for UHD"
+msgstr ""
+
 msgid "This option allows you can config the Colorimetry for HDR"
 msgstr ""
 
@@ -8705,7 +8824,13 @@ msgstr ""
 msgid "This option allows you to hide and sort menu entries. When selecting user you can change order and hide menu items via the blue button"
 msgstr ""
 
+msgid "This option allows you to power off the display."
+msgstr ""
+
 msgid "This option allows you to set the Colorspace of HDMI from Auto to RGB"
+msgstr ""
+
+msgid "This option allows you to show menu number quick links."
 msgstr ""
 
 msgid "This option allows you to show menu paths."
@@ -9025,6 +9150,9 @@ msgstr "Trash can"
 
 msgid "Tries left:"
 msgstr "Tries left:"
+
+msgid "Troubleshoot"
+msgstr ""
 
 msgid "Try to find used transponders in cable network.. please wait..."
 msgstr "Try to find used transponders in cable network.. please wait..."
@@ -9979,14 +10107,6 @@ msgstr ""
 msgid "Wizard to arrange the overscan"
 msgstr ""
 
-msgid ""
-"Would you like to be able to install softcams?\n"
-"\n"
-"Attention - Country specific illegal!\n"
-"\n"
-"Check legality for your specific country in advance!"
-msgstr ""
-
 #, python-format
 msgid "Would you save the entered PIN %s persistent?"
 msgstr ""
@@ -10000,6 +10120,15 @@ msgstr "Write failed!"
 #, fuzzy
 msgid "Write to /tmp/positionersetup.log"
 msgstr "Failed to write /tmp/positionersetup.log: "
+
+msgid "YCbCr420"
+msgstr ""
+
+msgid "YCbCr422"
+msgstr ""
+
+msgid "YCbCr444"
+msgstr ""
 
 msgid "YES"
 msgstr ""
@@ -10052,14 +10181,6 @@ msgstr "Yes, do an automatic scan now"
 
 msgid "Yes, do another manual scan now"
 msgstr "Yes, do another manual scan now"
-
-#, fuzzy
-msgid "Enabled, only from deep standby"
-msgstr "go to deep standby"
-
-#, fuzzy
-msgid "Enabled, only from standby"
-msgstr "go to standby"
 
 msgid "Yes, perform a shutdown now."
 msgstr "Yes, perform a shutdown now."
@@ -11434,9 +11555,6 @@ msgstr "shuffle"
 msgid "shut down"
 msgstr "shut down"
 
-msgid "shutdown"
-msgstr "shutdown"
-
 msgid "simple"
 msgstr "simple"
 
@@ -11480,9 +11598,6 @@ msgstr "sports magazine"
 
 msgid "standard"
 msgstr "standard"
-
-msgid "standby"
-msgstr "standby"
 
 msgid "start cut here"
 msgstr "start cut here"
@@ -11841,6 +11956,10 @@ msgstr "zapped"
 #~ msgstr "Enable parental control"
 
 #, fuzzy
+#~ msgid "FBC Unicable"
+#~ msgstr "Unicable LNB"
+
+#, fuzzy
 #~ msgid "FP Upgrade"
 #~ msgstr "Upgrading"
 
@@ -11877,6 +11996,10 @@ msgstr "zapped"
 
 #~ msgid "Immediate shutdown"
 #~ msgstr "Immediate shutdown"
+
+#, fuzzy
+#~ msgid "Install softcam support"
+#~ msgstr "Installing software..."
 
 #~ msgid "List EPG functions..."
 #~ msgstr "List EPG functions..."
@@ -11967,9 +12090,6 @@ msgstr "zapped"
 #~ msgid "Password"
 #~ msgstr "Password"
 
-#~ msgid "Phone number"
-#~ msgstr "Phone number"
-
 #~ msgid "Please check your network settings!"
 #~ msgstr "Please check your network settings!"
 
@@ -11978,6 +12098,10 @@ msgstr "zapped"
 
 #~ msgid "Please select an NFI file and press green key to flash!"
 #~ msgstr "Please select an NFI file and press green key to flash!"
+
+#, fuzzy
+#~ msgid "Please wait (downloading softcam support)"
+#~ msgstr "Please wait (downloading channel list)"
 
 #~ msgid "Prepare another USB stick for image flashing"
 #~ msgstr "Prepare another USB stick for image flashing"
@@ -12050,6 +12174,9 @@ msgstr "zapped"
 #~ msgid "Single transponder"
 #~ msgstr "Single transponder"
 
+#~ msgid "Sleep timer"
+#~ msgstr "Sleep timer"
+
 #~ msgid "Sleep timer action:"
 #~ msgstr "Sleep timer action:"
 
@@ -12086,13 +12213,6 @@ msgstr "zapped"
 #~ "Now you can download an NFI image file!"
 
 #~ msgid ""
-#~ "The current beta image might not be stable.\n"
-#~ "For more information see %s."
-#~ msgstr ""
-#~ "The current beta image might not be stable.\n"
-#~ "For more information see %s."
-
-#~ msgid ""
 #~ "The following device was found:\n"
 #~ "\n"
 #~ "%s\n"
@@ -12107,9 +12227,6 @@ msgstr "zapped"
 
 #~ msgid "The md5sum validation failed, the file may be corrupted!"
 #~ msgstr "The md5sum validation failed, the file may be corrupted!"
-
-#~ msgid "The status of the current beta image could not be checked because %s can not be reached."
-#~ msgstr "The status of the current beta image could not be checked because %s can not be reached."
 
 #~ msgid "The wizard found a configuration backup. Do you want to restore your old settings from %s?"
 #~ msgstr "The wizard found a configuration backup. Do you want to restore your old settings from %s?"
@@ -12268,8 +12385,14 @@ msgstr "zapped"
 #~ msgid "service PIN"
 #~ msgstr "service PIN"
 
+#~ msgid "shutdown"
+#~ msgstr "shutdown"
+
 #~ msgid "special characters"
 #~ msgstr "special characters"
+
+#~ msgid "standby"
+#~ msgstr "standby"
 
 #~ msgid "tuner is not supported"
 #~ msgstr "tuner is not supported"

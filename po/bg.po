@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-18 19:53+0100\n"
+"POT-Creation-Date: 2017-02-10 18:08+0100\n"
 "PO-Revision-Date: 2015-01-29 17:40+0200\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -330,6 +330,10 @@ msgstr[0] ""
 msgstr[1] ""
 
 #, python-format
+msgid "%d sec"
+msgstr ""
+
+#, python-format
 msgid "%d second"
 msgid_plural "%d seconds"
 msgstr[0] ""
@@ -449,6 +453,9 @@ msgstr ""
 msgid "1024 MB"
 msgstr ""
 
+msgid "10bit"
+msgstr ""
+
 msgid "128 MB"
 msgstr ""
 
@@ -456,6 +463,9 @@ msgid "128 MB (recommended for this chipset)"
 msgstr ""
 
 msgid "12V output"
+msgstr ""
+
+msgid "12bit"
 msgstr ""
 
 msgid "13 V"
@@ -559,6 +569,9 @@ msgid "7"
 msgstr ""
 
 msgid "8"
+msgstr ""
+
+msgid "8bit"
 msgstr ""
 
 msgid "9"
@@ -1102,6 +1115,10 @@ msgstr ""
 
 msgid "Audio PID"
 msgstr ""
+
+#, fuzzy
+msgid "Audio channel"
+msgstr "Инсталирай списък с канали"
 
 msgid "Audio language selection 1"
 msgstr ""
@@ -1731,11 +1748,18 @@ msgstr ""
 msgid "Color space"
 msgstr ""
 
+msgid "Combo"
+msgstr ""
+
 msgid "Command execution..."
 msgstr "Изпълнение на команда..."
 
 msgid "Command order"
 msgstr "Ред на команди"
+
+#, fuzzy
+msgid "Commit info"
+msgstr "Комуникация"
 
 msgid "Common Interface"
 msgstr ""
@@ -1812,6 +1836,9 @@ msgid "Configure if behind the subtitles a background is shown."
 msgstr ""
 
 msgid "Configure if epg.dat should be saved at all."
+msgstr ""
+
+msgid "Configure if service picons will be shown in display (when supported by the skin)."
 msgstr ""
 
 msgid "Configure if service picons will be shown in the channel selection list."
@@ -2190,6 +2217,9 @@ msgid "Create ISO"
 msgstr "Създай DVD-ISO"
 
 msgid "Create new folder and exit"
+msgstr ""
+
+msgid "Create seperate radio userbouquet"
 msgstr ""
 
 #, python-format
@@ -2618,6 +2648,9 @@ msgstr ""
 msgid "Disabled"
 msgstr "Спрян"
 
+msgid "Disclaimer"
+msgstr ""
+
 msgid "Disk space to reserve for recordings (in GB)"
 msgstr ""
 
@@ -2771,6 +2804,10 @@ msgstr "Искате ли да рестартирам вашия Clarke-Tech?"
 
 msgid "Do you want to reboot your receiver?"
 msgstr "Искате ли да рестартирам вашия Clarke-Tech?"
+
+#, fuzzy
+msgid "Do you want to remove all the crahs logfiles"
+msgstr "Искате ли да премахна пакета:\n"
 
 msgid "Do you want to remove the package:\n"
 msgstr "Искате ли да премахна пакета:\n"
@@ -3046,6 +3083,14 @@ msgstr ""
 msgid "Enabled"
 msgstr "Разрешен"
 
+#, fuzzy
+msgid "Enabled, only from deep standby"
+msgstr "изключи"
+
+#, fuzzy
+msgid "Enabled, only from standby"
+msgstr "към режим готовност"
+
 msgid "Encrypted: "
 msgstr ""
 
@@ -3131,6 +3176,9 @@ msgid "Ethernet network interface"
 msgstr ""
 
 msgid "Event font size (relative to skin size)"
+msgstr ""
+
+msgid "Event name first"
 msgstr ""
 
 msgid "Event view"
@@ -3297,21 +3345,28 @@ msgstr ""
 msgid "F1/F3"
 msgstr ""
 
-msgid "FBC Unicable"
+msgid "FBC SCR (Unicable or JESS)"
 msgstr ""
 
-msgid "FBC automatic loop through"
-msgstr ""
+#, fuzzy
+msgid "FBC automatic"
+msgstr "Автоматично"
 
+#, fuzzy
 msgid ""
-"FBC automatic loop through\n"
-"inactive"
-msgstr ""
+"FBC automatic\n"
+"connected to"
+msgstr "Свързан с"
 
 #, python-format
 msgid ""
-"FBC automatic loop through\n"
-"linked to %s"
+"FBC automatic\n"
+"connected to %s"
+msgstr ""
+
+msgid ""
+"FBC automatic\n"
+"inactive"
 msgstr ""
 
 msgid "FEC"
@@ -3583,6 +3638,11 @@ msgid "GUI Build: "
 msgstr ""
 
 msgid ""
+"GUI needs a restart to apply a new language\n"
+"Do you want to restart the GUI now?"
+msgstr ""
+
+msgid ""
 "GUI needs a restart to apply a new skin\n"
 "Do you want to Restart the GUI now?"
 msgstr ""
@@ -3648,6 +3708,9 @@ msgid "Go to previous page of service"
 msgstr ""
 
 msgid "Go up the list"
+msgstr ""
+
+msgid "Gold"
 msgstr ""
 
 msgid "Goto"
@@ -3730,6 +3793,9 @@ msgid ""
 msgstr ""
 
 msgid "HDMI"
+msgstr ""
+
+msgid "HDMI Colordepth"
 msgstr ""
 
 msgid "HDMI Colorimetry"
@@ -4038,6 +4104,13 @@ msgstr "Инициализиране Твърд диск..."
 msgid "Input"
 msgstr "Въведи"
 
+#, fuzzy
+msgid "Input "
+msgstr "Въведи"
+
+msgid "Input Stream ID"
+msgstr ""
+
 msgid "Input device setup"
 msgstr ""
 
@@ -4078,10 +4151,6 @@ msgstr "Инсталирай picons"
 #, fuzzy
 msgid "Install plugins"
 msgstr "Инсталирай picons"
-
-#, fuzzy
-msgid "Install softcam support"
-msgstr "Инсталирай плъгин от HDD,USB или .tmp"
 
 msgid "Installation has completed."
 msgstr "Инсталирането завърши."
@@ -4437,6 +4506,9 @@ msgstr "Закл:"
 msgid "Log results to /tmp"
 msgstr "Записване Log на твърдия диск"
 
+msgid "Logfile does not exist anymore"
+msgstr ""
+
 #, fuzzy
 msgid "Logs location"
 msgstr "Местоположение"
@@ -4730,6 +4802,10 @@ msgstr ""
 
 msgid "Move PiP to main picture"
 msgstr ""
+
+#, fuzzy
+msgid "Move Picture in Picture"
+msgstr "Активиране Картина в Картината"
 
 msgid "Move east"
 msgstr "Завърти на изток"
@@ -5407,6 +5483,12 @@ msgstr ""
 msgid "PLP ID"
 msgstr ""
 
+msgid "PLS Code"
+msgstr ""
+
+msgid "PLS Mode"
+msgstr ""
+
 msgid "PMT PID"
 msgstr ""
 
@@ -5763,10 +5845,6 @@ msgstr ""
 msgid "Please wait (downloading channel list)"
 msgstr ""
 
-#, fuzzy
-msgid "Please wait (downloading softcam support)"
-msgstr "моля изчакайте, зареждам снимка..."
-
 msgid "Please wait (updating packages)"
 msgstr ""
 
@@ -5888,6 +5966,9 @@ msgstr "Настройка позиционер"
 #, fuzzy
 msgid "Positioner setup log"
 msgstr "Настройка позиционер"
+
+msgid "Power on display"
+msgstr ""
 
 msgid "Power threshold in mA"
 msgstr "Праг на захранването в mA"
@@ -6368,6 +6449,10 @@ msgstr "Премахни Отметка"
 msgid "Remove a nameserver entry"
 msgstr ""
 
+#, fuzzy
+msgid "Remove all logfiles"
+msgstr "премахни всички алтернативи"
+
 msgid "Remove bookmark"
 msgstr ""
 
@@ -6385,6 +6470,10 @@ msgstr "Премахни Плъгини"
 
 msgid "Remove texts for the hearing impaired from external subtitles (instrumental music or environmental sounds, e.g., when a doorbell rings or a gun shot is heard)."
 msgstr ""
+
+#, fuzzy
+msgid "Remove this logfile"
+msgstr "Премахни заглавие"
 
 msgid "Remove timer"
 msgstr "Премахни таймер"
@@ -6581,6 +6670,9 @@ msgid "Roll-off"
 msgstr ""
 
 msgid "Romanian"
+msgstr ""
+
+msgid "Root"
 msgstr ""
 
 msgid "Root directory"
@@ -7382,6 +7474,10 @@ msgid "Show latest upgrade log"
 msgstr "Последна актуализация: "
 
 #, fuzzy
+msgid "Show menu numbers"
+msgstr "Телефонен номер"
+
+#, fuzzy
 msgid "Show menu paths"
 msgstr "Скорост при забавено движение"
 
@@ -7411,6 +7507,9 @@ msgstr "Ъпдейт на списъка с пакети"
 #, fuzzy
 msgid "Show picons in channel selection list"
 msgstr "покажи разширено описание"
+
+msgid "Show picons in display"
+msgstr ""
 
 msgid "Show positioner movement"
 msgstr "Показвай въртенето на антената"
@@ -7595,15 +7694,9 @@ msgstr ""
 msgid "Skip internet connection check (disables automatic package installation)"
 msgstr ""
 
-msgid "Sleep timer"
-msgstr "Tаймер за Сън"
-
 #, fuzzy
 msgid "Sleep/wakeup timer"
 msgstr "Tаймер за Сън"
-
-msgid "SleepTimer Configuration"
-msgstr ""
 
 msgid "Sleeptimer"
 msgstr ""
@@ -7687,6 +7780,9 @@ msgid "Software update"
 msgstr "Актуализация на Софтуера"
 
 msgid "Softwaremanager information"
+msgstr ""
+
+msgid "Some error occured - Please try later"
 msgstr ""
 
 msgid "Some plugins are not available:\n"
@@ -8323,6 +8419,12 @@ msgstr "Грешка при backup. Моля изберете друго мес�
 
 #, python-format
 msgid ""
+"The current software might not be stable.\n"
+"For more information see %s."
+msgstr ""
+
+#, python-format
+msgid ""
 "The directory %s is not writable.\n"
 "Make sure you select a writable directory instead."
 msgstr ""
@@ -8393,6 +8495,10 @@ msgstr "Таймера за сън е спрян."
 msgid ""
 "The software management extension is not installed!\n"
 "Please install it."
+msgstr ""
+
+#, python-format
+msgid "The status of the current software could not be checked because %s can not be reached."
 msgstr ""
 
 msgid "The stored EPG data will be read every (hours)"
@@ -8519,6 +8625,9 @@ msgstr ""
 msgid "This option allows to set the level of dynamic contrast of the picture."
 msgstr ""
 
+msgid "This option allows you can config the Colordepth for UHD"
+msgstr ""
+
 msgid "This option allows you can config the Colorimetry for HDR"
 msgstr ""
 
@@ -8537,7 +8646,13 @@ msgstr ""
 msgid "This option allows you to hide and sort menu entries. When selecting user you can change order and hide menu items via the blue button"
 msgstr ""
 
+msgid "This option allows you to power off the display."
+msgstr ""
+
 msgid "This option allows you to set the Colorspace of HDMI from Auto to RGB"
+msgstr ""
+
+msgid "This option allows you to show menu number quick links."
 msgstr ""
 
 msgid "This option allows you to show menu paths."
@@ -8831,6 +8946,9 @@ msgstr ""
 
 msgid "Tries left:"
 msgstr "Оставащи опити:"
+
+msgid "Troubleshoot"
+msgstr ""
 
 msgid "Try to find used transponders in cable network.. please wait..."
 msgstr ""
@@ -9752,14 +9870,6 @@ msgstr ""
 msgid "Wizard to arrange the overscan"
 msgstr ""
 
-msgid ""
-"Would you like to be able to install softcams?\n"
-"\n"
-"Attention - Country specific illegal!\n"
-"\n"
-"Check legality for your specific country in advance!"
-msgstr ""
-
 #, python-format
 msgid "Would you save the entered PIN %s persistent?"
 msgstr ""
@@ -9771,6 +9881,15 @@ msgid "Write failed!"
 msgstr "Грешка при запис!"
 
 msgid "Write to /tmp/positionersetup.log"
+msgstr ""
+
+msgid "YCbCr420"
+msgstr ""
+
+msgid "YCbCr422"
+msgstr ""
+
+msgid "YCbCr444"
 msgstr ""
 
 msgid "YES"
@@ -9824,14 +9943,6 @@ msgstr "Да, започни автоматично търсене"
 
 msgid "Yes, do another manual scan now"
 msgstr "Да, започни ново търсене"
-
-#, fuzzy
-msgid "Enabled, only from deep standby"
-msgstr "изключи"
-
-#, fuzzy
-msgid "Enabled, only from standby"
-msgstr "към режим готовност"
 
 msgid "Yes, perform a shutdown now."
 msgstr "Да, изключи сега."
@@ -11175,9 +11286,6 @@ msgstr ""
 msgid "shut down"
 msgstr ""
 
-msgid "shutdown"
-msgstr ""
-
 msgid "simple"
 msgstr "опростен"
 
@@ -11221,10 +11329,6 @@ msgstr ""
 
 msgid "standard"
 msgstr "стандарт"
-
-#, fuzzy
-msgid "standby"
-msgstr "Готовност"
 
 msgid "start cut here"
 msgstr "изрежи тук"
@@ -11495,6 +11599,10 @@ msgstr "превключен"
 #~ msgid "FP Upgrade"
 #~ msgstr "Ъпгрейдвам"
 
+#, fuzzy
+#~ msgid "Install softcam support"
+#~ msgstr "Инсталирай плъгин от HDD,USB или .tmp"
+
 #~ msgid "Load Length of Movies in Movielist"
 #~ msgstr "Зареди дължината на филма в списъка"
 
@@ -11554,11 +11662,12 @@ msgstr "превключен"
 #~ msgid "Password"
 #~ msgstr "Парола"
 
-#~ msgid "Phone number"
-#~ msgstr "Телефонен номер"
-
 #~ msgid "Please check your network settings!"
 #~ msgstr "Моля проверете мрежовите настройки!"
+
+#, fuzzy
+#~ msgid "Please wait (downloading softcam support)"
+#~ msgstr "моля изчакайте, зареждам снимка..."
 
 #~ msgid "Reboot"
 #~ msgstr "Рестарт"
@@ -11589,6 +11698,9 @@ msgstr "превключен"
 
 #~ msgid "Single transponder"
 #~ msgstr "Един транспондер"
+
+#~ msgid "Sleep timer"
+#~ msgstr "Tаймер за Сън"
 
 #, fuzzy
 #~ msgid "System Message"
@@ -11667,6 +11779,10 @@ msgstr "превключен"
 
 #~ msgid "show tag menu"
 #~ msgstr "покажи tag меню"
+
+#, fuzzy
+#~ msgid "standby"
+#~ msgstr "Готовност"
 
 #, fuzzy
 #~ msgid "unknown error"

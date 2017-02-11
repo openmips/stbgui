@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-18 19:53+0100\n"
-"PO-Revision-Date: 2016-11-19 12:07+0100\n"
+"POT-Creation-Date: 2017-02-10 18:08+0100\n"
+"PO-Revision-Date: 2017-02-10 18:21+0100\n"
 "Last-Translator: -=niki=- <niki_msn@hotmail.de>\n"
 "Language-Team: none\n"
 "Language: de\n"
@@ -332,6 +332,10 @@ msgstr[0] "%d Bildpunkt groß"
 msgstr[1] "%d Bildpunkte groß"
 
 #, python-format
+msgid "%d sec"
+msgstr "%d Sekunde"
+
+#, python-format
 msgid "%d second"
 msgid_plural "%d seconds"
 msgstr[0] "%d Sekunde"
@@ -449,6 +453,9 @@ msgstr "1.2"
 msgid "1024 MB"
 msgstr "1024 MB"
 
+msgid "10bit"
+msgstr "10bit"
+
 msgid "128 MB"
 msgstr "128 MB"
 
@@ -457,6 +464,9 @@ msgstr "128 MB (für diesen Chipsatz empfohlen)"
 
 msgid "12V output"
 msgstr "12V Ausgang"
+
+msgid "12bit"
+msgstr "12bit"
 
 msgid "13 V"
 msgstr "13 V"
@@ -559,6 +569,9 @@ msgstr "7"
 
 msgid "8"
 msgstr "8"
+
+msgid "8bit"
+msgstr "8bit"
 
 msgid "9"
 msgstr "9"
@@ -1083,11 +1096,11 @@ msgstr "Ton"
 msgid "Audio Auto Volume Level"
 msgstr "Audio Auto Volume Level"
 
-msgid "Audio channel"
-msgstr "Ton Kanal"
-
 msgid "Audio PID"
 msgstr "Ton PID"
+
+msgid "Audio channel"
+msgstr "Ton Kanal"
 
 msgid "Audio language selection 1"
 msgstr "Ton Sprachwahl 1"
@@ -1703,11 +1716,17 @@ msgstr "Farbformat"
 msgid "Color space"
 msgstr "Farbraum"
 
+msgid "Combo"
+msgstr "Combo"
+
 msgid "Command execution..."
 msgstr "Befehl wird ausgeführt..."
 
 msgid "Command order"
 msgstr "Befehlsfolge"
+
+msgid "Commit info"
+msgstr "Commit Info"
 
 msgid "Common Interface"
 msgstr "Common Interface"
@@ -1784,6 +1803,9 @@ msgstr "Konfiguriere, ob hinter Untertiteln ein Hintergrund angezeigt wird."
 
 msgid "Configure if epg.dat should be saved at all."
 msgstr "Konfigurieren Sie ob die epg.dat gespeichert werden soll."
+
+msgid "Configure if service picons will be shown in display (when supported by the skin)."
+msgstr "Falls aktiviert, werden Picons im Display angezeigt (sofern vom Skin unterstützt)."
 
 msgid "Configure if service picons will be shown in the channel selection list."
 msgstr "Falls aktiviert, werden Picons in der Kanalauswahlliste angezeigt."
@@ -2155,6 +2177,9 @@ msgstr "DVD-ISO erstellen"
 
 msgid "Create new folder and exit"
 msgstr "Neuen Ordner erstellen und verlassen"
+
+msgid "Create seperate radio userbouquet"
+msgstr "Erstelle eigenes Radio Bouquet"
 
 #, python-format
 msgid "Creating directory %s failed."
@@ -2570,6 +2595,9 @@ msgstr "Timer deaktivieren"
 msgid "Disabled"
 msgstr "Deaktiviert"
 
+msgid "Disclaimer"
+msgstr "Haftungsausschluss"
+
 msgid "Disk space to reserve for recordings (in GB)"
 msgstr "Reservierter Speicherplatz für Aufnahmen (in GB)"
 
@@ -2719,6 +2747,9 @@ msgstr "Wollen Sie Ihren Receiver neu starten?"
 
 msgid "Do you want to reboot your receiver?"
 msgstr "Wollen Sie Ihren Receiver neu starten?"
+
+msgid "Do you want to remove all the crahs logfiles"
+msgstr "Wollen Sie alle Absturz Logdateien löschen"
 
 msgid "Do you want to remove the package:\n"
 msgstr "Wollen Sie das Paket entfernen:\n"
@@ -2986,6 +3017,12 @@ msgstr "Bearbeiten Sie die IPv6-Einstellungen Ihres Receivers.\n"
 msgid "Enabled"
 msgstr "Aktiviert"
 
+msgid "Enabled, only from deep standby"
+msgstr "Aktiviert, nur aus Deep Standby"
+
+msgid "Enabled, only from standby"
+msgstr "Aktiviert, nur aus Standby\v"
+
 msgid "Encrypted: "
 msgstr "Verschlüsselt: "
 
@@ -3070,6 +3107,9 @@ msgstr "Ethernet Netzwerkadapter"
 
 msgid "Event font size (relative to skin size)"
 msgstr "Sendung Schriftgröße (relativ zur Skingröße)"
+
+msgid "Event name first"
+msgstr "Sendungsname zuerst"
 
 msgid "Event view"
 msgstr "Sendungsübersicht"
@@ -3225,26 +3265,33 @@ msgstr "F"
 msgid "F1/F3"
 msgstr "F1/F3"
 
-msgid "FBC Unicable"
-msgstr "FBC Unicable"
+msgid "FBC SCR (Unicable or JESS)"
+msgstr "FBC SCR (Unicable oder JESS)"
 
-msgid "FBC automatic loop through"
-msgstr "FBC automatisch durchgeschleift"
+msgid "FBC automatic"
+msgstr "FBC automatisch"
 
 msgid ""
-"FBC automatic loop through\n"
-"inactive"
+"FBC automatic\n"
+"connected to"
 msgstr ""
-"FBC automatisch durchschleifen\n"
-"nicht aktiv"
+"FBC automatisch\n"
+"verbunden mit"
 
 #, python-format
 msgid ""
-"FBC automatic loop through\n"
-"linked to %s"
+"FBC automatic\n"
+"connected to %s"
 msgstr ""
-"FBC automatisch durchgeschleift\n"
+"FBC automatisch\n"
 "verbunden mit %s"
+
+msgid ""
+"FBC automatic\n"
+"inactive"
+msgstr ""
+"FBC automatisch\n"
+"nicht aktiv"
 
 msgid "FEC"
 msgstr "FEC"
@@ -3512,6 +3559,14 @@ msgid "GUI Build: "
 msgstr "GUI Build: "
 
 msgid ""
+"GUI needs a restart to apply a new language\n"
+"Do you want to restart the GUI now?"
+msgstr ""
+"Das System muss neu gestartet werden,\n"
+"um die neue Sprache übernehmen zu können.\n"
+"Wollen Sie jetzt neu starten?"
+
+msgid ""
 "GUI needs a restart to apply a new skin\n"
 "Do you want to Restart the GUI now?"
 msgstr ""
@@ -3583,6 +3638,9 @@ msgstr "Springe zur vorherigen Kanal-Seite"
 
 msgid "Go up the list"
 msgstr "Liste nach oben durchgehen"
+
+msgid "Gold"
+msgstr ""
 
 msgid "Goto"
 msgstr "Gehe zu"
@@ -3665,6 +3723,10 @@ msgstr ""
 
 msgid "HDMI"
 msgstr "HDMI"
+
+#, fuzzy
+msgid "HDMI Colordepth"
+msgstr "HDMI Colorimetry"
 
 msgid "HDMI Colorimetry"
 msgstr "HDMI Colorimetry"
@@ -3961,6 +4023,12 @@ msgstr "Initalisiere Speichermedium...."
 msgid "Input"
 msgstr "Eingabe"
 
+msgid "Input "
+msgstr "Eingabe "
+
+msgid "Input Stream ID"
+msgstr ""
+
 msgid "Input device setup"
 msgstr "Eingabegeräte Setup"
 
@@ -3999,9 +4067,6 @@ msgstr "Picons installieren auf"
 
 msgid "Install plugins"
 msgstr "Erweiterungen installieren"
-
-msgid "Install softcam support"
-msgstr "Installiere Softcam Unterstützung..."
 
 msgid "Installation has completed."
 msgstr "Installation abgeschlossen"
@@ -4349,6 +4414,9 @@ msgstr "Signal:"
 msgid "Log results to /tmp"
 msgstr "Ergebnisse nach /tmp protokollieren"
 
+msgid "Logfile does not exist anymore"
+msgstr ""
+
 msgid "Logs location"
 msgstr "Logs Speicherort"
 
@@ -4635,6 +4703,9 @@ msgstr "Bild im Bild verschieben"
 
 msgid "Move PiP to main picture"
 msgstr "Bild im Bild tauschen und beenden"
+
+msgid "Move Picture in Picture"
+msgstr "Bild im Bild verschieben"
 
 msgid "Move east"
 msgstr "Drehen nach Osten"
@@ -5310,6 +5381,12 @@ msgstr "Bild-in-Bild nit OSD"
 msgid "PLP ID"
 msgstr "PLP ID"
 
+msgid "PLS Code"
+msgstr ""
+
+msgid "PLS Mode"
+msgstr ""
+
 msgid "PMT PID"
 msgstr "PMT PID"
 
@@ -5644,9 +5721,6 @@ msgstr "Bitte warten"
 msgid "Please wait (downloading channel list)"
 msgstr "Bitte warten (Kanalliste wird geladen)..."
 
-msgid "Please wait (downloading softcam support)"
-msgstr "Bitte warten (Softcam Unterstützung wird geladen)..."
-
 msgid "Please wait (updating packages)"
 msgstr "Bitte warten (Paketupdates)..."
 
@@ -5766,6 +5840,9 @@ msgstr "Einstellungen Rotor"
 
 msgid "Positioner setup log"
 msgstr "Einstellungen Rotor Log"
+
+msgid "Power on display"
+msgstr ""
 
 msgid "Power threshold in mA"
 msgstr "Strom Schwellwert in mA"
@@ -6217,6 +6294,9 @@ msgstr "Markierung entfernen"
 msgid "Remove a nameserver entry"
 msgstr "DNS-Servereintrag entfernen"
 
+msgid "Remove all logfiles"
+msgstr "Entferne alle Logdateien"
+
 msgid "Remove bookmark"
 msgstr "Lesezeichen entfernen"
 
@@ -6234,6 +6314,9 @@ msgstr "Plugins entfernen"
 
 msgid "Remove texts for the hearing impaired from external subtitles (instrumental music or environmental sounds, e.g., when a doorbell rings or a gun shot is heard)."
 msgstr "Entfernt Texte für Hörgeschädigte aus externen Untertiteln (z.B. Beschreibungen von Geräuschen)."
+
+msgid "Remove this logfile"
+msgstr "Diese Logdatei entfernen"
 
 msgid "Remove timer"
 msgstr "Entferne Timer"
@@ -6427,6 +6510,9 @@ msgstr "Roll-off"
 
 msgid "Romanian"
 msgstr "Rumänisch"
+
+msgid "Root"
+msgstr ""
 
 msgid "Root directory"
 msgstr "Hauptverzeichnis"
@@ -7193,6 +7279,9 @@ msgstr "Zeige letzte Änderungen"
 msgid "Show latest upgrade log"
 msgstr "Zeige Log der letzten Aktualisierung"
 
+msgid "Show menu numbers"
+msgstr "Zeige Nummerierung des Menüs"
+
 msgid "Show menu paths"
 msgstr "Zeige Menüpfade"
 
@@ -7219,6 +7308,9 @@ msgstr "Zu aktualisierende Pakete"
 
 msgid "Show picons in channel selection list"
 msgstr "Zeige Picons in Kanalliste"
+
+msgid "Show picons in display"
+msgstr "Zeige Picons im Display"
 
 msgid "Show positioner movement"
 msgstr "Rotorbewegung anzeigen"
@@ -7385,14 +7477,8 @@ msgstr "Überspringe leere Sender"
 msgid "Skip internet connection check (disables automatic package installation)"
 msgstr "Überspringe Internet-Verbindungstest (automatische Paketinstallation deaktivieren)"
 
-msgid "Sleep timer"
-msgstr "Sleep Timer"
-
 msgid "Sleep/wakeup timer"
 msgstr "Aus-/Einschalt-Timer"
-
-msgid "SleepTimer Configuration"
-msgstr "Sleeptimer Einstellungen"
 
 msgid "Sleeptimer"
 msgstr "Sleeptimer"
@@ -7475,6 +7561,9 @@ msgstr "Software aktualisieren"
 
 msgid "Softwaremanager information"
 msgstr "Softwaremanager Information"
+
+msgid "Some error occured - Please try later"
+msgstr ""
 
 msgid "Some plugins are not available:\n"
 msgstr "Einige Plugins sind nicht verfügbar:\n"
@@ -8095,6 +8184,12 @@ msgstr "Die Sicherung ist fehlgeschlagen. Bitte einen anderen Sicherungsort ausw
 
 #, python-format
 msgid ""
+"The current software might not be stable.\n"
+"For more information see %s."
+msgstr ""
+
+#, python-format
+msgid ""
 "The directory %s is not writable.\n"
 "Make sure you select a writable directory instead."
 msgstr ""
@@ -8174,6 +8269,10 @@ msgid ""
 msgstr ""
 "Das Softwaremanagement Plugin ist nicht installiert!\n"
 "Bitte installieren Sie es."
+
+#, python-format
+msgid "The status of the current software could not be checked because %s can not be reached."
+msgstr ""
 
 msgid "The stored EPG data will be read every (hours)"
 msgstr "Die gespeicherten EPG-Daten nach der eingestellten Zeit automatisch neu einlesen"
@@ -8307,6 +8406,9 @@ msgstr "Diese Option erlaubt es Block-Rauschen im Bild zu reduzieren. Diese Opti
 msgid "This option allows to set the level of dynamic contrast of the picture."
 msgstr "Diese Option erlaubt es den Wert für den dynamischen Kontrast des Bildes zu setzen."
 
+msgid "This option allows you can config the Colordepth for UHD"
+msgstr ""
+
 msgid "This option allows you can config the Colorimetry for HDR"
 msgstr ""
 
@@ -8325,7 +8427,13 @@ msgstr "Diese Option erlaubt es den Grünanteil des Bildes zu verstärken."
 msgid "This option allows you to hide and sort menu entries. When selecting user you can change order and hide menu items via the blue button"
 msgstr ""
 
+msgid "This option allows you to power off the display."
+msgstr ""
+
 msgid "This option allows you to set the Colorspace of HDMI from Auto to RGB"
+msgstr ""
+
+msgid "This option allows you to show menu number quick links."
 msgstr ""
 
 msgid "This option allows you to show menu paths."
@@ -8638,6 +8746,9 @@ msgstr "Mülleimer"
 
 msgid "Tries left:"
 msgstr "Übrige Versuche:"
+
+msgid "Troubleshoot"
+msgstr ""
 
 msgid "Try to find used transponders in cable network.. please wait..."
 msgstr "Suche benutzte Transponder im Kabel Netzwerk.. bitte warten..."
@@ -9566,19 +9677,6 @@ msgstr "ohne Popup"
 msgid "Wizard to arrange the overscan"
 msgstr ""
 
-msgid ""
-"Would you like to be able to install softcams?\n"
-"\n"
-"Attention - Country specific illegal!\n"
-"\n"
-"Check legality for your specific country in advance!"
-msgstr ""
-"Möchten Sie später Softcams installieren können?\n"
-"\n"
-"Achtung - länderabhängig illegal!\n"
-"\n"
-"Rechtslage vorher für Ihr Land prüfen!"
-
 #, python-format
 msgid "Would you save the entered PIN %s persistent?"
 msgstr "Wollen Sie die eingegebene PIN %s dauerhaft speichern?"
@@ -9591,6 +9689,15 @@ msgstr "Schreiben fehlgeschlagen!"
 
 msgid "Write to /tmp/positionersetup.log"
 msgstr "Fehler beim Schreiben: /tmp/positionersetup.log"
+
+msgid "YCbCr420"
+msgstr ""
+
+msgid "YCbCr422"
+msgstr ""
+
+msgid "YCbCr444"
+msgstr ""
 
 msgid "YES"
 msgstr "JA"
@@ -9642,12 +9749,6 @@ msgstr "Ja, einen automatischen Suchlauf durchführen"
 
 msgid "Yes, do another manual scan now"
 msgstr "Ja, einen weiteren manuellen Suchlauf durchführen"
-
-msgid "Enabled, only from deep standby"
-msgstr "Aktiviert, nur aus Deep Standby"
-
-msgid "Enabled, only from standby"
-msgstr "Aktiviert, nur aus Standby\v"
 
 msgid "Yes, perform a shutdown now."
 msgstr "Ja, jetzt herunterfahren."
@@ -11001,9 +11102,6 @@ msgstr "Mischen"
 msgid "shut down"
 msgstr "Ausschalten"
 
-msgid "shutdown"
-msgstr "Ausschalten"
-
 msgid "simple"
 msgstr "Einfach"
 
@@ -11045,9 +11143,6 @@ msgstr "Sportzeitung"
 
 msgid "standard"
 msgstr "Standard"
-
-msgid "standby"
-msgstr "Standby"
 
 msgid "start cut here"
 msgstr "Schnitt hier starten"
@@ -11304,6 +11399,9 @@ msgstr "umgeschaltet"
 #~ msgid "Es folgt:"
 #~ msgstr "Es folgt:"
 
+#~ msgid "FBC Unicable"
+#~ msgstr "FBC Unicable"
+
 #, fuzzy
 #~ msgid "FP Upgrade"
 #~ msgstr "Aktualisiere"
@@ -11317,6 +11415,9 @@ msgstr "umgeschaltet"
 
 #~ msgid "Immediate shutdown"
 #~ msgstr "Direkt runterfahren"
+
+#~ msgid "Install softcam support"
+#~ msgstr "Installiere Softcam Unterstützung..."
 
 #~ msgid "Multiplex"
 #~ msgstr "Multiplex"
@@ -11332,6 +11433,9 @@ msgstr "umgeschaltet"
 
 #~ msgid "PIDs"
 #~ msgstr "PIDs"
+
+#~ msgid "Please wait (downloading softcam support)"
+#~ msgstr "Bitte warten (Softcam Unterstützung wird geladen)..."
 
 #~ msgid "Polarisation:"
 #~ msgstr "Polarisation:"
@@ -11353,6 +11457,12 @@ msgstr "umgeschaltet"
 
 #~ msgid "Silently zap between bouquets"
 #~ msgstr "Still zwischen Bouquets umschalten"
+
+#~ msgid "Sleep timer"
+#~ msgstr "Sleep Timer"
+
+#~ msgid "SleepTimer Configuration"
+#~ msgstr "Sleeptimer Einstellungen"
 
 #~ msgid "System Message"
 #~ msgstr "System Nachricht"
@@ -11385,6 +11495,19 @@ msgstr "umgeschaltet"
 #~ msgstr "Fehlermeldungen des allgemeinen Schnittstellen Modules (CI) werden nicht angezeigt."
 
 #~ msgid ""
+#~ "Would you like to be able to install softcams?\n"
+#~ "\n"
+#~ "Attention - Country specific illegal!\n"
+#~ "\n"
+#~ "Check legality for your specific country in advance!"
+#~ msgstr ""
+#~ "Möchten Sie später Softcams installieren können?\n"
+#~ "\n"
+#~ "Achtung - länderabhängig illegal!\n"
+#~ "\n"
+#~ "Rechtslage vorher für Ihr Land prüfen!"
+
+#~ msgid ""
 #~ "Your frontprocessor firmware must be upgraded.\n"
 #~ "Press OK to start upgrade."
 #~ msgstr ""
@@ -11402,6 +11525,12 @@ msgstr "umgeschaltet"
 
 #~ msgid "open device manager"
 #~ msgstr "Datenträger Verwaltung öffnen"
+
+#~ msgid "shutdown"
+#~ msgstr "Ausschalten"
+
+#~ msgid "standby"
+#~ msgstr "Standby"
 
 #~ msgid "unknown error"
 #~ msgstr "unbekannter Fehler"

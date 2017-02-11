@@ -49,7 +49,8 @@ config.plugins.configurationbackup = ConfigSubsection()
 config.plugins.configurationbackup.backuplocation = ConfigText(default = '/media/hdd/', visible_width = 50, fixed_size = False)
 config.plugins.configurationbackup.backupdirs = ConfigLocations(default=[eEnv.resolve('${sysconfdir}/enigma2/'),
 																		 '/etc/network/interfaces', '/etc/wpa_supplicant.conf', '/etc/wpa_supplicant.ath0.conf',
-																		 '/etc/wpa_supplicant.wlan0.conf', '/etc/resolv.conf', '/etc/default_gw', '/etc/hostname',
+																		 '/etc/wpa_supplicant.wlan0.conf', '/etc/resolv.conf', '/etc/default_gw', '/etc/hostname', '/etc/fstab', '/picon/',
+																		 '/etc/auto.master', '/etc/auto.net', '/etc/auto.network', '/etc/autofs.conf', '/etc/tuxbox/config/', '/etc/cihelper.conf',
 																		 eEnv.resolve("${datadir}/enigma2/keymap.usr"), eEnv.resolve("${datadir}/enigma2/keymap.ntr")])
 
 config.plugins.softwaremanager = ConfigSubsection()

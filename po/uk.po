@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-18 19:53+0100\n"
+"POT-Creation-Date: 2017-02-10 18:08+0100\n"
 "PO-Revision-Date: 2015-01-29 17:40+0200\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -341,6 +341,10 @@ msgstr[0] ""
 msgstr[1] ""
 msgstr[2] ""
 
+#, fuzzy, python-format
+msgid "%d sec"
+msgstr "%d секунда"
+
 #, python-format
 msgid "%d second"
 msgid_plural "%d seconds"
@@ -467,6 +471,9 @@ msgstr "1.2"
 msgid "1024 MB"
 msgstr ""
 
+msgid "10bit"
+msgstr ""
+
 msgid "128 MB"
 msgstr ""
 
@@ -475,6 +482,9 @@ msgstr ""
 
 msgid "12V output"
 msgstr "12V вихід"
+
+msgid "12bit"
+msgstr ""
 
 msgid "13 V"
 msgstr "13 V"
@@ -579,6 +589,9 @@ msgstr "7"
 
 msgid "8"
 msgstr "8"
+
+msgid "8bit"
+msgstr ""
 
 msgid "9"
 msgstr "9"
@@ -1131,6 +1144,10 @@ msgstr ""
 
 msgid "Audio PID"
 msgstr "Аудіо PID"
+
+#, fuzzy
+msgid "Audio channel"
+msgstr "Інсталювати список каналів"
 
 msgid "Audio language selection 1"
 msgstr "Вибір мови Аудіо 1"
@@ -1772,11 +1789,18 @@ msgstr "Формат кольору"
 msgid "Color space"
 msgstr "Формат кольору"
 
+msgid "Combo"
+msgstr ""
+
 msgid "Command execution..."
 msgstr "Виконання команди..."
 
 msgid "Command order"
 msgstr "Послідовність команд"
+
+#, fuzzy
+msgid "Commit info"
+msgstr "Зв'язок"
 
 msgid "Common Interface"
 msgstr "Інтерфейс модулів"
@@ -1862,6 +1886,10 @@ msgstr "Вкажіть, що робити при початку відтворе
 #, fuzzy
 msgid "Configure if epg.dat should be saved at all."
 msgstr "Вкажіть, який роз'єм відеовиходу буде використаний."
+
+#, fuzzy
+msgid "Configure if service picons will be shown in display (when supported by the skin)."
+msgstr "Налаштування для показу Пікон сервісів в списку сервісів."
 
 msgid "Configure if service picons will be shown in the channel selection list."
 msgstr "Налаштування відображення піконів в списку каналів "
@@ -2248,6 +2276,9 @@ msgstr "Створити DVD-ISO"
 #, fuzzy
 msgid "Create new folder and exit"
 msgstr "Створити нову папку"
+
+msgid "Create seperate radio userbouquet"
+msgstr ""
 
 #, python-format
 msgid "Creating directory %s failed."
@@ -2680,6 +2711,10 @@ msgstr ""
 msgid "Disabled"
 msgstr "Відключений"
 
+#, fuzzy
+msgid "Disclaimer"
+msgstr "Запустити зберігач екрану через"
+
 msgid "Disk space to reserve for recordings (in GB)"
 msgstr "Резервувати місце на диску для записів (в GB)"
 
@@ -2837,6 +2872,10 @@ msgstr "Ви хочете перезавантажити ваш ресивер?"
 
 msgid "Do you want to reboot your receiver?"
 msgstr "Ви хочете перезавантажити ваш ресивер?"
+
+#, fuzzy
+msgid "Do you want to remove all the crahs logfiles"
+msgstr "Ви хочете видалити пакет:\n"
 
 msgid "Do you want to remove the package:\n"
 msgstr "Ви хочете видалити пакет:\n"
@@ -3119,6 +3158,14 @@ msgstr "Редагувати сервер DNS вашого ресивера.\n"
 msgid "Enabled"
 msgstr "Увімкнено"
 
+#, fuzzy
+msgid "Enabled, only from deep standby"
+msgstr "перейти в глибокий Режим очікування"
+
+#, fuzzy
+msgid "Enabled, only from standby"
+msgstr "перейти в Режим очікування"
+
 msgid "Encrypted: "
 msgstr "Шифрування:"
 
@@ -3205,6 +3252,10 @@ msgstr "Інтернет мережевий інтерфейс"
 
 msgid "Event font size (relative to skin size)"
 msgstr "Розмір шрифту подій (стосовно скіну)"
+
+#, fuzzy
+msgid "Event name first"
+msgstr "Режим події для пошуку"
 
 msgid "Event view"
 msgstr "Огляд події"
@@ -3378,21 +3429,28 @@ msgid "F1/F3"
 msgstr ""
 
 #, fuzzy
-msgid "FBC Unicable"
-msgstr "Unicable LNB"
+msgid "FBC SCR (Unicable or JESS)"
+msgstr "Unicable"
 
-msgid "FBC automatic loop through"
-msgstr ""
+#, fuzzy
+msgid "FBC automatic"
+msgstr "автоматично"
 
+#, fuzzy
 msgid ""
-"FBC automatic loop through\n"
-"inactive"
-msgstr ""
+"FBC automatic\n"
+"connected to"
+msgstr "Підключено до"
 
 #, python-format
 msgid ""
-"FBC automatic loop through\n"
-"linked to %s"
+"FBC automatic\n"
+"connected to %s"
+msgstr ""
+
+msgid ""
+"FBC automatic\n"
+"inactive"
 msgstr ""
 
 msgid "FEC"
@@ -3672,6 +3730,14 @@ msgstr ""
 
 #, fuzzy
 msgid ""
+"GUI needs a restart to apply a new language\n"
+"Do you want to restart the GUI now?"
+msgstr ""
+"Для активації нового скіна необхідний рестарт GUI.\n"
+"Ви хочете зробити це зараз?"
+
+#, fuzzy
+msgid ""
 "GUI needs a restart to apply a new skin\n"
 "Do you want to Restart the GUI now?"
 msgstr ""
@@ -3742,6 +3808,9 @@ msgstr "Перейти на попередню сторінку сервісів
 
 msgid "Go up the list"
 msgstr "Перейти в кінець списку"
+
+msgid "Gold"
+msgstr ""
 
 msgid "Goto"
 msgstr "Перехід"
@@ -3829,6 +3898,10 @@ msgstr ""
 
 msgid "HDMI"
 msgstr ""
+
+#, fuzzy
+msgid "HDMI Colordepth"
+msgstr "Формат кольору"
 
 #, fuzzy
 msgid "HDMI Colorimetry"
@@ -4141,6 +4214,13 @@ msgstr "Ініціалізація жесткого диска..."
 msgid "Input"
 msgstr "Вхід"
 
+#, fuzzy
+msgid "Input "
+msgstr "Вхід"
+
+msgid "Input Stream ID"
+msgstr ""
+
 msgid "Input device setup"
 msgstr "Налаштування пристрою введення"
 
@@ -4181,10 +4261,6 @@ msgstr "Інсталяція Піконів в"
 #, fuzzy
 msgid "Install plugins"
 msgstr "Інсталяція Піконів в"
-
-#, fuzzy
-msgid "Install softcam support"
-msgstr "Інсталяція Емулятора"
 
 msgid "Installation has completed."
 msgstr "Інсталяцію завершено."
@@ -4545,6 +4621,9 @@ msgstr "Захоплення:"
 msgid "Log results to /tmp"
 msgstr "Записувати журнал на диск"
 
+msgid "Logfile does not exist anymore"
+msgstr ""
+
 #, fuzzy
 msgid "Logs location"
 msgstr "Розташування"
@@ -4845,6 +4924,10 @@ msgstr "Переміщення"
 
 msgid "Move PiP to main picture"
 msgstr "Перемістити PiP на основний екран"
+
+#, fuzzy
+msgid "Move Picture in Picture"
+msgstr "Включити картинку в картинці"
 
 msgid "Move east"
 msgstr "Переміщення на схід"
@@ -5545,6 +5628,12 @@ msgstr ""
 msgid "PLP ID"
 msgstr ""
 
+msgid "PLS Code"
+msgstr ""
+
+msgid "PLS Mode"
+msgstr ""
+
 msgid "PMT PID"
 msgstr "РМТ PID"
 
@@ -5906,10 +5995,6 @@ msgstr "Очікуйте..."
 msgid "Please wait (downloading channel list)"
 msgstr "Зачекайте (Завантажується список каналів)"
 
-#, fuzzy
-msgid "Please wait (downloading softcam support)"
-msgstr "Зачекайте (завантажуємо емулятор)"
-
 msgid "Please wait (updating packages)"
 msgstr "Зачекайте (оновлюємо пакети)"
 
@@ -6033,6 +6118,9 @@ msgstr "Налаштування позіционеру"
 #, fuzzy
 msgid "Positioner setup log"
 msgstr "Налаштування позіционеру"
+
+msgid "Power on display"
+msgstr ""
 
 msgid "Power threshold in mA"
 msgstr "Поріг струму в mA"
@@ -6529,6 +6617,10 @@ msgstr "Удалить метку"
 msgid "Remove a nameserver entry"
 msgstr "Видалити дані DNS"
 
+#, fuzzy
+msgid "Remove all logfiles"
+msgstr "Всі файли видалені"
+
 msgid "Remove bookmark"
 msgstr "Видалити закладку"
 
@@ -6546,6 +6638,10 @@ msgstr "Видалення плагінів"
 
 msgid "Remove texts for the hearing impaired from external subtitles (instrumental music or environmental sounds, e.g., when a doorbell rings or a gun shot is heard)."
 msgstr ""
+
+#, fuzzy
+msgid "Remove this logfile"
+msgstr "Видалити опис"
 
 msgid "Remove timer"
 msgstr "Видалити таймер"
@@ -6746,6 +6842,9 @@ msgstr "Roll-off фактор"
 
 msgid "Romanian"
 msgstr "Румунський"
+
+msgid "Root"
+msgstr ""
 
 msgid "Root directory"
 msgstr "Кореневий каталог"
@@ -7567,6 +7666,10 @@ msgid "Show latest upgrade log"
 msgstr "Останнє оновлення: "
 
 #, fuzzy
+msgid "Show menu numbers"
+msgstr "Номер набору"
+
+#, fuzzy
 msgid "Show menu paths"
 msgstr "Показати меню тегів"
 
@@ -7596,6 +7699,10 @@ msgstr "Список пакетів оновлення"
 #, fuzzy
 msgid "Show picons in channel selection list"
 msgstr "Показати Пікони в списку каналів"
+
+#, fuzzy
+msgid "Show picons in display"
+msgstr "Показати Пікони в списку сервісів"
 
 msgid "Show positioner movement"
 msgstr "Показати рух позіционеру"
@@ -7782,15 +7889,9 @@ msgstr "Пропускати порожні сервіси"
 msgid "Skip internet connection check (disables automatic package installation)"
 msgstr "Пропустити перевірку інтернет з'єднання (відключає автоматичну установку пакетів)"
 
-msgid "Sleep timer"
-msgstr "Таймер сну"
-
 #, fuzzy
 msgid "Sleep/wakeup timer"
 msgstr "Таймер сну"
-
-msgid "SleepTimer Configuration"
-msgstr "Налаштування таймера сну"
 
 msgid "Sleeptimer"
 msgstr "Таймер сну"
@@ -7876,6 +7977,9 @@ msgstr "Оновлення софта"
 
 msgid "Softwaremanager information"
 msgstr "Информація менеджера софта"
+
+msgid "Some error occured - Please try later"
+msgstr ""
 
 msgid "Some plugins are not available:\n"
 msgstr "Деякі плагіни недоступні:\n"
@@ -8531,6 +8635,12 @@ msgstr "Збереження не виконано. Виберіть інше м
 
 #, python-format
 msgid ""
+"The current software might not be stable.\n"
+"For more information see %s."
+msgstr ""
+
+#, python-format
+msgid ""
 "The directory %s is not writable.\n"
 "Make sure you select a writable directory instead."
 msgstr ""
@@ -8608,6 +8718,10 @@ msgid ""
 msgstr ""
 "Плагін Witeless LAN не встановлений!\n"
 "Будь ласка, встановіть його."
+
+#, python-format
+msgid "The status of the current software could not be checked because %s can not be reached."
+msgstr ""
 
 msgid "The stored EPG data will be read every (hours)"
 msgstr ""
@@ -8736,6 +8850,9 @@ msgstr ""
 msgid "This option allows to set the level of dynamic contrast of the picture."
 msgstr ""
 
+msgid "This option allows you can config the Colordepth for UHD"
+msgstr ""
+
 msgid "This option allows you can config the Colorimetry for HDR"
 msgstr ""
 
@@ -8754,7 +8871,13 @@ msgstr ""
 msgid "This option allows you to hide and sort menu entries. When selecting user you can change order and hide menu items via the blue button"
 msgstr ""
 
+msgid "This option allows you to power off the display."
+msgstr ""
+
 msgid "This option allows you to set the Colorspace of HDMI from Auto to RGB"
+msgstr ""
+
+msgid "This option allows you to show menu number quick links."
 msgstr ""
 
 msgid "This option allows you to show menu paths."
@@ -9079,6 +9202,9 @@ msgstr "Кошик"
 
 msgid "Tries left:"
 msgstr "Залишилося спроб:"
+
+msgid "Troubleshoot"
+msgstr ""
 
 msgid "Try to find used transponders in cable network.. please wait..."
 msgstr "Намагаємося знайти транспондери, використовувані в кабельній мережі .. Будь ласка, зачекайте ..."
@@ -10045,14 +10171,6 @@ msgstr "Без повідомлення"
 msgid "Wizard to arrange the overscan"
 msgstr ""
 
-msgid ""
-"Would you like to be able to install softcams?\n"
-"\n"
-"Attention - Country specific illegal!\n"
-"\n"
-"Check legality for your specific country in advance!"
-msgstr ""
-
 #, python-format
 msgid "Would you save the entered PIN %s persistent?"
 msgstr ""
@@ -10066,6 +10184,15 @@ msgstr "Запис невдалий!"
 #, fuzzy
 msgid "Write to /tmp/positionersetup.log"
 msgstr "Не вдалося записати /tmp/positionersetup.log: "
+
+msgid "YCbCr420"
+msgstr ""
+
+msgid "YCbCr422"
+msgstr ""
+
+msgid "YCbCr444"
+msgstr ""
 
 msgid "YES"
 msgstr ""
@@ -10118,14 +10245,6 @@ msgstr "Так, виконати автоматичний пошук"
 
 msgid "Yes, do another manual scan now"
 msgstr "Так, виконати ще ручний пошук"
-
-#, fuzzy
-msgid "Enabled, only from deep standby"
-msgstr "перейти в глибокий Режим очікування"
-
-#, fuzzy
-msgid "Enabled, only from standby"
-msgstr "перейти в Режим очікування"
 
 msgid "Yes, perform a shutdown now."
 msgstr "Так, вимкнути зараз."
@@ -11502,10 +11621,6 @@ msgstr "випадковий порядок"
 msgid "shut down"
 msgstr "Вимкнути"
 
-#, fuzzy
-msgid "shutdown"
-msgstr "Вимкнути"
-
 msgid "simple"
 msgstr "простий"
 
@@ -11550,10 +11665,6 @@ msgstr "спортивний магазин"
 
 msgid "standard"
 msgstr "стандарт"
-
-#, fuzzy
-msgid "standby"
-msgstr "Режим очікування"
 
 msgid "start cut here"
 msgstr "початок редагування"
@@ -12275,9 +12386,6 @@ msgstr "переключено"
 #~ msgid "Configuration for inactivity actions"
 #~ msgstr "Конф. для переходу в режим очікування при бездіяльності"
 
-#~ msgid "Configure if service picons will be shown in the servicelist."
-#~ msgstr "Налаштування для показу Пікон сервісів в списку сервісів."
-
 #~ msgid "Configure the behavior of the 'pause' key when movie playback is already paused."
 #~ msgstr "Налаштування поведінки кнопки 'пауза', коли відео вже стоїть на паузі."
 
@@ -12592,14 +12700,15 @@ msgstr "переключено"
 #~ msgid "Estonia"
 #~ msgstr "Эстонія"
 
-#~ msgid "Event mode for search"
-#~ msgstr "Режим події для пошуку"
-
 #~ msgid "Extended search filter"
 #~ msgstr "Розширений фільтр пошуку"
 
 #~ msgid "F i l e l i s t"
 #~ msgstr "Список файлів"
+
+#, fuzzy
+#~ msgid "FBC Unicable"
+#~ msgstr "Unicable LNB"
 
 #, fuzzy
 #~ msgid "FP Upgrade"
@@ -12794,6 +12903,10 @@ msgstr "переключено"
 
 #~ msgid "Install packets"
 #~ msgstr "Інсталяція пакетів"
+
+#, fuzzy
+#~ msgid "Install softcam support"
+#~ msgstr "Інсталяція Емулятора"
 
 #~ msgid "Install tar.gz, bh.tgz, nab.tgz"
 #~ msgstr "Інсталяція tar.gz, bh.tgz, nab.tgz"
@@ -13281,9 +13394,6 @@ msgstr "переключено"
 #~ msgid "Philippines"
 #~ msgstr "Філіппіни"
 
-#~ msgid "Phone number"
-#~ msgstr "Номер набору"
-
 # message12-2
 #~ msgid "Place the USB-flash drive in the (front) USB-port and switch the receiver off and on with the powerswitch on the back of the receiver."
 #~ msgstr "Підключіть USB накопичувач в USB-порт (спереду), вимкніть і увімкніть супутниковий тюнер тумблером (якщо такий присутній) на задній панелі ресивера."
@@ -13306,6 +13416,10 @@ msgstr "переключено"
 
 #~ msgid "Please select the matching entry:"
 #~ msgstr "Будь ласка, виберіть зі списку:"
+
+#, fuzzy
+#~ msgid "Please wait (downloading softcam support)"
+#~ msgstr "Зачекайте (завантажуємо емулятор)"
 
 #~ msgid "Please wait, downloading epg.dat"
 #~ msgstr "Очікуйте, завантажується epg.dat"
@@ -13405,9 +13519,6 @@ msgstr "переключено"
 
 #~ msgid "Remove tabs"
 #~ msgstr "Видалити завдання"
-
-#~ msgid "Removed All Crashlog Files"
-#~ msgstr "Всі файли видалені"
 
 #~ msgid "Reset AutoShutDown settings to defaults?"
 #~ msgstr "Скинути налаштування AutoShutdown до значень за замовчуванням?"
@@ -13670,9 +13781,6 @@ msgstr "переключено"
 #~ msgid "Show message before inactivity action:"
 #~ msgstr "Показати повідомлення перед вимиканням:"
 
-#~ msgid "Show picons in servicelist"
-#~ msgstr "Показати Пікони в списку сервісів"
-
 #~ msgid "Show plugin in channel selection context menu"
 #~ msgstr "Показати плагін в контекстному меню селектора каналів"
 
@@ -13725,6 +13833,12 @@ msgstr "переключено"
 
 #~ msgid "SingleSelect Mode"
 #~ msgstr "Одинарний режим"
+
+#~ msgid "Sleep timer"
+#~ msgstr "Таймер сну"
+
+#~ msgid "SleepTimer Configuration"
+#~ msgstr "Налаштування таймера сну"
 
 #~ msgid "Sleet"
 #~ msgstr "Мокрий сніг"
@@ -14575,6 +14689,10 @@ msgstr "переключено"
 #~ msgid "show VCS..."
 #~ msgstr "відкрити VCS..."
 
+#, fuzzy
+#~ msgid "shutdown"
+#~ msgstr "Вимкнути"
+
 #~ msgid "simple tools for Pli image"
 #~ msgstr "Панель керування, утиліти, інструменти"
 
@@ -14583,6 +14701,10 @@ msgstr "переключено"
 
 #~ msgid "special characters"
 #~ msgstr "спеціальна подія"
+
+#, fuzzy
+#~ msgid "standby"
+#~ msgstr "Режим очікування"
 
 #~ msgid "stopping"
 #~ msgstr "Зупинений"

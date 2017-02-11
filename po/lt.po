@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-18 19:53+0100\n"
+"POT-Creation-Date: 2017-02-10 18:08+0100\n"
 "PO-Revision-Date: 2015-01-29 17:40+0200\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -311,6 +311,10 @@ msgstr[0] ""
 msgstr[1] ""
 
 #, python-format
+msgid "%d sec"
+msgstr ""
+
+#, python-format
 msgid "%d second"
 msgid_plural "%d seconds"
 msgstr[0] ""
@@ -432,6 +436,9 @@ msgstr "1.2"
 msgid "1024 MB"
 msgstr ""
 
+msgid "10bit"
+msgstr ""
+
 msgid "128 MB"
 msgstr ""
 
@@ -440,6 +447,9 @@ msgstr ""
 
 msgid "12V output"
 msgstr "12V išėjimas"
+
+msgid "12bit"
+msgstr ""
 
 msgid "13 V"
 msgstr "13 V"
@@ -544,6 +554,9 @@ msgstr "7"
 
 msgid "8"
 msgstr "8"
+
+msgid "8bit"
+msgstr ""
 
 msgid "9"
 msgstr "9"
@@ -1114,6 +1127,10 @@ msgstr ""
 
 msgid "Audio PID"
 msgstr "Garso PID"
+
+#, fuzzy
+msgid "Audio channel"
+msgstr "kitas kanalas į istoriją"
 
 msgid "Audio language selection 1"
 msgstr ""
@@ -1760,11 +1777,18 @@ msgstr "Spalvų formatas"
 msgid "Color space"
 msgstr "Spalvų formatas"
 
+msgid "Combo"
+msgstr ""
+
 msgid "Command execution..."
 msgstr "Vykdoma komanda..."
 
 msgid "Command order"
 msgstr "Komandų seka"
+
+#, fuzzy
+msgid "Commit info"
+msgstr "Komunikacija"
 
 msgid "Common Interface"
 msgstr "Įstatomi moduliai"
@@ -1849,6 +1873,9 @@ msgstr "Elgsena, kai filmas prasidėjęs"
 #, fuzzy
 msgid "Configure if epg.dat should be saved at all."
 msgstr "Pradinis greito persukimo greitis"
+
+msgid "Configure if service picons will be shown in display (when supported by the skin)."
+msgstr ""
 
 msgid "Configure if service picons will be shown in the channel selection list."
 msgstr ""
@@ -2246,6 +2273,9 @@ msgid "Create ISO"
 msgstr "Sukurkite DVD-ISO"
 
 msgid "Create new folder and exit"
+msgstr ""
+
+msgid "Create seperate radio userbouquet"
 msgstr ""
 
 #, python-format
@@ -2691,6 +2721,10 @@ msgstr ""
 msgid "Disabled"
 msgstr "Išjungtas"
 
+#, fuzzy
+msgid "Disclaimer"
+msgstr "rodyti informacijos eilutę"
+
 msgid "Disk space to reserve for recordings (in GB)"
 msgstr "Disko talpa įrašų rezervavimui (GB)"
 
@@ -2851,6 +2885,10 @@ msgstr "Jūs norite parsisiųsti atvaizdą į %s ?"
 
 msgid "Do you want to reboot your receiver?"
 msgstr ""
+
+#, fuzzy
+msgid "Do you want to remove all the crahs logfiles"
+msgstr "Jūs norite pašalinti paketą:\n"
 
 msgid "Do you want to remove the package:\n"
 msgstr "Jūs norite pašalinti paketą:\n"
@@ -3133,6 +3171,14 @@ msgstr "išeiti iš serverio pavadinimo konfigūracijos"
 msgid "Enabled"
 msgstr "Įjungta"
 
+#, fuzzy
+msgid "Enabled, only from deep standby"
+msgstr "eiti į visišką išjungimą"
+
+#, fuzzy
+msgid "Enabled, only from standby"
+msgstr "eiti į išjungimą"
+
 msgid "Encrypted: "
 msgstr "Užšifruota:"
 
@@ -3220,6 +3266,9 @@ msgid "Ethernet network interface"
 msgstr "Ethernet tinklo sąsaja"
 
 msgid "Event font size (relative to skin size)"
+msgstr ""
+
+msgid "Event name first"
 msgstr ""
 
 #, fuzzy
@@ -3399,21 +3448,28 @@ msgid "F1/F3"
 msgstr ""
 
 #, fuzzy
-msgid "FBC Unicable"
-msgstr "Unicable LNB"
+msgid "FBC SCR (Unicable or JESS)"
+msgstr "Unicable"
 
-msgid "FBC automatic loop through"
-msgstr ""
+#, fuzzy
+msgid "FBC automatic"
+msgstr "Automatinis"
 
+#, fuzzy
 msgid ""
-"FBC automatic loop through\n"
-"inactive"
-msgstr ""
+"FBC automatic\n"
+"connected to"
+msgstr "Prisijungta prie"
 
 #, python-format
 msgid ""
-"FBC automatic loop through\n"
-"linked to %s"
+"FBC automatic\n"
+"connected to %s"
+msgstr ""
+
+msgid ""
+"FBC automatic\n"
+"inactive"
 msgstr ""
 
 msgid "FEC"
@@ -3689,6 +3745,14 @@ msgstr ""
 
 #, fuzzy
 msgid ""
+"GUI needs a restart to apply a new language\n"
+"Do you want to restart the GUI now?"
+msgstr ""
+"Reikia paleisti iš naujo Enigma2 ,kad patvirtinti naują temą\n"
+"Jūs norite paleisti iš naujo Enigma2 dabar?"
+
+#, fuzzy
+msgid ""
 "GUI needs a restart to apply a new skin\n"
 "Do you want to Restart the GUI now?"
 msgstr ""
@@ -3766,6 +3830,9 @@ msgid "Go to previous page of service"
 msgstr "Grįžkite į buvusį kanalą"
 
 msgid "Go up the list"
+msgstr ""
+
+msgid "Gold"
 msgstr ""
 
 msgid "Goto"
@@ -3849,6 +3916,10 @@ msgstr ""
 
 msgid "HDMI"
 msgstr ""
+
+#, fuzzy
+msgid "HDMI Colordepth"
+msgstr "Spalvų formatas"
 
 #, fuzzy
 msgid "HDMI Colorimetry"
@@ -4170,6 +4241,13 @@ msgstr "Įrenginio inicializavimas..."
 msgid "Input"
 msgstr "Įėjimas"
 
+#, fuzzy
+msgid "Input "
+msgstr "Įėjimas"
+
+msgid "Input Stream ID"
+msgstr ""
+
 msgid "Input device setup"
 msgstr "Prietaiso įvesties valdymas"
 
@@ -4211,10 +4289,6 @@ msgstr ""
 #, fuzzy
 msgid "Install plugins"
 msgstr "Įdiegiama"
-
-#, fuzzy
-msgid "Install softcam support"
-msgstr "Įdiegiama programinė įranga..."
 
 #, fuzzy
 msgid "Installation has completed."
@@ -4600,6 +4674,9 @@ msgstr "Lock:"
 msgid "Log results to /tmp"
 msgstr "Log rezultatus į kietą diską"
 
+msgid "Logfile does not exist anymore"
+msgstr ""
+
 #, fuzzy
 msgid "Logs location"
 msgstr "Vieta"
@@ -4906,6 +4983,10 @@ msgstr ""
 #, fuzzy
 msgid "Move PiP to main picture"
 msgstr "perkelti PiP į mano paveikslėlį"
+
+#, fuzzy
+msgid "Move Picture in Picture"
+msgstr "Aktyvuoti paveikslėlį paveikslėlyje"
 
 msgid "Move east"
 msgstr "Sukti į rytus"
@@ -5619,6 +5700,13 @@ msgstr ""
 msgid "PLP ID"
 msgstr ""
 
+msgid "PLS Code"
+msgstr ""
+
+#, fuzzy
+msgid "PLS Mode"
+msgstr "Pasirinkimas"
+
 msgid "PMT PID"
 msgstr "PMT PID"
 
@@ -5993,10 +6081,6 @@ msgid "Please wait (downloading channel list)"
 msgstr "Prašome laukti... Užkraunamas sąrašas..."
 
 #, fuzzy
-msgid "Please wait (downloading softcam support)"
-msgstr "Prašome laukti... Užkraunamas sąrašas..."
-
-#, fuzzy
 msgid "Please wait (updating packages)"
 msgstr "laukite...užkraunamas paveikslėlis"
 
@@ -6120,6 +6204,9 @@ msgstr "Pozicionieriaus nustatymas"
 #, fuzzy
 msgid "Positioner setup log"
 msgstr "Pozicionieriaus nustatymas"
+
+msgid "Power on display"
+msgstr ""
 
 msgid "Power threshold in mA"
 msgstr "Įtampos galia mA"
@@ -6619,6 +6706,10 @@ msgid "Remove a nameserver entry"
 msgstr "pašalinkite serverio pavadinimo įėjimą"
 
 #, fuzzy
+msgid "Remove all logfiles"
+msgstr "pašalinti visus kitus"
+
+#, fuzzy
 msgid "Remove bookmark"
 msgstr "pašalinti žymę"
 
@@ -6638,6 +6729,10 @@ msgstr "Pašalinti papildomas programas"
 
 msgid "Remove texts for the hearing impaired from external subtitles (instrumental music or environmental sounds, e.g., when a doorbell rings or a gun shot is heard)."
 msgstr ""
+
+#, fuzzy
+msgid "Remove this logfile"
+msgstr "Pašalinti "
 
 msgid "Remove timer"
 msgstr "Pašalinti laikmatį"
@@ -6837,6 +6932,9 @@ msgid "Roll-off"
 msgstr "Roll-off"
 
 msgid "Romanian"
+msgstr ""
+
+msgid "Root"
 msgstr ""
 
 msgid "Root directory"
@@ -7687,6 +7785,10 @@ msgid "Show latest upgrade log"
 msgstr "Išsirinkite atnaujinimo šaltinį dėl redagavimo."
 
 #, fuzzy
+msgid "Show menu numbers"
+msgstr "Telefono numeris"
+
+#, fuzzy
 msgid "Show menu paths"
 msgstr "rodyti etiketės meniu"
 
@@ -7718,6 +7820,10 @@ msgstr "Paketo sąrašo atnaujinimas"
 #, fuzzy
 msgid "Show picons in channel selection list"
 msgstr "Rodyti atvejo eigą kanalo pasirinkime"
+
+#, fuzzy
+msgid "Show picons in display"
+msgstr "Rodyti statuso ikonas filmų sąraše"
 
 msgid "Show positioner movement"
 msgstr "Rodyti pozicionieriaus judėjimą"
@@ -7909,15 +8015,8 @@ msgid "Skip internet connection check (disables automatic package installation)"
 msgstr ""
 
 #, fuzzy
-msgid "Sleep timer"
-msgstr "Budėjimo laikmatis"
-
-#, fuzzy
 msgid "Sleep/wakeup timer"
 msgstr "Budėjimo laikmatis"
-
-msgid "SleepTimer Configuration"
-msgstr ""
 
 msgid "Sleeptimer"
 msgstr ""
@@ -8007,6 +8106,9 @@ msgstr "Programinės įrangos atnaujinimas"
 
 msgid "Softwaremanager information"
 msgstr "Programinės įrangos valdymo informacija"
+
+msgid "Some error occured - Please try later"
+msgstr ""
 
 msgid "Some plugins are not available:\n"
 msgstr "Kai kurių papildomų programų nėra:\n"
@@ -8682,6 +8784,12 @@ msgstr "Išsaugoti nepavyko. Pasirinkite kitą vietą išsaugojimui. "
 
 #, python-format
 msgid ""
+"The current software might not be stable.\n"
+"For more information see %s."
+msgstr ""
+
+#, python-format
+msgid ""
 "The directory %s is not writable.\n"
 "Make sure you select a writable directory instead."
 msgstr ""
@@ -8761,6 +8869,10 @@ msgid ""
 msgstr ""
 "Programinės įrangos valdymo programa neįdiegta!\n"
 "Prašome įdiegti tai."
+
+#, python-format
+msgid "The status of the current software could not be checked because %s can not be reached."
+msgstr ""
 
 msgid "The stored EPG data will be read every (hours)"
 msgstr ""
@@ -8887,6 +8999,9 @@ msgstr ""
 msgid "This option allows to set the level of dynamic contrast of the picture."
 msgstr ""
 
+msgid "This option allows you can config the Colordepth for UHD"
+msgstr ""
+
 msgid "This option allows you can config the Colorimetry for HDR"
 msgstr ""
 
@@ -8905,7 +9020,13 @@ msgstr ""
 msgid "This option allows you to hide and sort menu entries. When selecting user you can change order and hide menu items via the blue button"
 msgstr ""
 
+msgid "This option allows you to power off the display."
+msgstr ""
+
 msgid "This option allows you to set the Colorspace of HDMI from Auto to RGB"
+msgstr ""
+
+msgid "This option allows you to show menu number quick links."
 msgstr ""
 
 msgid "This option allows you to show menu paths."
@@ -9231,6 +9352,9 @@ msgstr ""
 
 msgid "Tries left:"
 msgstr "Bandymo kartų:"
+
+msgid "Troubleshoot"
+msgstr ""
 
 msgid "Try to find used transponders in cable network.. please wait..."
 msgstr "Bandoma surasti Transponderius kabeliniuose tinkluose.. prašome laukti..."
@@ -10189,14 +10313,6 @@ msgstr ""
 msgid "Wizard to arrange the overscan"
 msgstr ""
 
-msgid ""
-"Would you like to be able to install softcams?\n"
-"\n"
-"Attention - Country specific illegal!\n"
-"\n"
-"Check legality for your specific country in advance!"
-msgstr ""
-
 #, python-format
 msgid "Would you save the entered PIN %s persistent?"
 msgstr ""
@@ -10208,6 +10324,15 @@ msgid "Write failed!"
 msgstr "Įrašymas klaidingas!"
 
 msgid "Write to /tmp/positionersetup.log"
+msgstr ""
+
+msgid "YCbCr420"
+msgstr ""
+
+msgid "YCbCr422"
+msgstr ""
+
+msgid "YCbCr444"
 msgstr ""
 
 msgid "YES"
@@ -10261,14 +10386,6 @@ msgstr "Taip, atlikti automatinę paiešką"
 
 msgid "Yes, do another manual scan now"
 msgstr "Taip, atlikti dar kitą rankinę paiešką"
-
-#, fuzzy
-msgid "Enabled, only from deep standby"
-msgstr "eiti į visišką išjungimą"
-
-#, fuzzy
-msgid "Enabled, only from standby"
-msgstr "eiti į išjungimą"
 
 msgid "Yes, perform a shutdown now."
 msgstr "Taip, atlikti išjungimą dabar."
@@ -11623,10 +11740,6 @@ msgstr ""
 msgid "shut down"
 msgstr "išjungti"
 
-#, fuzzy
-msgid "shutdown"
-msgstr "išjungti"
-
 msgid "simple"
 msgstr "paprastas"
 
@@ -11670,10 +11783,6 @@ msgstr ""
 
 msgid "standard"
 msgstr "standartinis"
-
-#, fuzzy
-msgid "standby"
-msgstr "Budėjimas"
 
 msgid "start cut here"
 msgstr "pradėti iškirpimą čia"
@@ -11998,6 +12107,10 @@ msgstr "įjungta"
 #~ msgstr "Įjungti tėvų kontrolę"
 
 #, fuzzy
+#~ msgid "FBC Unicable"
+#~ msgstr "Unicable LNB"
+
+#, fuzzy
 #~ msgid "FP Upgrade"
 #~ msgstr "Atnaujinama"
 
@@ -12028,6 +12141,10 @@ msgstr "įjungta"
 #, fuzzy
 #~ msgid "Immediate shutdown"
 #~ msgstr "neatidėliotinas išjungimas"
+
+#, fuzzy
+#~ msgid "Install softcam support"
+#~ msgstr "Įdiegiama programinė įranga..."
 
 #, fuzzy
 #~ msgid "List EPG functions..."
@@ -12104,14 +12221,15 @@ msgstr "įjungta"
 #~ msgid "Password"
 #~ msgstr "Slaptažodis"
 
-#~ msgid "Phone number"
-#~ msgstr "Telefono numeris"
-
 #~ msgid "Please check your network settings!"
 #~ msgstr "Prašome tikrinti savo tinklo nustatymus!"
 
 #~ msgid "Please select an NFI file and press green key to flash!"
 #~ msgstr "Prašome išsirinkti NFI failą ir spauskite žalią mygtuką atvaizdo užkrovumui!"
+
+#, fuzzy
+#~ msgid "Please wait (downloading softcam support)"
+#~ msgstr "Prašome laukti... Užkraunamas sąrašas..."
 
 #~ msgid "Prepare another USB stick for image flashing"
 #~ msgstr "Paruoškite kitą USB laikmeną atvaizdo užkrovimui"
@@ -12170,6 +12288,10 @@ msgstr "įjungta"
 
 #~ msgid "Single transponder"
 #~ msgstr "Vienintelis transponderis"
+
+#, fuzzy
+#~ msgid "Sleep timer"
+#~ msgstr "Budėjimo laikmatis"
 
 #~ msgid "SoftCam / CI"
 #~ msgstr "EMU / Įstatomi moduliai"
@@ -12296,8 +12418,16 @@ msgstr "įjungta"
 #~ msgid "service PIN"
 #~ msgstr "kanalo PIN"
 
+#, fuzzy
+#~ msgid "shutdown"
+#~ msgstr "išjungti"
+
 #~ msgid "special characters"
 #~ msgstr "ypatingi požymiai"
+
+#, fuzzy
+#~ msgid "standby"
+#~ msgstr "Budėjimas"
 
 #~ msgid "tuner is not supported"
 #~ msgstr "imtuvas nepalaikomas"

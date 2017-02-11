@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-18 19:53+0100\n"
+"POT-Creation-Date: 2017-02-10 18:08+0100\n"
 "PO-Revision-Date: 2015-01-29 17:40+0200\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -313,6 +313,10 @@ msgid "%d pixel wide"
 msgid_plural "%d pixels wide"
 msgstr[0] ""
 
+#, fuzzy, python-format
+msgid "%d sec"
+msgstr "%d ثانیه"
+
 #, python-format
 msgid "%d second"
 msgid_plural "%d seconds"
@@ -432,6 +436,9 @@ msgstr "1.2"
 msgid "1024 MB"
 msgstr ""
 
+msgid "10bit"
+msgstr ""
+
 msgid "128 MB"
 msgstr ""
 
@@ -440,6 +447,9 @@ msgstr ""
 
 msgid "12V output"
 msgstr "خروجی 12 ولت"
+
+msgid "12bit"
+msgstr ""
 
 msgid "13 V"
 msgstr "13 ولت"
@@ -544,6 +554,9 @@ msgstr "7"
 
 msgid "8"
 msgstr "8"
+
+msgid "8bit"
+msgstr ""
 
 msgid "9"
 msgstr "9"
@@ -1113,6 +1126,10 @@ msgstr ""
 
 msgid "Audio PID"
 msgstr "PID صدا"
+
+#, fuzzy
+msgid "Audio channel"
+msgstr "نصب بسته محلی"
 
 msgid "Audio language selection 1"
 msgstr "انتخاب زبان صدا 1"
@@ -1761,11 +1778,18 @@ msgstr "فرمت رنگ"
 msgid "Color space"
 msgstr "فرمت رنگ"
 
+msgid "Combo"
+msgstr ""
+
 msgid "Command execution..."
 msgstr "اجرای فرمان"
 
 msgid "Command order"
 msgstr "ترتیب فرمان"
+
+#, fuzzy
+msgid "Commit info"
+msgstr "ارتباط"
 
 msgid "Common Interface"
 msgstr "رابط مشترک"
@@ -1851,6 +1875,9 @@ msgstr "عملکرد هنگامی که یک فیلم شروع میشود"
 #, fuzzy
 msgid "Configure if epg.dat should be saved at all."
 msgstr "آماده سازی سرعت پرش به جلوی سریع"
+
+msgid "Configure if service picons will be shown in display (when supported by the skin)."
+msgstr ""
 
 msgid "Configure if service picons will be shown in the channel selection list."
 msgstr ""
@@ -2257,6 +2284,9 @@ msgid "Create ISO"
 msgstr "ایجاد DVD-ISO"
 
 msgid "Create new folder and exit"
+msgstr ""
+
+msgid "Create seperate radio userbouquet"
 msgstr ""
 
 #, python-format
@@ -2706,6 +2736,10 @@ msgstr ""
 msgid "Disabled"
 msgstr "غیر فعال شد"
 
+#, fuzzy
+msgid "Disclaimer"
+msgstr "نمایش اطلاعات"
+
 msgid "Disk space to reserve for recordings (in GB)"
 msgstr ""
 
@@ -2863,6 +2897,10 @@ msgstr "آیا میخواهید ایمیج را در %s دانلود کنید ؟
 
 msgid "Do you want to reboot your receiver?"
 msgstr ""
+
+#, fuzzy
+msgid "Do you want to remove all the crahs logfiles"
+msgstr "آیا میخواهید بسته را حذف کنید:\n"
 
 msgid "Do you want to remove the package:\n"
 msgstr "آیا میخواهید بسته را حذف کنید:\n"
@@ -3145,6 +3183,14 @@ msgstr ""
 msgid "Enabled"
 msgstr "فعال شد"
 
+#, fuzzy
+msgid "Enabled, only from deep standby"
+msgstr "فقط کانال های مجانی"
+
+#, fuzzy
+msgid "Enabled, only from standby"
+msgstr "خاموشی موقت"
+
 msgid "Encrypted: "
 msgstr "رمزگذاری شده:"
 
@@ -3235,6 +3281,9 @@ msgstr "رابط شبکه Ethernet"
 #, fuzzy
 msgid "Event font size (relative to skin size)"
 msgstr "اندازه قلم رخداد (وابسته به اندازه پوسته)"
+
+msgid "Event name first"
+msgstr ""
 
 #, fuzzy
 msgid "Event view"
@@ -3410,21 +3459,28 @@ msgstr ""
 msgid "F1/F3"
 msgstr ""
 
-msgid "FBC Unicable"
+msgid "FBC SCR (Unicable or JESS)"
 msgstr ""
 
-msgid "FBC automatic loop through"
-msgstr ""
+#, fuzzy
+msgid "FBC automatic"
+msgstr "خودکار"
 
+#, fuzzy
 msgid ""
-"FBC automatic loop through\n"
-"inactive"
-msgstr ""
+"FBC automatic\n"
+"connected to"
+msgstr "وصل شده به"
 
 #, python-format
 msgid ""
-"FBC automatic loop through\n"
-"linked to %s"
+"FBC automatic\n"
+"connected to %s"
+msgstr ""
+
+msgid ""
+"FBC automatic\n"
+"inactive"
 msgstr ""
 
 msgid "FEC"
@@ -3704,6 +3760,14 @@ msgstr ""
 
 #, fuzzy
 msgid ""
+"GUI needs a restart to apply a new language\n"
+"Do you want to restart the GUI now?"
+msgstr ""
+"برای استفاده از پوسته جدید رابط گرافیکی باید دوباره راه اندازی شود\n"
+"آیا میخواهید الان رابط گرافیکی دوباره راه اندازی شود ؟"
+
+#, fuzzy
+msgid ""
 "GUI needs a restart to apply a new skin\n"
 "Do you want to Restart the GUI now?"
 msgstr ""
@@ -3784,6 +3848,9 @@ msgstr "مراجعه به صفحه قبلی کانال"
 
 msgid "Go up the list"
 msgstr "برو بالای لیست"
+
+msgid "Gold"
+msgstr ""
 
 msgid "Goto"
 msgstr "مراجعه به"
@@ -3866,6 +3933,10 @@ msgstr ""
 
 msgid "HDMI"
 msgstr ""
+
+#, fuzzy
+msgid "HDMI Colordepth"
+msgstr "فرمت رنگ"
 
 #, fuzzy
 msgid "HDMI Colorimetry"
@@ -4188,6 +4259,13 @@ msgstr "در حال مقدار دهی اولیه وسیله ذخیره سازی"
 msgid "Input"
 msgstr "ورودی"
 
+#, fuzzy
+msgid "Input "
+msgstr "ورودی"
+
+msgid "Input Stream ID"
+msgstr ""
+
 msgid "Input device setup"
 msgstr "تنظیم دستگاه ورودی"
 
@@ -4231,10 +4309,6 @@ msgstr "نصب پیکون ها در"
 #, fuzzy
 msgid "Install plugins"
 msgstr "نصب پیکون ها در"
-
-#, fuzzy
-msgid "Install softcam support"
-msgstr "در حال نصب نرم افزار"
 
 #, fuzzy
 msgid "Installation has completed."
@@ -4629,6 +4703,9 @@ msgstr "قفل:"
 msgid "Log results to /tmp"
 msgstr "نتایج گزارش در دیسک سخت"
 
+msgid "Logfile does not exist anymore"
+msgstr ""
+
 #, fuzzy
 msgid "Logs location"
 msgstr "محل"
@@ -4940,6 +5017,10 @@ msgstr "جابجایی"
 #, fuzzy
 msgid "Move PiP to main picture"
 msgstr "جابجایی تصویر در تصویر"
+
+#, fuzzy
+msgid "Move Picture in Picture"
+msgstr "فعال کردن تصویر در تصویر"
 
 msgid "Move east"
 msgstr "جابجایی به شرق"
@@ -5651,6 +5732,13 @@ msgstr ""
 msgid "PLP ID"
 msgstr ""
 
+msgid "PLS Code"
+msgstr ""
+
+#, fuzzy
+msgid "PLS Mode"
+msgstr "حالت"
+
 msgid "PMT PID"
 msgstr "PMT PID"
 
@@ -6015,10 +6103,6 @@ msgstr ""
 msgid "Please wait (downloading channel list)"
 msgstr "لطفا صبر کنید - در حال آماده سازی لیست"
 
-#, fuzzy
-msgid "Please wait (downloading softcam support)"
-msgstr "لطفا صبر کنید - در حال آماده سازی لیست"
-
 msgid "Please wait (updating packages)"
 msgstr ""
 
@@ -6147,6 +6231,9 @@ msgstr "تنظیمات مکان یاب"
 #, fuzzy
 msgid "Positioner setup log"
 msgstr "تنظیمات مکان یاب"
+
+msgid "Power on display"
+msgstr ""
 
 msgid "Power threshold in mA"
 msgstr "آستانه قدرت به میلی آمپر"
@@ -6657,6 +6744,10 @@ msgid "Remove a nameserver entry"
 msgstr ""
 
 #, fuzzy
+msgid "Remove all logfiles"
+msgstr "حذف پلاگین ها"
+
+#, fuzzy
 msgid "Remove bookmark"
 msgstr "حذف علامت"
 
@@ -6676,6 +6767,10 @@ msgstr "حذف پلاگین ها"
 
 msgid "Remove texts for the hearing impaired from external subtitles (instrumental music or environmental sounds, e.g., when a doorbell rings or a gun shot is heard)."
 msgstr ""
+
+#, fuzzy
+msgid "Remove this logfile"
+msgstr "حذف عنوان"
 
 msgid "Remove timer"
 msgstr "حذف زمان"
@@ -6884,6 +6979,9 @@ msgstr "Roll-off"
 
 msgid "Romanian"
 msgstr "رومانیایی"
+
+msgid "Root"
+msgstr ""
 
 msgid "Root directory"
 msgstr "پوشه root"
@@ -7733,6 +7831,11 @@ msgstr "اضافه کردن به مورد علاقه"
 msgid "Show latest upgrade log"
 msgstr "آخرین به روز رسانی: "
 
+#
+#, fuzzy
+msgid "Show menu numbers"
+msgstr "شماره تلفن"
+
 #, fuzzy
 msgid "Show menu paths"
 msgstr "نمایش اطلاعات"
@@ -7767,6 +7870,10 @@ msgstr "به روز رسانی لیست بسته های نرم افزاری"
 #, fuzzy
 msgid "Show picons in channel selection list"
 msgstr "نمایش پیشرفت رویداد در انتخاب کانال"
+
+#, fuzzy
+msgid "Show picons in display"
+msgstr "نمایش نوار اطلاعات دوم"
 
 msgid "Show positioner movement"
 msgstr "نمایش گردش مکان یاب"
@@ -7963,15 +8070,8 @@ msgid "Skip internet connection check (disables automatic package installation)"
 msgstr ""
 
 #, fuzzy
-msgid "Sleep timer"
-msgstr "زمان خواب"
-
-#, fuzzy
 msgid "Sleep/wakeup timer"
 msgstr "زمان خواب"
-
-msgid "SleepTimer Configuration"
-msgstr ""
 
 msgid "Sleeptimer"
 msgstr ""
@@ -8061,6 +8161,9 @@ msgstr "به روز رسانی نرم افزار"
 
 msgid "Softwaremanager information"
 msgstr "اطلاعات مدیریت نرم افزار"
+
+msgid "Some error occured - Please try later"
+msgstr ""
 
 msgid "Some plugins are not available:\n"
 msgstr "بعضی از پلاگین ها در دسترس نیستند:\n"
@@ -8746,6 +8849,12 @@ msgstr ""
 
 #, python-format
 msgid ""
+"The current software might not be stable.\n"
+"For more information see %s."
+msgstr ""
+
+#, python-format
+msgid ""
 "The directory %s is not writable.\n"
 "Make sure you select a writable directory instead."
 msgstr ""
@@ -8825,6 +8934,10 @@ msgid ""
 msgstr ""
 "بسته مدیریت نرم افزار نصب نشده است\n"
 "لطفا آن را نصب کنید"
+
+#, python-format
+msgid "The status of the current software could not be checked because %s can not be reached."
+msgstr ""
 
 msgid "The stored EPG data will be read every (hours)"
 msgstr ""
@@ -8945,6 +9058,9 @@ msgstr ""
 msgid "This option allows to set the level of dynamic contrast of the picture."
 msgstr ""
 
+msgid "This option allows you can config the Colordepth for UHD"
+msgstr ""
+
 msgid "This option allows you can config the Colorimetry for HDR"
 msgstr ""
 
@@ -8963,7 +9079,13 @@ msgstr ""
 msgid "This option allows you to hide and sort menu entries. When selecting user you can change order and hide menu items via the blue button"
 msgstr ""
 
+msgid "This option allows you to power off the display."
+msgstr ""
+
 msgid "This option allows you to set the Colorspace of HDMI from Auto to RGB"
+msgstr ""
+
+msgid "This option allows you to show menu number quick links."
 msgstr ""
 
 msgid "This option allows you to show menu paths."
@@ -9259,6 +9381,9 @@ msgid "Trash can"
 msgstr ""
 
 msgid "Tries left:"
+msgstr ""
+
+msgid "Troubleshoot"
 msgstr ""
 
 msgid "Try to find used transponders in cable network.. please wait..."
@@ -10176,14 +10301,6 @@ msgstr ""
 msgid "Wizard to arrange the overscan"
 msgstr ""
 
-msgid ""
-"Would you like to be able to install softcams?\n"
-"\n"
-"Attention - Country specific illegal!\n"
-"\n"
-"Check legality for your specific country in advance!"
-msgstr ""
-
 #, python-format
 msgid "Would you save the entered PIN %s persistent?"
 msgstr ""
@@ -10195,6 +10312,15 @@ msgid "Write failed!"
 msgstr ""
 
 msgid "Write to /tmp/positionersetup.log"
+msgstr ""
+
+msgid "YCbCr420"
+msgstr ""
+
+msgid "YCbCr422"
+msgstr ""
+
+msgid "YCbCr444"
 msgstr ""
 
 msgid "YES"
@@ -10247,14 +10373,6 @@ msgstr ""
 
 msgid "Yes, do another manual scan now"
 msgstr ""
-
-#, fuzzy
-msgid "Enabled, only from deep standby"
-msgstr "فقط کانال های مجانی"
-
-#, fuzzy
-msgid "Enabled, only from standby"
-msgstr "خاموشی موقت"
 
 msgid "Yes, perform a shutdown now."
 msgstr ""
@@ -11590,10 +11708,6 @@ msgstr ""
 msgid "shut down"
 msgstr ""
 
-#, fuzzy
-msgid "shutdown"
-msgstr "خاموش کردن"
-
 msgid "simple"
 msgstr ""
 
@@ -11637,10 +11751,6 @@ msgstr ""
 
 msgid "standard"
 msgstr ""
-
-#, fuzzy
-msgid "standby"
-msgstr "خاموشی موقت"
 
 msgid "start cut here"
 msgstr ""
@@ -12002,6 +12112,10 @@ msgstr ""
 #~ msgstr "اطلاعات سلسله مراتبی"
 
 #, fuzzy
+#~ msgid "Install softcam support"
+#~ msgstr "در حال نصب نرم افزار"
+
+#, fuzzy
 #~ msgid "Location:"
 #~ msgstr "محل"
 
@@ -12054,12 +12168,12 @@ msgstr ""
 #~ msgid "Password"
 #~ msgstr "رمز عبور"
 
-#
-#~ msgid "Phone number"
-#~ msgstr "شماره تلفن"
-
 #~ msgid "Please check your network settings!"
 #~ msgstr "لطفا تنظیمات شبکه خود را بررسی کنید"
+
+#, fuzzy
+#~ msgid "Please wait (downloading softcam support)"
+#~ msgstr "لطفا صبر کنید - در حال آماده سازی لیست"
 
 #~ msgid "Reboot"
 #~ msgstr "راه اندازی مجدد"
@@ -12121,6 +12235,10 @@ msgstr ""
 #~ msgid "Single transponder"
 #~ msgstr "یک فرستنده"
 
+#, fuzzy
+#~ msgid "Sleep timer"
+#~ msgstr "زمان خواب"
+
 #~ msgid "SoftCam / CI"
 #~ msgstr "SoftCam / CI"
 
@@ -12162,6 +12280,14 @@ msgstr ""
 #, fuzzy
 #~ msgid "not avaible"
 #~ msgstr "به روز رسانی های در دسترس"
+
+#, fuzzy
+#~ msgid "shutdown"
+#~ msgstr "خاموش کردن"
+
+#, fuzzy
+#~ msgid "standby"
+#~ msgstr "خاموشی موقت"
 
 #, fuzzy
 #~ msgid "unknown error"
