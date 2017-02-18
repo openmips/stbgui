@@ -780,8 +780,6 @@ class RecordTimer(timer.Timer):
 		return False
 
 	def loadTimer(self):
-		if not Directories.fileExists(self.Filename):
-			return
 		try:
 			doc = xml.etree.cElementTree.parse(self.Filename)
 		except SyntaxError:
