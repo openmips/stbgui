@@ -35,27 +35,23 @@ class Standby2(Screen):
 		print "[Standby] leave standby"
 		if os.path.exists("/usr/script/Standby.sh"):
 			Console().ePopen("/usr/script/Standby.sh on")
-		if os.path.exists("/usr/script/standby_leave.sh"):
-			Console().ePopen("/usr/script/standby_leave.sh")
+		#if os.path.exists("/usr/script/standby_leave.sh"):
+		#	Console().ePopen("/usr/script/standby_leave.sh")
 
-		self.leaveMute()
 		# set LCDminiTV
 		if SystemInfo["Display"] and SystemInfo["LCDMiniTV"]:
 			setLCDModeMinitTV(config.lcd.modeminitv.getValue())
-		#kill me
+		#self.leaveMute()
 		self.close(True)
 
 	def setMute(self):
-		if (eDVBVolumecontrol.getInstance().isMuted()):
-			self.wasMuted = 1
-			print "[Standby] mute already active"
-		else:
-			self.wasMuted = 0
-			eDVBVolumecontrol.getInstance().volumeToggleMute()
+		self.wasMuted = eDVBVolumecontrol.getInstance().isMuted()
+		if not self.wasMuted:
+			eDVBVolumecontrol.getInstance().volumeMute()
 
 	def leaveMute(self):
-		if self.wasMuted == 0:
-			eDVBVolumecontrol.getInstance().volumeToggleMute()
+		if not self.wasMuted:
+			eDVBVolumecontrol.getInstance().volumeUnMute()
 
 	def __init__(self, session, StandbyCounterIncrease=True):
 		Screen.__init__(self, session)
@@ -65,8 +61,8 @@ class Standby2(Screen):
 		print "[Standby] enter standby"
 		if os.path.exists("/usr/script/Standby.sh"):
 			Console().ePopen("/usr/script/Standby.sh off")
-		if os.path.exists("/usr/script/standby_enter.sh"):
-			Console().ePopen("/usr/script/standby_enter.sh")
+		#if os.path.exists("/usr/script/standby_enter.sh"):
+		#	Console().ePopen("/usr/script/standby_enter.sh")
 
 		self["actions"] = ActionMap( [ "StandbyActions" ],
 		{
@@ -163,8 +159,9 @@ class Standby2(Screen):
 		self.avswitch.setInput("ENCODER")
 		if os.path.exists("/usr/script/Standby.sh"):
 			Console().ePopen("/usr/script/Standby.sh on")
-		if os.path.exists("/usr/script/standby_leave.sh"):
-			Console().ePopen("/usr/script/standby_leave.sh")
+		self.leaveMute()
+		#if os.path.exists("/usr/script/standby_leave.sh"):
+		#	Console().ePopen("/usr/script/standby_leave.sh")
 
 	def __onFirstExecBegin(self):
 		global inStandby

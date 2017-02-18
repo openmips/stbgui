@@ -92,7 +92,7 @@ class Network:
 						self.configuredInterfaces.append(iface)
 				if mac is not None:
 					data['mac'] = mac
-			if (split[1] == iface):
+			if split[1] == iface:
 				if re.search(globalIPpattern, split[2]):
 					ip = self.regExpMatch(ipPattern, self.regExpMatch(ipLinePattern, split[2]))
 					netmask = self.calc_netmask(self.regExpMatch(netmaskPattern, self.regExpMatch(netmaskLinePattern, split[2])))
@@ -136,12 +136,12 @@ class Network:
 		fp.write("auto lo\n")
 		fp.write("iface lo inet loopback\n\n")
 		for ifacename, iface in self.ifaces.items():
-			if iface['up'] == True:
+			if iface['up']:
 				fp.write("auto " + ifacename + "\n")
 				self.configuredInterfaces.append(ifacename)
-			if iface['dhcp'] == True:
+			if iface['dhcp']:
 				fp.write("iface "+ ifacename +" inet dhcp\n")
-			if iface['dhcp'] == False:
+			if not iface['dhcp']:
 				fp.write("iface "+ ifacename +" inet static\n")
 				if iface.has_key('ip'):
 					print tuple(iface['ip'])
@@ -181,33 +181,33 @@ class Network:
 		currif = ""
 		for i in interfaces:
 			split = i.strip().split(' ')
-			if (split[0] == "iface"):
+			if split[0] == "iface":
 				currif = split[1]
 				ifaces[currif] = {}
-				if (len(split) == 4 and split[3] == "dhcp"):
+				if len(split) == 4 and split[3] == "dhcp":
 					ifaces[currif]["dhcp"] = True
 				else:
 					ifaces[currif]["dhcp"] = False
-			if (currif == iface): #read information only for available interfaces
-				if (split[0] == "address"):
+			if currif == iface: #read information only for available interfaces
+				if split[0] == "address":
 					ifaces[currif]["address"] = map(int, split[1].split('.'))
 					if self.ifaces[currif].has_key("ip"):
 						if self.ifaces[currif]["ip"] != ifaces[currif]["address"] and ifaces[currif]["dhcp"] == False:
 							self.ifaces[currif]["ip"] = map(int, split[1].split('.'))
-				if (split[0] == "netmask"):
+				if split[0] == "netmask":
 					ifaces[currif]["netmask"] = map(int, split[1].split('.'))
 					if self.ifaces[currif].has_key("netmask"):
 						if self.ifaces[currif]["netmask"] != ifaces[currif]["netmask"] and ifaces[currif]["dhcp"] == False:
 							self.ifaces[currif]["netmask"] = map(int, split[1].split('.'))
-				if (split[0] == "gateway"):
+				if split[0] == "gateway":
 					ifaces[currif]["gateway"] = map(int, split[1].split('.'))
 					if self.ifaces[currif].has_key("gateway"):
 						if self.ifaces[currif]["gateway"] != ifaces[currif]["gateway"] and ifaces[currif]["dhcp"] == False:
 							self.ifaces[currif]["gateway"] = map(int, split[1].split('.'))
-				if (split[0] == "pre-up"):
+				if split[0] == "pre-up":
 					if self.ifaces[currif].has_key("preup"):
 						self.ifaces[currif]["preup"] = i
-				if (split[0] in ("pre-down","post-down")):
+				if split[0] in ("pre-down","post-down"):
 					if self.ifaces[currif].has_key("predown"):
 						self.ifaces[currif]["predown"] = i
 
@@ -273,8 +273,11 @@ class Network:
 				self.wlan_interfaces.append(iface)
 		else:
 			if iface not in self.lan_interfaces:
-				name = _("LAN connection")
-				if len(self.lan_interfaces):
+				if iface == "eth1":
+					name = _("VLAN connection")
+				else:	
+					name = _("LAN connection")	
+				if len(self.lan_interfaces) and not iface == "eth1":
 					name += " " + str(len(self.lan_interfaces)+1)
 				self.lan_interfaces.append(iface)
 		return name
@@ -297,14 +300,34 @@ class Network:
 		moduledir = self.getWlanModuleDir(iface)
 		if moduledir:
 			name = os.path.basename(os.path.realpath(moduledir))
-			if name in ('ath_pci','ath5k'):
+			if name.startswith('ath') or name.startswith('carl'):
 				name = 'Atheros'
-			elif name in ('rt73','rt73usb','rt3070sta'):
+			elif name.startswith('rt2') or name.startswith('rt3') or name.startswith('rt5') or name.startswith('rt6') or name.startswith('rt7'):
 				name = 'Ralink'
-			elif name == 'zd1211b':
+			elif name.startswith('zd'):
 				name = 'Zydas'
-			elif name == 'r871x_usb_drv':
+			elif name.startswith('rtl') or name.startswith('r8'):
 				name = 'Realtek'
+			elif name.startswith('smsc'):
+				name = 'SMSC'
+			elif name.startswith('peg'):
+				name = 'Pegasus'
+			elif name.startswith('rn'):
+				name = 'RNDIS'
+			elif name.startswith('mw') or name.startswith('libertas'):
+				name = 'Marvel'
+			elif name.startswith('p5'):
+				name = 'Prism'
+			elif name.startswith('as') or name.startswith('ax'):
+				name = 'ASIX'
+			elif name.startswith('dm'):
+				name = 'Davicom'
+			elif name.startswith('mcs'):
+				name = 'MosChip'
+			elif name.startswith('at'):
+				name = 'Atmel'
+			elif name.startswith('iwm'):
+				name = 'Intel'				
 		else:
 			name = _('Unknown')
 
@@ -621,8 +644,8 @@ class Network:
 		return None
 
 	def calc_netmask(self,nmask):
-		from struct import pack, unpack
-		from socket import inet_ntoa, inet_aton
+		from struct import pack
+		from socket import inet_ntoa
 		mask = 1L<<31
 		xnet = (1L<<32)-1
 		cidr_range = range(0, 32)

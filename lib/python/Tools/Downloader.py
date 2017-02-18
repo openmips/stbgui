@@ -1,11 +1,10 @@
 from twisted.web import client
 from twisted.internet import reactor, defer, ssl
-from twisted.python import failure
 # from urlparse import urlparse
 
 class HTTPProgressDownloader(client.HTTPDownloader):
 	def __init__(self, url, outfile, headers=None):
-		client.HTTPDownloader.__init__(self, url, outfile, headers=headers, agent="Enigma2 HbbTV/1.1.1 (+PVR+RTSP+DL;OpenPLi;;;)")
+		client.HTTPDownloader.__init__(self, url, outfile, headers=headers, agent="Enigma2 HbbTV/1.1.1 (+PVR+RTSP+DL;openMips;;;)")
 		self.status = None
 		self.progress_callback = None
 		self.deferred = defer.Deferred()

@@ -8,7 +8,7 @@ from Components.NimManager import nimmanager
 from Components.Button import Button
 from Components.Label import Label
 from Components.SelectionList import SelectionList, SelectionEntryComponent
-from Components.config import getConfigListEntry, config, configfile, ConfigNothing, ConfigSelection, updateConfigElement, ConfigSatlist, ConfigYesNo
+from Components.config import getConfigListEntry, config, ConfigNothing, ConfigSelection, updateConfigElement, ConfigSatlist, ConfigYesNo, configfile
 from Components.Sources.List import List
 from Screens.MessageBox import MessageBox
 from Screens.ChoiceBox import ChoiceBox
@@ -91,7 +91,7 @@ class NimSetup(Screen, ConfigListScreen, ServiceStopScreen):
 			if len(nimmanager.canExternalConnectTo(self.slotid)) > 0:
 				choices["loopthrough_external"] = _("External loopthrough to")
 			if self.nim.isFBCLink():
-				choices = { "nothing": _("FBC automatic"), "advanced": _("FBC SCR (Unicable or JESS)")}
+				choices = { "nothing": _("FBC automatic"), "advanced": _("FBC SCR (Unicable/JESS)")}
 			self.nimConfig.configMode.setChoices(choices, self.nim.isFBCLink() and "nothing" or "simple")
 
 	def createSetup(self):
@@ -118,12 +118,12 @@ class NimSetup(Screen, ConfigListScreen, ServiceStopScreen):
 		self.cableConfigScanDetails = None
 		self.have_advanced = False
 		self.advancedUnicable = None
+		self.advancedFormat = None
+		self.advancedPosition = None
 		self.advancedType = None
 		self.advancedManufacturer = None
 		self.advancedSCR = None
-		self.advancedDiction = None
 		self.advancedConnected = None
-		self.advancedUnicableTuningAlgo = None
 		self.showAdditionalMotorOptions = None
 		self.selectSatsEntry = None
 		self.advancedSelectSatsEntry = None
@@ -264,23 +264,17 @@ class NimSetup(Screen, ConfigListScreen, ServiceStopScreen):
 
 	def newConfig(self):
 		self.setTextKeyBlue()
-		checkList = (self.configMode, self.diseqcModeEntry, self.advancedSatsEntry, \
-			self.advancedLnbsEntry, self.advancedDiseqcMode, self.advancedUsalsEntry, \
-			self.advancedLof, self.advancedPowerMeasurement, self.turningSpeed, \
-			self.advancedType, self.advancedSCR, self.advancedDiction, self.advancedManufacturer, self.advancedUnicable, self.advancedConnected, self.advancedUnicableTuningAlgo,\
-			self.toneburst, self.committedDiseqcCommand, self.uncommittedDiseqcCommand, self.singleSatEntry, \
-			self.commandOrder, self.showAdditionalMotorOptions, self.cableScanType, self.cableConfigScanDetails, self.multiType)
-		if self["config"].getCurrent() == self.multiType and self.multiType:
+		if self["config"].getCurrent() == self.multiType:
 			update_slots = [self.slotid]
 			from Components.NimManager import InitNimManager
 			InitNimManager(nimmanager, update_slots)
 			self.nim = nimmanager.nim_slots[self.slotid]
 			self.nimConfig = self.nim.config
-
-		for x in checkList:
-			if self["config"].getCurrent() == x and x:
-				self.createSetup()
-				break
+		if self["config"].getCurrent() in (self.configMode, self.diseqcModeEntry, self.advancedSatsEntry, self.advancedLnbsEntry, self.advancedDiseqcMode, self.advancedUsalsEntry,\
+			self.advancedLof, self.advancedPowerMeasurement, self.turningSpeed, self.advancedType, self.advancedSCR, self.advancedPosition, self.advancedFormat, self.advancedManufacturer,\
+			self.advancedUnicable, self.advancedConnected, self.toneburst, self.committedDiseqcCommand, self.uncommittedDiseqcCommand, self.singleSatEntry,	self.commandOrder,\
+			self.showAdditionalMotorOptions, self.cableScanType, self.multiType):
+			       self.createSetup()
 
 	def run(self):
 		if self.nimConfig.configMode.value == "simple":
@@ -327,7 +321,6 @@ class NimSetup(Screen, ConfigListScreen, ServiceStopScreen):
 		lnbnum = int(Sat.lnb.value)
 		currLnb = self.nimConfig.advanced.lnb[lnbnum]
 
-		diction = None
 		if isinstance(currLnb, ConfigNothing):
 			currLnb = None
 
@@ -337,8 +330,7 @@ class NimSetup(Screen, ConfigListScreen, ServiceStopScreen):
 
 		if currLnb:
 			if self.nim.isFBCLink():
-				if currLnb.lof.value != "unicable":
-					currLnb.lof.value = "unicable"
+				currLnb.lof.value = "unicable"
 			self.list.append(getConfigListEntry(_("Priority"), currLnb.prio))
 			self.advancedLof = getConfigListEntry("LOF", currLnb.lof)
 			self.list.append(self.advancedLof)
@@ -348,55 +340,29 @@ class NimSetup(Screen, ConfigListScreen, ServiceStopScreen):
 				self.list.append(getConfigListEntry(_("Threshold"), currLnb.threshold))
 
 			if currLnb.lof.value == "unicable":
-				self.advancedUnicable = getConfigListEntry("Unicable "+_("Configuration mode"), currLnb.unicable)
+				self.advancedUnicable = getConfigListEntry("SCR (Unicable/JESS) "+_("Configuration mode"), currLnb.unicable)
 				self.list.append(self.advancedUnicable)
 				if currLnb.unicable.value == "unicable_user":
-					self.advancedDiction = getConfigListEntry(_("Diction"), currLnb.dictionuser)
-					self.list.append(self.advancedDiction)
-					if currLnb.dictionuser.value == "EN50494":
-						satcr = currLnb.satcruserEN50494
-						stcrvco = currLnb.satcrvcouserEN50494[currLnb.satcruserEN50494.index]
-					elif currLnb.dictionuser.value == "EN50607":
-						satcr = currLnb.satcruserEN50607
-						stcrvco = currLnb.satcrvcouserEN50607[currLnb.satcruserEN50607.index]
-					self.advancedSCR = getConfigListEntry(_("Channel"), satcr)
+					self.advancedFormat = getConfigListEntry(_("Format"), currLnb.format)
+					self.advancedPosition = getConfigListEntry(_("Position"), currLnb.positionNumber)
+					self.advancedSCR = getConfigListEntry(_("Channel"), currLnb.scrList)
+					self.list.append(self.advancedFormat)
+					self.list.append(self.advancedPosition)
 					self.list.append(self.advancedSCR)
-					self.list.append(getConfigListEntry(_("Frequency"), stcrvco))
+					self.list.append(getConfigListEntry(_("Frequency"), currLnb.scrfrequency))
 					self.list.append(getConfigListEntry("LOF/L", currLnb.lofl))
 					self.list.append(getConfigListEntry("LOF/H", currLnb.lofh))
 					self.list.append(getConfigListEntry(_("Threshold"), currLnb.threshold))
-				elif currLnb.unicable.value == "unicable_matrix":
-					nimmanager.sec.reconstructUnicableDate(currLnb.unicableMatrixManufacturer, currLnb.unicableMatrix, currLnb)
-					manufacturer_name = currLnb.unicableMatrixManufacturer.value.decode('utf-8')
-					manufacturer = currLnb.unicableMatrix[manufacturer_name]
-					product_name = manufacturer.product.value.decode('utf-8')
-					self.advancedManufacturer = getConfigListEntry(_("Manufacturer"), currLnb.unicableMatrixManufacturer)
+				else:
+					self.advancedManufacturer = getConfigListEntry(_("Manufacturer"), currLnb.unicableManufacturer)
+					self.advancedType = getConfigListEntry(_("Type"), currLnb.unicableProduct)
+					self.advancedSCR = getConfigListEntry(_("Channel"), currLnb.scrList)
+					self.advancedPosition = getConfigListEntry(_("Position"), currLnb.positionNumber)
 					self.list.append(self.advancedManufacturer)
-					if product_name in manufacturer.scr:
-						diction = manufacturer.diction[product_name].value
-						self.advancedType = getConfigListEntry(_("Type"), manufacturer.product)
-						self.advancedSCR = getConfigListEntry(_("Channel"), manufacturer.scr[product_name])
-						self.list.append(self.advancedType)
-						self.list.append(self.advancedSCR)
-						self.list.append(getConfigListEntry(_("Frequency"), manufacturer.vco[product_name][manufacturer.scr[product_name].index]))
-				elif currLnb.unicable.value == "unicable_lnb":
-					nimmanager.sec.reconstructUnicableDate(currLnb.unicableLnbManufacturer, currLnb.unicableLnb, currLnb)
-					manufacturer_name = currLnb.unicableLnbManufacturer.value.decode('utf-8')
-					manufacturer = currLnb.unicableLnb[manufacturer_name]
-					product_name = manufacturer.product.value.decode('utf-8')
-					self.advancedManufacturer = getConfigListEntry(_("Manufacturer"), currLnb.unicableLnbManufacturer)
-					self.list.append(self.advancedManufacturer)
-					if product_name in manufacturer.scr:
-						diction = manufacturer.diction[product_name].value
-						self.advancedType = getConfigListEntry(_("Type"), manufacturer.product)
-						self.advancedSCR = getConfigListEntry(_("Channel"), manufacturer.scr[product_name])
-						self.list.append(self.advancedType)
-						self.list.append(self.advancedSCR)
-						self.list.append(getConfigListEntry(_("Frequency"), manufacturer.vco[product_name][manufacturer.scr[product_name].index]))
-
-				self.advancedUnicableTuningAlgo = getConfigListEntry(_("Tuning algorithm"), currLnb.unicableTuningAlgo)
-				self.list.append(self.advancedUnicableTuningAlgo)
-
+					self.list.append(self.advancedType)
+					if currLnb.positions.value > 1:
+						self.list.append(self.advancedPosition)
+					self.list.append(self.advancedSCR)
 				choices = []
 				connectable = nimmanager.canInternalConnectTo(self.slotid)
 				for id in connectable:
@@ -420,7 +386,7 @@ class NimSetup(Screen, ConfigListScreen, ServiceStopScreen):
 				self.list.append(getConfigListEntry(_("Increased voltage"), currLnb.increased_voltage))
 				self.list.append(getConfigListEntry(_("Tone mode"), Sat.tonemode))
 
-			if lnbnum < 65 and diction !="EN50607":
+			if lnbnum < 65:
 				self.advancedDiseqcMode = getConfigListEntry(_("DiSEqC mode"), currLnb.diseqcMode)
 				self.list.append(self.advancedDiseqcMode)
 			if currLnb.diseqcMode.value != "none":
@@ -660,11 +626,8 @@ class NimSetup(Screen, ConfigListScreen, ServiceStopScreen):
 		self.setTitle(_("Setup tuner") + " " + self.nim.input_name)
 
 	def keyLeft(self):
-		if self.nim.isFBCLink():
-			checkList = (self.advancedLof, self.advancedConnected)
-			curEntry = self["config"].getCurrent()
-			if curEntry in checkList:
-				return
+		if self.nim.isFBCLink() and self["config"].getCurrent() in (self.advancedLof, self.advancedConnected):
+			return
 		ConfigListScreen.keyLeft(self)
 		if self["config"].getCurrent() in (self.advancedSelectSatsEntry, self.selectSatsEntry):
 			self.keyOk()
@@ -678,11 +641,8 @@ class NimSetup(Screen, ConfigListScreen, ServiceStopScreen):
 		self["key_blue"].setText(self["config"].isChanged() and _("Set default") or "")
 
 	def keyRight(self):
-		if self.nim.isFBCLink():
-			checkList = (self.advancedLof, self.advancedConnected)
-			curEntry = self["config"].getCurrent()
-			if curEntry in checkList:
-				return
+		if self.nim.isFBCLink() and self["config"].getCurrent() in (self.advancedLof, self.advancedConnected):
+			return
 		ConfigListScreen.keyRight(self)
 		if self["config"].getCurrent() in (self.advancedSelectSatsEntry, self.selectSatsEntry):
 			self.keyOk()
