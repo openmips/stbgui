@@ -4,7 +4,6 @@
 #ifndef SWIG
 
 #include <linux/dvb/frontend.h>
-#include <linux/dvb/version.h>
 #include <linux/dvb/video.h>
 #include <lib/base/object.h>
 #include <lib/base/ebase.h>
@@ -460,7 +459,6 @@ class iDVBFrontend_ENUMS
 	~iDVBFrontend_ENUMS();
 #endif
 public:
-	enum { dvb_api_version = DVB_API_VERSION };
 	enum { feSatellite, feCable, feTerrestrial, feATSC };
 	enum { stateIdle, stateTuning, stateFailed, stateLock, stateLostLock, stateClosed };
 	enum { toneOff, toneOn };
@@ -531,20 +529,17 @@ public:
 #ifndef SWIG
 	virtual RESULT setSEC(iDVBSatelliteEquipmentControl *sec)=0;
 	virtual RESULT setSecSequence(eSecCommandList &list)=0;
-	virtual RESULT setSecSequence(eSecCommandList &list, iDVBFrontend *fe)=0;
 #endif
 	virtual int readFrontendData(int type)=0;
 	virtual void getFrontendStatus(ePtr<iDVBFrontendStatus> &dest)=0;
 	virtual void getTransponderData(ePtr<iDVBTransponderData> &dest, bool original)=0;
 	virtual void getFrontendData(ePtr<iDVBFrontendData> &dest)=0;
 #ifndef SWIG
-	virtual int getDVBID() = 0;
 	virtual RESULT getData(int num, long &data)=0;
 	virtual RESULT setData(int num, long val)=0;
 		/* 0 means: not compatible. other values are a priority. */
 	virtual int isCompatibleWith(ePtr<iDVBFrontendParameters> &feparm)=0;
 #endif
-	virtual bool changeType(int type)=0;
 	virtual bool setDeliverySystem(const char *type)=0;
 };
 SWIG_TEMPLATE_TYPEDEF(ePtr<iDVBFrontend>, iDVBFrontendPtr);
