@@ -5,7 +5,7 @@ from Components.config import config, configfile
 from Components.PluginComponent import plugins
 from Plugins.Plugin import PluginDescriptor
 from Tools.BoundFunction import boundFunction
-from Tools.StbHardware import setFPWakeuptime, getFPWakeuptime, getFPWasTimerWakeup
+from Tools.StbHardware import getFPWasTimerWakeup
 from Tools import Notifications
 from time import time, localtime
 import RecordTimer
