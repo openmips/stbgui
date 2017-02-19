@@ -1,10 +1,8 @@
 import NavigationInstance
-from time import localtime, mktime, gmtime
-from ServiceReference import ServiceReference
+from time import localtime, mktime, gmtime, time
 from enigma import iServiceInformation, eServiceCenter, eServiceReference, getBestPlayableServiceReference
 from timer import TimerEntry
 import RecordTimer
-from time import time, localtime
 
 from Tools.CIHelper import cihelper
 from Components.config import config
@@ -51,7 +49,7 @@ class TimerSanityCheck:
 					getUnsignedDataRef2 = self.newtimer.service_ref.ref.getUnsignedData
 					for x in (1, 2, 3, 4):
 						if getUnsignedDataRef1(x) != getUnsignedDataRef2(x):
-							break;
+							break
 					else:
 						return True
 		return False
