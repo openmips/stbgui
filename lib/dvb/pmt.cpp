@@ -300,7 +300,7 @@ void eDVBServicePMTHandler::AITready(int error)
 			std::list<ApplicationInformation *>::const_iterator i = (*it)->getApplicationInformation()->begin();
 			memcpy(m_AITData, ptr->getBufferData(), 4096);
 			sectionLength = (*it)->getSectionLength() + 3;
-			eDebug("Section Length : %d, Total Section Length : %d", (*it)->getSectionLength(), sectionLength);
+			// eDebug("Section Length : %d, Total Section Length : %d", (*it)->getSectionLength(), sectionLength);
 			for (; i != (*it)->getApplicationInformation()->end(); ++i)
 			{
 				std::string hbbtvUrl = "", applicaionName = "";
@@ -311,7 +311,7 @@ void eDVBServicePMTHandler::AITready(int error)
 				profilecode = 0;
 				orgid = applicationIdentifier->getOrganisationId();
 				appid = applicationIdentifier->getApplicationId();
-				eDebug("found application ids >> pid : %x, orgid : %d, appid : %d", m_ait_pid, orgid, appid);
+				// eDebug("found application ids >> pid : %x, orgid : %d, appid : %d", m_ait_pid, orgid, appid);
 				if (controlCode == 1)
 				{
 					saveData(orgid, m_AITData, sectionLength);
@@ -438,9 +438,9 @@ void eDVBServicePMTHandler::AITready(int error)
 
 		if (m_HbbTVApplications.size())
 		{
-			for(HbbTVApplicationInfoListConstIterator infoiter = m_HbbTVApplications.begin() ; infoiter != m_HbbTVApplications.end() ; ++infoiter)
-				eDebug("Found : control[%d], name[%s], url[%s]",
-					(*infoiter)->m_ControlCode, (*infoiter)->m_ApplicationName.c_str(), (*infoiter)->m_HbbTVUrl.c_str());
+			//for(HbbTVApplicationInfoListConstIterator infoiter = m_HbbTVApplications.begin() ; infoiter != m_HbbTVApplications.end() ; ++infoiter)
+			//	eDebug("Found : control[%d], name[%s], url[%s]",
+			//		(*infoiter)->m_ControlCode, (*infoiter)->m_ApplicationName.c_str(), (*infoiter)->m_HbbTVUrl.c_str());
 			serviceEvent(eventHBBTVInfo);
 		}
 		else eDebug("No found anything.");
