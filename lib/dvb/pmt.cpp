@@ -261,12 +261,12 @@ void saveData(int orgid, unsigned char* data, int sectionLength)
 
 	if (data[6] > 0)
 	{
-		eDebug("section_number %d > 0", data[6]);
+		// eDebug("section_number %d > 0", data[6]);
 		data[6] = 0;
 	}
 	if (data[7] > data[6])
 	{
-		eDebug("last_section_number %d > section_number %d", data[7], data[6]);
+		// eDebug("last_section_number %d > section_number %d", data[7], data[6]);
 		data[7] = data[6];
 	}
 
