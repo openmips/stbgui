@@ -9,8 +9,8 @@ except:
 
 from boxbranding import getBoxType
 
-from Components.Pixmap import Pixmap, MovingPixmap, MultiPixmap
-from Components.config import config, ConfigBoolean, configfile, ConfigSubsection
+from Components.Pixmap import Pixmap
+from Components.config import config, ConfigBoolean, configfile
 from Components.SystemInfo import SystemInfo
 from LanguageSelection import LanguageWizard
 
