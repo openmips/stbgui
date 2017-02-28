@@ -14,7 +14,7 @@ class Network:
 		self.DnsState = 0
 		self.nameservers = []
 		self.ethtool_bin = "/usr/sbin/ethtool"
-		self.console = Console()
+		self.Console = Console()
 		self.linkConsole = Console()
 		self.restartConsole = Console()
 		self.deactivateInterfaceConsole = Console()
@@ -113,7 +113,7 @@ class Network:
 			data['gateway'] = [0, 0, 0, 0]
 
 		cmd = "route -n | grep " + iface
-		self.console.ePopen(cmd,self.routeFinished, [iface, data, callback])
+		self.Console.ePopen(cmd,self.routeFinished, [iface, data, callback])
 
 	def routeFinished(self, result, retval, extra_args):
 		(iface, data, callback) = extra_args
@@ -216,7 +216,7 @@ class Network:
 		for ifacename, iface in ifaces.items():
 			if ifacename in self.ifaces:
 				self.ifaces[ifacename]["dhcp"] = iface["dhcp"]
-		if not self.console.appContainers:
+		if not self.Console.appContainers:
 			# save configured interfacelist
 			self.configuredNetworkAdapters = self.configuredInterfaces
 			# load ns only once
@@ -492,7 +492,7 @@ class Network:
 		self.restartConsole.killAll()
 
 	def stopGetInterfacesConsole(self):
-		self.console.killAll()
+		self.Console.killAll()
 
 	def stopDeactivateInterfaceConsole(self):
 		self.deactivateInterfaceConsole.killAll()
