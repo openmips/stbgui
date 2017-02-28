@@ -39,7 +39,7 @@ class VideoHardware:
 
 	rates["576p"] =			{ "50Hz": 	{ 50: "576p" } }
 
-	if chipset in ('bcm7358', 'bcm7346', 'bcm7356', 'bcm7405', 'bcm7362', 'bcm73625'):
+	if chipset in ('bcm7358', 'bcm7346', 'bcm7356', 'bcm7405', 'bcm7362', 'bcm73625', 'bcm7252s'):
 		rates["720p"] =		{ "24Hz": 	{ 24: "720p24" },
 									"25Hz": 	{ 25: "720p25" },
 									"30Hz": 	{ 30: "720p30" },
@@ -58,13 +58,13 @@ class VideoHardware:
 									"multi": 	{ 50: "1080i50", 60: "1080i" },
 									"multi (50/60/24p)": {50: "1080i50", 60: "1080i", 24: "1080p24" } }
 
-	if chipset == 'bcm7405':
+	if chipset in ('bcm7405'):
 		rates["1080p"] =	{ "24Hz":		{ 24: "1080p24" },
 									"25Hz":		{ 25: "1080p25" },
 									"30Hz":		{ 30: "1080p30" },
 									"multi (50/60/24p)": {50: "1080p50", 60: "1080p", 24: "1080p24" } }
 
-	elif chipset in ('bcm7358', 'bcm7346', 'bcm7356', 'bcm7362', 'bcm73625'):
+	elif chipset in ('bcm7358', 'bcm7346', 'bcm7356', 'bcm7362', 'bcm73625', 'bcm7252s'):
 		rates["1080p"] =	{ "50Hz": 	{ 50: "1080p50" },
 									"60Hz": 	{ 60: "1080p" },
 									"multi": 	{ 50: "1080p50", 60: "1080p" },
@@ -103,7 +103,7 @@ class VideoHardware:
 		modes["DVI"] = ["720p", "1080i", "1080p", "576p", "480p", "576i", "480i"]
 		# modes["DVI"] = ["720p", "1080p", "2160p", "1080i", "576p", "480p", "576i", "480i"]
 		widescreen_modes = set(["720p", "1080i", "1080p"])
-	elif chipset in ('bcm7252','bcm7251','bcm7251S'):
+	elif chipset in ('bcm7252', 'bcm7251', 'bcm7251S', 'bcm7252s'):
 		modes["YPbPr"] = ["720p", "1080i", "1080p", "576p", "480p", "576i", "480i"]
 		modes["DVI"] = ["720p", "1080i", "1080p", "2160p", "2160p30", "576p", "480p", "576i", "480i"]
 		widescreen_modes = set(["720p", "1080i", "1080p", "2160p"])
