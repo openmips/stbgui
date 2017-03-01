@@ -6,7 +6,6 @@
 #include <lib/base/nconfig.h> 
 #include <lib/base/httpstream.h>
 #include <fcntl.h>
-#include <lib/base/nconfig.h>
 
 	/* for cutlist */
 #include <byteswap.h>

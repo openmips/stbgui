@@ -66,7 +66,7 @@ class MediaPixmap(Pixmap):
 
 	def paintCoverArtPixmapCB(self, picInfo=None):
 		ptr = self.picload.getData()
-		if ptr != None:
+		if ptr is not None:
 			self.instance.setPixmap(ptr.__deref__())
 
 	def updateCoverArt(self, path):
@@ -722,7 +722,7 @@ class MediaPlayer(Screen, InfoBarBase, InfoBarScreenSaver, InfoBarSeek, InfoBarA
 			self.playlistname = path[0].rsplit('.',1)[-2]
 			self.clear_playlist()
 			extension = path[0].rsplit('.',1)[-1]
-			if self.playlistparsers.has_key(extension):
+			if extension in self.playlistparsers:
 				playlist = self.playlistparsers[extension]()
 				list = playlist.open(path[1])
 				for x in list:
@@ -838,7 +838,7 @@ class MediaPlayer(Screen, InfoBarBase, InfoBarScreenSaver, InfoBarSeek, InfoBarA
 		if self.filelist.getServiceRef().type == 4098: # playlist
 			ServiceRef = self.filelist.getServiceRef()
 			extension = ServiceRef.getPath()[ServiceRef.getPath().rfind('.') + 1:]
-			if self.playlistparsers.has_key(extension):
+			if extension in self.playlistparsers:
 				playlist = self.playlistparsers[extension]()
 				list = playlist.open(ServiceRef.getPath())
 				for x in list:
