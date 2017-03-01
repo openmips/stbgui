@@ -9,7 +9,7 @@
 #error "no BYTE_ORDER defined!"
 #endif
 
-// #define GPIXMAP_DEBUG
+#define GPIXMAP_DEBUG
 
 #ifdef GPIXMAP_DEBUG
 #	include "../base/benchmark.h"
