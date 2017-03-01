@@ -9,8 +9,8 @@ except:
 
 from boxbranding import getBoxType
 
-from Components.Pixmap import Pixmap, MovingPixmap, MultiPixmap
-from Components.config import config, ConfigBoolean, configfile, ConfigSubsection
+from Components.Pixmap import Pixmap
+from Components.config import config, ConfigBoolean, configfile
 from Components.SystemInfo import SystemInfo
 from LanguageSelection import LanguageWizard
 
@@ -42,9 +42,7 @@ class StartWizard(WizardLanguage, Rc):
 		config.misc.firstrun.save()
 		configfile.save()
 
+wizardManager.registerWizard(LanguageWizard, config.misc.languageselected.value, priority = 10)
 if OverscanWizard:
-	wizardManager.registerWizard(OverscanWizard, config.misc.do_overscanwizard.value, priority = 10)
-
-wizardManager.registerWizard(LanguageWizard, config.misc.languageselected.value, priority = 15)
-
+	wizardManager.registerWizard(OverscanWizard, config.misc.do_overscanwizard.value, priority = 20)
 wizardManager.registerWizard(StartWizard, config.misc.firstrun.value, priority = 25)
