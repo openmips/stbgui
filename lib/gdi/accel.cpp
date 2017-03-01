@@ -12,7 +12,7 @@
 #define ACCEL_ALIGNMENT_SHIFT	6
 #define ACCEL_ALIGNMENT_MASK	((1<<ACCEL_ALIGNMENT_SHIFT)-1)
 
-#define ACCEL_DEBUG
+// #define ACCEL_DEBUG
 
 gAccel *gAccel::instance;
 #define BCM_ACCEL
