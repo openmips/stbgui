@@ -1,20 +1,23 @@
-from Screen import Screen
-from Screens.MessageBox import MessageBox
-from Components.ConfigList import ConfigList, ConfigListScreen
+import os
+import time
+
+import Screens.Standby
 from Components.ActionMap import ActionMap, NumberActionMap
+from Components.ConfigList import ConfigList, ConfigListScreen
 from Components.Console import Console
 from Components.Label import Label
 from Components.Pixmap import Pixmap
 from Components.Sources.StaticText import StaticText
-from Components.config import config, ConfigSubsection, ConfigSelection, ConfigSubList, getConfigListEntry, KEY_LEFT, KEY_RIGHT, KEY_0, ConfigNothing, ConfigPIN, ConfigText, ConfigYesNo, NoSave
 from Components.SystemInfo import SystemInfo
-from Tools.Directories import fileExists
-from enigma import eTimer, eDVBCI_UI, eDVBCIInterfaces
+from Components.config import config, ConfigSubsection, ConfigSelection, ConfigSubList, getConfigListEntry, KEY_LEFT, KEY_RIGHT, KEY_0, ConfigNothing, ConfigPIN, \
+	ConfigYesNo, NoSave
+from Screens.MessageBox import MessageBox
 from Tools.BoundFunction import boundFunction
-from boxbranding import getBrandOEM, getBoxType
-import time
-import os
-import Screens.Standby
+from Tools.Directories import fileExists
+from boxbranding import getBoxType
+from enigma import eTimer, eDVBCI_UI, eDVBCIInterfaces
+
+from Screen import Screen
 
 MAX_NUM_CI = 4
 
