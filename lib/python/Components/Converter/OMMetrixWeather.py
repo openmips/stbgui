@@ -93,8 +93,8 @@ class OMMetrixWeather(Converter, object):
 					return config.plugins.MetrixWeather.forecast4daysDay.saved_value
 				elif self.type == "title":
 					return self.getCF() + " | " + config.plugins.MetrixWeather.currentLocation.saved_value
-				elif self.type == "CF":
-					return self.getCF() 
+				#elif self.type == "CF":
+				#	return self.getCF() 
 				else:
 					return ""
 			else:
