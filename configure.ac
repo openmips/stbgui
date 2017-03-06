@@ -178,6 +178,10 @@ if test `echo "$BOXTYPE" | cut -b 1-2` == "gb"; then
 	AC_DEFINE(KEY_SCREEN_TO_KEY_MODE, 1,[define when rc sends a KEY_MODE event for its KEY_ASPECT key])
 fi
 
+if test "$BOXTYPE" == "gb7252" ; then
+	AC_DEFINE(TUNER_FBC, 1,[define HAVE FBC TUNER])
+fi
+
 #if test "$MACHINEBUILD" == "gbipbox"; then
 #	AC_DEFINE(FORCE_SERVICEAVAIL, 1,[define SERVICEAVAIL for GBIPBOX allways true ])
 #fi
