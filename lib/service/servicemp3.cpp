@@ -3335,7 +3335,9 @@ void eServiceMP3::loadCuesheet()
 	{
 		while (1)
 		{
+#if GST_VERSION_MAJOR >= 1
 			pts_t where_pts;
+#endif
 			unsigned long long where;
 			unsigned int what;
 
@@ -3343,7 +3345,7 @@ void eServiceMP3::loadCuesheet()
 				break;
 			if (!fread(&what, sizeof(what), 1, f))
 				break;
-
+#if GST_VERSION_MAJOR >= 1
 			where_pts = be64toh(where);
 			what = ntohl(what);
 
@@ -3365,6 +3367,16 @@ void eServiceMP3::loadCuesheet()
 			}
 			else
 				break;
+#else
+
+			where = be64toh(where);
+			what = ntohl(what);
+
+			if (what > 3)
+				break;
+
+			m_cue_entries.insert(cueEntry(where, what));
+#endif
 		}
 		fclose(f);
 		eDebug("[eServiceMP3] cuts file has %zd entries", m_cue_entries.size());
