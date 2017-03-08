@@ -1412,8 +1412,7 @@ unsigned int eServiceMP3::get_pts_pcrscr(void)
 #endif
 RESULT eServiceMP3::getPlayPosition(pts_t &pts)
 {
-	gint64 pos;
-	pts = 0;
+	gint64 pos = 0;
 
 	if (!m_gst_playbin || m_state != stRunning)
 		return -1;
@@ -1489,7 +1488,7 @@ RESULT eServiceMP3::getPlayPosition(pts_t &pts)
 			return -1;
 		}
 		else
-			pos = pos / 11111LL;
+			pos;
 #endif
 	}
 
@@ -1497,7 +1496,8 @@ RESULT eServiceMP3::getPlayPosition(pts_t &pts)
 #if GST_VERSION_MAJOR < 1
 	pts = pos / 11111LL;
 #else
-	pts = m_last_seek_pos = pos;
+	m_last_seek_pos = pos / 11111LL;
+	pts = m_last_seek_pos;
 #endif
 	//eDebug("[eServiceMP3] current play pts = %" G_GINT64_FORMAT, pts);
 	return 0;
