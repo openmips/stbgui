@@ -1,4 +1,3 @@
-#include <sstream>
 #include <fcntl.h>
 #include <sys/ioctl.h>
 
@@ -53,13 +52,12 @@ eDVBCIInterfaces::eDVBCIInterfaces()
 		m_slots.push_back(cislot);
 	}
 
-	for (eSmartPtrList<eDVBCISlot>::iterator it(m_slots.begin()); it != m_slots.end(); ++it)
-		it->setSource("A");
+	setInputSource(0, TUNER_A);
+	setInputSource(1, TUNER_B);
+	setInputSource(2, TUNER_C);
+	setInputSource(3, TUNER_D);
 
-	for (int tuner_no = 0; tuner_no < num_ci; ++tuner_no)
-		setInputSource(tuner_no, eDVBCISlot::getTunerLetter(tuner_no));
-
-	eDebug("[CI] done, found %d common interface slots", num_ci);
+	eDebug("[CI] done, found %d common interface slots", ci_num);
 }
 
 eDVBCIInterfaces::~eDVBCIInterfaces()
@@ -455,8 +453,17 @@ void eDVBCIInterfaces::recheckPMTHandlers()
 					++ci_it->use_count;
 					eDebug("[CI] (1)Slot %d, usecount now %d", ci_it->getSlotID(), ci_it->use_count);
 
-					std::stringstream ci_source;
-					ci_source << "CI" << ci_it->getSlotID();
+					data_source ci_source=CI_A;
+					switch(ci_it->getSlotID())
+					{
+						case 0: ci_source = CI_A; break;
+						case 1: ci_source = CI_B; break;
+						case 2: ci_source = CI_C; break;
+						case 3: ci_source = CI_D; break;
+						default:
+							eDebug("[CI] try to get source for CI %d!!\n", ci_it->getSlotID());
+							break;
+					}
 
 					if (!it->cislot)
 					{
@@ -472,16 +479,27 @@ void eDVBCIInterfaces::recheckPMTHandlers()
 							}
 						}
 						ASSERT(tunernum != -1);
+						data_source tuner_source = TUNER_A;
+						switch (tunernum)
+						{
+							case 0: tuner_source = TUNER_A; break;
+							case 1: tuner_source = TUNER_B; break;
+							case 2: tuner_source = TUNER_C; break;
+							case 3: tuner_source = TUNER_D; break;
+							default:
+								eDebug("[CI] try to get source for tuner %d!!\n", tunernum);
+								break;
+						}
 						ci_it->current_tuner = tunernum;
-						setInputSource(tunernum, ci_source.str());
-						ci_it->setSource(eDVBCISlot::getTunerLetter(tunernum));
+						setInputSource(tunernum, ci_source);
+						ci_it->setSource(tuner_source);
 					}
 					else
 					{
 						ci_it->current_tuner = it->cislot->current_tuner;
 						ci_it->linked_next = it->cislot;
 						ci_it->setSource(ci_it->linked_next->current_source);
-						ci_it->linked_next->setSource(ci_source.str());
+						ci_it->linked_next->setSource(ci_source);
 					}
 					it->cislot = ci_it;
 					eDebugCI("[CI] assigned!");
@@ -615,18 +633,52 @@ int eDVBCIInterfaces::getMMIState(int slotid)
 	return slot->getMMIState();
 }
 
-int eDVBCIInterfaces::setInputSource(int tuner_no, const std::string &source)
+int eDVBCIInterfaces::setInputSource(int tuner_no, data_source source)
 {
 	char buf[64];
+	std::string value;
+
 	snprintf(buf, sizeof(buf), "/proc/stb/tsmux/input%d", tuner_no);
 
-	if (CFile::write(buf, source.c_str()) == -1)
+	switch(source)
 	{
-		eDebug("[CI] eDVBCIInterfaces setInputSource for input %s failed!", source.c_str());
+		case CI_A:
+			value = "CI0";
+			break;
+		case CI_B:
+			value = "CI1";
+			break;
+		case CI_C:
+			value = "CI2";
+			break;
+		case CI_D:
+			value = "CI3";
+			break;
+		case TUNER_A:
+			value = "A";
+			break;
+		case TUNER_B:
+			value = "B";
+			break;
+		case TUNER_C:
+			value = "C";
+			break;
+		case TUNER_D:
+			value = "D";
+			break;
+		default:
+			eDebug("[CI] setInputSource for input %d failed!", (int)source);
+			return 0;
+			break;
+	}
+
+	if (CFile::write(buf, value.c_str()) == -1)
+	{
+		eDebug("[CI] cannot open %s", buf);
 		return 0;
 	}
 
-	eDebug("[CI] eDVBCIInterfaces setInputSource(%d, %s)", tuner_no, source.c_str());
+	eDebug("[CI] eDVBCIInterfaces->setInputSource(%d, %d)", tuner_no, (int)source);
 	return 0;
 }
 
@@ -1168,19 +1220,53 @@ void eDVBCISlot::removeService(uint16_t program_number)
 		running_services.erase(program_number);  // remove single service
 }
 
-int eDVBCISlot::setSource(const std::string &source)
+int eDVBCISlot::setSource(data_source source)
 {
 	char buf[64];
+	std::string value;
+
 	current_source = source;
 	snprintf(buf, sizeof(buf), "/proc/stb/tsmux/ci%d_input", slotid);
 
-	if(CFile::write(buf, source.c_str()) == -1)
+	switch(source)
 	{
-		eDebug("[CI] Slot: %d setSource: %s failed!", getSlotID(), source.c_str());
+		case CI_A:
+			value = "CI0";
+			break;
+		case CI_B:
+			value = "CI1";
+			break;
+		case CI_C:
+			value = "CI2";
+			break;
+		case CI_D:
+			value = "CI3";
+			break;
+		case TUNER_A:
+			value = "A";
+			break;
+		case TUNER_B:
+			value = "B";
+			break;
+		case TUNER_C:
+			value = "C";
+			break;
+		case TUNER_D:
+			value = "D";
+			break;
+		default:
+			eDebug("[CI] Slot %d: setSource %d failed!", getSlotID(), (int)source);
+			return 0;
+			break;
+	}
+
+	if (CFile::write(buf, value.c_str()) == -1)
+	{
+		eDebug("[CI] cannot open %s", buf);
 		return 0;
 	}
 
-	eDebug("[CI] Slot: %d setSource: %s", getSlotID(), source.c_str());
+	eDebug("[CI] Slot %d setSource(%d)", getSlotID(), (int)source);
 	return 0;
 }
 
