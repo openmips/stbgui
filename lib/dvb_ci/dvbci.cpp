@@ -49,17 +49,17 @@ eDVBCIInterfaces::eDVBCIInterfaces()
 			break;
 
 		cislot = new eDVBCISlot(eApp, ci_num);
-		cislot->setSource(TUNER_A);
+		cislot->setSource("A");
 		m_slots.push_back(cislot);
 	}
 
 	for (eSmartPtrList<eDVBCISlot>::iterator it(m_slots.begin()); it != m_slots.end(); ++it)
 		it->setSource("A");
 
-	for (int tuner_no = 0; tuner_no < num_ci; ++tuner_no)
+	for (int tuner_no = 0; tuner_no < ci_num; ++tuner_no)
 		setInputSource(tuner_no, eDVBCISlot::getTunerLetter(tuner_no));
 
-	eDebug("[CI] done, found %d common interface slots", num_ci);
+	eDebug("[CI] done, found %d common interface slots", ci_num);
 }
 
 eDVBCIInterfaces::~eDVBCIInterfaces()
