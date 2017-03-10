@@ -15,6 +15,7 @@ dist_pkgdata_DATA = \
 	skin.xml \
 	freesat.t1 \
 	freesat.t2 \
+	iso-639-3.pck \
 	timezone.xml \
 	unicable.xml
 
@@ -46,3 +47,6 @@ endif
 
 skin_display.xml: $(srcdir)/skin_display_default.xml
 	test -f $(srcdir)/skin_display_$(MACHINEBUILD).xml && cp $(srcdir)/skin_display_$(MACHINEBUILD).xml skin_display.xml || cp $(srcdir)/skin_display_default.xml skin_display.xml
+
+iso-639-3.pck: $(srcdir)/iso-639-3.tab
+	python $(srcdir)/convert-iso-639-3.py $< $@

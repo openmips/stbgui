@@ -4,7 +4,7 @@ from Screens.WizardLanguage import WizardLanguage
 from Screens.Rc import Rc
 from VideoHardware import video_hw
 
-from Components.Pixmap import Pixmap, MovingPixmap, MultiPixmap
+from Components.Pixmap import Pixmap
 from Components.config import config, ConfigBoolean, configfile
 
 from Tools.Directories import resolveFilename, SCOPE_PLUGINS
@@ -20,7 +20,7 @@ except:
 	chipset = "unknown"
 
 has_rca = False
-if getBoxType() in ('mutant51', 'ax51','gbuhdquad', 'gb800seplus', 'gb800ueplus', 'gbquad', 'gbquadplus', 'gbipbox', 'gbultra', 'gbultraue', 'gbultraueh', 'gbultrase', 'spycat', 'quadbox2400', 'gbx1', 'gbx2', 'gbx3', 'gbx3h'):
+if getBoxType() in ('mutant51', 'ax51', 'gb800seplus', 'gb800ueplus', 'gbquad', 'gbquadplus', 'gbipbox', 'gbultra', 'gbultraue', 'gbultraueh', 'gbultrase', 'spycat', 'quadbox2400', 'gbx1', 'gbx2', 'gbx3', 'gbx3h'):
 	has_rca = True
 
 class VideoWizardSummary(WizardSummary):
