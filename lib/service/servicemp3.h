@@ -318,8 +318,11 @@ private:
 	bool m_use_chapter_entries;
 	/* last used seek position gst-1 only */
 	gint64 m_last_seek_pos;
-	gint64 m_media_lenght;
-	gint64 m_last_play_pos;
+	pts_t m_media_lenght;
+	ePtr<eTimer> m_play_position_timer;
+	void playPositionTiming();
+	bool m_use_last_seek;
+	bool m_seeking_or_paused;
 #endif
 	bufferInfo m_bufferInfo;
 	errorInfo m_errorInfo;

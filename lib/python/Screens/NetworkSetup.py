@@ -1,4 +1,5 @@
 import os
+import commands
 from Screens.Screen import Screen
 from Screens.MessageBox import MessageBox
 from Screens.HelpMenu import HelpableScreen

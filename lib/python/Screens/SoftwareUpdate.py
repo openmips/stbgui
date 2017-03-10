@@ -16,8 +16,6 @@ from boxbranding import getBoxType, getImageVersion, getMachineBuild
 from Tools.Directories import fileExists
 from urllib2 import urlopen
 import socket
-import os
-import re
 
 class UpdatePlugin(Screen, ProtectedScreen):
 	skin = """
