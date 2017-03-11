@@ -56,7 +56,8 @@ eDVBCIInterfaces::eDVBCIInterfaces()
 	for (eSmartPtrList<eDVBCISlot>::iterator it(m_slots.begin()); it != m_slots.end(); ++it)
 		it->setSource("A");
 
-	for (int tuner_no = 0; tuner_no < ci_num; ++tuner_no)
+	// FIXME initiliaze all inputs by checking /proc/stb/tsmux/inputX instead of using fixed 2 / 4
+	for (int tuner_no = 0; tuner_no < (ci_num > 1 ? 4 : 2); ++tuner_no)
 		setInputSource(tuner_no, eDVBCISlot::getTunerLetter(tuner_no));
 
 	eDebug("[CI] done, found %d common interface slots", ci_num);
@@ -456,7 +457,11 @@ void eDVBCIInterfaces::recheckPMTHandlers()
 					eDebug("[CI] (1)Slot %d, usecount now %d", ci_it->getSlotID(), ci_it->use_count);
 
 					std::stringstream ci_source;
-					ci_source << "CI" << ci_it->getSlotID();
+					ci_source << "CI";
+					if (getNumOfSlots() > 1) // Only receivers with more that 1 CI expect number after CI
+					{
+						ci_source << ci_it->getSlotID();
+					}
 
 					if (!it->cislot)
 					{
@@ -1172,7 +1177,15 @@ int eDVBCISlot::setSource(const std::string &source)
 {
 	char buf[64];
 	current_source = source;
-	snprintf(buf, sizeof(buf), "/proc/stb/tsmux/ci%d_input", slotid);
+
+	if (eDVBCIInterfaces::getInstance()->getNumOfSlots() > 1) // FIXME .. we force DM8000 when more than one CI Slot is avail
+	{
+		snprintf(buf, sizeof(buf), "/proc/stb/tsmux/ci%d_input", slotid);
+	}
+	else // DM7025
+	{
+		snprintf(buf, sizeof(buf), "/proc/stb/tsmux/input2");
+	}
 
 	if(CFile::write(buf, source.c_str()) == -1)
 	{
