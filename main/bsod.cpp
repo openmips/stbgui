@@ -116,6 +116,7 @@ void bsodFatal(const char *component)
 		/* find python-tracebacks, and extract "  File "-strings */
 	size_t start = 0;
 
+	std::string crash_emailaddr = CRASH_EMAILADDR;
 	std::string crash_component = "enigma2";
 
 	if (component)
