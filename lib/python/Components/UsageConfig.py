@@ -349,7 +349,7 @@ def InitUsageConfig():
 	config.usage.pic_resolution = ConfigSelection(default=None, choices=[(None, _("Same resolution as skin")), ("(720, 576)","720x576"), ("(1280, 720)", "1280x720"), ("(1920, 1080)", "1920x1080")][:SystemInfo["HasFullHDSkinSupport"] and 4 or 3])
 
 	if SystemInfo["Bootvideo"]:
-		config.usage.show_bootvideo = ConfigYesNo(default = True)
+		config.usage.show_bootvideo = ConfigYesNo(default = False)
 
 	if SystemInfo["Fan"]:
 		choicelist = [('off', _("Off")), ('on', _("On")), ('auto', _("Auto"))]
