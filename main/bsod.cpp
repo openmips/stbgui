@@ -20,13 +20,7 @@
 
 /************************************************/
 
-static const char *crash_emailaddr =
-#ifndef CRASH_EMAILADDR
-	"forum at www.gigablue-support.com";
-#else
-	CRASH_EMAILADDR;
-#endif
-
+#define CRASH_EMAILADDR "forum at www.gigablue-support.com"
 #define INFOFILE "/maintainer.info"
 
 #define RINGBUFFER_SIZE 16384
@@ -256,7 +250,7 @@ void bsodFatal(const char *component)
 	os.clear();
 	os << "We are really sorry. Your STB encountered "
 		"a software problem, and needs to be restarted.\n"
-		"Please attach " << crashlog_name << " to " << crash_emailaddr << ".\n"
+		"Please attach " << crashlog_name << " " << crash_emailaddr << ".\n"
 		"Your STB restarts in 10 seconds!\n"
 		"Component: " << crash_component;
 
