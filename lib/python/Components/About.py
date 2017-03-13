@@ -23,7 +23,8 @@ def getImageVersionString():
 
 def getFlashDateString():
 	try:
-		return time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(os.stat("/boot").st_ctime))
+		# return time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(os.stat("/boot").st_ctime))
+		return time.strftime(_("%Y-%m-%d %H:%M"), time.strptime(open("/etc/version").read().strip(), '%Y%m%d%H%M'))
 	except:
 		return _("unknown")
 
