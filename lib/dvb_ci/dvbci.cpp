@@ -2,6 +2,11 @@
 #include <fcntl.h>
 #include <sys/ioctl.h>
 
+#include <ios>
+#include <fstream>
+#include <sstream>
+#include <iomanip>
+
 #include <lib/base/init.h>
 #include <lib/base/init_num.h>
 #include <lib/base/cfile.h>
@@ -34,21 +39,31 @@ eDVBCIInterfaces::eDVBCIInterfaces()
 {
 
 	char buf[64];
-	int ci_num;
+	int num_ci = 0;
 	ePtr<eDVBCISlot> cislot;
+	std::stringstream path;
+	std::ifstream file;
 
 	instance = this;
 
 	eDebug("[CI] scanning for common interfaces..");
 
-	for(ci_num = 0; ci_num < 8; ci_num++)
+	for (;;)
 	{
-		snprintf(buf, sizeof(buf), "/dev/ci%d", ci_num);
+		path.str("");
+		path.clear();
+		path << "/dev/ci" << num_ci;
+		file.open(path.str().c_str(), std::fstream::in);
+
+		if(!file.is_open())
+			break;
+
+		file.close();
 
 		if(::access(buf, R_OK))
 			break;
 
-		cislot = new eDVBCISlot(eApp, ci_num);
+		cislot = new eDVBCISlot(eApp, num_ci);
 		cislot->setSource("A");
 		m_slots.push_back(cislot);
 	}
@@ -58,15 +73,20 @@ eDVBCIInterfaces::eDVBCIInterfaces()
 
 	for (int tuner_no = 0; tuner_no < 26; ++tuner_no) // NOTE: this assumes tuners are A .. Z max.
 	{
-		char filename[32];
-		snprintf(filename, sizeof(filename), "/proc/stb/tsmux/input%d", tuner_no);
+		path.str("");
+		path.clear();
+		path << "/proc/stb/tsmux/input" << tuner_no;
+		file.open(path.str().c_str(), std::fstream::in);
 
-		if (::access(filename, R_OK) < 0) break;
+		if(!file.is_open())
+			break;
+
+		file.close();
 
 		setInputSource(tuner_no, eDVBCISlot::getTunerLetter(tuner_no));
 	}
 
-	eDebug("[CI] done, found %d common interface slots", ci_num);
+	eDebug("[CI] done, found %d common interface slots", num_ci);
 }
 
 eDVBCIInterfaces::~eDVBCIInterfaces()
