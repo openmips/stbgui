@@ -10,6 +10,8 @@ try:
 	file = open("/proc/stb/info/chipset", "r")
 	chipset = file.readline().strip()
 	file.close()
+	# convert chipset always to lowercase
+	chipset = chipset.lower()
 except:
 	chipset = "unknown"
 

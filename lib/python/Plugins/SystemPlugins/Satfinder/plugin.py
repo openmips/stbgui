@@ -81,7 +81,7 @@ class Satfinder(ScanSetup, ServiceScan):
 		if nimmanager.nim_slots[int(self.satfinder_scan_nims.value)].isCompatible("DVB-S"):
 			self.updatePreDefTransponders()
 		self.createSetup()
-		self.retune()
+		self.retune(None)
 
 	def __onClose(self):
 		self.session.nav.playService(self.session.postScanService)
@@ -117,7 +117,7 @@ class Satfinder(ScanSetup, ServiceScan):
 			self.modulationEntry,
 			self.systemEntryATSC
 			):
-			self.retune()
+			self.retune(None)
 
 	def createSetup(self):
 		self.list = []
@@ -275,7 +275,7 @@ class Satfinder(ScanSetup, ServiceScan):
 			self.scan_cab.modulation, self.scan_cab.fec,
 			self.scan_ats.frequency, self.scan_ats.modulation, self.scan_ats.inversion,
 			self.scan_ats.system):
-			x.addNotifier(self.retuneTriggeredByConfigElement, initial_call = False)
+			x.addNotifier(self.retune, initial_call = False)
 
 		satfinder_nim_list = []
 		for n in nimmanager.nim_slots:
@@ -436,13 +436,13 @@ class Satfinder(ScanSetup, ServiceScan):
 					self.transponder = transponder
 
 	def retune(self, configElement):
-		if self.DVB_type.value == "DVB-S":
+		if nimmanager.nim_slots[int(self.satfinder_scan_nims.value)].isCompatible("DVB-S"):
 			return self.retuneSat(configElement)
-		if self.DVB_type.value == "DVB-T":
+		if nimmanager.nim_slots[int(self.satfinder_scan_nims.value)].isCompatible("DVB-T"):
 			return self.retuneTerr(configElement)
-		elif self.DVB_type.value == "DVB-C":
+		elif nimmanager.nim_slots[int(self.satfinder_scan_nims.value)].isCompatible("DVB-C"):
 			return self.retuneCab(configElement)
-		elif self.DVB_type.value == "ATSC":
+		elif nimmanager.nim_slots[int(self.satfinder_scan_nims.value)].isCompatible("ATSC"):
 			return self.retuneATSC(configElement)
 		else:
 			return
