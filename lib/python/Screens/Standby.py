@@ -14,6 +14,7 @@ from GlobalActions import globalActionMap
 from enigma import eDVBVolumecontrol, eTimer, eDVBLocalTimeHandler, eServiceReference
 import Screens.InfoBar
 from boxbranding import getMachineBrand, getMachineName, getBoxType
+from Tools.HardwareInfo import HardwareInfo
 
 inStandby = None
 
@@ -334,7 +335,7 @@ class TryQuitMainloop(MessageBox):
 						Console().ePopen("/usr/script/Standby.sh off")
 					if os.path.exists("/usr/script/standby_enter.sh"):
 						Console().ePopen("/usr/script/standby_enter.sh")
-					if config.hdmicec.enabled.value and config.hdmicec.control_tv_standby.value and config.hdmicec.next_boxes_detect.value:
+					if HardwareInfo().has_hdmi() and config.hdmicec.enabled.value and config.hdmicec.control_tv_standby.value and config.hdmicec.next_boxes_detect.value:
 						import Components.HdmiCec
 						Components.HdmiCec.hdmi_cec.secondBoxActive()
 						self.delay = eTimer()
