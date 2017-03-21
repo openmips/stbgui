@@ -378,6 +378,12 @@ def InitUsageConfig():
 		config.usage.powerOffDisplay = ConfigYesNo(default = True)
 		config.usage.powerOffDisplay.addNotifier(powerOffDisplayChanged)
 
+	if SystemInfo["LCDshow_symbols"]:
+		def lcdShowSymbols(configElement):
+			open(SystemInfo["LCDshow_symbols"], "w").write(configElement.value and "1" or "0")
+		config.usage.lcd_show_symbols = ConfigYesNo(default = True)
+		config.usage.lcd_show_symbols.addNotifier(lcdShowSymbols)
+
 	config.network = ConfigSubsection()
 	if SystemInfo["WakeOnLAN"]:
 		def wakeOnLANChanged(configElement):
