@@ -46,8 +46,8 @@ class About(Screen):
 		elif boxtype == 'gb800ue':
 			BoxName = "GigaBlue HD 800UE"
 		elif boxtype == 'gbquad':
-			BoxName = "GigaBlue HD Quad"
-		elif boxtype == 'gbuhdquad':
+			BoxName = "GigaBlue Quad 4K"
+		elif boxtype == 'gbquad4k':
 			BoxName = "GigaBlue UHD Quad"
 		elif boxtype == 'gbquadplus':
 			BoxName = "GigaBlue HD Quadplus"
