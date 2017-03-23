@@ -9,7 +9,7 @@ from boxbranding import getBoxType
 
 LCDSIZE400 = []
 
-if getBoxType() in ('gbuhdquad', 'gbquadplus'):
+if getBoxType() in ('gbquad4k', 'gbquadplus'):
 	LCDSIZE400 = True
 else:
 	LCDSIZE400 = False

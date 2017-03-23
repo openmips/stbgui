@@ -149,52 +149,12 @@ def InitAVSwitch():
 	config.av.wss.addNotifier(setWSS)
 
 	iAVSwitch.setInput("ENCODER") # init on startup
-	if getBoxType() in ('gbuhdquad', 'gbquad', 'gbquadplus', 'gb800seplus', 'gb800ueplus', 'gbipbox', 'gbultra', 'gbultraue', 'gbultraueh', 'gbultrase', 'spycat', 'gbx1', 'gbx2', 'gbx3', 'gbx3h'):
+	if getBoxType() in ('gbquad4k', 'gbquad', 'gbquadplus', 'gb800seplus', 'gb800ueplus', 'gbipbox', 'gbultra', 'gbultraue', 'gbultraueh', 'gbultrase', 'spycat', 'gbx1', 'gbx2', 'gbx3', 'gbx3h'):
 		detected = False
 	else:
 		detected = eAVSwitch.getInstance().haveScartSwitch()
 	
 	SystemInfo["ScartSwitch"] = detected
-
-	if os.path.exists("/proc/stb/audio/3d_surround_choices"):
-		f = open("/proc/stb/audio/3d_surround_choices", "r")
-		can_3dsurround = f.read().strip().split(" ")
-		f.close()
-	else:
-		can_3dsurround = False
-
-	SystemInfo["Can3DSurround"] = can_3dsurround
-
-	if can_3dsurround:
-		def set3DSurround(configElement):
-			f = open("/proc/stb/audio/3d_surround", "w")
-			f.write(configElement.value)
-			f.close()
-		choice_list = [("none", _("off")), ("hdmi", _("HDMI")), ("spdif", _("SPDIF")), ("dac", _("DAC"))]
-		config.av.surround_3d = ConfigSelection(choices = choice_list, default = "none")
-		config.av.surround_3d.addNotifier(set3DSurround)
-	else:
-		config.av.surround_3d = ConfigNothing()
-		
-	if os.path.exists("/proc/stb/audio/avl_choices"):
-		f = open("/proc/stb/audio/avl_choices", "r")
-		can_autovolume = f.read().strip().split(" ")
-		f.close()
-	else:
-		can_autovolume = False
-
-	SystemInfo["CanAutoVolume"] = can_autovolume
-
-	if can_autovolume:
-		def setAutoVulume(configElement):
-			f = open("/proc/stb/audio/avl", "w")
-			f.write(configElement.value)
-			f.close()
-		choice_list = [("none", _("off")), ("hdmi", _("HDMI")), ("spdif", _("SPDIF")), ("dac", _("DAC"))]
-		config.av.autovolume = ConfigSelection(choices = choice_list, default = "none")
-		config.av.autovolume.addNotifier(setAutoVulume)
-	else:
-		config.av.autovolume = ConfigNothing()
 
 	if SystemInfo["HasMultichannelPCM"]:
 		def setPCMMultichannel(configElement):
@@ -266,33 +226,6 @@ def InitAVSwitch():
 		config.av.osd_alpha = ConfigSlider(default=255, increment = 5, limits=(20,255))
 		config.av.osd_alpha.addNotifier(setAlpha)
 
-	if os.path.exists("/proc/stb/video/hdmi_colorimetry"):
-		f = open("/proc/stb/video/hdmi_colorimetry", "r")
-		have_colorimetry = f.read().strip().split(" ")
-		f.close()
-	else:
-		have_colorimetry = False
-
-	SystemInfo["havecolorimetry"] = have_colorimetry
-
-	if have_colorimetry:
-		def setHDMIColorimetry(configElement):
-			try:
-				f = open("/proc/stb/video/hdmi_colorimetry", "w")
-				f.write(configElement.value)
-				f.close()
-			except:
-				pass
-		config.av.hdmicolorimetry = ConfigSelection(choices={
-				"auto": _("auto"),
-				"bt2020ncl": _("BT 2020 NCL"),
-				"bt2020cl": _("BT 2020 CL"),
-				"bt709": _("BT 709")},
-				default = "auto")
-		config.av.hdmicolorimetry.addNotifier(setHDMIColorimetry)
-	else:
-		config.av.hdmicolorimetry = ConfigNothing()
-
 	if os.path.exists("/proc/stb/vmpeg/0/pep_scaler_sharpness"):
 		def setScaler_sharpness(config):
 			myval = int(config.value)
@@ -303,7 +236,7 @@ def InitAVSwitch():
 			except IOError:
 				print "couldn't write pep_scaler_sharpness"
 
-		if getBoxType() in ('gbuhdquad', 'gbquad', 'gbquadplus'):
+		if getBoxType() in ('gbquad4k', 'gbquad', 'gbquadplus'):
 			config.av.scaler_sharpness = ConfigSlider(default=5, limits=(0,26))
 		else:
 			config.av.scaler_sharpness = ConfigSlider(default=13, limits=(0,26))
@@ -312,3 +245,45 @@ def InitAVSwitch():
 		config.av.scaler_sharpness = NoSave(ConfigNothing())
 
 	config.av.edid_override = ConfigYesNo(default = True)
+
+	if SystemInfo["HasMultichannelPCM"]:
+		def setMultichannelPCM(configElement):
+			open(SystemInfo["HasMultichannelPCM"], "w").write(configElement.value and "enable" or "disable")
+		config.av.multichannel_pcm = ConfigYesNo(default = False)
+		config.av.multichannel_pcm.addNotifier(setMultichannelPCM)
+
+	if SystemInfo["HasAutoVolume"]:
+		def setAutoVolume(configElement):
+			open(SystemInfo["HasAutoVolume"], "w").write(configElement.value)
+		config.av.autovolume = ConfigSelection(default = "none", choices = [("none", _("off")), ("hdmi", _("HDMI")), ("spdif", _("SPDIF")), ("dac", _("DAC"))])
+		config.av.autovolume.addNotifier(setAutoVolume)
+
+	if SystemInfo["HasAutoVolumeLevel"]:
+		def setAutoVolumeLevel(configElement):
+			open(SystemInfo["HasAutoVolumeLevel"], "w").write(configElement.value and "enabled" or "disabled")
+		config.av.autovolumelevel = ConfigYesNo(default = False)
+		config.av.autovolumelevel.addNotifier(setAutoVolumeLevel)
+
+	if SystemInfo["Has3DSurround"]:
+		def set3DSurround(configElement):
+			open(SystemInfo["Has3DSurround"], "w").write(configElement.value)
+		config.av.surround_3d = ConfigSelection(default = "none", choices = [("none", _("off")), ("hdmi", _("HDMI")), ("spdif", _("SPDIF")), ("dac", _("DAC"))])
+		config.av.surround_3d.addNotifier(set3DSurround)
+
+	if SystemInfo["Has3DSpeaker"]:
+		def set3DSpeaker(configElement):
+			open(SystemInfo["Has3DSpeaker"], "w").write(configElement.value)
+		config.av.speaker_3d = ConfigSelection(default = "center", choices = [("center", _("center")), ("wide", _("wide")), ("extrawide", _("extra wide"))])
+		config.av.speaker_3d.addNotifier(set3DSpeaker)
+
+	if SystemInfo["Has3DSurroundSpeaker"]:
+		def set3DSurroundSpeaker(configElement):
+			open(SystemInfo["Has3DSurroundSpeaker"], "w").write(configElement.value)
+		config.av.surround_3d_speaker = ConfigSelection(default = "disabled", choices = [("disabled", _("off")), ("center", _("center")), ("wide", _("wide")), ("extrawide", _("extra wide"))])
+		config.av.surround_3d_speaker.addNotifier(set3DSurroundSpeaker)
+
+	if SystemInfo["Has3DSurroundSoftLimiter"]:
+		def set3DSurroundSoftLimiter(configElement):
+			open(SystemInfo["Has3DSurroundSoftLimiter"], "w").write(configElement.value and "enabled" or "disabled")
+		config.av.surround_softlimiter_3d = ConfigYesNo(default = False)
+		config.av.surround_softlimiter_3d.addNotifier(set3DSurroundSoftLimiter)

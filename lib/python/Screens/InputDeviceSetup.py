@@ -307,9 +307,11 @@ class RemoteControlType(Screen, ConfigListScreen):
 			("6", _("DMM advanced")),
 			("14", _("xp1000")),
 			("8", _("VU+")),
-			("18", _("F1/F3")),
-			("16", _("HD51/HD1100/HD1200/et7x00/et8500")),
-			("19", _("HD2400"))
+			("16", _("HD11/HD51/HD1100/HD1200/HD1265/HD1500/HD500C/HD530C/VS1000/VS1500/et7x00/et8500/et7000mini")),
+			("18", _("F1/F3/F4/F4-TURBO")),
+			("19", _("HD2400")),
+			("20", _("Zgemma Star S/2S/H1/H2")),
+			("21", _("Zgemma H.S/H.2S/H.2H/H5/H7"))
 		]
 
 	defaultRcList = [
@@ -332,12 +334,18 @@ class RemoteControlType(Screen, ConfigListScreen):
 			("hd2400", 19),
 			("et7000", 16),
 			("et7500", 16),
-			("et8500", 16)
+			("et8500", 16),
+			("sh1", 20),
+			("h3", 21),
+			("h5", 21),
+			("h7", 21),
+			("et7000mini", 16)
 		]
 
 	def __init__(self, session):
 		Screen.__init__(self, session)
 		self.skinName = ["RemoteControlType", "Setup" ]
+		self.setTitle(_("Remote control type setup"))
 
 		self["actions"] = ActionMap(["SetupActions"],
 		{
@@ -356,7 +364,7 @@ class RemoteControlType(Screen, ConfigListScreen):
 		self.list.append(getConfigListEntry(_("Remote control type"), self.rctype))
 		self["config"].list = self.list
 
-		self.defaultRcType = None
+		self.defaultRcType = 0
 		self.getDefaultRcType()
 
 	def getDefaultRcType(self):
@@ -365,6 +373,8 @@ class RemoteControlType(Screen, ConfigListScreen):
 			if x[0] in data:
 				self.defaultRcType = x[1]
 				break
+		if self.defaultRcType == 0:
+			self.defaultRcType = iRcTypeControl.readRcType()
 
 	def setDefaultRcType(self):
 		iRcTypeControl.writeRcType(self.defaultRcType)
