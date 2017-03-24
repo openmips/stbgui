@@ -1135,6 +1135,7 @@ RESULT eServiceMP3::trickSeek(gdouble ratio)
 		gst_element_set_state(m_gst_playbin, GST_STATE_PAUSED);
 #if GST_VERSION_MAJOR >= 1
 		m_seeking_or_paused = true;
+		m_last_seek_count = 0;
 #endif
 		if ( pos_ret >= 0)
 			seekTo(pts);
@@ -1191,12 +1192,12 @@ RESULT eServiceMP3::trickSeek(gdouble ratio)
 		if (!strcmp(name, "filesrc") || !strcmp(name, "souphttpsrc"))
 		{
 			/* previous state was already ok if we come here just give all elements time to unpause */
+			gst_element_set_state(m_gst_playbin, GST_STATE_PLAYING);
+			ret = gst_element_get_state(m_gst_playbin, &state, &pending, 2 * GST_SECOND);
 #if GST_VERSION_MAJOR >= 1
 			m_seeking_or_paused = false;
 			m_last_seek_count = 0;
 #endif
-			gst_element_set_state(m_gst_playbin, GST_STATE_PLAYING);
-			ret = gst_element_get_state(m_gst_playbin, &state, &pending, 2 * GST_SECOND);
 			eDebug("[eServiceMP3] unpause state:%s pending:%s ret:%s",
 				gst_element_state_get_name(state),
 				gst_element_state_get_name(pending),
@@ -1439,7 +1440,7 @@ RESULT eServiceMP3::getPlayPosition(pts_t &pts)
 		if (m_last_seek_count == -10)
 		{
 			eDebug("[eServiceMP3] ** START USE LAST SEEK TIMER");
-			m_play_position_timer->start(100, false);
+			m_play_position_timer->start(50, false);
 			m_last_seek_count = 0;
 		}
 		else
@@ -1448,6 +1449,7 @@ RESULT eServiceMP3::getPlayPosition(pts_t &pts)
 			{
 				pts = m_last_seek_pos;
 				m_last_seek_count = 0;
+				return 0;
 			}
 			else
 				m_last_seek_count = 1;
@@ -1456,11 +1458,14 @@ RESULT eServiceMP3::getPlayPosition(pts_t &pts)
 	else
 	{
 		if (m_paused || m_seeking_or_paused)
+		{
+			m_last_seek_count = 0;
 			pts = m_last_seek_pos;
+		}
 		else
 		{
 			if (m_last_seek_count >= 1)
-				pts = m_last_seek_pos + ((m_last_seek_count - 1) * 9000);
+				pts = m_last_seek_pos + ((m_last_seek_count - 1) * 4500);
 			else
 				pts = m_last_seek_pos;
 		}
@@ -1512,11 +1517,6 @@ RESULT eServiceMP3::getPlayPosition(pts_t &pts)
 			return -1;
 		}
 #else
-		if(m_paused && m_last_seek_pos > 0)
-		{
-			pts = m_last_seek_pos;
-			return 0;
-		}
 		if (!gst_element_query_position(m_gst_playbin, fmt, &pos))
 		{
 			//eDebug("[eServiceMP3] gst_element_query_position failed in getPlayPosition");
@@ -1954,14 +1954,14 @@ RESULT eServiceMP3::selectTrack(unsigned int i)
 		if (ppos < 0)
 			ppos = 0;
 	}
-#if GST_VERSION_MAJOR < 0
+//#if GST_VERSION_MAJOR < 0
 	if (validposition)
 	{
 		//flush
 		seekTo(ppos);
 	}
-#else
-	/* only flush if the audio types are not the same */
+//#else
+	/* //only flush if the audio types are not the same
     if (m_audioStreams[m_currentAudioStream].type != m_audioStreams[i].type)
 	{
 		if (validposition)
@@ -1970,7 +1970,7 @@ RESULT eServiceMP3::selectTrack(unsigned int i)
 			seekTo(ppos);
 		}
 	}
-#endif
+#endif*/
 	return selectAudioStream(i);
 }
 
@@ -3194,6 +3194,11 @@ RESULT eServiceMP3::enableSubtitles(iSubtitleUser *user, struct SubtitleTrack &t
 		 * we have to force a seek, before the new subtitle stream will start
 		 */
 		seekRelative(-1, 90000);
+#endif
+
+#if GST_VERSION_MAJOR >= 1
+		if (m_last_seek_pos > 0)
+			seekTo(m_last_seek_pos);
 #endif
 
 	}
