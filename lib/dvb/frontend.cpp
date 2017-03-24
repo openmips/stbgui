@@ -2646,10 +2646,7 @@ int eDVBFrontend::isCompatibleWith(ePtr<iDVBFrontendParameters> &feparm)
 					(parm.pls_mode & 3) != eDVBFrontendParametersSatellite::PLS_Root);
 		if (parm.system == eDVBFrontendParametersSatellite::System_DVB_S2 && multistream && !is_multistream())
 		{
-			if(!(   parm.is_id == 0
-				&& (parm.pls_mode & 3) != eDVBFrontendParametersSatellite::PLS_Root
-				&& (parm.pls_code & 0x3FFFF) == 1)
-				return 0;
+			return 0;
 		}
 		score = m_sec ? m_sec->canTune(parm, this, 1 << m_slotid) : 0;
 		if (score > 1 && parm.system == eDVBFrontendParametersSatellite::System_DVB_S && can_handle_dvbs2)
