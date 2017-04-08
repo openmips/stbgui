@@ -2857,7 +2857,7 @@ void eDVBServicePlay::updateDecoder(bool sendSeekableStateChanged)
 		}
 		eDebugNoNewLine(", and the pcr pid is %04x", program.pcrPid);
 		pcrpid = program.pcrPid;
-		eDebugNoNewLine(", and the text pid is %04x\n", program.textPid);
+		eDebugNoNewLine(", and the text pid is %04x", program.textPid);
 		tpid = program.textPid;
 	}
 
