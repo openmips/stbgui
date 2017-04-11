@@ -1,6 +1,7 @@
 from enigma import getEnigmaVersionString
 from Screens.Screen import Screen
 from Components.Button import Button
+from Components.SystemInfo import SystemInfo
 from Components.Label import Label
 from Components.ActionMap import ActionMap
 from Components.About import about
@@ -10,14 +11,13 @@ from time import time, strftime, localtime
 from os import path, system, makedirs, listdir, walk, statvfs
 import commands
 import datetime
-
-from boxbranding import getBoxType, getMachineBrand, getMachineName, getDriverDate, getImageVersion, getImageBuild, getBrandOEM, getMachineBuild, getImageFolder, getMachineUBINIZE, getMachineMKUBIFS, getMachineMtdKernel, getMachineKernelFile, getMachineRootFile, getImageFileSystem
-
-HaveGZkernel = True
-if getMachineBuild() in ("vusolo4k", "spark", "spark7162", "hd51", "hd52"):
-	HaveGZkernel = False
+from boxbranding import getBoxType, getMachineBrand, getMachineName, getDriverDate, getImageVersion, getImageBuild, getBrandOEM, getMachineBuild, getImageFolder, getMachineUBINIZE, getMachineMKUBIFS, getMachineMtdKernel, getMachineMtdRoot, getMachineKernelFile, getMachineRootFile, getImageFileSystem
 
 VERSION = "Version 1.0 openMips"
+
+HaveGZkernel = True
+if getMachineBuild() in ("vusolo4k", "spark", "spark7162", "hd51", "hd52", "gb7252"):
+	HaveGZkernel = False
 
 def Freespace(dev):
 	statdev = statvfs(dev)
@@ -37,12 +37,15 @@ class ImageBackup(Screen):
 		<widget name="key_yellow" position="280,360" zPosition="2" size="140,40" valign="center" halign="center" font="Regular;21" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
 		<widget name="key_blue" position="420,360" zPosition="2" size="140,40" valign="center" halign="center" font="Regular;21" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
 		<widget name="info-hdd" position="10,30" zPosition="1" size="450,100" font="Regular;20" halign="left" valign="top" transparent="1" />
+		<widget name="info-multi" position="10,80" zPosition="1" size="450,100" font="Regular;20" halign="left" valign="top" transparent="1" />
 		<widget name="info-usb" position="10,150" zPosition="1" size="450,200" font="Regular;20" halign="left" valign="top" transparent="1" />
 	</screen>"""
 
 	def __init__(self, session, args = 0):
 		Screen.__init__(self, session)
 		self.session = session
+		self.selection = 0
+		self.list = self.list_files("/boot")
 		self.MODEL = getBoxType()
 		self.OEM = getBrandOEM()
 		self.MACHINEBUILD = getMachineBuild()
@@ -52,6 +55,7 @@ class ImageBackup(Screen):
 		self.UBINIZE_ARGS = getMachineUBINIZE()
 		self.MKUBIFS_ARGS = getMachineMKUBIFS()
 		self.MTDKERNEL = getMachineMtdKernel()
+		self.MTDROOTFS = getMachineMtdRoot()
 		self.ROOTFSBIN = getMachineRootFile()
 		self.KERNELBIN = getMachineKernelFile()
 		self.ROOTFSTYPE = getImageFileSystem()
@@ -64,12 +68,18 @@ class ImageBackup(Screen):
 		print "[ImageBackup] UBINIZE = >%s<" %self.UBINIZE_ARGS
 		print "[ImageBackup] MKUBIFS = >%s<" %self.MKUBIFS_ARGS
 		print "[ImageBackup] MTDKERNEL = >%s<" %self.MTDKERNEL
+		print "[ImageBackup] MTDROOTFS = >%s<" %self.MTDROOTFS
 		print "[ImageBackup] ROOTFSTYPE = >%s<" %self.ROOTFSTYPE
 
 		self["key_green"] = Button("USB")
 		self["key_red"] = Button("HDD")
 		self["key_blue"] = Button(_("Exit"))
-		self["key_yellow"] = Button("")
+		if SystemInfo["HasMultiBoot"]:
+			self["key_yellow"] = Button(_("STARTUP"))
+			self["info-multi"] = Label(_("You can select with yellow the OnlineFlash Image\n or select Recovery to create a USB Disk Image for clean Install."))
+		else:
+			self["key_yellow"] = Button("")
+			self["info-multi"] = Label(" ")
 		self["info-usb"] = Label(_("USB = Do you want to create a fullbackup on USB?\nThis will take between 4 and 15 minutes depending on the used filesystem and is fully automatic.\nMake sure you first insert an USB flash drive before you select USB."))
 		self["info-hdd"] = Label(_("HDD = Do you want to create a fullbackup on HDD? \nThis only takes 2 or 10 minutes and is fully automatic."))
 		self["actions"] = ActionMap(["OkCancelActions", "ColorActions"],
@@ -116,8 +126,39 @@ class ImageBackup(Screen):
 				self.doFullBackup(USB_DEVICE)
 
 	def yellow(self):
-		#// Not used
-		pass
+		if SystemInfo["HasMultiBoot"]:
+			self.selection = self.selection + 1
+			if self.selection == len(self.list):
+				self.selection = 0
+			self["key_yellow"].setText(_(self.list[self.selection]))
+			if self.list[self.selection] == "Recovery":
+				cmdline = self.read_startup("/boot/STARTUP").split("=",3)[3].split(" ",1)[0]
+			else:
+				cmdline = self.read_startup("/boot/" + self.list[self.selection]).split("=",3)[3].split(" ",1)[0]
+			cmdline = cmdline.lstrip("/dev/")
+			self.MTDROOTFS = cmdline
+			self.MTDKERNEL = cmdline[:-1] + str(int(cmdline[-1:]) -1)
+			print "[ImageBackup] Multiboot rootfs ", self.MTDROOTFS
+			print "[ImageBackup] Multiboot kernel ", self.MTDKERNEL
+
+	def read_startup(self, FILE):
+		self.file = FILE
+		with open(self.file, 'r') as myfile:
+			data=myfile.read().replace('\n', '')
+		myfile.close()
+		return data
+
+	def list_files(self, PATH):
+		files = []
+		if SystemInfo["HasMultiBoot"]:
+			self.path = PATH
+			for name in listdir(self.path):
+				if path.isfile(path.join(self.path, name)):
+					cmdline = self.read_startup("/boot/" + name).split("=",3)[3].split(" ",1)[0]
+					if cmdline in Harddisk.getextdevices("ext4"):
+						files.append(name)
+			files.append("Recovery")
+		return files
 
 	def SearchUSBcanidate(self):
 		for paths, subdirs, files in walk("/media"):
@@ -138,6 +179,9 @@ class ImageBackup(Screen):
 		self.IMAGEVERSION = self.imageInfo()
 		if "ubi" in self.ROOTFSTYPE.split():
 			self.MKFS = "/usr/sbin/mkfs.ubifs"
+		elif "tar.bz2" in self.ROOTFSTYPE.split() or SystemInfo["HasMultiBoot"]:
+			self.MKFS = "/bin/tar"
+			self.BZIP2 = "/usr/bin/bzip2"
 		else:
 			self.MKFS = "/usr/sbin/mkfs.jffs2"
 		self.UBINIZE = "/usr/sbin/ubinize"
@@ -173,6 +217,12 @@ class ImageBackup(Screen):
 		if self.ROOTFSTYPE == "ubi":
 			self.message += _("Due to the used filesystem, the fullbackup\n")
 			self.message += _("will take about 3-12 minutes for this system.\n")
+		elif SystemInfo["HasMultiBoot"] and self.list[self.selection] == "Recovery":
+			self.message += _("because of the used filesystem the backup\n")
+			self.message += _("will take about 30 minutes for this system.\n")
+		elif "tar.bz2" in self.ROOTFSTYPE.split() or SystemInfo["HasMultiBoot"]:
+			self.message += _("because of the used filesystem the backup\n")
+			self.message += _("will take about 1-4 minutes for this system.\n")
 		else:
 			self.message += _("This will take about 2-9 minutes for this system.\n")
 		self.message += "____________________________________________________\n"
@@ -185,13 +235,25 @@ class ImageBackup(Screen):
 		if not path.exists("/tmp/bi/root"):
 			makedirs("/tmp/bi/root")
 		system("sync")
-		system("mount --bind / /tmp/bi/root")
+		if SystemInfo["HasMultiBoot"]:
+			system("mount /dev/%s /tmp/bi/root" %self.MTDROOTFS)
+		else:
+			system("mount --bind / /tmp/bi/root")
 
 		if "jffs2" in self.ROOTFSTYPE.split():
 			cmd1 = "%s --root=/tmp/bi/root --faketime --output=%s/root.jffs2 %s" % (self.MKFS, self.WORKDIR, self.MKUBIFS_ARGS)
 			cmd2 = None
+			cmd3 = None
 			print "[ImageBackup] jffs2 cmd1: ", cmd1
 			print "[ImageBackup] jffs2 cmd2: ", cmd2
+			print "[ImageBackup] jffs2 cmd3: ", cmd3
+		elif "tar.bz2" in self.ROOTFSTYPE.split() or SystemInfo["HasMultiBoot"]:
+			cmd1 = "%s -cf %s/rootfs.tar -C /tmp/bi/root --exclude=/var/nmbd/* ." % (self.MKFS, self.WORKDIR)
+			cmd2 = "%s %s/rootfs.tar" % (self.BZIP2, self.WORKDIR)
+			cmd3 = None
+			print "[ImageBackup] tar.bz2 cmd1: ", cmd1
+			print "[ImageBackup] tar.bz2 cmd2: ", cmd2
+			print "[ImageBackup] tar.bz2 cmd3: ", cmd3
 		else:
 			f = open("%s/ubinize.cfg" %self.WORKDIR, "w")
 			f.write("[ubifs]\n")
@@ -217,18 +279,94 @@ class ImageBackup(Screen):
 		cmdlist.append(cmd1)
 		if cmd2:
 			cmdlist.append(cmd2)
+		if cmd3:
 			cmdlist.append(cmd3)
 		cmdlist.append("chmod 644 %s/root.%s" %(self.WORKDIR, self.ROOTFSTYPE))
+
+		if self.MODEL in ("gbquad4k"):
+			cmdlist.append('echo " "')
+			cmdlist.append('echo "Create: boot dump"')
+			cmdlist.append('echo " "')
+			cmdlist.append("dd if=/dev/mmcblk0p1 of=%s/boot.bin" % self.WORKDIR)
+			cmdlist.append('echo " "')
+			cmdlist.append('echo "Create: rescue dump"')
+			cmdlist.append('echo " "')
+			cmdlist.append("dd if=/dev/mmcblk0p5 of=%s/rescue.bin" % self.WORKDIR)
+
 		cmdlist.append('echo " "')
 		cmdlist.append('echo "Create: kerneldump"')
 		cmdlist.append('echo " "')
-		cmdlist.append("nanddump -a -f %s/vmlinux.gz /dev/%s" % (self.WORKDIR, self.MTDKERNEL))
+		if SystemInfo["HasMultiBoot"]:
+			cmdlist.append("dd if=/dev/%s of=%s/kernel.bin" % (self.MTDKERNEL ,self.WORKDIR))
+		elif self.MTDKERNEL == "mmcblk0p1" or self.MTDKERNEL == "mmcblk0p3":
+			cmdlist.append("dd if=/dev/%s of=%s/%s" % (self.MTDKERNEL ,self.WORKDIR, self.KERNELBIN))
+		else:
+			cmdlist.append("nanddump -a -f %s/vmlinux.gz /dev/%s" % (self.WORKDIR, self.MTDKERNEL))
 		cmdlist.append('echo " "')
 
 		if HaveGZkernel:
 			cmdlist.append('echo "Check: kerneldump"')
 		cmdlist.append("sync")
 
+		if SystemInfo["HasMultiBoot"] and self.list[self.selection] == "Recovery":
+			GPT_OFFSET=0
+			GPT_SIZE=1024
+			BOOT_PARTITION_OFFSET = int(GPT_OFFSET) + int(GPT_SIZE)
+			BOOT_PARTITION_SIZE=3072
+			KERNEL_PARTITION_OFFSET = int(BOOT_PARTITION_OFFSET) + int(BOOT_PARTITION_SIZE)
+			KERNEL_PARTITION_SIZE=8192
+			ROOTFS_PARTITION_OFFSET = int(KERNEL_PARTITION_OFFSET) + int(KERNEL_PARTITION_SIZE)
+			ROOTFS_PARTITION_SIZE=819200
+			SECOND_KERNEL_PARTITION_OFFSET = int(ROOTFS_PARTITION_OFFSET) + int(ROOTFS_PARTITION_SIZE)
+			SECOND_ROOTFS_PARTITION_OFFSET = int(SECOND_KERNEL_PARTITION_OFFSET) + int(KERNEL_PARTITION_SIZE)
+			THRID_KERNEL_PARTITION_OFFSET = int(SECOND_ROOTFS_PARTITION_OFFSET) + int(ROOTFS_PARTITION_SIZE)
+			THRID_ROOTFS_PARTITION_OFFSET = int(THRID_KERNEL_PARTITION_OFFSET) + int(KERNEL_PARTITION_SIZE)
+			FOURTH_KERNEL_PARTITION_OFFSET = int(THRID_ROOTFS_PARTITION_OFFSET) + int(ROOTFS_PARTITION_SIZE)
+			FOURTH_ROOTFS_PARTITION_OFFSET = int(FOURTH_KERNEL_PARTITION_OFFSET) + int(KERNEL_PARTITION_SIZE)
+			SWAP_PARTITION_OFFSET = int(FOURTH_ROOTFS_PARTITION_OFFSET) + int(ROOTFS_PARTITION_SIZE)
+			EMMC_IMAGE = "%s/disk.img"%self.WORKDIR
+			EMMC_IMAGE_SIZE=3817472
+			IMAGE_ROOTFS_SIZE=196608
+			cmdlist.append('echo " "')
+			cmdlist.append('echo "Create: Recovery Fullbackup disk.img"')
+			cmdlist.append('echo " "')
+			cmdlist.append('dd if=/dev/zero of=%s bs=1024 count=0 seek=%s' % (EMMC_IMAGE, EMMC_IMAGE_SIZE))
+			cmdlist.append('parted -s %s mklabel gpt' %EMMC_IMAGE)
+			PARTED_END_BOOT = int(BOOT_PARTITION_OFFSET) + int(BOOT_PARTITION_SIZE)
+			cmdlist.append('parted -s %s unit KiB mkpart boot fat16 %s %s' % (EMMC_IMAGE, BOOT_PARTITION_OFFSET, PARTED_END_BOOT ))
+			PARTED_END_KERNEL1 = int(KERNEL_PARTITION_OFFSET) + int(KERNEL_PARTITION_SIZE)
+			cmdlist.append('parted -s %s unit KiB mkpart kernel1 %s %s' % (EMMC_IMAGE, KERNEL_PARTITION_OFFSET, PARTED_END_KERNEL1 ))
+			PARTED_END_ROOTFS1 = int(ROOTFS_PARTITION_OFFSET) + int(ROOTFS_PARTITION_SIZE)
+			cmdlist.append('parted -s %s unit KiB mkpart rootfs1 ext2 %s %s' % (EMMC_IMAGE, ROOTFS_PARTITION_OFFSET, PARTED_END_ROOTFS1 ))
+			PARTED_END_KERNEL2 = int(SECOND_KERNEL_PARTITION_OFFSET) + int(KERNEL_PARTITION_SIZE)
+			cmdlist.append('parted -s %s unit KiB mkpart kernel2 %s %s' % (EMMC_IMAGE, SECOND_KERNEL_PARTITION_OFFSET, PARTED_END_KERNEL2 ))
+			PARTED_END_ROOTFS2 = int(SECOND_ROOTFS_PARTITION_OFFSET) + int(ROOTFS_PARTITION_SIZE)
+			cmdlist.append('parted -s %s unit KiB mkpart rootfs2 ext2 %s %s' % (EMMC_IMAGE, SECOND_ROOTFS_PARTITION_OFFSET, PARTED_END_ROOTFS2 ))
+			PARTED_END_KERNEL3 = int(THRID_KERNEL_PARTITION_OFFSET) + int(KERNEL_PARTITION_SIZE)
+			cmdlist.append('parted -s %s unit KiB mkpart kernel3 %s %s' % (EMMC_IMAGE, THRID_KERNEL_PARTITION_OFFSET, PARTED_END_KERNEL3 ))
+			PARTED_END_ROOTFS3 = int(THRID_ROOTFS_PARTITION_OFFSET) + int(ROOTFS_PARTITION_SIZE)
+			cmdlist.append('parted -s %s unit KiB mkpart rootfs3 ext2 %s %s' % (EMMC_IMAGE, THRID_ROOTFS_PARTITION_OFFSET, PARTED_END_ROOTFS3 ))
+			PARTED_END_KERNEL4 = int(FOURTH_KERNEL_PARTITION_OFFSET) + int(KERNEL_PARTITION_SIZE)
+			cmdlist.append('parted -s %s unit KiB mkpart kernel4 %s %s' % (EMMC_IMAGE, FOURTH_KERNEL_PARTITION_OFFSET, PARTED_END_KERNEL4 ))
+			PARTED_END_ROOTFS4 = int(FOURTH_ROOTFS_PARTITION_OFFSET) + int(ROOTFS_PARTITION_SIZE)
+			cmdlist.append('parted -s %s unit KiB mkpart rootfs4 ext2 %s %s' % (EMMC_IMAGE, FOURTH_ROOTFS_PARTITION_OFFSET, PARTED_END_ROOTFS4 ))
+			PARTED_END_SWAP = int(EMMC_IMAGE_SIZE) - 1024
+			cmdlist.append('parted -s %s unit KiB mkpart swap linux-swap %s %s' % (EMMC_IMAGE, SWAP_PARTITION_OFFSET, PARTED_END_SWAP ))
+			cmdlist.append('dd if=/dev/zero of=%s/boot.img bs=1024 count=%s' % (self.WORKDIR, BOOT_PARTITION_SIZE ))
+			cmdlist.append('mkfs.msdos -S 512 %s/boot.img' %self.WORKDIR)
+			cmdlist.append("echo \"boot emmcflash0.kernel1 \'brcm_cma=440M@328M brcm_cma=192M@768M root=/dev/mmcblk0p3 rw rootwait %s_4.boxmode=1\'\" > %s/STARTUP" % (getMachineBuild(), self.WORKDIR))
+			cmdlist.append("echo \"boot emmcflash0.kernel1 \'brcm_cma=440M@328M brcm_cma=192M@768M root=/dev/mmcblk0p3 rw rootwait %s_4.boxmode=1\'\" > %s/STARTUP_1" % (getMachineBuild(), self.WORKDIR))
+			cmdlist.append("echo \"boot emmcflash0.kernel2 \'brcm_cma=440M@328M brcm_cma=192M@768M root=/dev/mmcblk0p5 rw rootwait %s_4.boxmode=1\'\" > %s/STARTUP_2" % (getMachineBuild(), self.WORKDIR))
+			cmdlist.append("echo \"boot emmcflash0.kernel3 \'brcm_cma=440M@328M brcm_cma=192M@768M root=/dev/mmcblk0p7 rw rootwait %s_4.boxmode=1\'\" > %s/STARTUP_3" % (getMachineBuild(), self.WORKDIR))
+			cmdlist.append("echo \"boot emmcflash0.kernel4 \'brcm_cma=440M@328M brcm_cma=192M@768M root=/dev/mmcblk0p9 rw rootwait %s_4.boxmode=1\'\" > %s/STARTUP_4" % (getMachineBuild(), self.WORKDIR))
+			cmdlist.append('mcopy -i %s/boot.img -v %s/STARTUP ::' % (self.WORKDIR, self.WORKDIR))
+			cmdlist.append('mcopy -i %s/boot.img -v %s/STARTUP_1 ::' % (self.WORKDIR, self.WORKDIR))
+			cmdlist.append('mcopy -i %s/boot.img -v %s/STARTUP_2 ::' % (self.WORKDIR, self.WORKDIR))
+			cmdlist.append('mcopy -i %s/boot.img -v %s/STARTUP_3 ::' % (self.WORKDIR, self.WORKDIR))
+			cmdlist.append('mcopy -i %s/boot.img -v %s/STARTUP_4 ::' % (self.WORKDIR, self.WORKDIR))
+			cmdlist.append('dd conv=notrunc if=%s/boot.img of=%s bs=1024 seek=%s' % (self.WORKDIR, EMMC_IMAGE, BOOT_PARTITION_OFFSET ))
+			cmdlist.append('dd conv=notrunc if=/dev/%s of=%s bs=1024 seek=%s' % (self.MTDKERNEL, EMMC_IMAGE, KERNEL_PARTITION_OFFSET ))
+			cmdlist.append('dd if=/dev/%s of=%s bs=1024 seek=%s' % (self.MTDROOTFS, EMMC_IMAGE, ROOTFS_PARTITION_OFFSET ))
 		self.session.open(Console, title = self.TITLE, cmdlist = cmdlist, finishedCallback = self.doFullBackupCB, closeOnSuccess = True)
 
 	def doFullBackupCB(self):
@@ -259,9 +397,26 @@ class ImageBackup(Screen):
 		f.write(self.IMAGEVERSION)
 		f.close()
 
-		system('mv %s/root.%s %s/%s' %(self.WORKDIR, self.ROOTFSTYPE, self.MAINDEST, self.ROOTFSBIN))
-		system('mv %s/vmlinux.gz %s/%s' %(self.WORKDIR, self.MAINDEST, self.KERNELBIN))
-		cmdlist.append('echo "rename this file to "force" to force an update without confirmation" > %s/noforce' %self.MAINDEST)
+		if self.ROOTFSBIN == "rootfs.tar.bz2":
+			system('mv %s/rootfs.tar.bz2 %s/rootfs.tar.bz2' %(self.WORKDIR, self.MAINDEST))
+		else:
+			system('mv %s/root.%s %s/%s' %(self.WORKDIR, self.ROOTFSTYPE, self.MAINDEST, self.ROOTFSBIN))
+
+		if SystemInfo["HasMultiBoot"]:
+			system('mv %s/kernel.bin %s/kernel.bin' %(self.WORKDIR, self.MAINDEST))
+		elif self.MTDKERNEL == "mmcblk0p1" or self.MTDKERNEL == "mmcblk0p3":
+			system('mv %s/%s %s/%s' %(self.WORKDIR, self.KERNELBIN, self.MAINDEST, self.KERNELBIN))
+		else:
+			system('mv %s/vmlinux.gz %s/%s' %(self.WORKDIR, self.MAINDEST, self.KERNELBIN))
+
+		if SystemInfo["HasMultiBoot"] and self.list[self.selection] == "Recovery":
+			system('mv %s/disk.img %s/disk.img' %(self.WORKDIR, self.MAINDEST))
+		else:
+			cmdlist.append('echo "rename this file to "force" to force an update without confirmation" > %s/noforce' %self.MAINDEST)
+
+		if self.MODEL in ("gbquad4k"):
+			system('mv %s/boot.bin %s/boot.bin' %(self.WORKDIR, self.MAINDEST))
+			system('mv %s/rescue.bin %s/rescue.bin' %(self.WORKDIR, self.MAINDEST))
 
 		if self.MODEL in ("gbquad4k", "gbquad", "gbquadplus", "gb800ue", "gb800ueplus", "gbultraue", "gbultraueh"):
 			lcdwaitkey = '/usr/share/lcdwaitkey.bin'
@@ -297,7 +452,18 @@ class ImageBackup(Screen):
 			print '[ImageBackup] NOFORCE bin file not found'
 			file_found = False
 
-		if file_found:
+		if SystemInfo["HasMultiBoot"] and not self.list[self.selection] == "Recovery":
+			cmdlist.append('echo "_________________________________________________\n"')
+			cmdlist.append('echo "Multiboot Image created on:" %s' %self.MAINDEST)
+			cmdlist.append('echo "and there is made an extra copy on:"')
+			cmdlist.append('echo %s' %self.EXTRA)
+			cmdlist.append('echo "_________________________________________________\n"')
+			cmdlist.append('echo " "')
+			cmdlist.append('echo "\nPlease wait...almost ready! "')
+			cmdlist.append('echo " "')
+			cmdlist.append('echo "To restore the image:"')
+			cmdlist.append('echo "Use OnlineFlash in SoftwareManager"')
+		elif file_found:
 			cmdlist.append('echo "____________________________________________________\n"')
 			cmdlist.append('echo "Fullbackup created on:" %s' %self.MAINDEST)
 			cmdlist.append('echo "Extra copy of fullbackup created on:"')
@@ -366,7 +532,8 @@ class ImageBackup(Screen):
 		imageInfotext += _("Model: %s %s\n") % (getMachineBrand(), getMachineName())
 		imageInfotext += _("Backup Date: %s\n") % strftime("%Y-%m-%d", localtime(self.START))
 
-		imageInfotext += _("Chipset: BCM%s") % about.getChipSetString().lower().replace('\n','').replace('bcm','') + "\n"
+		if path.exists('/proc/stb/info/chipset'):
+			imageInfotext += _("Chipset: BCM%s") % about.getChipSetString().lower().replace('\n','').replace('bcm','') + "\n"
 		imageInfotext += _("Kernel: %s") % about.getKernelVersionString() + "\n"
 		imageInfotext += _("CPU: %s") % about.getCPUString() + "\n"
 		imageInfotext += _("Threads: %s") % about.getCpuCoresString() + "\n"

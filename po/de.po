@@ -4393,8 +4393,11 @@ msgstr "Die gespeicherten EPG Daten regelmäßig laden"
 msgid "Load unlinked userbouquets"
 msgstr "Ausgeblendete Bouquets laden"
 
+msgid "Local"
+msgstr "Lokal"
+
 msgid "Local = Flash a image from local path /hdd/images"
-msgstr "Image von HDD oder USB flashen."
+msgstr "Image von lokalem Pfad (/hdd/images) flashen."
 
 msgid "Local network"
 msgstr "Lokales Netzwerk"
