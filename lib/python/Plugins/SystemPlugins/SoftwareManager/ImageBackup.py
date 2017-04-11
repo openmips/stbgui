@@ -275,13 +275,13 @@ class ImageBackup(Screen):
 
 		cmdlist = []
 		cmdlist.append(self.message)
-		cmdlist.append('echo "Create: root.%s\n"' %self.ROOTFSTYPE)
+		cmdlist.append('echo "Create: rootfs.%s\n"' %self.ROOTFSTYPE)
 		cmdlist.append(cmd1)
 		if cmd2:
 			cmdlist.append(cmd2)
 		if cmd3:
 			cmdlist.append(cmd3)
-		cmdlist.append("chmod 644 %s/root.%s" %(self.WORKDIR, self.ROOTFSTYPE))
+		cmdlist.append("chmod 644 %s/rootfs.%s" %(self.WORKDIR, self.ROOTFSTYPE))
 
 		if self.MODEL in ("gbquad4k"):
 			cmdlist.append('echo " "')
