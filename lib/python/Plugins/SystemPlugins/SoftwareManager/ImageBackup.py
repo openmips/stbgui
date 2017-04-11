@@ -275,26 +275,30 @@ class ImageBackup(Screen):
 
 		cmdlist = []
 		cmdlist.append(self.message)
-		cmdlist.append('echo "Create: rootfs.%s\n"' %self.ROOTFSTYPE)
+		cmdlist.append('echo "Create: rootfs dump %s\n"' %self.ROOTFSTYPE)
 		cmdlist.append(cmd1)
 		if cmd2:
 			cmdlist.append(cmd2)
 		if cmd3:
 			cmdlist.append(cmd3)
-		cmdlist.append("chmod 644 %s/rootfs.%s" %(self.WORKDIR, self.ROOTFSTYPE))
+
+		if self.ROOTFSBIN == "rootfs.tar.bz2":
+			cmdlist.append("chmod 644 %s/rootfs.%s" %(self.WORKDIR, self.ROOTFSTYPE))
+		elif:
+			cmdlist.append("chmod 644 %s/root.%s" %(self.WORKDIR, self.ROOTFSTYPE))
 
 		if self.MODEL in ("gbquad4k"):
 			cmdlist.append('echo " "')
-			cmdlist.append('echo "Create: boot dump"')
+			cmdlist.append('echo "Create: boot dump boot.bin"')
 			cmdlist.append('echo " "')
 			cmdlist.append("dd if=/dev/mmcblk0p1 of=%s/boot.bin" % self.WORKDIR)
 			cmdlist.append('echo " "')
-			cmdlist.append('echo "Create: rescue dump"')
+			cmdlist.append('echo "Create: rescue dump rescue.bin"')
 			cmdlist.append('echo " "')
 			cmdlist.append("dd if=/dev/mmcblk0p5 of=%s/rescue.bin" % self.WORKDIR)
 
 		cmdlist.append('echo " "')
-		cmdlist.append('echo "Create: kerneldump"')
+		cmdlist.append('echo "Create: kernel dump"')
 		cmdlist.append('echo " "')
 		if SystemInfo["HasMultiBoot"]:
 			cmdlist.append("dd if=/dev/%s of=%s/kernel.bin" % (self.MTDKERNEL ,self.WORKDIR))
