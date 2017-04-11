@@ -284,7 +284,7 @@ class ImageBackup(Screen):
 
 		if self.ROOTFSBIN == "rootfs.tar.bz2":
 			cmdlist.append("chmod 644 %s/rootfs.%s" %(self.WORKDIR, self.ROOTFSTYPE))
-		elif:
+		else:
 			cmdlist.append("chmod 644 %s/root.%s" %(self.WORKDIR, self.ROOTFSTYPE))
 
 		if self.MODEL in ("gbquad4k"):
