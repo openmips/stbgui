@@ -1078,7 +1078,7 @@ void eDVBFrontend::calculateSignalQuality(int snr, int &signalquality, int &sign
 	}
 	else if (!strcmp(m_description, "DVB-S NIM(45208 FBC)"))
 	{
-		ret = (int)((((double(snr) / (65535.0 / 100.0)) * 0.1810) - 1.0000) * 100);
+		ret = (int)((((double(snr) / (65535.0 / 100.0)) * 0.2110) - 1.0000) * 100);
 	}
 	else if (strstr(m_description, "GIGA DVB-C/T NIM (SP8221L)")
 		|| strstr(m_description, "GIGA DVB-C/T NIM (SI4765)")
