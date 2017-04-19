@@ -56,10 +56,11 @@ eDVBCIInterfaces::eDVBCIInterfaces()
 	for (eSmartPtrList<eDVBCISlot>::iterator it(m_slots.begin()); it != m_slots.end(); ++it)
 		it->setSource("A");
 
-	for (int tuner_no = 0; tuner_no < (ci_num > 1 ? 26 : 2); ++tuner_no) // NOTE: this assumes tuners are A .. Z max.
+	for (int tuner_no = 0; tuner_no < 26; ++tuner_no) // NOTE: this assumes tuners are A .. Z max.
 	{
-		char filename[32];
-		snprintf(filename, sizeof(filename), "/proc/stb/tsmux/input%d", tuner_no);
+		path.str("");
+		path.clear();
+		path << "/proc/stb/tsmux/input" << tuner_no << "_choices";
 
 		if (::access(filename, R_OK) < 0) break;
 
