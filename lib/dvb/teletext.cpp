@@ -66,7 +66,7 @@ const char * const eDVBTeletextParser::my_country_codes[] =
 
 unsigned char country_lookup[] =
 {
-	255, 1, 4, 11, 11, 11, 5, 4,
+	255, 1, 4, 11, 11, 11, 5, 3,
 	8, 8, 0, 0, 7, 12, 10, 10,
 	10, 9, 2, 6, 6, 11, 11, 17,
 	18, 255, 255, 255, 255, 255, 255, 255
@@ -224,9 +224,11 @@ eDVBTeletextParser::eDVBTeletextParser(iDVBDemux *demux) : m_pid(-1)
 	setPageAndMagazine(-1, -1, "und");
 
 	if (demux->createPESReader(eApp, m_pes_reader))
-		eDebug("failed to create teletext subtitle PES reader!");
-	else
-		m_pes_reader->connectRead(slot(*this, &eDVBTeletextParser::processData), m_read_connection);
+		eDebug("[eDVBTeletextParser] failed to create teletext subtitle PES reader!");
+	else {
+		eDebug("[eDVBTeletextParser] created teletext subtitle PES reader!");
+		m_pes_reader->connectRead(sigc::mem_fun(*this, &eDVBTeletextParser::processData), m_read_connection);
+	}
 }
 
 eDVBTeletextParser::~eDVBTeletextParser()
@@ -645,12 +647,12 @@ void eDVBTeletextParser::setPageAndMagazine(int page, int magazine, const char *
 		m_page_X &= 0xFF;
 }
 
-void eDVBTeletextParser::connectNewStream(const Slot0<void> &slot, ePtr<eConnection> &connection)
+void eDVBTeletextParser::connectNewStream(const sigc::slot0<void> &slot, ePtr<eConnection> &connection)
 {
 	connection = new eConnection(this, m_new_subtitle_stream.connect(slot));
 }
 
-void eDVBTeletextParser::connectNewPage(const Slot1<void, const eDVBTeletextSubtitlePage&> &slot, ePtr<eConnection> &connection)
+void eDVBTeletextParser::connectNewPage(const sigc::slot1<void, const eDVBTeletextSubtitlePage&> &slot, ePtr<eConnection> &connection)
 {
 	connection = new eConnection(this, m_new_subtitle_page.connect(slot));
 }
