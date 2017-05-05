@@ -7,7 +7,7 @@ from Components.NimManager import nimmanager
 from Components.Button import Button
 from Components.Label import Label
 from Components.SelectionList import SelectionList, SelectionEntryComponent
-from Components.config import getConfigListEntry, config, ConfigNothing, ConfigYesNo, configfile
+from Components.config import getConfigListEntry, config, ConfigNothing, ConfigYesNo, configfile, ConfigSelection
 from Components.Sources.List import List
 from Screens.MessageBox import MessageBox
 from Screens.ChoiceBox import ChoiceBox
@@ -127,6 +127,32 @@ class NimSetup(Screen, ConfigListScreen, ServiceStopScreen):
 		self.selectSatsEntry = None
 		self.advancedSelectSatsEntry = None
 		self.singleSatEntry = None
+		self.terrestrialRegionsEntry = None
+
+		if not hasattr(self, "terrestrialCountriesEntry"):
+			self.terrestrialCountriesEntry = None
+		if self.nim.isCompatible("DVB-T"):
+			# country/region tier one
+			if self.terrestrialCountriesEntry is None:
+				terrestrialcountrycodelist = nimmanager.getTerrestrialsCountrycodeList()
+				terrestrialcountrycode = nimmanager.getTerrestrialCountrycode(self.slotid)
+				default = terrestrialcountrycode in terrestrialcountrycodelist and terrestrialcountrycode or None
+				choices = [("all", _("All"))]+sorted([(x, self.countrycodeToCountry(x)) for x in terrestrialcountrycodelist], key=lambda listItem: listItem[1])
+				self.terrestrialCountries = ConfigSelection(default = default, choices = choices)
+				self.terrestrialCountriesEntry = getConfigListEntry("Country", self.terrestrialCountries)
+				self.originalTerrestrialRegion = self.nimConfig.terrestrial.value
+			# country/region tier two
+			if self.terrestrialCountries.value == "all":
+				terrstrialNames = [x[0] for x in sorted(sorted(nimmanager.getTerrestrialsList(), key=lambda listItem: listItem[0]), key=lambda listItem: self.countrycodeToCountry(listItem[2]))]
+			else:
+				terrstrialNames = sorted([x[0] for x in nimmanager.getTerrestrialsByCountrycode(self.terrestrialCountries.value)])
+			default = self.nimConfig.terrestrial.value in terrstrialNames and self.nimConfig.terrestrial.value or None
+			self.terrestrialRegions = ConfigSelection(default = default, choices = terrstrialNames)
+			def updateTerrestrialProvider(configEntry, extra_args):
+				extra_args[0].value = configEntry.value
+				extra_args[0].save()
+			self.terrestrialRegions.addNotifier(updateTerrestrialProvider, extra_args = [self.nimConfig.terrestrial])
+			self.terrestrialRegionsEntry = getConfigListEntry("Region", self.terrestrialRegions)
 
 		if self.nim.isMultiType():
 			multiType = self.nimConfig.multiType
@@ -247,7 +273,8 @@ class NimSetup(Screen, ConfigListScreen, ServiceStopScreen):
 			self.list.append(self.configMode)
 			self.have_advanced = False
 			if self.nimConfig.configMode.value == "enabled":
-				self.list.append(getConfigListEntry(_("Terrestrial provider"), self.nimConfig.terrestrial))
+				self.list.append(self.terrestrialCountriesEntry)
+				self.list.append(self.terrestrialRegionsEntry)
 				self.list.append(getConfigListEntry(_("Enable 5V for active antenna"), self.nimConfig.terrestrial_5V))
 		elif self.nim.isCompatible("ATSC"):
 			self.configMode = getConfigListEntry(_("Configuration mode"), self.nimConfig.configMode)
@@ -272,8 +299,8 @@ class NimSetup(Screen, ConfigListScreen, ServiceStopScreen):
 		if self["config"].getCurrent() in (self.configMode, self.diseqcModeEntry, self.advancedSatsEntry, self.advancedLnbsEntry, self.advancedDiseqcMode, self.advancedUsalsEntry,\
 			self.advancedLof, self.advancedPowerMeasurement, self.turningSpeed, self.advancedType, self.advancedSCR, self.advancedPosition, self.advancedFormat, self.advancedManufacturer,\
 			self.advancedUnicable, self.advancedConnected, self.toneburst, self.committedDiseqcCommand, self.uncommittedDiseqcCommand, self.singleSatEntry,	self.commandOrder,\
-			self.showAdditionalMotorOptions, self.cableScanType, self.multiType):
-			       self.createSetup()
+			self.showAdditionalMotorOptions, self.cableScanType, self.multiType, self.cableConfigScanDetails, self.terrestrialCountriesEntry):
+				self.createSetup()
 
 	def run(self):
 		if self.nimConfig.configMode.value == "simple":
@@ -684,6 +711,9 @@ class NimSetup(Screen, ConfigListScreen, ServiceStopScreen):
 			return
 		for x in self["config"].list:
 			x[1].cancel()
+		if hasattr(self, "originalTerrestrialRegion"):
+			self.nimConfig.terrestrial.value = self.originalTerrestrialRegion
+			self.nimConfig.terrestrial.save()
 		# we need to call saveAll to reset the connectedTo choices
 		self.saveAll()
 		self.restartPrevService()
@@ -703,6 +733,16 @@ class NimSetup(Screen, ConfigListScreen, ServiceStopScreen):
 				x[1].cancel()
 			self.setTextKeyBlue()
 			self.createSetup()
+
+	def countrycodeToCountry(self, cc):
+		if not hasattr(self, 'countrycodes'):
+			self.countrycodes = {}
+			from Tools.CountryCodes import ISO3166
+			for country in ISO3166:
+				self.countrycodes[country[2]] = country[0]
+		if cc.upper() in self.countrycodes:
+			return self.countrycodes[cc.upper()]
+		return cc
 
 class NimSelection(Screen):
 	def __init__(self, session):
