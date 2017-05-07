@@ -4,7 +4,6 @@ from enigma import iServiceInformation, iPlayableService, iPlayableServicePtr, e
 from Components.Element import cached
 from ServiceReference import resolveAlternate,  ServiceReference
 from Tools.Transponder import ConvertToHumanReadable
-from Components.NimManager import nimmanager
 import Screens.InfoBar
 
 class TransponderInfo(Converter, object):
