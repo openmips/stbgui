@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-10 18:08+0100\n"
+"POT-Creation-Date: 2017-05-10 14:19+0200\n"
 "PO-Revision-Date: 2015-01-29 17:40+0200\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -51,14 +51,6 @@ msgstr ""
 #, fuzzy
 msgid ""
 "\n"
-"Backup your installed plugins."
-msgstr ""
-"\n"
-"Varukoopia vastuvõtja seadetest."
-
-#, fuzzy
-msgid ""
-"\n"
 "Backup your running Receiver image to HDD or USB."
 msgstr ""
 "\n"
@@ -83,14 +75,6 @@ msgid ""
 msgstr ""
 "\n"
 "Vastuvõtja internetiuuendused."
-
-#, fuzzy
-msgid ""
-"\n"
-"Manage extensions or plugins for your Receiver"
-msgstr ""
-"\n"
-"Halda laiendusi"
 
 msgid ""
 "\n"
@@ -128,14 +112,6 @@ msgstr ""
 "\n"
 "Taasta oma varukoopiad kuupäeva alusel."
 
-#, fuzzy
-msgid ""
-"\n"
-"Restore your previously installed plugins."
-msgstr ""
-"\n"
-"Taasta vastuvõtja seaded."
-
 msgid ""
 "\n"
 "Scan for local extensions and install them."
@@ -157,13 +133,6 @@ msgid ""
 "\n"
 "Timer '%s' disabled!"
 msgstr ""
-
-msgid ""
-"\n"
-"View, install and remove available or installed packages."
-msgstr ""
-"\n"
-"Vaata, paigalda ja eemalda tarkvara pakette."
 
 #, fuzzy
 msgid ""
@@ -221,6 +190,10 @@ msgstr "Kontrolli internetiühendust"
 msgid " (lower than any auto)"
 msgstr ""
 
+#, fuzzy
+msgid " (unknown mode)"
+msgstr "tundmatu kanal"
+
 msgid " extensions."
 msgstr " laiendused."
 
@@ -242,12 +215,20 @@ msgid "%.0f MB"
 msgstr ""
 
 #, python-format
+msgid "%.0f kB"
+msgstr ""
+
+#, python-format
 msgid "%.2f GB"
 msgstr ""
 
 #, fuzzy, python-format
 msgid "%02d:%02d"
 msgstr "%2d:%02d"
+
+#, python-format
+msgid "%03d MB"
+msgstr ""
 
 #. TRANSLATORS: short time representation hour:minute
 #, python-format
@@ -258,6 +239,10 @@ msgstr "%2d:%02d"
 #, python-format
 msgid "%2d:%02d:%02d"
 msgstr "%2d:%02d:%02d"
+
+#, python-format
+msgid "%3.01f dB"
+msgstr ""
 
 msgid "%A %d %B"
 msgstr "%A %d %B"
@@ -277,6 +262,10 @@ msgstr "%H:%M"
 msgid "%Y-%m-%d %H:%M"
 msgstr "%d-%b-%Y %-H:%M"
 
+#, fuzzy
+msgid "%Y-%m-%d %H:%M:%S"
+msgstr "%d-%b-%Y %-H:%M"
+
 #. TRANSLATORS: short date representation short dayname daynum short monthname in strftime() format! See 'man strftime'
 msgid "%a %e/%m"
 msgstr "%a %e/%m"
@@ -284,6 +273,18 @@ msgstr "%a %e/%m"
 #. TRANSLATORS: long date representation short dayname daynum short monthname hour:minute in strftime() format! See 'man strftime'
 msgid "%a %e/%m  %-H:%M"
 msgstr "%a %e/%m  %-H:%M"
+
+#, python-format
+msgid "%d B"
+msgstr ""
+
+#, python-format
+msgid "%d GB"
+msgstr ""
+
+#, python-format
+msgid "%d MB"
+msgstr ""
 
 #. TRANSLATORS: Intermediate scanning result, '%d' channel(s) have been found so far
 #, fuzzy, python-format
@@ -315,6 +316,10 @@ msgid "%d jobs are running in the background!"
 msgstr "%d protsessi käib taustal!"
 
 #, python-format
+msgid "%d kB"
+msgstr ""
+
+#, python-format
 msgid "%d min"
 msgstr "%d min"
 
@@ -327,6 +332,10 @@ msgstr[1] "%d minutit"
 #, python-format
 msgid "%d minutes"
 msgstr "%d minutit"
+
+#, python-format
+msgid "%d of %d kBytes"
+msgstr ""
 
 #, python-format
 msgid "%d pixel wide"
@@ -363,12 +372,32 @@ msgstr "%d-%m"
 msgid "%d.%02d. %02d:%02d"
 msgstr "%2d:%02d:%02d"
 
+#, python-format
+msgid "%d.%03d GB"
+msgstr ""
+
 msgid "%d.%B %Y"
 msgstr "%d.%B %Y"
+
+#, fuzzy, python-format
+msgid "%d.%d"
+msgstr "%d.%B %Y"
+
+#, fuzzy, python-format
+msgid "%d.%d.%d"
+msgstr "%d.%B %Y"
+
+#, fuzzy, python-format
+msgid "%d:%02d"
+msgstr "%2d:%02d"
 
 #. TRANSLATORS: VFD hour:minute daynum short monthname in strftime() format! See 'man strftime'
 msgid "%k:%M %e/%m"
 msgstr "%k:%M %e/%m"
+
+#, python-format
+msgid "%s %d.%d"
+msgstr ""
 
 #, python-format
 msgid "%s %s free disk space"
@@ -418,12 +447,60 @@ msgstr "Määramata"
 msgid "(show optional DVD audio menu)"
 msgstr "(näita DVD valikulist audio-menüüd)"
 
+#, fuzzy
+msgid "(unknown)"
+msgstr "tundmatu"
+
 msgid "* Only available if more than one interface is active."
 msgstr "* Enam kui ühe aktiivse liidese puhul."
 
 #, fuzzy
 msgid "* current animation"
 msgstr "Jõusta praegused seaded"
+
+msgid ""
+"*** boxmode=1 (Standard) ***\n"
+"\n"
+"+++ Features +++\n"
+"3840x2160p60 10-bit HEVC, 3840x2160p60 8-bit VP9, 1920x1080p60 8-bit AVC,\n"
+"MAIN only (no PIP), Limited display usages, UHD only (no SD),\n"
+"No multi-PIP, No transcoding\n"
+"\n"
+"--- Restrictions ---\n"
+"Decoder 0: 3840x2160p60 10-bit HEVC, 3840x2160p60 8-bit VP9, 1920x1080p60 8-bit AVC\n"
+"OSD Grafic 0: 1080p60 32 bit ARGB\n"
+"Display 0 Encode Restrictions: 3840x2160p60 12-bit 4:2:0 (HDMI),\n"
+"3840x2160p60 12-bit 4:2:2 (HDMI), 3840x2160p60 8-bit 4:4:4 (HDMI),\n"
+"1920x1080p60 (component), Only one display format at a time\n"
+"\n"
+"If you want 1080p60 component, HDMI also needs to be 1080p60."
+msgstr ""
+
+msgid ""
+"*** boxmode=12 (Experimental) ***\n"
+"\n"
+"+++ Features +++\n"
+"3840x2160p50 10-bit decode for MAIN, 1080p25/50i PIP support, HDMI input (if available),\n"
+" UHD display only, No SD display, No transcoding\n"
+"\n"
+"--- Restrictions ---\n"
+"Decoder 0: 3840x2160p50 10-bit HEVC, 3840x2160p50 8-bit VP9,\n"
+"1920x1080p50 8-bit AVC/MPEG\n"
+"Decoder 1: 1920x1080p25/50i 10-bit HEVC, 1920x1080p25/50i 8-bit VP9/AVC/MPEG2,\n"
+"HDMI In (if available), 3840x2160p50\n"
+"OSD Graphic 0 (UHD): 1080p50 32-bit ARGB\n"
+"Window 0 (MAIN/UHD): Limited display capabilities, 1080i50 10-bit de-interlacing\n"
+"Multi-PIP mode (3x): Enigma2 supported no multi-PIP\n"
+"Window 1 (PIP/UHD) (Enigma2 PIP Mode): Up to 1/2 x 1/2 screen display, 576i50 de-interlacing\n"
+"Display 0 (UHD) Encode Restrictions: 3840x2160p50"
+msgstr ""
+
+msgid "-NO SERVICE\n"
+msgstr ""
+
+#, python-format
+msgid "-SERVICE ERROR:%d\n"
+msgstr ""
 
 msgid "/media/custom"
 msgstr ""
@@ -441,9 +518,6 @@ msgstr "juur kaust"
 
 msgid "0"
 msgstr "0"
-
-msgid "0 V"
-msgstr ""
 
 msgid "1"
 msgstr "1"
@@ -508,6 +582,12 @@ msgstr "2"
 msgid "2048 MB (maximum)"
 msgstr ""
 
+msgid "2160p50 with PiP (Experimental)"
+msgstr ""
+
+msgid "2160p60 without PiP (Standard)"
+msgstr ""
+
 msgid "23.976"
 msgstr "23.976"
 
@@ -540,8 +620,14 @@ msgid "3D"
 msgstr "3"
 
 #, fuzzy
-msgid "3D Surround"
+msgid "3D surround"
 msgstr "Heli"
+
+msgid "3D surround softlimiter"
+msgstr ""
+
+msgid "3D surround speaker position"
+msgstr ""
 
 msgid "3d mode"
 msgstr "3d režiim"
@@ -599,6 +685,9 @@ msgstr "<Viimase taimeri asukoht>"
 
 msgid "<unknown>"
 msgstr "<tundmatu>"
+
+msgid "=NO STREAM\n"
+msgstr ""
 
 msgid "??"
 msgstr "??"
@@ -712,13 +801,11 @@ msgstr ""
 msgid "AAC downmix"
 msgstr "AC3/DTS > stereo"
 
-msgid "AAC transcoding"
-msgstr ""
-
 msgid "AC3"
 msgstr ""
 
-msgid "AC3/DTS downmix"
+#, fuzzy
+msgid "AC3 downmix"
 msgstr "AC3/DTS > stereo"
 
 msgid "AGC:"
@@ -884,11 +971,23 @@ msgstr "Pildiparanduse seaded"
 msgid "Advanced video setup"
 msgstr "Täpsemad video seaded"
 
+msgid "Afghanistan"
+msgstr ""
+
 msgid "After event"
 msgstr "Pärast sündmust"
 
+msgid "Aland Islands"
+msgstr ""
+
+msgid "Albania"
+msgstr ""
+
 msgid "Album"
 msgstr "Album"
+
+msgid "Algeria"
+msgstr ""
 
 msgid "Alignment of events"
 msgstr ""
@@ -946,6 +1045,9 @@ msgstr "mine ooterežiimi"
 msgid "Alternative"
 msgstr "Alternatiivne"
 
+msgid "Alternative Image 1 partition for boot repair not found."
+msgstr ""
+
 msgid "Alternative numbering mode"
 msgstr "Alternatiivne numeratsioon"
 
@@ -964,6 +1066,9 @@ msgstr ""
 msgid "Always include ECM messages in recordings. This overrides the individual timer settings globally. It allows recordings to be always decrypted afterwards (sometimes called offline decoding), if supported by your receiver. Default: off."
 msgstr ""
 
+msgid "American Samoa"
+msgstr ""
+
 msgid "An empty filename is illegal."
 msgstr "Tühi failinimi ei ole lubatud."
 
@@ -980,6 +1085,15 @@ msgstr "Tundmatu viga!"
 msgid "And will put your receiver in standby over "
 msgstr ""
 
+msgid "Andorra"
+msgstr ""
+
+msgid "Angola"
+msgstr ""
+
+msgid "Anguilla"
+msgstr ""
+
 #, fuzzy
 msgid "Animation Setup"
 msgstr "Positsioneeri seadistus"
@@ -991,6 +1105,12 @@ msgstr "Aeglustuskiirused"
 #, fuzzy
 msgid "Animations"
 msgstr "Info"
+
+msgid "Antarctica"
+msgstr ""
+
+msgid "Antigua and Barbuda"
+msgstr ""
 
 msgid "Any activity"
 msgstr "Iga tegevus"
@@ -1079,11 +1199,20 @@ msgstr ""
 msgid "Are you sure you want to save the EPG Cache to:\n"
 msgstr "Kas soovid väljuda seadistusabist?"
 
+msgid "Argentina"
+msgstr ""
+
+msgid "Armenia"
+msgstr ""
+
 msgid "Artist"
 msgstr "Esitaja"
 
 msgid "Arts/Culture"
 msgstr "Kunsti-kultuurimagasin"
+
+msgid "Aruba"
+msgstr ""
 
 msgid "As defined by the skin"
 msgstr ""
@@ -1128,11 +1257,11 @@ msgstr ""
 msgid "Audio"
 msgstr "Heli"
 
-msgid "Audio Auto Volume Level"
-msgstr ""
-
 msgid "Audio PID"
 msgstr "Audio PID"
+
+msgid "Audio auto volume level"
+msgstr ""
 
 #, fuzzy
 msgid "Audio channel"
@@ -1160,6 +1289,14 @@ msgstr "Paigalda laiendusi"
 #, fuzzy
 msgid "Audio settings"
 msgstr "Muuda seadeid"
+
+#, fuzzy
+msgid "Australia"
+msgstr "Itaalia"
+
+#, fuzzy
+msgid "Austria"
+msgstr "ratsutamine"
 
 msgid "Author: "
 msgstr "Autor: "
@@ -1223,6 +1360,9 @@ msgstr "algamas"
 msgid "Available format variables"
 msgstr "Võimalikud formati muutujad"
 
+msgid "Azerbaijan"
+msgstr ""
+
 msgid "B"
 msgstr "B"
 
@@ -1285,10 +1425,6 @@ msgstr "Varukoopia asukoht"
 msgid "Backup Mode"
 msgstr "Varukoopia loomine valmis."
 
-#, fuzzy
-msgid "Backup Plugins"
-msgstr "Laiendused"
-
 msgid "Backup completed."
 msgstr "Varukoopia loomine valmis."
 
@@ -1301,11 +1437,23 @@ msgstr "Varukoopia loomine..."
 msgid "Backup system settings"
 msgstr "Loo varukoopia"
 
+msgid "Bahamas"
+msgstr ""
+
+msgid "Bahrain"
+msgstr ""
+
 msgid "Band"
 msgstr "Sagedusala"
 
 msgid "Bandwidth"
 msgstr "Ribalaius"
+
+msgid "Bangladesh"
+msgstr ""
+
+msgid "Barbados"
+msgstr ""
 
 #, fuzzy
 msgid "Basic settings"
@@ -1332,6 +1480,24 @@ msgstr "Tegevus taasesituse peatamisel"
 msgid "Behavior when a movie reaches the end"
 msgstr "Tegevus taasesituse lõppemisel"
 
+msgid "Belarus"
+msgstr ""
+
+msgid "Belgium"
+msgstr ""
+
+msgid "Belize"
+msgstr ""
+
+msgid "Benin"
+msgstr ""
+
+msgid "Bermuda"
+msgstr ""
+
+msgid "Bhutan"
+msgstr ""
+
 msgid "Big PiP"
 msgstr ""
 
@@ -1350,6 +1516,12 @@ msgstr "Blokeeri müra vähendamist"
 msgid "Blue"
 msgstr ""
 
+msgid "Bolivia (Plurinational State of)"
+msgstr ""
+
+msgid "Bonaire, Sint Eustatius and Saba"
+msgstr ""
+
 msgid "Bookmarks"
 msgstr "Lemmikud"
 
@@ -1360,19 +1532,45 @@ msgstr ""
 msgid "Boost green"
 msgstr "roheline"
 
+#, fuzzy
+msgid "Bosnia and Herzegovina"
+msgstr "Kanalilogo ja nimi"
+
+msgid "Botswana"
+msgstr ""
+
+msgid "Bouvet Island"
+msgstr ""
+
+msgid "Brazil"
+msgstr ""
+
 msgid "Brightness"
 msgstr "Heledus"
+
+msgid "British Indian Ocean Territory"
+msgstr ""
 
 #, fuzzy
 msgid "Broadcast:"
 msgstr "otsesaade"
 
+msgid "Brunei Darussalam"
+msgstr ""
+
 #, python-format
 msgid "Buffering %d%%"
 msgstr ""
 
+#, fuzzy
+msgid "Bulgaria"
+msgstr "Bulgaaria"
+
 msgid "Bulgarian"
 msgstr "Bulgaaria"
+
+msgid "Burkina Faso"
+msgstr ""
 
 msgid "Burn Bludisc"
 msgstr ""
@@ -1387,6 +1585,9 @@ msgstr "Salvesta olemasolev image DVD-le"
 #, fuzzy
 msgid "Burn to medium"
 msgstr "Kirjuta DVD-le"
+
+msgid "Burundi"
+msgstr ""
 
 msgid "Bus: "
 msgstr "Siin: "
@@ -1459,6 +1660,9 @@ msgstr "Kaabel (DVB-C)"
 msgid "Cable Scan"
 msgstr "Kaabel TV otsing"
 
+msgid "Cabo Verde"
+msgstr ""
+
 msgid "Cache thumbnails"
 msgstr "Salvesta pisipildid"
 
@@ -1474,11 +1678,31 @@ msgstr "Arvutamine on tehtud"
 msgid "Calibrate"
 msgstr "Kalibreeri"
 
+msgid "Cambodia"
+msgstr ""
+
+msgid "Cameroon"
+msgstr ""
+
 msgid "Can be used for different fps between external subtitles and video."
+msgstr ""
+
+#, python-format
+msgid "Can not repair file %s"
+msgstr ""
+
+#, python-format
+msgid "Can not write file %s"
+msgstr ""
+
+msgid "Canada"
 msgstr ""
 
 msgid "Cancel"
 msgstr "Tühista"
+
+msgid "Cancelled upon user request"
+msgstr ""
 
 msgid "Cannot determine"
 msgstr "Ei saa määrata"
@@ -1532,6 +1756,12 @@ msgstr "Kaart"
 msgid "Cascade PiP"
 msgstr ""
 
+msgid "Caution, next boot is starts with these settings!"
+msgstr ""
+
+msgid "Cayman Islands"
+msgstr ""
+
 msgid "Celsius"
 msgstr ""
 
@@ -1540,6 +1770,16 @@ msgstr "DVB subtiitrid ekraani keskel"
 
 msgid "Center time-labels and remove date"
 msgstr ""
+
+msgid "Central African Republic"
+msgstr ""
+
+msgid "Chad"
+msgstr ""
+
+#, fuzzy
+msgid "Change Language"
+msgstr "Keel"
 
 #, fuzzy
 msgid "Change PIN"
@@ -1670,6 +1910,12 @@ msgstr ""
 msgid "Children/Youth"
 msgstr ""
 
+msgid "Chile"
+msgstr ""
+
+msgid "China"
+msgstr ""
+
 msgid "Chipset: "
 msgstr ""
 
@@ -1687,20 +1933,11 @@ msgstr "Lemmiknimekirjad"
 msgid "Choose the location for crash and debuglogs."
 msgstr ""
 
-#, fuzzy
-msgid "Choose whether AAC sound tracks should be transcoded."
-msgstr "Määra, kas mitmekanaline heli tuleks taandada stereoks."
-
-#, fuzzy
-msgid "Choose whether multi channel sound tracks should be downmixed to stereo."
-msgstr "Määra, kas mitmekanaline heli tuleks taandada stereoks."
-
-#, fuzzy
-msgid "Choose whether multi channel sound tracks should be output as PCM."
-msgstr "Määra, kas mitmekanaline heli tuleks taandada stereoks."
-
 msgid "Choose which tuner to configure."
 msgstr "Vali seadistamiseks tuuner."
+
+msgid "Christmas Island"
+msgstr ""
 
 #, fuzzy
 msgid "Circular LNB"
@@ -1749,6 +1986,9 @@ msgstr "Sulge PiP väljumisel"
 msgid "Close title selection"
 msgstr "Sulge pealkirja valik"
 
+msgid "Cocos (Keeling) Islands"
+msgstr ""
+
 msgid "Code R. LP-HP & Guard Int."
 msgstr ""
 
@@ -1763,6 +2003,10 @@ msgstr "Valiku nimi"
 
 msgid "Collection settings"
 msgstr "Valiku seaded"
+
+#, fuzzy
+msgid "Colombia"
+msgstr "Värvi vorming"
 
 #, fuzzy
 msgid "Color"
@@ -1781,6 +2025,10 @@ msgstr ""
 msgid "Command execution..."
 msgstr "Käskude täitmine"
 
+#, fuzzy
+msgid "Command line error!"
+msgstr "Käskude järjekord"
+
 msgid "Command order"
 msgstr "Käskude järjekord"
 
@@ -1793,6 +2041,9 @@ msgstr "CI liides"
 
 msgid "Communication"
 msgstr "Suhtlus"
+
+msgid "Comoros"
+msgstr ""
 
 msgid "Compact flash"
 msgstr "Compact flash"
@@ -1969,6 +2220,14 @@ msgstr "Määra, mida '0' nupp PIP- režiimis teeb."
 msgid "Configure the gateway."
 msgstr "Seadista lüüs."
 
+#, fuzzy
+msgid "Configure the general audio delay of Dolby Digital sound tracks."
+msgstr "Määra üldine viiteag Dolby Digital heliga heliribadele."
+
+#, fuzzy
+msgid "Configure the general audio delay of stereo sound tracks."
+msgstr "Määra üldine viiteag stereo heliga heliribadele."
+
 msgid "Configure the hard disk drive to go to standby after the specified idle time."
 msgstr "Määra kõvaketta ooterežiimi minek pärast teatud jõudeoleku aega."
 
@@ -2097,6 +2356,14 @@ msgstr "See valik määrab, millist ühenduspesa video väljund kasutab."
 msgid "Configure whether (and for how long) a second infobar will be shown when OK is pressed twice. The second infobar contains additional information about the current channel."
 msgstr "Luba teise inforiba näitamine (2 X OK). Seal võib leida käesoleva kanali kohta rohkem teavet."
 
+#, fuzzy
+msgid "Configure whether a simple second infobar will be shown instead of the regular one."
+msgstr "Määra, kas mitmekanaline heli tuleks taandada stereoks."
+
+#, fuzzy
+msgid "Configure whether multi channel PCM sound should be enabled."
+msgstr "Määra, kas mitmekanaline heli tuleks taandada stereoks."
+
 msgid "Configure whether multi channel sound tracks should be downmixed to stereo."
 msgstr "Määra, kas mitmekanaline heli tuleks taandada stereoks."
 
@@ -2146,6 +2413,12 @@ msgid "Configuring"
 msgstr "Seadistan"
 
 msgid "Conflict not resolved!"
+msgstr ""
+
+msgid "Congo"
+msgstr ""
+
+msgid "Congo (Democratic Republic of the)"
 msgstr ""
 
 msgid "Connect"
@@ -2219,8 +2492,17 @@ msgstr "Teisenda ext3 > ext4"
 msgid "Converting ext3 to ext4..."
 msgstr "Teisenda ext3 > ext4..."
 
+msgid "Cook Islands"
+msgstr ""
+
 msgid "Copy"
 msgstr "Kopeeri"
+
+msgid "Costa Rica"
+msgstr ""
+
+msgid "Cote d'Ivoire"
+msgstr ""
 
 msgid "Could not find installed channel list."
 msgstr "Paigaldatud kanalinimekirja ei leitud."
@@ -2270,8 +2552,22 @@ msgstr "Failisüsteemi loomine"
 msgid "Creating partition"
 msgstr "Partitsiooni loomine"
 
+#, fuzzy
+msgid "Croatia"
+msgstr "Horvaatia"
+
 msgid "Croatian"
 msgstr "Horvaatia"
+
+msgid "Cuba"
+msgstr ""
+
+msgid "Curacao"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "Current Bootsettings: %s (%s)%s"
+msgstr "Hetke seaded:"
 
 msgid "Current CEC address"
 msgstr "Praegune CEC aadress"
@@ -2343,7 +2639,14 @@ msgstr ""
 msgid "Cylinders: unknown"
 msgstr ""
 
+msgid "Cyprus"
+msgstr ""
+
 msgid "Czech"
+msgstr "Tšehhi"
+
+#, fuzzy
+msgid "Czechia"
 msgstr "Tšehhi"
 
 msgid "D"
@@ -2366,6 +2669,10 @@ msgstr ""
 
 msgid "DTS"
 msgstr ""
+
+#, fuzzy
+msgid "DTS downmix"
+msgstr "AC3/DTS > stereo"
 
 msgid "DUAL LAYER DVD"
 msgstr "Kahekihiline DVD"
@@ -2434,6 +2741,10 @@ msgstr "Aeg/kuupäev"
 #, fuzzy
 msgid "Deactivate"
 msgstr "Ava pilt-pildis"
+
+#, fuzzy
+msgid "Debug to file"
+msgstr "Kustuta fail"
 
 msgid "Deep standby"
 msgstr "Sügav ooterežiim"
@@ -2546,6 +2857,9 @@ msgstr "Kustutati"
 msgid "Deleted items"
 msgstr "Prügikast"
 
+msgid "Denmark"
+msgstr ""
+
 msgid "Depth"
 msgstr "Sügavus"
 
@@ -2568,6 +2882,9 @@ msgstr "Tühista valik"
 
 msgid "Details for plugin: "
 msgstr "Laienduse üksikaskad: "
+
+msgid "Detect next boxes before standby"
+msgstr ""
 
 msgid "Detected HDD:"
 msgstr "Leitud kõvaketas:"
@@ -2641,10 +2958,6 @@ msgstr "DiSEqC port %s: %s"
 
 msgid "DiSEqC-tester settings"
 msgstr "DiSEqC-testeri seaded"
-
-#, fuzzy
-msgid "Diction"
-msgstr "Kirjeldus"
 
 msgid "Did you see all eight arrow heads?"
 msgstr ""
@@ -2722,6 +3035,10 @@ msgstr "Teavita enne järgmise filimi alustamist"
 
 msgid "Display setup"
 msgstr "Esipaneeli seaded"
+
+#, fuzzy
+msgid "Djibouti"
+msgstr "Süsteemiinfo"
 
 msgid "Do not change"
 msgstr "Ära muuda"
@@ -2847,6 +3164,14 @@ msgid "Do you want to quit the overscan wizard?"
 msgstr "Kas soovid väljuda seadistusabist?"
 
 #, fuzzy
+msgid "Do you want to reboot now with selected image?"
+msgstr "Kas taaskäivitad vastuvõtja?"
+
+#, fuzzy
+msgid "Do you want to reboot now?"
+msgstr "Kas taaskäivitad vastuvõtja?"
+
+#, fuzzy
 msgid "Do you want to reboot your Receiver?"
 msgstr "Kas taaskäivitad vastuvõtja?"
 
@@ -2881,6 +3206,12 @@ msgid "Do you want to upgrade the package:\n"
 msgstr "Kas uuendad paketti:\n"
 
 msgid "Domain:"
+msgstr ""
+
+msgid "Dominica"
+msgstr ""
+
+msgid "Dominican Republic"
 msgstr ""
 
 #, fuzzy
@@ -2990,6 +3321,9 @@ msgstr "Ida"
 msgid "East limit set"
 msgstr "Eda piir on määratud"
 
+msgid "Ecuador"
+msgstr ""
+
 msgid "Edit"
 msgstr "Muuda"
 
@@ -3023,6 +3357,12 @@ msgstr "Muuda uuenduste allika url."
 
 msgid "Education/Science/..."
 msgstr "Haridus/teadus"
+
+msgid "Egypt"
+msgstr ""
+
+msgid "El Salvador"
+msgstr ""
 
 msgid "Electronic Program Guide"
 msgstr "EPG"
@@ -3198,6 +3538,12 @@ msgstr "Sisesta kood"
 msgid "Equal to"
 msgstr ""
 
+msgid "Equatorial Guinea"
+msgstr ""
+
+msgid "Eritrea"
+msgstr ""
+
 msgid "Error"
 msgstr "Viga"
 
@@ -3214,6 +3560,10 @@ msgid "Error formatting disk. The disk may be damaged"
 msgstr ""
 
 #, python-format
+msgid "Error in file %s"
+msgstr ""
+
+#, python-format
 msgid ""
 "Error: %s\n"
 "Retry?"
@@ -3221,11 +3571,18 @@ msgstr ""
 "Viga: %s\n"
 "Uuesti?"
 
+#, fuzzy
+msgid "Estonia"
+msgstr "Eesti"
+
 msgid "Estonian"
 msgstr "Eesti"
 
 msgid "Ethernet network interface"
 msgstr "Etherneti võrguliides"
+
+msgid "Ethiopia"
+msgstr ""
 
 msgid "Event font size (relative to skin size)"
 msgstr "Saate tähesuurus"
@@ -3398,11 +3755,11 @@ msgstr ""
 msgid "F"
 msgstr ""
 
-msgid "F1/F3"
+msgid "F1/F3/F4/F4-TURBO"
 msgstr ""
 
 #, fuzzy
-msgid "FBC SCR (Unicable or JESS)"
+msgid "FBC SCR (Unicable/JESS)"
 msgstr "Unicable"
 
 #, fuzzy
@@ -3454,6 +3811,9 @@ msgstr "/tmp/positionersetup.logi loomine nurjus: "
 msgid "Failed:"
 msgstr "Nurjus"
 
+msgid "Falkland Islands (Malvinas)"
+msgstr ""
+
 msgid "Fallback remote receiver URL"
 msgstr ""
 
@@ -3465,6 +3825,9 @@ msgid "Fan operation"
 msgstr ""
 
 msgid "Fan speed"
+msgstr ""
+
+msgid "Faroe Islands"
 msgstr ""
 
 msgid "Fast"
@@ -3498,8 +3861,18 @@ msgstr ""
 msgid "Favourites"
 msgstr "Lemmikud"
 
+msgid "Fiji"
+msgstr ""
+
+#, python-format
+msgid "File '/boot/%s' copy to '/boot/STARTUP' failed!"
+msgstr ""
+
 msgid "File appears to be busy.\n"
 msgstr "Fail on hõivatud.\n"
+
+msgid "File not found - rename failed!"
+msgstr ""
 
 #, fuzzy
 msgid "Filename"
@@ -3531,6 +3904,9 @@ msgstr "Lõpetasin võrgu seadistamise"
 
 msgid "Finished restarting your network"
 msgstr "Võrgu restart on tehtud"
+
+msgid "Finland"
+msgstr ""
 
 msgid "Finnish"
 msgstr "Soome"
@@ -3619,8 +3995,22 @@ msgstr ""
 msgid "Frame size in full view"
 msgstr "Kaadri suurus täisvaates"
 
+#, fuzzy
+msgid "France"
+msgstr "romantika"
+
 msgid "French"
 msgstr "Prantsuse"
+
+#, fuzzy
+msgid "French Guiana"
+msgstr "Prantsuse"
+
+msgid "French Polynesia"
+msgstr ""
+
+msgid "French Southern Territories"
+msgstr ""
 
 msgid "Frequency"
 msgstr "Sagedus"
@@ -3719,6 +4109,12 @@ msgstr ""
 "Kas taaskäivitad kasutajaliidese\n"
 "uue välimuse aktiveerimiseks?"
 
+msgid "Gabon"
+msgstr ""
+
+msgid "Gambia"
+msgstr ""
+
 msgid "Gateway"
 msgstr "Lüüs"
 
@@ -3738,7 +4134,14 @@ msgstr ""
 msgid "Genre"
 msgstr "Žanr"
 
+msgid "Georgia"
+msgstr ""
+
 msgid "German"
+msgstr "Saksa"
+
+#, fuzzy
+msgid "Germany"
 msgstr "Saksa"
 
 msgid "Get your Weather ID on weather.open-store.net"
@@ -3746,6 +4149,12 @@ msgstr ""
 
 msgid "Getting plugin information. Please wait..."
 msgstr "Saadakse laienduse infot. Oota."
+
+msgid "Ghana"
+msgstr ""
+
+msgid "Gibraltar"
+msgstr ""
 
 msgid "Go down the list"
 msgstr "Liigu nimekirjas alla"
@@ -3826,6 +4235,10 @@ msgstr "Graafilise MultiEpg seaded"
 msgid "Graphical Multi EPG"
 msgstr "Graafiline Multi EPG"
 
+#, fuzzy
+msgid "Greece"
+msgstr "Kreeka"
+
 msgid "Greek"
 msgstr "Kreeka"
 
@@ -3833,13 +4246,41 @@ msgstr "Kreeka"
 msgid "Green"
 msgstr "Kreeka"
 
+#, fuzzy
+msgid "Greenland"
+msgstr "Kreeka"
+
+msgid "Grenada"
+msgstr ""
+
 msgid "Grow drop"
 msgstr ""
 
 msgid "Grow from left"
 msgstr ""
 
+msgid "Guadeloupe"
+msgstr ""
+
+msgid "Guam"
+msgstr ""
+
 msgid "Guard interval"
+msgstr ""
+
+msgid "Guatemala"
+msgstr ""
+
+msgid "Guernsey"
+msgstr ""
+
+msgid "Guinea"
+msgstr ""
+
+msgid "Guinea-Bissau"
+msgstr ""
+
+msgid "Guyana"
 msgstr ""
 
 msgid "H"
@@ -3848,10 +4289,10 @@ msgstr ""
 msgid "HD list"
 msgstr "HD kanalid"
 
-msgid "HD2400"
+msgid "HD11/HD51/HD1100/HD1200/HD1265/HD1500/HD500C/HD530C/VS1000/VS1500/et7x00/et8500/et7000mini"
 msgstr ""
 
-msgid "HD51/HD1100/HD1200/et7x00/et8500"
+msgid "HD2400"
 msgstr ""
 
 msgid ""
@@ -3877,12 +4318,22 @@ msgstr "Värvi vorming"
 msgid "HDMI-CEC"
 msgstr ""
 
+msgid "HDMI-CEC Source Active"
+msgstr ""
+
+msgid "HDMI-CEC Source Inactive"
+msgstr ""
+
 msgid "HDMI-CEC setup"
 msgstr ""
 
 #, fuzzy
 msgid "HI-cleanup for external subtitles"
 msgstr "Väliste subtiitrite viide"
+
+#, fuzzy
+msgid "Haiti"
+msgstr "Ootan"
 
 msgid "Handle standby from TV"
 msgstr "Ooterežiim TV kaudu"
@@ -3917,6 +4368,9 @@ msgstr ""
 #, fuzzy
 msgid "Heads: unknown"
 msgstr "tundmatu"
+
+msgid "Heard Island and McDonald Islands"
+msgstr ""
 
 msgid "Hebrew"
 msgstr "Heebrea"
@@ -3972,8 +4426,18 @@ msgstr "Hoia pilti"
 msgid "Hold till locked"
 msgstr "Hoia pilti lukustamiseni"
 
+#, fuzzy
+msgid "Holy See"
+msgstr "Seadistuste kaitse"
+
 msgid "Home"
 msgstr "Kodu"
+
+msgid "Honduras"
+msgstr ""
+
+msgid "Hong Kong"
+msgstr ""
 
 msgid "Horizontal"
 msgstr "Horisontaal"
@@ -4021,6 +4485,10 @@ msgid "Hungarian"
 msgstr "Ungari"
 
 #, fuzzy
+msgid "Hungary"
+msgstr "Ungari"
+
+#, fuzzy
 msgid "I"
 msgstr "C"
 
@@ -4046,6 +4514,9 @@ msgstr "ISO fail on liiga suur failisüsteemile!"
 
 msgid "ISO path"
 msgstr "ISO kataloog"
+
+msgid "Iceland"
+msgstr ""
 
 msgid "Icons"
 msgstr "Ikoonid"
@@ -4114,6 +4585,12 @@ msgid "Index"
 msgstr "Indeks"
 
 msgid "Index allocated:"
+msgstr ""
+
+msgid "India"
+msgstr ""
+
+msgid "Indonesia"
 msgstr ""
 
 msgid "Inetd recovery"
@@ -4319,11 +4796,27 @@ msgstr "Vastupidi"
 msgid "Ipkg"
 msgstr "Ipkg"
 
+msgid "Iran (Islamic Republic of)"
+msgstr ""
+
+msgid "Iraq"
+msgstr ""
+
+msgid "Ireland"
+msgstr ""
+
 msgid "Is this setting ok?"
 msgstr "Kasutad neid seadeid?"
 
 msgid "Is this video mode ok?"
 msgstr "Kas see videoseadistus sobib?"
+
+#, fuzzy
+msgid "Isle of Man"
+msgstr "Otsingu tüüp"
+
+msgid "Israel"
+msgstr ""
 
 msgid "It follows:"
 msgstr ""
@@ -4338,6 +4831,10 @@ msgstr ""
 msgid "Italian"
 msgstr "Itaalia"
 
+#, fuzzy
+msgid "Italy"
+msgstr "Itaalia"
+
 msgid "Items per page "
 msgstr "Kirjet lehel"
 
@@ -4350,10 +4847,22 @@ msgstr ""
 msgid "J"
 msgstr ""
 
+msgid "Jamaica"
+msgstr ""
+
+msgid "Japan"
+msgstr ""
+
+msgid "Jersey"
+msgstr ""
+
 msgid "Job overview"
 msgstr "Töövaade"
 
 msgid "Job task(s) are in progress!"
+msgstr ""
+
+msgid "Jordan"
 msgstr ""
 
 msgid "Jump to beginning of list"
@@ -4372,10 +4881,16 @@ msgstr "Mine eelmise märgini"
 msgid "Just scale"
 msgstr "Alati kogu ekraan"
 
+msgid "Kazakhstan"
+msgstr ""
+
 msgid "Keep old drive"
 msgstr ""
 
 msgid "Keep service"
+msgstr ""
+
+msgid "Kenya"
 msgstr ""
 
 msgid "Kernel version: "
@@ -4384,6 +4899,9 @@ msgstr "Kernel: "
 #, fuzzy, python-format
 msgid "Kernel: %s"
 msgstr "Signaal: "
+
+msgid "Key Events"
+msgstr ""
 
 #, fuzzy
 msgid "Key mapping"
@@ -4397,6 +4915,22 @@ msgstr "Klaviatuur"
 
 msgid "Keyboard setup"
 msgstr "Klaviatuuriseaded"
+
+msgid "Kiribati"
+msgstr ""
+
+msgid "Korea (Democratic People's Republic of)"
+msgstr ""
+
+msgid "Korea (Republic of)"
+msgstr ""
+
+#, fuzzy
+msgid "Kuwait"
+msgstr "ootan"
+
+msgid "Kyrgyzstan"
+msgstr ""
 
 msgid "LAN adapter"
 msgstr "Kohtvõrgu adapter"
@@ -4422,6 +4956,9 @@ msgstr "Keel"
 
 msgid "Language selection"
 msgstr "Keele valik"
+
+msgid "Lao People's Democratic Republic"
+msgstr ""
 
 msgid "Large"
 msgstr ""
@@ -4453,11 +4990,18 @@ msgstr ""
 msgid "Latitude"
 msgstr "Laiuskraad"
 
+#, fuzzy
+msgid "Latvia"
+msgstr "Läti"
+
 msgid "Latvian"
 msgstr "Läti"
 
 msgid "Leave DVD player?"
 msgstr "Väljud DVD-mängijast?"
+
+msgid "Lebanon"
+msgstr ""
 
 msgid "Left"
 msgstr "Vasak"
@@ -4468,12 +5012,25 @@ msgstr "Kanalinimest vasakul pool"
 msgid "Leisure hobbies"
 msgstr ""
 
+msgid "Lesotho"
+msgstr ""
+
 #. TRANSLATORS: (aspect ratio policy: black bars on top/bottom) in doubt, keep english term.
 msgid "Letterbox"
 msgstr "Letterbox"
 
 msgid "Letterbox zoom"
 msgstr ""
+
+msgid "Liberia"
+msgstr ""
+
+msgid "Libya"
+msgstr ""
+
+#, fuzzy
+msgid "Liechtenstein"
+msgstr " laiendused."
 
 msgid "Limit character set for recording filenames"
 msgstr "Keela teatud tähemärkide kasutamine failinimedes"
@@ -4536,6 +5093,10 @@ msgstr "Kuula raadiot..."
 msgid "Lists reloaded!"
 msgstr ""
 
+#, fuzzy
+msgid "Lithuania"
+msgstr "Leedu"
+
 msgid "Lithuanian"
 msgstr "Leedu"
 
@@ -4561,6 +5122,10 @@ msgstr ""
 #, fuzzy
 msgid "Load unlinked userbouquets"
 msgstr "Luba lemmiknimekirjad"
+
+#, fuzzy
+msgid "Local"
+msgstr "Asukoht"
 
 msgid "Local = Flash a image from local path /hdd/images"
 msgstr ""
@@ -4607,6 +5172,10 @@ msgstr "Pikkuskraad"
 msgid "Lower Framerate save CPU Time"
 msgstr ""
 
+#, fuzzy
+msgid "Luxembourg"
+msgstr "Kuksemburgi"
+
 msgid "Luxembourgish"
 msgstr "Kuksemburgi"
 
@@ -4634,6 +5203,15 @@ msgstr "MMC kaart"
 msgid "MORE"
 msgstr "VEEL"
 
+msgid "Macao"
+msgstr ""
+
+msgid "Macedonia (the former Yugoslav Republic of)"
+msgstr ""
+
+msgid "Madagascar"
+msgstr ""
+
 msgid "Main menu"
 msgstr "Peamenüü"
 
@@ -4649,8 +5227,20 @@ msgstr "Tee see märk lõpupunktiks"
 msgid "Make this mark just a mark"
 msgstr "Tee see märk lihtsalt märgiks"
 
-msgid "Manage extensions"
-msgstr "Halda laiendusi"
+msgid "Malawi"
+msgstr ""
+
+msgid "Malaysia"
+msgstr ""
+
+msgid "Maldives"
+msgstr ""
+
+msgid "Mali"
+msgstr ""
+
+msgid "Malta"
+msgstr ""
 
 msgid "Manage your receiver's software"
 msgstr "Uuenda vastuvõtja tarkvara"
@@ -4696,6 +5286,20 @@ msgstr ""
 msgid "Mark service to hide VBI line"
 msgstr ""
 
+msgid "Marshall Islands"
+msgstr ""
+
+msgid "Martinique"
+msgstr ""
+
+#, fuzzy
+msgid "Mauritania"
+msgstr "Leedu"
+
+#, fuzzy
+msgid "Mauritius"
+msgstr "Lemmikud"
+
 msgid "Max memory positions"
 msgstr ""
 
@@ -4705,6 +5309,9 @@ msgstr "Max. bitikiirus: "
 #, fuzzy
 msgid "Maybe the reason that recording is currently running. Please stop the recording before trying to configure the positioner."
 msgstr "Hetkel salvestatakse. Peata salvestus, enne kui üritad muuta positsioneeri sätteid."
+
+msgid "Mayotte"
+msgstr ""
 
 msgid "Media player"
 msgstr "Meediamängija"
@@ -4748,6 +5355,16 @@ msgstr "Teade"
 msgid "Message..."
 msgstr "Teade"
 
+#, fuzzy
+msgid "Messages"
+msgstr "Teade"
+
+msgid "Mexico"
+msgstr ""
+
+msgid "Micronesia (Federated States of)"
+msgstr ""
+
 msgid "MiniTV"
 msgstr ""
 
@@ -4767,12 +5384,6 @@ msgstr "Väikseim vanus %d aastat"
 #, fuzzy
 msgid "Minimum send interval"
 msgstr "Väikseim vanus %d aastat"
-
-#, python-format
-msgid ""
-"Misconfigured unicable connection from tuner %s to tuner %s!\n"
-"Tuner %s option \"connected to\" are disabled now"
-msgstr ""
 
 msgid "Missing "
 msgstr "Puudub"
@@ -4806,14 +5417,32 @@ msgstr "Modulatsioon"
 msgid "Modulator"
 msgstr "Modulaator"
 
+msgid "Moldova (Republic of)"
+msgstr ""
+
 msgid "Mon"
 msgstr "E"
 
 msgid "Mon-Fri"
 msgstr "E-R"
 
+msgid "Monaco"
+msgstr ""
+
 msgid "Monday"
 msgstr "Esmaspäev"
+
+msgid "Mongolia"
+msgstr ""
+
+msgid "Montenegro"
+msgstr ""
+
+msgid "Montserrat"
+msgstr ""
+
+msgid "Morocco"
+msgstr ""
 
 msgid "Mosquito noise reduction"
 msgstr "Müra tasandus"
@@ -4936,6 +5565,9 @@ msgstr "Liigub asukohta"
 msgid "Moving west ..."
 msgstr "Keerab läände ..."
 
+msgid "Mozambique"
+msgstr ""
+
 msgid "Multi EPG"
 msgstr "Kanalite saatekava"
 
@@ -4946,7 +5578,15 @@ msgid "Multi-EPG bouquet selection"
 msgstr "Lemmiknimekirjade valik kanalite saatekavas"
 
 #, fuzzy
-msgid "Multichannel as PCM"
+msgid "MultiBoot"
+msgstr "Mitu satelliiti"
+
+#, fuzzy
+msgid "MultiBoot Selector"
+msgstr "Lemmiknimekirjade valik kanalite saatekavas"
+
+#, fuzzy
+msgid "Multichannel PCM"
 msgstr "Kanal"
 
 msgid "Multimedia"
@@ -4966,6 +5606,9 @@ msgstr ""
 
 msgid "Mute"
 msgstr "Vaikus"
+
+msgid "Myanmar"
+msgstr ""
 
 msgid "N/A"
 msgstr "Ei ole kasutusel"
@@ -5010,6 +5653,9 @@ msgstr "NTSC"
 msgid "Name"
 msgstr "Nimi"
 
+msgid "Name already exists - rename failed!"
+msgstr ""
+
 msgid "Nameserver"
 msgstr "Nimeserver"
 
@@ -5026,7 +5672,19 @@ msgstr "Nimeserveri seaded"
 msgid "Namespace"
 msgstr "Nimeruum"
 
+msgid "Namibia"
+msgstr ""
+
+msgid "Nauru"
+msgstr ""
+
+msgid "Nepal"
+msgstr ""
+
 msgid "NetSpeed:"
+msgstr ""
+
+msgid "Netherlands"
 msgstr ""
 
 msgid "Netmask"
@@ -5102,7 +5760,13 @@ msgstr "see salvestis"
 msgid "New"
 msgstr "Uus"
 
+msgid "New Caledonia"
+msgstr ""
+
 msgid "New Packages"
+msgstr ""
+
+msgid "New Zealand"
 msgstr ""
 
 msgid "News Current Affairs"
@@ -5115,6 +5779,21 @@ msgstr "Järgmine"
 msgctxt "now/next: 'next' event label"
 msgid "Next"
 msgstr "Järgmine"
+
+msgid "Next boot will start from Image 1."
+msgstr ""
+
+msgid "Nicaragua"
+msgstr ""
+
+msgid "Niger"
+msgstr ""
+
+msgid "Nigeria"
+msgstr ""
+
+msgid "Niue"
+msgstr ""
 
 msgid "No"
 msgstr "Ei"
@@ -5305,11 +5984,21 @@ msgstr "Pole"
 msgid "Nonlinear"
 msgstr "Ebalineaarne"
 
+msgid "Norfolk Island"
+msgstr ""
+
 msgid "Normal mode"
 msgstr "Tavaline"
 
 msgid "North"
 msgstr "Põhi"
+
+msgid "Northern Mariana Islands"
+msgstr ""
+
+#, fuzzy
+msgid "Norway"
+msgstr "Norra"
 
 msgid "Norwegian"
 msgstr "Norra"
@@ -5430,6 +6119,9 @@ msgstr "Võrguta dekodeerimise viide (ms)"
 msgid "Ok"
 msgstr "Ok"
 
+msgid "Oman"
+msgstr ""
+
 msgid "On"
 msgstr "Sees"
 
@@ -5448,6 +6140,10 @@ msgstr "Üks"
 #, fuzzy
 msgid "One partition"
 msgstr "Partitsiooni loomine"
+
+#, fuzzy
+msgid "Online"
+msgstr "Ebalineaarne"
 
 msgid "Online = Download a image and flash it"
 msgstr ""
@@ -5618,17 +6314,32 @@ msgstr "Pakettide nimekirja uuendus"
 msgid "Packages upgraded"
 msgstr "Pakettide nimekirja uuendus"
 
-msgid "Packet management"
-msgstr "Pakkide haldamine"
-
 msgid "Packet manager"
 msgstr "Paketi haldur"
+
+msgid "Pakistan"
+msgstr ""
+
+msgid "Palau"
+msgstr ""
+
+msgid "Palestine, State of"
+msgstr ""
 
 #. TRANSLATORS: (aspect ratio policy: cropped content on left/right) in doubt, keep english term
 msgid "Pan&scan"
 msgstr "Pan&Scan"
 
+msgid "Panama"
+msgstr ""
+
 msgid "Panic to"
+msgstr ""
+
+msgid "Papua New Guinea"
+msgstr ""
+
+msgid "Paraguay"
 msgstr ""
 
 msgid "Parent directory"
@@ -5686,6 +6397,12 @@ msgstr "Kustuta lõplikult kõik failid"
 msgid "Persian"
 msgstr "Pärsia"
 
+msgid "Peru"
+msgstr ""
+
+msgid "Philippines"
+msgstr ""
+
 msgid "Phone"
 msgstr ""
 
@@ -5712,6 +6429,9 @@ msgstr "Pillarbox"
 
 msgid "Pilot"
 msgstr "Pilot"
+
+msgid "Pitcairn"
+msgstr ""
 
 msgid "Play"
 msgstr "Taasesita"
@@ -5994,8 +6714,8 @@ msgstr "Oota..."
 msgid "Please wait... Loading list..."
 msgstr "Oota. Sisu laetakse."
 
-#, fuzzy, python-format
-msgid "Please: DO NOT reboot your %s %s and turn off the power.\n"
+#, fuzzy
+msgid "Please: DO NOT reboot your STB and turn off the power.\n"
 msgstr "Ühenda vastuvõtja internetti"
 
 #, fuzzy
@@ -6025,6 +6745,9 @@ msgid ""
 "GUI will automatically restart once finished!"
 msgstr ""
 
+msgid "Poland"
+msgstr ""
+
 msgid "Polarisation"
 msgstr "Polarisatsioon"
 
@@ -6049,8 +6772,16 @@ msgstr "Port C"
 msgid "Port D"
 msgstr "Port D"
 
+#, fuzzy
+msgid "Portugal"
+msgstr "Portugali"
+
 msgid "Portuguese"
 msgstr "Portugali"
+
+#, fuzzy
+msgid "Position"
+msgstr "Positsioneer"
 
 #, fuzzy
 msgid "Position and size"
@@ -6310,11 +7041,11 @@ msgstr "Eelvaate menüü"
 msgid "Provider"
 msgstr "Levitajad"
 
-msgid "Provider to scan"
-msgstr "Levitaja otsinguks"
-
 msgid "Providers"
 msgstr "Levitajad"
+
+msgid "Puerto Rico"
+msgstr ""
 
 msgid "Put TV in standby"
 msgstr "Lülita TV välja"
@@ -6328,6 +7059,9 @@ msgstr "Pythoni programm /tmp/mmi.socket jaoks"
 #, fuzzy
 msgid "Python version: "
 msgstr "Kernel: "
+
+msgid "Qatar"
+msgstr ""
 
 #, fuzzy
 msgid "Question"
@@ -6514,6 +7248,10 @@ msgstr "Värskendussagedus"
 msgid "Refresh rate selection."
 msgstr "Värskendussageduse valik."
 
+#, fuzzy
+msgid "Refusing to move to the same directory"
+msgstr "Palun sisesta uue kausta nimi"
+
 msgid "Regard deep standby as standby"
 msgstr "Käsitle sügavooterežiimi tavalise ooterežiimina"
 
@@ -6552,6 +7290,10 @@ msgid "Reminder, you have chosen to save timeshift file."
 msgstr ""
 
 msgid "Remote control type"
+msgstr "Puldi tüüp"
+
+#, fuzzy
+msgid "Remote control type setup"
 msgstr "Puldi tüüp"
 
 msgid "Removal has completed."
@@ -6619,6 +7361,10 @@ msgstr "Partitsioonitabeli eemaldamine"
 msgid "Rename"
 msgstr "Muuda nimi"
 
+#, fuzzy
+msgid "Rename failed!"
+msgstr "Häälestus nurjus!"
+
 msgid "Rename name and description for new events"
 msgstr ""
 
@@ -6648,6 +7394,13 @@ msgid "Replace `- ` in dialogs with colored text per speaker (like teletext subt
 msgstr ""
 
 msgid "Report Msgid Bugs To"
+msgstr ""
+
+#, fuzzy
+msgid "Request for physical address report"
+msgstr "TV füüsilise aadressi raport"
+
+msgid "Request for vendor report"
 msgstr ""
 
 msgid "Require authentication for http streams"
@@ -6719,10 +7472,6 @@ msgstr "Taaskäivita võrgu ühendus ja adapter.\n"
 msgid "Restore"
 msgstr "Taasta"
 
-#, fuzzy
-msgid "Restore Plugins"
-msgstr "Kustuta laiendusi"
-
 msgid "Restore backups"
 msgstr "Taasta varukoopia"
 
@@ -6736,9 +7485,6 @@ msgstr "Taaskäivita võrk "
 
 msgid "Restore system settings"
 msgstr "Taasta seaded"
-
-msgid "Restoring satellites.xml not possible!"
-msgstr ""
 
 msgid "Restoring..."
 msgstr "Taastamine..."
@@ -6766,6 +7512,9 @@ msgstr "Tagasi salvestiste nimekirja"
 msgid "Return to previous service"
 msgstr "Tagasi eelmisele kanalile"
 
+msgid "Reunion"
+msgstr ""
+
 msgid "Reverse bouquet buttons"
 msgstr ""
 
@@ -6790,6 +7539,10 @@ msgstr "Kanalinimest paremal pool"
 
 msgid "Roll-off"
 msgstr ""
+
+#, fuzzy
+msgid "Romania"
+msgstr "Rumeenia"
 
 msgid "Romanian"
 msgstr "Rumeenia"
@@ -6819,11 +7572,28 @@ msgstr ""
 msgid "Russian"
 msgstr "Vene"
 
+msgid "Russian Federation"
+msgstr ""
+
+msgid "Rwanda"
+msgstr ""
+
 msgid "S-Video"
 msgstr "S-video (Y/C)"
 
 msgid "SCPC optimized search range"
 msgstr ""
+
+#, fuzzy
+msgid "SCR (Unicable/JESS)"
+msgstr "Unicable"
+
+msgid "SCR JESS"
+msgstr ""
+
+#, fuzzy
+msgid "SCR Unicable"
+msgstr "Unicable LNB"
 
 msgid "SINGLE LAYER DVD"
 msgstr "ÜHEKIHILINE DVD"
@@ -6846,6 +7616,9 @@ msgstr ""
 msgid "SSID:"
 msgstr "SSID:"
 
+msgid "STARTUP"
+msgstr ""
+
 msgid ""
 "STB-GUI Skinselector\n"
 "\n"
@@ -6853,6 +7626,27 @@ msgid ""
 "stephan@reichholf.net\n"
 "\n"
 "© 2006 - Stephan Reichholf"
+msgstr ""
+
+msgid "Saint Barthelemy"
+msgstr ""
+
+msgid "Saint Helena, Ascension and Tristan da Cunha"
+msgstr ""
+
+msgid "Saint Kitts and Nevis"
+msgstr ""
+
+msgid "Saint Lucia"
+msgstr ""
+
+msgid "Saint Martin (French part)"
+msgstr ""
+
+msgid "Saint Pierre and Miquelon"
+msgstr ""
+
+msgid "Saint Vincent and the Grenadines"
 msgstr ""
 
 msgid "Samba Log"
@@ -6867,6 +7661,15 @@ msgid "Samba setup"
 msgstr "Klaviatuuriseaded"
 
 msgid "Same resolution as skin"
+msgstr ""
+
+msgid "Samoa"
+msgstr ""
+
+msgid "San Marino"
+msgstr ""
+
+msgid "Sao Tome and Principe"
 msgstr ""
 
 msgid "Sat"
@@ -6898,6 +7701,9 @@ msgstr "Küllastus"
 
 msgid "Saturday"
 msgstr "Laupäev"
+
+msgid "Saudi Arabia"
+msgstr ""
 
 msgid "Save"
 msgstr "Salvesta"
@@ -7087,6 +7893,13 @@ msgstr "Keri edasi (sisesta aeg)"
 msgid "Select"
 msgstr "Vali"
 
+#, fuzzy, python-format
+msgid "Select Bootoption: %s"
+msgstr "Varukoopia asukoht"
+
+msgid "Select Bootoption: not supported - see info"
+msgstr ""
+
 msgid "Select CAId"
 msgstr "Vali CAId"
 
@@ -7096,6 +7909,10 @@ msgstr "Vali tuuner"
 
 msgid "Select HDD"
 msgstr "Vali kõvaketas"
+
+#, fuzzy, python-format
+msgid "Select Image: %s"
+msgstr "Vali välimus"
 
 #, fuzzy
 msgid "Select LCD clock:"
@@ -7155,6 +7972,10 @@ msgstr "Vali kopeerimise asukoht:"
 msgid "Select destination for:"
 msgstr "Vali asukoht:"
 
+#, fuzzy
+msgid "Select directory for logfile"
+msgstr "Kausta loomine %s nurjus."
+
 msgid "Select files for backup."
 msgstr "Vali failid varundamiseks."
 
@@ -7179,6 +8000,10 @@ msgstr "Varukoopia asukoht"
 
 msgid "Select movie"
 msgstr "Vali film"
+
+#, fuzzy
+msgid "Select path for logfile"
+msgstr "Vali sihtkataloog"
 
 #, fuzzy
 msgid "Select primary softcam"
@@ -7264,12 +8089,19 @@ msgstr "DiSEqC"
 msgid "Send DiSEqC only on satellite change"
 msgstr "Saada DiSEqC anult satelliidi vahetamisel"
 
+msgid "Senegal"
+msgstr ""
+
 #, fuzzy
 msgid "Seperate titles with a main menu"
 msgstr "Eraldi pealkirjad koos peamenüüga"
 
 msgid "Sequence repeat"
 msgstr "Järjekorra kordus"
+
+#, fuzzy
+msgid "Serbia"
+msgstr "Serbia"
 
 msgid "Serbian"
 msgstr "Serbia"
@@ -7449,6 +8281,9 @@ msgstr "Satelliidiseadmed"
 #, fuzzy
 msgid "Setup your timezone."
 msgstr "Mootori häälestamine"
+
+msgid "Seychelles"
+msgstr ""
 
 msgid "Sharpness"
 msgstr "Teravus"
@@ -7681,6 +8516,10 @@ msgstr "Näita teenuse tüübi ikoone"
 msgid "Show servicelist or movies"
 msgstr "Näita teenuse tüübi ikoone"
 
+#, fuzzy
+msgid "Show simple second infobar"
+msgstr "Näita teist inforiba"
+
 msgid "Show single service EPG"
 msgstr ""
 
@@ -7701,6 +8540,10 @@ msgstr "Subtiitrite valik"
 #, fuzzy
 msgid "Show subtitle selection"
 msgstr "Subtiitrite valik"
+
+#, fuzzy
+msgid "Show symbols on display"
+msgstr "Oleku tähistus filmilistis"
 
 #, fuzzy
 msgid "Show the media player..."
@@ -7741,6 +8584,9 @@ msgstr ""
 
 msgid "Side by side"
 msgstr "Kõrvuti"
+
+msgid "Sierra Leone"
+msgstr ""
 
 #, fuzzy
 msgid "Signal Finder"
@@ -7792,6 +8638,10 @@ msgstr ""
 msgid "Simulate (no write)"
 msgstr ""
 
+#, fuzzy
+msgid "Singapore"
+msgstr "Üksik"
+
 msgid "Single"
 msgstr "Üksik"
 
@@ -7803,6 +8653,9 @@ msgstr "Üksik satelliit"
 
 msgid "Single step (GOP)"
 msgstr "Üksik samm (GOP)"
+
+msgid "Sint Maarten (Dutch part)"
+msgstr ""
 
 msgid "Site latitude"
 msgstr ""
@@ -7869,6 +8722,14 @@ msgstr "Pesa %d"
 msgid "Slovak"
 msgstr "Slovaki"
 
+#, fuzzy
+msgid "Slovakia"
+msgstr "Slovaki"
+
+#, fuzzy
+msgid "Slovenia"
+msgstr "Sloveeni"
+
 msgid "Slovenian"
 msgstr "Sloveeni"
 
@@ -7918,6 +8779,12 @@ msgstr "Tarkvara uuendamine"
 
 msgid "Softwaremanager information"
 msgstr "Tarkvarahalduri informatsioon"
+
+msgid "Solomon Islands"
+msgstr ""
+
+msgid "Somalia"
+msgstr ""
 
 msgid "Some error occured - Please try later"
 msgstr ""
@@ -8018,6 +8885,19 @@ msgstr "Allika päring"
 msgid "South"
 msgstr "Lõuna"
 
+msgid "South Africa"
+msgstr ""
+
+msgid "South Georgia and the South Sandwich Islands"
+msgstr ""
+
+#, fuzzy
+msgid "South Sudan"
+msgstr "Lõuna"
+
+msgid "Spain"
+msgstr ""
+
 msgid "Spanish"
 msgstr "Hispaania"
 
@@ -8062,6 +8942,9 @@ msgstr ""
 
 msgid "Sports"
 msgstr "Sport"
+
+msgid "Sri Lanka"
+msgstr ""
 
 msgid "Standard"
 msgstr "Tavaline"
@@ -8316,6 +9199,9 @@ msgstr ""
 msgid "Successfully restored /etc/inetd.conf!"
 msgstr ""
 
+msgid "Sudan"
+msgstr ""
+
 msgid "Sun"
 msgstr "P"
 
@@ -8325,6 +9211,13 @@ msgstr "Pühapäev"
 #, fuzzy
 msgid "Support at"
 msgstr "Aja järgi"
+
+#, fuzzy
+msgid "Suriname"
+msgstr "Kanalinimi"
+
+msgid "Svalbard and Jan Mayen"
+msgstr ""
 
 msgid "Swap File not found. You have to create the file before to activate."
 msgstr ""
@@ -8349,8 +9242,18 @@ msgstr "Vaheta kanalid omavahel"
 msgid "Swap services"
 msgstr "Vaheta kanalid omavahel"
 
+msgid "Swaziland"
+msgstr ""
+
+#, fuzzy
+msgid "Sweden"
+msgstr "Rootsi"
+
 msgid "Swedish"
 msgstr "Rootsi"
+
+msgid "Switch"
+msgstr ""
 
 msgid "Switch TV to correct input"
 msgstr "Lülita TV õigele sisendile"
@@ -8412,6 +9315,9 @@ msgstr "Eelmine kanal"
 msgid "Switchable tuner types:"
 msgstr "Ümberlülitatavate tuunerite tüübid:"
 
+msgid "Switzerland"
+msgstr ""
+
 msgid "Symbol rate"
 msgstr "Sümbolikiirus"
 
@@ -8432,6 +9338,9 @@ msgid "Sync time using"
 msgstr ""
 
 msgid "Synchronize systemtime using transponder or internet."
+msgstr ""
+
+msgid "Syrian Arab Republic"
 msgstr ""
 
 msgid "System"
@@ -8467,14 +9376,17 @@ msgstr "Kollektsiooni sisutabel"
 msgid "Tags"
 msgstr "Võtmesõnad"
 
+msgid "Tajikistan"
+msgstr ""
+
+msgid "Tanzania, United Republic of"
+msgstr ""
+
 msgid "Teletext subtitle color"
 msgstr "Teleteksti subtiitrite värv"
 
 msgid "Terrestrial"
 msgstr "Maapealne TV (DVB-T)"
-
-msgid "Terrestrial provider"
-msgstr "DVB-T levitaja"
 
 msgid "Test DiSEqC settings"
 msgstr "Testi DiSEqC seadeid"
@@ -8498,6 +9410,10 @@ msgid "Text color"
 msgstr "Teksti värv"
 
 msgid "Thai"
+msgstr "Tai"
+
+#, fuzzy
+msgid "Thailand"
 msgstr "Tai"
 
 msgid ""
@@ -8792,7 +9708,7 @@ msgstr ""
 msgid "This option allows you can config the Colordepth for UHD"
 msgstr ""
 
-msgid "This option allows you can config the Colorimetry for HDR"
+msgid "This option allows you can config the Colorimetry for HDR."
 msgstr ""
 
 msgid "This option allows you enable smoothing filter to control the dithering process."
@@ -8801,10 +9717,25 @@ msgstr ""
 msgid "This option allows you enable the vertical scaler dejagging."
 msgstr ""
 
+msgid "This option allows you show all symbols on display."
+msgstr ""
+
 msgid "This option allows you to boost the blue tones in the picture."
 msgstr ""
 
 msgid "This option allows you to boost the green tones in the picture."
+msgstr ""
+
+msgid "This option allows you to change the virtuell loadspeaker position."
+msgstr ""
+
+msgid "This option allows you to disable or change the virtuell loadspeaker position."
+msgstr ""
+
+msgid "This option allows you to enable 3D surround softlimiter."
+msgstr ""
+
+msgid "This option allows you to enable 3D surround sound."
 msgstr ""
 
 msgid "This option allows you to hide and sort menu entries. When selecting user you can change order and hide menu items via the blue button"
@@ -8825,18 +9756,10 @@ msgstr ""
 msgid "This option allows you to view the old and new settings side by side."
 msgstr ""
 
-#, fuzzy
-msgid "This option configures the general audio delay of Dolby Digital sound tracks."
-msgstr "Määra üldine viiteag Dolby Digital heliga heliribadele."
-
-#, fuzzy
-msgid "This option configures the general audio delay of stereo sound tracks."
-msgstr "Määra üldine viiteag stereo heliga heliribadele."
-
-msgid "This option configures you can enable 3D Surround Sound."
+msgid "This option can be useful for long HDMI cables."
 msgstr ""
 
-msgid "This option configures you can set Auto Volume Level."
+msgid "This option configures you can set auto volume level."
 msgstr ""
 
 msgid "This option set the level of surpression of musquito noise (Musquito Noise is random aliasing as a result of strong compression). Obviously this goes at the cost of picture details."
@@ -9030,6 +9953,9 @@ msgstr "Ajanihke kasutamine pole võimalik!"
 msgid "Timezone"
 msgstr "Ajavöönd"
 
+msgid "Timor-Leste"
+msgstr ""
+
 msgid "Title"
 msgstr "Pealkiri"
 
@@ -9072,6 +9998,12 @@ msgstr ""
 msgid "Toggle infoBar"
 msgstr ""
 
+msgid "Togo"
+msgstr ""
+
+msgid "Tokelau"
+msgstr ""
+
 msgid "Tone amplitude"
 msgstr "Tooni amplituud"
 
@@ -9083,6 +10015,9 @@ msgstr "Toonvalimine"
 
 msgid "Toneburst A/B"
 msgstr "Toonvalimine A/B"
+
+msgid "Tonga"
+msgstr ""
 
 #, fuzzy
 msgid "Top and bottom"
@@ -9134,6 +10069,9 @@ msgstr "Prügikast"
 
 msgid "Tries left:"
 msgstr "Katseid järel:"
+
+msgid "Trinidad and Tobago"
+msgstr ""
 
 msgid "Troubleshoot"
 msgstr ""
@@ -9203,16 +10141,30 @@ msgstr "Tuuneri olek %s"
 msgid "Tuner type"
 msgstr "Tuuneri tüüp"
 
-msgid "Tuning algorithm"
+msgid "Tunisia"
 msgstr ""
+
+#, fuzzy
+msgid "Turkey"
+msgstr "Türgi"
 
 msgid "Turkish"
 msgstr "Türgi"
+
+#, fuzzy
+msgid "Turkmenistan"
+msgstr "Türgi"
+
+msgid "Turks and Caicos Islands"
+msgstr ""
 
 msgid "Turn on the power LED during standby."
 msgstr ""
 
 msgid "Turning step size"
+msgstr ""
+
+msgid "Tuvalu"
 msgstr ""
 
 msgid "Two"
@@ -9257,7 +10209,16 @@ msgstr "USB mälupulk"
 msgid "USB stick"
 msgstr "USB mälupulk"
 
+msgid "Uganda"
+msgstr ""
+
+msgid "Ukraine"
+msgstr ""
+
 msgid "Ukrainian"
+msgstr ""
+
+msgid "Unable to read image number"
 msgstr ""
 
 #, fuzzy, python-format
@@ -9296,17 +10257,22 @@ msgstr "Lapseluku kanali muutmine"
 msgid "Unicable / JESS"
 msgstr "Unicable"
 
-msgid "Unicable LNB"
-msgstr "Unicable LNB"
-
-#, fuzzy
-msgid "Unicable Matrix"
-msgstr "Unicable Matrix"
-
 msgid "Uninstall"
 msgstr "Eemalda"
 
 msgid "Unit"
+msgstr ""
+
+msgid "United Arab Emirates"
+msgstr ""
+
+msgid "United Kingdom of Great Britain and Northern Ireland"
+msgstr ""
+
+msgid "United States Minor Outlying Islands"
+msgstr ""
+
+msgid "United States of America"
 msgstr ""
 
 msgid "Universal LNB"
@@ -9375,6 +10341,9 @@ msgstr ""
 msgid "Upgrading"
 msgstr "Uuendan"
 
+msgid "Uruguay"
+msgstr ""
+
 #, fuzzy
 msgid "Usage Setup"
 msgstr "Seadistamine"
@@ -9393,6 +10362,9 @@ msgstr "EIT EPG kasutamine, kui see on saadaval."
 
 msgid "Use FreeSat EPG information when it is available."
 msgstr "FreeSat EPG kasutamine, kui see on saadaval."
+
+msgid "Use HDMI pre-emphasis"
+msgstr ""
 
 msgid "Use MHW EPG information when it is available."
 msgstr "MHW EPG kasutamine, kui see on saadaval."
@@ -9509,8 +10481,15 @@ msgstr "Kasutuses tuuner %s"
 msgid "Usually when the subtitle language is the same as the audio language, the subtitles will not be used. Enable this option to allow these subtitles to be used."
 msgstr "Tavaliselt subtiitreid ei näidata, kui nende keel kattub heli keelega. Siin valikus saab selle lubada."
 
+msgid "Uzbekistan"
+msgstr ""
+
 msgid "VCR scart"
 msgstr "VCR scart"
+
+#, fuzzy
+msgid "VLAN connection"
+msgstr "LAN ühendus"
 
 msgid "VMGM (intro trailer)"
 msgstr "VMGM (intro trailer)"
@@ -9519,6 +10498,13 @@ msgid "VOB file"
 msgstr ""
 
 msgid "VU+"
+msgstr ""
+
+#, fuzzy
+msgid "Vanuatu"
+msgstr "juhend"
+
+msgid "Venezuela (Bolivarian Republic of)"
 msgstr ""
 
 msgid "Vertical"
@@ -9592,6 +10578,9 @@ msgstr ""
 msgid "Videocodec, size & format"
 msgstr "Videoformaat"
 
+msgid "Viet Nam"
+msgstr ""
+
 msgid "View Rass interactive..."
 msgstr "Vaata Rass interactive"
 
@@ -9645,6 +10634,12 @@ msgstr "Kuva teletekst"
 
 msgid "View video CD..."
 msgstr "Vaata video CD..."
+
+msgid "Virgin Islands (British)"
+msgstr ""
+
+msgid "Virgin Islands (U.S.)"
+msgstr ""
 
 msgid "Virtual keyboard"
 msgstr "Virtuaalklahvistik"
@@ -9730,6 +10725,9 @@ msgid "Wakeup timer"
 msgstr "Unetaimer"
 
 msgid "Wakeup type"
+msgstr ""
+
+msgid "Wallis and Futuna"
 msgstr ""
 
 #, fuzzy
@@ -9836,6 +10834,9 @@ msgstr "Lääs"
 
 msgid "West limit set"
 msgstr "Lääne piir on määrarud"
+
+msgid "Western Sahara"
+msgstr ""
 
 msgid "What do you want to scan?"
 msgstr "Mida soovid otsida?"
@@ -10098,12 +11099,19 @@ msgstr ""
 msgid "Write error while recording. Disk full?\n"
 msgstr "Kirjutamise viga. Kõvaketas täis?\n"
 
+#, fuzzy
+msgid "Write error!"
+msgstr "Peida veateated kanalivahetusel"
+
 msgid "Write failed!"
 msgstr "Kirjutamine nurjus!"
 
 #, fuzzy
 msgid "Write to /tmp/positionersetup.log"
 msgstr "/tmp/positionersetup.logi loomine nurjus: "
+
+msgid "Wrong Bootsettings detected!"
+msgstr ""
 
 msgid "YCbCr420"
 msgstr ""
@@ -10129,6 +11137,10 @@ msgstr "kollane"
 
 msgid "Yellow DVB subtitles"
 msgstr "Kollased DVB subtiitrid"
+
+#, fuzzy
+msgid "Yemen"
+msgstr "Liikumine"
 
 msgid "Yes"
 msgstr "Jah"
@@ -10223,6 +11235,11 @@ msgstr "Plaadile saab kirjutada ainult vastuvõtja salvestusi!"
 msgid "You can remove this plugin."
 msgstr "Selle laienduse saab eemaldada."
 
+msgid ""
+"You can select with yellow the OnlineFlash Image\n"
+" or select Recovery to create a USB Disk Image for clean Install."
+msgstr ""
+
 msgid "You cannot delete this!"
 msgstr "Seda ei saa kustutada!"
 
@@ -10307,10 +11324,6 @@ msgid ""
 "Do you want to remove now ?"
 msgstr ""
 
-#, python-format
-msgid "Your %s %s will freeze during the flashing process.\n"
-msgstr ""
-
 #, fuzzy
 msgid "Your GigaBlue is shutting down. Please stand by..."
 msgstr "Vastuvõtja lülitub välja. Oota"
@@ -10328,8 +11341,20 @@ msgstr ""
 msgid "Your Receiver isn't connected to the internet properly. Please check it and try again."
 msgstr ""
 
+msgid "Your STB will freeze during the flashing process.\n"
+msgstr ""
+
 msgid "Your backup succeeded. We will now continue to explain the further upgrade process."
 msgstr "Varukoopia valmis. Me informeerime edasistest uuenduste käigust."
+
+#, python-format
+msgid ""
+"Your box needs Bootloaderversion(s)\n"
+"\n"
+"%s\n"
+"\n"
+"to make compatible with Bootoptions!"
+msgstr ""
 
 msgid "Your collection exceeds the size of a single layer medium, you will need a blank dual layer DVD!"
 msgstr "Kogu valik ei mahu ühekihilisele plaadile, vaja on tühja kahekihilist DVD plaati!"
@@ -10426,6 +11451,9 @@ msgstr ""
 "\n"
 "Vali, mida soovid teha edasi."
 
+msgid "Zambia"
+msgstr ""
+
 msgid "Zap"
 msgstr "Mine kanalile"
 
@@ -10469,6 +11497,15 @@ msgstr ""
 msgid "Zap-History Browser"
 msgstr "Kataloogi brauser"
 
+msgid "Zgemma H.S/H.2S/H.2H/H5/H7"
+msgstr ""
+
+msgid "Zgemma Star S/2S/H1/H2"
+msgstr ""
+
+msgid "Zimbabwe"
+msgstr ""
+
 msgid "Zoom from left"
 msgstr ""
 
@@ -10489,6 +11526,9 @@ msgstr "See süsteem ei toeta ext4"
 #, fuzzy
 msgid "[Image Info]\n"
 msgstr "Tarkvara: "
+
+msgid "[a]"
+msgstr ""
 
 msgid "[alternative edit]"
 msgstr "[lisavõimaluste lisamine ja kustutamine]"
@@ -10664,6 +11704,9 @@ msgstr "ballett"
 
 #, python-format
 msgid "bc%s"
+msgstr ""
+
+msgid "because of the used filesystem the backup\n"
 msgstr ""
 
 msgid "better"
@@ -10918,6 +11961,9 @@ msgstr " laiendused."
 #, fuzzy
 msgid "external loopthrough to"
 msgstr "läbiviik kuni"
+
+msgid "extra wide"
+msgstr ""
 
 #, fuzzy
 msgid "failed"
@@ -11187,6 +12233,10 @@ msgid "no gateway found"
 msgstr "moodulit ei leitud"
 
 #, fuzzy
+msgid "no image found"
+msgstr "moodulit ei leitud"
+
+#, fuzzy
 msgid "no log entrys"
 msgstr "Esita"
 
@@ -11219,14 +12269,15 @@ msgstr "ei ole häälestatud"
 msgid "not locked"
 msgstr "pole lukustatud"
 
+#, fuzzy
+msgid "not running"
+msgstr "Mootori pööramise kiirus"
+
 msgid "not supported"
 msgstr "pole toetatud"
 
 #, fuzzy
 msgid "not tested"
-msgstr "pole lukustatud"
-
-msgid "not used"
 msgstr "pole lukustatud"
 
 msgid "not_tested"
@@ -11248,6 +12299,9 @@ msgid "off or wpa2 on"
 msgstr ""
 
 msgid "offset is"
+msgstr ""
+
+msgid "ofgwrite flashing ready.\n"
 msgstr ""
 
 msgid ""
@@ -11297,12 +12351,18 @@ msgstr "algupärane keel"
 msgid "pass"
 msgstr "lubatud"
 
+msgid "pausing"
+msgstr ""
+
 msgid "performing arts"
 msgstr ""
 
 #, fuzzy
 msgid "picons"
 msgstr "Ikoonid"
+
+msgid "placeholder message 2"
+msgstr ""
 
 msgid "play as picture in picture"
 msgstr "näita kanal pilt-pildis"
@@ -11312,6 +12372,10 @@ msgstr "näita peaaknas"
 
 msgid "please press OK when ready"
 msgstr "vajuta OK kui valmis"
+
+#, fuzzy
+msgid "please press exit to go back to the menu.\n"
+msgstr "Jätkamiseks vajuta OK ."
 
 #, fuzzy
 msgid "please wait"
@@ -11358,10 +12422,6 @@ msgstr "salvestus"
 
 msgid "red"
 msgstr "punane"
-
-#, fuzzy
-msgid "reliable"
-msgstr "luba"
 
 msgid "religion"
 msgstr "religioon"
@@ -11423,6 +12483,9 @@ msgstr "korda esitusloendit"
 msgid "repeated"
 msgstr "korduvalt"
 
+msgid "reserved for future use"
+msgstr ""
+
 msgid "restore deleted userbouquets"
 msgstr ""
 
@@ -11447,12 +12510,9 @@ msgstr "romantika"
 msgid "root and kernel"
 msgstr ""
 
-msgid ""
-"satellites.xml not found or corrupted!\n"
-"It is possible to watch TV,\n"
-"but it's not possible to search for new TV channels\n"
-"or to configure tuner settings"
-msgstr ""
+#, fuzzy
+msgid "running"
+msgstr "aiandus"
 
 msgid "save last directory on exit"
 msgstr "pea väljumisel asukoht meeles"
@@ -11493,6 +12553,10 @@ msgstr ""
 #, fuzzy
 msgid "service is in bouquet parental protection"
 msgstr "eemalda lapselukk"
+
+#, fuzzy
+msgid "service off-air"
+msgstr "kanali PIN"
 
 msgid "set as startup service"
 msgstr "käivita vastuvõtja sellel kanalil"
@@ -11588,6 +12652,10 @@ msgstr "alusta lõiget siit"
 msgid "start directory"
 msgstr "juur kaust"
 
+#, fuzzy
+msgid "starts in a few seconds"
+msgstr "Alusta võrguta dekodeerimist"
+
 msgid "stepsize"
 msgstr "sammu suurus"
 
@@ -11657,10 +12725,6 @@ msgstr "ülal"
 msgid "tourism/travel"
 msgstr ""
 
-#, fuzzy
-msgid "traditional (fast)"
-msgstr "folk/rahvamuusika"
-
 msgid "true"
 msgstr "tõene"
 
@@ -11722,10 +12786,19 @@ msgstr ""
 msgid "white"
 msgstr "valge"
 
+msgid "wide"
+msgstr ""
+
 msgid "width"
 msgstr "laius"
 
+msgid "will take about 1-4 minutes for this system.\n"
+msgstr ""
+
 msgid "will take about 3-12 minutes for this system.\n"
+msgstr ""
+
+msgid "will take about 30 minutes for this system.\n"
 msgstr ""
 
 msgid "winter sport"
@@ -11782,6 +12855,37 @@ msgstr ""
 msgid "zapped"
 msgstr "vahetatud"
 
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "Backup your installed plugins."
+#~ msgstr ""
+#~ "\n"
+#~ "Varukoopia vastuvõtja seadetest."
+
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "Manage extensions or plugins for your Receiver"
+#~ msgstr ""
+#~ "\n"
+#~ "Halda laiendusi"
+
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "Restore your previously installed plugins."
+#~ msgstr ""
+#~ "\n"
+#~ "Taasta vastuvõtja seaded."
+
+#~ msgid ""
+#~ "\n"
+#~ "View, install and remove available or installed packages."
+#~ msgstr ""
+#~ "\n"
+#~ "Vaata, paigalda ja eemalda tarkvara pakette."
+
 #~ msgid "AA"
 #~ msgstr "AA"
 
@@ -11816,6 +12920,10 @@ msgstr "vahetatud"
 #~ msgid "BB"
 #~ msgstr "BB"
 
+#, fuzzy
+#~ msgid "Backup Plugins"
+#~ msgstr "Laiendused"
+
 #~ msgid "Behavior of 'pause' when paused"
 #~ msgstr "Paus-nupu funktsioon"
 
@@ -11837,6 +12945,18 @@ msgstr "vahetatud"
 
 #~ msgid "Changelog"
 #~ msgstr "Muudatuste logi"
+
+#, fuzzy
+#~ msgid "Choose whether AAC sound tracks should be transcoded."
+#~ msgstr "Määra, kas mitmekanaline heli tuleks taandada stereoks."
+
+#, fuzzy
+#~ msgid "Choose whether multi channel sound tracks should be downmixed to stereo."
+#~ msgstr "Määra, kas mitmekanaline heli tuleks taandada stereoks."
+
+#, fuzzy
+#~ msgid "Choose whether multi channel sound tracks should be output as PCM."
+#~ msgstr "Määra, kas mitmekanaline heli tuleks taandada stereoks."
 
 #~ msgid "Coderate HP"
 #~ msgstr "Coderate HP"
@@ -11890,6 +13010,10 @@ msgstr "vahetatud"
 #~ msgid "Dialing:"
 #~ msgstr "Valin numbrit:"
 
+#, fuzzy
+#~ msgid "Diction"
+#~ msgstr "Kirjeldus"
+
 #~ msgid "Disconnect"
 #~ msgstr "Katkesta ühendus"
 
@@ -11928,10 +13052,6 @@ msgstr "vahetatud"
 
 #~ msgid "Enable parental control"
 #~ msgstr "Luba lapselukk"
-
-#, fuzzy
-#~ msgid "FBC Unicable"
-#~ msgstr "Unicable LNB"
 
 #, fuzzy
 #~ msgid "FP Upgrade"
@@ -11975,6 +13095,9 @@ msgstr "vahetatud"
 #, fuzzy
 #~ msgid "Location:"
 #~ msgstr "Asukoht"
+
+#~ msgid "Manage extensions"
+#~ msgstr "Halda laiendusi"
 
 #, fuzzy
 #~ msgid "Mode 1"
@@ -12046,6 +13169,9 @@ msgstr "vahetatud"
 #~ msgid "PIDs"
 #~ msgstr "PIDd"
 
+#~ msgid "Packet management"
+#~ msgstr "Pakkide haldamine"
+
 #~ msgid "Parental control type"
 #~ msgstr "Lapseluku tüüp"
 
@@ -12071,6 +13197,9 @@ msgstr "vahetatud"
 #~ msgid "Press '0' to toggle internal/external PiP."
 #~ msgstr "Sisese ja välise PIP vahetamiseks vajuta '0'."
 
+#~ msgid "Provider to scan"
+#~ msgstr "Levitaja otsinguks"
+
 #~ msgid "Reboot"
 #~ msgstr "Taaskäivitus"
 
@@ -12084,6 +13213,10 @@ msgstr "vahetatud"
 #, fuzzy
 #~ msgid "Restart STB"
 #~ msgstr "Taaskäivita"
+
+#, fuzzy
+#~ msgid "Restore Plugins"
+#~ msgstr "Kustuta laiendusi"
 
 #~ msgid "Restore is running..."
 #~ msgstr "Taastamine..."
@@ -12151,6 +13284,9 @@ msgstr "vahetatud"
 
 #~ msgid "Temperature and fan control"
 #~ msgstr "Temp. ja ventilaatori seaded"
+
+#~ msgid "Terrestrial provider"
+#~ msgstr "DVB-T levitaja"
 
 #~ msgid "The DVD standard doesn't support H.264 (HDTV) video streams. Do you want to create a special format data DVD (which will not play in stand-alone DVD players) instead?"
 #~ msgstr "DVD standard ei toeta H.264 (HDTV) video voogesitust. Kas soovite luua eri vormingus andmete (data) DVD, mida teised DVD mängijad ei mängi?"
@@ -12221,6 +13357,13 @@ msgstr "vahetatud"
 
 #~ msgid "Uncommitted DiSEqC command"
 #~ msgstr "Uncommitted DiSEqC-käsk"
+
+#~ msgid "Unicable LNB"
+#~ msgstr "Unicable LNB"
+
+#, fuzzy
+#~ msgid "Unicable Matrix"
+#~ msgstr "Unicable Matrix"
 
 #~ msgid "Update channel list only"
 #~ msgstr "Uuenda ainult kanalinimekiri"
@@ -12302,11 +13445,15 @@ msgstr "vahetatud"
 #~ msgid "not avaible"
 #~ msgstr "pole saadaval"
 
+#~ msgid "not used"
+#~ msgstr "pole lukustatud"
+
+#, fuzzy
+#~ msgid "reliable"
+#~ msgstr "luba"
+
 #~ msgid "select movie"
 #~ msgstr "vali salvestis"
-
-#~ msgid "service PIN"
-#~ msgstr "kanali PIN"
 
 #, fuzzy
 #~ msgid "shutdown"
@@ -12319,12 +13466,12 @@ msgstr "vahetatud"
 #~ msgid "standby"
 #~ msgstr "Ooterežiim"
 
+#, fuzzy
+#~ msgid "traditional (fast)"
+#~ msgstr "folk/rahvamuusika"
+
 #~ msgid "tuner is not supported"
 #~ msgstr "tuuner pole toetatud"
-
-#, fuzzy
-#~ msgid "unknown error"
-#~ msgstr "tundmatu kanal"
 
 #~ msgid "wait for ci..."
 #~ msgstr "ci ootel..."
