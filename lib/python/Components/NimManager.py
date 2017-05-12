@@ -5,7 +5,7 @@ from Tools.BoundFunction import boundFunction
 
 from config import config, ConfigSubsection, ConfigSelection, ConfigFloat, ConfigSatlist, ConfigYesNo, ConfigInteger, ConfigSubList, ConfigNothing, ConfigSubDict, ConfigOnOff, ConfigDateTime, ConfigText
 
-from enigma import eDVBSatelliteEquipmentControl as secClass, eDVBSatelliteLNBParameters as lnbParam, eDVBSatelliteDiseqcParameters as diseqcParam, eDVBSatelliteSwitchParameters as switchParam, eDVBSatelliteRotorParameters as rotorParam, eDVBResourceManager, eDVBDB, eEnv
+from enigma import eDVBSatelliteEquipmentControl as secClass, eDVBSatelliteDiseqcParameters as diseqcParam, eDVBSatelliteSwitchParameters as switchParam, eDVBSatelliteRotorParameters as rotorParam, eDVBResourceManager, eDVBDB, eEnv
 
 from time import localtime, mktime
 from datetime import datetime
@@ -670,11 +670,29 @@ class NimManager:
 			return self.transpondersatsc[self.atscList[nimConfig.atsc.index][0]]
 		return []
 
+	def getCablesList(self):
+		return self.cablesList
+
+	def getCablesCountrycodeList(self):
+		countrycodes = []
+		for x in self.cablesList:
+			if x[2] and x[2] not in countrycodes:
+				countrycodes.append(x[2])
+		return countrycodes
+
+	def getCablesByCountrycode(self, countrycode):
+		if countrycode:
+			return [x for x in self.cablesList if x[2] == countrycode]
+		return []
+
 	def getCableDescription(self, nim):
-		return self.cablesList[config.Nims[nim].scan_provider.index][0]
+		return self.cablesList[config.Nims[nim].cable.scan_provider.index][0]
 
 	def getCableFlags(self, nim):
-		return self.cablesList[config.Nims[nim].scan_provider.index][1]
+		return self.cablesList[config.Nims[nim].cable.scan_provider.index][1]
+		
+	def getCableCountrycode(self, nim):
+		return self.cablesList[config.Nims[nim].cable.scan_provider.index][2]
 
 	def getTerrestrialsList(self):
 		return self.terrestrialsList
@@ -684,7 +702,6 @@ class NimManager:
 		for x in self.terrestrialsList:
 			if x[2] and x[2] not in countrycodes:
 				countrycodes.append(x[2])
-		countrycodes.sort()
 		return countrycodes
 
 	def getTerrestrialsByCountrycode(self, countrycode):
@@ -1452,7 +1469,7 @@ def InitNimManager(nimmgr, update_slots = []):
 			possible_scan_types = [("bands", _("Frequency bands")), ("steps", _("Frequency steps"))]
 			if list:
 				possible_scan_types.append(("provider", _("Provider")))
-				nim.cable.scan_provider = ConfigSelection(default = "0", choices = list)
+				nim.cable.scan_provider = ConfigSelection(choices = list)
 			nim.cable.config_scan_details = ConfigYesNo(default = False)
 			nim.cable.scan_type = ConfigSelection(default = "bands", choices = possible_scan_types)
 			nim.cable.scan_band_EU_VHF_I = ConfigYesNo(default = True)
