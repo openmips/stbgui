@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 openMips\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-10 18:08+0100\n"
+"POT-Creation-Date: 2017-05-10 14:19+0200\n"
 "PO-Revision-Date: 2015-01-29 17:40+0200\n"
 "Last-Translator: arn354 <arn354@email.de>\n"
 "Language-Team: none\n"
@@ -53,14 +53,6 @@ msgstr ""
 #, fuzzy
 msgid ""
 "\n"
-"Backup your installed plugins."
-msgstr ""
-"\n"
-"Backup av din mottagares inställningar."
-
-#, fuzzy
-msgid ""
-"\n"
 "Backup your running Receiver image to HDD or USB."
 msgstr ""
 "\n"
@@ -86,14 +78,6 @@ msgid ""
 msgstr ""
 "\n"
 "Online uppdatering av din mottagares mjukvara."
-
-#, fuzzy
-msgid ""
-"\n"
-"Manage extensions or plugins for your Receiver"
-msgstr ""
-"\n"
-"Hantera utökningar eller plugins för din mottagare"
 
 #
 msgid ""
@@ -133,14 +117,6 @@ msgstr ""
 "\n"
 "Återskapa med datum på backup."
 
-#, fuzzy
-msgid ""
-"\n"
-"Restore your previously installed plugins."
-msgstr ""
-"\n"
-"Återställ din mottagares inställningar."
-
 #
 msgid ""
 "\n"
@@ -164,14 +140,6 @@ msgid ""
 "\n"
 "Timer '%s' disabled!"
 msgstr ""
-
-#
-msgid ""
-"\n"
-"View, install and remove available or installed packages."
-msgstr ""
-"\n"
-"Visa, installera och ta bort tillgängliga eller installerade paket."
 
 #, fuzzy
 msgid ""
@@ -232,6 +200,11 @@ msgid " (lower than any auto)"
 msgstr ""
 
 #
+#, fuzzy
+msgid " (unknown mode)"
+msgstr "okänd kanal"
+
+#
 msgid " extensions."
 msgstr " utökningar."
 
@@ -254,12 +227,20 @@ msgid "%.0f MB"
 msgstr ""
 
 #, python-format
+msgid "%.0f kB"
+msgstr ""
+
+#, python-format
 msgid "%.2f GB"
 msgstr ""
 
 #, fuzzy, python-format
 msgid "%02d:%02d"
 msgstr "%2d:%02d"
+
+#, python-format
+msgid "%03d MB"
+msgstr ""
 
 #. TRANSLATORS: short time representation hour:minute
 #, python-format
@@ -270,6 +251,10 @@ msgstr "%2d:%02d"
 #, python-format
 msgid "%2d:%02d:%02d"
 msgstr "%2d:%02d:%02d"
+
+#, python-format
+msgid "%3.01f dB"
+msgstr ""
 
 msgid "%A %d %B"
 msgstr "%A %d %B"
@@ -290,6 +275,10 @@ msgstr "%H:%M"
 msgid "%Y-%m-%d %H:%M"
 msgstr "%d-%b-%Y %-H:%M"
 
+#, fuzzy
+msgid "%Y-%m-%d %H:%M:%S"
+msgstr "%d-%b-%Y %-H:%M"
+
 #. TRANSLATORS: short date representation short dayname daynum short monthname in strftime() format! See 'man strftime'
 msgid "%a %e/%m"
 msgstr "%a %e/%m"
@@ -297,6 +286,18 @@ msgstr "%a %e/%m"
 #. TRANSLATORS: long date representation short dayname daynum short monthname hour:minute in strftime() format! See 'man strftime'
 msgid "%a %e/%m  %-H:%M"
 msgstr "%a %e/%m  %-H:%M"
+
+#, python-format
+msgid "%d B"
+msgstr ""
+
+#, python-format
+msgid "%d GB"
+msgstr ""
+
+#, python-format
+msgid "%d MB"
+msgstr ""
 
 #. TRANSLATORS: Intermediate scanning result, '%d' channel(s) have been found so far
 #, python-format
@@ -329,6 +330,10 @@ msgid "%d jobs are running in the background!"
 msgstr "%d jobb körs i bakgrunden!"
 
 #, python-format
+msgid "%d kB"
+msgstr ""
+
+#, python-format
 msgid "%d min"
 msgstr "%d min"
 
@@ -341,6 +346,10 @@ msgstr[1] "%d minuter"
 #, python-format
 msgid "%d minutes"
 msgstr "%d minuter"
+
+#, python-format
+msgid "%d of %d kBytes"
+msgstr ""
 
 #, python-format
 msgid "%d pixel wide"
@@ -378,12 +387,32 @@ msgstr "%d-%m"
 msgid "%d.%02d. %02d:%02d"
 msgstr "%2d:%02d:%02d"
 
+#, python-format
+msgid "%d.%03d GB"
+msgstr ""
+
 msgid "%d.%B %Y"
 msgstr "%d.%B %Y"
+
+#, fuzzy, python-format
+msgid "%d.%d"
+msgstr "%d.%B %Y"
+
+#, fuzzy, python-format
+msgid "%d.%d.%d"
+msgstr "%d.%B %Y"
+
+#, fuzzy, python-format
+msgid "%d:%02d"
+msgstr "%2d:%02d"
 
 #. TRANSLATORS: VFD hour:minute daynum short monthname in strftime() format! See 'man strftime'
 msgid "%k:%M %e/%m"
 msgstr "%k:%M %e/%m"
+
+#, python-format
+msgid "%s %d.%d"
+msgstr ""
 
 #
 #, python-format
@@ -438,6 +467,11 @@ msgid "(show optional DVD audio menu)"
 msgstr "(visa utökad DVD ljudmeny)"
 
 #
+#, fuzzy
+msgid "(unknown)"
+msgstr "okänd"
+
+#
 msgid "* Only available if more than one interface is active."
 msgstr "* Enbart tillgänglig om mer än ett kort är aktivt."
 
@@ -445,6 +479,50 @@ msgstr "* Enbart tillgänglig om mer än ett kort är aktivt."
 #, fuzzy
 msgid "* current animation"
 msgstr "Aktivera nuvarande konfiguration"
+
+msgid ""
+"*** boxmode=1 (Standard) ***\n"
+"\n"
+"+++ Features +++\n"
+"3840x2160p60 10-bit HEVC, 3840x2160p60 8-bit VP9, 1920x1080p60 8-bit AVC,\n"
+"MAIN only (no PIP), Limited display usages, UHD only (no SD),\n"
+"No multi-PIP, No transcoding\n"
+"\n"
+"--- Restrictions ---\n"
+"Decoder 0: 3840x2160p60 10-bit HEVC, 3840x2160p60 8-bit VP9, 1920x1080p60 8-bit AVC\n"
+"OSD Grafic 0: 1080p60 32 bit ARGB\n"
+"Display 0 Encode Restrictions: 3840x2160p60 12-bit 4:2:0 (HDMI),\n"
+"3840x2160p60 12-bit 4:2:2 (HDMI), 3840x2160p60 8-bit 4:4:4 (HDMI),\n"
+"1920x1080p60 (component), Only one display format at a time\n"
+"\n"
+"If you want 1080p60 component, HDMI also needs to be 1080p60."
+msgstr ""
+
+msgid ""
+"*** boxmode=12 (Experimental) ***\n"
+"\n"
+"+++ Features +++\n"
+"3840x2160p50 10-bit decode for MAIN, 1080p25/50i PIP support, HDMI input (if available),\n"
+" UHD display only, No SD display, No transcoding\n"
+"\n"
+"--- Restrictions ---\n"
+"Decoder 0: 3840x2160p50 10-bit HEVC, 3840x2160p50 8-bit VP9,\n"
+"1920x1080p50 8-bit AVC/MPEG\n"
+"Decoder 1: 1920x1080p25/50i 10-bit HEVC, 1920x1080p25/50i 8-bit VP9/AVC/MPEG2,\n"
+"HDMI In (if available), 3840x2160p50\n"
+"OSD Graphic 0 (UHD): 1080p50 32-bit ARGB\n"
+"Window 0 (MAIN/UHD): Limited display capabilities, 1080i50 10-bit de-interlacing\n"
+"Multi-PIP mode (3x): Enigma2 supported no multi-PIP\n"
+"Window 1 (PIP/UHD) (Enigma2 PIP Mode): Up to 1/2 x 1/2 screen display, 576i50 de-interlacing\n"
+"Display 0 (UHD) Encode Restrictions: 3840x2160p50"
+msgstr ""
+
+msgid "-NO SERVICE\n"
+msgstr ""
+
+#, python-format
+msgid "-SERVICE ERROR:%d\n"
+msgstr ""
 
 msgid "/media/custom"
 msgstr ""
@@ -465,9 +543,6 @@ msgstr "startbibliotek"
 #
 msgid "0"
 msgstr "0"
-
-msgid "0 V"
-msgstr ""
 
 #
 msgid "1"
@@ -543,6 +618,12 @@ msgstr "2"
 msgid "2048 MB (maximum)"
 msgstr ""
 
+msgid "2160p50 with PiP (Experimental)"
+msgstr ""
+
+msgid "2160p60 without PiP (Standard)"
+msgstr ""
+
 msgid "23.976"
 msgstr "23.976"
 
@@ -578,8 +659,14 @@ msgstr "3"
 
 #
 #, fuzzy
-msgid "3D Surround"
+msgid "3D surround"
 msgstr "Ljud"
+
+msgid "3D surround softlimiter"
+msgstr ""
+
+msgid "3D surround speaker position"
+msgstr ""
 
 msgid "3d mode"
 msgstr "3d läge"
@@ -650,6 +737,9 @@ msgstr "<Timerns senaste filmplats>"
 #
 msgid "<unknown>"
 msgstr "<okänd>"
+
+msgid "=NO STREAM\n"
+msgstr ""
 
 #
 msgid "??"
@@ -776,13 +866,11 @@ msgstr ""
 msgid "AAC downmix"
 msgstr "AC3 / DTS nedmixning"
 
-msgid "AAC transcoding"
-msgstr ""
-
 msgid "AC3"
 msgstr ""
 
-msgid "AC3/DTS downmix"
+#, fuzzy
+msgid "AC3 downmix"
 msgstr "AC3 / DTS nedmixning"
 
 msgid "AGC:"
@@ -988,13 +1076,25 @@ msgstr "Avancerad videoförbättringsinställning"
 msgid "Advanced video setup"
 msgstr "Avancerad videoinställning"
 
+msgid "Afghanistan"
+msgstr ""
+
 #
 msgid "After event"
 msgstr "Efter program"
 
+msgid "Aland Islands"
+msgstr ""
+
+msgid "Albania"
+msgstr ""
+
 #
 msgid "Album"
 msgstr "Album"
+
+msgid "Algeria"
+msgstr ""
 
 msgid "Alignment of events"
 msgstr "Placering av program"
@@ -1057,6 +1157,9 @@ msgstr "inta viloläge"
 msgid "Alternative"
 msgstr "Lägg till alternativ"
 
+msgid "Alternative Image 1 partition for boot repair not found."
+msgstr ""
+
 #
 msgid "Alternative numbering mode"
 msgstr "Alternativt numreringsläge"
@@ -1075,6 +1178,9 @@ msgid "Always include ECM in recordings"
 msgstr ""
 
 msgid "Always include ECM messages in recordings. This overrides the individual timer settings globally. It allows recordings to be always decrypted afterwards (sometimes called offline decoding), if supported by your receiver. Default: off."
+msgstr ""
+
+msgid "American Samoa"
 msgstr ""
 
 #
@@ -1097,6 +1203,15 @@ msgstr "Ett okänt fel uppstod!"
 msgid "And will put your receiver in standby over "
 msgstr "Din mottagare kommer att sättas i viloläge om"
 
+msgid "Andorra"
+msgstr ""
+
+msgid "Angola"
+msgstr ""
+
+msgid "Anguilla"
+msgstr ""
+
 #, fuzzy
 msgid "Animation Setup"
 msgstr "Motorinstallation"
@@ -1110,6 +1225,12 @@ msgstr "Hastigheter för slowmotion"
 #, fuzzy
 msgid "Animations"
 msgstr "Information"
+
+msgid "Antarctica"
+msgstr ""
+
+msgid "Antigua and Barbuda"
+msgstr ""
 
 msgid "Any activity"
 msgstr "Vilken aktivitet som helst"
@@ -1209,12 +1330,21 @@ msgstr ""
 msgid "Are you sure you want to save the EPG Cache to:\n"
 msgstr "Är du säker på att du vill avsluta den här guiden?"
 
+msgid "Argentina"
+msgstr ""
+
+msgid "Armenia"
+msgstr ""
+
 #
 msgid "Artist"
 msgstr "Artist"
 
 msgid "Arts/Culture"
 msgstr "konst/kultur"
+
+msgid "Aruba"
+msgstr ""
 
 msgid "As defined by the skin"
 msgstr ""
@@ -1266,11 +1396,11 @@ msgstr ""
 msgid "Audio"
 msgstr "Ljud"
 
-msgid "Audio Auto Volume Level"
-msgstr ""
-
 msgid "Audio PID"
 msgstr "Ljud PID"
+
+msgid "Audio auto volume level"
+msgstr ""
 
 #
 #, fuzzy
@@ -1302,6 +1432,15 @@ msgstr "Ladda ner plugins"
 #, fuzzy
 msgid "Audio settings"
 msgstr "Ändra inställningar"
+
+#
+#, fuzzy
+msgid "Australia"
+msgstr "Italienska"
+
+#, fuzzy
+msgid "Austria"
+msgstr "hästsport"
 
 #
 msgid "Author: "
@@ -1378,6 +1517,9 @@ msgstr "håller på att starta"
 msgid "Available format variables"
 msgstr "Tillgängliga format variabler"
 
+msgid "Azerbaijan"
+msgstr ""
+
 #
 msgid "B"
 msgstr "B"
@@ -1452,11 +1594,6 @@ msgid "Backup Mode"
 msgstr "Backup klar."
 
 #
-#, fuzzy
-msgid "Backup Plugins"
-msgstr "Plugins"
-
-#
 msgid "Backup completed."
 msgstr "Backup klar."
 
@@ -1472,6 +1609,12 @@ msgstr "Backup pågår..."
 msgid "Backup system settings"
 msgstr "Backup av systeminställningar"
 
+msgid "Bahamas"
+msgstr ""
+
+msgid "Bahrain"
+msgstr ""
+
 #
 msgid "Band"
 msgstr "Band"
@@ -1479,6 +1622,12 @@ msgstr "Band"
 #
 msgid "Bandwidth"
 msgstr "Bandbredd"
+
+msgid "Bangladesh"
+msgstr ""
+
+msgid "Barbados"
+msgstr ""
 
 #
 #, fuzzy
@@ -1511,6 +1660,24 @@ msgstr "Beteende när en film stoppas"
 msgid "Behavior when a movie reaches the end"
 msgstr "Beteende när en film slutar"
 
+msgid "Belarus"
+msgstr ""
+
+msgid "Belgium"
+msgstr ""
+
+msgid "Belize"
+msgstr ""
+
+msgid "Benin"
+msgstr ""
+
+msgid "Bermuda"
+msgstr ""
+
+msgid "Bhutan"
+msgstr ""
+
 msgid "Big PiP"
 msgstr ""
 
@@ -1531,6 +1698,12 @@ msgstr "Blockera brusreducering"
 msgid "Blue"
 msgstr ""
 
+msgid "Bolivia (Plurinational State of)"
+msgstr ""
+
+msgid "Bonaire, Sint Eustatius and Saba"
+msgstr ""
+
 #
 msgid "Bookmarks"
 msgstr "Bokmärken"
@@ -1543,20 +1716,46 @@ msgstr ""
 msgid "Boost green"
 msgstr "grön"
 
+#, fuzzy
+msgid "Bosnia and Herzegovina"
+msgstr "Picon och kanalnamn"
+
+msgid "Botswana"
+msgstr ""
+
+msgid "Bouvet Island"
+msgstr ""
+
+msgid "Brazil"
+msgstr ""
+
 #
 msgid "Brightness"
 msgstr "Ljusstyrka"
+
+msgid "British Indian Ocean Territory"
+msgstr ""
 
 #, fuzzy
 msgid "Broadcast:"
 msgstr "direktsändning"
 
+msgid "Brunei Darussalam"
+msgstr ""
+
 #, python-format
 msgid "Buffering %d%%"
 msgstr ""
 
+#, fuzzy
+msgid "Bulgaria"
+msgstr "Bulgariska"
+
 msgid "Bulgarian"
 msgstr "Bulgariska"
+
+msgid "Burkina Faso"
+msgstr ""
 
 msgid "Burn Bludisc"
 msgstr ""
@@ -1572,6 +1771,9 @@ msgstr "Bränn existerande image till DVD"
 #, fuzzy
 msgid "Burn to medium"
 msgstr "Bränn till DVD"
+
+msgid "Burundi"
+msgstr ""
 
 #
 msgid "Bus: "
@@ -1653,6 +1855,9 @@ msgstr "Kabel"
 msgid "Cable Scan"
 msgstr "Kabelskanning"
 
+msgid "Cabo Verde"
+msgstr ""
+
 #
 msgid "Cache thumbnails"
 msgstr "Buffra miniatyrer"
@@ -1669,12 +1874,32 @@ msgstr "Beräkning klar"
 msgid "Calibrate"
 msgstr "Kalibrera"
 
+msgid "Cambodia"
+msgstr ""
+
+msgid "Cameroon"
+msgstr ""
+
 msgid "Can be used for different fps between external subtitles and video."
 msgstr "Kan användas för olika fps mellan externa undertexter och video."
+
+#, python-format
+msgid "Can not repair file %s"
+msgstr ""
+
+#, python-format
+msgid "Can not write file %s"
+msgstr ""
+
+msgid "Canada"
+msgstr ""
 
 #
 msgid "Cancel"
 msgstr "Avbryt"
+
+msgid "Cancelled upon user request"
+msgstr ""
 
 msgid "Cannot determine"
 msgstr "Kan inte avgöra"
@@ -1731,6 +1956,12 @@ msgstr "Kort"
 msgid "Cascade PiP"
 msgstr ""
 
+msgid "Caution, next boot is starts with these settings!"
+msgstr ""
+
+msgid "Cayman Islands"
+msgstr ""
+
 msgid "Celsius"
 msgstr ""
 
@@ -1739,6 +1970,17 @@ msgstr "Centrera DVB-undertexter"
 
 msgid "Center time-labels and remove date"
 msgstr "Centrera tidsmärken och ta bort datum"
+
+msgid "Central African Republic"
+msgstr ""
+
+msgid "Chad"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Change Language"
+msgstr "Språk"
 
 #, fuzzy
 msgid "Change PIN"
@@ -1891,6 +2133,12 @@ msgstr ""
 msgid "Children/Youth"
 msgstr "barn/ungdom"
 
+msgid "Chile"
+msgstr ""
+
+msgid "China"
+msgstr ""
+
 msgid "Chipset: "
 msgstr ""
 
@@ -1908,20 +2156,11 @@ msgstr "Användare - favoritlistor"
 msgid "Choose the location for crash and debuglogs."
 msgstr ""
 
-#, fuzzy
-msgid "Choose whether AAC sound tracks should be transcoded."
-msgstr "Konfigurera om flerkanals ljudspår ska mixas ned till stereo."
-
-#, fuzzy
-msgid "Choose whether multi channel sound tracks should be downmixed to stereo."
-msgstr "Konfigurera om flerkanals ljudspår ska mixas ned till stereo."
-
-#, fuzzy
-msgid "Choose whether multi channel sound tracks should be output as PCM."
-msgstr "Konfigurera om flerkanals ljudspår ska mixas ned till stereo."
-
 msgid "Choose which tuner to configure."
 msgstr "Välj vilken tuner som skall konfigureras."
+
+msgid "Christmas Island"
+msgstr ""
 
 #
 #, fuzzy
@@ -1980,6 +2219,9 @@ msgstr "Avsluta BiB med exitknappen"
 msgid "Close title selection"
 msgstr "Stäng titelval"
 
+msgid "Cocos (Keeling) Islands"
+msgstr ""
+
 msgid "Code R. LP-HP & Guard Int."
 msgstr ""
 
@@ -1996,6 +2238,11 @@ msgstr "Samlingsnamn"
 #
 msgid "Collection settings"
 msgstr "Samlingsinställning"
+
+#
+#, fuzzy
+msgid "Colombia"
+msgstr "Färgformat"
 
 #
 #, fuzzy
@@ -2019,6 +2266,11 @@ msgid "Command execution..."
 msgstr "Kommando exekvering..."
 
 #
+#, fuzzy
+msgid "Command line error!"
+msgstr "Kommandoordning"
+
+#
 msgid "Command order"
 msgstr "Kommandoordning"
 
@@ -2034,6 +2286,9 @@ msgstr "Common Interface"
 #
 msgid "Communication"
 msgstr "Kommunikation"
+
+msgid "Comoros"
+msgstr ""
 
 #
 msgid "Compact flash"
@@ -2222,6 +2477,14 @@ msgstr "Konfigurera beteendet på '0' knappen när BiB är aktiv."
 msgid "Configure the gateway."
 msgstr "Konfigurera gatewayen."
 
+#, fuzzy
+msgid "Configure the general audio delay of Dolby Digital sound tracks."
+msgstr "Konfigurera den generella ljudfördröjningen av Dolby Digital ljudspår."
+
+#, fuzzy
+msgid "Configure the general audio delay of stereo sound tracks."
+msgstr "Konfigurera den generella ljudfördröjningen av stereo ljudspår."
+
 msgid "Configure the hard disk drive to go to standby after the specified idle time."
 msgstr "Konfigurera när hårddisken ska gå i viloläge efter angiven tid."
 
@@ -2355,6 +2618,14 @@ msgstr "Konfigurera vilken videoutgång som ska användas."
 msgid "Configure whether (and for how long) a second infobar will be shown when OK is pressed twice. The second infobar contains additional information about the current channel."
 msgstr "Konfigurera om (och hur länge) den andra infobalken visas när du trycker på OK två gånger. Den andra infobalken innehåller ytterligare information om den aktuella kanalen."
 
+#, fuzzy
+msgid "Configure whether a simple second infobar will be shown instead of the regular one."
+msgstr "Konfigurera om flerkanals ljudspår ska mixas ned till stereo."
+
+#, fuzzy
+msgid "Configure whether multi channel PCM sound should be enabled."
+msgstr "Konfigurera om flerkanals ljudspår ska mixas ned till stereo."
+
 msgid "Configure whether multi channel sound tracks should be downmixed to stereo."
 msgstr "Konfigurera om flerkanals ljudspår ska mixas ned till stereo."
 
@@ -2409,6 +2680,12 @@ msgid "Configuring"
 msgstr "Konfigurering"
 
 msgid "Conflict not resolved!"
+msgstr ""
+
+msgid "Congo"
+msgstr ""
+
+msgid "Congo (Democratic Republic of the)"
 msgstr ""
 
 #
@@ -2494,8 +2771,17 @@ msgstr "Konvertera ext3 till ext4"
 msgid "Converting ext3 to ext4..."
 msgstr "Konverterar ext3 till ext4..."
 
+msgid "Cook Islands"
+msgstr ""
+
 msgid "Copy"
 msgstr "Kopiera"
+
+msgid "Costa Rica"
+msgstr ""
+
+msgid "Cote d'Ivoire"
+msgstr ""
 
 msgid "Could not find installed channel list."
 msgstr "Det gick inte att hitta den installerade kanallistan."
@@ -2553,8 +2839,24 @@ msgid "Creating partition"
 msgstr "Skapar partition"
 
 #
+#, fuzzy
+msgid "Croatia"
+msgstr "Kroatiska"
+
+#
 msgid "Croatian"
 msgstr "Kroatiska"
+
+msgid "Cuba"
+msgstr ""
+
+msgid "Curacao"
+msgstr ""
+
+#
+#, fuzzy, python-format
+msgid "Current Bootsettings: %s (%s)%s"
+msgstr "Nuvarande inställningar:"
 
 msgid "Current CEC address"
 msgstr "Nuvarande CEC adress"
@@ -2638,8 +2940,16 @@ msgstr ""
 msgid "Cylinders: unknown"
 msgstr ""
 
+msgid "Cyprus"
+msgstr ""
+
 #
 msgid "Czech"
+msgstr "Tjeckiska"
+
+#
+#, fuzzy
+msgid "Czechia"
 msgstr "Tjeckiska"
 
 #
@@ -2665,6 +2975,10 @@ msgstr "normal"
 
 msgid "DTS"
 msgstr ""
+
+#, fuzzy
+msgid "DTS downmix"
+msgstr "AC3 / DTS nedmixning"
 
 #
 msgid "DUAL LAYER DVD"
@@ -2743,6 +3057,11 @@ msgstr "Tid/Datum inmatning"
 #, fuzzy
 msgid "Deactivate"
 msgstr "Aktivera BiB"
+
+#
+#, fuzzy
+msgid "Debug to file"
+msgstr "Ta bort fil"
 
 #
 msgid "Deep standby"
@@ -2866,6 +3185,9 @@ msgstr "Raderad"
 msgid "Deleted items"
 msgstr "Raderade objekt"
 
+msgid "Denmark"
+msgstr ""
+
 msgid "Depth"
 msgstr "Djup"
 
@@ -2890,6 +3212,9 @@ msgstr "Avmarkera"
 
 msgid "Details for plugin: "
 msgstr "Detaljer för plugin: "
+
+msgid "Detect next boxes before standby"
+msgstr ""
 
 msgid "Detected HDD:"
 msgstr "Hittad HDD:"
@@ -2975,11 +3300,6 @@ msgstr "DiSEqC port %s: %s"
 #
 msgid "DiSEqC-tester settings"
 msgstr "DiSEqC-Tester inställningar"
-
-#
-#, fuzzy
-msgid "Diction"
-msgstr "Beskrivning"
 
 msgid "Did you see all eight arrow heads?"
 msgstr ""
@@ -3070,6 +3390,11 @@ msgstr "Visa meddelande innan nästa film spelas"
 #
 msgid "Display setup"
 msgstr "Displayinställningar"
+
+#
+#, fuzzy
+msgid "Djibouti"
+msgstr "Om"
 
 #
 msgid "Do not change"
@@ -3217,6 +3542,14 @@ msgid "Do you want to quit the overscan wizard?"
 msgstr "Är du säker på att du vill avsluta den här guiden?"
 
 #, fuzzy
+msgid "Do you want to reboot now with selected image?"
+msgstr "Vill du starta om din mottagare?"
+
+#, fuzzy
+msgid "Do you want to reboot now?"
+msgstr "Vill du starta om din mottagare?"
+
+#, fuzzy
 msgid "Do you want to reboot your Receiver?"
 msgstr "Vill du starta om din mottagare?"
 
@@ -3257,6 +3590,12 @@ msgid "Do you want to upgrade the package:\n"
 msgstr "Vill du uppgradera paketet:\n"
 
 msgid "Domain:"
+msgstr ""
+
+msgid "Dominica"
+msgstr ""
+
+msgid "Dominican Republic"
 msgstr ""
 
 #
@@ -3383,6 +3722,9 @@ msgstr "Öst"
 msgid "East limit set"
 msgstr "Östra gränsen satt"
 
+msgid "Ecuador"
+msgstr ""
+
 #
 msgid "Edit"
 msgstr "Ändra"
@@ -3422,6 +3764,12 @@ msgstr "Ändra url till uppgraderingskälla."
 
 msgid "Education/Science/..."
 msgstr "Utbildning/Vetenskap/..."
+
+msgid "Egypt"
+msgstr ""
+
+msgid "El Salvador"
+msgstr ""
 
 #
 msgid "Electronic Program Guide"
@@ -3619,6 +3967,13 @@ msgstr "Ange kanal pin"
 msgid "Equal to"
 msgstr ""
 
+msgid "Equatorial Guinea"
+msgstr ""
+
+#, fuzzy
+msgid "Eritrea"
+msgstr "Strömmningsförfrågan"
+
 #
 msgid "Error"
 msgstr "Fel"
@@ -3636,6 +3991,10 @@ msgstr "Fel vid körning av plugin"
 msgid "Error formatting disk. The disk may be damaged"
 msgstr ""
 
+#, python-format
+msgid "Error in file %s"
+msgstr ""
+
 #
 #, python-format
 msgid ""
@@ -3646,11 +4005,19 @@ msgstr ""
 "Försöka igen?"
 
 #
+#, fuzzy
+msgid "Estonia"
+msgstr "Estniska"
+
+#
 msgid "Estonian"
 msgstr "Estniska"
 
 msgid "Ethernet network interface"
 msgstr "Ethernet nätverkskort"
+
+msgid "Ethiopia"
+msgstr ""
 
 msgid "Event font size (relative to skin size)"
 msgstr "Programmets fontstorlek (relativt till utseendets storlek)"
@@ -3852,12 +4219,12 @@ msgstr ""
 msgid "F"
 msgstr ""
 
-msgid "F1/F3"
+msgid "F1/F3/F4/F4-TURBO"
 msgstr ""
 
 #
 #, fuzzy
-msgid "FBC SCR (Unicable or JESS)"
+msgid "FBC SCR (Unicable/JESS)"
 msgstr "Unicable"
 
 #
@@ -3915,6 +4282,9 @@ msgstr "Misslyckades med att skriva /tmp/positionersetup.log:"
 msgid "Failed:"
 msgstr "Misslyckades"
 
+msgid "Falkland Islands (Malvinas)"
+msgstr ""
+
 msgid "Fallback remote receiver URL"
 msgstr ""
 
@@ -3927,6 +4297,9 @@ msgid "Fan operation"
 msgstr ""
 
 msgid "Fan speed"
+msgstr ""
+
+msgid "Faroe Islands"
 msgstr ""
 
 #
@@ -3965,8 +4338,18 @@ msgstr ""
 msgid "Favourites"
 msgstr "Favoriter"
 
+msgid "Fiji"
+msgstr ""
+
+#, python-format
+msgid "File '/boot/%s' copy to '/boot/STARTUP' failed!"
+msgstr ""
+
 msgid "File appears to be busy.\n"
 msgstr "Filen verkar vara låst.\n"
+
+msgid "File not found - rename failed!"
+msgstr ""
 
 #
 #, fuzzy
@@ -4003,6 +4386,9 @@ msgstr "Klar med konfigureringen av ditt nätverk"
 #
 msgid "Finished restarting your network"
 msgstr "Klar med omstarten av ditt nätverk"
+
+msgid "Finland"
+msgstr ""
 
 #
 msgid "Finnish"
@@ -4100,9 +4486,24 @@ msgstr ""
 msgid "Frame size in full view"
 msgstr "Ramstorlek i fullskärm"
 
+#, fuzzy
+msgid "France"
+msgstr "romantik"
+
 #
 msgid "French"
 msgstr "Franska"
+
+#
+#, fuzzy
+msgid "French Guiana"
+msgstr "Franska"
+
+msgid "French Polynesia"
+msgstr ""
+
+msgid "French Southern Territories"
+msgstr ""
 
 #
 msgid "Frequency"
@@ -4215,6 +4616,12 @@ msgstr ""
 "GUI måste startas om för nytt utseende\n"
 "Vill du starta om GUI nu?"
 
+msgid "Gabon"
+msgstr ""
+
+msgid "Gambia"
+msgstr ""
+
 #
 msgid "Gateway"
 msgstr "Gateway"
@@ -4239,8 +4646,16 @@ msgstr ""
 msgid "Genre"
 msgstr "Genre"
 
+msgid "Georgia"
+msgstr ""
+
 #
 msgid "German"
+msgstr "Tyska"
+
+#
+#, fuzzy
+msgid "Germany"
 msgstr "Tyska"
 
 msgid "Get your Weather ID on weather.open-store.net"
@@ -4249,6 +4664,12 @@ msgstr ""
 #
 msgid "Getting plugin information. Please wait..."
 msgstr "Hämtar plugininformation. Var vänlig vänta..."
+
+msgid "Ghana"
+msgstr ""
+
+msgid "Gibraltar"
+msgstr ""
 
 msgid "Go down the list"
 msgstr "Gå ner i listan"
@@ -4334,6 +4755,11 @@ msgid "Graphical Multi EPG"
 msgstr "Grafisk Multi EPG"
 
 #
+#, fuzzy
+msgid "Greece"
+msgstr "Grekiska"
+
+#
 msgid "Greek"
 msgstr "Grekiska"
 
@@ -4342,14 +4768,43 @@ msgstr "Grekiska"
 msgid "Green"
 msgstr "Grekiska"
 
+#
+#, fuzzy
+msgid "Greenland"
+msgstr "Grekiska"
+
+msgid "Grenada"
+msgstr ""
+
 msgid "Grow drop"
 msgstr ""
 
 msgid "Grow from left"
 msgstr ""
 
+msgid "Guadeloupe"
+msgstr ""
+
+msgid "Guam"
+msgstr ""
+
 msgid "Guard interval"
 msgstr "Guard intervall"
+
+msgid "Guatemala"
+msgstr ""
+
+msgid "Guernsey"
+msgstr ""
+
+msgid "Guinea"
+msgstr ""
+
+msgid "Guinea-Bissau"
+msgstr ""
+
+msgid "Guyana"
+msgstr ""
 
 msgid "H"
 msgstr ""
@@ -4357,10 +4812,10 @@ msgstr ""
 msgid "HD list"
 msgstr "HD-lista"
 
-msgid "HD2400"
+msgid "HD11/HD51/HD1100/HD1200/HD1265/HD1500/HD500C/HD530C/VS1000/VS1500/et7x00/et8500/et7000mini"
 msgstr ""
 
-msgid "HD51/HD1100/HD1200/et7x00/et8500"
+msgid "HD2400"
 msgstr ""
 
 msgid ""
@@ -4389,12 +4844,23 @@ msgstr "Färgformat"
 msgid "HDMI-CEC"
 msgstr ""
 
+msgid "HDMI-CEC Source Active"
+msgstr ""
+
+msgid "HDMI-CEC Source Inactive"
+msgstr ""
+
 msgid "HDMI-CEC setup"
 msgstr ""
 
 #, fuzzy
 msgid "HI-cleanup for external subtitles"
 msgstr "Fördröjning av externa undertexter"
+
+#
+#, fuzzy
+msgid "Haiti"
+msgstr "Väntar"
 
 msgid "Handle standby from TV"
 msgstr "Hantera standby från TV"
@@ -4436,6 +4902,9 @@ msgstr ""
 #, fuzzy
 msgid "Heads: unknown"
 msgstr "okänd"
+
+msgid "Heard Island and McDonald Islands"
+msgstr ""
 
 msgid "Hebrew"
 msgstr "Hebreiska"
@@ -4497,8 +4966,18 @@ msgstr "Stoppa bild"
 msgid "Hold till locked"
 msgstr "Håll tills låst"
 
+#, fuzzy
+msgid "Holy See"
+msgstr "Motorinstallation"
+
 msgid "Home"
 msgstr "Hem"
+
+msgid "Honduras"
+msgstr ""
+
+msgid "Hong Kong"
+msgstr ""
 
 msgid "Horizontal"
 msgstr "Horisontal"
@@ -4551,6 +5030,11 @@ msgstr "Ungerska"
 
 #
 #, fuzzy
+msgid "Hungary"
+msgstr "Ungerska"
+
+#
+#, fuzzy
 msgid "I"
 msgstr "C"
 
@@ -4580,6 +5064,9 @@ msgstr "ISO-fil är för stor för använt filsystem!"
 #
 msgid "ISO path"
 msgstr "ISO sökväg"
+
+msgid "Iceland"
+msgstr ""
 
 msgid "Icons"
 msgstr "Ikoner"
@@ -4655,6 +5142,12 @@ msgstr "Index"
 
 msgid "Index allocated:"
 msgstr "Index tilldelas:"
+
+msgid "India"
+msgstr ""
+
+msgid "Indonesia"
+msgstr ""
 
 msgid "Inetd recovery"
 msgstr ""
@@ -4898,12 +5391,29 @@ msgstr "Invertera"
 msgid "Ipkg"
 msgstr "Ipkg"
 
+msgid "Iran (Islamic Republic of)"
+msgstr ""
+
+msgid "Iraq"
+msgstr ""
+
+msgid "Ireland"
+msgstr ""
+
 msgid "Is this setting ok?"
 msgstr "Använd dessa inställningar?"
 
 #
 msgid "Is this video mode ok?"
 msgstr "Är detta videoläge ok?"
+
+#
+#, fuzzy
+msgid "Isle of Man"
+msgstr "Typ av sökning"
+
+msgid "Israel"
+msgstr ""
 
 msgid "It follows:"
 msgstr ""
@@ -4919,6 +5429,11 @@ msgstr ""
 msgid "Italian"
 msgstr "Italienska"
 
+#
+#, fuzzy
+msgid "Italy"
+msgstr "Italienska"
+
 msgid "Items per page "
 msgstr "Kanaler per sida vid Normalt läge (PiG)"
 
@@ -4931,11 +5446,23 @@ msgstr ""
 msgid "J"
 msgstr ""
 
+msgid "Jamaica"
+msgstr ""
+
+msgid "Japan"
+msgstr ""
+
+msgid "Jersey"
+msgstr ""
+
 #
 msgid "Job overview"
 msgstr "Arbets Vy"
 
 msgid "Job task(s) are in progress!"
+msgstr ""
+
+msgid "Jordan"
 msgstr ""
 
 msgid "Jump to beginning of list"
@@ -4958,10 +5485,16 @@ msgstr "Gå till föregående markerade position"
 msgid "Just scale"
 msgstr "Bara skala"
 
+msgid "Kazakhstan"
+msgstr ""
+
 msgid "Keep old drive"
 msgstr ""
 
 msgid "Keep service"
+msgstr ""
+
+msgid "Kenya"
 msgstr ""
 
 msgid "Kernel version: "
@@ -4970,6 +5503,9 @@ msgstr "Kernel Version: "
 #, fuzzy, python-format
 msgid "Kernel: %s"
 msgstr "Signal: "
+
+msgid "Key Events"
+msgstr ""
 
 #
 #, fuzzy
@@ -4987,6 +5523,23 @@ msgstr "Tangentbordslayout"
 #
 msgid "Keyboard setup"
 msgstr "Tangentbordsinställning"
+
+msgid "Kiribati"
+msgstr ""
+
+msgid "Korea (Democratic People's Republic of)"
+msgstr ""
+
+msgid "Korea (Republic of)"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Kuwait"
+msgstr "väntar"
+
+msgid "Kyrgyzstan"
+msgstr ""
 
 #
 msgid "LAN adapter"
@@ -5017,6 +5570,9 @@ msgstr "Språk"
 #
 msgid "Language selection"
 msgstr "Välj språk"
+
+msgid "Lao People's Democratic Republic"
+msgstr ""
 
 msgid "Large"
 msgstr ""
@@ -5053,12 +5609,20 @@ msgid "Latitude"
 msgstr "Latitud"
 
 #
+#, fuzzy
+msgid "Latvia"
+msgstr "Lettiska"
+
+#
 msgid "Latvian"
 msgstr "Lettiska"
 
 #
 msgid "Leave DVD player?"
 msgstr "Avsluta DVD Spelare?"
+
+msgid "Lebanon"
+msgstr ""
 
 #
 msgid "Left"
@@ -5070,6 +5634,9 @@ msgstr "Vänster om kanalnamn"
 msgid "Leisure hobbies"
 msgstr "Fritidsintressen"
 
+msgid "Lesotho"
+msgstr ""
+
 #
 #. TRANSLATORS: (aspect ratio policy: black bars on top/bottom) in doubt, keep english term.
 msgid "Letterbox"
@@ -5077,6 +5644,17 @@ msgstr "Letterbox"
 
 msgid "Letterbox zoom"
 msgstr "Letterbox zoom"
+
+msgid "Liberia"
+msgstr ""
+
+msgid "Libya"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Liechtenstein"
+msgstr " utökningar."
 
 #
 msgid "Limit character set for recording filenames"
@@ -5151,6 +5729,11 @@ msgid "Lists reloaded!"
 msgstr ""
 
 #
+#, fuzzy
+msgid "Lithuania"
+msgstr "Litauiska"
+
+#
 msgid "Lithuanian"
 msgstr "Litauiska"
 
@@ -5181,6 +5764,11 @@ msgstr ""
 #, fuzzy
 msgid "Load unlinked userbouquets"
 msgstr "Aktivera flera favoritlistor"
+
+#
+#, fuzzy
+msgid "Local"
+msgstr "Sökväg"
 
 msgid "Local = Flash a image from local path /hdd/images"
 msgstr ""
@@ -5236,6 +5824,10 @@ msgstr "Longitud"
 msgid "Lower Framerate save CPU Time"
 msgstr ""
 
+#, fuzzy
+msgid "Luxembourg"
+msgstr "Luxemburgiska"
+
 msgid "Luxembourgish"
 msgstr "Luxemburgiska"
 
@@ -5267,6 +5859,15 @@ msgstr "MMC kort"
 msgid "MORE"
 msgstr "MER"
 
+msgid "Macao"
+msgstr ""
+
+msgid "Macedonia (the former Yugoslav Republic of)"
+msgstr ""
+
+msgid "Madagascar"
+msgstr ""
+
 #
 msgid "Main menu"
 msgstr "Huvudmeny"
@@ -5284,9 +5885,20 @@ msgstr "Gör denna markör till en 'ut' punkt"
 msgid "Make this mark just a mark"
 msgstr "Behåll denna markör som vanlig markör"
 
-#
-msgid "Manage extensions"
-msgstr "Hantera utökningar"
+msgid "Malawi"
+msgstr ""
+
+msgid "Malaysia"
+msgstr ""
+
+msgid "Maldives"
+msgstr ""
+
+msgid "Mali"
+msgstr ""
+
+msgid "Malta"
+msgstr ""
 
 #
 msgid "Manage your receiver's software"
@@ -5341,6 +5953,22 @@ msgstr ""
 msgid "Mark service to hide VBI line"
 msgstr ""
 
+msgid "Marshall Islands"
+msgstr ""
+
+msgid "Martinique"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Mauritania"
+msgstr "Litauiska"
+
+#
+#, fuzzy
+msgid "Mauritius"
+msgstr "Favoriter"
+
 msgid "Max memory positions"
 msgstr ""
 
@@ -5352,6 +5980,9 @@ msgstr "Max. Bitrate: "
 #, fuzzy
 msgid "Maybe the reason that recording is currently running. Please stop the recording before trying to configure the positioner."
 msgstr "En inspelning pågår. Vänligen avbryt den innan du försöker konfigurera motorn."
+
+msgid "Mayotte"
+msgstr ""
 
 #
 msgid "Media player"
@@ -5403,6 +6034,17 @@ msgstr "Meddelande"
 msgid "Message..."
 msgstr "Meddelande..."
 
+#
+#, fuzzy
+msgid "Messages"
+msgstr "Meddelande"
+
+msgid "Mexico"
+msgstr ""
+
+msgid "Micronesia (Federated States of)"
+msgstr ""
+
 msgid "MiniTV"
 msgstr ""
 
@@ -5421,12 +6063,6 @@ msgstr "Minimum ålder %d år"
 
 msgid "Minimum send interval"
 msgstr "Minsta sändintervall"
-
-#, python-format
-msgid ""
-"Misconfigured unicable connection from tuner %s to tuner %s!\n"
-"Tuner %s option \"connected to\" are disabled now"
-msgstr ""
 
 msgid "Missing "
 msgstr "Saknad"
@@ -5468,6 +6104,9 @@ msgstr "Modulering"
 msgid "Modulator"
 msgstr "Modulator"
 
+msgid "Moldova (Republic of)"
+msgstr ""
+
 #
 msgid "Mon"
 msgstr "Mån"
@@ -5476,9 +6115,24 @@ msgstr "Mån"
 msgid "Mon-Fri"
 msgstr "Mån-Fre"
 
+msgid "Monaco"
+msgstr ""
+
 #
 msgid "Monday"
 msgstr "Måndag"
+
+msgid "Mongolia"
+msgstr ""
+
+msgid "Montenegro"
+msgstr ""
+
+msgid "Montserrat"
+msgstr ""
+
+msgid "Morocco"
+msgstr ""
 
 #
 msgid "Mosquito noise reduction"
@@ -5610,6 +6264,9 @@ msgstr "Flyttar till position"
 msgid "Moving west ..."
 msgstr "Flyttar väst..."
 
+msgid "Mozambique"
+msgstr ""
+
 #
 msgid "Multi EPG"
 msgstr "Multi EPG"
@@ -5621,8 +6278,17 @@ msgstr "Visa multikanal EPG"
 msgid "Multi-EPG bouquet selection"
 msgstr "Multi-EPG favoritlisteval"
 
+#
 #, fuzzy
-msgid "Multichannel as PCM"
+msgid "MultiBoot"
+msgstr "Multisat"
+
+#, fuzzy
+msgid "MultiBoot Selector"
+msgstr "Multi-EPG favoritlisteval"
+
+#, fuzzy
+msgid "Multichannel PCM"
 msgstr "Visa multikanal EPG"
 
 #
@@ -5646,6 +6312,9 @@ msgstr "Musik/Ballett/Dans"
 #
 msgid "Mute"
 msgstr "Ljud av"
+
+msgid "Myanmar"
+msgstr ""
 
 msgid "N/A"
 msgstr "N/A"
@@ -5695,6 +6364,9 @@ msgstr "NTSC"
 msgid "Name"
 msgstr "Namn"
 
+msgid "Name already exists - rename failed!"
+msgstr ""
+
 #
 msgid "Nameserver"
 msgstr "Namnserver"
@@ -5715,7 +6387,19 @@ msgstr "Namnserverinstallation"
 msgid "Namespace"
 msgstr "Namnrymd"
 
+msgid "Namibia"
+msgstr ""
+
+msgid "Nauru"
+msgstr ""
+
+msgid "Nepal"
+msgstr ""
+
 msgid "NetSpeed:"
+msgstr ""
+
+msgid "Netherlands"
 msgstr ""
 
 #
@@ -5809,7 +6493,13 @@ msgstr "denna inspelning"
 msgid "New"
 msgstr "Ny"
 
+msgid "New Caledonia"
+msgstr ""
+
 msgid "New Packages"
+msgstr ""
+
+msgid "New Zealand"
 msgstr ""
 
 msgid "News Current Affairs"
@@ -5822,6 +6512,21 @@ msgstr "Nästa"
 msgctxt "now/next: 'next' event label"
 msgid "Next"
 msgstr "Nästa"
+
+msgid "Next boot will start from Image 1."
+msgstr ""
+
+msgid "Nicaragua"
+msgstr ""
+
+msgid "Niger"
+msgstr ""
+
+msgid "Nigeria"
+msgstr ""
+
+msgid "Niue"
+msgstr ""
 
 #
 msgid "No"
@@ -6040,12 +6745,23 @@ msgstr "Inga"
 msgid "Nonlinear"
 msgstr "Ej linjär"
 
+msgid "Norfolk Island"
+msgstr ""
+
 msgid "Normal mode"
 msgstr "Normalt läge"
 
 #
 msgid "North"
 msgstr "Nord"
+
+msgid "Northern Mariana Islands"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Norway"
+msgstr "Norska"
 
 #
 msgid "Norwegian"
@@ -6176,6 +6892,9 @@ msgstr "Avkodningsfördröjning offline (ms)"
 msgid "Ok"
 msgstr "Ok"
 
+msgid "Oman"
+msgstr ""
+
 #
 msgid "On"
 msgstr "På"
@@ -6196,6 +6915,11 @@ msgstr "En"
 #, fuzzy
 msgid "One partition"
 msgstr "Skapar partition"
+
+#
+#, fuzzy
+msgid "Online"
+msgstr "Ej linjär"
 
 msgid "Online = Download a image and flash it"
 msgstr ""
@@ -6383,19 +7107,33 @@ msgid "Packages upgraded"
 msgstr "Söker efter uppdateringar"
 
 #
-msgid "Packet management"
-msgstr "Pakethantering"
-
-#
 msgid "Packet manager"
 msgstr "Pakethanterare"
+
+msgid "Pakistan"
+msgstr ""
+
+msgid "Palau"
+msgstr ""
+
+msgid "Palestine, State of"
+msgstr ""
 
 #
 #. TRANSLATORS: (aspect ratio policy: cropped content on left/right) in doubt, keep english term
 msgid "Pan&scan"
 msgstr "Pan&Scan"
 
+msgid "Panama"
+msgstr ""
+
 msgid "Panic to"
+msgstr ""
+
+msgid "Papua New Guinea"
+msgstr ""
+
+msgid "Paraguay"
 msgstr ""
 
 #
@@ -6462,6 +7200,12 @@ msgstr "Radera alla borttagna objekt permanent"
 msgid "Persian"
 msgstr "Persiska"
 
+msgid "Peru"
+msgstr ""
+
+msgid "Philippines"
+msgstr ""
+
 msgid "Phone"
 msgstr ""
 
@@ -6493,6 +7237,9 @@ msgstr "Svarta kanter"
 #
 msgid "Pilot"
 msgstr "Pilot"
+
+msgid "Pitcairn"
+msgstr ""
 
 #
 msgid "Play"
@@ -6833,8 +7580,8 @@ msgstr "Vänligen vänta..."
 msgid "Please wait... Loading list..."
 msgstr "Vänligen vänta... Laddar lista..."
 
-#, fuzzy, python-format
-msgid "Please: DO NOT reboot your %s %s and turn off the power.\n"
+#, fuzzy
+msgid "Please: DO NOT reboot your STB and turn off the power.\n"
 msgstr "Vänligen anslut din mottagare till Internet"
 
 #
@@ -6870,6 +7617,9 @@ msgid ""
 "GUI will automatically restart once finished!"
 msgstr ""
 
+msgid "Poland"
+msgstr ""
+
 msgid "Polarisation"
 msgstr "Polarisation"
 
@@ -6901,8 +7651,18 @@ msgid "Port D"
 msgstr "Port D"
 
 #
+#, fuzzy
+msgid "Portugal"
+msgstr "Portugisiska"
+
+#
 msgid "Portuguese"
 msgstr "Portugisiska"
+
+#
+#, fuzzy
+msgid "Position"
+msgstr "Motor"
 
 #
 #, fuzzy
@@ -7203,12 +7963,11 @@ msgid "Provider"
 msgstr "Leverantör"
 
 #
-msgid "Provider to scan"
-msgstr "Leverantör att skanna"
-
-#
 msgid "Providers"
 msgstr "Leverantörer"
+
+msgid "Puerto Rico"
+msgstr ""
 
 msgid "Put TV in standby"
 msgstr "Sätt TV:n i viloläge"
@@ -7223,6 +7982,9 @@ msgstr "Python frontend för /tmp/mmi.socket"
 #, fuzzy
 msgid "Python version: "
 msgstr "Kernel Version: "
+
+msgid "Qatar"
+msgstr ""
 
 #
 #, fuzzy
@@ -7445,6 +8207,11 @@ msgstr "Uppdateringsfrekvens"
 msgid "Refresh rate selection."
 msgstr "Val av uppdateringsfrekvens."
 
+#
+#, fuzzy
+msgid "Refusing to move to the same directory"
+msgstr "Vänligen ange namn till det nya biblioteket"
+
 msgid "Regard deep standby as standby"
 msgstr "Deep standby anses vara samma som standby"
 
@@ -7487,6 +8254,11 @@ msgstr "Påminnelse, du har valt att spara timeshiftfilen."
 
 #
 msgid "Remote control type"
+msgstr "Fjärrkontrolls typ"
+
+#
+#, fuzzy
+msgid "Remote control type setup"
 msgstr "Fjärrkontrolls typ"
 
 #
@@ -7570,6 +8342,11 @@ msgstr "Ta bort partitionstabellen"
 msgid "Rename"
 msgstr "Byt namn"
 
+#
+#, fuzzy
+msgid "Rename failed!"
+msgstr "Tuning misslyckades!"
+
 msgid "Rename name and description for new events"
 msgstr ""
 
@@ -7603,6 +8380,13 @@ msgid "Replace `- ` in dialogs with colored text per speaker (like teletext subt
 msgstr ""
 
 msgid "Report Msgid Bugs To"
+msgstr ""
+
+#, fuzzy
+msgid "Request for physical address report"
+msgstr "TV fysisk adress rapport"
+
+msgid "Request for vendor report"
 msgstr ""
 
 msgid "Require authentication for http streams"
@@ -7689,11 +8473,6 @@ msgid "Restore"
 msgstr "Återställ"
 
 #
-#, fuzzy
-msgid "Restore Plugins"
-msgstr "Ta bort plugins"
-
-#
 msgid "Restore backups"
 msgstr "Återställ backuper"
 
@@ -7710,9 +8489,6 @@ msgstr "Omstart nätverk"
 #
 msgid "Restore system settings"
 msgstr "Återskapa systeminställningar"
-
-msgid "Restoring satellites.xml not possible!"
-msgstr ""
 
 #
 msgid "Restoring..."
@@ -7746,6 +8522,9 @@ msgstr "Återvänd till filmlista"
 msgid "Return to previous service"
 msgstr "Återvänd till föregående tjänst"
 
+msgid "Reunion"
+msgstr ""
+
 msgid "Reverse bouquet buttons"
 msgstr ""
 
@@ -7772,6 +8551,10 @@ msgstr "Höger om kanalnamn"
 
 msgid "Roll-off"
 msgstr "Roll-off"
+
+#, fuzzy
+msgid "Romania"
+msgstr "Rumänska"
 
 msgid "Romanian"
 msgstr "Rumänska"
@@ -7804,12 +8587,31 @@ msgstr ""
 msgid "Russian"
 msgstr "Ryska"
 
+msgid "Russian Federation"
+msgstr ""
+
+msgid "Rwanda"
+msgstr ""
+
 #
 msgid "S-Video"
 msgstr "S-Video"
 
 msgid "SCPC optimized search range"
 msgstr ""
+
+#
+#, fuzzy
+msgid "SCR (Unicable/JESS)"
+msgstr "Unicable"
+
+msgid "SCR JESS"
+msgstr ""
+
+#
+#, fuzzy
+msgid "SCR Unicable"
+msgstr "Unicable LNB"
 
 #
 msgid "SINGLE LAYER DVD"
@@ -7838,6 +8640,9 @@ msgstr "%d fil"
 msgid "SSID:"
 msgstr "SSID:"
 
+msgid "STARTUP"
+msgstr ""
+
 msgid ""
 "STB-GUI Skinselector\n"
 "\n"
@@ -7845,6 +8650,27 @@ msgid ""
 "stephan@reichholf.net\n"
 "\n"
 "© 2006 - Stephan Reichholf"
+msgstr ""
+
+msgid "Saint Barthelemy"
+msgstr ""
+
+msgid "Saint Helena, Ascension and Tristan da Cunha"
+msgstr ""
+
+msgid "Saint Kitts and Nevis"
+msgstr ""
+
+msgid "Saint Lucia"
+msgstr ""
+
+msgid "Saint Martin (French part)"
+msgstr ""
+
+msgid "Saint Pierre and Miquelon"
+msgstr ""
+
+msgid "Saint Vincent and the Grenadines"
 msgstr ""
 
 msgid "Samba Log"
@@ -7862,6 +8688,15 @@ msgstr "Tangentbordsinställning"
 
 msgid "Same resolution as skin"
 msgstr "Samma upplösning som utseendet"
+
+msgid "Samoa"
+msgstr ""
+
+msgid "San Marino"
+msgstr ""
+
+msgid "Sao Tome and Principe"
+msgstr ""
 
 #
 msgid "Sat"
@@ -7901,6 +8736,9 @@ msgstr "Mättnad"
 #
 msgid "Saturday"
 msgstr "Lördag"
+
+msgid "Saudi Arabia"
+msgstr ""
 
 #
 msgid "Save"
@@ -8120,6 +8958,14 @@ msgid "Select"
 msgstr "Välj"
 
 #
+#, fuzzy, python-format
+msgid "Select Bootoption: %s"
+msgstr "Välj backupdestination"
+
+msgid "Select Bootoption: not supported - see info"
+msgstr ""
+
+#
 msgid "Select CAId"
 msgstr "Välj CAId"
 
@@ -8130,6 +8976,11 @@ msgstr "Välj en tuner"
 
 msgid "Select HDD"
 msgstr "Välj HDD"
+
+#
+#, fuzzy, python-format
+msgid "Select Image: %s"
+msgstr "Välj ett utseende"
 
 #
 #, fuzzy
@@ -8202,6 +9053,11 @@ msgstr "Välj destination att kopiera till för:"
 msgid "Select destination for:"
 msgstr "Välj destination för:"
 
+#
+#, fuzzy
+msgid "Select directory for logfile"
+msgstr "Skapande av katalogen %s misslyckades."
+
 msgid "Select files for backup."
 msgstr "Väl fil för backup."
 
@@ -8230,6 +9086,11 @@ msgstr "Välj backupdestination"
 #
 msgid "Select movie"
 msgstr "Välj en film"
+
+#
+#, fuzzy
+msgid "Select path for logfile"
+msgstr "Välj målkatalog"
 
 #
 #, fuzzy
@@ -8332,6 +9193,9 @@ msgstr "Skicka DiSEqC"
 msgid "Send DiSEqC only on satellite change"
 msgstr "Skicka enbart DiSEqC vid ändrad satellit"
 
+msgid "Senegal"
+msgstr ""
+
 #
 #, fuzzy
 msgid "Seperate titles with a main menu"
@@ -8340,6 +9204,11 @@ msgstr "Separera titlar med en huvudmeny"
 #
 msgid "Sequence repeat"
 msgstr "Repetera sekvens"
+
+#
+#, fuzzy
+msgid "Serbia"
+msgstr "Serbiska"
 
 #
 msgid "Serbian"
@@ -8541,6 +9410,9 @@ msgstr "Satellitutrustning"
 #, fuzzy
 msgid "Setup your timezone."
 msgstr "Ställ in din position"
+
+msgid "Seychelles"
+msgstr ""
 
 #
 msgid "Sharpness"
@@ -8803,6 +9675,10 @@ msgstr "Visa typ av serviceikon"
 msgid "Show servicelist or movies"
 msgstr "Visa typ av serviceikon"
 
+#, fuzzy
+msgid "Show simple second infobar"
+msgstr "Visa andra infobalken"
+
 msgid "Show single service EPG"
 msgstr "Visa singel kanal-EPG"
 
@@ -8823,6 +9699,10 @@ msgstr "Till undertextval"
 #, fuzzy
 msgid "Show subtitle selection"
 msgstr "Till undertextval"
+
+#, fuzzy
+msgid "Show symbols on display"
+msgstr "Visa picon i kanallistan"
 
 #
 #, fuzzy
@@ -8869,6 +9749,9 @@ msgstr "Stäng av vid viloläge"
 
 msgid "Side by side"
 msgstr "Sida vid sida"
+
+msgid "Sierra Leone"
+msgstr ""
 
 #, fuzzy
 msgid "Signal Finder"
@@ -8930,6 +9813,11 @@ msgid "Simulate (no write)"
 msgstr ""
 
 #
+#, fuzzy
+msgid "Singapore"
+msgstr "Singel"
+
+#
 msgid "Single"
 msgstr "Singel"
 
@@ -8944,6 +9832,9 @@ msgstr "Singel satellit"
 #
 msgid "Single step (GOP)"
 msgstr "Enkelsteg (GOP)"
+
+msgid "Sint Maarten (Dutch part)"
+msgstr ""
 
 msgid "Site latitude"
 msgstr "Platsens latitud"
@@ -9018,6 +9909,15 @@ msgstr "Slot %d"
 msgid "Slovak"
 msgstr "Slovakiska"
 
+#, fuzzy
+msgid "Slovakia"
+msgstr "Slovakiska"
+
+#
+#, fuzzy
+msgid "Slovenia"
+msgstr "Slovenska"
+
 #
 msgid "Slovenian"
 msgstr "Slovenska"
@@ -9077,6 +9977,12 @@ msgstr "Mjukvaruuppdatera"
 
 msgid "Softwaremanager information"
 msgstr "Mjukvaruhanterare information"
+
+msgid "Solomon Islands"
+msgstr ""
+
+msgid "Somalia"
+msgstr ""
 
 msgid "Some error occured - Please try later"
 msgstr ""
@@ -9188,6 +10094,20 @@ msgstr "Källbegäran"
 msgid "South"
 msgstr "Syd"
 
+msgid "South Africa"
+msgstr ""
+
+msgid "South Georgia and the South Sandwich Islands"
+msgstr ""
+
+#
+#, fuzzy
+msgid "South Sudan"
+msgstr "Syd"
+
+msgid "Spain"
+msgstr ""
+
 #
 msgid "Spanish"
 msgstr "Spanska"
@@ -9237,6 +10157,9 @@ msgstr ""
 
 msgid "Sports"
 msgstr "Sport"
+
+msgid "Sri Lanka"
+msgstr ""
 
 #
 msgid "Standard"
@@ -9527,6 +10450,9 @@ msgstr ""
 msgid "Successfully restored /etc/inetd.conf!"
 msgstr ""
 
+msgid "Sudan"
+msgstr ""
+
 #
 msgid "Sun"
 msgstr "Sön"
@@ -9539,6 +10465,13 @@ msgstr "Söndag"
 #, fuzzy
 msgid "Support at"
 msgstr "Sortera tid"
+
+#, fuzzy
+msgid "Suriname"
+msgstr "Kanalnamn"
+
+msgid "Svalbard and Jan Mayen"
+msgstr ""
 
 msgid "Swap File not found. You have to create the file before to activate."
 msgstr ""
@@ -9567,9 +10500,20 @@ msgstr "Byt kanal"
 msgid "Swap services"
 msgstr "Byt kanal"
 
+msgid "Swaziland"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Sweden"
+msgstr "Svenska"
+
 #
 msgid "Swedish"
 msgstr "Svenska"
+
+msgid "Switch"
+msgstr ""
 
 msgid "Switch TV to correct input"
 msgstr "Växla till korrekt ingång på TV:n"
@@ -9645,6 +10589,9 @@ msgstr "Byt till föregående underkanal"
 msgid "Switchable tuner types:"
 msgstr "Växlingbara tunertyper:"
 
+msgid "Switzerland"
+msgstr ""
+
 msgid "Symbol rate"
 msgstr "Symbolhastighet"
 
@@ -9665,6 +10612,9 @@ msgid "Sync time using"
 msgstr ""
 
 msgid "Synchronize systemtime using transponder or internet."
+msgstr ""
+
+msgid "Syrian Arab Republic"
 msgstr ""
 
 #
@@ -9705,16 +10655,18 @@ msgstr "Index över innehållet av samligen"
 msgid "Tags"
 msgstr "Märken"
 
+msgid "Tajikistan"
+msgstr ""
+
+msgid "Tanzania, United Republic of"
+msgstr ""
+
 msgid "Teletext subtitle color"
 msgstr "Teletextens undertextfärg"
 
 #
 msgid "Terrestrial"
 msgstr "Marksänd"
-
-#
-msgid "Terrestrial provider"
-msgstr "Marksänd leverantör"
 
 #
 msgid "Test DiSEqC settings"
@@ -9742,6 +10694,10 @@ msgid "Text color"
 msgstr "textfärg"
 
 msgid "Thai"
+msgstr "Thailändska"
+
+#, fuzzy
+msgid "Thailand"
 msgstr "Thailändska"
 
 #
@@ -10061,7 +11017,7 @@ msgstr ""
 msgid "This option allows you can config the Colordepth for UHD"
 msgstr ""
 
-msgid "This option allows you can config the Colorimetry for HDR"
+msgid "This option allows you can config the Colorimetry for HDR."
 msgstr ""
 
 msgid "This option allows you enable smoothing filter to control the dithering process."
@@ -10070,10 +11026,25 @@ msgstr ""
 msgid "This option allows you enable the vertical scaler dejagging."
 msgstr ""
 
+msgid "This option allows you show all symbols on display."
+msgstr ""
+
 msgid "This option allows you to boost the blue tones in the picture."
 msgstr ""
 
 msgid "This option allows you to boost the green tones in the picture."
+msgstr ""
+
+msgid "This option allows you to change the virtuell loadspeaker position."
+msgstr ""
+
+msgid "This option allows you to disable or change the virtuell loadspeaker position."
+msgstr ""
+
+msgid "This option allows you to enable 3D surround softlimiter."
+msgstr ""
+
+msgid "This option allows you to enable 3D surround sound."
 msgstr ""
 
 msgid "This option allows you to hide and sort menu entries. When selecting user you can change order and hide menu items via the blue button"
@@ -10094,18 +11065,10 @@ msgstr ""
 msgid "This option allows you to view the old and new settings side by side."
 msgstr ""
 
-#, fuzzy
-msgid "This option configures the general audio delay of Dolby Digital sound tracks."
-msgstr "Konfigurera den generella ljudfördröjningen av Dolby Digital ljudspår."
-
-#, fuzzy
-msgid "This option configures the general audio delay of stereo sound tracks."
-msgstr "Konfigurera den generella ljudfördröjningen av stereo ljudspår."
-
-msgid "This option configures you can enable 3D Surround Sound."
+msgid "This option can be useful for long HDMI cables."
 msgstr ""
 
-msgid "This option configures you can set Auto Volume Level."
+msgid "This option configures you can set auto volume level."
 msgstr ""
 
 msgid "This option set the level of surpression of musquito noise (Musquito Noise is random aliasing as a result of strong compression). Obviously this goes at the cost of picture details."
@@ -10329,6 +11292,9 @@ msgstr "Timeshift inte möjligt!"
 msgid "Timezone"
 msgstr "Tidszon"
 
+msgid "Timor-Leste"
+msgstr ""
+
 #
 msgid "Title"
 msgstr "Titel"
@@ -10376,6 +11342,12 @@ msgstr ""
 msgid "Toggle infoBar"
 msgstr ""
 
+msgid "Togo"
+msgstr ""
+
+msgid "Tokelau"
+msgstr ""
+
 #
 msgid "Tone amplitude"
 msgstr "Ton Amplitud"
@@ -10391,6 +11363,9 @@ msgstr "Toneburst"
 #
 msgid "Toneburst A/B"
 msgstr "Toneburst A/B"
+
+msgid "Tonga"
+msgstr ""
 
 #, fuzzy
 msgid "Top and bottom"
@@ -10450,6 +11425,9 @@ msgstr "Papperskorg"
 #
 msgid "Tries left:"
 msgstr "Försök kvar:"
+
+msgid "Trinidad and Tobago"
+msgstr ""
 
 msgid "Troubleshoot"
 msgstr ""
@@ -10536,17 +11514,33 @@ msgstr "Tunerstatus %s"
 msgid "Tuner type"
 msgstr "Tuner typ"
 
-msgid "Tuning algorithm"
+msgid "Tunisia"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Turkey"
+msgstr "Turkiska"
 
 #
 msgid "Turkish"
 msgstr "Turkiska"
 
+#
+#, fuzzy
+msgid "Turkmenistan"
+msgstr "Turkiska"
+
+msgid "Turks and Caicos Islands"
+msgstr ""
+
 msgid "Turn on the power LED during standby."
 msgstr ""
 
 msgid "Turning step size"
+msgstr ""
+
+msgid "Tuvalu"
 msgstr ""
 
 #
@@ -10597,7 +11591,16 @@ msgstr "USB sticka"
 msgid "USB stick"
 msgstr "USB sticka"
 
+msgid "Uganda"
+msgstr ""
+
+msgid "Ukraine"
+msgstr ""
+
 msgid "Ukrainian"
+msgstr ""
+
+msgid "Unable to read image number"
 msgstr ""
 
 #, fuzzy, python-format
@@ -10642,19 +11645,22 @@ msgid "Unicable / JESS"
 msgstr "Unicable"
 
 #
-msgid "Unicable LNB"
-msgstr "Unicable LNB"
-
-#
-#, fuzzy
-msgid "Unicable Matrix"
-msgstr "Unicable Matrix"
-
-#
 msgid "Uninstall"
 msgstr "Avinstallera"
 
 msgid "Unit"
+msgstr ""
+
+msgid "United Arab Emirates"
+msgstr ""
+
+msgid "United Kingdom of Great Britain and Northern Ireland"
+msgstr ""
+
+msgid "United States Minor Outlying Islands"
+msgstr ""
+
+msgid "United States of America"
 msgstr ""
 
 #
@@ -10731,6 +11737,9 @@ msgstr ""
 msgid "Upgrading"
 msgstr "Uppgradering"
 
+msgid "Uruguay"
+msgstr ""
+
 #
 #, fuzzy
 msgid "Usage Setup"
@@ -10752,6 +11761,9 @@ msgstr "Använd EIT EPG-information när den är tillgänglig."
 
 msgid "Use FreeSat EPG information when it is available."
 msgstr "Använd FreeSat EPG-information när den är tillgänglig."
+
+msgid "Use HDMI pre-emphasis"
+msgstr ""
 
 msgid "Use MHW EPG information when it is available."
 msgstr "Använd MHW EPG-information när den är tillgänglig."
@@ -10880,9 +11892,16 @@ msgstr "Använder Tuner %s"
 msgid "Usually when the subtitle language is the same as the audio language, the subtitles will not be used. Enable this option to allow these subtitles to be used."
 msgstr "När undertextspråket är samma som ljudspråket, kommer undertexter inte användas. Aktivera det här alternativet för att tillåta dessa undertexter."
 
+msgid "Uzbekistan"
+msgstr ""
+
 #
 msgid "VCR scart"
 msgstr "VCR SCART"
+
+#, fuzzy
+msgid "VLAN connection"
+msgstr "LAN-anslutning"
 
 #
 msgid "VMGM (intro trailer)"
@@ -10893,6 +11912,14 @@ msgid "VOB file"
 msgstr "%d fil"
 
 msgid "VU+"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Vanuatu"
+msgstr "manuell"
+
+msgid "Venezuela (Bolivarian Republic of)"
 msgstr ""
 
 #
@@ -10978,6 +12005,9 @@ msgstr "Videoläge"
 msgid "Videocodec, size & format"
 msgstr "Videoformat"
 
+msgid "Viet Nam"
+msgstr ""
+
 #
 msgid "View Rass interactive..."
 msgstr "Visa Rass interaktivitet..."
@@ -11048,6 +12078,12 @@ msgstr "Visa teletext..."
 #
 msgid "View video CD..."
 msgstr "Visa Video CD..."
+
+msgid "Virgin Islands (British)"
+msgstr ""
+
+msgid "Virgin Islands (U.S.)"
+msgstr ""
 
 #
 msgid "Virtual keyboard"
@@ -11149,6 +12185,9 @@ msgid "Wakeup timer"
 msgstr "Insomningstimer"
 
 msgid "Wakeup type"
+msgstr ""
+
+msgid "Wallis and Futuna"
 msgstr ""
 
 #, fuzzy
@@ -11264,6 +12303,9 @@ msgstr "Väst"
 
 msgid "West limit set"
 msgstr "Västra gränsen satt"
+
+msgid "Western Sahara"
+msgstr ""
 
 #
 msgid "What do you want to scan?"
@@ -11535,6 +12577,10 @@ msgstr ""
 msgid "Write error while recording. Disk full?\n"
 msgstr "Skrivfel under inspelning. Disken full?\n"
 
+#, fuzzy
+msgid "Write error!"
+msgstr "med %d fel"
+
 #
 msgid "Write failed!"
 msgstr "Skrivning misslyckades!"
@@ -11542,6 +12588,9 @@ msgstr "Skrivning misslyckades!"
 #, fuzzy
 msgid "Write to /tmp/positionersetup.log"
 msgstr "Misslyckades med att skriva /tmp/positionersetup.log:"
+
+msgid "Wrong Bootsettings detected!"
+msgstr ""
 
 msgid "YCbCr420"
 msgstr ""
@@ -11570,6 +12619,10 @@ msgstr "gul"
 
 msgid "Yellow DVB subtitles"
 msgstr "Gula DVB-undertexter"
+
+#, fuzzy
+msgid "Yemen"
+msgstr "Rörelse"
 
 #
 msgid "Yes"
@@ -11677,6 +12730,11 @@ msgstr "Du kan bara bränna mottagarens inspelningar!"
 msgid "You can remove this plugin."
 msgstr "Du kan ta bort detta plugin."
 
+msgid ""
+"You can select with yellow the OnlineFlash Image\n"
+" or select Recovery to create a USB Disk Image for clean Install."
+msgstr ""
+
 #
 msgid "You cannot delete this!"
 msgstr "Du kan inte ta bort detta!"
@@ -11765,10 +12823,6 @@ msgid ""
 "Do you want to remove now ?"
 msgstr ""
 
-#, python-format
-msgid "Your %s %s will freeze during the flashing process.\n"
-msgstr ""
-
 #, fuzzy
 msgid "Your GigaBlue is shutting down. Please stand by..."
 msgstr "Din mottagare håller på att stängas av. Vänligen vänta..."
@@ -11786,9 +12840,21 @@ msgstr ""
 msgid "Your Receiver isn't connected to the internet properly. Please check it and try again."
 msgstr ""
 
+msgid "Your STB will freeze during the flashing process.\n"
+msgstr ""
+
 #
 msgid "Your backup succeeded. We will now continue to explain the further upgrade process."
 msgstr "Backupen lyckades. Vi kommer nu att fortsätta förklara uppgraderingsprocessen."
+
+#, python-format
+msgid ""
+"Your box needs Bootloaderversion(s)\n"
+"\n"
+"%s\n"
+"\n"
+"to make compatible with Bootoptions!"
+msgstr ""
 
 #
 msgid "Your collection exceeds the size of a single layer medium, you will need a blank dual layer DVD!"
@@ -11891,6 +12957,9 @@ msgstr ""
 "\n"
 "Vänligen välj vad du vill göra härnäst."
 
+msgid "Zambia"
+msgstr ""
+
 msgid "Zap"
 msgstr "Zap"
 
@@ -11938,6 +13007,15 @@ msgstr ""
 msgid "Zap-History Browser"
 msgstr "Biblioteksbläddrare"
 
+msgid "Zgemma H.S/H.2S/H.2H/H5/H7"
+msgstr ""
+
+msgid "Zgemma Star S/2S/H1/H2"
+msgstr ""
+
+msgid "Zimbabwe"
+msgstr ""
+
 msgid "Zoom from left"
 msgstr ""
 
@@ -11959,6 +13037,9 @@ msgstr "Ditt system stödjer inte ext4"
 #, fuzzy
 msgid "[Image Info]\n"
 msgstr "Image: "
+
+msgid "[a]"
+msgstr ""
 
 #
 msgid "[alternative edit]"
@@ -12169,6 +13250,9 @@ msgstr "balett"
 #, python-format
 msgid "bc%s"
 msgstr "bc%s"
+
+msgid "because of the used filesystem the backup\n"
+msgstr ""
 
 #
 msgid "better"
@@ -12463,6 +13547,9 @@ msgstr " utökningar."
 #, fuzzy
 msgid "external loopthrough to"
 msgstr "loopthrough till"
+
+msgid "extra wide"
+msgstr ""
 
 #
 #, fuzzy
@@ -12776,6 +13863,11 @@ msgstr "ingen modul hittad"
 
 #
 #, fuzzy
+msgid "no image found"
+msgstr "ingen modul hittad"
+
+#
+#, fuzzy
 msgid "no log entrys"
 msgstr "Spela angivet"
 
@@ -12812,16 +13904,17 @@ msgstr "ej konfigurerad"
 msgid "not locked"
 msgstr "inte låst"
 
+#
+#, fuzzy
+msgid "not running"
+msgstr "Rotor rotationsfart"
+
 msgid "not supported"
 msgstr "stöds ej"
 
 #
 #, fuzzy
 msgid "not tested"
-msgstr "ej använd"
-
-#
-msgid "not used"
 msgstr "ej använd"
 
 msgid "not_tested"
@@ -12848,6 +13941,9 @@ msgstr ""
 
 msgid "offset is"
 msgstr "förskjutningen är"
+
+msgid "ofgwrite flashing ready.\n"
+msgstr ""
 
 msgid ""
 "ofgwrite not found !!\n"
@@ -12906,12 +14002,18 @@ msgstr "originalspråk"
 msgid "pass"
 msgstr "klart"
 
+msgid "pausing"
+msgstr ""
+
 msgid "performing arts"
 msgstr "scenkonst"
 
 #, fuzzy
 msgid "picons"
 msgstr "Ikoner"
+
+msgid "placeholder message 2"
+msgstr ""
 
 msgid "play as picture in picture"
 msgstr "spela som bild i bild"
@@ -12922,6 +14024,11 @@ msgstr "spela i huvudfönster"
 #
 msgid "please press OK when ready"
 msgstr "tryck OK när du är klar"
+
+#
+#, fuzzy
+msgid "please press exit to go back to the menu.\n"
+msgstr "Vänligen tryck OK för att försätta."
 
 #
 #, fuzzy
@@ -12975,11 +14082,6 @@ msgstr "spela in"
 #
 msgid "red"
 msgstr "röd"
-
-#
-#, fuzzy
-msgid "reliable"
-msgstr "aktivera"
 
 msgid "religion"
 msgstr "religion"
@@ -13055,6 +14157,9 @@ msgstr "upprepa spellista"
 msgid "repeated"
 msgstr "repeterande"
 
+msgid "reserved for future use"
+msgstr ""
+
 msgid "restore deleted userbouquets"
 msgstr ""
 
@@ -13081,12 +14186,9 @@ msgstr "romantik"
 msgid "root and kernel"
 msgstr ""
 
-msgid ""
-"satellites.xml not found or corrupted!\n"
-"It is possible to watch TV,\n"
-"but it's not possible to search for new TV channels\n"
-"or to configure tuner settings"
-msgstr ""
+#, fuzzy
+msgid "running"
+msgstr "trädgård"
 
 #
 msgid "save last directory on exit"
@@ -13136,6 +14238,10 @@ msgstr "seriös/klassisk/religiös/historisk film/drama"
 #, fuzzy
 msgid "service is in bouquet parental protection"
 msgstr "ta bort från föräldraskydd"
+
+#, fuzzy
+msgid "service off-air"
+msgstr "kanal PIN"
 
 msgid "set as startup service"
 msgstr "använd som startkanal"
@@ -13245,6 +14351,10 @@ msgstr "startklipp här"
 msgid "start directory"
 msgstr "startbibliotek"
 
+#, fuzzy
+msgid "starts in a few seconds"
+msgstr "Starta avkodning offline"
+
 msgid "stepsize"
 msgstr "stegstorlek"
 
@@ -13327,10 +14437,6 @@ msgstr "längst upp"
 msgid "tourism/travel"
 msgstr "turism/resor"
 
-#, fuzzy
-msgid "traditional (fast)"
-msgstr "folk/traditionell musik"
-
 msgid "true"
 msgstr "sann"
 
@@ -13403,10 +14509,19 @@ msgstr ""
 msgid "white"
 msgstr "vit"
 
+msgid "wide"
+msgstr ""
+
 msgid "width"
 msgstr "bredd"
 
+msgid "will take about 1-4 minutes for this system.\n"
+msgstr ""
+
 msgid "will take about 3-12 minutes for this system.\n"
+msgstr ""
+
+msgid "will take about 30 minutes for this system.\n"
 msgstr ""
 
 msgid "winter sport"
@@ -13471,6 +14586,38 @@ msgstr "zappa och spela in"
 msgid "zapped"
 msgstr "zapped"
 
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "Backup your installed plugins."
+#~ msgstr ""
+#~ "\n"
+#~ "Backup av din mottagares inställningar."
+
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "Manage extensions or plugins for your Receiver"
+#~ msgstr ""
+#~ "\n"
+#~ "Hantera utökningar eller plugins för din mottagare"
+
+#, fuzzy
+#~ msgid ""
+#~ "\n"
+#~ "Restore your previously installed plugins."
+#~ msgstr ""
+#~ "\n"
+#~ "Återställ din mottagares inställningar."
+
+#
+#~ msgid ""
+#~ "\n"
+#~ "View, install and remove available or installed packages."
+#~ msgstr ""
+#~ "\n"
+#~ "Visa, installera och ta bort tillgängliga eller installerade paket."
+
 #
 #~ msgid "AA"
 #~ msgstr "AA"
@@ -13516,6 +14663,11 @@ msgstr "zapped"
 #~ msgstr "BB"
 
 #
+#, fuzzy
+#~ msgid "Backup Plugins"
+#~ msgstr "Plugins"
+
+#
 #~ msgid "Behavior of 'pause' when paused"
 #~ msgstr "Beteende av 'paus' vid paus"
 
@@ -13538,6 +14690,18 @@ msgstr "zapped"
 
 #~ msgid "Changelog"
 #~ msgstr "Ändringslog"
+
+#, fuzzy
+#~ msgid "Choose whether AAC sound tracks should be transcoded."
+#~ msgstr "Konfigurera om flerkanals ljudspår ska mixas ned till stereo."
+
+#, fuzzy
+#~ msgid "Choose whether multi channel sound tracks should be downmixed to stereo."
+#~ msgstr "Konfigurera om flerkanals ljudspår ska mixas ned till stereo."
+
+#, fuzzy
+#~ msgid "Choose whether multi channel sound tracks should be output as PCM."
+#~ msgstr "Konfigurera om flerkanals ljudspår ska mixas ned till stereo."
 
 #
 #~ msgid "Coderate HP"
@@ -13607,6 +14771,11 @@ msgstr "zapped"
 #~ msgid "Dialing:"
 #~ msgstr "Ringer upp:"
 
+#
+#, fuzzy
+#~ msgid "Diction"
+#~ msgstr "Beskrivning"
+
 #~ msgid "Directory %s nonexistent."
 #~ msgstr "Katalogen %s existerar inte."
 
@@ -13662,11 +14831,6 @@ msgstr "zapped"
 
 #
 #, fuzzy
-#~ msgid "FBC Unicable"
-#~ msgstr "Unicable LNB"
-
-#
-#, fuzzy
 #~ msgid "FP Upgrade"
 #~ msgstr "Uppgradering"
 
@@ -13718,6 +14882,10 @@ msgstr "zapped"
 #, fuzzy
 #~ msgid "Location:"
 #~ msgstr "Sökväg"
+
+#
+#~ msgid "Manage extensions"
+#~ msgstr "Hantera utökningar"
 
 #~ msgid "Memory positions"
 #~ msgstr "Minnesplatser"
@@ -13813,6 +14981,10 @@ msgstr "zapped"
 #~ msgstr "PIDs"
 
 #
+#~ msgid "Packet management"
+#~ msgstr "Pakethantering"
+
+#
 #~ msgid "Parental control type"
 #~ msgstr "Typ av föräldrakontroll"
 
@@ -13845,6 +15017,10 @@ msgstr "zapped"
 #~ msgstr "Tryck '0' för att växla mellan intern/extern BiB"
 
 #
+#~ msgid "Provider to scan"
+#~ msgstr "Leverantör att skanna"
+
+#
 #~ msgid "Reboot"
 #~ msgstr "Omstart"
 
@@ -13860,6 +15036,11 @@ msgstr "zapped"
 #, fuzzy
 #~ msgid "Restart STB"
 #~ msgstr "Omstart"
+
+#
+#, fuzzy
+#~ msgid "Restore Plugins"
+#~ msgstr "Ta bort plugins"
 
 #
 #~ msgid "Restore is running..."
@@ -13955,6 +15136,10 @@ msgstr "zapped"
 #~ msgid "Temperature and fan control"
 #~ msgstr "Temperatur och Fläktkontroll"
 
+#
+#~ msgid "Terrestrial provider"
+#~ msgstr "Marksänd leverantör"
+
 #~ msgid "The DVD standard doesn't support H.264 (HDTV) video streams. Do you want to create a special format data DVD (which will not play in stand-alone DVD players) instead?"
 #~ msgstr "DVD standarden stödjer inte H.264 (HDTV) videoströmmar. Vill du skapa en format data DVD (kommer ej kunnas spelas i vanlig DVD spelare) istället?"
 
@@ -14030,6 +15215,15 @@ msgstr "zapped"
 #
 #~ msgid "Uncommitted DiSEqC command"
 #~ msgstr "Uncommitted DiSEqC kommando"
+
+#
+#~ msgid "Unicable LNB"
+#~ msgstr "Unicable LNB"
+
+#
+#, fuzzy
+#~ msgid "Unicable Matrix"
+#~ msgstr "Unicable Matrix"
 
 #
 #~ msgid "Update channel list only"
@@ -14139,17 +15333,23 @@ msgstr "zapped"
 #~ msgid "not avaible"
 #~ msgstr "ej tillgänglig"
 
+#
+#~ msgid "not used"
+#~ msgstr "ej använd"
+
 #~ msgid "on end of movie"
 #~ msgstr "vid slutet av filmen"
+
+#
+#, fuzzy
+#~ msgid "reliable"
+#~ msgstr "aktivera"
 
 #~ msgid "select movie"
 #~ msgstr "Välj film"
 
 #~ msgid "select the movie path"
 #~ msgstr "Välj sökväg för film"
-
-#~ msgid "service PIN"
-#~ msgstr "kanal PIN"
 
 #~ msgid "show extended description"
 #~ msgstr "Visa utökad beskrivning"
@@ -14170,13 +15370,12 @@ msgstr "zapped"
 #~ msgid "standby"
 #~ msgstr "Viloläge"
 
+#, fuzzy
+#~ msgid "traditional (fast)"
+#~ msgstr "folk/traditionell musik"
+
 #~ msgid "tuner is not supported"
 #~ msgstr "tuner stöds inte"
-
-#
-#, fuzzy
-#~ msgid "unknown error"
-#~ msgstr "okänd kanal"
 
 #
 #~ msgid "wait for ci..."
