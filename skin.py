@@ -100,7 +100,7 @@ addSkin('skin_box.xml')
 # add optional discrete second infobar
 addSkin('skin_second_infobar.xml')
 
-if getBoxType() in ('gb800ue', 'gb800ueplus', 'gbultraue', 'gbultraueh', 'gbquad', 'gbquadplus', 'gbquad4k'):
+if getBoxType() in ('gb800ue', 'gb800ueplus', 'gbultraue', 'gbultraueh', 'gbquad', 'gbquadplus', 'gbquad4k', 'gbue4k'):
 	config.skin.lcdskin = ConfigText(default = "skin_lcd_default.xml")
 else:
 	config.skin.lcdskin = ConfigNothing()
