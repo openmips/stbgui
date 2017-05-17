@@ -317,7 +317,7 @@ When you discover 'bugs' please keep them reported on www.gigablue-support.com.\
 
 	def exitAnswer(self, result):
 		if result is not None and result:
-			self.session.open(TryQuitMainloop,retvalue=2)
+			self.session.open(TryQuitMainloop, retvalue=2)
 		self.close()
 
 	def __close(self):
