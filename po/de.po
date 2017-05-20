@@ -793,7 +793,7 @@ msgid "AC3"
 msgstr "AC3"
 
 msgid "AC3 downmix"
-msgstr "AAC heruntermischen"
+msgstr "AC3 heruntermischen"
 
 msgid "AGC:"
 msgstr "AGC:"
