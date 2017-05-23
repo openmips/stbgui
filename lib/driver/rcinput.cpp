@@ -114,7 +114,23 @@ void eRCDeviceInputDev::handleCode(long rccode)
 		
 	}
 #endif
-	
+
+#if KEY_F1_TO_KEY_F6
+	if (ev->code == KEY_F1)
+	{
+		/* define when rc sends a KEY_F1 event for its KEY_F6 key */
+		ev->code = KEY_F6;
+	}
+#endif
+
+#if KEY_F2_TO_KEY_AUX
+	if (ev->code == KEY_F2)
+	{
+		/* define when rc sends a KEY_F2 event for its KEY_AUX key */
+		ev->code = KEY_AUX;
+	}
+#endif
+
 #if KEY_GUIDE_TO_KEY_EPG
 	if (ev->code == KEY_HELP)
 	{
