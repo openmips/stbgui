@@ -36,11 +36,13 @@ def PipPigMode(value):
 				if SystemInfo["hasPIPVisibleProc"]:
 					open(SystemInfo["hasPIPVisibleProc"], "w").write("0")
 				else:
+					import skin
+					x, y, w, h = skin.parameters.get("PipHidePosition",(0, 0, 8, 8))
 					pip = InfoBar.instance.session.pip
-					pip.instance.resize(eSize(*(2, 2)))
-					pip["video"].instance.resize(eSize(*(2, 2)))
-					pip.instance.move(ePoint(0, 0))
-					pip["video"].instance.move(ePoint(0, 0))
+					pip.instance.move(ePoint(x, y))
+					pip["video"].instance.move(ePoint(x, y))
+					pip.instance.resize(eSize(*(w, h)))
+					pip["video"].instance.resize(eSize(*(w, h)))
 				PipPigModeEnabled = True
 		else:
 			PipPigModeTimer.start(100, True)
@@ -123,6 +125,7 @@ class PictureInPicture(Screen):
 			y = 0
 		config.av.pip.save()
 		self.instance.move(ePoint(x, y))
+		self["video"].instance.move(ePoint(*(x, y)))
 
 	def resize(self, w, h):
 		if config.av.pip_mode.value == 2:
