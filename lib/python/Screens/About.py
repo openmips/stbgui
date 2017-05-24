@@ -128,8 +128,13 @@ class About(Screen):
 		self["KernelVersion"] = StaticText(KernelVersion)
 		AboutText += KernelVersion + "\n"
 
-		AboutText += _("DVB drivers: ") + self.realDriverDate() + "\n"
-		#AboutText += _("DVB drivers: ") + about.getDriverInstalledDate() + "\n"
+		if boxtype == 'gbquad4k':
+			b = popen('cat /proc/stb/info/version').read().strip()
+			driverdate=str(b[0:4] + '-' + b[4:6] + '-' + b[6:8] + ' ' + b[8:10]  + ':' + b[10:12] + ':' + b[12:14])
+			AboutText += _("DVB drivers: ") + driverdate + "\n"
+		else:
+			AboutText += _("DVB drivers: ") + self.realDriverDate() + "\n"
+			#AboutText += _("DVB drivers: ") + about.getDriverInstalledDate() + "\n"
 
 		ImageVersion = _("Last upgrade: ") + about.getImageVersionString()
 		self["ImageVersion"] = StaticText(ImageVersion)
