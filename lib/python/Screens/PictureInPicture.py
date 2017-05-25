@@ -125,7 +125,7 @@ class PictureInPicture(Screen):
 			y = 0
 		config.av.pip.save()
 		self.instance.move(ePoint(x, y))
-		self["video"].instance.move(ePoint(*(x, y)))
+		self["video"].instance.move(ePoint(x, y))
 
 	def resize(self, w, h):
 		if config.av.pip_mode.value == 2:
