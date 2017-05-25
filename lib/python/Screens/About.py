@@ -18,7 +18,7 @@ from Components.ProgressBar import ProgressBar
 from os import popen
 from Tools.StbHardware import getFPVersion
 
-from boxbranding import getBoxType
+from boxbranding import getBoxType, getMachineBuild
 boxtype = getBoxType()
 
 from enigma import eTimer, eLabel, eConsoleAppContainer
@@ -128,7 +128,7 @@ class About(Screen):
 		self["KernelVersion"] = StaticText(KernelVersion)
 		AboutText += KernelVersion + "\n"
 
-		if boxtype == 'gbquad4k':
+		if getMachineBuild() == 'gb7252':
 			b = popen('cat /proc/stb/info/version').read().strip()
 			driverdate=str(b[0:4] + '-' + b[4:6] + '-' + b[6:8] + ' ' + b[8:10]  + ':' + b[10:12] + ':' + b[12:14])
 			AboutText += _("DVB drivers: ") + driverdate + "\n"
