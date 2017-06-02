@@ -4,7 +4,7 @@
 
 ## openMips 6.1 (based on openPLi) is build using oe-alliance build-environment "4.1" and several git repositories: ##
 
-> [https://github.com/oe-alliance/oe-alliance-core/tree/3.4](https://github.com/oe-alliance/oe-alliance-core/tree/4.1 "OE-Alliance")
+> [https://github.com/oe-alliance/oe-alliance-core/tree/4.1](https://github.com/oe-alliance/oe-alliance-core/tree/4.1 "OE-Alliance")
 > 
 > [https://github.com/openmips/stbgui/tree/master](https://github.com/openmips/stbgui/tree/master "openMips E2")
 > 
@@ -56,7 +56,7 @@
 ----------
 8 - Clone oe-alliance git
 
-    git clone git://github.com/oe-alliance/build-enviroment.git -b 3.4
+    git clone git://github.com/oe-alliance/build-enviroment.git -b 4.1
 
 ----------
 9 - Switch to folder build-enviroment
