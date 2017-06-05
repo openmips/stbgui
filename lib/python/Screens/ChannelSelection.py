@@ -48,7 +48,8 @@ profile("ChannelSelection.py after imports")
 
 FLAG_SERVICE_NEW_FOUND = 64
 FLAG_IS_DEDICATED_3D = 128
-FLAG_HIDE_VBI = 512 #define in lib/dvb/idvb.h as dxNewFound = 64 and dxIsDedicated3D = 128
+FLAG_HIDE_VBI = 512
+FLAG_CENTER_DVB_SUBS = 2048 #define in lib/dvb/idvb.h as dxNewFound = 64 and dxIsDedicated3D = 128
 
 class BouquetSelector(Screen):
 	def __init__(self, session, bouquets, selectedFunc, enableWrapAround=True):
@@ -187,6 +188,10 @@ class ChannelContextMenu(Screen):
 							append_when_current_valid(current, menu, (_("Unmark service to unhide VBI line"), self.removeHideVBIFlag), level=0)
 						else:
 							append_when_current_valid(current, menu, (_("Mark service to hide VBI line"), self.addHideVBIFlag), level=0)
+						if eDVBDB.getInstance().getFlag(eServiceReference(current.toString())) & FLAG_CENTER_DVB_SUBS:
+							append_when_current_valid(current, menu, (_("Do not center DVB subs on this service"), self.removeCenterDVBSubsFlag), level=0)
+						else:
+							append_when_current_valid(current, menu, (_("Do center DVB subs on this service"), self.addCenterDVBSubsFlag), level=0)
 					if haveBouquets:
 						bouquets = self.csel.getBouquetList()
 						if bouquets is None:
@@ -322,6 +327,18 @@ class ChannelContextMenu(Screen):
 		eDVBDB.getInstance().removeFlag(eServiceReference(self.csel.getCurrentSelection().toString()), FLAG_HIDE_VBI)
 		eDVBDB.getInstance().reloadBouquets()
 		Screens.InfoBar.InfoBar.instance.showHideVBI()
+		self.close()
+
+	def addCenterDVBSubsFlag(self):
+		eDVBDB.getInstance().addFlag(eServiceReference(self.csel.getCurrentSelection().toString()), FLAG_CENTER_DVB_SUBS)
+		eDVBDB.getInstance().reloadBouquets()
+		config.subtitles.dvb_subtitles_centered.value = True
+		self.close()
+
+	def removeCenterDVBSubsFlag(self):
+		eDVBDB.getInstance().removeFlag(eServiceReference(self.csel.getCurrentSelection().toString()), FLAG_CENTER_DVB_SUBS)
+		eDVBDB.getInstance().reloadBouquets()
+		config.subtitles.dvb_subtitles_centered.value = False
 		self.close()
 
 	def isProtected(self):
