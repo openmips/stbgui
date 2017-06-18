@@ -11,6 +11,7 @@ from Components.Sources.StaticText import StaticText
 from Screens.Screen import Screen
 from Screens.MessageBox import MessageBox
 import VideoEnhancement
+import skin
 
 class VideoEnhancementSetup(Screen, ConfigListScreen):
 	def __init__(self, session):
@@ -42,7 +43,7 @@ class VideoEnhancementSetup(Screen, ConfigListScreen):
 		self["key_green"] = StaticText(_("OK"))
 		self["key_yellow"] = StaticText(_("Last config"))
 		self["key_blue"] = StaticText(_("Default"))
-
+		self.seperation = skin.parameters.get("ConfigListSeperator", 300)
 		if not self.SelectionChanged in self["config"].onSelectionChanged:
 			self["config"].onSelectionChanged.append(self.SelectionChanged)
 		self.rememberOldSettings()
@@ -103,6 +104,7 @@ class VideoEnhancementSetup(Screen, ConfigListScreen):
 		self.saturationEntry = addToConfigList(_("Saturation"), config.pep.saturation, _("This option sets the picture saturation."))
 		self.color_spaceEntry = addToConfigList(_("Color space"), config.pep.color_space, _("This option sets the picture color space."))
 		self["config"].list = self.list
+		self["config"].l.setSeperation(self.seperation)
 		self["config"].l.setList(self.list)
 		if config.usage.sort_settings.value:
 			self["config"].list.sort()
