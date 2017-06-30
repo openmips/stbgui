@@ -17,7 +17,7 @@ class InstallWizard(Screen, ConfigListScreen):
 
 	STATE_UPDATE = 0
 	STATE_CHOICE_CHANNELLIST = 1
-#	STATE_CHOICE_SOFTCAM = 2
+	INSTALL_PLUGINS = 2
 
 	def __init__(self, session, args = None):
 		Screen.__init__(self, session)
@@ -58,6 +58,9 @@ class InstallWizard(Screen, ConfigListScreen):
 #		elif self.index == self.STATE_CHOICE_SOFTCAM:
 #			self.enabled = ConfigYesNo(default = False)
 #			self.createMenu()
+		elif self.index == self.INSTALL_PLUGINS:
+			self.enabled = ConfigYesNo(default = True)
+			self.createMenu()
 
 	def checkNetworkCB(self, data):
 		if data < 3:
@@ -87,6 +90,8 @@ class InstallWizard(Screen, ConfigListScreen):
 				self.list.append(getConfigListEntry(_("Channel list type"), self.channellist_type))
 #		elif self.index == self.STATE_CHOICE_SOFTCAM:
 #			self.list.append(getConfigListEntry(_("Install softcam support"), self.enabled))
+		elif self.index == self.INSTALL_PLUGINS:
+			self.list.append(getConfigListEntry(_("Do you want to install plugins"), self.enabled))
 		self["config"].list = self.list
 		self["config"].l.setList(self.list)
 
@@ -110,8 +115,10 @@ class InstallWizard(Screen, ConfigListScreen):
 			self.session.open(InstallWizardIpkgUpdater, self.index, _('Please wait (downloading channel list)'), IpkgComponent.CMD_REMOVE, {'package': 'enigma2-plugin-settings-gigablue-' + self.channellist_type.value})
 #		elif self.index == self.STATE_CHOICE_SOFTCAM and self.enabled.value:
 #			self.session.open(InstallWizardIpkgUpdater, self.index, _('Please wait (downloading softcam support)'), IpkgComponent.CMD_INSTALL, {'package': 'om-softcam-support'})
+		elif self.index == self.INSTALL_PLUGINS and self.enabled.value:
+			from PluginBrowser import PluginDownloadBrowser
+			self.session.open(PluginDownloadBrowser, 0)
 		return
-
 
 class InstallWizardIpkgUpdater(Screen):
 	skin = """

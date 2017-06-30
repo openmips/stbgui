@@ -14,8 +14,8 @@ from enigma import eCableScan, eDVBFrontendParametersCable, eTimer
 
 class CableScan:
 	def __init__(self, text, progressbar, scanTuner, scanNetwork, scanFrequency, scanSymbolRate, scanModulation, keepNumbers, hdList):
-		self.text = text;
-		self.progressbar = progressbar;
+		self.text = text
+		self.progressbar = progressbar
 		self.scanTuner = scanTuner
 		self.scanNetwork = scanNetwork
 		self.scanFrequency = scanFrequency
@@ -241,11 +241,7 @@ def getNimList():
 	return [x for x in nimmanager.getNimListOfType("DVB-C") if config.Nims[x].configMode.value != "nothing"]
 
 def CableScanMain(session, **kwargs):
-	nimlist = getNimList()
-	if nimlist:
-		Session.open(CableScanScreen, nimlist)
-	else:
-		Session.open(MessageBox, _("No cable tuner found!"), type=MessageBox.TYPE_ERROR)
+		session.open(CableScanScreen, getNimList())
 
 def restartScanAutoStartTimer(reply=False):
 	if reply:
@@ -273,13 +269,17 @@ def standbyCountChanged(value):
 		inStandby.onClose.append(leaveStandby)
 		CableScanAutoStartTimer.startLongTimer(150)
 
-def startSession(session, **kwargs):
+def autostart(reason, **kwargs):
 	global Session
-	Session = session
-	config.misc.standbyCounter.addNotifier(standbyCountChanged, initial_call=False)
+	if reason == 0 and "session" in kwargs and not Session:
+		Session = kwargs["session"]
+		config.misc.standbyCounter.addNotifier(standbyCountChanged, initial_call=False)
+	elif reason == 1 and Session:
+		Session = None
+		config.misc.standbyCounter.removeNotifier(standbyCountChanged)
 
 def CableScanStart(menuid, **kwargs):
-	if menuid == "scan":
+	if menuid == "scan" and getNimList():
 		return [(_("Cable Scan"), CableScanMain, "cablescan", None)]
 	else:
 		return []
@@ -287,6 +287,6 @@ def CableScanStart(menuid, **kwargs):
 def Plugins(**kwargs):
 	if nimmanager.hasNimType("DVB-C"):
 		return [PluginDescriptor(name=_("Cable Scan"), description="Scan cable provider channels", where = PluginDescriptor.WHERE_MENU, fnc=CableScanStart),
-			PluginDescriptor(where=[PluginDescriptor.WHERE_SESSIONSTART], fnc=startSession)]
+			PluginDescriptor(where=[PluginDescriptor.WHERE_SESSIONSTART, PluginDescriptor.WHERE_AUTOSTART], fnc=autostart)]
 	else:
 		return []
