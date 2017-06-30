@@ -17,7 +17,7 @@ def buildTerTransponder(frequency,
 		inversion=2, bandwidth = 7000000, fechigh = 6, feclow = 6,
 		modulation = 2, transmission = 2, guard = 4,
 		hierarchy = 4, system = 0, plp_id = 0):
-#	print "freq", frequency, "inv", inversion, "bw", bandwidth, "fech", fechigh, "fecl", feclow, "mod", modulation, "tm", transmission, "guard", guard, "hierarchy", hierarchy
+	#print "freq", frequency, "inv", inversion, "bw", bandwidth, "fech", fechigh, "fecl", feclow, "mod", modulation, "tm", transmission, "guard", guard, "hierarchy", hierarchy, "system", system, "plp_id", plp_id
 	parm = eDVBFrontendParametersTerrestrial()
 	parm.frequency = frequency
 	parm.inversion = inversion
@@ -115,13 +115,16 @@ cable_bands = {
 cable_autoscan_nimtype = {
 'SSH108' : 'ssh108',
 'TT3L10' : 'tt3l10',
-'TURBO' : 'vuplus_turbo_c'
+'TURBO' : 'vuplus_turbo_c',
+'TT2L08' : 'tt2l08',
+'BCM3148' : 'bcm3148'
 }
 
 terrestrial_autoscan_nimtype = {
 'SSH108' : 'ssh108_t2_scan',
 'TT3L10' : 'tt3l10_t2_scan',
-'TURBO' : 'vuplus_turbo_t'
+'TURBO' : 'vuplus_turbo_t',
+'TT2L08' : 'tt2l08_t2_scan'
 }
 
 def GetDeviceId(filter, nim_idx):
@@ -790,7 +793,7 @@ class ScanSetup(ConfigListScreen, Screen, CableTransponderSearchSupport, Terrest
 					self.TerrestrialCompleteEntry = getConfigListEntry(_('Scan options'), self.scan_ter_complete_type)
 					self.list.append(self.TerrestrialCompleteEntry)
 				if self.TerrestrialCompleteEntry is None or self.scan_ter_complete_type.value == "extended":
-					if nim.isCompatible("DVB-T2"):
+					if nim.canBeCompatible("DVB-T2"):
 						self.systemEntry = getConfigListEntry(_('System'), self.scan_ter.system)
 						self.list.append(self.systemEntry)
 					else:
@@ -941,7 +944,7 @@ class ScanSetup(ConfigListScreen, Screen, CableTransponderSearchSupport, Terrest
 			self.scan_nims.value = str(frontendData.get("tuner_number", nim_list[0][0]))
 
 		for slot in nimmanager.nim_slots:
-			if slot.isCompatible("DVB-T"):
+			if slot.isCompatible("DVB-T") or (slot.isCompatible("DVB-S") and slot.canBeCompatible("DVB-T")):
 				self.ter_tnumber = slot.slot
 		if self.ter_tnumber is not None:
 			self.ter_channel_input = supportedChannels(self.ter_tnumber)
@@ -1440,7 +1443,23 @@ class ScanSetup(ConfigListScreen, Screen, CableTransponderSearchSupport, Terrest
 				fec = self.scan_sat.fec_s2.value
 			else:
 				fec = self.scan_sat.fec.value
-			compare = [0, self.scan_sat.frequency.value*1000, self.scan_sat.symbolrate.value*1000, self.scan_sat.polarization.value, fec]
+			compare = [
+				0, # DVB type
+				self.scan_sat.frequency.value*1000,  # 1
+				self.scan_sat.symbolrate.value*1000, # 2
+				self.scan_sat.polarization.value,    # 3
+				fec,                                 # 4
+				self.scan_sat.system.value,          # 5
+				self.scan_sat.modulation.value,      # 6
+				self.scan_sat.inversion.value,       # 7
+				self.scan_sat.rolloff.value,         # 8
+				self.scan_sat.pilot.value,           # 9
+				self.scan_sat.is_id.value,           # 10
+				self.scan_sat.pls_mode.value,        # 11
+				self.scan_sat.pls_code.value         # 12
+				# tsid
+				# onid
+			]
 			i = 0
 			tps = nimmanager.getTransponders(orbpos)
 			for tp in tps:
@@ -1462,7 +1481,7 @@ class ScanSetup(ConfigListScreen, Screen, CableTransponderSearchSupport, Terrest
 	def compareTransponders(self, tp, compare):
 		frequencyTolerance = 2000 #2 MHz
 		symbolRateTolerance = 10
-		return abs(tp[1] - compare[1]) <= frequencyTolerance and abs(tp[2] - compare[2]) <= symbolRateTolerance and tp[3] == compare[3] and (not tp[4] or tp[4] == compare[4])
+		return abs(tp[1] - compare[1]) <= frequencyTolerance and abs(tp[2] - compare[2]) <= symbolRateTolerance and tp[3] == compare[3] and (not tp[4] or tp[4] == compare[4]) and (tp[5] == eDVBFrontendParametersSatellite.System_DVB_S or tp[10] == -1 or tp[10] == compare[10])
 
 	def predefinedTerrTranspondersList(self):
 		default = None
@@ -1711,7 +1730,7 @@ class ScanSimple(ConfigListScreen, Screen, CableTransponderSearchSupport, Terres
 					skip_t2 = False
 					if SystemInfo["Blindscan_t2_available"]:
 						skip_t2 = True
-						if nim.isCompatible("DVB-T2"):
+						if nim.canBeCompatible("DVB-T2"):
 							if len(self.terrestrialTransponderGetCmd(nim.slot)):
 								action = SEARCH_TERRESTRIAL2_TRANSPONDERS
 							else:
