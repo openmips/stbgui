@@ -436,6 +436,8 @@ int eStaticServiceDVBPVRInformation::getInfo(const eServiceReference &ref, int w
 			return m_parser.m_time_create;
 		else
 			return iServiceInformation::resNA;
+	case iServiceInformation::sIsCrypted:
+		return m_parser.m_scrambled;
 	default:
 		return iServiceInformation::resNA;
 	}
@@ -1929,6 +1931,9 @@ int eDVBServicePlay::getInfo(int w)
 		return false;
 	case sHideVBI:
 		if (m_dvb_service) return m_dvb_service->doHideVBI();
+		return false;
+	case sCenterDVBSubs:
+		if (m_dvb_service) return m_dvb_service->doCenterDVBSubs();
 		return false;
 	case sVideoPID:
 		if (m_dvb_service)

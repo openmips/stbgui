@@ -48,7 +48,8 @@ profile("ChannelSelection.py after imports")
 
 FLAG_SERVICE_NEW_FOUND = 64
 FLAG_IS_DEDICATED_3D = 128
-FLAG_HIDE_VBI = 512 #define in lib/dvb/idvb.h as dxNewFound = 64 and dxIsDedicated3D = 128
+FLAG_HIDE_VBI = 512
+FLAG_CENTER_DVB_SUBS = 2048 #define in lib/dvb/idvb.h as dxNewFound = 64 and dxIsDedicated3D = 128
 
 class BouquetSelector(Screen):
 	def __init__(self, session, bouquets, selectedFunc, enableWrapAround=True):
@@ -175,8 +176,12 @@ class ChannelContextMenu(Screen):
 								append_when_current_valid(current, menu, (_("service is in bouquet parental protection"), self.cancelClick), level=0)
 							else:
 								append_when_current_valid(current, menu, (_("remove from parental protection"), boundFunction(self.removeParentalProtection, current)), level=0)
-						if config.ParentalControl.hideBlacklist.value and not parentalControl.sessionPinCached and config.ParentalControl.storeservicepin.value != "never":
-							append_when_current_valid(current, menu, (_("Unhide parental control services"), self.unhideParentalServices), level=0, key="1")
+						if config.ParentalControl.hideBlacklist.value and not self.parentalControl.sessionPinCached and config.ParentalControl.storeservicepin.value != "never":
+							if parentalControl.blacklist:
+								extra_text = ""
+								if config.ParentalControl.hideBouquets.value and self.parentalControl.hideBouquets > 0:
+									extra_text = "/" + _("bouquets")
+								append_when_current_valid(current, menu, (_("Unhide parental control services") + extra_text, self.unhideParentalServices), level=0, key="1")
 					if SystemInfo["3DMode"] and fileExists("/usr/lib/enigma2/python/Plugins/SystemPlugins/OSD3DSetup/plugin.pyo"):
 						if eDVBDB.getInstance().getFlag(eServiceReference(current.toString())) & FLAG_IS_DEDICATED_3D:
 							append_when_current_valid(current, menu, (_("Unmark service as dedicated 3D service"), self.removeDedicated3DFlag), level=0)
@@ -186,7 +191,13 @@ class ChannelContextMenu(Screen):
 						if eDVBDB.getInstance().getFlag(eServiceReference(current.toString())) & FLAG_HIDE_VBI:
 							append_when_current_valid(current, menu, (_("Unmark service to unhide VBI line"), self.removeHideVBIFlag), level=0)
 						else:
-							append_when_current_valid(current, menu, (_("Mark service to hide VBI line"), self.addHideVBIFlag), level=0)
+							append_when_current_valid(current, menu, (_("Mark service to hide VBI line"), self.addHideVBIFlag), level=1)
+						if eDVBDB.getInstance().getCachedPid(eServiceReference(current.toString()), 9) >> 16 not in (-1, eDVBDB.getInstance().getCachedPid(eServiceReference(current.toString()), 2)):
+							#Only show when a DVB subtitle is cached on this service
+							if eDVBDB.getInstance().getFlag(eServiceReference(current.toString())) & FLAG_CENTER_DVB_SUBS:
+								append_when_current_valid(current, menu, (_("Do not center DVB subs on this service"), self.removeCenterDVBSubsFlag), level=2)
+							else:
+								append_when_current_valid(current, menu, (_("Do center DVB subs on this service"), self.addCenterDVBSubsFlag), level=2)
 					if haveBouquets:
 						bouquets = self.csel.getBouquetList()
 						if bouquets is None:
@@ -237,6 +248,9 @@ class ChannelContextMenu(Screen):
 							append_when_current_valid(current, menu, (_("add bouquet to parental protection"), boundFunction(self.addParentalProtection, current)), level=0)
 						else:
 							append_when_current_valid(current, menu, (_("remove bouquet from parental protection"), boundFunction(self.removeParentalProtection, current)), level=0)
+						if config.ParentalControl.hideBlacklist.value and config.ParentalControl.hideBouquets.value and not self.parentalControl.sessionPinCached and config.ParentalControl.storeservicepin.value != "never":
+							if self.parentalControl.hideBouquets > 0:
+								append_when_current_valid(current, menu, (_("Unhide parental control services") + "/" + _("bouquets"), self.unhideParentalServices), level=0, key="1")
 					menu.append(ChoiceEntryComponent(text=(_("add bouquet"), self.showBouquetInputBox)))
 					append_when_current_valid(current, menu, (_("rename entry"), self.renameEntry), level=0, key="2")
 					append_when_current_valid(current, menu, (_("remove entry"), self.removeEntry), level=0, key="8")
@@ -322,6 +336,18 @@ class ChannelContextMenu(Screen):
 		eDVBDB.getInstance().removeFlag(eServiceReference(self.csel.getCurrentSelection().toString()), FLAG_HIDE_VBI)
 		eDVBDB.getInstance().reloadBouquets()
 		Screens.InfoBar.InfoBar.instance.showHideVBI()
+		self.close()
+
+	def addCenterDVBSubsFlag(self):
+		eDVBDB.getInstance().addFlag(eServiceReference(self.csel.getCurrentSelection().toString()), FLAG_CENTER_DVB_SUBS)
+		eDVBDB.getInstance().reloadBouquets()
+		config.subtitles.dvb_subtitles_centered.value = True
+		self.close()
+
+	def removeCenterDVBSubsFlag(self):
+		eDVBDB.getInstance().removeFlag(eServiceReference(self.csel.getCurrentSelection().toString()), FLAG_CENTER_DVB_SUBS)
+		eDVBDB.getInstance().reloadBouquets()
+		config.subtitles.dvb_subtitles_centered.value = False
 		self.close()
 
 	def isProtected(self):
@@ -482,6 +508,8 @@ class ChannelContextMenu(Screen):
 	def pinEntered(self, service, answer):
 		if answer:
 			self.parentalControl.unProtectService(service)
+			if config.ParentalControl.hideBlacklist.value and not self.parentalControl.sessionPinCached:
+				self.csel.servicelist.resetRoot()
 			self.close()
 		elif answer is not None:
 			self.session.openWithCallback(self.close, MessageBox, _("The pin code you entered is wrong."), MessageBox.TYPE_ERROR)
@@ -497,10 +525,14 @@ class ChannelContextMenu(Screen):
 	def unhideParentalServicesCallback(self, answer):
 		if answer:
 			service = self.csel.servicelist.getCurrent()
+			inBouquetRootList = self.csel.getRoot() and 'FROM BOUQUET "bouquets.' in self.csel.getRoot().getPath()
 			self.parentalControl.setSessionPinCached()
 			self.parentalControl.hideBlacklist()
 			self.csel.servicelist.resetRoot()
-			self.csel.servicelist.setCurrent(service)
+			if inBouquetRootList:
+				self.csel.showFavourites()
+			else:
+				self.csel.servicelist.setCurrent(service)
 			self.close()
 		elif answer is not None:
 			self.session.openWithCallback(self.close, MessageBox, _("The pin code you entered is wrong."), MessageBox.TYPE_ERROR)
