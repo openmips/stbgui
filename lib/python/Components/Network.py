@@ -329,7 +329,9 @@ class Network:
 			elif name.startswith('at'):
 				name = 'Atmel'
 			elif name.startswith('iwm'):
-				name = 'Intel'				
+				name = 'Intel'
+			elif name.startswith('brcm'):
+				name = 'Broadcom'
 		else:
 			name = _('Unknown')
 
@@ -630,6 +632,8 @@ class Network:
 				return 'ralink'
 			if module == 'zd1211b':
 				return 'zydas'
+			if module == 'brcm-systemport':
+				return 'brcm-wl'
 		return 'wext'
 
 	def getLanModuleDir(self, iface = None):
