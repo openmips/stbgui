@@ -40,6 +40,8 @@ class Satfinder(ScanSetup, ServiceScan):
 		self.modulationEntry = None
 		self.fecEntry = None
 		self.transponder = None
+		self.DVB_TypeEntry = None
+		self.systemEntryTerr = None
 
 		ScanSetup.__init__(self, session)
 		self.setTitle(_("Signal Finder"))
@@ -89,7 +91,9 @@ class Satfinder(ScanSetup, ServiceScan):
 
 	def newConfig(self):
 		cur = self["config"].getCurrent()
-		if cur == self.satfinderTunerEntry:
+		if cur in (self.typeOfTuningEntry, self.systemEntry, self.typeOfInputEntry, self.systemEntryATSC, self.DVB_TypeEntry, self.systemEntryTerr):
+			self.createSetup()
+		elif cur == self.satfinderTunerEntry:
 			self.preDefTransponders = None
 			self.TerrestrialTransponders = None
 			self.CableTransponders = None
