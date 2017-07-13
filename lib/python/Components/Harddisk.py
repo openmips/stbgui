@@ -584,99 +584,6 @@ class Partition:
 						return fields[2]
 		return ''
 
-DEVICEDB =  \
-	{
-		"dm8000":
-		{
-			"/devices/platform/brcm-ehci.0/usb1/1-1/1-1.1/1-1.1:1.0": "Front USB Slot",
-			"/devices/platform/brcm-ehci.0/usb1/1-1/1-1.2/1-1.2:1.0": "Back, upper USB Slot",
-			"/devices/platform/brcm-ehci.0/usb1/1-1/1-1.3/1-1.3:1.0": "Back, lower USB Slot",
-			"/devices/platform/brcm-ehci-1.1/usb2/2-1/2-1:1.0/host1/target1:0:0/1:0:0:0": "DVD Drive"
-		},
-		"dm800":
-		{
-			"/devices/platform/brcm-ehci.0/usb1/1-2/1-2:1.0": "Upper USB Slot",
-			"/devices/platform/brcm-ehci.0/usb1/1-1/1-1:1.0": "Lower USB Slot"
-		},
-		"dm7025":
-		{
-			"/devices/pci0000:00/0000:00:14.1/ide1/1.0": "CF Card Slot",
-			"/devices/pci0000:00/0000:00:14.1/ide0/0.0": "Internal Harddisk"
-		},
-		"gbquadplus":
-		{
-			"/devices/platform/ehci-brcm.2/usb3/3-1/3-1:1.0": "Front USB Slot",
-			"/devices/platform/ehci-brcm.3/usb4/4-1/4-1:1.0": "Back single USB Slot",
-			"/devices/platform/ehci-brcm.0/usb1/1-1/1-1:1.0": "Back, upper USB Slot",
-			"/devices/platform/ehci-brcm.1/usb2/2-1/2-1:1.0": "Back, lower USB Slot"
-		},
-		"gbquad":
-		{
-			"/devices/platform/ehci-brcm.2/usb3/3-1/3-1:1.0": "Front USB Slot",
-			"/devices/platform/ehci-brcm.0/usb1/1-1/1-1:1.0": "Back, upper USB Slot",
-			"/devices/platform/ehci-brcm.1/usb2/2-1/2-1:1.0": "Back, lower USB Slot"
-		},
-		"gbultraue":
-		{
-			"/devices/platform/ehci-brcm.0/usb1/1-2/1-2:1.0": "Front USB Slot",
-			"/devices/platform/ehci-brcm.0/usb1/1-1/1-1:1.0": "Back USB Slot"
-		},
-		"gbultraueh":
-		{
-			"/devices/platform/ehci-brcm.0/usb1/1-2/1-2:1.0": "Front USB Slot",
-			"/devices/platform/ehci-brcm.0/usb1/1-1/1-1:1.0": "Back USB Slot"
-		},
-		"gbx1":
-		{
-			"/devices/platform/ehci-brcm.0/usb1/1-1/1-1:1.0": "Back USB Slot (LAN-Port)",
-			"/devices/platform/ehci-brcm.0/usb1/1-2/1-2:1.0": "Back USB Slot"
-		},
-		"gbx2":
-		{
-			"/devices/platform/ehci-brcm.0/usb1/1-1/1-1:1.0": "Back USB Slot (LAN-Port)",
-			"/devices/platform/ehci-brcm.0/usb1/1-2/1-2:1.0": "Back USB Slot"
-		},
-		"gbx3":
-		{
-			"/devices/platform/ehci-brcm.0/usb1/1-1/1-1:1.0": "Back USB Slot (LAN-Port)",
-			"/devices/platform/ehci-brcm.0/usb1/1-2/1-2:1.0": "Back USB Slot"
-		},
-		"gbx3h":
-		{
-			"/devices/platform/ehci-brcm.0/usb1/1-1/1-1:1.0": "Back USB Slot (LAN-Port)",
-			"/devices/platform/ehci-brcm.0/usb1/1-2/1-2:1.0": "Back USB Slot"
-		},
-		"gb800ueplus":
-		{
-			"/devices/platform/ehci-brcm.0/usb1/1-1/1-1:1.0": "Back USB Slot",
-			"/devices/platform/ehci-brcm.1/usb2/2-1/2-1:1.0": "Front USB Slot"
-		},
-		"gb800seplus":
-		{
-			"/devices/platform/ehci-brcm.0/usb1/1-1/1-1:1.0": "Back USB Slot",
-			"/devices/platform/ehci-brcm.1/usb2/2-1/2-1:1.0": "Front USB Slot"
-		},
-		"gbipbox":
-		{
-			"/devices/platform/ehci-brcm.0/usb1/1-1/1-1:1.0": "Back USB Slot"
-		},
-		"gb800ue":
-		{
-			"/devices/platform/ehci-brcm.0/usb1/1-1/1-1:1.0": "Back USB Slot",
-			"/devices/platform/ehci-brcm.1/usb2/2-1/2-1:1.0": "Front USB Slot"
-		},
-		"gb800se":
-		{
-			"/devices/platform/ehci-brcm.0/usb1/1-1/1-1:1.0": "Back USB Slot",
-			"/devices/platform/ehci-brcm.1/usb2/2-1/2-1:1.0": "Front USB Slot"
-		},
-		"gb800solo":
-		{
-			"/devices/platform/ehci-brcm.0/usb1/1-1/1-1:1.0": "Back USB Slot",
-			"/devices/platform/ehci-brcm.1/usb2/2-1/2-1:1.0": "Internal USB Slot"
-		}
-	}
-
 def addInstallTask(job, package):
 	task = Task.LoggingTask(job, "update packages")
 	task.setTool('opkg')
@@ -887,10 +794,6 @@ class HarddiskManager:
 			description = readFile("/sys" + phys + "/model")
 		except IOError, s:
 			print "[Harddisk] couldn't read model: ", s
-		from Tools.HardwareInfo import HardwareInfo
-		for physdevprefix, pdescription in DEVICEDB.get(HardwareInfo().get_device_name(),{}).items():
-			if phys.startswith(physdevprefix):
-				description = pdescription
 		# not wholedisk and not partition 1
 		if part and part != 1:
 			description += _(" (Partition %d)") % part
