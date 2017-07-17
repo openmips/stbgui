@@ -146,6 +146,7 @@ eServiceFactoryMP3::eServiceFactoryMP3()
 		extensions.push_back("webm");
 		extensions.push_back("m3u8");
 		extensions.push_back("stream");
+		extensions.push_back("webm");
 		sc->addServiceFactory(eServiceFactoryMP3::id, this, extensions);
 	}
 
@@ -588,7 +589,7 @@ eServiceMP3::eServiceMP3(eServiceReference ref):
 	}
 	else if ( strcasecmp(ext, ".webm") == 0)
 	{
-		m_sourceinfo.containertype = ctMKV;
+		m_sourceinfo.containertype = ctWEBM;
 		m_sourceinfo.is_video = TRUE;
 	}
 	else if ( strcasecmp(ext, ".m4a") == 0 )
