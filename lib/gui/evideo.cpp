@@ -161,6 +161,7 @@ void eVideoWidget::setDecoder(int decoder)
 void eVideoWidget::setOverscan(bool overscan)
 {
 	m_overscan = overscan;
+}
 
 void eVideoWidget::setAdjustPosition(bool value)
 {
