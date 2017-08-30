@@ -311,4 +311,5 @@ KEYIDS = {
 "KEY_MAX": 511,
 "BTN_0": 256,
 "BTN_1": 257,
+"KEY_UNKNOWN": 999,
 }
