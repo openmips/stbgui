@@ -2043,7 +2043,8 @@ class InfoBarTimeshift:
 		filename = begin_date + " - " + service_name
 
 		if config.recording.filename_composition.value == "event":
-			filename = name + ' - ' + begin_date + "_" + service_name
+			#filename = name + ' - ' + begin_date + "_" + service_name
+			filename = "%s - %s_%s" % (info["name"], strftime("%Y%m%d %H%M",localtime(time())), service_name)
 		elif config.recording.filename_composition.value == "veryshort":
 			filename = service_name + " - " + begin_date
 		elif config.recording.filename_composition.value == "short":
